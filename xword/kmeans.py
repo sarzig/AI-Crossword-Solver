@@ -10,7 +10,6 @@ from nltk.tokenize import word_tokenize
 from nltk import pos_tag
 from collections import Counter
 from nltk.corpus import wordnet
-import pandas as pd
 import matplotlib.pyplot as plt
 from sklearn.cluster import KMeans
 from nltk.corpus import words
@@ -155,4 +154,4 @@ filtered_clues = pd.concat([
 ], ignore_index=True)
 
 # Export to CSV
-#filtered_clues.to_csv("clue_clusters.csv", index=False)
+filtered_clues.to_csv("clue_clusters.csv", index=False)
