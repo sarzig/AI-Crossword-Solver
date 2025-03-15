@@ -1,7 +1,7 @@
 import pytest
 
 from clue_classification_and_processing.fill_in_the_blank import fill_in_the_blank_with_possible_source, \
-    preprocess_text, process_text_into_clue_answer
+    preprocess_lower_remove_punct_strip_whitespace, process_text_into_clue_answer
 from puzzle_objects.clue_and_board import Clue
 
 
@@ -10,13 +10,13 @@ def test_process_text_into_clue_answer():
     assert process_text_into_clue_answer("hey there") == "heythere"
     assert process_text_into_clue_answer("\n\nx  ") == "x"
     assert process_text_into_clue_answer('"lo que será, será".') == "loqueserasera"
-    assert process_text_into_clue_answer("áàâäãåāăąȧǎ éèêëēĕėęě. íìîïīĭįıȉȋ óòôöõōŏőȯȱø +úùûüũūŭůűųȕȗ ýÿŷȳɏ ñńņňŉŋ") == \
-           "aaaaaaaaaaaeeeeeeeeeiiiiiiiiiiooooooooooouuuuuuuuuuuuyyyyynnnnnn"
+    assert (process_text_into_clue_answer("áàâäãåāăąȧǎ éèêëēĕėęě. íìîïīĭįıȉȋ óòôöõōŏőȯȱø +úùûüũūŭůűųȕȗ ýÿŷȳɏ ñńņňŉŋ")
+            == "aaaaaaaaaaaeeeeeeeeeiiiiiiiiiiooooooooooouuuuuuuuuuuuyyyyynnnnnn")
 
 
 def test_preprocess_text():
     def assert_preprocess(input_text, expected_output):
-        actual_output = preprocess_text(input_text)
+        actual_output = preprocess_lower_remove_punct_strip_whitespace(input_text)
         assert actual_output == expected_output, f"\nInput: {input_text}\nExpected: {expected_output}\nActual: {actual_output}"
 
     test_text1 = """
