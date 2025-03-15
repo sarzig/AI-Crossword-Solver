@@ -73,29 +73,35 @@ def fill_in_the_blank_with_possible_source(clue: Clue, possible_source):
     # put the ___ back in.
     first_blank = "___"
     new_blank = "blankblankblank"
+
+    # Clean the source text
     possible_source = preprocess_lower_remove_punct_strip_whitespace(possible_source)
+
+    # Extract clue.clue_text and replace the old style of blank with the new style
     clue_quote = clue.clue_text
     clue_quote = clue_quote.replace(first_blank, new_blank)
-    clue_quote = preprocess_lower_remove_punct_strip_whitespace(clue_quote)
-    clue_quote = clue_quote.replace(new_blank, first_blank)
-    print(clue_quote)
 
     # Extract the quote containing one or more blanks (___)
-    quote_match = re.search(rf'"([^"]*\b{first_blank}\b[^"]*)"', clue_quote)
-    print(quote_match)
+    # If there is a match, capture it. xxx- this just uses first match right now. If there
+    # are multiple quotes in a clue, this wouldn't get that.
+    clue_quote_with_blank = None
+    possible_match = re.search(rf'"([^"]*{new_blank}[^"]*)"', clue_quote)
+    if possible_match:
+        clue_quote_with_blank = possible_match.group(1)
 
-    if not quote_match:
+    # Remove all punctuation from the quote part of the clue, and then put the original blank back in
+    clue_quote_with_blank = preprocess_lower_remove_punct_strip_whitespace(clue_quote_with_blank)
+    clue_quote_with_blank = clue_quote_with_blank.replace(new_blank, first_blank)
+
+    if not clue_quote_with_blank:
         return None  # No quote with a blank found
 
-    quote_with_blanks = quote_match.group(1)  # Extract the quote with blanks
-    print(quote_with_blanks)
-
     # Convert the quote into a regex pattern with multiple wildcard captures for the blanks
-    quote_pattern = re.escape(quote_with_blanks).replace(re.escape(first_blank), r'(\w+)')
-    print(quote_pattern)
-    # Search for a match in the possible source text
-    match = re.search(quote_pattern, possible_source, re.IGNORECASE)
-    print(possible_source)
+    quote_pattern = re.escape(clue_quote_with_blank).replace(re.escape(first_blank), r'(\w+)')
+
+    # Searching for a match in the possible source text
+    match = re.search(pattern=quote_pattern, string=possible_source, flags=re.IGNORECASE)
+
     if match:
         groups = list(match.groups())
         # Check if the same word repeats across all blanks
@@ -107,8 +113,9 @@ def fill_in_the_blank_with_possible_source(clue: Clue, possible_source):
 
 
 
+
 clue_text = '"I could a tale unfold ___ lightest word / Would harrow up thy soul ...": "Hamlet"'
-possible_source_text = """“I could a tale unfold whose lightest word
+possible_source = """“I could a tale unfold whose lightest word
     Would harrow up thy soul, freeze thy young blood,
     Make thy two eyes like stars start from their spheres,
     Thy knotted and combined locks to part,
@@ -118,7 +125,4 @@ possible_source_text = """“I could a tale unfold whose lightest word
     To ears of flesh and blood.
     List, list, O list!”
     """
-possible_source_text2 = r"I could a tale unfold whose lightest word / Would harrow up thy soul"
-
-a = fill_in_the_blank_with_possible_source(Clue(clue_text), possible_source_text)
-
+#possible_source_text2 = r"I could a tale unfold whose lightest word / Would harrow up thy soul"

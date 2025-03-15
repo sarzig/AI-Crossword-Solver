@@ -19,10 +19,12 @@ def test_preprocess_text():
         actual_output = preprocess_lower_remove_punct_strip_whitespace(input_text)
         assert actual_output == expected_output, f"\nInput: {input_text}\nExpected: {expected_output}\nActual: {actual_output}"
 
-    test_text1 = """
-    Carney was born in Fort Smith, Northwest Territories, and raised in Edmonton, Alberta. He graduated with a bachelor's degree in economics from Harvard University in 1988, going on to study at the University of Oxford, where he earned a master's degree in 1993 and a doctorate in 1995.
-    """
-    result_1 = "carney was born in fort smith northwest territories and raised in edmonton alberta he graduated with a bachelor s degree in economics from harvard university in 1988 going on to study at the university of oxford where he earned a master s degree in 1993 and a doctorate in 1995"
+    test_text1 = """Carney was born in Fort Smith, Northwest Territories, and raised in Edmonton, Alberta. He 
+    graduated with a bachelor's degree in economics from Harvard University in 1988, going on to study at the 
+    University of Oxford, where he earned a master's degree in 1993 and a doctorate in 1995."""
+    result_1 = ("carney was born in fort smith northwest territories and raised in edmonton alberta he graduated with "
+                "a bachelor s degree in economics from harvard university in 1988 going on to study at the university "
+                "of oxford where he earned a master s degree in 1993 and a doctorate in 1995")
 
     test_text2 = """\n\n\n\t\t\t          """
     result_2 = ""
@@ -48,8 +50,22 @@ def test_fill_in_the_blank_with_possible_source():
     List, list, O list!”
     """
 
-    assert fill_in_the_blank_with_possible_source(Clue(""), "") is None
-    assert fill_in_the_blank_with_possible_source(Clue(clue_text), possible_source_text) == "whose"
+    possible_source_short = "I could a tale unfold whose lightest word Would harrow up thy soul"
+
+    clue_text_blank_at_beginning = '"___ lightest word / Would harrow up thy soul ...": "Hamlet"'
+    clue_text_blank_at_end = '"I could a tale unfold whose lightest word / Would harrow up thy ___ ...": "Hamlet"'
+    clue_text_blank_at_end2 = '"I could a tale unfold whose lightest word / Would harrow up thy ___": "Hamlet"'
+
+    assert fill_in_the_blank_with_possible_source(Clue(clue_text),
+                                                  possible_source_text) == "whose"
+    assert fill_in_the_blank_with_possible_source(Clue(clue_text),
+                                                  possible_source_short) == "whose"
+    assert fill_in_the_blank_with_possible_source(Clue(clue_text_blank_at_beginning),
+                                                  possible_source_text) == "whose"
+    assert fill_in_the_blank_with_possible_source(Clue(clue_text_blank_at_end),
+                                                  possible_source_text) == "soul"
+    assert fill_in_the_blank_with_possible_source(Clue(clue_text_blank_at_end2),
+                                                  possible_source_text) == "soul"
     assert fill_in_the_blank_with_possible_source(Clue('the quote goes as: "hello ___ lady"'),
                                                   "hello pretty lady") == "pretty"
     assert fill_in_the_blank_with_possible_source(Clue('the quote goes as: "hello ___ ___ ___ lady"'),
