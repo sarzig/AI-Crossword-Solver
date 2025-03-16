@@ -15,18 +15,26 @@ def preprocess_lower_remove_punct_strip_whitespace(input_text):
     :return: new text
     """
     new_text = input_text.lower()
-    new_text = re.sub(r'\s+', ' ', new_text)
-    new_text = new_text.translate(str.maketrans(string.punctuation, " " * len(string.punctuation)))
-    new_text = re.sub(r'  +', ' ', new_text)
-    return new_text.strip()
+
+    # Remove punctuation that is NOT within a word (preserve in-word punctuation like "john's" -> "johns" and
+    # "honky-tonk" -> "honkytonk")
+    new_text = re.sub(r'\b(\w+)[\'-](\w+)\b', r'\1\2', new_text)  # Merge words with apostrophe or hyphen
+    new_text = re.sub(fr"[{re.escape(string.punctuation)}]", " ", new_text)  # Remove other punctuation
+
+    # Normalize whitespace
+    new_text = re.sub(r'\s+', ' ', new_text).strip()
+
+    return new_text
 
 
 def process_text_into_clue_answer(text):
     """
-    Removes all white space, converts characters
-    :param text:
-    :return:
+    Removes all white space, converts characters into English equivalent.
+
+    :param text: text to process into a clue answer
+    :return: processed text
     """
+
     # Replace all possible whitespace in clue with nothing
     whitespace_regex = r"[\s\u00A0\u1680\u180E\u2000-\u200A\u2028\u2029\u202F\u205F\u3000]"
 
@@ -51,8 +59,8 @@ def process_text_into_clue_answer(text):
         for variant in variants:
             new_text = new_text.replace(variant, base_letter)
 
-    # remove whitespace
-    new_text = re.sub(whitespace_regex, "", new_text)
+    # remove whitespace and lowercase it
+    new_text = re.sub(whitespace_regex, "", new_text).lower()
 
     return new_text
 
@@ -65,10 +73,15 @@ def fill_in_the_blank_with_possible_source(clue: Clue, possible_source):
     of a clue, and a blank can be repeated, in which case the SAME
     word in the source is searched for.
 
+    xxx - need to change to allow for multiple words to be in the answer
+
+    Function improved by genAI.
+
     :param clue: Clue object containing a quote with multiple blanks
     :param possible_source: The text which may contain the full quote
     :return: List of words filling in the blanks or None if not found
     """
+
     # Remove the blanks from the quote and replace with placeholder. Then,
     # put the ___ back in.
     first_blank = "___"
@@ -76,7 +89,7 @@ def fill_in_the_blank_with_possible_source(clue: Clue, possible_source):
 
     # Clean the source text
     possible_source = preprocess_lower_remove_punct_strip_whitespace(possible_source)
-
+    print(possible_source)
     # Extract clue.clue_text and replace the old style of blank with the new style
     clue_quote = clue.clue_text
     clue_quote = clue_quote.replace(first_blank, new_blank)
@@ -110,19 +123,3 @@ def fill_in_the_blank_with_possible_source(clue: Clue, possible_source):
         return groups  # Return all captured words as a list
 
     return None  # If no match is found, return None
-
-
-
-
-clue_text = '"I could a tale unfold ___ lightest word / Would harrow up thy soul ...": "Hamlet"'
-possible_source = """“I could a tale unfold whose lightest word
-    Would harrow up thy soul, freeze thy young blood,
-    Make thy two eyes like stars start from their spheres,
-    Thy knotted and combined locks to part,
-    And each particular hair to stand on end
-    Like quills upon the fretful porpentine.
-    But this eternal blazon must not be
-    To ears of flesh and blood.
-    List, list, O list!”
-    """
-#possible_source_text2 = r"I could a tale unfold whose lightest word / Would harrow up thy soul"

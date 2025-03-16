@@ -3,6 +3,9 @@ import re
 import pandas as pd
 import os
 
+from clue_classification_and_processing.fill_in_the_blank import fill_in_the_blank_with_possible_source
+from puzzle_objects.clue_and_board import Clue
+
 # Get the current working directory
 cwd = os.getcwd()
 
@@ -46,9 +49,6 @@ def contains_possessive_long_quote(clue):
             return True
     return False
 
-
-import re
-import wikipediaapi
 
 def find_blank_in_wiki(clue):
     """
@@ -110,13 +110,17 @@ for _, row in filtered_clues.iterrows():
     page_name = extract_page_name(row["Clue"])
     print(f'Attempted Wikipedia Page Name: {page_name}')
 
-    page_py = wiki_wiki.page(page_name)
-    if page_py.exists():
-        print(f'Wikipedia Summary:\n{page_py.summary[:300]}...')
+    page = wiki_wiki.page(page_name)
+    if page.exists():
+        print(f'Wikipedia Summary:\n{page.summary[:300]}...')
     else:
         print("Wikipedia page not found.")
 
     ans = find_blank_in_wiki(row["Clue"])
-    print(f"\n\nActual Answer: {row['Word']}")
-    print(f'Predicted Answer: {ans}')
+
+    function_answer = fill_in_the_blank_with_possible_source(Clue(row["Clue"]), page.text)
+    print(f"\n\n         Actual Answer: {row['Word'].lower()}")
+    #print(f'Predicted Answer: {ans}')
+    print(f'function_answer Answer: {function_answer}')
+
     input('')
