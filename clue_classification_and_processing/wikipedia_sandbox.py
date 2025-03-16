@@ -93,8 +93,6 @@ def find_blank_in_wiki(clue):
     print(f"Extracted Missing Words: {missing_words}")
     return missing_words
 
-
-
 # Apply feature extraction functions
 clues["possessive long quote"] = clues["Clue"].apply(contains_possessive_long_quote)
 clues["long quote with blank"] = clues["Clue"].apply(contains_long_quote_with_blank)
