@@ -31,18 +31,20 @@ def get_clues_dataframe():
 
     :return:
     """
+    print("here")
     # get cwd and split into consitutent parts
     cwd = os.getcwd()
     path_parts = cwd.split(os.sep)
-
+    print(cwd)
     # Look for project name in the path
     root = ""
     if "ai_crossword_solver" in path_parts:
         index = path_parts.index("ai_crossword_solver")
         root = os.sep.join(path_parts[:index + 1])
+        print(root)
 
     # Load dataset
-    clues_path = os.path.join(root, r"data\nytcrosswords.csv")
+    clues_path = os.path.join(root, r"data/nytcrosswords.csv")
 
     clues_df = pd.read_csv(clues_path, encoding='latin1')
     return clues_df
@@ -178,5 +180,3 @@ print(f"Time is {time2} seconds.")
 # Merge POS data with original DataFrame
 clues = pd.concat([clues, pos_data], axis=1).fillna(0)
 '''
-
-clues = get_clues_dataframe()

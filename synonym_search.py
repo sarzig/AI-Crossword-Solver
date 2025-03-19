@@ -1,6 +1,10 @@
 import requests
 import pandas as pd
 
+######################################################################################################
+# Get one layer of synonyms
+######################################################################################################
+
 def get_synonyms(word):
     """Fetch synonyms for a given word using the Datamuse API."""
     url = f"https://api.datamuse.com/words?rel_syn={word}"
@@ -11,6 +15,10 @@ def get_synonyms(word):
         return {item['word'] for item in data}  # Return a set to avoid duplicates
     else:
         return set()
+
+######################################################################################################
+# Get recursive/multi-layer synonyms
+######################################################################################################
 
 def get_recursive_synonyms(word, depth):
     """
@@ -36,14 +44,18 @@ def get_recursive_synonyms(word, depth):
     all_synonyms.update(queue)  # Add final level words
     return sorted(all_synonyms)  # Return sorted list
 
-# Example usage
+######################################################################################################
+# Example Usage
+######################################################################################################
+
 word = input("Enter a word: ")
 synonyms = get_recursive_synonyms(word, depth=3)
 print(f"Expanded synonyms for '{word}': {synonyms}")
 
 
-
+######################################################################################################
 # Testing on the list of synonym clues
+######################################################################################################
 
 # Load the data set
 csv_synonyms_path = 'single_word_clues(Sheet1).csv'
@@ -90,8 +102,11 @@ def check_synonym_accuracy(df):
     # Display results
     return results_df
 
+######################################################################################################
+# Usage of synonym accuracy check
+######################################################################################################
 
 # Run the synonym accuracy check
-results_df = check_synonym_accuracy(df_test_sample)
+# results_df = check_synonym_accuracy(df_test_sample)
 
-print(f"Results: {results_df}")
+# print(f"Results: {results_df}")
