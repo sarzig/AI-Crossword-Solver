@@ -12,7 +12,6 @@ from clue_classification_and_processing.clue_features import get_clues_dataframe
 
 # Load the dataset
 df = get_clues_dataframe()
-# df = pd.read_csv(csv_path, encoding="ISO-8859-1")
 
 # Keep only relevant columns
 df = df[['Clue', 'Word']].dropna()  # Drop missing values
@@ -27,18 +26,22 @@ bert_model = SentenceTransformer('all-MiniLM-L6-v2')
 nltk.download('wordnet')
 nltk.download('omw-1.4')
 
+# Get a list of synonyms and related terms for a given word using WordNet. 
 def get_synonyms(word):
-    """ Get a list of synonyms and related terms for a given word using WordNet. """
-    synonyms = set([word])  # Include the original word
+
+    # Include the original word
+    synonyms = set([word])  
     for syn in wordnet.synsets(word):
         for lemma in syn.lemmas():
-            clean_word = lemma.name().replace("_", " ")  # Replace underscores with spaces
+            # Replace underscores with spaces
+            clean_word = lemma.name().replace("_", " ")  
             synonyms.add(clean_word)
     
     return list(synonyms)
 
+# Expand words using BERT similarity search.
 def get_bert_synonyms(word, top_n=10):
-    """ Expand words using BERT similarity search. """
+    
     candidate_words = get_synonyms(word)
 
     if not candidate_words:  # If no synonyms found, return just the original word
@@ -53,9 +56,12 @@ def get_bert_synonyms(word, top_n=10):
     # Compute cosine similarity between input word and candidate words
     similarities = util.pytorch_cos_sim(word_embedding, candidate_embeddings)
 
-    top_n = min(top_n, len(candidate_words))  # Adjust `top_n` dynamically
+    # Option to return more or less results
+    top_n = min(top_n, len(candidate_words))  
     if top_n == 0:
-        return [word]  # If no candidates are found, return the original word
+        # If no candidates are found, return the original word
+        return [word]  
+    
     # Get top N most similar words
     top_indices = torch.topk(similarities, top_n).indices.tolist()[0]
     
@@ -63,8 +69,9 @@ def get_bert_synonyms(word, top_n=10):
     return [candidate_words[i] for i in top_indices]
 
 
+# Extract words from the sentence and find their synonyms and related terms.
 def extract_keywords(sentence):
-    """ Extract words from the sentence and find their synonyms and related terms. """
+    
     words = re.findall(r'\b\w+\b', sentence)  # Extract words
     expanded_keywords = set()
     for word in words:
@@ -73,12 +80,13 @@ def extract_keywords(sentence):
         expanded_keywords.update(wordnet_synonyms + bert_synonyms)  # Merge both
     return list(expanded_keywords), words  # Return both expanded keywords and original words
 
+
+ 
+# Search Wikipedia for articles containing the keywords.
 def search_wikipedia_articles(keywords, original_words):
-    """ 
-    Search Wikipedia for articles containing the keywords.
-    """
+    
     wiki = wikipediaapi.Wikipedia(
-        user_agent="Project/1.0 (contact: your-email@example.com)",  # Replace with your details
+        user_agent="Project/1.0 (contact: your-email@example.com)", 
         language="en"
     )
     results = {}
@@ -105,22 +113,28 @@ def search_wikipedia_articles(keywords, original_words):
 
                 # Ensure at least one original word or synonym appears
                 word_matches = [word.lower() in page_text for word in original_words]
-                if sum(word_matches) >= 1:  # Allow pages with at least one match
-                    results[page_title] = page.text  # Store relevant pages
+                
+                # Allow pages with at least one match
+                if sum(word_matches) >= 1: 
+
+                    # Store relevant pages
+                    results[page_title] = page.text  
 
     else:
         print(f"Error fetching Wikipedia results for query: {search_query}")
 
     return results
 
+# Merge two result dictionaries, avoiding duplicates
 def merge_results(expanded_results, original_results):
-    """ Merge two result dictionaries, avoiding duplicates. """
-    combined_results = {**expanded_results, **original_results}  # Merge without duplicates
+    combined_results = {**expanded_results, **original_results} 
     return combined_results
 
+# Count occurrences of keywords (words & synonyms) in Wikipedia text
 def count_word_frequencies(text, keywords):
-    """ Count occurrences of keywords (words & synonyms) in Wikipedia text. """
-    words = re.findall(r'\b\w+\b', text.lower())  # Tokenize Wikipedia text
+    
+    # Tokenize Wikipedia text
+    words = re.findall(r'\b\w+\b', text.lower())  
     word_counts = Counter(words)
     return {word: word_counts[word.lower()] for word in keywords if word.lower() in word_counts}
 
@@ -128,15 +142,15 @@ def count_word_frequencies(text, keywords):
 # Search Function
 ######################################################################################################
 
+# Searches Wikipedia for articles related to the given crossword clue.
+    #param sentence: The crossword clue to search for.
+    #param word_length: (Optional) Exact word length to filter Wikipedia results.
+    #return: A dictionary with Wikipedia search results and word frequency counts.
+    
 def search_wikipedia_for_clue(sentence, word_length=None):
-    """
-    Searches Wikipedia for articles related to the given crossword clue.
 
-    :param sentence: The crossword clue to search for.
-    :param word_length: (Optional) Exact word length to filter Wikipedia results.
-    :return: A dictionary with Wikipedia search results and word frequency counts.
-    """
-    keywords, original_words = extract_keywords(sentence)  # Get words + synonyms and original words
+    # Get words + synonyms and original words
+    keywords, original_words = extract_keywords(sentence)  
     
     # Perform both searches
     expanded_results = search_wikipedia_articles(keywords, original_words)
@@ -146,11 +160,14 @@ def search_wikipedia_for_clue(sentence, word_length=None):
     wiki_results = merge_results(expanded_results, original_results)
 
     word_frequencies = []
-    highest_counts = {}  # Stores highest count for each word
-    page_word_counts = {}  # Stores sum of counts for each Wikipedia page
+    # Store highest count for each word
+    highest_counts = {}  
+    # Store sum of counts for each Wikipedia page
+    page_word_counts = {}  
 
     for title, content in wiki_results.items():
-        word_counts = count_word_frequencies(content, keywords)  # Count words & synonyms
+        # Count words & synonyms
+        word_counts = count_word_frequencies(content, keywords)  
         
         # Track highest count for each word
         for word, count in word_counts.items():
@@ -168,7 +185,8 @@ def search_wikipedia_for_clue(sentence, word_length=None):
     if word_length:
         filtered_results = {title: text for title, text in wiki_results.items() if len(title) == word_length}
     else:
-        filtered_results = wiki_results  # No filtering, return all results
+        # No filtering, return all results
+        filtered_results = wiki_results  
 
     # Prepare output data
     result_data = {
@@ -177,7 +195,7 @@ def search_wikipedia_for_clue(sentence, word_length=None):
         "word_frequencies": word_frequencies,
     }
 
-    return result_data  # ✅ Now it returns data instead of printing directly
+    return result_data 
 
 ######################################################################################################
 # Example Usage
@@ -205,23 +223,22 @@ else:
 # Large Batch Testing
 ######################################################################################################
 
+#Test Wikipedia search using a sample of clues from the dataset. 
+# Checks if answers appear in Wikipedia **titles** AND/OR **page content**.
+# Saves results to a CSV file.
+# Used GenAI 
 def test_wikipedia_search(sample_size=10, output_file="\testing_results\wikipedia_search_results.csv"):
-    """ 
-    Test Wikipedia search using a sample of clues from the dataset. 
-    Checks if answers appear in Wikipedia **titles** AND/OR **page content**.
-    Saves results to a CSV file.
-    """
     
-    # Select a **random sample** of clues (avoids API rate limits)
+    # Select a random sample of clues (avoids API rate limits)
     sample_df = df.sample(n=sample_size, random_state=42)
 
     results = []  # Store evaluation results
 
-    for index, row in sample_df.iterrows():  # 🔹 FIXED: Looping only over sample
+    for index, row in sample_df.iterrows(): 
         clue = row["Clue"]
-        answer = row["Word"].strip().lower()  # Normalize the answer
+        answer = row["Word"].strip().lower() 
 
-        print(f"\n🔍 ({index+1}/{sample_size}) Searching Wikipedia for: {clue} (Expected answer: {answer})")
+        print(f"\n ({index+1}/{sample_size}) Searching Wikipedia for: {clue} (Expected answer: {answer})")
         
         # Extract keywords using BERT and WordNet
         keywords, original_words = extract_keywords(clue)
@@ -238,7 +255,7 @@ def test_wikipedia_search(sample_size=10, output_file="\testing_results\wikipedi
         content_match = False
         matched_page_title = "No Title Match"  # Default title if no match
 
-        # Check if the answer appears in the Wikipedia page **title** or **content**
+        # Check if the answer appears in the Wikipedia page title or content
         for page_title, page_text in wiki_results.items():
             if answer in page_title.lower():  
                 title_match = True  # Answer found in title

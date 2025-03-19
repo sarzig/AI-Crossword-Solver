@@ -6,8 +6,8 @@ import pandas as pd
 # Get one layer of synonyms
 ######################################################################################################
 
+# Fetch synonyms for a given word using the Datamuse API.
 def get_synonyms(word):
-    """Fetch synonyms for a given word using the Datamuse API."""
     url = f"https://api.datamuse.com/words?rel_syn={word}"
     response = requests.get(url)
 
@@ -21,10 +21,10 @@ def get_synonyms(word):
 # Get recursive/multi-layer synonyms
 ######################################################################################################
 
+# Recursively fetch synonyms up to a given depth, including original synonyms.
+
 def get_recursive_synonyms(word, depth):
     """
-    Recursively fetch synonyms up to a given depth, including original synonyms.
-    
     depth=1 → Only direct synonyms
     depth=2 → Synonyms + synonyms of synonyms (default)
     depth=3 → Goes one level deeper, and so on
