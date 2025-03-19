@@ -5,6 +5,17 @@ from clue_classification_and_processing.fill_in_the_blank import fill_in_the_bla
 from puzzle_objects.clue_and_board import Clue
 
 
+def float_equal(float_1, float_2, precision=3):
+    """
+    Quickie test helper that checks if floats are equal with some precision.
+    :param float_1: first number
+    :param float_2: second number
+    :param precision: default is 3, can change
+    :return: True if they're equal to that precision
+    """
+    return round(float_1 - float_2, precision) == 0
+
+
 def test_process_text_into_clue_answer():
     assert process_text_into_clue_answer("") == ""
     assert process_text_into_clue_answer("Hey There") == "heythere"
@@ -41,9 +52,9 @@ def test_preprocess_text():
     assert_preprocess("honky-tonk", "honkytonk")
     assert_preprocess("ex's", "exs")
     texas_page_text = rf""" The streak included such songs as "Ocean Front Property", "All My Ex's Live in Texas", "Famous Last Words of a Fool", and "Baby Blue". Strait finished the decade by winning the CMA Entertainer of the Year award in 1989. One year later, he won the award again.[31]"""
-    texas_result = 'the streak included such songs as ocean front property all my exs live in '\
-                   'texas famous last words of a fool and baby blue strait finished the decade '\
-                   'by winning the cma entertainer of the year award in 1989 one year later he '\
+    texas_result = 'the streak included such songs as ocean front property all my exs live in ' \
+                   'texas famous last words of a fool and baby blue strait finished the decade ' \
+                   'by winning the cma entertainer of the year award in 1989 one year later he ' \
                    'won the award again 31'
     assert_preprocess(texas_page_text, texas_result)
 
@@ -87,6 +98,6 @@ def test_fill_in_the_blank_with_possible_source():
     assert fill_in_the_blank_with_possible_source(Clue(clue_exes_in_texas),
                                                   texas_page_text) == "exs"
 
-    #everly = ('f 1957. Additional hits, including "Wake Up Little Susie," "All I Have to Do Is Dream," and "Problems", '
+    # everly = ('f 1957. Additional hits, including "Wake Up Little Susie," "All I Have to Do Is Dream," and "Problems", '
     #          'would follow through 1958. In')
-    #assert fill_in_the_blank_with_possible_source(Clue('test "all I have to ___ Dream"'), everly) == "do is"
+    # assert fill_in_the_blank_with_possible_source(Clue('test "all I have to ___ Dream"'), everly) == "do is"

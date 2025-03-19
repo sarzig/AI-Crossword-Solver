@@ -1,4 +1,5 @@
 import os
+import string
 import time
 import pandas as pd
 import numpy as np
@@ -15,6 +16,7 @@ import matplotlib.pyplot as plt
 from sklearn.cluster import KMeans
 from nltk.corpus import words
 from wordsegment import load, segment
+from nltk import pos_tag
 
 
 # Download NLTK libs
@@ -42,10 +44,11 @@ def get_clues_dataframe():
         root = os.sep.join(path_parts[:index + 1])
 
     # Load dataset
-    clues_path = os.path.join(root, r"data\nytcrosswords.csv")
+    clues_path = os.path.join(root, r"data//nytcrosswords.csv")
 
     clues_df = pd.read_csv(clues_path, encoding='latin1')
     return clues_df
+
 
 def count_proper_nouns(text):
     """
@@ -63,30 +66,79 @@ def count_proper_nouns(text):
 
     return proper_noun_count
 
+from nltk.corpus import brown
+from collections import Counter
+
+# Download necessary NLTK datasets
+nltk.download('brown')
+nltk.download('averaged_perceptron_tagger')
+brown_tagged_words = nltk.corpus.brown.tagged_words(tagset='universal')  # Using universal POS tags
+word_tag_counts = Counter(brown_tagged_words)
+nltk.download('universal_tagset')
+
+
+def is_first_word_proper_noun(clue):
+    """
+    Uses word tokenization with nltk to assess if the first word of a sentence is
+    a proper noun. There will occasionally be some ambiguity, but it's pretty
+    good at giving the right answer with sufficient context.
+
+    :param clue: clue to check, plaintext
+    :return: True if first word is proper noun, false if it's not
+    """
+
+    tokenized_clue = word_tokenize(clue)
+
+    # Lowercase only the first letter of the first word
+    # Lowercase proper nouns can still be identified as proper nouns. By doing this
+    # we increase the chance that ambiguous terms (like 'will' or 'mark') will
+    # be classes as non-proper nouns, even when they ARE proper nouns
+    #tokenized_clue[0] = tokenized_clue[0][0].lower() + tokenized_clue[0][1:]
+
+    # If the first word is recognized
+    pos_tagged_words = pos_tag(tokenized_clue)
+    print(pos_tagged_words)
+
+    # If the POS tag is Pronoun, plural pronoun, foreign word, or personal pronoun (Supposed to capture "I")
+    # then return True. Otherwise, False!
+    return pos_tagged_words[0][1] in ["NNP", "NNPS", "FW", "PRP"]
+
 
 def uppercase_percentage(clue):
     """
-    Given a clue, returns percentage of words which are uppercase (other
-    than first character of the clue).
+    This function takes a clue, separates it into words, and counts the number
+    of uppercase words, then divides that count by the total number of words.
 
-    :param clue:
-    :return:
+    There can be ambiguity with POS. Some examples that flag as the first
+    word NOT being a proper noun is: "Actress Moreno" or "Will Ferrel"
+
+    :param clue: crossword clue, plain string
+    :return: Percentage (float)
     """
-    # split into words
-    words = clue.split()
-    total_words = len(words)
+    words = clue.split()  # splits at spaces
 
-    print(words)
-    if total_words == 0:
-        return
-
-    # ignore first word, and check if next words
     upper_count = 0
-    for word in words[1:]:
-        if word[0].isupper():
-            upper_count += 1
+    for i in range(len(words)):
+        # strip out punctuation and check the first char
+        stripped_word = words[i].lstrip(string.punctuation)
 
-    return upper_count / total_words
+        # If there is some text left over after stripping, let's check further
+        if stripped_word != "":
+
+            # If the word is the first word, we need to inspect part of speech to know if it's
+            # a proper noun, or if it's just beginning-of-sentence-capitalization
+            if i == 0:
+                print("i == 0 and stripped_word[0].isupper():")
+                if stripped_word[0].isupper():
+                    if is_first_word_proper_noun(clue):
+                        upper_count += 1
+
+            # Any words following first are easy - add 1 to upper count if they are uppercase
+            else:
+                if stripped_word[0].isupper():
+                    upper_count += 1
+
+    return upper_count / len(words)
 
 
 def assign_primary_cluster(clue):
@@ -99,6 +151,7 @@ def assign_primary_cluster(clue):
     elif re.fullmatch(r"[A-Za-z]+", clue):  # Checks if the clue is a single word with only letters
         return "Single Word"
     return "Other"  # Default category for unspecified cases
+
 
 def analyze_pos_distribution(clue):
     tokens = word_tokenize(clue)
@@ -177,6 +230,19 @@ print(f"Time is {time2} seconds.")
 
 # Merge POS data with original DataFrame
 clues = pd.concat([clues, pos_data], axis=1).fillna(0)
-'''
+
 
 clues = get_clues_dataframe()
+new_clues = add_basic_features(clues)
+new_clues = new_clues[new_clues['percentage words (other than first word) that are upper-case'] == 0]
+
+Index(['Date', 'Word', 'Clue', 'ends in question', 'number words',
+       'length of clue', 'no alphabet characters', 'is quote',
+       'contains underscore', 'contains asterisk', 'contains done',
+       'number of non-consecutive periods in clue', 'is ellipsis in clue',
+       'avg word length', 'number commas in clue',
+       'percentage words (other than first word) that are upper-case',
+       'number non a-z or 1-9 characters in clue', 'contains e.g.',
+       'contains etc.'],
+      dtype='object')
+'''
