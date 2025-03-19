@@ -1,0 +1,24 @@
+Things to dive into
+
+
+Type of clue --> synonym search, OR definition then synonym
+* Flush, e.g.
+* Hijab, e.g. (veil)
+* Trophy, e.g. (award)
+* Musk, e.g. (odor)
+
+Type of clue --> dictionary search (searching definition)
+* Sit Shiva, e.g. (mourn)
+
+Clues often indicate that the answer should be brief, acronomy, or
+shortened
+* ..., in brief
+* ..., for short
+* presence of shortening or acronyms in clue itself
+
+
+Questions for Raj: 
+
+* If we apply all methodologies to all clues, assess success rate, 
+  can we cluster based on methology succes rate
+* 
