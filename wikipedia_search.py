@@ -7,10 +7,12 @@ import re
 from sentence_transformers import SentenceTransformer, util
 import torch
 import pandas as pd
+import clue_classification_and_processing
+from clue_classification_and_processing.clue_features import get_clues_dataframe 
 
 # Load the dataset
-csv_path = "nytcrosswords.csv"
-df = pd.read_csv(csv_path, encoding="ISO-8859-1")
+df = get_clues_dataframe()
+# df = pd.read_csv(csv_path, encoding="ISO-8859-1")
 
 # Keep only relevant columns
 df = df[['Clue', 'Word']].dropna()  # Drop missing values
@@ -122,13 +124,18 @@ def count_word_frequencies(text, keywords):
     word_counts = Counter(words)
     return {word: word_counts[word.lower()] for word in keywords if word.lower() in word_counts}
 
-def main():
-    sentence = input("Enter a sentence (clue): ")
-    word_length_input = input("Enter the exact word length for Wikipedia results (or press Enter to show all): ").strip()
-    
-    # If word length is provided, convert it to an integer; otherwise, set to None
-    word_length = int(word_length_input) if word_length_input.isdigit() else None
+######################################################################################################
+# Search Function
+######################################################################################################
 
+def search_wikipedia_for_clue(sentence, word_length=None):
+    """
+    Searches Wikipedia for articles related to the given crossword clue.
+
+    :param sentence: The crossword clue to search for.
+    :param word_length: (Optional) Exact word length to filter Wikipedia results.
+    :return: A dictionary with Wikipedia search results and word frequency counts.
+    """
     keywords, original_words = extract_keywords(sentence)  # Get words + synonyms and original words
     
     # Perform both searches
@@ -163,20 +170,40 @@ def main():
     else:
         filtered_results = wiki_results  # No filtering, return all results
 
-    # Print results
-    print("\nWikipedia Word Frequency Results:")
-    print("-" * 60)
+    # Prepare output data
+    result_data = {
+        "highest_word_counts": highest_counts,
+        "filtered_wikipedia_results": filtered_results,
+        "word_frequencies": word_frequencies,
+    }
 
-    # Print highest count for each word
-    for word, data in highest_counts.items():
-        print(f"{word.capitalize()} - Count: {data['count']} (Found in: {data['page']})")
+    return result_data  # ✅ Now it returns data instead of printing directly
 
-    print("\nAll Wikipedia pages retrieved:")
-    if filtered_results:
-        for title in filtered_results.keys():
-            print(f"- {title}")
-    else:
-        print("No Wikipedia pages matched the exact title length requirement.")
+######################################################################################################
+# Example Usage
+######################################################################################################
+
+clue = "Capital of France"
+word_length = 5  # Optional, can be None
+results = search_wikipedia_for_clue(clue, word_length)
+
+# Print results
+print("\nWikipedia Word Frequency Results:")
+print("-" * 60)
+for word, data in results["highest_word_counts"].items():
+    print(f"{word.capitalize()} - Count: {data['count']} (Found in: {data['page']})")
+
+print("\nAll Wikipedia pages retrieved:")
+if results["filtered_wikipedia_results"]:
+    for title in results["filtered_wikipedia_results"].keys():
+        print(f"- {title}")
+else:
+    print("No Wikipedia pages matched the exact title length requirement.")
+
+
+######################################################################################################
+# Large Batch Testing
+######################################################################################################
 
 def test_wikipedia_search(sample_size=10, output_file="wikipedia_search_results.csv"):
     """ 
@@ -249,13 +276,7 @@ def test_wikipedia_search(sample_size=10, output_file="wikipedia_search_results.
 
     # Save results to a CSV file
     results_df.to_csv(output_file, index=False, encoding="utf-8")
-    print(f"\n📁 Results saved to: {output_file}")
+    print(f"\n Results saved to: {output_file}")
 
-    # # Display full dataframe in Jupyter Notebook
-    # import ace_tools as tools
-    # tools.display_dataframe_to_user(name="Wikipedia Search Results", dataframe=results_df)
+# test_wikipedia_search(sample_size=20)
 
-test_wikipedia_search(sample_size=20)
-
-# if __name__ == "__main__":
-#     main()
