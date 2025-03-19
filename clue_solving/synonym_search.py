@@ -1,3 +1,4 @@
+import os
 import requests
 import pandas as pd
 
@@ -58,7 +59,15 @@ print(f"Expanded synonyms for '{word}': {synonyms}")
 ######################################################################################################
 
 # Load the data set
-csv_synonyms_path = 'single_word_clues(Sheet1).csv'
+# Get the absolute path of the current script
+current_dir = os.path.dirname(os.path.abspath(__file__))
+
+# Move up one level and then into the 'data' folder
+csv_synonyms_path = os.path.join(current_dir, '..', 'data', 'single_word_clues.csv')
+
+# Normalize the path to handle different OS separators
+csv_synonyms_path = os.path.normpath(csv_synonyms_path)
+
 df_test = pd.read_csv(csv_synonyms_path, encoding="ISO-8859-1")
 
 df_test_sample = df_test.sample(n = 100, random_state=42)
@@ -95,7 +104,7 @@ def check_synonym_accuracy(df):
     print(f"\n Synonym Match Accuracy: {accuracy:.2f}% ({results_df['Answer Found in Synonyms'].sum()} out of {len(df)})")
 
     # Save results to CSV
-    output_file = "synonym_search_results.csv"
+    output_file = "\testing_results\synonym_search_results.csv"
     results_df.to_csv(output_file, index=False, encoding="utf-8")
     print(f"\n Results saved to: {output_file}")
 
@@ -107,6 +116,6 @@ def check_synonym_accuracy(df):
 ######################################################################################################
 
 # Run the synonym accuracy check
-# results_df = check_synonym_accuracy(df_test_sample)
+results_df = check_synonym_accuracy(df_test_sample)
 
 # print(f"Results: {results_df}")

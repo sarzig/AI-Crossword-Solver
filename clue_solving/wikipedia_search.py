@@ -205,7 +205,7 @@ else:
 # Large Batch Testing
 ######################################################################################################
 
-def test_wikipedia_search(sample_size=10, output_file="wikipedia_search_results.csv"):
+def test_wikipedia_search(sample_size=10, output_file="\testing_results\wikipedia_search_results.csv"):
     """ 
     Test Wikipedia search using a sample of clues from the dataset. 
     Checks if answers appear in Wikipedia **titles** AND/OR **page content**.
