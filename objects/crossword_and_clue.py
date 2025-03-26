@@ -1,3 +1,4 @@
+import numpy as np
 import pandas as pd
 
 from clue_classification_and_processing.best_match_wiki_page import get_project_root
@@ -52,7 +53,7 @@ def validate_clue_df(path_to_file=None, df=None, raise_error=True):
                 else:
                     return "validate_clue_df issue: File must be a .csv or .xlsx"
 
-    # Raise error for missing columns or extra columns
+    # Raise error for missing columns
     required_columns = ["number", "start_col", "start_row", "end_col", "end_row", "clue"]
     missing_columns = [col for col in required_columns if col not in df.columns]
 
@@ -62,7 +63,6 @@ def validate_clue_df(path_to_file=None, df=None, raise_error=True):
             raise ValueError(f"Missing required columns: {missing_columns}")
         else:
             return f"validate_clue_df issue: Missing required columns: {missing_columns}"
-
 
     # Confirm that "number", "start_col", "start_row", "end_col", "end_row" are all ints
     int_columns = ["number", "start_col", "start_row", "end_col", "end_row"]
@@ -92,6 +92,25 @@ def validate_clue_df(path_to_file=None, df=None, raise_error=True):
         else:
             return 'validate_clue_df issue: Some entries in "clue" are blank or missing.'
 
+    # Confirm no duplicates of the combination ["start_col", "start_row", "end_col", "end_row"]
+    coordinate_columns = ["start_col", "start_row", "end_col", "end_row"]
+    duplicated_coordinates = df.duplicated(subset=coordinate_columns)
+    if duplicated_coordinates.any():
+        dupe_rows = df[duplicated_coordinates].to_dict(orient="records")
+        if raise_error:
+            raise ValueError(f"Duplicate coordinate entries found: {dupe_rows}")
+        else:
+            return f"validate_clue_df issue: Duplicate coordinate entries found: {dupe_rows}"
+
+    # Confirm all ["start_col", "start_row", "end_col", "end_row"] are positive
+    negative_coordinates = df[coordinate_columns][df[coordinate_columns] < 0].dropna(how="all")
+    if not negative_coordinates.empty:
+        bad_rows = df[df[coordinate_columns].lt(0).any(axis=1)].to_dict(orient="records")
+        if raise_error:
+            raise ValueError(f"Negative values found in coordinates: {bad_rows}")
+        else:
+            return f"validate_clue_df issue: Negative values found in coordinates: {bad_rows}"
+
     # If we've reached this point with no errors, it's validated
     return True
 
@@ -111,6 +130,10 @@ class Crossword:
         self.grid_width = int(self.clue_df["end_col"].max() + 1)  # max column + 1
         self.table_name = table_name
 
+        # Generate the numpy array to store the solved grid, where spaces with [X] are
+        # the black spaces of a crossword
+        self.grid = self.generate_grid()
+
     @staticmethod
     def get_direction(clue_entry):
         start = f'start=({clue_entry["start_col"]}, {clue_entry["start_row"]})'
@@ -128,7 +151,8 @@ class Crossword:
 
     @staticmethod
     def get_length(clue_entry):
-        return abs(clue_entry["end_col"] - clue_entry["start_col"]) + abs(clue_entry["end_row"] - clue_entry["start_row"]) + 1
+        return abs(clue_entry["end_col"] - clue_entry["start_col"]) + abs(
+            clue_entry["end_row"] - clue_entry["start_row"]) + 1
 
     def optional_check_length(self):
         # If there's a column called 'length (optional column, for checking only)',
@@ -144,6 +168,22 @@ class Crossword:
                     raise ValueError(f"Length mismatch detected in optional column: {details}")
             self.clue_df.drop(columns=[optional_col], inplace=True)
 
+    def optional_check_answer_length(self):
+        # If there's a column called 'answer (optional column, for checking only)',
+        # then check if there are any mismatch between that column's word length and "length".
+        # If so, raise error with details about mismatch.
+        # If not, delete optional column.
+        optional_col = "answer (optional column, for checking only)"
+        if optional_col in self.clue_df.columns:
+            if self.clue_df[optional_col].notna().any():
+                answer_lengths = self.clue_df[optional_col].dropna().astype(str).str.len()
+                expected_lengths = self.clue_df.loc[answer_lengths.index, "length"]
+                mismatched = self.clue_df.loc[answer_lengths.index][answer_lengths != expected_lengths]
+                if not mismatched.empty:
+                    details = mismatched[["number", optional_col, "length"]].to_dict(orient="records")
+                    raise ValueError(f"Answer length mismatch detected in optional column: {details}")
+            self.clue_df.drop(columns=[optional_col], inplace=True)
+
     def enrich_clue_df(self):
         # For each entry in self.clue_df, if start_col == end_col then set
         # self.clue_df["number_direction"] to self.clue_df["number"] +
@@ -154,9 +194,136 @@ class Crossword:
 
         # If optional column is included, use it to check lengths and then delete that optional column
         self.optional_check_length()
+        self.optional_check_answer_length()
+
+    def generate_grid(self):
+        # Create a blank crossword grid filled with "[X]"
+        grid = np.full((self.grid_height, self.grid_width), "[■]", dtype=object)
+
+        # Based on contents of the clue_df, remove the [X]s:
+        for _, clue in self.clue_df.iterrows():
+            start_row = clue["start_row"]
+            start_col = clue["start_col"]
+            end_row = clue["end_row"]
+            end_col = clue["end_col"]
+
+            # Determine direction
+            if start_row == end_row:  # Across
+                for c in range(start_col, end_col + 1):
+                    grid[start_row][c] = "[ ]"
+            elif start_col == end_col:  # Down
+                for r in range(start_row, end_row + 1):
+                    grid[r][start_col] = "[ ]"
+            else:
+                raise ValueError(f"Invalid clue direction (not across or down): {clue.to_dict()}")
+
+        return grid
+
+    def grid_string(self):
+        # Returns string with plain text grid info
+        lines = []
+        width = self.grid.shape[1]
+        horizontal_border = "+---" + "---" * width + "---+"
+        empty_line = "|   " + "   " * width + "   |"
+
+        lines.append(horizontal_border)
+        lines.append(empty_line)  # bordered blank line after top border
+        for row in self.grid:
+            line = "|   " + "".join(cell for cell in row) + "   |"
+            lines.append(line)
+        lines.append(empty_line)  # bordered blank line before bottom border
+        lines.append(horizontal_border)
+
+        return "\n".join(lines)
+
+    def detailed_print(self):
+        print("+" + "-" * (len("|   " + "".join(self.grid[0]) + "   |") - 2) + "+")
+        print("Crossword Info")
+
+        # Title (optional)
+        if self.table_name:
+            print(f"Title: {self.table_name}")
+
+        # Grid size
+        print(f"Grid size: {self.grid_height} rows × {self.grid_width} columns")
+
+        # Percent completion (based on how many [ ] vs non-[X] cells)
+        non_blacks = (self.grid != "[■]").sum()
+        empties = (self.grid == "[ ]").sum()
+        filled_cells = non_blacks - empties
+        percent_complete = (filled_cells / non_blacks * 100)
+        print(f"Fill progress: {percent_complete:.0f}%")
+
+        # Grid
+        print("\nGrid:\n" + self.grid_string())
+
+    def place_word(self, word, grid_location, allow_overwriting=True, flag_overwriting=False):
+        """
+        Place a word into the grid, given a grid location.
+
+        :param word: word to be placed
+        :param grid_location: location like "21-Across"
+        :param allow_overwriting: if True, this will overwrite existing characters
+        :param flag_overwriting: if True (and if allow_overwriting is True, this will overwrite with a
+                                 print statement)
+        :return:
+        """
+        # Null check
+        if word is None or grid_location is None:
+            raise ValueError("Need word and valid grid location.")
+
+        # Confirm word only contains AZ chars and uppercase it
+        word = word.upper()
+        if not word.isalpha():
+            raise ValueError(f"Word '{word}' must only contain letters A-Z.")
+
+        # Confirm grid location exists and if so, harmonize the way to refer to it
+        clue = self.clue_df[self.clue_df["number_direction"].str.lower() == grid_location.lower()]
+        if clue.empty:
+            raise ValueError(f"Grid location '{grid_location}' not found in clues.")
+        grid_location = clue.iloc[0]["number_direction"]  # put grid_location in exact format from self.clue_df
+
+        # Confirm word is correct length
+        expected_length = clue.iloc[0]["length"]
+        if len(word) != expected_length:
+            raise ValueError(f"Word '{word}' length {len(word)} does not match expected length {expected_length}"
+                             f"for {grid_location}.")
+
+        # Place the word
+        self.place_word_onto_numpy_array(word, grid_location, allow_overwriting, flag_overwriting)
+        self.detailed_print()
+
+    def place_word_onto_numpy_array(self, word, grid_location, allow_overwriting, flag_overwriting):
+        # This places a word, assumes that it is called within place_word_wrapper()
+
+        # Get the specific clue entry
+        clue = self.clue_df[self.clue_df["number_direction"] == grid_location]  # get row for this grid-location
+        clue = clue.iloc[0]  # convert to series
+        start_row = clue["start_row"]
+        start_col = clue["start_col"]
+
+        for i, char in enumerate(word):
+            if "Across" in grid_location:
+                current = self.grid[start_row][start_col + i]
+                if current != "[ ]" and not allow_overwriting and current != f"[{char}]":
+                    raise ValueError(f"Cannot overwrite non-empty cell at ({start_row}, {start_col + i})")
+                if flag_overwriting and current != "[ ]":
+                    print(f"Overwriting cell ({start_row}, {start_col + i}) from {current} to [{char}]")
+                self.grid[start_row][start_col + i] = f"[{char}]"
+            elif "Down" in grid_location:
+                current = self.grid[start_row + i][start_col]
+                if current != "[ ]" and not allow_overwriting and current != f"[{char}]":
+                    raise ValueError(f"Cannot overwrite non-empty cell at ({start_row + i}, {start_col})")
+                if flag_overwriting and current != "[ ]":
+                    print(f"Overwriting cell ({start_row + i}, {start_col}) from {current} to [{char}]")
+                self.grid[start_row + i][start_col] = f"[{char}]"
+            else:
+                raise ValueError(f"Unsupported direction in location: {grid_location}")
 
 
 big_loc = f"{get_project_root()}/data/puzzle_samples/wednesday_03262025.xlsx"
 mini_loc = f"{get_project_root()}/data/puzzle_samples/mini_03262025.xlsx"
 df = pd.read_excel(big_loc)
-mini_crossword = Crossword(clue_df=df)
+my_crossword = Crossword(clue_df=df)
+my_crossword.detailed_print()
+my_crossword.place_word("hello", "5-across")
