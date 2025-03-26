@@ -8,8 +8,7 @@ import wikipediaapi
 import spacy
 
 
-
-def get_clues_dataframe():
+def get_project_root():
     """
     Uses OS lib to search for cwd, and then walks back to project root.
 
@@ -20,13 +19,25 @@ def get_clues_dataframe():
     path_parts = cwd.split(os.sep)
 
     # Look for project name in the path
-    root = ""
+    project_root = ""
     if "ai_crossword_solver" in path_parts:
         index = path_parts.index("ai_crossword_solver")
-        root = os.sep.join(path_parts[:index + 1])
+        project_root = os.sep.join(path_parts[:index + 1])
+
+    return project_root
+
+
+def get_clues_dataframe():
+    """
+    Uses OS lib to search for cwd, and then walks back to project root.
+
+    :return:
+    """
+    # Get project root
+    project_root = get_project_root()
 
     # Load dataset
-    clues_path = os.path.join(root, r"data//nytcrosswords.csv")
+    clues_path = os.path.join(project_root, r"data//nytcrosswords.csv")
 
     clues_df = pd.read_csv(clues_path, encoding='latin1')
     return clues_df
@@ -170,6 +181,7 @@ def find_in_wiki(wiki, clues_df):
             if x == "1":
                 return
 
+'''
 time_init = time.time()
 clues = get_clues_dataframe()
 clues["Clue_clean"] = clues["Clue"].str.replace(rf"[{string.punctuation}]", "", regex=True)
@@ -187,3 +199,4 @@ clues["named_entities"] = clues["Clue"].apply(extract_wikipedia_search_terms_nam
 time_end = time.time()
 
 clues.to_excel("Wikipedia named entity search2.xlsx")
+'''
