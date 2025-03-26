@@ -26,14 +26,14 @@ nltk.download('words')  # ENGLISH words
 # Load a set of known English words
 english_vocab = set(words.words())
 
-
+## Get data helpers ---------------------------------------------------------------------------
 def get_clues_dataframe():
     """
     Uses OS lib to search for cwd, and then walks back to project root.
 
     :return:
     """
-    # get cwd and split into consitutent parts
+    # get cwd and split into constituent parts
     cwd = os.getcwd()
     path_parts = cwd.split(os.sep)
 
@@ -49,7 +49,7 @@ def get_clues_dataframe():
     clues_df = pd.read_csv(clues_path, encoding='latin1')
     return clues_df
 
-
+## String operation helpers ----------------------------------------------------------------------
 def count_proper_nouns(text):
     """
     Counts the number of proper nouns (NNP, NNPS) in a given text.
@@ -66,15 +66,6 @@ def count_proper_nouns(text):
 
     return proper_noun_count
 
-from nltk.corpus import brown
-from collections import Counter
-
-# Download necessary NLTK datasets
-nltk.download('brown')
-nltk.download('averaged_perceptron_tagger')
-brown_tagged_words = nltk.corpus.brown.tagged_words(tagset='universal')  # Using universal POS tags
-word_tag_counts = Counter(brown_tagged_words)
-nltk.download('universal_tagset')
 
 
 def is_first_word_proper_noun(clue):
@@ -162,40 +153,37 @@ def analyze_pos_distribution(clue):
     return pos_percentage
 
 
-def classify_language(answer):
-    if answer.istitle():  # Check if it's a proper noun (first letter capitalized)
-        return "Proper Noun"
-    elif answer.lower() in english_vocab:  # Check if it's in the English dictionary
-        return "English"
-    else:
-        return "Foreign"
-
-
-
-# Apply the function
-#clues["Primary Cluster"] = clues["Clue"].apply(assign_primary_cluster)
-#clues["Cluster"] = ''
-
 def add_basic_features(clues_df):
-    # add features
-    clues_df["ends in question"] = clues_df["Clue"].str.endswith("?")
+    """
+    Given an input dataframe, this adds feature columns.
+
+    Some clues were created or enhanced with genai.
+
+    :param clues_df: input df
+    :return: modified df with added columns
+    """
+
+    # Length and casing related features
     clues_df["number words"] = clues_df["Clue"].str.split().apply(len)
     clues_df["length of clue"] = clues_df["Clue"].str.len()
+    clues_df["avg word length"] = clues_df["Clue"].apply(lambda x: sum(len(word) for word in x.split()) / len(x.split()) if x.split() else 0)
+    clues_df["percentage words that are upper-case"] = clues_df["Clue"].apply(uppercase_percentage)
+
+    # Character related features
+    clues_df["ends in question"] = clues_df["Clue"].str.endswith("?")
     clues_df["no alphabet characters"] = clues_df["Clue"].apply(lambda x: len(re.sub(r'[A-Za-z]', '', x)))
     clues_df["is quote"] = clues_df["Clue"].str.endswith('"') & clues_df["Clue"].str.startswith('"')
     clues_df["contains underscore"] = clues_df["Clue"].str.contains(r"_", case=False, na=False)
     clues_df["contains asterisk"] = clues_df["Clue"].str.contains(r"\*", case=False, na=False)
-    clues_df["contains done"] = clues_df["Clue"].str.contains(r"done", case=False, na=False)
     clues_df["number of non-consecutive periods in clue"] = clues_df["Clue"].apply(lambda x: len(re.findall(r"(?<!\.)\.(?!\.)", x)))
     clues_df["is ellipsis in clue"] = clues_df["Clue"].str.contains(r"\.\.\.", case=False, na=False)
-    clues_df["avg word length"] = clues_df["Clue"].apply(lambda x: sum(len(word) for word in x.split()) / len(x.split()) if x.split() else 0)
     clues_df["number commas in clue"] = clues_df["Clue"].apply(lambda x: x.count(","))
-    clues_df["percentage words (other than first word) that are upper-case"] = clues_df["Clue"].apply(uppercase_percentage)
     clues_df["number non a-z or 1-9 characters in clue"] = clues_df["Clue"].apply(lambda x: sum(not re.match(r"[A-Za-z0-9]", c) for c in x) / len(x) if len(x) > 0 else 0)
     clues_df["contains e.g."] = clues_df["Clue"].str.contains(r"\be\.g\.", case=False, na=False)
     clues_df["contains etc."] = clues_df["Clue"].str.contains(r"\betc\.", case=False, na=False)
 
     return clues_df
+
 
 def kmeans_clustering_clues_dataframe(clues_df):
     # Drop non-feature columns

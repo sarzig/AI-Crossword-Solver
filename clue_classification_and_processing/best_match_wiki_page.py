@@ -1,10 +1,35 @@
+import os
 import re
-
+import string
+import time
+import openpyxl
+import pandas as pd
 import wikipediaapi
-from clue_classification_and_processing.clue_features import get_clues_dataframe
 import spacy
 
-clues = get_clues_dataframe()
+
+
+def get_clues_dataframe():
+    """
+    Uses OS lib to search for cwd, and then walks back to project root.
+
+    :return:
+    """
+    # get cwd and split into constituent parts
+    cwd = os.getcwd()
+    path_parts = cwd.split(os.sep)
+
+    # Look for project name in the path
+    root = ""
+    if "ai_crossword_solver" in path_parts:
+        index = path_parts.index("ai_crossword_solver")
+        root = os.sep.join(path_parts[:index + 1])
+
+    # Load dataset
+    clues_path = os.path.join(root, r"data//nytcrosswords.csv")
+
+    clues_df = pd.read_csv(clues_path, encoding='latin1')
+    return clues_df
 
 # Load spaCy English model with Named Entity Recognition (NER)
 try:
@@ -44,6 +69,7 @@ def extract_wikipedia_search_terms_proper_nouns(clue_text):
     search_terms = list(set(proper_nouns))
 
     return search_terms
+
 
 def extract_wikipedia_search_terms_named_entities(clue_text):
     """
@@ -87,14 +113,6 @@ def extract_wikipedia_search_terms(clue_text):
     search_terms = list(set(named_entities + proper_nouns))
 
     return search_terms
-
-clues = clues.head(100)
-clues["proper_nouns"] = clues["Clue"].apply(extract_wikipedia_search_terms_proper_nouns)
-clues["named_entities"] = clues["Clue"].apply(extract_wikipedia_search_terms_named_entities)
-clues["proper_nouns_and_named_entities"] = clues["Clue"].apply(extract_wikipedia_search_terms)
-
-
-wiki = wikipediaapi.Wikipedia(user_agent='MyProjectName (merlin@example.com)', language='en')
 
 def find_in_wiki(wiki, clues_df):
 
@@ -152,4 +170,20 @@ def find_in_wiki(wiki, clues_df):
             if x == "1":
                 return
 
-find_in_wiki(wiki, clues)
+time_init = time.time()
+clues = get_clues_dataframe()
+clues["Clue_clean"] = clues["Clue"].str.replace(rf"[{string.punctuation}]", "", regex=True)
+
+# Then filter based on presence of a capital letter after the first character
+clues = clues[clues["Clue_clean"].str[1:].str.contains(r'[A-Z]')].reset_index(drop=True)
+
+# Optional: drop the cleaned column if you don't need it
+clues = clues.drop(columns=["Clue_clean"])
+
+clues = clues.head(100000)
+clues["proper_nouns"] = clues["Clue"].apply(extract_wikipedia_search_terms_proper_nouns)
+clues["named_entities"] = clues["Clue"].apply(extract_wikipedia_search_terms_named_entities)
+#clues["proper_nouns_and_named_entities"] = clues["Clue"].apply(extract_wikipedia_search_terms)
+time_end = time.time()
+
+clues.to_excel("Wikipedia named entity search2.xlsx")
