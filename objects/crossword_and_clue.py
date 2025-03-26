@@ -2,6 +2,7 @@ import numpy as np
 import pandas as pd
 
 from clue_classification_and_processing.best_match_wiki_page import get_project_root
+from clue_classification_and_processing.helpers import conditional_raise, print_if
 
 
 def validate_clue_df(path_to_file=None, df=None, raise_error=True):
@@ -27,17 +28,13 @@ def validate_clue_df(path_to_file=None, df=None, raise_error=True):
 
     # Null checks
     if path_to_file is None and df is None:
-        if raise_error:
-            raise ValueError("Cannot validate_clue_df with no path_to_file or df")
-        else:
-            return "validate_clue_df issue: Cannot validate_clue_df with no path_to_file or df"
+        conditional_raise(ValueError("Cannot validate_clue_df with no path_to_file or df"), raise_error)
+        return "validate_clue_df issue: Cannot validate_clue_df with no path_to_file or df"
 
     # Raise error if both path_to_file and df are not None
     if path_to_file is not None and df is not None:
-        if raise_error:
-            raise ValueError("Provide either path_to_file or df, not both.")
-        else:
-            return "validate_clue_df issue: Provide either path_to_file or df, not both."
+        conditional_raise(ValueError("Provide either path_to_file or df, not both."), raise_error)
+        return "validate_clue_df issue: Provide either path_to_file or df, not both."
 
     # Check if the file is xlsx or csv. If neither, raise appropriate error.
     # If it is xlsx or csv, read into a dataframe named df
@@ -48,10 +45,8 @@ def validate_clue_df(path_to_file=None, df=None, raise_error=True):
             elif path_to_file.endswith(".xlsx"):
                 df = pd.read_excel(path_to_file)
             else:
-                if raise_error:
-                    raise ValueError("File must be a .csv or .xlsx")
-                else:
-                    return "validate_clue_df issue: File must be a .csv or .xlsx"
+                conditional_raise(ValueError("File must be a .csv or .xlsx"), raise_error)
+                return "validate_clue_df issue: File must be a .csv or .xlsx"
 
     # Raise error for missing columns
     required_columns = ["number", "start_col", "start_row", "end_col", "end_row", "clue"]
@@ -59,10 +54,8 @@ def validate_clue_df(path_to_file=None, df=None, raise_error=True):
 
     # Missing
     if missing_columns:
-        if raise_error:
-            raise ValueError(f"Missing required columns: {missing_columns}")
-        else:
-            return f"validate_clue_df issue: Missing required columns: {missing_columns}"
+        conditional_raise(ValueError(f"Missing required columns: {missing_columns}"), raise_error)
+        return f"validate_clue_df issue: Missing required columns: {missing_columns}"
 
     # Confirm that "number", "start_col", "start_row", "end_col", "end_row" are all ints
     int_columns = ["number", "start_col", "start_row", "end_col", "end_row"]
@@ -71,45 +64,35 @@ def validate_clue_df(path_to_file=None, df=None, raise_error=True):
         if not pd.api.types.is_numeric_dtype(df[col]) or not (df[col].dropna() % 1 == 0).all():
             non_int_columns.append(col)
     if non_int_columns:
-        if raise_error:
-            raise ValueError(f"Expected integer columns: {non_int_columns}")
-        else:
-            return f"validate_clue_df issue: Expected integer columns: {non_int_columns}"
+        conditional_raise(ValueError(f"Expected integer columns: {non_int_columns}"), raise_error)
+        return f"validate_clue_df issue: Expected integer columns: {non_int_columns}"
 
     # Check for more than 2 instances of "number" (only can have across and down, no more than that!)
     counts = df["number"].value_counts()
     too_many = counts[counts > 2].index.tolist()
     if too_many:
-        if raise_error:
-            raise ValueError(f'"number" values appear more than twice: {too_many}')
-        else:
-            return f'validate_clue_df issue: "number" values appear more than twice: {too_many}'
+        conditional_raise(ValueError(f'"number" values appear more than twice: {too_many}'), raise_error)
+        return f'validate_clue_df issue: "number" values appear more than twice: {too_many}'
 
     # if any clues are blank, raise error
     if df["clue"].isna().any() or (df["clue"].astype(str).str.strip() == "").any():
-        if raise_error:
-            raise ValueError('Some entries in "clue" are blank or missing.')
-        else:
-            return 'validate_clue_df issue: Some entries in "clue" are blank or missing.'
+        conditional_raise(ValueError('Some entries in "clue" are blank or missing.'), raise_error)
+        return 'validate_clue_df issue: Some entries in "clue" are blank or missing.'
 
     # Confirm no duplicates of the combination ["start_col", "start_row", "end_col", "end_row"]
     coordinate_columns = ["start_col", "start_row", "end_col", "end_row"]
     duplicated_coordinates = df.duplicated(subset=coordinate_columns)
     if duplicated_coordinates.any():
         dupe_rows = df[duplicated_coordinates].to_dict(orient="records")
-        if raise_error:
-            raise ValueError(f"Duplicate coordinate entries found: {dupe_rows}")
-        else:
-            return f"validate_clue_df issue: Duplicate coordinate entries found: {dupe_rows}"
+        conditional_raise(ValueError(f"Duplicate coordinate entries found: {dupe_rows}"), raise_error)
+        return f"validate_clue_df issue: Duplicate coordinate entries found: {dupe_rows}"
 
     # Confirm all ["start_col", "start_row", "end_col", "end_row"] are positive
     negative_coordinates = df[coordinate_columns][df[coordinate_columns] < 0].dropna(how="all")
     if not negative_coordinates.empty:
         bad_rows = df[df[coordinate_columns].lt(0).any(axis=1)].to_dict(orient="records")
-        if raise_error:
-            raise ValueError(f"Negative values found in coordinates: {bad_rows}")
-        else:
-            return f"validate_clue_df issue: Negative values found in coordinates: {bad_rows}"
+        conditional_raise(ValueError(f"Negative values found in coordinates: {bad_rows}"), raise_error)
+        return f"validate_clue_df issue: Negative values found in coordinates: {bad_rows}"
 
     # If we've reached this point with no errors, it's validated
     return True
@@ -257,7 +240,11 @@ class Crossword:
         # Grid
         print("\nGrid:\n" + self.grid_string())
 
-    def place_word(self, word, grid_location, allow_overwriting=True, flag_overwriting=False):
+    def place_word(self, word, grid_location,
+                   allow_overwriting=True,
+                   flag_overwriting=False,
+                   raise_errors=False,
+                   flag_errors=True):
         """
         Place a word into the grid, given a grid location.
 
@@ -266,35 +253,56 @@ class Crossword:
         :param allow_overwriting: if True, this will overwrite existing characters
         :param flag_overwriting: if True (and if allow_overwriting is True, this will overwrite with a
                                  print statement)
+        :param flag_errors:
+        :param raise_errors:
         :return:
         """
         # Null check
         if word is None or grid_location is None:
-            raise ValueError("Need word and valid grid location.")
+            error_statement = "Need word and valid grid location."
+            conditional_raise(ValueError(error_statement), raise_errors)
+            print_if(error_statement, flag_errors)
+            return False
 
         # Confirm word only contains AZ chars and uppercase it
         word = word.upper()
         if not word.isalpha():
-            raise ValueError(f"Word '{word}' must only contain letters A-Z.")
+            error_statement = f"Word '{word}' must only contain letters A-Z."
+            conditional_raise(ValueError(error_statement), raise_errors)
+            print_if(error_statement, flag_errors)
+            return False
 
         # Confirm grid location exists and if so, harmonize the way to refer to it
         clue = self.clue_df[self.clue_df["number_direction"].str.lower() == grid_location.lower()]
         if clue.empty:
-            raise ValueError(f"Grid location '{grid_location}' not found in clues.")
+            error_statement = f"Grid location '{grid_location}' not found in clues."
+            conditional_raise(ValueError(error_statement), raise_errors)
+            print_if(error_statement, flag_errors)
+            return False
+
         grid_location = clue.iloc[0]["number_direction"]  # put grid_location in exact format from self.clue_df
 
         # Confirm word is correct length
         expected_length = clue.iloc[0]["length"]
         if len(word) != expected_length:
-            raise ValueError(f"Word '{word}' length {len(word)} does not match expected length {expected_length}"
-                             f"for {grid_location}.")
+            error_statement = f"Word '{word}' length {len(word)} does not match "\
+                              f"expected length {expected_length} for {grid_location}."
+            conditional_raise(ValueError(error_statement), raise_errors)
+            print_if(error_statement, flag_errors)
+            return False
 
-        # Place the word
-        self.place_word_onto_numpy_array(word, grid_location, allow_overwriting, flag_overwriting)
-        self.detailed_print()
+        # Place the word and return True or False
+        try:
+            self.place_word_onto_numpy_array(word, grid_location, allow_overwriting, flag_overwriting)
+            return True
+        except Exception as e:
+            conditional_raise(e, raise_errors)
+            print_if(e, flag_errors)
+            return False
 
     def place_word_onto_numpy_array(self, word, grid_location, allow_overwriting, flag_overwriting):
-        # This places a word, assumes that it is called within place_word_wrapper()
+        # This places a word, assumes that it is called within place_word_wrapper() which
+        # does some pre-processing on word and grid_location
 
         # Get the specific clue entry
         clue = self.clue_df[self.clue_df["number_direction"] == grid_location]  # get row for this grid-location
@@ -303,20 +311,25 @@ class Crossword:
         start_col = clue["start_col"]
 
         for i, char in enumerate(word):
+            target = f"[{char}]"
             if "Across" in grid_location:
                 current = self.grid[start_row][start_col + i]
-                if current != "[ ]" and not allow_overwriting and current != f"[{char}]":
-                    raise ValueError(f"Cannot overwrite non-empty cell at ({start_row}, {start_col + i})")
-                if flag_overwriting and current != "[ ]":
-                    print(f"Overwriting cell ({start_row}, {start_col + i}) from {current} to [{char}]")
-                self.grid[start_row][start_col + i] = f"[{char}]"
+                if current != "[ ]" and current != target:
+                    if not allow_overwriting:
+                        raise ValueError(f"Cannot overwrite non-empty cell at ({start_row}, {start_col + i})")
+                    if flag_overwriting:
+                        print(f"Overwriting cell ({start_row}, {start_col + i}) from {current} to {target}")
+                self.grid[start_row][start_col + i] = target
+
             elif "Down" in grid_location:
                 current = self.grid[start_row + i][start_col]
-                if current != "[ ]" and not allow_overwriting and current != f"[{char}]":
-                    raise ValueError(f"Cannot overwrite non-empty cell at ({start_row + i}, {start_col})")
-                if flag_overwriting and current != "[ ]":
-                    print(f"Overwriting cell ({start_row + i}, {start_col}) from {current} to [{char}]")
-                self.grid[start_row + i][start_col] = f"[{char}]"
+                if current != "[ ]" and current != target:
+                    if not allow_overwriting:
+                        raise ValueError(f"Cannot overwrite non-empty cell at ({start_row + i}, {start_col})")
+                    if flag_overwriting:
+                        print(f"Overwriting cell ({start_row + i}, {start_col}) from {current} to {target}")
+                self.grid[start_row + i][start_col] = target
+
             else:
                 raise ValueError(f"Unsupported direction in location: {grid_location}")
 
@@ -326,4 +339,4 @@ mini_loc = f"{get_project_root()}/data/puzzle_samples/mini_03262025.xlsx"
 df = pd.read_excel(big_loc)
 my_crossword = Crossword(clue_df=df)
 my_crossword.detailed_print()
-my_crossword.place_word("hello", "5-across")
+result = my_crossword.place_word("helldo", "5-across")

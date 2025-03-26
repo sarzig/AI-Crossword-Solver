@@ -18,7 +18,6 @@ from nltk.corpus import words
 from wordsegment import load, segment
 from nltk import pos_tag
 
-
 # Download NLTK libs
 nltk.download('punkt_tab')
 nltk.download('averaged_perceptron_tagger_eng')
@@ -27,27 +26,6 @@ nltk.download('words')  # ENGLISH words
 english_vocab = set(words.words())
 
 ## Get data helpers ---------------------------------------------------------------------------
-def get_clues_dataframe():
-    """
-    Uses OS lib to search for cwd, and then walks back to project root.
-
-    :return:
-    """
-    # get cwd and split into constituent parts
-    cwd = os.getcwd()
-    path_parts = cwd.split(os.sep)
-
-    # Look for project name in the path
-    root = ""
-    if "ai_crossword_solver" in path_parts:
-        index = path_parts.index("ai_crossword_solver")
-        root = os.sep.join(path_parts[:index + 1])
-
-    # Load dataset
-    clues_path = os.path.join(root, r"data//nytcrosswords.csv")
-
-    clues_df = pd.read_csv(clues_path, encoding='latin1')
-    return clues_df
 
 ## String operation helpers ----------------------------------------------------------------------
 def count_proper_nouns(text):

@@ -9,12 +9,6 @@ wiki = wikipediaapi.Wikipedia(user_agent='MyProjectName (merlin@example.com)', l
 example_page = wiki.page("John Smith")
 category_string = ",".join(example_page.categories.keys())
 
-
-def print_if(statement, print_bool):
-    if print_bool:
-        print(statement)
-
-
 def is_answer_in_wikipedia_search_space(search_term, answer, print_statement=True):
     """
     Given a search term and an answer, this invokes get_wikipedia_search_space()
