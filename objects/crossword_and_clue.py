@@ -1,8 +1,6 @@
 import numpy as np
 import pandas as pd
-
-from clue_classification_and_processing.best_match_wiki_page import get_project_root
-from clue_classification_and_processing.helpers import conditional_raise, print_if
+from clue_classification_and_processing.helpers import conditional_raise, print_if, get_project_root
 
 
 def validate_clue_df(path_to_file=None, df=None, raise_error=True):
@@ -334,6 +332,7 @@ class Crossword:
             else:
                 raise ValueError(f"Unsupported direction in location: {grid_location}")
 
+"""
 lg_loc = f"{get_project_root()}/data/puzzle_samples/sunday_03092025.csv"
 med_loc = f"{get_project_root()}/data/puzzle_samples/wednesday_03262025.xlsx"
 mini_loc = f"{get_project_root()}/data/puzzle_samples/mini_03262025.xlsx"
@@ -342,3 +341,4 @@ df = pd.read_csv(lg_loc)
 my_crossword = Crossword(clue_df=df)
 my_crossword.detailed_print()
 result = my_crossword.place_word("helldo", "5-across")
+"""

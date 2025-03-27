@@ -5,6 +5,7 @@ import pandas as pd
 from bs4 import BeautifulSoup
 
 from clue_classification_and_processing.helpers import get_project_root
+from objects.crossword_and_clue import Crossword
 
 """
 This entire parsing was created with ChatGPT.
@@ -241,7 +242,6 @@ def get_random_clue_df(folder=r"data/puzzle_samples/raw_html/", return_type="All
     if "random" in return_type:
         selected = random.choice(filtered)
         full_path = os.path.join(get_project_root(), folder, selected)
-        print(f"📄 Selected puzzle: {selected}")
         result_dict[selected[:-5]] = puzzle_html_to_df(full_path)
 
     # Return all as list of DataFrames
@@ -273,7 +273,9 @@ def process_all_raw_html():
 
     return True
 
-process_all_raw_html()
+mini_loc = f"{get_project_root()}/data/puzzle_samples/raw_html/mini.html"
+clue_df = puzzle_html_to_df(mini_loc)
+my_crossword = Crossword(clue_df=clue_df)
 
 
 # proj_root = get_project_root()
