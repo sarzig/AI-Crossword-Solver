@@ -8,40 +8,6 @@ import wikipediaapi
 import spacy
 
 
-def get_project_root():
-    """
-    Uses OS lib to search for cwd, and then walks back to project root.
-
-    :return:
-    """
-    # get cwd and split into constituent parts
-    cwd = os.getcwd()
-    path_parts = cwd.split(os.sep)
-
-    # Look for project name in the path
-    project_root = ""
-    if "ai_crossword_solver" in path_parts:
-        index = path_parts.index("ai_crossword_solver")
-        project_root = os.sep.join(path_parts[:index + 1])
-
-    return project_root
-
-
-def get_clues_dataframe():
-    """
-    Uses OS lib to search for cwd, and then walks back to project root.
-
-    :return:
-    """
-    # Get project root
-    project_root = get_project_root()
-
-    # Load dataset
-    clues_path = os.path.join(project_root, r"data//nytcrosswords.csv")
-
-    clues_df = pd.read_csv(clues_path, encoding='latin1')
-    return clues_df
-
 # Load spaCy English model with Named Entity Recognition (NER)
 try:
     nlp = spacy.load("en_core_web_sm")

@@ -34,6 +34,24 @@ def conditional_raise(error, raise_bool):
     if raise_bool:
         raise error
 
+def get_project_root():
+    """
+    Uses OS lib to search for cwd, and then walks back to project root.
+
+    :return:
+    """
+    # get cwd and split into constituent parts
+    cwd = os.getcwd()
+    path_parts = cwd.split(os.sep)
+
+    # Look for project name in the path
+    project_root = ""
+    if "ai_crossword_solver" in path_parts:
+        index = path_parts.index("ai_crossword_solver")
+        project_root = os.sep.join(path_parts[:index + 1])
+
+    return project_root
+
 
 def get_clues_dataframe():
     """
@@ -57,3 +75,4 @@ def get_clues_dataframe():
 
     clues_df = pd.read_csv(clues_path, encoding='latin1')
     return clues_df
+

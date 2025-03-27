@@ -50,6 +50,7 @@ def validate_clue_df(path_to_file=None, df=None, raise_error=True):
 
     # Raise error for missing columns
     required_columns = ["number", "start_col", "start_row", "end_col", "end_row", "clue"]
+    optional_columns = ['length (optional column, for checking only)', 'answer (optional column, for checking only)']
     missing_columns = [col for col in required_columns if col not in df.columns]
 
     # Missing
