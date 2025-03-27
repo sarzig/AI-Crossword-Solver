@@ -1,0 +1,141 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)"
+1,0,0,2,0,First lady McKinley,3
+4,4,0,7,0,Common saltwater baitfish,4
+8,9,0,12,0,Letters before Q,4
+12,14,0,20,0,Become crunchy in the oven,7
+19,0,1,2,1,"Image of Mickey, maybe",3
+20,4,1,7,1,___ Nostra,4
+21,9,1,12,1,Lake that's largely fed by the Detroit River,4
+22,14,1,20,1,"""Red telephone,"" historically",7
+23,0,2,7,2,Breakfast order request,8
+25,9,2,20,2,"London Herald, 4/16/1912",12
+27,0,3,11,3,"The New York Times, 8/9/1974",12
+29,13,3,20,3,"""Scarface""",8
+30,0,4,4,4,Schedule,5
+31,6,4,10,4,Drives off,5
+32,12,4,16,4,"""Catch ya later!""",5
+33,18,4,20,4,Wee one,3
+34,4,5,8,5,Frankincense or myrrh,5
+36,11,5,13,5,"T-E-A-M doesn't have one, so they say",3
+37,16,5,20,5,"Plantain lily, by another name",5
+39,0,6,17,6,"Chicago Daily Tribune, 11/3/1948",18
+47,0,7,3,7,Company once called the California Perfume Company,4
+48,5,7,7,7,Wrap one's head around,3
+49,9,7,12,7,Popular Hawaiian dish,4
+50,14,7,20,7,Driest country in sub-Saharan Africa,7
+54,0,8,6,8,They're below par,7
+56,8,8,10,8,Choice words,3
+57,12,8,20,8,Footwear for a sharp dresser?,9
+59,0,9,4,9,"""___ Mouse,"" Chick Corea jazz standard of 1972",5
+60,7,9,11,9,"Toward the opposing goal, in hockey",5
+62,13,9,15,9,Geometry calculation: Abbr.,3
+63,18,9,20,9,"""How ya doin'?""",3
+64,3,10,17,10,"Variety, 10/30/1929",15
+70,0,11,2,11,___ Dhabi,3
+73,5,11,7,11,"Alliance since 1948, in brief",3
+74,9,11,13,11,Golf's Slammin' Sammy,5
+75,16,11,20,11,Bouquet,5
+79,0,12,8,12,Seer cursed by Apollo so that her prophecies would not be believed,9
+83,10,12,12,12,Poorly,3
+84,14,12,20,12,Headwear that's stereotypically red,7
+86,0,13,6,13,Breakout performer?,7
+87,8,13,11,13,It's blowin' in the wind,4
+89,13,13,15,13,___ thruster (physics lab device),3
+90,17,13,20,13,"Corrin of ""Nosferatu""",4
+91,3,14,20,14,"New York Daily News, 10/30/1975",18
+95,0,15,4,15,"""The rubber people,"" in Nahuatl",5
+98,7,15,9,15,"""Biting"" characteristic",3
+99,12,15,16,15,Big name in health care,5
+100,0,16,2,16,Trouble,3
+101,4,16,8,16,Fleet,5
+104,10,16,14,16,Where people typically go to the mat?,5
+106,16,16,20,16,Attempt to tear,5
+111,0,17,7,17,Fool around,8
+113,9,17,20,17,"With 115-Across, New York Post, 4/15/1983",12
+115,0,18,11,18,See 113-Across,12
+117,13,18,20,18,"""Jeez Louise!""",8
+118,0,19,6,19,Boils,7
+119,8,19,11,19,"Latin ""Look""",4
+120,13,19,16,19,Filmmaker Johnson,4
+121,18,19,20,19,Degree held by only one U.S. president (George W. Bush),3
+122,0,20,6,20,"Drink after a race, say",7
+123,8,20,11,20,Signaled,4
+124,13,20,16,20,Wraps up,4
+125,18,20,20,20,"The Second vis-à-vis the First, say",3
+1,0,0,0,4,"Cher and Madonna, e.g.",5
+2,1,0,1,4,"Old Scratch, with ""the""",5
+3,2,0,2,4,Baby name whose popularity plummeted after 2015,5
+4,4,0,4,6,It might be chewed in a theater,7
+5,5,0,5,3,Frost,4
+6,6,0,6,8,Taxpayers,9
+7,7,0,7,7,"9 to 5, e.g.",8
+8,9,0,9,4,Release,5
+9,10,0,10,4,Beams,5
+10,11,0,11,3,Parts of comedy routines,4
+11,12,0,12,2,Serving at a Chinese restaurant,3
+12,14,0,14,4,"Carolina Reaper, for one",5
+13,15,0,15,4,Good name for a geologist?,5
+14,16,0,16,8,"""How sad""",9
+15,17,0,17,3,Lapse,4
+16,18,0,18,5,Some red or white wines,6
+17,19,0,19,5,Pull some strings?,6
+18,20,0,20,5,Old Spanish coin,6
+24,3,2,3,4,Waste away,3
+26,13,2,13,6,Bottom,5
+28,8,3,8,6,Actress Skye,4
+32,12,4,12,8,Payments made at a table,5
+35,5,5,5,8,Leg up,4
+36,11,5,11,7,Query,3
+38,17,5,17,8,"""I'll get to work right now""",4
+39,0,6,0,9,Dollops,4
+40,1,6,1,9,"___ Woods, best-selling author of 2023's ""The Lost Bookshop""",4
+41,2,6,2,9,Threadbare,4
+42,3,6,3,10,"Fund, as a college",5
+43,9,6,9,11,They're known to open with some jokes,6
+44,10,6,10,14,Longtime music director of the NBC Symphony Orchestra,9
+45,14,6,14,10,"The ""U"" of 60-Down",5
+46,15,6,15,10,"""Damage"" director Louis",5
+51,18,7,18,9,K-pop septet,3
+52,19,7,19,9,Short note?,3
+53,20,7,20,9,"Creature in the final scene of ""Cleopatra""",3
+55,4,8,4,10,"Long-term deposit, in brief",3
+56,8,8,8,10,Go (for),3
+58,13,8,13,11,Certain spot,4
+60,7,9,7,12,It once shared a land border with 16 countries,4
+61,11,9,11,14,Drawstring place,6
+65,5,10,5,14,Hardly the social butterfly,5
+66,6,10,6,14,Stowed,5
+67,12,10,12,12,___ soda,3
+68,16,10,16,12,Needlefish,3
+69,17,10,17,14,Monopolist's trait,5
+70,0,11,0,13,One-pointer in cribbage,3
+71,1,11,1,13,Some undergrad degs.,3
+72,2,11,2,13,Trojans' sch.,3
+76,18,11,18,14,"""Jeez, I can't catch a break""",4
+77,19,11,19,14,Call from a crib,4
+78,20,11,20,14,Slightly,4
+80,3,12,3,15,Umpire's ruling,4
+81,4,12,4,20,Writings of dubious authenticity,9
+82,8,12,8,16,Eschew,5
+84,14,12,14,20,"""Victory is mine!,"" in modern lingo",9
+85,15,12,15,15,Privy to,4
+88,9,13,9,15,Make a scene,3
+89,13,13,13,20,"""My heavens!""",8
+92,7,14,7,18,They can support a nest egg,5
+93,12,14,12,17,48-oz. beer glass,4
+94,16,14,16,20,Service providers?,7
+95,0,15,0,20,Wise-appearing,6
+96,1,15,1,20,___ Tunes,6
+97,2,15,2,20,Like the cheese in a grilled cheese,6
+102,5,16,5,20,Protective tip on a lace,5
+103,6,16,6,20,Bel ___ cheese,5
+104,10,16,10,20,Informal goodbye,5
+105,11,16,11,20,Made some waves?,5
+107,17,16,17,18,Tech giant whose initials are its N.Y.S.E. symbol,3
+108,18,16,18,20,Some have meters,5
+109,19,16,19,20,Mexican marinade,5
+110,20,16,20,20,"""The Seduction of Joe ___"" (1979 Alan Alda film)",5
+112,3,17,3,20,"Tolkien trilogy, for short",4
+113,9,17,9,20,"Morehouse or Howard, in brief",4
+114,15,17,15,20,Whole bunch,4
+116,8,18,8,20,Instant,3
