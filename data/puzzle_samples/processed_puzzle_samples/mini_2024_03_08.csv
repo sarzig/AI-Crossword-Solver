@@ -1,0 +1,12 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,3,0,Put away in the overhead bin,4,STOW
+5,0,1,4,1,Pair for a skier,5,POLES
+7,0,2,4,2,Confuse,5,ADDLE
+8,0,3,4,3,"With 9-Across, noted product of Vermont",5,MAPLE
+9,0,4,4,4,See 8-Across,5,SYRUP
+10,1,5,4,5,Liquid-absorbing substances,4,SOPS
+1,0,0,0,4,Sends incessant messages to,5,SPAMS
+2,1,0,1,5,Bad Wordle to spoil,6,TODAYS
+3,2,0,2,5,Seasoned hand,6,OLDPRO
+4,3,0,3,5,Begin to cry,6,WELLUP
+6,4,1,4,5,Slowly drips out,5,SEEPS

@@ -1,0 +1,141 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,3,0,"Lamented, in a way",4,WEPT
+5,5,0,9,0,Citi Field mascot,5,MRMET
+10,11,0,15,0,Ray in warm waters,5,MANTA
+15,17,0,20,0,Scotland's ___ of Arran,4,ISLE
+19,0,1,3,1,"""OMG!,"" quaintly",4,EGAD
+20,5,1,9,1,"""What's the ___?""",5,CATCH
+21,11,1,15,1,Be of service to,5,AVAIL
+22,17,1,20,1,Its capital is Ndjamena,4,CHAD
+23,0,2,9,2,"""It's obvious the actors aren't doing these stunts""",10,DOUBLETAKE
+25,11,2,20,2,"""Hares and rabbits are really the same animal, some say""",10,GAMETHEORY
+27,1,3,6,3,"Rick's last name in ""Casablanca""",6,BLAINE
+28,8,3,13,3,Fight,6,OPPOSE
+30,15,3,20,3,Natives of the Negev,6,SABRAS
+31,0,4,5,4,Total kvetch,6,MOANER
+32,9,4,14,4,Actor Ray,6,LIOTTA
+34,16,4,18,4,Take (down),3,JOT
+35,0,5,3,5,Sound effect when the Stooges whapped each other,4,BONK
+36,5,5,10,5,Having serial success,6,ONARUN
+40,13,5,15,5,"""Y,"" as in Yucatán",3,AND
+42,17,5,20,5,Overture follower,4,ACTI
+45,0,6,2,6,Bid's counterpart in stock trading,3,ASK
+46,4,6,20,6,"""Waiter, you can hold off bringing the coffee till the end of the meal""",17,SERVINGSUGGESTION
+50,0,7,4,7,Make difficult to find,5,STASH
+52,6,7,9,7,Wide-eyed,4,AGOG
+53,11,7,16,7,11th-century founder of Scholasticism,6,ANSELM
+54,18,7,20,7,"Shares on Twitter, for short",3,RTS
+55,3,8,5,8,"Musk's position at 57-Across, in brief",3,CEO
+57,8,8,12,8,See 55-Across,5,TESLA
+59,14,8,16,8,"Simu who starred in ""Shang-Chi and the Legend of the Ten Rings""",3,LIU
+60,18,8,20,8,Barracks bed,3,COT
+61,0,9,7,9,"""Alas, yes""",8,AFRAIDSO
+66,10,9,14,9,Clipped,5,TERSE
+68,17,9,20,9,Lead-in to save,4,AUTO
+69,0,10,20,10,"""Wool will keep you the warmest""",21,BLANKETRECOMMENDATION
+74,0,11,3,11,They're never free of charge,4,IONS
+75,6,11,10,11,"""___ beaucoup!""",5,MERCI
+76,13,11,20,11,Like some confrontations,8,TOETOTOE
+77,0,12,2,12,"Red snapper, on a sushi menu",3,TAI
+78,4,12,6,12,Sports org. in a 1976 merger,3,ABA
+80,8,12,12,12,Religion with circled pentagrams,5,WICCA
+83,15,12,17,12,Smoked ___,3,EEL
+84,0,13,2,13,Famed Giant slugger,3,OTT
+85,4,13,9,13,"Easton ___, singer with the 2009 #1 country hit ""A Little More Country Than That""",6,CORBIN
+87,11,13,14,13,It has human potential,4,OVUM
+90,16,13,20,13,"""You stay here""",5,ILLGO
+94,0,14,16,14,"""Being contrarian is fun!""",17,DISSENTINGOPINION
+98,18,14,20,14,Artist who was part of Der Blaue Reiter,3,ARP
+99,0,15,3,15,Art ___,4,DECO
+100,5,15,7,15,"""Hi and Lois"" creator Browne",3,DIK
+101,10,15,15,15,"Joan who wrote ""Slouching Towards Bethlehem""",6,DIDION
+102,17,15,20,15,Site that reviews tech products,4,CNET
+103,2,16,4,16,Fess (up),3,OWN
+105,6,16,11,16,One moving left to right,6,NEOCON
+108,15,16,20,16,Lots have lots of them,6,SPACES
+110,0,17,5,17,"Smiling, as members of an audience",6,AMUSED
+113,7,17,12,17,Banjo sounds,6,TWANGS
+115,14,17,19,17,Like hot stuff,6,STOLEN
+116,0,18,9,18,"""Whaddya mean it's the pits? It's the best part of an apple!""",10,COREBELIEF
+118,11,18,20,18,"""Use it for Thanksgiving stuffing and saltimbocca""",10,SAGEADVICE
+121,0,19,3,19,"First name in ""Casablanca""",4,ILSA
+122,5,19,9,19,TV producer Michaels,5,LORNE
+123,11,19,15,19,Senescence,5,AGING
+124,17,19,20,19,"""Too many to list"" abbr.",4,ETAL
+125,0,20,3,20,Does in the forest,4,DEER
+126,5,20,9,20,Windblown soil,5,LOESS
+127,11,20,15,20,"""What a ___!""",5,WASTE
+128,17,20,20,20,Square,4,DORK
+1,0,0,0,2,Joined tightly,3,WED
+2,1,0,1,7,"""I"" lift?",8,EGOBOOST
+3,2,0,2,7,Crooner in the Canadian Music Hall of Fame,8,PAULANKA
+4,3,0,3,5,Financial institution that lends its name to a Boston arena,6,TDBANK
+5,5,0,5,6,Court figure with a renowned temper,7,MCENROE
+6,6,0,6,3,Merit,4,RATE
+7,7,0,7,2,Big Apple subway inits.,3,MTA
+8,8,0,8,3,Clothing designer Marc,4,ECKO
+9,9,0,9,8,It's said to be taken upon marriage,9,THEPLUNGE
+10,11,0,11,4,Cartoon Mr. who squints,5,MAGOO
+11,12,0,12,4,"""Stop!,"" nautically",5,AVAST
+12,13,0,13,7,They hold people's handles,8,NAMETAGS
+13,14,0,14,2,Draw,3,TIE
+14,15,0,15,3,"Secondary characters, in gamerspeak",4,ALTS
+15,17,0,17,6,Skimmer over a frozen lake,7,ICEBOAT
+16,18,0,18,11,Fail electrically,12,SHORTCIRCUIT
+17,19,0,19,3,Pianist Downes,4,LARA
+18,20,0,20,3,"""Scooping since 1928"" sloganeer",4,EDYS
+24,4,2,4,4,What many people do on their dating profiles,3,LIE
+26,16,2,16,4,Journey to Mecca,3,HAJ
+29,10,3,10,6,Internet speed-test signal,4,PING
+31,0,4,0,7,M.I.T. Sloan degrees,4,MBAS
+33,14,4,14,11,"Resident of Westwood, Brentwood or Hollywood",8,ANGELENO
+37,6,5,6,7,Controversial org. that filed for bankruptcy in 2021,3,NRA
+38,7,5,7,7,Part of G.P.A.: Abbr.,3,AVG
+39,8,5,8,8,Nonstop jokester,4,RIOT
+41,15,5,15,8,"Place to talk turkey, maybe",4,DELI
+43,19,5,19,11,Glinda's reassurance to Dorothy on whether her dog can also return to Kansas,7,TOTOTOO
+44,20,5,20,11,See 67-Down,7,INSTONE
+46,4,6,4,10,"The Iron ___, pro wrestling Hall-of-Famer from Iran",5,SHEIK
+47,11,6,11,10,Capital on the Willamette River,5,SALEM
+48,12,6,12,10,Take weapons from,5,UNARM
+49,16,6,16,8,Sch. in Dallas,3,SMU
+51,3,7,3,11,"Reads, in a way",5,SCANS
+56,5,8,5,10,Lines of dedication,3,ODE
+58,10,8,10,12,Impassive,5,STOIC
+61,0,9,0,15,Somewhat off,7,ABITODD
+62,1,9,1,15,Kid's buoyancy aid,7,FLOATIE
+63,2,9,2,20,Developed and finished naturally,12,RANITSCOURSE
+64,6,9,6,16,One of the Leewards,8,STMARTIN
+65,7,9,7,11,Resource mined in Minecraft,3,ORE
+67,13,9,13,11,"With 44-Down, not subject to change",3,SET
+68,17,9,17,13,Ring-shaped reef,5,ATOLL
+70,8,10,8,14,Physicist Schrödinger,5,ERWIN
+71,9,10,9,14,Including on an email thread,5,CCING
+72,15,10,15,12,"Dennis's sister on ""It's Always Sunny in Philadelphia""",3,DEE
+73,16,10,16,14,Had dinner at home,5,ATEIN
+78,4,12,4,14,Big diamond?,3,ACE
+79,5,12,5,15,Strong link,4,BOND
+81,11,12,11,20,Curve cutter for carpenters,9,COPINGSAW
+82,12,12,12,15,Passionate,4,AVID
+86,7,13,7,20,What might get pumped up for a race,8,BIKETIRE
+88,13,13,13,15,Prefix with cycle,3,UNI
+89,14,13,14,15,It's mine in Italy,3,MIO
+91,18,13,18,20,Prominent figure in the O. J. Simpson murder trial,8,LANCEITO
+92,19,13,19,20,Vehicle with lower emissions,8,GREENCAR
+93,20,13,20,16,Goes (for),4,OPTS
+95,3,14,3,20,"What you can't make a silk purse out of, proverbially",7,SOWSEAR
+96,10,14,10,17,"More than binge-watch, maybe",4,ODON
+97,15,14,15,20,"In the limelight, say",7,ONSTAGE
+102,17,15,17,20,Had a cow,6,CALVED
+104,4,16,4,18,Corn Belt state: Abbr.,3,NEB
+106,8,16,8,20,Four-time gold medalist in the 1936 Olympics,5,OWENS
+107,9,16,9,20,Features of some bookstores,5,CAFES
+109,16,16,16,18,Keeper of the peas?,3,POD
+110,0,17,0,20,___ rock,4,ACID
+111,1,17,1,20,Infiltrator,4,MOLE
+112,5,17,5,20,Small valley,4,DELL
+114,12,17,12,20,Stretched-out yarn?,4,SAGA
+115,14,17,14,20,Certain email folder,4,SENT
+117,6,18,6,20,John for Cleese,3,LOO
+119,13,18,13,20,PX clientele,3,GIS
+120,20,18,20,20,Beef alternative in burgers,3,ELK

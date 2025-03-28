@@ -1,0 +1,138 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,2,0,"Org. for Sandra Bullock in ""Miss Congeniality""",3,FBI
+4,4,0,8,0,Shawarma wraps,5,PITAS
+9,10,0,14,0,Tear things,5,DUCTS
+14,17,0,19,0,Sorry,3,SAD
+17,0,1,2,1,"Dress (up), quaintly",3,TOG
+18,4,1,8,1,Dress up,5,ADORN
+19,10,1,14,1,___ nous,5,ENTRE
+20,16,1,19,1,Bring up to ___,4,CODE
+21,0,2,2,2,"Nocturnal bird known for its distinct calls, informally",3,WHO
+22,4,2,8,2,–,5,TOWEL
+23,10,2,14,2,How things might go on the internet,5,VIRAL
+24,16,2,19,2,Fit,4,HALE
+25,1,3,7,3,"___ Moshfegh, author of the 2015 Hemingway Foundation/PEN Award-winning novel ""Eileen""",7,OTTESSA
+27,9,3,13,3,Collections of bets,5,POOLS
+28,15,3,19,3,Response to a repeat introduction,5,WEMET
+29,0,4,4,4,Respond to,5,ACTON
+30,8,4,13,4,Some outdoor seats,6,LAUNCH
+31,15,4,19,4,–,5,HEIRS
+32,0,5,5,5,"14,000-foot volcano in California",6,SHASTA
+34,7,5,11,5,Hallmarks of Scottish accents,5,BURRS
+35,13,5,16,5,Long walk,4,TREK
+37,0,6,3,6,Secret lairs,4,HIGH
+38,5,6,10,6,–,6,DOUBTS
+40,12,6,17,6,Grammy winner Hill,6,LAURYN
+42,0,7,2,7,Green beginning,3,ECO
+43,4,7,9,7,"Lifted, as spirits",6,BUOYED
+44,11,7,15,7,Swelling,5,BULGE
+45,17,7,19,7,Sch. with the mascot Sparky the Sun Devil,3,ASU
+48,4,8,7,8,"Zakat, in Islam",4,ALMS
+49,10,8,13,8,Equivalent of one gallon,4,FORK
+50,15,8,19,8,–,5,WARTS
+52,0,9,2,9,Some roofing material,3,TAR
+55,4,9,6,9,Part of a day care schedule,3,NAP
+56,9,9,12,9,From India or Pakistan,4,DESI
+57,14,9,19,9,"Wee, in one spelling",6,TEENIE
+58,0,10,19,10,Hit Mach I … or a hint to answering eight pairs of consecutive entries in this puzzle,20,BREAKTHESOUNDBARRIER
+63,0,11,5,11,Run for it!,6,OFFICE
+64,7,11,10,11,Beneficent,4,KIND
+65,13,11,15,11,Denomination of Boston's historic Charles Street Church: Abbr.,3,AME
+66,17,11,19,11,Real so-and-so,3,ASS
+67,0,12,4,12,"""Anything you want!""",5,NEIGH
+68,6,12,9,12,–,4,MITT
+69,12,12,15,12,Nibble (on),4,GNAW
+70,0,13,2,13,"Substance banned for agricultural use in 1972, for short",3,DDT
+71,4,13,8,13,Style that flares out from the waist,5,ALINE
+73,10,13,15,13,"One crying ""Help!""?",6,BEATLE
+75,17,13,19,13,Big money exec,3,CFO
+78,2,14,7,14,Growing season,6,SPRING
+80,9,14,14,14,Former magazine that featured male nudes,6,PLAGUE
+81,16,14,19,14,–,4,EARL
+82,3,15,6,15,"Up there, so to speak",4,AGED
+83,8,15,12,15,"Princess of Power, in the comics",5,SHERA
+84,14,15,19,15,Let live,6,SPARED
+86,0,16,4,16,"2 vis-à-vis 8, 3 vis-à-vis 27, etc.",5,QUEUE
+89,6,16,11,16,–,6,BRUTES
+91,15,16,19,16,Lauder of cosmetics,5,ESTEE
+92,0,17,4,17,Amherst sch.,5,UMASS
+93,6,17,10,17,Tied up,5,LACED
+94,12,17,18,17,Fade hairstyle sported by Grace Jones,7,FLATTOP
+97,0,18,3,18,Stack up,4,RATE
+98,5,18,9,18,Skin marks,5,POCKS
+99,11,18,15,18,Lollygagger,5,SLOPE
+100,17,18,19,18,–,3,OAK
+102,0,19,3,19,Among,4,AMID
+103,5,19,9,19,Lingered (on),5,DWELT
+104,11,19,15,19,Hit one out of the park,5,HOMER
+105,17,19,19,19,Member org. of the Five Eyes alliance,3,NSA
+106,0,20,2,20,Something picked in an argument,3,NIT
+107,5,20,9,20,Habitat for vicuñas,5,ANDES
+108,11,20,15,20,Some essays,5,OPEDS
+109,17,20,19,20,"Couturier who created Le Smoking tuxedo, for short",3,YSL
+1,0,0,0,2,"""Victory!,"" in internet shorthand",3,FTW
+2,1,0,1,7,Clothing style with hippie influences,8,BOHOCHIC
+3,2,0,2,7,"""Look at the time!""",8,IGOTTAGO
+4,4,0,4,5,Easily recognizable,6,PATENT
+5,5,0,5,3,Responses prompted by an officiant,4,IDOS
+6,6,0,6,3,Tugboat jobs,4,TOWS
+7,7,0,7,3,"Side by side, maybe?",4,AREA
+8,8,0,8,2,"Show shot in Studio 8H, for short",3,SNL
+9,10,0,10,6,Gobbles up,7,DEVOURS
+10,11,0,11,5,Marriages,6,UNIONS
+11,12,0,12,4,Copy command on a keyboard,5,CTRLC
+12,13,0,13,8,"Offensive line in football, say?",9,TRASHTALK
+13,14,0,14,2,Fleur de ___ (seasoning),3,SEL
+14,17,0,17,4,"""Same here""",5,SOAMI
+15,18,0,18,4,"Irene ___ (""the Woman,"" to Sherlock Holmes)",5,ADLER
+16,19,0,19,4,411,5,DEETS
+20,16,1,16,6,Fresh,6,CHEEKY
+26,3,3,3,6,"Nonsense, to Brits",4,TOSH
+27,9,3,9,7,Medicare section that covers prescription drugs,5,PARTD
+28,15,3,15,13,Comment when trying to get a discussion back on track,11,WHEREWEREWE
+29,0,4,0,7,U.S. Davis Cup player for 10 years,4,ASHE
+30,8,4,8,7,Slippery stuff,4,LUBE
+33,5,5,5,11,Heap praise on,7,ADULATE
+34,7,5,7,8,"Believes, so to speak",4,BUYS
+36,14,5,14,7,Something to pray on,3,RUG
+39,6,6,6,10,Pep,5,OOMPH
+40,12,6,12,10,Like many true-crime dramas,5,LURID
+41,17,6,17,11,Aslan's world,6,NARNIA
+43,4,7,4,17,"Overdraft fees, e.g.",11,BANKCHARGES
+44,11,7,11,10,Cap'n's subordinate,4,BOSN
+46,18,7,18,11,Fenced-in patches of mud,5,STIES
+47,19,7,19,11,___ guide,5,USERS
+49,10,8,10,11,Reality show fodder,4,FEUD
+51,16,8,16,10,___ Lingus,3,AER
+52,0,9,0,13,"Long-term security option, in brief",5,TBOND
+53,1,9,1,13,"Responded to ""Speak!""",5,ARFED
+54,2,9,2,14,Modernizes the equipment of,6,REFITS
+56,9,9,9,12,"""___ forget …""",4,DONT
+57,14,9,14,15,Steamed food items eaten with the hands,7,TAMALES
+59,3,10,3,12,Recipient of a 2008 govt. bailout,3,AIG
+60,7,10,7,14,Scraping (by),5,EKING
+61,8,10,8,13,Browser destination,4,SITE
+62,13,10,13,14,Language group of sub-Saharan Africa,5,BANTU
+68,6,12,6,20,"""That's ... so ... crazy!""",9,MINDBLOWN
+69,12,12,12,15,Agog,4,GAGA
+72,5,13,5,15,Many do this on the beach,3,LIE
+73,10,13,10,17,What an errant red sock may do in a load of whites,5,BLEED
+74,11,13,11,16,All ___,4,EARS
+75,17,13,17,20,Humorously exaggerated,8,CARTOONY
+76,18,13,18,20,Exemption from consequences,8,FREEPASS
+77,19,13,19,16,Shoppe descriptor,4,OLDE
+79,3,14,3,19,Took a breather,6,PAUSED
+80,9,14,9,20,Things revealing basic truths?,7,PHTESTS
+81,16,14,16,17,Like Zambia relative to Angola,4,EAST
+83,8,15,8,20,"Feed, as a pup might",6,SUCKLE
+85,15,15,15,20,Fades (out),6,PETERS
+86,0,16,0,20,Holy text divided into suras,5,QURAN
+87,1,16,1,20,Savory quality,5,UMAMI
+88,2,16,2,20,Suffer an embarrassing loss,5,EATIT
+90,7,16,7,20,Sped,5,RACED
+94,12,17,12,20,Something that closes quickly,4,FLOP
+95,13,17,13,20,Capital of Togo,4,LOME
+96,14,17,14,20,Parroted,4,APED
+98,5,18,5,20,"Sidewalk snogging, e.g., for short",3,PDA
+99,11,18,11,20,"""Dexter"" channel, familiarly",3,SHO
+101,19,18,19,20,"___ Penn, actor who held a post in the Obama White House",3,KAL

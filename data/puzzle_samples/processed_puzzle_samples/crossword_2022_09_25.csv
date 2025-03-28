@@ -1,0 +1,141 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,4,0,Do some backup dancing?,5,TWERK
+6,7,0,10,0,"Things with wires, often",4,BRAS
+10,12,0,15,0,Sweets,4,BABE
+14,17,0,20,0,Musical whose name is an anagram of the members of a musical,4,CATS
+18,0,1,5,1,"""Here, take this""",6,HAVEIT
+20,7,1,10,1,Hit hard,4,BELT
+21,12,1,15,1,"Many a donor, for short",4,ALUM
+22,17,1,20,1,"""You may disagree, but …,"" to a texter",4,IMHO
+23,0,2,15,2,*What's in your wallet,16,ELECTRICALOUTLET
+26,17,2,20,2,Actress ___ Flynn Boyle,4,LARA
+27,0,3,6,3,Confidence-building mantra,7,YESICAN
+28,8,3,14,3,Burdens with,7,DUMPSON
+29,16,3,20,3,Trimmer,5,RAZOR
+30,3,4,6,4,Dash dial,4,TACH
+31,8,4,11,4,Stretches of time,4,ERAS
+32,13,4,20,4,*Press junket,8,FAKENEWS
+34,0,5,6,5,Country whose capital is named after an early U.S. president,7,LIBERIA
+37,8,5,12,5,"Odd-numbered page, typically",5,RECTO
+39,15,5,17,5,Take in,3,EAT
+40,0,6,2,6,Buzzing about,3,ADO
+41,5,6,7,6,"Bird watcher's org., once",3,NBA
+43,9,6,20,6,*Barbershop quartet,12,SHAVINGCREAM
+49,0,7,8,7,*Rocket scientist,9,GEOLOGIST
+53,10,7,14,7,Lines on which music is written,5,STAVE
+54,16,7,20,7,Opera whose title character is a singer,5,TOSCA
+55,1,8,4,8,Complete,4,ATOZ
+56,6,8,9,8,Hermanos de la madre,4,TIOS
+58,11,8,15,8,"Like Legolas in ""The Lord of the Rings""",5,ELFIN
+60,18,8,20,8,"Muscle used in a pull-up, informally",3,TRI
+61,3,9,5,9,"Word between ""what"" and ""that""",3,WAS
+63,7,9,10,9,R&B's India.___,4,ARIE
+65,14,9,20,9,Profit,7,NETGAIN
+68,1,10,19,10,*Security blankets,19,USERNAMEANDPASSWORD
+74,0,11,6,11,"""Black Jeopardy!,"" for one",7,SNLSKIT
+75,10,11,13,11,Apocalypse,4,DOOM
+76,15,11,17,11,"Qantas hub, on luggage tags",3,SYD
+77,0,12,2,12,Org. that merged with the 41-Across in the 1970s,3,ABA
+78,5,12,9,12,Off-limits,5,TABOO
+82,11,12,14,12,Letters to ___ (rock group),4,CLEO
+84,16,12,19,12,Cargo,4,LOAD
+87,0,13,4,13,"Likely to offend, in brief",5,NONPC
+90,6,13,10,13,Author Ellison,5,RALPH
+92,12,13,20,13,*A drop in the bucket,9,INFLATION
+95,0,14,11,14,*Ticketmaster,12,EXTERMINATOR
+98,13,14,15,14,"United hub, on luggage tags",3,SFO
+99,18,14,20,14,Expected,3,DUE
+100,3,15,5,15,League designation for the Durham Bulls and Salt Lake Bees,3,AAA
+101,8,15,12,15,Cut choice,5,FILET
+103,14,15,20,15,Power,7,WATTAGE
+106,0,16,7,16,*Ballet movements,8,DRIBBLES
+111,9,16,12,16,"Game of who, what and where",4,CLUE
+112,14,16,17,16,Ancestor of Methuselah,4,ENOS
+113,0,17,4,17,Is grating,5,WEARS
+114,6,17,12,17,Start of a literary series,7,BOOKONE
+116,14,17,20,17,Cottoned on (to),7,GOTWISE
+120,0,18,3,18,___ mater,4,ALMA
+121,5,18,20,18,"Has no plan B … or, when parsed differently, what each of the starred clues does vis-à-vis its answer?",16,WORKSWITHOUTANET
+123,0,19,3,19,Having South Asian roots,4,DESI
+124,5,19,8,19,Small table fare?,4,ANTE
+125,10,19,13,19,Summers on the Seine,4,ETES
+126,15,19,20,19,Chorus section,6,TENORS
+127,0,20,3,20,Global brand of men's dress shirts,4,ETON
+128,5,20,8,20,Pair,4,DYAD
+129,10,20,13,20,"Laura of ""Big Little Lies""",4,DERN
+130,16,20,20,20,Consulted for feedback about,5,RANBY
+1,0,0,0,3,Designation on some pronoun pins,4,THEY
+2,1,0,1,3,"Rapper with the 2011 hit album ""Ambition""",4,WALE
+3,2,0,2,3,The before-times?,4,EVES
+4,3,0,3,5,Reel off,6,RECITE
+5,4,0,4,5,"Auto hobbyist's project, maybe",6,KITCAR
+6,7,0,7,2,"Airer of the crime drama ""Luther""",3,BBC
+7,8,0,8,5,Circulation unit,6,READER
+8,9,0,9,6,Draws,7,ALLURES
+9,10,0,10,7,Stands,8,STOMACHS
+10,12,0,12,3,Steps up to the plate,4,BATS
+11,13,0,13,4,"John Legend's ""___ Me""",5,ALLOF
+12,14,0,14,4,"___ Park, city west of Anaheim",5,BUENA
+13,15,0,15,2,"Lifesaver, for short",3,EMT
+14,17,0,17,7,Pico de gallo ingredient,8,CILANTRO
+15,18,0,18,4,Leave slack-jawed,5,AMAZE
+16,19,0,19,4,Confuse,5,THROW
+17,20,0,20,4,Doesn't just increase,5,SOARS
+19,5,1,5,7,Faint pattern,7,TRACING
+24,6,2,6,8,Occupy,7,INHABIT
+25,11,2,11,8,"Weekend destination for an N.Y.C. getaway, maybe",7,UPSTATE
+29,16,3,16,7,"Twitch, for instance",5,REACT
+33,15,4,15,6,Fountain of youth?,3,KEG
+34,0,5,0,7,Twitch problem,3,LAG
+35,1,5,1,8,"""The very ___!""",4,IDEA
+36,2,5,2,8,Power (up),4,BOOT
+38,12,5,12,8,Like the head of a badminton racket,4,OVAL
+42,7,6,7,10,"How you should ""take me,"" in a phrase",5,ASIAM
+44,13,6,13,8,Modern reproductive tech inits.,3,IVF
+45,14,6,14,10,Some votes in the Bundestag,5,NEINS
+46,18,6,18,10,Spanish 101 verb,5,ESTAR
+47,19,6,19,10,Bitter,5,ACRID
+48,20,6,20,9,Major water source,4,MAIN
+50,3,7,3,11,Tool chain,5,LOWES
+51,4,7,4,11,Missouri county on the Arkansas border,5,OZARK
+52,8,7,8,10,Moved fast,4,TORE
+57,9,8,9,10,"""Chandelier"" singer, 2014",3,SIA
+59,15,8,15,11,"Suffix with bad, mad, sad and glad",4,NESS
+62,5,9,5,12,Huff,4,SNIT
+64,10,9,10,11,Period in curling,3,END
+66,16,9,16,13,"""Schitt's Creek"" role for Sarah Levy",5,TWYLA
+67,17,9,17,13,Title play character who never shows up,5,GODOT
+68,1,10,1,14,"Open, as a gift",5,UNBOX
+69,2,10,2,14,Bias,5,SLANT
+70,6,10,6,14,Maker of the E.T. the Extra-Terrestrial video game,5,ATARI
+71,11,10,11,12,"""What's up, ___?""",3,DOC
+72,12,10,12,13,___ sci,4,POLI
+73,13,10,13,14,They're heard in a chorus,5,AMENS
+74,0,11,0,14,Reasonable,4,SANE
+79,7,12,7,14,Focus of many a law,3,BAN
+80,8,12,8,15,German chancellor Scholz,4,OLAF
+81,9,12,9,18,Sir Isaac Newton work on the fundamentals of light,7,OPTICKS
+83,14,12,14,18,"""Let's begin our adventure!""",7,OFFWEGO
+85,18,12,18,15,Opera that aptly premiered in Egypt,4,AIDA
+86,19,12,19,15,Good name for an archaeologist?,4,DOUG
+88,3,13,3,20,Idiot,8,PEABRAIN
+89,4,13,4,17,Grumps,5,CRABS
+91,10,13,10,20,"Excavated, with ""out""",8,HOLLOWED
+93,15,13,15,19,Give for a time,7,LOANOUT
+94,20,13,20,15,Jennifer Affleck ___ Lopez,3,NEE
+96,5,14,5,16,It's bad overseas,3,MAL
+97,11,14,11,20,What the Beatles never did,7,REUNITE
+102,12,15,12,20,"With 104-Down, playground fixture",6,TEETER
+104,16,15,16,20,See 102-Down,6,TOTTER
+105,17,15,17,20,One of South Africa's official languages,6,TSWANA
+106,0,16,0,20,"Longtime Miami Heat great, to fans",5,DWADE
+107,1,16,1,20,Subleased,5,RELET
+108,2,16,2,20,Playground comeback,5,IAMSO
+109,6,16,6,20,Wood that sinks in water,5,EBONY
+110,7,16,7,20,"""More or less""",5,SORTA
+115,8,17,8,20,Green-lit,4,OKED
+117,18,17,18,20,Zero ___,4,INON
+118,19,17,19,20,"Tesla, for one",4,SERB
+119,20,17,20,20,Website with a Home Favorites page,4,ETSY
+121,5,18,5,20,Crumple (up),3,WAD
+122,13,18,13,20,QVC alternative,3,HSN

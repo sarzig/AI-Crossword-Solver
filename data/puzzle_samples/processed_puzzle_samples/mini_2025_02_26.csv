@@ -1,0 +1,11 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,4,0,Gem from an oyster,5,PEARL
+6,0,1,4,1,"""Cabaret"" character who acts as a host to the audience",5,EMCEE
+7,0,2,4,2,Counterpart of effect,5,CAUSE
+8,0,3,4,3,Toys with tails and ribbons,5,KITES
+9,1,4,3,4,Allow to,3,LET
+1,0,0,0,3,"Orville ___, country singer known for wearing a mask in public",4,PECK
+2,1,0,1,4,"One might get ""buried"" online",5,EMAIL
+3,2,0,2,4,"""If you were a triangle, you'd be ___ one!"" (corny pickup line)",5,ACUTE
+4,3,0,3,4,"Change, as a computer password",5,RESET
+5,4,0,4,3,Some classic jeans,4,LEES

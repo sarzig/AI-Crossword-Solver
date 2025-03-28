@@ -1,0 +1,77 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,3,0,*,4,STAR
+5,5,0,7,0,Section of a circle,3,ARC
+8,9,0,14,0,"Accompany, as to a dance",6,ESCORT
+14,0,1,3,1,Manufactured,4,MADE
+15,5,1,7,1,"""Well, ___-di-dah!""",3,LAH
+16,9,1,14,1,"Suitemate, e.g.",6,ROOMIE
+17,0,2,7,2,Commonly visited part of a website,8,HOMEPAGE
+19,9,2,14,2,"Series of professional calls, as by doctors",6,ROUNDS
+20,1,3,4,3,"Emphatic yes, in Spanish",4,SISI
+21,7,3,9,3,Bay Area airport code,3,SFO
+23,11,3,14,3,Illegally fixes,4,RIGS
+24,2,4,14,4,Study abroad program on a ship,13,SEMESTERATSEA
+28,0,5,2,5,Krypton or argon,3,GAS
+30,4,5,6,5,"""I see!""",3,AAH
+31,8,5,11,5,Kids' game that may be played on a road trip,4,ISPY
+32,0,6,3,6,"x or y, on a graph",4,AXIS
+34,5,6,8,6,They're no pros,4,CONS
+36,10,6,14,6,One of the Obamas,5,SASHA
+40,0,7,14,7,"Ignore suspicious behavior … or a hint to the circled letters in 17-, 24-, 51- and 62-Across",15,LOOKTHEOTHERWAY
+43,0,8,4,8,Musical based on a comic strip,5,ANNIE
+44,6,8,9,8,Soft French cheese,4,BRIE
+45,11,8,14,8,Extremely serious,4,DIRE
+46,3,9,6,9,"Actor Malek who played Freddie Mercury in ""Bohemian Rhapsody""",4,RAMI
+48,8,9,10,9,Period of time,3,ERA
+50,12,9,14,9,Way of sending textspeak,3,SMS
+51,0,10,12,10,Funding sources for many labs,13,FEDERALGRANTS
+56,0,11,3,11,Currier and ___,4,IVES
+57,5,11,7,11,___-mo,3,SLO
+58,10,11,13,11,Purple-flecked root vegetable,4,TARO
+60,0,12,5,12,"Secure again, as a door",6,RELOCK
+62,7,12,14,12,Stance for a yoga beginner,8,TREEPOSE
+66,0,13,5,13,Main dish,6,ENTREE
+67,7,13,9,13,It comes with a charge,3,ION
+68,11,13,14,13,Foe's opposite,4,ALLY
+69,0,14,5,14,Explicitly said,6,STATED
+70,7,14,9,14,TV coach Lasso,3,TED
+71,11,14,14,14,Purple fruit used for flavoring,4,SLOE
+1,0,0,0,2,"""Tsk, tsk,"" in textspeak",3,SMH
+2,1,0,1,3,New Mexico art locale,4,TAOS
+3,2,0,2,8,What applicants may be seeking,9,ADMISSION
+4,3,0,3,4,Actress Witherspoon,5,REESE
+5,5,0,5,2,Pie ___ mode,3,ALA
+6,6,0,6,2,Aid in washing a car,3,RAG
+7,7,0,7,4,Treasure holder,5,CHEST
+8,9,0,9,5,They may be forced or unforced,6,ERRORS
+9,10,0,10,2,"Phillipa of ""Hamilton""",3,SOO
+10,11,0,11,8,Central area of many a palace,9,COURTYARD
+11,12,0,12,4,Some upscale hotels,5,OMNIS
+12,13,0,13,4,Mountain crest,5,RIDGE
+13,14,0,14,4,"Actress Thompson of the ""Creed"" movies",5,TESSA
+18,4,2,4,5,Cotton variety,4,PIMA
+22,8,3,8,10,More spunky,8,FEISTIER
+25,5,4,5,7,A pop,4,EACH
+26,6,4,6,11,Bird named for its beak's shape,8,SHOEBILL
+27,10,4,10,7,Quiet place in a church,4,APSE
+28,0,5,0,8,Fancy party,4,GALA
+29,1,5,1,8,Part of a brain connection,4,AXON
+33,3,6,3,14,Snowy getaway,9,SKIRESORT
+35,7,6,7,8,Neither's partner,3,NOR
+37,12,6,12,14,"Sweet, swirly dessert item",9,SWISSROLL
+38,13,6,13,9,Damage,4,HARM
+39,14,6,14,9,Yes votes that are an anagram of other yes votes,4,AYES
+41,4,7,4,10,Rip,4,TEAR
+42,9,7,9,10,Greek marriage goddess,4,HERA
+47,5,9,5,14,Dressed like many superheroes,6,MASKED
+49,10,9,10,12,Poker buy-in,4,ANTE
+51,0,10,0,14,Dumps from the payroll,5,FIRES
+52,1,10,1,14,Listing in an engagement calendar,5,EVENT
+53,2,10,2,14,Land at a river's mouth,5,DELTA
+54,7,10,7,14,"""I see!""",5,GOTIT
+55,11,10,11,14,Small Spanish dishes,5,TAPAS
+59,13,11,13,14,Norway's biggest city,4,OSLO
+61,4,12,4,14,2.0,3,CEE
+63,8,12,8,14,___ v. Wade,3,ROE
+64,9,12,9,14,Conclusion,3,END
+65,14,12,14,14,It's full of cones and rods,3,EYE

@@ -1,0 +1,71 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,9,0,"Literally, ""our thing""",10,COSANOSTRA
+11,12,0,14,0,"What might come between ""that"" and ""that""",3,WAS
+14,0,1,9,1,They go downhill fast,10,AVALANCHES
+15,11,1,14,1,Notes taken by a single person?,4,SOLO
+16,0,2,9,2,Condescendingly spells out,10,MANSPLAINS
+17,11,2,14,2,Chi-town daily,4,TRIB
+18,0,3,2,3,Colorado's ___ Mountains,3,ELK
+19,4,3,8,3,Make sense of,5,PARSE
+20,10,3,14,3,Industry for marketing majors,5,SALES
+21,3,4,5,4,Scrap,3,BIT
+22,7,4,14,4,"""That seems like a bad idea""",8,IWOULDNT
+24,2,5,7,5,"Scottish fold and Russian blue, e.g.",6,BREEDS
+26,9,5,14,5,Sticky stuff on a shoe,6,VELCRO
+27,1,6,4,6,Roughly half of mice,4,DOES
+28,6,6,10,6,Genesis,5,ONSET
+30,12,6,14,6,"Piece of wall décor at a lake house, perhaps",3,OAR
+31,0,7,3,7,One of 17 on a Clue board,4,DOOR
+32,5,7,9,7,Like some covers,5,BLOWN
+33,11,7,14,7,Nickname for a 3.2 million-year-old Australopithecus skeleton discovered in 1974,4,LUCY
+34,0,8,2,8,Word at the bottom of some marketing emails,3,OPT
+35,4,8,8,8,"Island that's home to Popeye Village, a film-set-turned-theme-park",5,MALTA
+36,10,8,13,8,Peddled good,4,WARE
+37,0,9,5,9,It erupts from time to time,6,GEYSER
+39,7,9,12,9,Word with failure or terror,6,ABJECT
+41,0,10,7,10,Consideration for the Academy,8,OSCARBID
+43,9,10,11,10,"In China, it's 1 at birth",3,AGE
+44,0,11,4,11,Airport with the most runways in the world (8),5,OHARE
+45,6,11,10,11,Filth,5,GRIME
+47,12,11,14,11,Screening org.,3,TSA
+50,0,12,3,12,Feature of many a bodega,4,DELI
+51,5,12,14,12,Sign of sluggishness?,10,SLIMETRAIL
+53,0,13,3,13,Fish that can survive for several hours on land,4,EELS
+54,5,13,14,13,Rare shots,10,HOLESINONE
+55,0,14,2,14,"Shares on X, for short",3,RTS
+56,5,14,14,14,"""Hang on!""",10,HOLDITASEC
+1,0,0,0,3,Turned up,4,CAME
+2,1,0,1,3,Shape of the Crab Nebula,4,OVAL
+3,2,0,2,3,Didn't go down well?,4,SANK
+4,3,0,3,2,Green and others,3,ALS
+5,4,0,4,6,Dummies : pacifiers :: ___ : diapers,7,NAPPIES
+6,5,0,5,5,Like much adult programming,6,ONLATE
+7,6,0,6,3,Leave damaged,4,SCAR
+8,7,0,7,14,"🚨 ""Serious situation developing!"" 🚨",15,THISISNOTADRILL
+9,8,0,8,4,"Extend, in a way",5,RENEW
+10,9,0,9,2,Fool,3,ASS
+11,12,0,12,9,It takes suits from around the globe,10,WORLDCOURT
+12,13,0,13,8,"Vulcans, e.g.",9,ALIENRACE
+13,14,0,14,7,Blue yarn?,8,SOBSTORY
+15,11,1,11,5,"Repeat an interviewer's question, perhaps",5,STALL
+20,10,3,10,6,Haggis ingredient,4,SUET
+21,3,4,3,7,Title in children's literature,4,BRER
+23,9,4,9,7,Dutch ___,4,OVEN
+24,2,5,2,14,Rings given to a lover,10,BOOTYCALLS
+25,6,5,6,8,One might be nesting,4,DOLL
+27,1,6,1,14,Page for a bookmaker,9,DOPESHEET
+29,8,6,8,9,Covid test component,4,SWAB
+31,0,7,0,14,Holier-than-thou type,8,DOGOODER
+32,5,7,5,10,Biting comment,4,BARB
+33,11,7,11,10,Intertwine,4,LACE
+35,4,8,4,11,Paltry,4,MERE
+36,10,8,10,14,"""Yeah, yeah, yeah""",7,WEGETIT
+38,3,9,3,13,Sights on the Bollywood red carpet,5,SARIS
+40,9,9,9,14,First Stuart king of England,6,JAMESI
+42,6,10,6,14,Dome-icile?,5,IGLOO
+46,8,11,8,14,Pinged online,4,IMED
+47,12,11,12,14,Home of a 20th-century art colony,4,TAOS
+48,13,11,13,14,Function that can be derived from a unit circle,4,SINE
+49,14,11,14,14,"___ Burks, N.B.A. shooting guard since 2011",4,ALEC
+51,5,12,5,14,Sound in the stacks,3,SHH
+52,11,12,11,14,Translation material,3,RNA

@@ -1,0 +1,141 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,5,0,Complete jerk,6,ASSHAT
+7,7,0,14,0,Experience equanimity,8,FEELOKAY
+15,17,0,20,0,Word with ghost or pirate,4,SHIP
+19,0,1,5,1,Inventor Tesla,6,NIKOLA
+20,7,1,14,1,Champion,8,ADVOCATE
+21,16,1,20,1,Old-fashioned trial transcriber,5,STENO
+22,0,2,14,2,"""When will the leaky faucet get fixed?,"" e.g.?",15,TRICKLEQUESTION
+24,16,2,20,2,"""___ Speaks!"" (Marx brother autobiography)",5,HARPO
+25,0,3,2,3,Equinox mo.,3,SEP
+26,4,3,6,3,PC key,3,ALT
+27,9,3,12,3,Actor Astin,4,SEAN
+28,15,3,20,3,Spam generator,6,HORMEL
+29,0,4,2,4,Gridiron gains: Abbr.,3,YDS
+30,4,4,8,4,Bygone theater chain,5,LOEWS
+33,10,4,15,4,Lithe,6,SVELTE
+36,17,4,20,4,Spam containers,4,TINS
+37,2,5,5,5,"Opposed to, in dialect",4,AGIN
+39,7,5,11,5,Song from back in the day,5,OLDIE
+41,13,5,15,5,German physicist with an eponymous law,3,OHM
+42,17,5,20,5,Focal points,4,LOCI
+43,0,6,5,6,Worldly,6,URBANE
+45,7,6,10,6,Hoot,4,RIOT
+46,12,6,15,6,Part of a how-to manual,4,STEP
+47,17,6,20,6,Oklahoma city named for a character in a Tennyson poem,4,ENID
+48,0,7,4,7,Curt summons,5,SEEME
+49,6,7,9,7,Remarks further,4,ADDS
+50,11,7,14,7,It may be unlimited in a phone plan,4,DATA
+51,16,7,20,7,One-named singer whose last name is Adkins,5,ADELE
+52,0,8,3,8,"Faulkner's ""As ___ Dying""",4,ILAY
+53,5,8,8,8,Setting for a classic Agatha Christie novel,4,NILE
+54,10,8,17,8,"Opt for ""deluxe,"" say",8,PAYEXTRA
+56,0,9,2,9,Baby louse,3,NIT
+57,4,9,7,9,"The brother in 24-Across, for one",4,MIME
+58,9,9,13,9,Harvester of the future,5,SOWER
+59,15,9,19,9,"Potentially offensive, say",5,NOTPC
+62,0,10,5,10,Easy pill to swallow?,6,GELCAP
+64,7,10,13,10,Candy bar whose name is an exclamation,7,OHHENRY
+66,15,10,20,10,2015 inductee into the World Golf Hall of Fame,6,OMEARA
+68,1,11,5,11,Bloke,5,FELLA
+69,7,11,11,11,"Covers, as the bill",5,FOOTS
+70,13,11,16,11,Labneh go-with,4,PITA
+72,18,11,20,11,"Most popular dog breed in the U.S., familiarly",3,LAB
+73,3,12,10,12,Gives a whirl,8,ATTEMPTS
+75,12,12,15,12,Without: Lat.,4,SINE
+76,17,12,20,12,A bunch of,4,MANY
+77,0,13,4,13,Common stain on a baseball uniform,5,GRASS
+80,6,13,9,13,Adversaries,4,FOES
+81,11,13,14,13,"Bit of spice, figuratively",4,KICK
+82,16,13,20,13,Writers not likely to win literary prizes,5,HACKS
+83,0,14,3,14,Floppy features of basset hounds,4,EARS
+84,5,14,8,14,Asset,4,PLUS
+85,10,14,13,14,Possible cause for road rage,4,HONK
+86,15,14,20,14,Boos,6,HONEYS
+87,0,15,3,15,Editorial override,4,STET
+88,5,15,7,15,Word before crow or dirt,3,EAT
+89,9,15,13,15,Prop for a painter,5,EASEL
+90,15,15,18,15,Former attorney general Holder,4,ERIC
+91,0,16,3,16,Salty droplet,4,TEAR
+92,5,16,10,16,Home to the University of Georgia,6,ATHENS
+94,12,16,16,16,"Begins giving solid food, say",5,WEANS
+96,18,16,20,16,Green-lights,3,OKS
+99,0,17,5,17,Floating,6,ADRIFT
+101,8,17,11,17,Whip,4,CROP
+103,14,17,16,17,Imitate,3,APE
+104,18,17,20,17,"Country bordering Oman, for short",3,UAE
+105,0,18,4,18,Versatile neutral shade,5,TAUPE
+106,6,18,20,18,Where you'd find sap for syrup?,15,ALLOVERTHEMAPLE
+111,0,19,4,19,Sam the ___ (patriotic Muppet),5,EAGLE
+112,6,19,13,19,Condition treated with insulin,8,DIABETES
+113,15,19,20,19,Rang,6,CALLED
+114,0,20,3,20,"Wedding invitation enclosure, in brief",4,SASE
+115,6,20,13,20,The other you,8,ALTEREGO
+116,15,20,20,20,"Protests, in a way",6,KNEELS
+1,0,0,0,4,Fidgety,5,ANTSY
+2,1,0,1,4,Spawned,5,SIRED
+3,2,0,2,11,"Says ""John, Paul ... and Ringo""?",12,SKIPSABEATLE
+4,3,0,3,2,Post ___ (occurring after the event),3,HOC
+5,4,0,4,7,Basic,8,ALKALINE
+6,5,0,5,6,Brewski,7,TALLONE
+7,7,0,7,2,Help page initialism,3,FAQ
+8,8,0,8,2,URL ender,3,EDU
+9,9,0,9,3,"Times outside office hours, in personals",4,EVES
+10,10,0,10,6,Goes berserk,7,LOSESIT
+11,11,0,11,5,"About 6.5 inches, on a standard piano",6,OCTAVE
+12,12,0,12,4,Virginia senator Tim,5,KAINE
+13,13,0,13,2,From ___ Z,3,ATO
+14,14,0,14,2,"Currency that features ""The Tale of Genji"" on one of its bank notes",3,YEN
+15,17,0,17,10,"Show up naked, perhaps?",11,STARTLEDATE
+16,18,0,18,7,Emma Watson's role in the Harry Potter films,8,HERMIONE
+17,19,0,19,7,"Not marked permanently, say",8,INPENCIL
+18,20,0,20,7,Lounge chair location,8,POOLSIDE
+21,16,1,16,3,"""Yellowjackets"" airer, for short",3,SHO
+23,6,2,6,4,Summer abroad,3,ETE
+28,15,3,15,6,Plant fiber used to make some jewelry,4,HEMP
+31,7,4,7,16,M __ U __ H?,13,WORDLEOFMOUTH
+32,8,4,8,8,It's a slippery slope,5,SLIDE
+34,13,4,13,16,Loss of the winning ticket?,13,LOTTERYPICKLE
+35,14,4,14,8,"A layoff, crudely",5,THEAX
+38,3,5,3,8,Like venison,4,GAMY
+40,9,5,9,7,Salon specialties,3,DOS
+43,0,6,0,10,Exploiting,5,USING
+44,1,6,1,11,Kind of map,6,RELIEF
+46,12,6,12,10,"Leo with the 1977 #1 hit ""You Make Me Feel Like Dancing""",5,SAYER
+49,6,7,6,9,Asset when playing cornhole,3,AIM
+50,11,7,11,11,New beginnings,5,DAWNS
+51,16,7,16,11,It may be vegetal or fruity,5,AROMA
+53,5,8,5,12,"Lightly bite, as a pup might",5,NIPAT
+54,10,8,10,12,Sappho and Mirabai,5,POETS
+55,15,8,15,12,Certain fed. security,5,TNOTE
+57,4,9,4,13,Alternatives to shakes,5,MALTS
+58,9,9,9,13,"Drinks that are ""slammed""",5,SHOTS
+60,18,9,18,20,King and queen?,12,PALACECOUPLE
+61,19,9,19,14,"Exhibiting the effects of too little sleep, say",6,CRANKY
+63,3,10,3,20,The three R's?,11,CLASSTRIPLE
+65,8,10,8,14,Stays optimistic,5,HOPES
+67,20,10,20,14,Bottomless void,5,ABYSS
+71,14,11,14,13,Quill go-with,3,INK
+74,6,12,6,16,Note in the C minor scale,5,EFLAT
+75,12,12,12,16,Raw power,5,SINEW
+76,17,12,17,15,"Salon job, informally",4,MANI
+77,0,13,0,20,"Develops, as an idea",8,GESTATES
+78,1,13,1,20,Like some high-quality bonds,8,RATEDAAA
+79,2,13,2,20,They might tie the room together,8,AREARUGS
+81,11,13,11,15,"Bout enders, for short",3,KOS
+82,16,13,16,20,"Caballero, e.g.",8,HORSEMAN
+84,5,14,5,17,Bog contents,4,PEAT
+85,10,14,10,20,Hosts,7,HASOVER
+86,15,14,15,20,Nag,7,HENPECK
+89,9,15,9,20,Dress for graduation,6,ENROBE
+93,8,16,8,20,Razzle-dazzle,5,ECLAT
+95,14,16,14,18,Contented sigh,3,AAH
+97,19,16,19,20,Superman's birth name,5,KALEL
+98,20,16,20,20,A pomegranate can contain a few hundred of these,5,SEEDS
+100,4,17,4,19,Corkage ___,3,FEE
+102,11,17,11,20,Name of either brother in a classic Nickelodeon sitcom,4,PETE
+106,6,18,6,20,Computing pioneer Lovelace,3,ADA
+107,7,18,7,20,Teeny,3,LIL
+108,12,18,12,20,"Rule, informally",3,REG
+109,13,18,13,20,Menu eponym,3,TSO
+110,17,18,17,20,Pint contents,3,ALE

@@ -1,0 +1,71 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,4,0,"Apparatus used in CPR training, informally",5,DEFIB
+6,6,0,9,0,"Word that looks like an alternative to ""tisn't""?",4,SNOT
+10,12,0,14,0,"Prep for a major renovation, say",3,GUT
+13,0,1,4,1,Kind of acid,5,AMINO
+14,6,1,9,1,"Beanpole material, often",4,CANE
+15,11,1,14,1,Strike one!,4,POSE
+16,0,2,9,2,Colorful grain,10,PURPLERICE
+18,11,2,14,2,Dept. of Labor division,4,OSHA
+19,2,3,14,3,Services at a megachurch?,13,MASSIVEMASSES
+21,3,4,7,4,Wishful words,5,IHOPE
+22,10,4,14,4,"___ Valley, ""the garden of France""",5,LOIRE
+23,0,5,4,5,"Bug specialist, briefly",5,ITPRO
+26,8,5,13,5,"Resells on game day, say",6,SCALPS
+28,0,6,12,6,List in a fancy witchcraft guide?,13,CURSIVECURSES
+32,0,7,2,7,Lead-in to sphere,3,EXO
+33,5,7,9,7,"Liqueur whose name translates as ""bitter"" in Italian",5,AMARO
+34,12,7,14,7,"Second sight, for short",3,ESP
+37,2,8,14,8,What a tentative quarterback throws?,13,PASSIVEPASSES
+42,1,9,6,9,"Historical setting sought in ""Everything Is Illuminated""",6,SHTETL
+43,10,9,14,9,"""The most important architect of our age,"" according to Vanity Fair",5,GEHRY
+44,0,10,4,10,Fall in winter,5,SLEET
+45,7,10,11,10,One managing moguls,5,SKIER
+48,0,11,12,11,Long letters sent to the wrong person?,13,MISSIVEMISSES
+52,0,12,3,12,"Cut and paste, e.g.",4,EDIT
+53,5,12,14,12,"""The old me is gone"" ... or what happened between the first and second parts of 19-, 28-, 37- and 48-Across?",10,IVECHANGED
+56,0,13,3,13,Wine dregs,4,LEES
+57,5,13,8,13,Cardinal point?,4,BEAK
+58,10,13,14,13,Very beginning,5,GETGO
+59,0,14,2,14,Acid,3,LSD
+60,5,14,8,14,Slips,4,ERRS
+61,10,14,14,14,"Name on a poster for 1942's ""The Magnificent Ambersons""",5,ORSON
+1,0,0,0,2,Fist bump,3,DAP
+2,1,0,1,2,Bird with vestigial wings,3,EMU
+3,2,0,2,3,Like some handshakes,4,FIRM
+4,3,0,3,6,"Following the buddy system, say",7,INPAIRS
+5,4,0,4,6,"Ballet company that premiered ""Swan Lake""",7,BOLSHOI
+6,6,0,6,4,Makeshift money,5,SCRIP
+7,7,0,7,4,Art style associated with Henri Rousseau,5,NAIVE
+8,8,0,8,3,Back then,4,ONCE
+9,9,0,9,3,Abound,4,TEEM
+10,12,0,12,9,Occasion to share dirt,10,GOSSIPSESH
+11,13,0,13,5,Ballpark figures,6,USHERS
+12,14,0,14,4,Kid,5,TEASE
+15,11,1,11,6,Traditional Mexican stew,6,POSOLE
+17,5,2,5,4,"That, in Spanish",3,ESO
+20,10,3,10,6,"""Too bad!""",4,ALAS
+23,0,5,0,7,Cryophobe's fear,3,ICE
+24,1,5,1,7,Gala garb,3,TUX
+25,2,5,2,14,Foretold,10,PROPHESIED
+26,8,5,8,8,"""Why not?!""",4,SURE
+27,9,5,9,8,"Sorghum, e.g.",4,CROP
+29,5,6,5,9,Boundless,4,VAST
+30,6,6,6,9,Expressionist painter Nolde,4,EMIL
+31,7,6,7,8,"Cleveland hoopster, familiarly",3,CAV
+35,13,7,13,9,Spanish 101 verb,3,SER
+36,14,7,14,9,College department that might pay students to be test subjects: Abbr.,3,PSY
+38,3,8,3,13,"Experiments seen in ""Oppenheimer""",6,ATESTS
+39,4,8,4,11,Org. seeking alien life,4,SETI
+40,10,8,10,14,Way back when,7,AGESAGO
+41,11,8,11,14,Like a Zen garden vis-à-vis a zoo,7,SERENER
+42,1,9,1,14,Some sandals,6,SLIDES
+44,0,10,0,14,"""If you ___ what The Rock is cooking!"" (old W.W.E. catchphrase)",5,SMELL
+45,7,10,7,14,Defame,5,SMEAR
+46,8,10,8,14,"Shoes, slangily",5,KICKS
+47,9,10,9,12,Sorta,3,ISH
+49,5,11,5,14,Have good chemistry (with),4,VIBE
+50,6,11,6,14,Sometime,4,EVER
+51,12,11,12,14,Airman's superiors: Abbr.,4,SGTS
+54,13,12,13,14,Something a barb can hurt,3,EGO
+55,14,12,14,14,Oxford figure,3,DON

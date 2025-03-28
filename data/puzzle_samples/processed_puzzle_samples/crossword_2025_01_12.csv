@@ -1,0 +1,139 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,2,0,"""It's fine, I guess""",3,MEH
+4,4,0,6,0,Dash follower,3,CAM
+7,8,0,12,0,Source of some insomnia,5,ANGST
+12,14,0,16,0,"Quick reads on the subway, perhaps",3,ADS
+15,18,0,20,0,Filing pro,3,CPA
+18,0,1,6,1,Treasure-seeking woodcutter of folklore,7,ALIBABA
+20,8,1,12,1,More in need of a massage,5,SORER
+21,14,1,20,1,Group that works only for a few seconds at a time,7,PITCREW
+23,0,2,6,2,"H.S. club with student ""diplomats""",7,MODELUN
+24,8,2,12,2,In unison,5,ASONE
+25,14,2,20,2,🙄,7,EYEROLL
+26,0,3,6,3,"""To add on …""",7,ANDALSO
+27,8,3,12,3,Witches' brew creatures,5,NEWTS
+28,14,3,20,3,Concocts,7,DEVISES
+29,2,4,5,4,Buffalo's county,4,ERIE
+30,7,4,13,4,Feline,7,CATTISH
+32,15,4,18,4,Needles,4,RIBS
+33,0,5,2,5,"""The Situation Room"" airer",3,CNN
+35,4,5,7,5,Nicholas II was the last one,4,TSAR
+37,9,5,11,5,Measure of resistance,3,OHM
+38,13,5,16,5,Cathedral feature,4,APSE
+40,18,5,20,5,"Disco fan on ""The Simpsons""",3,STU
+43,0,6,3,6,Some professions,4,VOWS
+45,6,6,14,6,Literary recommendations,9,MUSTREADS
+48,17,6,20,6,Stick in a bathroom cabinet,4,QTIP
+49,0,7,6,7,Goofs,7,SLIPSUP
+52,8,7,12,7,Like the glow of the last embers in a fire,5,FAINT
+53,14,7,20,7,Completely destroyed,7,INRUINS
+56,1,8,5,8,Doctoral hurdles,5,ORALS
+57,7,8,13,8,"Double-___ (hypermobile, medically)",7,JOINTED
+59,15,8,19,8,Gives an illegal assist,5,ABETS
+60,1,9,7,9,Produce and discharge,7,SECRETE
+62,9,9,11,9,Some Korean smartphones,3,LGS
+63,13,9,19,9,R&B singer Williams,7,DENIECE
+65,1,10,3,10,Suffix with legal and official,3,ESE
+66,6,10,8,10,Publican's offering,3,ALE
+68,12,10,14,10,It's connected to the eustachian tube,3,EAR
+69,17,10,19,10,"Org. with four divisions: Atlantic, Central, Pacific and Metropolitan",3,NHL
+70,3,11,9,11,Told (on),7,TATTLED
+74,11,11,17,11,"Accepts a ring, in a way",7,SAYSIDO
+77,1,12,5,12,Court figure,5,STENO
+79,7,12,13,12,"Oxford institution, familiarly",7,OLEMISS
+81,15,12,19,12,Many apartments in a warehouse district,5,LOFTS
+84,0,13,6,13,Lucky charms,7,AMULETS
+86,8,13,12,13,Like a porcupine's back,5,SPINY
+87,14,13,20,13,Put in front of a fan,7,AIRCOOL
+89,0,14,7,14,Person who likes to go solo,8,LONEWOLF
+91,9,14,11,14,[I'm shocked!],3,OMG
+92,13,14,20,14,Like many video game characters,8,PLAYABLE
+93,0,15,3,15,"A long, long time",4,AGES
+94,6,15,14,15,Even … or like three pairs of answers in this puzzle,9,ALLTIEDUP
+97,17,15,20,15,Some drinks and breads,4,RYES
+98,3,16,9,16,"Germs, on the playground",7,COOTIES
+101,11,16,17,16,Enthusiastic response,7,SURECAN
+104,0,17,8,17,"Shots, for example",9,BARORDERS
+107,12,17,20,17,The stuff of Persian myths?,9,NINELIVES
+111,0,18,5,18,"___ 101, 508-meter skyscraper that was once the world's tallest",6,TAIPEI
+112,7,18,13,18,Altoid alternatives,7,TICTACS
+116,15,18,20,18,"""Count me in!""",6,LOVETO
+117,0,19,5,19,Goad,6,URGEON
+118,7,19,13,19,It might be rolled out in a studio,7,YOGAMAT
+119,15,19,20,19,Archenemy of the Avengers,6,THANOS
+120,1,20,4,20,"""No thanks""",4,PASS
+121,8,20,12,20,U.S. president during the moon landing,5,NIXON
+122,16,20,19,20,"Walker with the 2015 triple-platinum hit ""Faded""",4,ALAN
+1,0,0,0,3,Common first word,4,MAMA
+2,1,0,1,3,Big first name in American business,4,ELON
+3,2,0,2,10,Devices worn by informants … and what can be found inside three pairs of answers in this puzzle,11,HIDDENWIRES
+4,4,0,4,5,Coin toss directive,6,CALLIT
+5,5,0,5,5,"Exploits, as power",6,ABUSES
+6,6,0,6,3,Spanish hand,4,MANO
+7,8,0,8,4,Sitting meditation pose,5,ASANA
+8,9,0,9,9,How an animal's length may be measured,10,NOSETOTAIL
+9,10,0,10,9,Feature visible on a tree stump,10,GROWTHRING
+10,11,0,11,9,Feelings,10,SENTIMENTS
+11,12,0,12,4,Lock,5,TRESS
+12,14,0,14,3,Did like,4,APED
+13,15,0,15,5,"Ones unlikely to call the handyman, for short",6,DIYERS
+14,16,0,16,5,Many-hit Wonder,6,STEVIE
+15,18,0,18,10,Bit of embroidery … or what's depicted literally three times in this puzzle,11,CROSSSTITCH
+16,19,0,19,3,He was named Athlete of the Century by the I.O.C.,4,PELE
+17,20,0,20,3,Hole punchers,4,AWLS
+19,3,1,3,4,Symbol of a downturn in the business world,4,BEAR
+22,17,1,17,4,"House, slangily",4,CRIB
+30,7,4,7,6,French wine designation,3,CRU
+31,13,4,13,6,Was ill with,3,HAD
+33,0,5,0,7,Big letters in the pharmaceutical industry,3,CVS
+34,1,5,1,10,Like a situation that can't end badly,6,NOLOSE
+36,6,5,6,7,Electrical unit,3,AMP
+39,14,5,14,7,"Tire reading, for short",3,PSI
+41,19,5,19,10,Shiny festive décor,6,TINSEL
+42,20,5,20,7,Co. that may have a package deal?,3,UPS
+44,3,6,3,20,They watch from afar,15,SPACETELESCOPES
+46,8,6,8,8,West Coast airport code,3,SFO
+47,12,6,12,8,Downed,3,ATE
+48,17,6,17,20,Title bestowed annually in New Orleans,15,QUEENOFCARNIVAL
+50,4,7,4,9,Photography inits.,3,SLR
+51,5,7,5,9,"""What's the ___?""",3,USE
+54,15,7,15,9,"Grandma, endearingly",3,NAN
+55,16,7,16,9,"Result of a hit single, maybe",3,RBI
+57,7,8,7,12,"Ingredient in a certain ""salad""",5,JELLO
+58,13,8,13,12,Do-or-die occasions,5,DDAYS
+61,6,9,6,11,Self image?,3,TAT
+64,14,9,14,11,"Destinations for ambulances, for short",3,ERS
+67,8,10,8,13,Slippery sorts,4,EELS
+68,12,10,12,13,Equestrian's command,4,EASY
+71,4,11,4,14,Over,4,ANEW
+72,5,11,5,14,Dog whose name was Terry before her most famous film role,4,TOTO
+73,9,11,9,16,Station locations,6,DEPOTS
+74,11,11,11,16,Lightly burns,6,SINGES
+75,15,11,15,14,Hip bones,4,ILIA
+76,16,11,16,14,Blue tang fish of Pixar fame,4,DORY
+77,1,12,1,15,Ecological portmanteau since 1905,4,SMOG
+78,2,12,2,15,"Pull some strings, say?",4,TUNE
+80,10,12,10,15,Opera character whose name might be heard in an opera singer's warm-up,4,MIMI
+82,18,12,18,15,Country singer Keith,4,TOBY
+83,19,12,19,15,Heavy part of a platform shoe,4,SOLE
+84,0,13,0,15,Styled after,3,ALA
+85,6,13,6,17,List of candidates,5,SLATE
+87,14,13,14,17,Muesli brand with mountains on the packaging,5,ALPEN
+88,20,13,20,15,Rock and roll Paul of fame,3,LES
+90,7,14,7,19,Like some playful teasing,6,FLIRTY
+92,13,14,13,19,Very precise sort,6,PURIST
+95,8,15,8,20,Wound,6,LESION
+96,12,15,12,20,"Slain king in ""Macbeth""",6,DUNCAN
+99,4,16,4,20,Frequently deconstructed dessert items,5,OREOS
+100,5,16,5,19,Mythological owner of an eight-legged horse named Sleipnir,4,ODIN
+102,15,16,15,19,Foe of a Saxon,4,CELT
+103,16,16,16,20,"""Hi"" or ""bye"" on Kauai",5,ALOHA
+104,0,17,0,19,Imperial energy meas.,3,BTU
+105,1,17,1,20,Grp. making after-work plans?,4,AARP
+106,2,17,2,20,Baltic capital city,4,RIGA
+108,18,17,18,20,___ cava,4,VENA
+109,19,17,19,20,English prep school with a shade of blue named after it,4,ETON
+110,20,17,20,19,Cry for help,3,SOS
+113,9,18,9,20,Tool used in many a sci-fi film,3,CGI
+114,10,18,10,20,Burden,3,TAX
+115,11,18,11,20,Part of a Latin trio,3,AMO

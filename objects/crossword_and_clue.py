@@ -48,7 +48,7 @@ def validate_clue_df(path_to_file=None, df=None, raise_error=True):
 
     # Raise error for missing columns
     required_columns = ["number", "start_col", "start_row", "end_col", "end_row", "clue"]
-    optional_columns = ['length (optional column, for checking only)', 'answer (optional column, for checking only)']
+    # optional_columns = ['length (optional column, for checking only)', 'answer (optional column, for checking only)']
     missing_columns = [col for col in required_columns if col not in df.columns]
 
     # Missing
@@ -115,6 +115,10 @@ class Crossword:
         # Generate the numpy array to store the solved grid, where spaces with [X] are
         # the black spaces of a crossword
         self.grid = self.generate_grid()
+
+        # Count number of clues and number of white spaces - useful for calculations
+        self.number_clues = len(self.clue_df)
+        self.number_fillable_spaces = np.sum(self.grid != "[■]")
 
     @staticmethod
     def get_direction(clue_entry):
@@ -230,14 +234,43 @@ class Crossword:
         print(f"Grid size: {self.grid_height} rows × {self.grid_width} columns")
 
         # Percent completion (based on how many [ ] vs non-[X] cells)
-        non_blacks = (self.grid != "[■]").sum()
-        empties = (self.grid == "[ ]").sum()
-        filled_cells = non_blacks - empties
-        percent_complete = (filled_cells / non_blacks * 100)
-        print(f"Fill progress: {percent_complete:.0f}%")
+        print(f"Fill progress: {self.calculate_completion_percentage_by_char():.0f}%")
 
         # Grid
         print("\nGrid:\n" + self.grid_string())
+
+    def calculate_completion_percentage_by_char(self):
+        # Percent completion (based on how many [ ] vs non-[X] cells)
+        empties = (self.grid == "[ ]").sum()
+        percent_complete = ((self.number_fillable_spaces - empties) / self.number_fillable_spaces * 100)
+
+        return percent_complete
+
+    def count_number_correct_words(self):
+        """
+        If self.clue_df has answers column AND it is filled, then count how many words
+        are correctly filled out in self.grid. A word is considered correct if it contains
+        no blanks in the numpy array, and if, when concatenated from (start_col, start_row) to
+        (end_col, end_row), it is correct.
+
+        :return:
+        """
+        optional_col = "answer (optional column, for checking only)"
+        if optional_col not in self.clue_df.columns or self.clue_df[optional_col].isna().all():
+            print("No filled answer column found — skipping correct word count.")
+            return None
+
+    def count_number_correct_letters(self):
+        """
+        If self.clue_df has answers column AND it is filled, then count how many LETTERS
+        are correctly filled out in self.grid.
+
+        :return:
+        """
+        optional_col = "answer (optional column, for checking only)"
+        if optional_col not in self.clue_df.columns or self.clue_df[optional_col].isna().all():
+            print("No filled answer column found — skipping correct letter count.")
+            return None
 
     def place_word(self, word, grid_location,
                    allow_overwriting=True,
@@ -340,5 +373,5 @@ mini_loc = f"{get_project_root()}/data/puzzle_samples/mini_03262025.xlsx"
 df = pd.read_csv(lg_loc)
 my_crossword = Crossword(clue_df=df)
 my_crossword.detailed_print()
-result = my_crossword.place_word("helldo", "5-across")
+result = my_crossword.place_word("hello", "5-across")
 """

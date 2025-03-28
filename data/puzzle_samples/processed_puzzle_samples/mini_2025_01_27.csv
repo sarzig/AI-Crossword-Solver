@@ -1,0 +1,11 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,4,0,Gold medalist Ledecky,5,KATIE
+6,0,1,4,1,Cellphone pop-up,5,ALERT
+7,0,2,4,2,What gamblers and actors study,5,LINES
+8,0,3,4,3,Wood traditionally used for black piano keys,5,EBONY
+9,1,4,3,4,Anger,3,IRE
+1,0,0,0,3,Salad green derived from wild mustard,4,KALE
+2,1,0,1,4,Cover story told in court,5,ALIBI
+3,2,0,2,4,Choir member,5,TENOR
+4,3,0,3,4,"___ Adler, character who outsmarted Sherlock Holmes",5,IRENE
+5,4,0,4,3,"Site that dubs itself ""the global marketplace for unique and creative goods""",4,ETSY

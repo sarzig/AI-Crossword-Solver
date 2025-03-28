@@ -1,0 +1,69 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,3,0,Find a part for,4,CAST
+5,5,0,9,0,"2.3, on a certain scale",5,CPLUS
+10,11,0,14,0,Still alive,4,INIT
+14,0,1,9,1,Salmon-wrapped sushi order,10,ALASKAROLL
+16,11,1,14,1,"Singer Gaye, daughter of Marvin",4,NONA
+17,0,2,9,2,"The evening of December 24, in the Spanish-speaking world",10,NOCHEBUENA
+18,11,2,14,2,Address letters,4,HTTP
+19,0,3,4,3,Where Fiat is headquartered,5,TURIN
+20,7,3,14,3,"""Interested in a look?""",8,WANNASEE
+22,1,4,6,4,"Further into the evening, say",6,DARKER
+25,9,4,13,4,"Pain, in Spain",5,DOLOR
+26,3,5,14,5,Virtual participation in a remote event,12,TELEPRESENCE
+30,1,6,9,6,Reassurance on a road trip,9,ITSNOTFAR
+32,11,6,14,6,Barrel of laughs,4,RIOT
+33,0,7,2,7,"""Frankly,"" in texting shorthand",3,TBH
+34,6,7,8,7,___-pop (genre),3,ALT
+35,12,7,14,7,Nashville awards org.,3,CMA
+36,0,8,3,8,___ cloth,4,BURP
+38,5,8,13,8,What Anne Brontë and Anaïs Nin have in common,9,DIAERESES
+42,0,9,11,9,No small part,12,SPEAKINGROLE
+44,1,10,5,10,Jesuit university that counts Bill Murray as an alum,5,REGIS
+45,8,10,13,10,"Like ridgeline hikes, often",6,SCENIC
+48,0,11,7,11,Wash off thoroughly,8,HOSEDOWN
+51,10,11,14,11,Some compost bin discards,5,CORES
+53,0,12,3,12,"Typically, they turn out to be military aircraft",4,UFOS
+54,5,12,14,12,"""How fun is this!""",10,WHATATREAT
+57,0,13,3,13,Rest stop sight,4,SEMI
+58,5,13,14,13,Businesslike,10,NONONSENSE
+59,0,14,3,14,Building toy brand,4,KNEX
+60,5,14,9,14,Like the flavor of much mezcal,5,SMOKY
+61,11,14,14,14,Percolate,4,SEEP
+1,0,0,0,3,Tilt to one side,4,CANT
+2,1,0,1,4,Revealing way to think,5,ALOUD
+3,2,0,2,4,Triangular bones,5,SACRA
+4,3,0,3,6,Top choices,7,TSHIRTS
+5,5,0,5,2,"In which you might be asked ""Where to?""",3,CAB
+6,6,0,6,2,"Boston skyscraper, with ""the""",3,PRU
+7,7,0,7,3,MGM co-founder Marcus,4,LOEW
+8,8,0,8,3,What the bottom of the triceps muscle connects to,4,ULNA
+9,9,0,9,6,Calumny,7,SLANDER
+10,11,0,11,6,Device for treating asthma,7,INHALER
+11,12,0,12,8,Mean,9,NOTSONICE
+12,13,0,13,8,Things to talk through,9,INTERCOMS
+13,14,0,14,3,Finish line marker,4,TAPE
+15,4,1,4,6,Game also called MathDoku,6,KENKEN
+21,10,3,10,5,Chorus of two-year-olds?,3,NOS
+23,5,4,5,6,Magnus Carlsen achieved one of 2882,3,ELO
+24,6,4,6,9,Not forget,6,RETAIN
+27,7,5,7,9,National advocacy grp. for L.G.B.T.Q. issues,5,PFLAG
+28,8,5,8,10,Yelp contributors,6,RATERS
+29,14,5,14,7,"Letter derived from Phoenician's ""heth""",3,ETA
+30,1,6,1,14,Headache helper,9,IBUPROFEN
+31,2,6,2,14,Ménage à trois,9,THREESOME
+33,0,7,0,9,"""MLB on ___"" (sports program)",3,TBS
+37,3,8,3,14,New York Post gossip section named for its location,7,PAGESIX
+38,5,8,5,14,Renounces,7,DISOWNS
+39,9,8,9,10,Mythical creature likely inspired by Madagascar's elephant bird,3,ROC
+40,10,8,10,13,Raises into a seat,6,ELECTS
+41,11,8,11,14,"Caballeros, by another term",7,SENORES
+43,4,9,4,11,Jest,3,KID
+46,12,10,12,14,Greek goddess of peace,5,IRENE
+47,13,10,13,14,Cut out,5,CEASE
+48,0,11,0,14,Wrapper for a tamale,4,HUSK
+49,6,11,6,14,Often-misused pronoun,4,WHOM
+50,7,11,7,14,Lead-in to second,4,NANO
+52,14,11,14,14,"Word that can precede or follow ""dance""",4,STEP
+55,8,12,8,14,Tik___,3,TOK
+56,9,12,9,14,More than zip,3,ANY

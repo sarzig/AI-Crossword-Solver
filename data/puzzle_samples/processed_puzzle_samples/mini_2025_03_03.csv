@@ -1,0 +1,11 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,1,0,4,0,Applaud with one's fingers,4,SNAP
+5,0,1,4,1,Material for Elvis's blue shoes,5,SUEDE
+6,0,2,4,2,Tree with white bark,5,ASPEN
+7,0,3,4,3,Leather leggings,5,CHAPS
+8,0,4,3,4,Traditional garment for a Scottish groom,4,KILT
+1,1,0,1,4,Food ordered in rolls,5,SUSHI
+2,2,0,2,4,"Country with the most mountains over 25,000 feet in elevation",5,NEPAL
+3,3,0,3,4,Skilled (at),5,ADEPT
+4,4,0,4,3,Ink-filled items,4,PENS
+5,0,1,0,4,___ race (picnic event),4,SACK

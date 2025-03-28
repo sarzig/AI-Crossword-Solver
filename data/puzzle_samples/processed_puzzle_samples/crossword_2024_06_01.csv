@@ -1,0 +1,67 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,6,0,"Five-star, as a hotel",7,POSHEST
+8,8,0,14,0,"Arrangement following a union agreement, perhaps",7,BACKPAY
+15,0,1,6,1,Dig up,7,UNEARTH
+16,8,1,14,1,Title woman in a 1968 Turtles hit,7,ELENORE
+17,0,2,6,2,Spread throughout,7,PERVADE
+18,8,2,14,2,Genetic variants,7,ALLELES
+19,0,3,4,3,Their bodies are worked on,5,AUTOS
+20,6,3,14,3,"""Hard pass""",9,DONOTWANT
+22,0,4,10,4,"Flighty sorts, in two senses",11,SPACECADETS
+24,12,4,14,4,"When doubled, gung-ho",3,RAH
+25,5,5,8,5,Created an account?,4,LIED
+26,11,5,14,5,Opening for a spell,4,ABRA
+27,0,6,7,6,Pastries popularized during the Hapsburg Empire,8,STRUDELS
+32,9,6,14,6,Keep the hits coming,6,PILEON
+34,0,7,6,7,Smallest country ever to win the FIFA World Cup,7,URUGUAY
+35,8,7,14,7,Cram in,7,JAMPACK
+36,0,8,5,8,"Catchy song, slangily",6,BANGER
+37,7,8,14,8,Pitchers on a farm,8,HAYFORKS
+38,0,9,3,9,"Family connections, say",4,TIES
+39,6,9,9,9,Small appetizer in Turkish cuisine,4,MEZE
+40,0,10,2,10,I.C.U. standbys,3,RNS
+41,4,10,14,10,Kitchen concern with an oxymoronic name,11,FREEZERBURN
+48,0,11,8,11,When a school's marching band typically performs,9,ATTHEHALF
+50,10,11,14,11,"Coach's first name on ""Cheers""",5,ERNIE
+51,0,12,6,12,Crunchy salad bit,7,CROUTON
+52,8,12,14,12,In a coordinated fashion,7,ENMASSE
+54,0,13,6,13,Excavation site since the Bronze Age,7,TINMINE
+55,8,13,14,13,Edible wrapper,7,SEAWEED
+56,0,14,6,14,One getting caught in a trap,7,SPEEDER
+57,8,14,14,14,Like some beaches and convertibles,7,TOPLESS
+1,0,0,0,4,Imagoes-to-be,5,PUPAS
+2,1,0,1,4,Top,5,ONEUP
+3,2,0,2,4,"Company originally founded as Sleeper, Inc.",5,SERTA
+4,3,0,3,4,What a bull in a china shop causes,5,HAVOC
+5,4,0,4,4,Remove from memory,5,ERASE
+6,5,0,5,2,Yardstick: Abbr.,3,STD
+7,6,0,6,7,Popular news podcast since 2017,8,THEDAILY
+8,8,0,8,5,Hit in the head,6,BEANED
+9,9,0,9,4,Earmark,5,ALLOT
+10,10,0,10,4,Britons and others,5,CELTS
+11,11,0,11,3,Was close to,4,KNEW
+12,12,0,12,8,Animal on Greenland's coat of arms,9,POLARBEAR
+13,13,0,13,8,Queen's style,9,ARENAROCK
+14,14,0,14,8,Polite casual assent,9,YESTHANKS
+21,7,3,7,6,They can be Horatian,4,ODES
+23,5,4,5,8,Exclamation in hospital dramas,5,CLEAR
+26,11,5,11,8,"Brand for which Garfield was once a ""spokescat""",4,ALPO
+27,0,6,0,14,Takes off,9,SUBTRACTS
+28,1,6,1,14,When one might be on track to arrive?,9,TRAINTRIP
+29,2,6,2,14,Inscribed Viking monument,9,RUNESTONE
+30,3,6,3,9,Some fur-lined slippers,4,UGGS
+31,4,6,4,8,Fair treatment,3,DUE
+32,9,6,9,10,One side of a transaction,5,PAYEE
+33,10,6,10,8,Global lending org.,3,IMF
+35,8,7,8,14,Annual music event in the Big Easy,8,JAZZFEST
+37,7,8,7,11,Bad guy,4,HEEL
+39,6,9,6,14,Not so nice,6,MEANER
+41,4,10,4,14,Rank,5,FETID
+42,5,10,5,14,River passing through Lake Geneva,5,RHONE
+43,10,10,10,14,What neuroplasticity allows our brains to do,5,REMAP
+44,11,10,11,14,Throw down,5,BRAWL
+45,12,10,12,14,"""I wish I could ___ that""",5,UNSEE
+46,13,10,13,14,Verb in a Hemingway title,5,RISES
+47,14,10,14,14,Exigencies,5,NEEDS
+49,3,11,3,14,"Philosopher David who wrote ""A Treatise of Human Nature""",4,HUME
+53,9,12,9,14,Novel opening?,3,NEO

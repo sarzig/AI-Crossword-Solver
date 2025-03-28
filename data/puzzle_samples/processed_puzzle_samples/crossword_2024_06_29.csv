@@ -1,0 +1,67 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,2,0,Sound from a kid,3,MAA
+4,5,0,8,0,"Condo no-nos, at times",4,PETS
+8,10,0,14,0,Member of a historic trio,5,PINTA
+13,0,1,8,1,Islam's feast of sacrifice,9,EIDALADHA
+16,10,1,14,1,"""I need to speak with you""",5,AWORD
+17,0,2,8,2,Something that's made lying down,9,SNOWANGEL
+18,10,2,14,2,Lugged,5,TOTED
+19,0,3,8,3,Down during difficult times?,9,STRESSEAT
+20,11,3,14,3,Titular character in the best-selling DVD of all time,4,NEMO
+21,0,4,7,4,No longer surprised,8,USEDTOIT
+22,9,4,14,4,"Noted ""Jeopardy!"" contestant of 2011",6,WATSON
+24,0,5,2,5,Exploding part of a touch-me-not,3,POD
+25,5,5,14,5,Women's gymnastics event,10,UNEVENBARS
+27,3,6,5,6,Online chatter?,3,BOT
+29,7,6,13,6,Chewy barbecue bits,7,RIBTIPS
+30,2,7,4,7,Really stand out,3,POP
+31,6,7,8,7,"1990 civil rights legislation, for short",3,ADA
+32,10,7,12,7,Brand seen at AutoZone,3,STP
+33,1,8,7,8,"""In case it's of interest ...""",7,JUSTFYI
+35,9,8,11,8,Solution for many cleaning problems,3,LYE
+36,0,9,9,9,Red plant?,10,RUSSIANSPY
+38,12,9,14,9,"Marble, e.g.",3,ORB
+41,0,10,5,10,Readily available,6,ONHAND
+42,7,10,14,10,"Magazine with a ""Skater of the Year"" award",8,THRASHER
+45,0,11,3,11,Singer whose name becomes a place in Hawaii if the first letter moves to the end,4,AKON
+46,6,11,14,11,What a speaker might do if nobody is listening to them,9,TRAILAWAY
+47,0,12,4,12,Relish,5,SAVOR
+49,6,12,14,12,Operator of Maple Leaf Lounges,9,AIRCANADA
+50,0,13,4,13,Touristy district of Rome,5,TREVI
+51,6,13,14,13,Sight in suburbia,9,MCMANSION
+52,0,14,4,14,Band for guitarists,5,STRAP
+53,6,14,9,14,Citation abbreviation,4,ETAL
+54,12,14,14,14,"Something seen in a demo, for short",3,TNT
+1,0,0,0,5,Bungle,6,MESSUP
+2,1,0,1,5,"""You're lyin'!""",6,AINTSO
+3,2,0,2,5,Ate up,6,ADORED
+4,5,0,5,6,Goes as planned,7,PANSOUT
+5,6,0,6,5,Enter hesitantly,6,EDGEIN
+6,7,0,7,14,Play area,15,THEATERDISTRICT
+7,8,0,8,3,"Kitchen staple that's gone missing in the song ""Margaritaville""",4,SALT
+8,10,0,10,2,"Rehearsed, say",3,PAT
+9,11,0,11,8,"""Don't worry, you can come closer ...""",9,IWONTBITE
+10,12,0,12,7,Modern medium for jotting things down,8,NOTESAPP
+11,13,0,13,6,Some seismic activity,7,TREMORS
+12,14,0,14,5,"Sprinkles and fudge at an ice cream parlor, e.g.",6,ADDONS
+14,3,1,3,4,"Overcome, in a way",4,AWED
+15,4,1,4,4,Have legs,4,LAST
+22,9,4,9,6,Liar's concoction,3,WEB
+23,10,4,10,8,Like many kids on the night before Christmas,5,ANTSY
+26,8,5,8,7,Word on Italian street signs,3,VIA
+27,3,6,3,14,"Music style whose name literally means ""new trend""",9,BOSSANOVA
+28,4,6,4,10,"Accept cookies, say",5,OPTIN
+30,2,7,2,14,One who's unlikely to negotiate well,8,PUSHOVER
+31,6,7,6,9,"Robbins who co-wrote the ""Rocky"" theme ""Gonna Fly Now""",3,AYN
+33,1,8,1,14,Creative use for recyclable materials,7,JUNKART
+34,5,8,5,10,It won't be around for long,3,FAD
+35,9,8,9,14,Like some poetry,7,LYRICAL
+36,0,9,0,14,Does a takedown of,6,ROASTS
+37,8,9,8,14,Big ___,6,PHARMA
+38,12,9,12,14,"""Hang on ...""",6,OHWAIT
+39,13,9,13,14,"Turn the page, say",6,READON
+40,14,9,14,14,"""Saturday Night Live"" cast member from 2012 to 2022",6,BRYANT
+43,10,10,10,13,"Parsons who worked on ""Abbey Road"" and ""The Dark Side of the Moon""",4,ALAN
+44,11,10,11,13,Lacking,4,SANS
+46,6,11,6,14,"Suitable for family movie night, in a way",4,TAME
+48,4,12,4,14,Make rent,3,RIP

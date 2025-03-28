@@ -1,0 +1,141 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,5,0,Gaelic garment,6,TARTAN
+7,7,0,10,0,"Creatures described as catarrhine, from the Latin for ""downward-nosed""",4,APES
+11,12,0,15,0,Like Antarctica,4,ARID
+15,18,0,20,0,Spare part?,3,PIN
+18,0,1,5,1,Granada grandpa,6,ABUELO
+19,7,1,10,1,Cut deeply,4,GASH
+20,12,1,15,1,"""Ugh, ___ people!""",4,SOME
+21,17,1,20,1,"Go down, in a way",4,LOSE
+22,0,2,10,2,"Get a party started? [bee, hare, tick]",11,BREAKTHEICE
+24,12,2,15,2,Morning TV host Kotb,4,HODA
+25,17,2,20,2,"""Potent Potables for $1,000, ___"" (onetime TV request)",4,ALEX
+26,0,3,2,3,Crestfallen,3,SAD
+27,4,3,9,3,"Actress Seyfried of ""The Dropout""",6,AMANDA
+28,11,3,20,3,"Buzzkill [bat, elk, newt]",10,WETBLANKET
+30,3,4,7,4,Bias,5,SLANT
+31,9,4,13,4,Subjects of some promotions,5,PAWNS
+33,15,4,18,4,Natural source of glitter,4,MICA
+34,0,5,11,5,"A little of a lot? [carp, pig, snake]",12,PARKINGSPACE
+38,13,5,20,5,"TV, newspapers, streaming services, etc.",8,THEMEDIA
+42,0,6,5,6,How a video game might be played by beginners,6,ONEASY
+43,8,6,10,6,Ending with orange,3,ADE
+44,12,6,15,6,Best-selling author Hoag,4,TAMI
+45,17,6,20,6,Strong connection,4,BOND
+46,0,7,3,7,"Pennsylvania school, for short",4,PITT
+47,6,7,20,7,"Locale of many vines [cat, elephant, worm]",15,WATERMELONPATCH
+51,0,8,3,8,Opposite of une adversaire,4,AMIE
+52,5,8,8,8,Fancy flower holders,4,URNS
+53,11,8,13,8,Life preserver?,3,ARK
+54,16,8,20,8,"Al-___, family of Syrian leaders",5,ASSAD
+55,0,9,7,9,Goes wild,8,RUNSAMOK
+57,9,9,12,9,"Glitzy, informally",4,GLAM
+59,14,9,17,9,Prankster's offerings,4,GAGS
+61,0,10,2,10,Nonmedical org. that uses X-rays,3,TSA
+62,4,10,16,10,"Something you might step on by the shower [cobra, moth, seal]",13,BATHROOMSCALE
+65,18,10,20,10,Inits. in biotech,3,GMO
+68,3,11,6,11,Legal contract phrase,4,INRE
+69,8,11,11,11,"""My bad!""",4,OOPS
+70,13,11,20,11,"Make dry, as salmon",8,OVERCOOK
+72,0,12,4,12,Pain relief pill,5,ALEVE
+75,7,12,9,12,Placeholder inits.,3,TBD
+76,12,12,15,12,"3 ft. x 5 ft., e.g.",4,SPEC
+77,17,12,20,12,"""So it goes""",4,ALAS
+78,0,13,14,13,"Long-running soap opera that debuted in 1963 [ant, gorilla, sheep]",15,GENERALHOSPITAL
+83,17,13,20,13,"One might be accessed by a QR code, nowadays",4,MENU
+84,0,14,3,14,Warrant,4,EARN
+85,5,14,8,14,Guard seen around a castle,4,MOAT
+86,10,14,12,14,"401(k) alternative, in brief",3,IRA
+87,15,14,20,14,Lean toward,6,PREFER
+89,0,15,7,15,Certain sports tiebreaker,8,SHOOTOUT
+91,9,15,20,15,"London landmark [beetle, hog, rat]",12,GLOBETHEATRE
+94,2,16,5,16,Place,4,LIEU
+95,7,16,11,16,___ song,5,SIREN
+97,13,16,17,16,Overnight perch,5,ROOST
+98,0,17,9,17,"Bridge that's painted International Orange [dog, eel, gnat]",10,GOLDENGATE
+101,11,17,16,17,Devilish look?,6,GOATEE
+103,18,17,20,17,Boardroom V.I.P.,3,CEO
+106,0,18,3,18,Drink with a spoon-straw,4,ICEE
+107,5,18,8,18,Floor square,4,TILE
+108,10,18,20,18,Mixes animal species … as eight answers in this puzzle do?,11,CROSSBREEDS
+110,0,19,3,19,Actress Perlman,4,RHEA
+111,5,19,8,19,In good condition,4,TRIM
+112,10,19,13,19,Wave to one's math professor?,4,SINE
+113,15,19,20,19,Gets around,6,EVADES
+114,0,20,2,20,Part of U.C.L.A.,3,LOS
+115,5,20,8,20,Poetic tributes,4,ODES
+116,10,20,13,20,Fire tablet competitor,4,IPAD
+117,15,20,20,20,One of the Williamses,6,SERENA
+1,0,0,0,3,Things seen in a window,4,TABS
+2,1,0,1,3,Magic trick starter,4,ABRA
+3,2,0,2,3,Felt bad about,4,RUED
+4,3,0,3,2,Word with garden or party,3,TEA
+5,4,0,4,6,"Lime and soda, e.g.",7,ALKALIS
+6,5,0,5,6,A handful,7,NOTMANY
+7,7,0,7,5,Pros with negotiations,6,AGENTS
+8,8,0,8,3,"Was worthwhile, with ""off""",4,PAID
+9,9,0,9,7,Bit of tomfoolery,8,ESCAPADE
+10,10,0,10,2,"With 47-Down, ""That's all"" follower",3,SHE
+11,12,0,12,4,"Like a vampire's face, stereotypically",5,ASHEN
+12,13,0,13,8,"Rhizome, to a botanist",9,ROOTSTALK
+13,14,0,14,3,Site to flick through flicks,4,IMDB
+14,15,0,15,7,Request for a hand,8,DEALMEIN
+15,18,0,18,8,Fashionable spots,9,POLKADOTS
+16,19,0,19,3,"""Oh, gotcha""",4,ISEE
+17,20,0,20,3,Immediately following,4,NEXT
+21,17,1,17,9,'N Sync member who later became a gay rights activist,9,LANCEBASS
+23,6,2,6,5,"Spend time together, in slang",4,HANG
+28,11,3,11,5,"""SmackDown"" org.",3,WWE
+29,16,3,16,5,Goal,3,AIM
+30,3,4,3,9,Pair in the Winter Olympics,6,SKATES
+32,10,4,10,7,Maker of Chromebooks,4,ACER
+34,0,5,0,10,"Warhol's ""Marilyn Diptych,"" e.g.",6,POPART
+35,1,5,1,10,Antagonism,6,ANIMUS
+36,2,5,2,10,Target of a modern scan,6,RETINA
+37,8,5,8,8,Light touches,4,PATS
+39,14,5,14,7,Medical plan inits.,3,HMO
+40,19,5,19,8,Sapa ___ (ancient emperor's title),4,INCA
+41,20,5,20,8,"Common cause of some impulsive behavior, in brief",4,ADHD
+44,12,6,12,10,Details to be negotiated,5,TERMS
+47,6,7,6,11,See 10-Down,5,WROTE
+48,7,7,7,10,Sacred hieroglyph,4,ANKH
+49,11,7,11,11,Sirs' counterparts,5,MAAMS
+50,16,7,16,11,"""Beep!"" source",5,PAGER
+52,5,8,5,11,Second caliph of Sunni Islam,4,UMAR
+56,4,9,4,13,Doubleday who is miscredited with inventing baseball,5,ABNER
+57,9,9,9,13,Merchant's stock,5,GOODS
+58,10,9,10,11,Cut (off),3,LOP
+59,14,9,14,13,Auctioneer's aid,5,GAVEL
+60,15,9,15,12,Name that's a letter off from 25-Across,4,ALEC
+63,8,10,8,14,One might develop consciousness in a sci-fi story,5,ROBOT
+64,13,10,13,13,"Nightspot in a Manilow hit, in brief",4,COPA
+65,18,10,18,15,What you can rarely do at a red light,6,GOLEFT
+66,19,10,19,15,Kvetch,6,MOANER
+67,20,10,20,15,"""Yeah, whatever you say""",6,OKSURE
+68,3,11,3,19,"""Beats me""",9,IVENOIDEA
+71,17,11,17,16,Tried to fight,6,CAMEAT
+72,0,12,0,15,"A long, long time",4,AGES
+73,1,12,1,15,Genesis matriarch,4,LEAH
+74,2,12,2,20,Matriculation group,9,ENROLLEES
+75,7,12,7,20,"""No! Not true!""",9,THATSALIE
+76,12,12,12,15,Wild guess,4,STAB
+79,5,13,5,20,End up being,8,AMOUNTTO
+80,6,13,6,15,"___ Malnati's, Chicago-style pizza chain",3,LOU
+81,10,13,10,16,Rug thickness,4,PILE
+82,11,13,11,20,Strong hold,8,IRONGRIP
+87,15,14,15,20,Gray-brown flycatchers,7,PHOEBES
+88,16,14,16,20,Book,7,RESERVE
+90,4,15,4,17,Summer top,3,TEE
+91,9,15,9,17,Test for future Ph.D.s,3,GRE
+92,13,15,13,20,Wiped out,6,ERASED
+93,14,15,14,18,Sippy cup users,4,TOTS
+96,8,16,8,20,Agenda topics,5,ITEMS
+98,0,17,0,20,"Word with power, talk or band",4,GIRL
+99,1,17,1,20,Number of planetas en el sistema solar,4,OCHO
+100,6,17,6,20,Fasten with a belt,4,GIRD
+102,12,17,12,20,"Chaplin of ""Game of Thrones""",4,OONA
+103,18,17,18,20,Surrender,4,CEDE
+104,19,17,19,20,"Summit of Mount Purgatory, in Dante's ""Divine Comedy""",4,EDEN
+105,20,17,20,20,Mount in Greek myth,4,OSSA
+108,10,18,10,20,Show with a Miami spinoff,3,CSI
+109,17,18,17,20,Symbol for an audio device,3,EAR

@@ -1,0 +1,79 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,5,0,Across or Down,6,HEADER
+7,7,0,9,0,Like Saint Nick,3,OLD
+10,11,0,14,0,"Nick, say",4,FLAW
+14,0,1,5,1,Where nearly 20% of sales take place worldwide,6,ONLINE
+15,7,1,14,1,EM(B)RACE,8,BINTOUCH
+17,0,2,5,2,"""It's a mystery to me""",6,NOIDEA
+18,7,2,14,2,Australian open?,8,GDAYMATE
+19,0,3,2,3,"Barely manage, with ""out""",3,EKE
+20,5,3,7,3,"Using no professional help, for short",3,DIY
+22,10,3,14,3,"King in Disney's ""The Jungle Book""",5,LOUIE
+23,0,4,10,4,ALMIGHT(Y),11,YINGODSNAME
+28,12,4,14,4,"With 45-Across, ""Celebrity Jeopardy!"" and others",3,SNL
+29,2,5,6,5,"Line on a doodle, perhaps?",5,LEASH
+30,8,5,11,5,J&J or AT&T: Abbr.,4,CORP
+32,0,6,4,6,Souvenir from an art museum,5,PRINT
+34,7,6,9,6,Someone who's way up in your business?,3,CEO
+35,11,6,14,6,Gone,4,AWAY
+39,0,7,14,7,TROP(I)CAL STORM,15,IOFTHEHURRICANE
+43,0,8,3,8,Pizzeria implement,4,PEEL
+44,5,8,7,8,Shortened location of the world's tallest building,3,UAE
+45,10,8,14,8,See 28-Across,5,SKITS
+46,3,9,6,9,"___ of Forfar, title for Prince Edward",4,EARL
+48,8,9,12,9,Frontier figure,5,PILOT
+50,0,10,2,10,BET's parent company,3,CBS
+53,4,10,14,10,(C)OMPASSION,11,COFHUMANITY
+57,0,11,4,11,Work of Matsuo Basho or Masaoka Shiki,5,HAIKU
+59,7,11,9,11,"Missions, for short",3,OPS
+60,12,11,14,11,"""___ easy!""",3,TOO
+61,0,12,7,12,This isn't who you really are,8,ALTEREGO
+64,9,12,14,12,Pop open,6,UNCORK
+67,0,13,7,13,GROU(P) OF HUM(P)BACKS,8,PSINAPOD
+68,9,13,14,13,"Padded piece of paper, perhaps?",6,RESUME
+69,0,14,3,14,Without,4,SANS
+70,5,14,7,14,Mountain climbers work them,3,ABS
+71,9,14,14,14,"Cut down to size, maybe",6,EDITED
+1,0,0,0,4,Dear,5,HONEY
+2,1,0,1,4,"Mushroom with a long, thin stem",5,ENOKI
+3,2,0,2,8,Subject of a large-scale ongoing search,9,ALIENLIFE
+4,3,0,3,2,Carried out,3,DID
+5,4,0,4,2,Benz follower,3,ENE
+6,5,0,5,5,"Checks one's math, in a way",6,READDS
+7,7,0,7,4,"Delivery worker, familiarly",5,OBGYN
+8,8,0,8,2,Free coffee shop item,3,LID
+9,9,0,9,2,Subject of the world's largest collaborative biological project,3,DNA
+10,11,0,11,3,"Feeling intensified by social media, for short",4,FOMO
+11,12,0,12,4,Events with pigs and poke,5,LUAUS
+12,13,0,13,4,Muscle protein,5,ACTIN
+13,14,0,14,4,"A-2-3-4-5 straight, in poker slang",5,WHEEL
+16,10,1,10,5,President who signed a bill to annex Texas on his third-to-last day in office,5,TYLER
+21,6,3,6,5,Seuss character whose dish grants a wish for fish,3,ISH
+24,3,4,3,9,Mild,6,GENTLE
+25,4,4,4,7,It's taken to take office,4,OATH
+26,8,4,8,7,Big server ... or a company that makes servers,4,ACER
+27,9,4,9,7,Tie up,4,MOOR
+31,11,5,11,10,"Add, as weight",6,PACKON
+32,0,6,0,8,Die spot,3,PIP
+33,1,6,1,8,Future fish,3,ROE
+34,7,6,7,8,Word with ball or card,3,CUE
+36,12,6,12,14,Let the storm blow over,9,WAITITOUT
+37,13,6,13,8,Non-avian nest builder,3,ANT
+38,14,6,14,8,"""What's up?""",3,YES
+40,5,7,5,10,Drachma replacement,4,EURO
+41,6,7,6,10,Break point in sports?,4,HALF
+42,10,7,10,10,"___ Nublar, setting for ""Jurassic Park""",4,ISLA
+47,4,9,4,13,Lexus competitor,5,ACURA
+48,8,9,8,11,Mini mouse,3,PUP
+49,9,9,9,14,"""100%""",6,IMSURE
+50,0,10,0,14,Piece of cowboy attire,5,CHAPS
+51,1,10,1,14,Light craft material,5,BALSA
+52,2,10,2,14,Gandhian form of protest,5,SITIN
+54,7,10,7,14,Features of both cobras and Dodge Vipers,5,HOODS
+55,13,10,13,14,Crooner Mel,5,TORME
+56,14,10,14,14,"Strong as an ox, in slang",5,YOKED
+58,3,11,3,14,"Several male roles in ""Barbie""",4,KENS
+62,5,12,5,14,Org. concerned with climate change,3,EPA
+63,6,12,6,14,Lump,3,GOB
+65,10,12,10,14,"The Dutch, on soccer scoreboards",3,NED
+66,11,12,11,14,"___ effect, unrealistic juror expectation of forensic evidence",3,CSI

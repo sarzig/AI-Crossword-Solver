@@ -1,0 +1,11 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,2,0,4,0,Hydroelectric project,3,DAM
+4,0,1,4,1,Piece of the pie,5,SLICE
+6,0,2,4,2,Concern for a basement apartment,5,LIGHT
+7,0,3,4,3,Noted octet in higher education,5,IVIES
+8,0,4,2,4,Fur-riend,3,PET
+1,2,0,2,4,Piece of the pi?,5,DIGIT
+2,3,0,3,3,Feel the pain,4,ACHE
+3,4,0,4,3,"Team that signed Juan Soto to a record-breaking 15-year, $765 million contract",4,METS
+4,0,1,0,4,Mess (up),4,SLIP
+5,1,1,1,4,"Like podcasts with a studio audience, say",4,LIVE

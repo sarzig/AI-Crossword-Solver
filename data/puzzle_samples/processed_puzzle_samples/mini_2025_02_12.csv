@@ -1,0 +1,11 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,4,0,"""Give me some ___""",5,SPACE
+6,0,1,4,1,Chocolate-flavored coffee drink,5,MOCHA
+7,0,2,4,2,Ending point for a walk down the aisle,5,ALTAR
+8,0,3,4,3,Hybrid women's golfing attire,5,SKORT
+9,0,4,4,4,Overly tough,5,HARSH
+1,0,0,0,4,Huge hit,5,SMASH
+2,1,0,1,4,Music genre that often includes an accordion,5,POLKA
+3,2,0,2,4,Jamie Foxx or Michael J. Fox,5,ACTOR
+4,3,0,3,4,Blackens on the grill,5,CHARS
+5,4,0,4,4,You are here,5,EARTH

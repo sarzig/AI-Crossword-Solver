@@ -1,0 +1,11 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,3,0,"Punxsutawney ___, Groundhog Day character",4,PHIL
+5,0,1,4,1,"Bird with ""great blue"" and ""great white"" varieties",5,HERON
+7,0,2,4,2,Something rehabilitated by a P.R. firm,5,IMAGE
+8,0,3,4,3,Material for party balloons and hospital gloves,5,LATEX
+9,1,4,4,4,"Home made of sticks, say",4,NEST
+1,0,0,0,3,"___ Connors, Bill Murray's character in ""Groundhog Day""",4,PHIL
+2,1,0,1,4,Muscled guy,5,HEMAN
+3,2,0,2,4,"So, so angry",5,IRATE
+4,3,0,3,4,Pricey sections of theaters,5,LOGES
+6,4,1,4,4,"""Ready for another customer!""",4,NEXT

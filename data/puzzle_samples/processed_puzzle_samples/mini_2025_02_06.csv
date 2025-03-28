@@ -1,0 +1,11 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,1,0,4,0,Chief Norse god,4,ODIN
+5,0,1,4,1,Required number,5,QUOTA
+6,0,2,4,2,"Open, as a sleeping bag",5,UNZIP
+7,0,3,3,3,Puts a cold pack on,4,ICES
+8,0,4,2,4,Scrabble value of the circled letters,3,TEN
+1,1,0,1,4,"Unit of weight whose symbol includes a ""z""",5,OUNCE
+2,2,0,2,4,Baker's ___,5,DOZEN
+3,3,0,3,3,"""That's correct""",4,ITIS
+4,4,0,4,2,Hit the hay during the day,3,NAP
+5,0,1,0,4,Give up,4,QUIT

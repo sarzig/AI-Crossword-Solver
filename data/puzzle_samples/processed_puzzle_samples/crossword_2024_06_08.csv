@@ -1,0 +1,67 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,3,0,14,0,When fur first came into fashion?,12,AGEOFMAMMALS
+13,2,1,14,1,Mix in the kitchen,13,BROWNIEBATTER
+14,1,2,14,2,Letter of the law?,14,CEASEANDDESIST
+15,0,3,4,3,Snatches,5,GRABS
+16,6,3,9,3,Certain squeeze,4,BEAU
+17,12,3,14,3,"Org. created on Nov. 19, 2001",3,TSA
+18,0,4,3,4,Hoops might hang from them,4,EARS
+19,5,4,11,4,Place to look inward?,7,XRAYLAB
+22,0,5,2,5,"Digital collectible, for short",3,NFT
+23,4,5,8,5,Forward-looking sorts,5,SEERS
+24,10,5,14,5,"With 34-Down, full license",5,CARTE
+28,1,6,7,6,"""You said it!,"" informally",7,TRUEDAT
+30,9,6,14,6,What creates a line for the shower?,6,METEOR
+31,0,7,6,7,"Kerouac, for one",7,BEATNIK
+32,8,7,14,7,Coins in a biblical parable,7,TALENTS
+33,0,8,5,8,"Harry Potter, e.g.",6,ORPHAN
+34,7,8,13,8,Range,7,BREADTH
+35,0,9,4,9,What you will?,5,ASSET
+36,6,9,10,9,Many Ukrainians,5,SLAVS
+37,12,9,14,9,None of the Supreme Court Justices in Barbie Land,3,MEN
+39,3,10,9,10,Make over,7,RESHAPE
+41,11,10,14,10,Starter home?,4,WOMB
+42,0,11,2,11,Touch,3,DAB
+45,5,11,8,11,Mind,4,TEND
+46,10,11,14,11,"Capital city that's 7,200+ feet above sea level",5,SANAA
+47,0,12,13,12,Psychoanalytic theory regarding a daughter's relationship with her father,14,ELECTRACOMPLEX
+51,0,13,12,13,Group overseeing bridges and tunnels,13,PORTAUTHORITY
+52,0,14,11,14,Live ostentatiously,12,PUTONTHERITZ
+1,3,0,3,4,Ishmael's people,5,ARABS
+2,4,0,4,3,"Dishy rumors, in slang",4,GOSS
+3,5,0,5,2,Pronoun in a rebus puzzle,3,EWE
+4,6,0,6,7,"Temporarily apart, say",8,ONABREAK
+5,7,0,7,6,"Sculpture, e.g.",7,FINEART
+6,8,0,8,5,Times for self-care,6,MEDAYS
+7,9,0,9,4,Singer whose debut 1988 album had a record four #1 hits,5,ABDUL
+8,10,0,10,2,Novelist Rita ___ Brown,3,MAE
+9,11,0,11,2,High points: Abbr.,3,MTS
+10,12,0,12,3,Working away,4,ATIT
+11,13,0,13,3,Minus,4,LESS
+12,14,0,14,3,Quinceañera celebrant: Abbr.,4,SRTA
+13,2,1,2,9,"Misleading market downturns, in financial lingo",9,BEARTRAPS
+14,1,2,1,9,Creative hobbyists,8,CRAFTERS
+15,0,3,0,5,"What comes before X, Y and Z",3,GEN
+19,5,4,5,8,"Marked, in a way",5,XEDIN
+20,10,4,10,9,Express options since 2000,6,ACELAS
+21,11,4,11,8,Held,5,BATED
+23,4,5,4,10,Booker's workplace,6,SENATE
+25,12,5,12,13,Flat bread?,9,RENTMONEY
+26,13,5,13,12,100%,8,TOTHEMAX
+27,14,5,14,7,"Ventilator settings, for short",3,ERS
+29,3,6,3,10,King Arthur's father,5,UTHER
+30,9,6,9,10,Irish girl's name that's one letter off from a shade of purple,5,MAEVE
+31,0,7,0,9,One might get a meal wrapped up,3,BOA
+32,8,7,8,14,"Stage opening, perhaps",8,TRAPDOOR
+34,7,8,7,14,See 24-Across,7,BLANCHE
+36,6,9,6,14,Place to stick the knife in,6,SHEATH
+38,14,9,14,11,Court org.,3,NBA
+40,5,10,5,14,Swagger,5,STRUT
+41,11,10,11,14,"The final dance in ""The Nutcracker,"" for one",5,WALTZ
+42,0,11,0,14,Sparrow portrayer,4,DEPP
+43,1,11,1,14,Baseball family name,4,ALOU
+44,2,11,2,14,Curmudgeon of children's TV,4,BERT
+46,10,11,10,14,Stick in the fire,4,SPIT
+48,3,12,3,14,Silicon Valley exec,3,CTO
+49,4,12,4,14,Soak up the sun,3,TAN
+50,9,12,9,14,"Test in a tube, for short",3,MRI

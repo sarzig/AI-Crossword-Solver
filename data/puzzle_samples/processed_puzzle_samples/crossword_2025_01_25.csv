@@ -1,0 +1,71 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,9,0,Undesirable airplane seatmate,10,ARMRESTHOG
+11,11,0,14,0,Sound from a hedge clipper,4,SNIP
+15,0,1,9,1,"""This is a waste of my time""",10,WHYAMIHERE
+16,11,1,14,1,Strike one!,4,POSE
+17,0,2,9,2,Body shops?,10,MORTUARIES
+18,11,2,14,2,"""Combats ___ tes défenseurs!"" (""La Marseillaise"" line)",4,AVEC
+19,0,3,3,3,Poet Bradstreet,4,ANNE
+20,6,3,9,3,Abbr. in some job titles,4,ASST
+21,11,3,14,3,Coward of the theater world,4,NOEL
+22,0,4,2,4,"Largest U.S. union, with about three million members, in brief",3,NEA
+23,4,4,10,4,Funding source for the Great Wall of China,7,SALTTAX
+26,12,4,14,4,"Org. in 2015's ""Bridge of Spies""",3,CIA
+27,3,5,6,5,Brass,4,GALL
+28,8,5,14,5,Felt in the Christmas spirit?,7,ELFHATS
+30,0,6,5,6,"""The Way,"" in Islam",6,SHARIA
+33,7,6,14,6,"A, B, and C, but not T and V",8,VITAMINS
+34,0,7,4,7,Under control,5,TAMED
+35,6,7,8,7,One working on a column?,3,CPA
+36,10,7,14,7,"Sight in Monet's ""Boating on the River Epte""",5,CANOE
+37,0,8,7,8,Current events,8,RIPTIDES
+39,9,8,14,8,Spreads,6,STREWS
+40,0,9,6,9,Novel technology?,7,EREADER
+41,8,9,11,9,Jam,4,SPOT
+42,0,10,2,10,Old atlas inits.,3,SSR
+43,4,10,10,10,"In the 80s or 90s, say",7,OVERPAR
+45,12,10,14,10,Take another direction,3,ZIG
+48,0,11,3,11,It's fit for a king,4,SASH
+50,5,11,8,11,Classic novel of the South Seas,4,OMOO
+51,11,11,14,11,Some photomontage art,4,DADA
+52,0,12,3,12,"___ Mountains, Kyrgyz/Tajik border range",4,ALAI
+53,5,12,14,12,They'll show you a thing or two,10,TOURGUIDES
+56,0,13,3,13,"Weight of an adult elephant, very imprecisely",4,TONS
+57,5,13,14,13,Initiative,10,ENTERPRISE
+58,0,14,3,14,Segments of curling matches,4,ENDS
+59,5,14,14,14,Holders of orbs,10,EYESOCKETS
+1,0,0,0,4,"""Ugh, that's the worst!""",5,AWMAN
+2,1,0,1,4,It passes through many Swiss banks,5,RHONE
+3,2,0,2,4,Loy of filmdom,5,MYRNA
+4,3,0,3,3,Thing of interest?,4,RATE
+5,4,0,4,2,"Foe in a 1932 Australian ""war""",3,EMU
+6,5,0,5,2,"""Cheap Thrills"" pop star",3,SIA
+7,6,0,6,5,Clutches,6,THRALL
+8,7,0,7,4,Job that might require a fence,5,HEIST
+9,8,0,8,7,Aeschylus trilogy of tragedies,8,ORESTEIA
+10,9,0,9,6,"The forest, in a metaphor",7,GESTALT
+11,11,0,11,3,Extend across,4,SPAN
+12,12,0,12,8,Number at filling stations?,9,NOVOCAINE
+13,13,0,13,8,"""Oh-h-h-h, that makes sense""",9,ISEEITNOW
+14,14,0,14,8,They support many student movements,9,PECLASSES
+23,4,4,4,10,Joined a union,7,SAIDIDO
+24,5,4,5,6,___ nage (cooked in a broth),3,ALA
+25,10,4,10,10,Certain something,7,XFACTOR
+27,3,5,3,9,"""Barbie"" director Gerwig",5,GRETA
+29,11,5,11,9,Asian grocery chain,5,HMART
+30,0,6,0,14,Consumed with grief?,9,STRESSATE
+31,1,6,1,14,Where locks are picked?,9,HAIRSALON
+32,2,6,2,14,S&P 500 part,9,AMPERSAND
+33,7,6,7,8,Some corp. execs,3,VPS
+35,6,7,6,14,"Confirmation, e.g.",8,CEREMONY
+38,5,8,5,14,Ardent supporter,7,DEVOTEE
+39,9,8,9,10,Place whose name has an appropriate final vowel sound,3,SPA
+41,8,9,8,14,Reproductive cells,6,SPORES
+44,7,10,7,14,Dispatch (toward),5,ROUTE
+45,12,10,12,14,"___ Smith, ""The Autograph Man"" novelist",5,ZADIE
+46,13,10,13,14,Namely,5,IDEST
+47,14,10,14,14,Sublimation products,5,GASES
+49,3,11,3,14,Indicator of deflation,4,HISS
+51,11,11,11,14,Long-bladed thrusting dagger,4,DIRK
+54,9,12,9,14,Miracle-___,3,GRO
+55,10,12,10,14,Lines at a grocery store,3,UPC

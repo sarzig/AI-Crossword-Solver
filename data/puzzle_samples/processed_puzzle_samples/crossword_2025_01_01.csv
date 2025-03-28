@@ -1,0 +1,78 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,4,0,Rapscallion,5,SCAMP
+6,6,0,8,0,Certain tankful,3,GAS
+9,10,0,14,0,Kind of game that's a pitcher's dream,5,NOHIT
+14,0,1,4,1,"Micronesian island that was the setting for a season of ""Survivor""",5,PALAU
+15,6,1,8,1,Tuna type,3,AHI
+16,10,1,14,1,Airport near the intersection of I-90 and I-294,5,OHARE
+17,0,2,4,2,Cove,5,INLET
+18,6,2,8,2,On the ___,3,LAM
+19,10,2,14,2,"Christopher who directed ""Oppenheimer""",5,NOLAN
+20,0,3,2,3,"Slangy suffix with ""most""",3,EST
+21,4,3,10,3,"""OK ... tell me""",7,ILLBITE
+24,12,3,14,3,N.B.A. 1-pointers: Abbr.,3,FTS
+25,0,4,2,4,Exclamation from Homer,3,DOH
+26,4,4,6,4,"Hero of ""The Matrix""",3,NEO
+27,8,4,10,4,"""A work of ___ that isn't based on feeling isn't ___ at all"": Cézanne",3,ART
+28,12,4,14,4,"""Look at Me, I'm Sandra ___"" (""Grease"" song)",3,DEE
+29,2,5,6,5,"Dickens's ""The Mystery of ___ Drood""",5,EDWIN
+31,8,5,12,5,Chinese greeting,5,NIHAO
+33,0,6,4,6,Tool for a pineapple,5,CORER
+35,10,6,14,6,1990s sitcom featuring a bookstore,5,ELLEN
+38,0,7,4,7,You can count on them,5,ABACI
+39,6,7,8,7,Rating for junk bonds,3,CCC
+42,10,7,14,7,Candymaker Wonka,5,WILLY
+43,0,8,4,8,Chauvinist or racist,5,BIGOT
+44,6,8,8,8,In the style of,3,ALA
+45,10,8,14,8,Start of Caesar's boast,5,ICAME
+46,1,9,4,9,Actress Hatcher,4,TERI
+47,6,9,8,9,"Deposit, as an egg",3,LAY
+48,10,9,13,9,"Patrick Stewart and Elton John, for two",4,SIRS
+49,3,10,5,10,"Singer on ""Give Peace a Chance""",3,ONO
+51,9,10,11,10,"""Golden Girls"" actress Arthur",3,BEA
+52,0,11,6,11,"Sheds, with ""off""",7,SLOUGHS
+56,8,11,14,11,Stylish tote for an executive,7,WORKBAG
+60,0,12,3,12,Worshiping rows,4,PEWS
+61,5,12,9,12,Cousin of a croc,5,GATOR
+63,11,12,14,12,The Emerald Isle,4,EIRE
+64,0,13,3,13,"""___ have to do""",4,ITLL
+65,5,13,9,13,Like the breeds Shetland and merino,5,OVINE
+66,11,13,14,13,TALK LIKE THIS!,4,YELL
+67,0,14,3,14,Like a yenta,4,NOSY
+68,5,14,9,14,Props for close-up magicians,5,DECKS
+69,11,14,14,14,Arrogant sort,4,SNOT
+1,0,0,0,4,"Worked for the C.I.A., perhaps",5,SPIED
+2,1,0,1,4,Playground retort,5,CANSO
+3,2,0,2,9,Super-trendy,10,ALLTHERAGE
+4,3,0,3,2,"West who said ""Men are my life, diamonds are my career""",3,MAE
+5,4,0,4,11,Set down on paper,12,PUTINWRITING
+6,6,0,6,5,Cider unit,6,GALLON
+7,7,0,7,3,Starbuck's higher-up?,4,AHAB
+8,8,0,8,5,Ape or monkey,6,SIMIAN
+9,10,0,10,11,In the dark about something nefarious,12,NONETHEWISER
+10,11,0,11,2,"""Well, lookee there!""",3,OHO
+11,12,0,12,9,Place to see J.F.K.,10,HALFDOLLAR
+12,13,0,13,4,Hopping mad,5,IRATE
+13,14,0,14,4,"Past, present or future",5,TENSE
+22,5,3,5,5,Flowery necklace,3,LEI
+23,9,3,9,5,"Multisport race, in short",3,TRI
+30,3,5,3,14,In a prim and proper way,10,DECOROUSLY
+32,11,5,11,14,"Singer with the #1 albums ""As I Am"" and ""Girl on Fire""",10,ALICIAKEYS
+33,0,6,0,8,What you might call a tipsy friend,3,CAB
+34,1,6,1,9,Last words?,4,OBIT
+36,13,6,13,9,Symbols of wisdom,4,ELMS
+37,14,6,14,8,12/31,3,NYE
+39,6,7,6,9,Part of U.C.L.A.: Abbr.,3,CAL
+40,7,7,7,10,"Material used to make the object ""illustrated"" here, in a seasonal song",4,CLAY
+41,8,7,8,9,Coral island,3,CAY
+50,5,10,5,14,"""Yikes!""",5,OHGOD
+51,9,10,9,14,"Puts to sleep, say",5,BORES
+52,0,11,0,14,Take a turn with the object illustrated by the central black squares in this puzzle (leading to one of the four circled results),4,SPIN
+53,1,11,1,14,Oscar-winning Jared,4,LETO
+54,2,11,2,14,Symbols of wisdom,4,OWLS
+55,6,11,6,14,Word processing command,4,SAVE
+56,8,11,8,14,Policy nerd,4,WONK
+57,12,11,12,14,"""Très ___""",4,BIEN
+58,13,11,13,14,Singer Guthrie,4,ARLO
+59,14,11,14,14,Chocolate money won or lost in this puzzle's game,4,GELT
+62,7,12,7,14,___-tac-toe,3,TIC

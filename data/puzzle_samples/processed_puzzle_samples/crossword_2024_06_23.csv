@@ -1,0 +1,141 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,3,0,Plant in a bloom,4,ALGA
+5,5,0,8,0,"""La Vie en Rose"" singer",4,PIAF
+9,10,0,13,0,Mechanical catch,4,PAWL
+13,15,0,20,0,"Seasonal decoration from the Old French for ""sparkle""",6,TINSEL
+19,0,1,3,1,Atypical band instrument,4,HARP
+20,5,1,13,1,Path to Machu Picchu,9,INCATRAIL
+22,15,1,20,1,World Cup cheer,6,OLEOLE
+23,0,2,13,2,Two Iowans (1930),14,AMERICANGOTHIC
+25,15,2,20,2,"Renovation need, perhaps",6,PERMIT
+26,2,3,4,3,Succor,3,AID
+27,6,3,10,3,Patton crossed it in 1944,5,SEINE
+28,14,3,20,3,Stuff left behind by an old flame?,7,CINDERS
+29,0,4,6,4,Slip in a warehouse,7,INVOICE
+32,8,4,16,4,Part of the atmosphere above most weather,9,NEARSPACE
+36,18,4,20,4,Writer buried in a Baltimore churchyard,3,POE
+37,0,5,7,5,Six Basque villagers (1937),8,GUERNICA
+39,10,5,14,5,"""Real Time With Bill ___""",5,MAHER
+40,17,5,20,5,Souvlaki go-with,4,PITA
+41,0,6,5,6,Hashtag's neighbor on a keyboard,6,ATSIGN
+42,7,6,20,6,12 orbs (1889),14,THESTARRYNIGHT
+47,5,7,9,7,Adorable one,5,CUTEY
+49,11,7,13,7,Runner Down Under,3,EMU
+50,15,7,17,7,Many moons,3,EON
+51,0,8,6,8,Modern-day Phoenicia,7,LEBANON
+56,8,8,11,8,TV host Joy,4,REID
+58,14,8,20,8,"Performing, perhaps",7,ONSTAGE
+62,0,9,4,9,Wane,5,ABATE
+63,6,9,10,9,About to bloom,5,INBUD
+65,12,9,16,9,"""Ted Lasso"" footballer Jamie ___",5,TARTT
+67,18,9,20,9,Good name for a nuclear engineer?,3,ROD
+68,0,10,20,10,One gemstone (1665),21,GIRLWITHAPEARLEARRING
+72,0,11,2,11,"Just manage, with ""out""",3,EKE
+73,4,11,8,11,Component of the immune system,5,TCELL
+74,10,11,14,11,Sauce in Philippine cuisine,5,ADOBO
+75,16,11,20,11,Wacky,5,INANE
+76,0,12,6,12,Feature of a Raggedy Ann doll,7,REDHAIR
+78,9,12,12,12,Frog-hopping-into-water sound,4,PLOP
+79,14,12,20,12,Crazy Horse and kin,7,OGLALAS
+81,3,13,5,13,Name on a box of fruit-flavored candy,3,IKE
+82,7,13,9,13,Minute,3,WEE
+84,11,13,15,13,Wash out,5,RINSE
+86,0,14,13,14,"With 99-Across, four timepieces (1931)",14,THEPERSISTENCE
+91,15,14,20,14,"Too much, musically",6,TROPPO
+97,0,15,3,15,Plugs,4,WADS
+98,6,15,10,15,Unreliable narrators,5,LIARS
+99,13,15,20,15,See 86-Across,8,OFMEMORY
+101,0,16,2,16,Prefix with genetics,3,EPI
+102,4,16,12,16,"Instrument ""played"" in the ""Bill & Ted"" movies",9,AIRGUITAR
+106,14,16,20,16,Shanties,7,LEANTOS
+107,0,17,6,17,Goes straight,7,REFORMS
+109,10,17,14,17,Eyelike openings,5,OCULI
+111,16,17,18,17,Not in the dark,3,LIT
+112,0,18,5,18,Kitchen drawer section,6,KNIVES
+113,7,18,20,18,Kind of craft store kit ... or a hint to this puzzle's theme,14,PAINTBYNUMBERS
+119,0,19,5,19,Sheathe,6,ENCASE
+120,7,19,15,19,They're comfortable alone or in a crowd,9,AMBIVERTS
+121,17,19,20,19,River through Kazakhstan,4,URAL
+122,0,20,5,20,Yarn label number,6,DYELOT
+123,7,20,10,20,World capital that's part of the NATO alphabet,4,LIMA
+124,12,20,15,20,Viking group?,4,NASA
+125,17,20,20,20,Cable channel with horror/fantasy programming,4,SYFY
+1,0,0,0,2,"""So that's your game!""",3,AHA
+2,1,0,1,2,Flight,3,LAM
+3,2,0,2,6,Shin armor,7,GREAVES
+4,3,0,3,6,Knowable without experience,7,APRIORI
+5,5,0,5,2,"Proof of meeting a celeb, say",3,PIC
+6,6,0,6,5,"""Hold on!""",6,INASEC
+7,7,0,7,3,What pore clogging can lead to,4,ACNE
+8,8,0,8,4,"""Oliver Twist"" antagonist",5,FAGIN
+9,10,0,10,6,Press conference organizers,7,PRTEAMS
+10,11,0,11,2,Sound at the doctor's office,3,AAH
+11,12,0,12,2,Console with a wireless controller,3,WII
+12,13,0,13,2,Business name ender,3,LLC
+13,15,0,15,4,Something to talk about,5,TOPIC
+14,16,0,16,4,"Actress Graff of ""Mr. Belvedere""",5,ILENE
+15,17,0,17,3,Enthusiast,4,NERD
+16,18,0,18,6,Words woven into Charlotte's web,7,SOMEPIG
+17,19,0,19,6,Director who is part of filmdom's Splat Pack,7,ELIROTH
+18,20,0,20,6,"""Mangia!""",7,LETSEAT
+21,9,1,9,4,Answering machine signal,4,TONE
+24,4,2,4,6,Bouncer's job,5,IDING
+28,14,3,14,6,Vocalist Vikki,4,CARR
+29,0,4,0,6,Supermarket chain inits.,3,IGA
+30,1,4,1,6,Enthusiast,3,NUT
+31,5,4,5,8,Fünf : German :: ___ : Spanish,5,CINCO
+33,11,4,11,8,Put a value on,5,RATED
+34,12,4,12,7,Sorry excuse for a pillowcase?,4,SHAM
+35,13,4,13,7,20-Across setting,4,PERU
+38,7,5,7,7,QB stat: Abbr.,3,ATT
+40,17,5,17,8,About 40% of a yard,4,PINT
+43,8,6,8,11,Like some teas,6,HERBAL
+44,9,6,9,10,Look at desirously,5,EYEUP
+45,15,6,15,10,Gossip,5,YENTA
+46,16,6,16,12,One of two openings under a bridge,7,NOSTRIL
+48,6,7,6,12,Divider's counterpart,6,UNITER
+51,0,8,0,12,Bock or dunkel,5,LAGER
+52,1,8,1,12,Chargeable transport,5,EBIKE
+53,2,8,2,12,Like one's soul in a heart-to-heart,5,BARED
+54,3,8,3,10,"The Hawks, on scoreboards",3,ATL
+55,4,8,4,14,Fresh perspective,7,NEWTAKE
+57,10,8,10,12,Paragon,5,IDEAL
+58,14,8,14,13,Cereal with a Mega Stuf variety,6,OREOOS
+59,18,8,18,12,Helvetica-like typeface,5,ARIAL
+60,19,8,19,12,"""I'm ___ Git You Sucka"" (1988 parody film)",5,GONNA
+61,20,8,20,12,Often-frayed parts of papyrus,5,EDGES
+64,7,9,7,11,"Penguins play in it, for short",3,NHL
+65,12,9,12,14,It circles the earth,6,TROPIC
+66,13,9,13,11,Neighbor of Montana: Abbr.,3,ALB
+69,5,10,5,14,Less emotional,5,ICIER
+70,11,10,11,14,Deck out,5,ADORN
+71,17,10,17,12,Vaccine component,3,RNA
+77,3,12,3,15,Starts of some cheers,4,HIPS
+78,9,12,9,16,Kind of dish that you wouldn't want to eat from,5,PETRI
+80,15,12,15,16,"""Ya dig?""",5,GETME
+82,7,13,7,16,"""Bridesmaids"" co-star",4,WIIG
+83,8,13,8,16,"Biblical figure whose ""whole body was like a hairy garment""",4,ESAU
+85,13,13,13,15,Con head?,3,NEO
+86,0,14,0,20,Danced like Cardi B,7,TWERKED
+87,1,14,1,20,"Two farthings, colloquially",7,HAPENNY
+88,2,14,2,20,Large building,7,EDIFICE
+89,6,14,6,17,"Some cameras, for short",4,SLRS
+90,10,14,10,20,"Country that had a nonviolent ""singing revolution"" in the late 1980s",7,ESTONIA
+92,16,14,16,18,Sphere,5,REALM
+93,17,14,17,20,Kind of spending bill,7,OMNIBUS
+94,18,14,18,20,That's a bunch of crock!,7,POTTERY
+95,19,14,19,16,Hardly a noob,3,PRO
+96,20,14,20,16,Kvetchers' cries,3,OYS
+100,14,15,14,20,Lighter igniters,6,FLINTS
+102,4,16,4,20,Childish retort,5,ARESO
+103,5,16,5,20,"""No more for me, thanks""",5,IMSET
+104,11,16,11,19,When Macbeth fights Macduff,4,ACTV
+105,12,16,12,20,Politico Gallego,5,RUBEN
+108,3,17,3,20,Like some mirrors,4,OVAL
+110,13,17,13,20,Vega's constellation,4,LYRA
+113,7,18,7,20,Mate,3,PAL
+114,8,18,8,20,"113-Down, in French",3,AMI
+115,9,18,9,20,"Company that once generated more than 4,000 patents in a single year",3,IBM
+116,15,18,15,20,Security Council member,3,USA
+117,19,18,19,20,"Subj. of Churchill's ""Never ... was so much owed by so many to so few""",3,RAF
+118,20,18,20,20,Canny,3,SLY

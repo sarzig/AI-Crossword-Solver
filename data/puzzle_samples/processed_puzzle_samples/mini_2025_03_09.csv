@@ -1,0 +1,11 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,2,0,All over the ___,3,MAP
+4,0,1,4,1,Exasperated words before trailing off into a facepalm,5,IJUST
+7,0,2,4,2,"Kendrick who won five Grammys for 2024's ""Not Like Us""",5,LAMAR
+8,0,3,4,3,Rapper in a beef with 7-Across,5,DRAKE
+9,2,4,4,4,"""The birds and the bees""",3,SEX
+1,0,0,0,3,"Not spicy, as salsa",4,MILD
+2,1,0,1,3,"Slightly open, as a door",4,AJAR
+3,2,0,2,4,Mountain lions,5,PUMAS
+5,3,1,3,4,"Alcohol whose varieties include junmai (""pure rice"") and nigori (""cloudy"")",4,SAKE
+6,4,1,4,4,Dino with short arms,4,TREX

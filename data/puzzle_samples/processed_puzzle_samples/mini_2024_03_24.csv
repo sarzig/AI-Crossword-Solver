@@ -1,0 +1,12 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,3,0,Stephen A. Smith's channel,4,ESPN
+5,0,1,4,1,"Las Vegas thoroughfare, with ""the""",5,STRIP
+7,0,2,4,2,"Valuable substance in the world of ""Dune""",5,SPICE
+8,1,3,4,3,Fashion designer Marc,4,ECKO
+9,1,4,4,4,High schooler,4,TEEN
+10,1,5,4,5,Whirl of water,4,EDDY
+1,0,0,0,2,Suffix with priest or count,3,ESS
+2,1,0,1,5,"Neighboring city of Tampa, informally",6,STPETE
+3,2,0,2,5,Put a cost on,6,PRICED
+4,3,0,3,5,"Scratched ... or a coin with a ""small change""?",6,NICKED
+6,4,1,4,5,"Garden flower ... or a coin with a ""small change""?",5,PEONY

@@ -1,0 +1,11 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,1,0,4,0,"Italian tourist city you might be ""inclined"" to visit",4,PISA
+5,0,1,4,1,Pink/orange shade,5,CORAL
+6,0,2,4,2,Green/yellow shade,5,OLIVE
+7,0,3,3,3,Red/pink shade,4,ROSE
+8,0,4,2,4,Silver/gray shade,3,ASH
+1,1,0,1,4,Many collared golf shirts,5,POLOS
+2,2,0,2,4,From Dublin or Derry,5,IRISH
+3,3,0,3,3,"Command+S, on a Mac",4,SAVE
+4,4,0,4,2,Pint at a public house,3,ALE
+5,0,1,0,4,"___ Crawley, ""Downton Abbey"" countess",4,CORA

@@ -1,0 +1,11 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,1,0,4,0,The slightest bit,4,ATAD
+5,1,1,4,1,Like a crossword clue about crossword clues,4,META
+6,0,2,4,2,Sports shocker … with a hint to the circled letters,5,UPSET
+7,0,3,4,3,Sign of life,5,PULSE
+8,0,4,4,4,Small arguments,5,SPATS
+1,1,0,1,4,Make excited,5,AMPUP
+2,2,0,2,4,Automaker with a Cybertruck,5,TESLA
+3,3,0,3,4,"""This is ___"" (disclaimer accompanying an alarm)",5,ATEST
+4,4,0,4,4,First ones might be awkward,5,DATES
+6,0,2,0,4,FedEx competitor,3,UPS

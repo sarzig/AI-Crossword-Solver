@@ -1,0 +1,143 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,2,0,With frequency,3,OFT
+4,5,0,8,0,Little disagreement,4,SPAT
+8,10,0,14,0,"Rank for Porthos of ""The Three Musketeers""",5,BARON
+13,16,0,20,0,Speak in Spanish,5,HABLA
+18,0,1,3,1,Court entrance?,4,PLEA
+20,5,1,8,1,Meaty sauce,4,RAGU
+21,10,1,14,1,Polynesian love,5,ALOHA
+22,16,1,20,1,High grade,5,APLUS
+23,0,2,8,2,Instrument anyone can play,9,AIRGUITAR
+25,10,2,20,2,"""Oh, now I understand the significance of the troupe's performance in 'Hamlet'!""",11,PLAYSATRICK
+27,0,3,4,3,"W-4 collector, for short",5,HRREP
+28,6,3,9,3,Window treatment,4,TINT
+30,11,3,13,3,Singer Rita,3,ORA
+31,15,3,20,3,"Touches up, as a tattoo",6,REINKS
+32,0,4,13,4,"""I can't get past this witness box!""",14,STANDSINTHEWAY
+35,15,4,18,4,"Like many burns, paradoxically",4,COLD
+36,3,5,5,5,Word that can be represented by a number,3,TOO
+37,9,5,12,5,Part of M.I.T.: Abbr.,4,INST
+38,14,5,20,5,"Accidental ""subject"" of certain snapshots",7,LENSCAP
+41,0,6,10,6,"""Watch out for that bully!""",11,JERKSAROUND
+47,13,6,15,6,Lead-in to air or Atlantic,3,MID
+48,18,6,20,6,Application,3,USE
+49,0,7,2,7,"""Father of,"" in Arabic",3,ABU
+50,5,7,8,7,"Deborah of ""The Innocents,"" 1961",4,KERR
+51,11,7,14,7,Bamboozle,4,SCAM
+53,16,7,20,7,Passage straight from the heart,5,AORTA
+55,0,8,4,8,Gave medicine,5,DOSED
+58,6,8,20,8,"""Everyone dislikes autumn now!""",15,FALLSOUTOFFAVOR
+62,0,9,7,9,Where artwork is often hung,8,EYELEVEL
+64,9,9,13,9,Self-___,5,AWARE
+65,15,9,19,9,"20,000 drops, pharmaceutically",5,LITER
+66,3,10,6,10,Big name in laptops,4,ACER
+67,8,10,12,10,Euphemistic term for love,5,LWORD
+68,14,10,17,10,"Lisa with the 1994 #1 hit ""Stay (I Missed You)""",4,LOEB
+69,1,11,5,11,Where to see party people out on the floor?,5,CSPAN
+71,7,11,11,11,Actor Willem,5,DAFOE
+72,13,11,20,11,Really succeed,8,GOPLACES
+76,0,12,14,12,"""Dracula has lived half a millennium!""",15,BATSFIVEHUNDRED
+79,16,12,20,12,Talk like Foghorn Leghorn,5,DRAWL
+80,0,13,4,13,Lets out,5,FREES
+81,6,13,9,13,"Name that becomes an adjective when ""-y"" is added",4,EARL
+82,12,13,15,13,Scottish refusals,4,NAES
+84,18,13,20,13,"Actress Whitman of ""Parenthood""",3,MAE
+85,0,14,2,14,Word that can be represented by a number,3,FOR
+86,5,14,7,14,Industrious animal in a classic fable,3,HEN
+87,10,14,20,14,"""I'm thinking of a grizzly!""",11,BEARSINMIND
+91,0,15,6,15,Brandy container,7,SNIFTER
+94,8,15,11,15,Queen's onetime rock style,4,GLAM
+96,15,15,17,15,Fish of the future,3,ROE
+97,2,16,5,16,Twisted do,4,LOCS
+98,7,16,20,16,"""Careful, the shrub may have fingerprints on it!""",14,PLANTSEVIDENCE
+105,0,17,5,17,Portmanteau expressions popularized by Tyra Banks,6,SMIZES
+107,7,17,9,17,Trendy,3,HOT
+108,11,17,14,17,Not just a couple,4,SOME
+109,16,17,20,17,Many a Mormon,5,UTAHN
+110,0,18,10,18,"""I finished this crossword!""",11,PUZZLESOVER
+113,12,18,20,18,Staple of Coen brothers films,9,DARKHUMOR
+115,0,19,4,19,Buck who was inducted into the Baseball Hall of Fame in 2022,5,ONEIL
+116,6,19,10,19,Closed captioner's machine,5,STENO
+117,12,19,15,19,101-Down opera,4,AIDA
+118,17,19,20,19,Currency of the Philippines,4,PESO
+119,0,20,4,20,Diurnal phenomena,5,TIDES
+120,6,20,10,20,Acknowledge wordlessly,5,NODTO
+121,12,20,15,20,Shape of a fox's pupil,4,SLIT
+122,18,20,20,20,Haven,3,DEN
+1,0,0,0,4,Brightly colored food fish,5,OPAHS
+2,1,0,1,4,Make goo-goo eyes,5,FLIRT
+3,2,0,2,4,Earth,5,TERRA
+4,5,0,5,2,Title of respect,3,SRI
+5,6,0,6,4,R&B's LaBelle,5,PATTI
+6,7,0,7,4,Over,5,AGAIN
+7,8,0,8,4,"Amped (up), slangily",5,TURNT
+8,10,0,10,2,Korean word for cooked rice,3,BAP
+9,11,0,11,5,Permits,6,ALLOWS
+10,12,0,12,5,Find hilarious,6,ROARAT
+11,13,0,13,4,"""Well, that's awesome!""",5,OHYAY
+12,14,0,14,2,"""Stillmatic"" rapper",3,NAS
+13,16,0,16,5,Talk smack about,6,HATEON
+14,17,0,17,5,Taxing times?,6,APRILS
+15,18,0,18,9,Something you shouldn't pass on,10,BLINDCURVE
+16,19,0,19,3,"""Diligence is the mother of good ___"": Benjamin Franklin",4,LUCK
+17,20,0,20,3,Consults,4,ASKS
+19,3,1,3,6,"""Men in Black"" role",6,AGENTK
+24,4,2,4,6,"Braided buns, e.g.",5,UPDOS
+26,15,2,15,6,Rainbow-esque,5,ARCED
+29,9,3,9,6,"Water down, say",4,THIN
+33,5,4,5,7,"Water down, say",4,SOAK
+34,10,4,10,6,Purpose,3,END
+38,14,5,14,8,It might be a stretch,4,LIMO
+39,19,5,19,9,Family name synonymous with wealth in early America,5,ASTOR
+40,20,5,20,8,Oviform : egg :: pyriform : ___,4,PEAR
+41,0,6,0,9,Relative of lime and mint,4,JADE
+42,1,6,1,9,TikTok persona typified by floppy hair and grunge clothing,4,EBOY
+43,2,6,2,9,Stratagem,4,RUSE
+44,6,6,6,10,"Cite, with ""to""",5,REFER
+45,7,6,7,9,___-B,4,ORAL
+46,8,6,8,8,Certain link,3,URL
+47,13,6,13,9,Chum,4,MATE
+51,11,7,11,12,"Went way, way up",6,SOARED
+52,12,7,12,10,Lemon ___,4,CURD
+53,16,7,16,12,Away from home,6,AFIELD
+54,17,7,17,12,"Hiker's snack, perhaps",6,OATBAR
+56,3,8,3,13,"March on, so to speak",6,ELAPSE
+57,4,8,4,13,Gentle roasts,6,DECAFS
+59,9,8,9,13,By the book,6,LAWFUL
+60,10,8,10,12,"Require smelling salts, say",5,SWOON
+61,15,8,15,11,Dud,4,FLOP
+63,5,9,5,12,Start of a boast by Julius Caesar,4,VENI
+67,8,10,8,13,Bert of Cowardly Lion fame,4,LAHR
+68,14,10,14,14,Rock veins,5,LODES
+69,1,11,1,15,"Leslie of ""Gigi"" and ""Lili""",5,CARON
+70,2,11,2,20,Disinfected,10,STERILIZED
+71,7,11,7,14,School honcho,4,DEAN
+72,13,11,13,14,"Boots, tent, mosquito spray, etc.",4,GEAR
+73,18,11,18,14,"Spaghetti-strapped top, informally",4,CAMI
+74,19,11,19,14,Actor McGregor,4,EWAN
+75,20,11,20,14,Toy that may have a rope,4,SLED
+76,0,12,0,15,"They might have matching half-heart necklaces, in brief",4,BFFS
+77,6,12,6,15,Swerve,4,VEER
+78,12,12,12,14,Vaccine molecule,3,RNA
+83,15,13,15,16,One who's always on the phone?,4,SIRI
+86,5,14,5,18,"""Steppenwolf"" author",5,HESSE
+87,10,14,10,16,Something that might be put on plastic bags,3,BAN
+88,11,14,11,17,"Many front-line workers, in brief",4,EMTS
+89,16,14,16,18,"""Thanks, Captain Obvious""",5,NODUH
+90,17,14,17,19,Come together,6,MEETUP
+92,3,15,3,20,Muppet bear,6,FOZZIE
+93,4,15,4,20,Immune system components,6,TCELLS
+94,8,15,8,20,"Ready to play catch, say",6,GLOVED
+95,9,15,9,20,Unexpressed,6,LATENT
+98,7,16,7,20,Passport requirement,5,PHOTO
+99,12,16,12,20,Pops,5,SODAS
+100,13,16,13,20,Where @ is at?,5,EMAIL
+101,14,16,14,20,Composer Giuseppe,5,VERDI
+102,18,16,18,20,Picked,5,NAMED
+103,19,16,19,20,Picked,5,CHOSE
+104,20,16,20,20,Subject of a 2001 bankruptcy,5,ENRON
+105,0,17,0,20,"Give as a handicap, as points",4,SPOT
+106,1,17,1,20,"Local bond, informally",4,MUNI
+111,6,18,6,20,Tax ID,3,SSN
+112,10,18,10,20,Pooh's rhyming friend,3,ROO
+114,15,18,15,20,Krazy ___ of cartoons,3,KAT

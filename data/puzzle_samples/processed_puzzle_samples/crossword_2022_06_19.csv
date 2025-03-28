@@ -1,0 +1,143 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,5,0,"""In a word ... awful!""",6,ITSBAD
+7,7,0,11,0,Range of light that's invisible to the human eye,5,INFRA
+12,13,0,20,0,—,8,SPECTRUM
+20,0,1,5,1,Brand in the frozen foods aisle,6,OREIDA
+21,7,1,11,1,Called to Bo-Peep,5,BAAED
+22,13,1,20,1,"""You and me both""",8,LIKEWISE
+23,0,2,5,2,Strong breath fresheners,6,WINTER
+24,7,2,11,2,—,5,MINTS
+25,13,2,20,2,Like one of Michael Jackson's hands when performing,8,UNGLOVED
+26,0,3,6,3,Exams for top H.S. students,7,APTESTS
+28,8,3,10,3,Alternative to JFK,3,LGA
+29,12,3,15,3,Skedaddles,4,GITS
+30,17,3,20,3,Reviews negatively,4,PANS
+31,0,4,3,4,Usual,4,NORM
+32,6,4,14,4,Stage set?,9,THESPIANS
+35,16,4,19,4,"Nathan who said ""I only regret that I have but one life to lose for my country""",4,HALE
+36,1,5,8,5,Locks that have been changed,8,DYEDHAIR
+39,11,5,13,5,Inapplicable stat for electric cars,3,MPG
+40,15,5,19,5,"Mark Twain, religiously",5,DEIST
+41,4,6,7,6,Some art supplies,4,OILS
+42,9,6,12,6,Label on some jars,4,TIPS
+44,14,6,17,6,Hon,4,DEAR
+45,1,7,6,7,"John Hancock, famously",6,SIGNEE
+48,8,7,11,7,Reef predators,4,EELS
+49,13,7,16,7,Beast slain by Hercules in his fourth labor,4,BOAR
+50,18,7,20,7,Three-pronged letter,3,PSI
+53,1,8,4,8,Boatloads,4,ALOT
+54,7,8,10,8,"Jessica of TV's ""Candy""",4,BIEL
+55,12,8,20,8,Treacherous places to land for eagles?,9,SANDTRAPS
+57,1,9,3,9,"""Mazel ___!""",3,TOV
+58,5,9,9,9,Moolah,5,DOUGH
+60,11,9,15,9,Cocktail with an energy boost,5,VODKA
+61,17,9,20,9,—,4,BULL
+62,0,10,3,10,Seedy bar,4,DIVE
+63,5,10,9,10,"Listed, obsolescently",5,INTHE
+64,11,10,15,10,—,5,PAGES
+65,17,10,20,10,"Tennis pro Nastase, the first athlete to sign an endorsement deal with Nike",4,ILIE
+66,0,11,3,11,"Washington, with ""the""",4,EVER
+67,5,11,9,11,—,5,STATE
+68,11,11,15,11,"Hunts, with ""on""",5,PREYS
+69,17,11,19,11,Hot ___ (speaker's worry),3,MIC
+70,0,12,8,12,Brushes are dipped in them,9,PAINTCANS
+72,10,12,13,12,Small knocks,4,NITS
+73,16,12,19,12,See-through piece,4,PANE
+74,0,13,2,13,It's observed at LAX during part of the year,3,PST
+75,4,13,7,13,Cross one's fingers,4,HOPE
+76,9,13,12,13,Nickname for Chloe,4,COCO
+77,14,13,19,13,"Portland native, e.g.",6,MAINER
+79,3,14,6,14,What a raised hand might mean,4,HERE
+80,8,14,11,14,Avid war campaigner,4,HAWK
+81,13,14,16,14,[What a snoozefest!],4,YAWN
+82,1,15,5,15,"Car in the Beach Boys' ""Fun, Fun, Fun""",5,TBIRD
+84,7,15,9,15,"Sweater fuzz, e.g.",3,NAP
+85,12,15,19,15,"It can be detected using the ""bite test"" or ""vinegar test""",8,FAKEGOLD
+89,1,16,4,16,Noted slacking speedster,4,HARE
+90,6,16,14,16,Not stay undefeated,9,LOSEAGAME
+93,17,16,20,16,Certain spa treatment,4,PEEL
+95,0,17,3,17,Trim,4,PARE
+96,5,17,8,17,1988 #1 country album named for its singer,4,REBA
+97,10,17,12,17,Roman god often depicted with a radiant crown,3,SOL
+98,14,17,20,17,Zenned out,7,ATPEACE
+101,0,18,7,18,Two-player board game with spies and bombs,8,STRATEGO
+103,9,18,13,18,Bust mid-crime,5,CATCH
+105,15,18,20,18,—,6,HANDED
+106,0,19,7,19,"Lover of psychedelics, informally",8,ACIDHEAD
+107,9,19,13,19,Words to a silly goose,5,OHYOU
+108,15,19,20,19,Putting on the heat?,6,ARMING
+109,0,20,7,20,Mascot who made his Macy's Thanksgiving Day Parade debut in 2017,8,THEJOLLY
+110,9,20,13,20,—,5,GIANT
+111,15,20,20,20,Cinq x six,6,TRENTE
+1,0,0,0,4,Hawkeye,5,IOWAN
+2,1,0,1,5,Stand for a photograph,6,TRIPOD
+3,2,0,2,5,Guard,6,SENTRY
+4,3,0,3,5,"""Oh, shove it!""",6,BITEME
+5,4,0,4,3,Fruity refreshments,4,ADES
+6,5,0,5,3,What nervous eyes might do,4,DART
+7,7,0,7,2,Big name in cloud computing,3,IBM
+8,8,0,8,5,Roofer's power tool,6,NAILER
+9,9,0,9,4,Gargoyles are often depicted with them,5,FANGS
+10,10,0,10,4,Draw upon again,5,RETAP
+11,11,0,11,2,"Sponsored content, essentially",3,ADS
+12,13,0,13,5,Twisting on an axis,6,SLUING
+13,14,0,14,4,Some ice cream purchases,5,PINTS
+14,15,0,15,3,"Heart charts, in brief",4,EKGS
+15,16,0,16,2,Cartoon frame,3,CEL
+16,17,0,17,6,There's a 4.75% chance of getting this in poker,7,TWOPAIR
+17,18,0,18,5,"Tesla and Edison, famously",6,RIVALS
+18,19,0,19,5,Early online discussion forum,6,USENET
+19,20,0,20,3,Pharma supplies,4,MEDS
+27,6,3,6,7,"Lose its spark, as a relationship",5,STALE
+29,12,3,12,6,Temporary solutions,4,GAPS
+33,7,4,7,6,Opening words?,3,HIS
+34,11,4,11,7,Little troublemakers,4,IMPS
+35,16,4,16,8,Thrilling,5,HEART
+37,4,5,4,8,"""That's a touchy subject""",4,DONT
+38,5,5,5,7,Move hurriedly,3,HIE
+40,15,5,15,11,"Utterly, in slang",7,DEADASS
+42,9,6,9,11,Giggle,6,TEEHEE
+43,10,6,10,8,"""It's my turn"" [or] Comment after rambling on",3,ILL
+44,14,6,14,11,"Equus africanus asinus, more familiarly",6,DONKEY
+45,1,7,1,13,Marijuana strains said to be more invigorating,7,SATIVAS
+46,2,7,2,13,"""How marvelous!""",7,ILOVEIT
+47,3,7,3,12,Wield authority,6,GOVERN
+48,8,7,8,12,Lucky numbers in Chinese culture,6,EIGHTS
+49,13,7,13,12,Stars of the Wild West,6,BADGES
+50,18,7,18,13,Film critic Kael,7,PAULINE
+51,19,7,19,13,"Someone sequencing DNA, e.g.",7,SPLICER
+52,20,7,20,10,Vacation getaway,4,ISLE
+54,7,8,7,13,Lighter fluid,6,BUTANE
+55,12,8,12,13,"Reach, as new heights",6,SOARTO
+56,17,8,17,13,"Baseball slugger, informally",6,RBIMAN
+58,5,9,5,15,Lack of harmony,7,DISCORD
+59,6,9,6,14,Ready to watch later,6,ONTAPE
+60,11,9,11,14,"Major political announcement before a convention, informally",6,VPPICK
+62,0,10,0,13,Actor in a much-publicized 2022 defamation case,4,DEPP
+71,4,12,4,16,—,5,THERE
+72,10,12,10,14,—,3,NOW
+73,16,12,16,15,—,4,PING
+76,9,13,9,16,Place for a lighthouse,4,CAPE
+77,14,13,14,17,"Pull off the road for gas or snacks, say",5,MAKEA
+78,15,13,15,15,Blow away,3,AWE
+79,3,14,3,20,Book some wedding entertainment,7,HIREADJ
+80,8,14,8,17,Tries,4,HASA
+81,13,14,13,16,Starchy vegetable,3,YAM
+82,1,15,1,20,Kind of roof for a tiki bar,6,THATCH
+83,2,15,2,20,Peter Pan's creator,6,BARRIE
+84,7,15,7,20,Opposite of a superstar,6,NOBODY
+85,12,15,12,20,Avenger who stepped into the role of Captain America,6,FALCON
+86,17,15,17,20,Invitation on a wrapped gift,6,OPENME
+87,18,15,18,20,Preamble,6,LEADIN
+88,19,15,19,20,"Clothed, so to speak",6,DECENT
+90,6,16,6,20,Paper size,5,LEGAL
+91,10,16,10,20,Japanese brew,5,ASAHI
+92,11,16,11,20,Prankster's smug shout,5,GOTYA
+94,20,16,20,20,One might be right outside your window,5,LEDGE
+95,0,17,0,20,Junior's hurdle,4,PSAT
+96,5,17,5,20,Stagger about,4,REEL
+99,15,17,15,20,"""Copy ___""",4,THAT
+100,16,17,16,20,"Surname of the ""Incredibles"" superhero family",4,PARR
+102,4,18,4,20,"Nonetheless, poetically",3,THO
+103,9,18,9,20,"Lowly worker, so to speak",3,COG
+104,13,18,13,20,Yell before a snap,3,HUT

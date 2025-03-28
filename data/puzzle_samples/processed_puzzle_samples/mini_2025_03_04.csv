@@ -1,0 +1,11 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,1,0,4,0,Secretly includes on an email chain,4,BCCS
+5,0,1,4,1,"""Everything good?""",5,YOUOK
+6,0,2,4,2,Big name in nondairy milk,5,OATLY
+7,0,3,3,3,"Food, informally",4,GRUB
+8,0,4,3,4,"Game in which you might have to find ""something blue""",4,ISPY
+1,1,0,1,4,Pigs with tusks,5,BOARS
+2,2,0,2,4,Slice or dice,5,CUTUP
+3,3,0,3,4,Cheese mixed with Monterey Jack in an orange-and-white speckled block,5,COLBY
+4,4,0,4,2,What the lens of a telescope faces,3,SKY
+5,0,1,0,4,Teacher of meditative poses,4,YOGI

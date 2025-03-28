@@ -1,0 +1,11 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,4,0,Month that was the first of the new year in early 3-Down calendars,5,MARCH
+6,0,1,4,1,Love so much,5,ADORE
+7,0,2,4,2,Maker of Ironman Triathlon watches,5,TIMEX
+8,0,3,4,3,Stop,5,CEASE
+9,0,4,4,4,Searches (for),5,HUNTS
+1,0,0,0,4,Soccer contest,5,MATCH
+2,1,0,1,4,Francophile's farewell,5,ADIEU
+3,2,0,2,4,"Like Janus, the god of beginnings",5,ROMAN
+4,3,0,3,4,Feature of a cockatoo's head,5,CREST
+5,4,0,4,4,Not-so-nice magic spells,5,HEXES

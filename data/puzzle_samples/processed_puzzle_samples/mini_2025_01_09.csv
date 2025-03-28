@@ -1,0 +1,11 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,1,0,4,0,"The translation of this English word is ""sinister"" in Latin",4,LEFT
+5,0,1,4,1,Brief role for a big star,5,CAMEO
+6,0,2,4,2,Muppet with a pet worm named Slimey,5,OSCAR
+7,0,3,4,3,"Specifics, slangily",5,DEETS
+8,0,4,4,4,"Playground retort to ""Am not!""",5,ARESO
+1,1,0,1,4,High-tech beam,5,LASER
+2,2,0,2,4,Host with a microphone,5,EMCEE
+3,3,0,3,4,Extraordinary achievements,5,FEATS
+4,4,0,4,4,Where most of the body's organs are located,5,TORSO
+5,0,1,0,4,Musical finale,4,CODA

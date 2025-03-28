@@ -1,0 +1,12 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,3,0,"Sing like ""Boopity-bop-dee-doo-dee-doo-bee""",4,SCAT
+5,0,1,4,1,Hawk's claw,5,TALON
+7,0,2,5,2,"The ""U"" in U.K.",6,UNITED
+9,0,3,5,3,"""Hey, that's cheating!""",6,NOFAIR
+10,1,4,5,4,"Rapper with the songs ""Hot in Herre"" and ""Air Force Ones""",5,NELLY
+1,0,0,0,3,Surprise greatly,4,STUN
+2,1,0,1,4,Officially accepted storylines,5,CANON
+3,2,0,2,4,"""Get ___!"" (""Stop being so boring!"")",5,ALIFE
+4,3,0,3,4,Sum amount,5,TOTAL
+6,4,1,4,4,Astronaut Armstrong,4,NEIL
+8,5,2,5,4,Free of moisture,3,DRY

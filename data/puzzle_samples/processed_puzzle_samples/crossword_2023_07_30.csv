@@ -1,0 +1,141 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,4,0,"Org. that sells ""Speaking up for those who can't"" T-shirts",5,ASPCA
+6,6,0,9,0,"Bread or pasta, informally",4,CARB
+10,11,0,14,0,"Rae of ""Vengeance""",4,ISSA
+14,16,0,20,0,Gives off,5,EMITS
+19,0,1,9,1,"Social movement that Teddy Roosevelt proclaimed ""the most American thing in America""",10,CHAUTAUQUA
+21,11,1,14,1,Boyfriend,4,BEAU
+22,16,1,20,1,"Christopher ___, director of ""Oppenheimer"" (2023)",5,NOLAN
+23,0,2,14,2,"""Hugh Hefner was quite the media mogul. They called him ...""",15,MISTERBUNNYMAGS
+25,16,2,20,2,Leaf-wrapped Turkish dish,5,DOLMA
+26,0,3,2,3,"Chargeable cars, for short",3,EVS
+27,5,3,10,3,Jerkface,6,MEANIE
+28,12,3,16,3,"""Hands off!""",5,LETGO
+30,18,3,20,3,Catch,3,BAG
+31,2,4,4,4,Key item,3,FOB
+34,8,4,12,4,Lauder in the cosmetics aisle,5,ESTEE
+36,14,4,20,4,"Grabs a snack, say",7,REFUELS
+38,0,5,19,5,"""I know they've had them on all day, but let the kids eat their candy. After all, a Ring Pop is a ...""",20,WEARABLETHINGTOTASTE
+44,0,6,8,6,"""Mwa-ha-ha-ha"" is one",9,EVILLAUGH
+45,11,6,13,6,"""General"" with a spicy recipe",3,TSO
+46,15,6,17,6,"De Armas who name-checked the New York Times crossword on ""S.N.L.""",3,ANA
+47,0,7,2,7,Slithering swimmer,3,EEL
+48,4,7,7,7,Raison d'___,4,ETRE
+49,9,7,11,7,"One of a record 2,297 for Hank Aaron",3,RBI
+51,13,7,16,7,Bit of Old Norse,4,RUNE
+53,18,7,20,7,Columbus sch.,3,OSU
+56,3,8,20,8,"""Do you really trust these Bitcoiners? Beware ...""",18,GEEKSBEARINGGRIFTS
+60,0,9,4,9,"Suppressed, as a story",5,SATON
+63,7,9,12,9,Dreaded collectors,6,TAXMEN
+64,14,9,20,9,"Academic with funding, say",7,GRANTEE
+65,0,10,3,10,Formation involving fibrin,4,CLOT
+66,5,10,8,10,Jumbled mess,4,HASH
+68,12,10,15,10,"""___-daisy!""",4,UPSY
+70,17,10,20,10,Cherished,4,DEAR
+71,0,11,6,11,Best,7,OPTIMAL
+73,8,11,13,11,Family nickname,6,AUNTIE
+77,16,11,20,11,"Publicly makes fun of, slangily, with ""on""",5,DUNKS
+78,0,12,17,12,"""That poor lion has a mighty toothache. Boy, ...""",18,WHENITPAINSITROARS
+82,0,13,2,13,Boyo,3,LAD
+83,4,13,7,13,Soothsayer,4,SEER
+84,9,13,11,13,Counterpart of 76-Down,3,TAT
+85,13,13,16,13,Big Apple fashion inits.,4,DKNY
+86,18,13,20,13,Sport-___ (vehicle),3,UTE
+89,3,14,5,14,Home to Masada National Park: Abbr.,3,ISR
+90,7,14,9,14,Lead-in to Pen,3,EPI
+92,12,14,20,14,"Sliced into thin strips, as carrots",9,JULIENNED
+94,1,15,20,15,"""Enjoy your stay on our horse farm. Hope it's not too noisy. You can expect ...""",20,THREEMARESQUEALSADAY
+99,0,16,6,16,One of five every seven,7,WEEKDAY
+100,8,16,12,16,Roman theater,5,ODEUM
+101,16,16,18,16,Half a giggle,3,TEE
+102,0,17,2,17,"""Y"" on a form",3,YES
+103,4,17,8,17,"""What ___"" (""Bummer!"")",5,ADRAG
+105,10,17,15,17,Rain checks?,6,WIPERS
+109,18,17,20,17,Kvass grain,3,RYE
+112,0,18,4,18,Story that goes over one's head?,5,ATTIC
+114,6,18,20,18,"""Can you believe I sneaked into Buckingham Palace in a trunk and saw the king? I was a ...""",15,THRONESSTOWAWAY
+118,0,19,4,19,What was exited during Brexit,5,THEEU
+119,6,19,9,19,"King who said ""How sharper than a serpent's tooth it is to have a thankless child!""",4,LEAR
+120,11,19,20,19,Annual New Year's celebration in Pasadena,10,ROSEPARADE
+121,0,20,4,20,"___ Haute, Ind.",5,TERRE
+122,6,20,9,20,Titular Austen heroine,4,EMMA
+123,11,20,14,20,"Small tips, maybe",4,ONES
+124,16,20,20,20,Forest nymph,5,DRYAD
+1,0,0,0,3,Fictional supplier of Jet-Propelled Pogo Sticks and Dehydrated Boulders,4,ACME
+2,1,0,1,3,Makeshift knife,4,SHIV
+3,2,0,2,7,Grading option,8,PASSFAIL
+4,3,0,3,2,Director's shout,3,CUT
+5,4,0,4,2,"Loved, loved, loved, with ""up""",3,ATE
+6,6,0,6,3,"Die, e.g.",4,CUBE
+7,7,0,7,3,Shade of blue,4,AQUA
+8,8,0,8,6,Verb for a biblical cup,7,RUNNETH
+9,9,0,9,5,Cast out,6,BANISH
+10,11,0,11,2,"""Nobody ever got fired for buying ___"" (old business saying)",3,IBM
+11,12,0,12,6,"With these, one can surely walk on water",7,SEALEGS
+12,13,0,13,3,Learned,4,SAGE
+13,14,0,14,5,___-Hungarian Empire,6,AUSTRO
+14,16,0,16,9,What might prompt nostalgia,10,ENDOFANERA
+15,17,0,17,2,Pasture sound,3,MOO
+16,18,0,18,5,"""Uh-huh, sure""",6,ILLBET
+17,19,0,19,5,Leaf-wrapped Mexican dish,6,TAMALE
+18,20,0,20,4,Catches,5,SNAGS
+20,5,1,5,3,"Set, as a security system",3,ARM
+24,10,2,10,5,Himalayan sight ... or maybe not,4,YETI
+29,15,3,15,10,Start to see red,8,GETANGRY
+32,3,4,3,6,"The Magic, on scoreboards",3,ORL
+33,4,4,4,9,Kind of whale with two blowholes,6,BALEEN
+35,11,4,11,9,Whole,6,ENTIRE
+37,17,4,17,6,Country with no official language,3,USA
+38,0,5,0,7,Bitty,3,WEE
+39,1,5,1,7,Night before,3,EVE
+40,5,5,5,8,"Restrain, as breath",4,BATE
+41,6,5,6,8,Wait in the shadows,4,LURK
+42,7,5,7,10,Expels,6,EGESTS
+43,13,5,13,8,Of two minds,4,TORN
+49,9,7,9,9,"Kind of cat with short, curly fur",3,REX
+50,10,7,10,9,Comic book sound effect,3,BAM
+52,14,7,14,10,Fleece-lined boots,4,UGGS
+53,18,7,18,11,Habitually,5,OFTEN
+54,19,7,19,11,"Rare treat, maybe",5,STEAK
+55,20,7,20,11,Employers,5,USERS
+56,3,8,3,12,Was accepted,5,GOTIN
+57,8,8,8,12,Faith that preaches religious unity,5,BAHAI
+58,12,8,12,12,Nunavut people,5,INUIT
+59,17,8,17,12,Himalayan river,5,INDUS
+60,0,9,0,13,Curmudgeon's countenance,5,SCOWL
+61,1,9,1,13,___ Centauri,5,ALPHA
+62,2,9,2,13,Hauled,5,TOTED
+66,5,10,5,17,"Enjoy, as an article, even though it makes your blood boil",8,HATEREAD
+67,6,10,6,13,"Mont Blanc, par exemple",4,ALPE
+69,13,10,13,15,Big name in chicken,6,PERDUE
+72,4,11,4,20,Didn't pick up what someone was putting down,10,MISSEDACUE
+74,9,11,9,16,"Loose, as laces",6,UNTIED
+75,10,11,10,13,U.S. intelligence org.,3,NSA
+76,11,11,11,13,Counterpart of 84-Across,3,TIT
+77,16,11,16,16,"Least sweet, maybe",6,DRYEST
+79,7,12,7,15,Square's length squared,4,AREA
+80,14,12,14,15,"Choctaw word for ""people,"" as seen in a U.S. state name",4,OKLA
+81,15,12,15,15,"Kapoor of ""Slumdog Millionaire""",4,ANIL
+86,18,13,18,20,Happening,8,UNDERWAY
+87,19,13,19,15,Oolong or Darjeeling,3,TEA
+88,20,13,20,15,Ice cream entrepreneur Joseph,3,EDY
+89,3,14,3,16,Annoy,3,IRK
+91,8,14,8,20,Play thing?,7,PROGRAM
+92,12,14,12,20,Eagerly accepts,7,JUMPSON
+93,17,14,17,16,Dundee denial,3,NAE
+94,1,15,1,20,Reach a dental milestone,6,TEETHE
+95,2,15,2,20,"Prynne of ""The Scarlet Letter""",6,HESTER
+96,6,15,6,20,"Periwinkle, by another name",6,MYRTLE
+97,10,15,10,18,Stitched,4,SEWN
+98,11,15,11,20,"""I want,"" in Oaxaca",6,QUIERO
+99,0,16,0,20,Comedian Cenac,5,WYATT
+104,7,17,7,20,[Excuse me],4,AHEM
+106,13,17,13,20,Latin 101 infinitive,4,ESSE
+107,14,17,14,20,GPS suggestions: Abbr.,4,RTES
+108,15,17,15,19,Soak (up),3,SOP
+110,19,17,19,20,"When tripled, ""Blah, blah, blah""",4,YADA
+111,20,17,20,20,Word with eagle or green,4,EYED
+113,3,18,3,20,Occupational suffix,3,IER
+115,9,18,9,20,Italian unit of time,3,ORA
+116,16,18,16,20,Big roll,3,WAD
+117,17,18,17,20,Pirate's exclamation,3,ARR

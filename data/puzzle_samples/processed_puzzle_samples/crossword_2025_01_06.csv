@@ -1,0 +1,77 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,3,0,Supersonic speed number,4,MACH
+5,5,0,9,0,Cookies that are sometimes dunked in milk,5,OREOS
+10,11,0,14,0,Whole lot,4,SCAD
+14,0,1,3,1,Cousin of a clarinet,4,OBOE
+15,5,1,9,1,"What ""duty-free"" means",5,NOTAX
+16,11,1,14,1,"Westover with the best-selling memoir ""Educated""",4,TARA
+17,0,2,14,2,Theatrical description,15,CHARACTERSKETCH
+20,0,3,6,3,Position of greatest stress,7,HOTSEAT
+21,9,3,14,3,"""Campbell's Soup Cans"" painter",6,WARHOL
+22,0,4,2,4,"""___ longa, vita brevis""",3,ARS
+23,4,4,8,4,Iditarod entries,5,SLEDS
+26,10,4,12,4,"Follower of double-you, ex, wye",3,ZEE
+27,3,5,14,5,Dog crossbreed known for its teddy bear appearance,12,GOLDENDOODLE
+31,0,6,4,6,Recovered from a fall,5,GOTUP
+34,7,6,10,6,"Modern anxiety source, in brief",4,FOMO
+35,12,6,14,6,Small cove,3,RIA
+36,0,7,3,7,Applications,4,USES
+37,5,7,9,7,Sandwiches that often contain tuna,5,MELTS
+39,11,7,14,7,Overnight ___ (breakfast option),4,OATS
+40,0,8,2,8,Brewery offering,3,ALE
+41,4,8,7,8,Crimson Tide univ.,4,BAMA
+42,10,8,14,8,Large cove,5,INLET
+43,0,9,11,9,"Track exposures to a disease, as an epidemiologist might",12,CONTACTTRACE
+47,2,10,4,10,Hosp. V.I.P.s,3,DRS
+48,6,10,10,10,"Note on a failed test, maybe",5,SEEME
+49,12,10,14,10,Ball club V.I.P.s,3,GMS
+52,0,11,5,11,Valiant,6,HEROIC
+55,8,11,14,11,"Amy who voiced Joy in ""Inside Out""",7,POEHLER
+57,0,12,14,12,"Use deductive reasoning ... or a hint to what 17-, 27- and 43-Across all have",15,DRAWCONCLUSIONS
+60,0,13,3,13,Proctor's cry at the end of a test,4,TIME
+61,5,13,9,13,South Korea's second-largest city,5,BUSAN
+62,11,13,14,13,Actor Esparza,4,RAUL
+63,0,14,3,14,Calf's meat,4,VEAL
+64,5,14,9,14,Stretch of work,5,STINT
+65,11,14,14,14,Custom gift site,4,ETSY
+1,0,0,0,4,Chocolaty coffee drink,5,MOCHA
+2,1,0,1,4,Despise,5,ABHOR
+3,2,0,2,4,Nail polish layers,5,COATS
+4,3,0,3,3,His and ___,4,HERS
+5,5,0,5,5,Available if needed,6,ONCALL
+6,6,0,6,5,Went bad,6,ROTTED
+7,7,0,7,2,Saison of the 2024 Paris Olympics,3,ETE
+8,8,0,8,2,Rower's blade,3,OAR
+9,9,0,9,3,"Annual festival in Austin, Tex.",4,SXSW
+10,11,0,11,5,Sound system,6,STEREO
+11,12,0,12,8,"Paris's Notre-Dame, for one",9,CATHEDRAL
+12,13,0,13,3,West Coast gas brand,4,ARCO
+13,14,0,14,3,"Roald who wrote ""Matilda"" and ""The BFG""",4,DAHL
+18,4,2,4,6,"""The Tortoise and the Hare"" author",5,AESOP
+19,10,2,10,6,Instrument that may be included in a birthday goodie bag,5,KAZOO
+24,7,4,7,10,"Take down, as a bouncy house",7,DEFLATE
+25,8,4,8,7,Arrogant sort,4,SNOT
+27,3,5,3,7,"""Gloomy"" fellow",3,GUS
+28,9,5,9,7,Chats with on Insta,3,DMS
+29,13,5,13,8,Lo-cal,4,LITE
+30,14,5,14,8,Toward the sunrise,4,EAST
+31,0,6,0,9,"One layer in a seven-layer dip, informally",4,GUAC
+32,1,6,1,9,Norway's capital,4,OSLO
+33,2,6,2,14,"""Riverdale"" or ""XO, Kitty""",9,TEENDRAMA
+37,5,7,5,9,___ and cheese,3,MAC
+38,6,7,6,10,"Ambulance personnel, in brief",4,EMTS
+39,11,7,11,9,Start of a count,3,ONE
+41,4,8,4,12,>7 on the pH scale,5,BASIC
+42,10,8,10,12,Colorful summer drinks,5,ICEES
+44,3,9,3,14,Gardener's tool,6,TROWEL
+45,8,9,8,14,Come up with a new schedule,6,REPLAN
+46,9,9,9,14,Quantity,6,AMOUNT
+49,12,10,12,14,"Show bad sportsmanship, in a way",5,GLOAT
+50,13,10,13,14,Kids might be given these with crayons,5,MENUS
+51,14,10,14,14,"""r u kidding?!""",5,SRSLY
+52,0,11,0,14,"Flat-screen, say",4,HDTV
+53,1,11,1,14,Scary-sounding Great Lake,4,ERIE
+54,5,11,5,14,Corn waste,4,COBS
+56,11,11,11,14,"Bring on, as workers",4,HIRE
+58,6,12,6,14,Pecan or pistachio,3,NUT
+59,7,12,7,14,CBS procedural that ran for 15 seasons,3,CSI

@@ -1,0 +1,75 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,2,0,"Evidence collector, for short",3,CSI
+4,4,0,9,0,Airport acquisitions,6,STAMPS
+10,11,0,14,0,"Transports not allowed on highways, in brief",4,ATVS
+14,0,1,2,1,"Homecoming, of a sort?",3,RUN
+15,4,1,9,1,Lead-in to normative,6,HETERO
+16,11,1,14,1,Protection against tampering,4,SEAL
+17,0,2,9,2,Breath,10,INTIMATION
+19,11,2,14,2,Marathoner's focus,4,HALE
+20,0,3,4,3,Trial figure,5,STENO
+21,6,3,10,3,Itinerant,5,NOMAD
+23,12,3,14,3,Hiking gear chain,3,REI
+24,0,4,5,4,Kids' menu go-with,6,CANNON
+26,7,4,14,4,Reaching across,8,SPRAYING
+28,0,5,2,5,Neighbor of New York: Abbr.,3,ONT
+29,5,5,8,5,Kind of,4,ABIT
+31,10,5,14,5,Hanger-on,5,LEECH
+32,3,6,7,6,Slop spots,5,STIES
+34,9,6,13,6,Over it,5,BLASE
+35,2,7,6,7,Get out of Dodge,5,ALIVE
+36,8,7,12,7,Fancy few,5,LEAST
+37,1,8,5,8,In reserve,5,ONICE
+38,7,8,11,8,Name associated with blue ribbons,5,PABST
+39,0,9,4,9,Loud kiss,5,SMACK
+40,6,9,9,9,Staff note,4,MEMO
+41,12,9,14,9,Accessibility law inits.,3,ADA
+44,0,10,7,10,Walked for a cause,8,PICKEDON
+46,9,10,14,10,Prisoner's reprieve,6,PARTED
+49,0,11,2,11,"Issue in a group project, perhaps",3,EGO
+50,4,11,8,11,Sidekick of 1950s TV,5,TONTO
+52,10,11,14,11,Dress down,5,SCOLD
+53,0,12,3,12,"""Deal!""",4,DONE
+55,5,12,14,12,Commercial identifiers … or what four pairs of answers must do in order to match their clues,10,TRADENAMES
+57,0,13,3,13,"Letters on an ""Organic"" label",4,USDA
+58,5,13,10,13,Take baby steps,6,TODDLE
+59,12,13,14,13,TV relative who wears a bowler hat and sunglasses,3,ITT
+60,0,14,3,14,Dope,4,PHAT
+61,5,14,10,14,Roger's cousin?,6,YESSIR
+62,12,14,14,14,Position held by a woman at roughly 10% of Fortune 500 companies,3,CEO
+1,0,0,0,5,Brand for bakers,6,CRISCO
+2,1,0,1,5,Get bronze,6,SUNTAN
+3,2,0,2,5,"Mens rea, for example",6,INTENT
+4,4,0,4,4,Bowling-pin-shaped creature of Al Capp cartoons,5,SHMOO
+5,5,0,5,2,What the March Hare dips his watch in,3,TEA
+6,6,0,6,3,Subject line abbr.,4,ATTN
+7,7,0,7,6,Process of cell division,7,MEIOSIS
+8,8,0,8,5,Inspiration for an essay writer,6,PROMPT
+9,9,0,9,4,Technology used in seafloor mapping,5,SONAR
+10,11,0,11,2,Vape's lack,3,ASH
+11,12,0,12,7,Most lachrymose,8,TEARIEST
+12,13,0,13,6,Kind of electrons on the outermost shell of an atom,7,VALENCE
+13,14,0,14,5,Dancer's haul,6,SLEIGH
+18,3,2,3,4,"Lorelai's place of business on ""Gilmore Girls""",3,INN
+22,10,3,10,8,U.S. city where the frozen margarita was invented,6,DALLAS
+25,5,4,5,8,Gullible,5,NAIVE
+27,11,4,11,8,"""Wild"" ingredient in some beers",5,YEAST
+30,6,5,6,7,Symbol of industry,3,BEE
+32,3,6,3,10,Smooth,5,SLICK
+33,4,6,4,11,Something to pick up at will call,6,TICKET
+34,9,6,9,10,Monk's style,5,BEBOP
+35,2,7,2,14,Boa you wouldn't want around your neck,8,ANACONDA
+36,8,7,8,9,On the ___,3,LAM
+37,1,8,1,14,"""Wowzers!""",7,OMIGOSH
+38,7,8,7,14,Fivesomes,7,PENTADS
+39,0,9,0,14,"Went from a trot to a canter, say",6,SPEDUP
+40,6,9,6,14,President during the Era of Good Feelings,6,MONROE
+41,12,9,12,14,Like some clocks,6,ATOMIC
+42,13,9,13,14,Have away with words?,6,DELETE
+43,14,9,14,14,Enhances,6,ADDSTO
+45,5,10,5,14,Eccentric,5,DOTTY
+47,10,10,10,14,He played Mary Richards's boss at WJM-TV,5,ASNER
+48,11,10,11,12,Former parent company of NBC,3,RCA
+51,8,11,8,14,"Calculations often expressed with a ""+"" or ""–""",4,ODDS
+54,3,12,3,14,Partake of,3,EAT
+56,9,12,9,14,Certain Ivy Leaguer,3,ELI

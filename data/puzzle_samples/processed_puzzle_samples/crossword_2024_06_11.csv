@@ -1,0 +1,75 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,3,0,Trunk appendage,4,LIMB
+5,5,0,8,0,Schleps,4,LUGS
+9,10,0,14,0,Goes clubbing?,5,GOLFS
+14,0,1,3,1,Danish shoe brand,4,ECCO
+15,5,1,8,1,Up to the task,4,ABLE
+16,10,1,14,1,"Poet Frank who led the 1950s-'60s ""New York School""",5,OHARA
+17,0,2,8,2,*Crazy for,9,GAGAABOUT
+19,10,2,14,2,Stringed Indian instrument,5,SITAR
+20,0,3,2,3,"Camera type, for short",3,SLR
+21,4,3,7,3,End of the earth,4,POLE
+22,9,3,14,3,Verbal equivalent of tomato-throwing,6,BOOING
+23,1,4,14,4,*Title role for Lee Marvin in a 1962 western,14,LIBERTYVALANCE
+26,0,5,5,5,Trees that produce moth-repelling oil,6,CEDARS
+27,8,5,11,5,"Aware of, as a plot",4,INON
+28,0,6,4,6,Increase,5,ADDTO
+29,6,6,9,6,Exec's helper: Abbr.,4,ASST
+31,11,6,14,6,Cutting onomatopoeia,4,SNIP
+35,0,7,2,7,Goose egg,3,NIL
+36,4,7,10,7,*Get seriously fortunate,7,LUCKOUT
+39,12,7,14,7,"Gold, in Galicia",3,ORO
+40,0,8,3,8,Pedometer unit,4,STEP
+42,5,8,8,8,Bring up,4,REAR
+43,10,8,14,8,"""Gimme five!""",5,UPTOP
+45,3,9,6,9,Word with history or exam,4,ORAL
+47,9,9,14,9,Nuts for a squirrel,6,ACORNS
+48,0,10,13,10,*Meteorological description in a Beatles song,14,MARMALADESKIES
+53,0,11,5,11,"Changes with the times, say",6,ADAPTS
+54,7,11,10,11,Leaves might get stuck in its teeth,4,RAKE
+55,12,11,14,11,Not very bright,3,DIM
+57,0,12,4,12,"""Impression, Sunrise"" painter",5,MONET
+58,6,12,14,12,"Title for Jackie or Jill, and a hint to the answers to the starred clues",9,FIRSTLADY
+60,0,13,4,13,"Oven setting that can be ""Hi"" or ""Lo""",5,BROIL
+61,6,13,9,13,"Not buy, perhaps",4,RENT
+62,11,13,14,13,"""You said it!""",4,AMEN
+63,0,14,4,14,"Proulx who wrote ""Brokeback Mountain""",5,ANNIE
+64,6,14,9,14,Just about,4,ORSO
+65,11,14,14,14,Site for a cliff dwelling,4,MESA
+1,0,0,0,3,Arachnid's octet,4,LEGS
+2,1,0,1,8,"""Told you so!""",9,ICALLEDIT
+3,2,0,2,8,Popular fast-food breakfast sandwich,9,MCGRIDDLE
+4,3,0,3,2,Accessory for a flapper costume,3,BOA
+5,5,0,5,5,Grinds away,6,LABORS
+6,6,0,6,4,Fastener used in securing pipes,5,UBOLT
+7,7,0,7,4,Sticky,5,GLUEY
+8,8,0,8,2,"""I'm all ___""",3,SET
+9,10,0,10,5,Emulate Paul Simon in 1972 or Harry Styles in 2017,6,GOSOLO
+10,11,0,11,6,Buckeyes,7,OHIOANS
+11,12,0,12,4,Language of much legalese,5,LATIN
+12,13,0,13,4,Currency of Switzerland,5,FRANC
+13,14,0,14,4,Military address?,5,SARGE
+18,4,2,4,7,Red alcohol in a spritz,6,APEROL
+22,9,3,9,7,___ knots (hairstyle),5,BANTU
+24,3,4,3,6,Dracula's alternate form,3,BAT
+25,8,4,8,8,Sun blocker,5,VISOR
+26,0,5,0,8,Sends packing,4,CANS
+29,6,6,6,10,Train line between Boston and D.C.,5,ACELA
+30,7,6,7,8,Jamaican music genre,3,SKA
+32,12,6,12,14,Noted example of French Gothic architecture,9,NOTREDAME
+33,13,6,13,14,Nickname for Oliver Cromwell,9,IRONSIDES
+34,14,6,14,9,Goes like a weasel?,4,POPS
+37,5,7,5,11,Range that separates Europe and Asia,5,URALS
+38,10,7,10,12,Trumpet flourish,6,TUCKET
+41,3,8,3,14,Unfortunate neighbor of Mount Vesuvius,7,POMPEII
+44,11,8,11,10,Pounded taro dish,3,POI
+46,4,9,4,14,"Maraca, e.g.",6,RATTLE
+47,9,9,9,14,Invites along for,6,ASKSTO
+48,0,10,0,14,Deadly African snake,5,MAMBA
+49,1,10,1,14,Festoon,5,ADORN
+50,2,10,2,14,Rambled,5,RANON
+51,7,10,7,14,Less interesting,5,DRIER
+52,8,10,8,14,Deserves,5,EARNS
+56,14,11,14,14,Talkative bird,4,MYNA
+58,6,12,6,14,"Curly hairstyle, for short",3,FRO
+59,11,12,11,14,Hasty escape,3,LAM

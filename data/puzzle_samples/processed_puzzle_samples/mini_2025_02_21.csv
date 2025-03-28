@@ -1,0 +1,11 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,4,0,Elevator alternative,5,STEPS
+6,0,1,4,1,"Evil corporation on Apple TV+'s ""Severance""",5,LUMON
+7,0,2,4,2,Ring-shaped coral reef,5,ATOLL
+8,0,3,3,3,Aura of confidence,4,MOJO
+9,0,4,2,4,___ Lanka,3,SRI
+1,0,0,0,4,Severely criticizes,5,SLAMS
+2,1,0,1,4,One-on-one academic coach,5,TUTOR
+3,2,0,2,4,A head of our time?,5,EMOJI
+4,3,0,3,3,Preppy shirt,4,POLO
+5,4,0,4,2,Show with a recently aired 50th anniversary special,3,SNL

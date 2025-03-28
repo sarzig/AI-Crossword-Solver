@@ -1,0 +1,141 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,4,0,Fish tank buildup,5,ALGAE
+6,6,0,9,0,Bog product,4,PEAT
+10,11,0,14,0,P.M. times,4,AFTS
+14,16,0,19,0,Suisse peak,4,ALPE
+18,0,1,4,1,Disney film with a titular heroine,5,MOANA
+19,6,1,9,1,Pricing word,4,EACH
+20,11,1,14,1,Christmas color for Elvis,4,BLUE
+21,16,1,19,1,Pork cut,4,LOIN
+22,0,2,19,2,Mechanic's go-to parenting phrase?,20,ILLTURNTHISCARAROUND
+26,0,3,3,3,Painter whose motifs include ants and eggs,4,DALI
+27,5,3,10,3,Give the nod,6,ASSENT
+28,12,3,16,3,"""Check it out for yourself""",5,GOSEE
+29,18,3,20,3,Mauna ___,3,KEA
+31,3,4,6,4,French liver,4,FOIE
+33,9,4,11,4,Some remote power sources,3,AAS
+35,13,4,20,4,Up to 11 meters for a pterodactyl,8,WINGSPAN
+37,0,5,12,5,Personal trainer's go-to parenting phrase?,13,SITUPSTRAIGHT
+43,14,5,20,5,Like some restrictions,7,DIETARY
+44,0,6,5,6,Stephen King's first published novel,6,CARRIE
+45,7,6,9,6,Your and my relative?,3,OUR
+46,11,6,14,6,Roof overhang,4,EAVE
+48,16,6,18,6,Horror star Chaney,3,LON
+49,0,7,2,7,In the past,3,AGO
+50,6,7,8,7,Affectionate greeting,3,HUG
+51,10,7,13,7,Arid,4,SERE
+52,17,7,20,7,Small building block,4,ATOM
+55,0,8,20,8,Conductor's go-to parenting phrase?,21,DONTUSETHATTONEWITHME
+63,3,9,10,9,Liquor in tiramisu,8,AMARETTO
+64,13,9,16,9,TV drama with spinoffs set in Hawaii and New Orleans,4,NCIS
+65,18,9,20,9,Cornerstone abbr.,3,EST
+66,0,10,6,10,Eightfold,7,OCTUPLE
+69,8,10,12,10,"Animal working in the D.M.V. in ""Zootopia""",5,SLOTH
+72,14,10,20,10,Texas politician Beto,7,OROURKE
+74,0,11,2,11,It's a drag,3,TOW
+75,4,11,7,11,Singer James,4,ETTA
+77,10,11,17,11,Share accommodations,8,DOUBLEUP
+79,0,12,20,12,Mathematician's go-to parenting phrase?,21,ITOLDYOUAHUNDREDTIMES
+86,0,13,3,13,Emmy-winning Ward,4,SELA
+87,7,13,10,13,Lemon ___,4,DROP
+88,12,13,14,13,Insult,3,DIS
+89,18,13,20,13,Hosp. area,3,ICU
+90,2,14,4,14,Clean Air Act org.,3,EPA
+92,6,14,9,14,"""Star Wars"" order",4,SITH
+93,11,14,13,14,Word seen at the end of many Jean-Luc Godard movies,3,FIN
+94,15,14,20,14,From where,6,WHENCE
+97,0,15,6,15,From the get-go,7,ATFIRST
+100,8,15,20,15,Air traffic controller's go-to parenting phrase?,13,YOUREGROUNDED
+103,0,16,7,16,Accepts the facts,8,GETSREAL
+105,9,16,11,16,Her pronoun partner,3,SHE
+106,14,16,17,16,Farmyard mamas,4,EWES
+107,0,17,2,17,2003 Will Ferrell movie,3,ELF
+108,4,17,8,17,Spooky,5,EERIE
+110,10,17,15,17,Lacking the resources,6,UNABLE
+113,17,17,20,17,Not out of the running,4,INIT
+117,1,18,20,18,Librarian's go-to parenting phrase?,20,LETSPLAYTHEQUIETGAME
+121,1,19,4,19,Google ___ (Zoom alternative),4,MEET
+122,6,19,9,19,Chemical suffixes,4,INES
+123,11,19,14,19,Backless shoe,4,MULE
+124,16,19,20,19,"Maybe one, maybe both",5,ANDOR
+125,1,20,4,20,"GPS calculations, in brief",4,ETAS
+126,6,20,9,20,"""I did it!""",4,TADA
+127,11,20,14,20,Jabbers,4,YAKS
+128,16,20,20,20,"Jen ___, 2021-22 White House press secretary",5,PSAKI
+1,0,0,0,3,Surrounded by,4,AMID
+2,1,0,1,3,Tragic showgirl of song,4,LOLA
+3,2,0,2,3,Chutzpah,4,GALL
+4,3,0,3,6,Like PETA,7,ANTIFUR
+5,4,0,4,2,___ de vie,3,EAU
+6,6,0,6,5,Gift for writing,6,PENSET
+7,7,0,7,3,Noshes,4,EATS
+8,8,0,8,3,Feel that gym session,4,ACHE
+9,9,0,9,6,What something might appear out of or disappear into,7,THINAIR
+10,11,0,11,2,Epitome of simplicity,3,ABC
+11,12,0,12,3,Guam's features a sailboat and palm tree,4,FLAG
+12,13,0,13,4,"""The Burden of Proof"" author",5,TUROW
+13,14,0,14,6,Like many resorts,7,SEASIDE
+14,16,0,16,6,Ingredient in homemade hand sanitizer,7,ALOEGEL
+15,17,0,17,2,Reed of the Velvet Underground,3,LOU
+16,18,0,18,10,"Sellers franchise, with ""The""",11,PINKPANTHER
+17,19,0,19,5,Charm,6,ENDEAR
+23,5,2,5,6,Poker option,5,RAISE
+24,10,2,10,5,Solo,4,STAG
+25,15,2,15,5,Baroque painter Guido,4,RENI
+30,20,3,20,5,___ port in a storm,3,ANY
+32,4,4,4,6,"Nail polish brand with a ""Tickle My France-y"" shade",3,OPI
+34,11,4,11,8,Part of a homemade Halloween costume,5,SHEET
+36,17,4,17,8,Animal that turns white in the winter,5,STOAT
+37,0,5,0,8,Large number,4,SCAD
+38,1,5,1,8,"""I am not what I am"" speaker",4,IAGO
+39,2,5,2,8,Pioneering sci-fi film that was snubbed for the Best Visual Effects Oscar for its use of computers,4,TRON
+40,7,5,7,9,Road trip determination,5,ROUTE
+41,8,5,8,10,Decade in which many in Gen Z were born,6,AUGHTS
+42,12,5,12,8,Main ingredient in poi,4,TARO
+47,13,6,13,9,Kind of diagram,4,VENN
+50,6,7,6,12,In this matter,6,HERETO
+51,10,7,10,13,Arose,7,STOODUP
+53,19,7,19,10,City on the Irtysh River,4,OMSK
+54,20,7,20,10,Parcel (out),4,METE
+56,3,8,3,10,Elementary particle named for a Greek letter,3,TAU
+57,4,8,4,12,"Called a strike, say",5,UMPED
+58,5,8,5,12,Like some potato chips and language,5,SALTY
+59,9,8,9,10,Part of NATO: Abbr.,3,ATL
+60,14,8,14,13,"Jardins d'enfants, par exemple",6,ECOLES
+61,15,8,15,12,Tech and culture magazine since 1993,5,WIRED
+62,16,8,16,12,"Has left the office, e.g.",5,ISOUT
+66,0,10,0,13,"Jay-Z and Kanye West song that samples ""Try a Little Tenderness""",4,OTIS
+67,1,10,1,13,Pigeon coop,4,COTE
+68,2,10,2,20,What a bad dancer is said to have,11,TWOLEFTFEET
+70,11,10,11,12,Large number,3,TON
+71,12,10,12,15,"___ Ledbetter, a.k.a. Lead Belly",6,HUDDIE
+73,17,10,17,12,Newswire co.,3,UPI
+76,7,11,7,14,A4 automaker,4,AUDI
+78,13,11,13,15,"""___ it!"" (informal challenge)",5,BRING
+80,3,12,3,16,Rock used to make ultramarine,5,LAPIS
+81,8,12,8,15,Pretentious,4,ARTY
+82,9,12,9,16,Snack cakes with creamy swirls,5,HOHOS
+83,18,12,18,15,It might be changed or made up,4,MIND
+84,19,12,19,15,"""Look!,"" in Latin",4,ECCE
+85,20,12,20,15,Took to court,4,SUED
+91,4,14,4,20,"Miscreant's record, maybe",7,ARRESTS
+92,6,14,6,20,Like a clear night,7,STARLIT
+93,11,14,11,20,Rival you kind of like,7,FRENEMY
+94,15,14,15,18,"""That's amazing!""",5,WOWEE
+95,16,14,16,16,Color classification,3,HUE
+96,17,14,17,20,Naval Academy grads,7,ENSIGNS
+97,0,15,0,17,Basic personal information,3,AGE
+98,1,15,1,20,"""Spill it!""",6,TELLME
+99,5,15,5,18,Flow slowly,4,SEEP
+101,10,15,10,18,"""Not gonna happen!""",4,UHUH
+102,14,15,14,20,Counts (on),6,RELIES
+104,7,16,7,20,Tropical vine,5,LIANA
+109,8,17,8,20,"""Brown ___ Girl""",4,EYED
+111,12,17,12,20,Pool shade,4,AQUA
+112,13,17,13,20,Kind of discount,4,BULK
+114,18,17,18,20,Nothin',4,NADA
+115,19,17,19,20,Words of reassurance,4,IMOK
+116,20,17,20,20,Actress Garr,4,TERI
+118,3,18,3,20,Hot spot in England?,3,TEA
+119,9,18,9,20,Airport inits.,3,TSA
+120,16,18,16,20,Dance with a paradiddle step,3,TAP

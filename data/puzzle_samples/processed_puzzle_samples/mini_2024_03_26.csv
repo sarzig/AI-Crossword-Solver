@@ -1,0 +1,11 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,1,0,4,0,Student celebrating in the late spring,4,GRAD
+5,0,1,4,1,Early spring bloomers,5,CROCI
+6,0,2,4,2,Bird symbolizing the start of spring,5,ROBIN
+7,0,3,3,3,Printed piece of punditry,4,OPED
+8,0,4,2,4,Tie the knot,3,WED
+1,1,0,1,4,Feel around in the dark,5,GROPE
+2,2,0,2,4,Like many sauna users,5,ROBED
+3,3,0,3,3,Low-pH substance,4,ACID
+4,4,0,4,2,Cacophonous clatter,3,DIN
+5,0,1,0,4,Raven lookalike,4,CROW

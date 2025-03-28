@@ -1,0 +1,11 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,3,0,State in the Mountain time zone,4,UTAH
+5,0,1,3,1,Viral image,4,MEME
+6,0,2,4,2,Dangerous stuff to put in a microwave,5,METAL
+8,1,3,4,3,___ list,4,TODO
+9,1,4,4,4,Question asker during a trivia night,4,HOST
+1,0,0,0,2,"""Let me think, let me think ...""",3,UMM
+2,1,0,1,4,Many ancient shark fossils,5,TEETH
+3,2,0,2,4,"Response to ""Are not!""",5,AMTOO
+4,3,0,3,4,The face of change?,5,HEADS
+7,4,2,4,4,Parking area,3,LOT

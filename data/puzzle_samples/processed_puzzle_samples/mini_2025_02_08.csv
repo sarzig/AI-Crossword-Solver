@@ -1,0 +1,15 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,3,0,6,0,Beer foam,4,HEAD
+5,2,1,6,1,"Dance that it takes ""two"" to do",5,TANGO
+6,0,2,6,2,Annoying thing to forget on a trip,7,CHARGER
+8,0,3,6,3,Color associated with Barbie,7,HOTPINK
+9,0,4,6,4,"""For all ___ and purposes …""",7,INTENTS
+10,0,5,4,5,Maryland governor Wes,5,MOORE
+11,0,6,3,6,Cons' counterparts,4,PROS
+1,3,0,3,6,"Oldest monthly magazine in the U.S., launched in 1850",7,HARPERS
+2,4,0,4,5,Front car of a train,6,ENGINE
+3,5,0,5,4,Athlete's representative,5,AGENT
+4,6,0,6,4,Nerds,5,DORKS
+5,2,1,2,6,Body image?,6,TATTOO
+6,0,2,0,6,Bonobo relative,5,CHIMP
+7,1,2,1,6,Pay tribute to,5,HONOR

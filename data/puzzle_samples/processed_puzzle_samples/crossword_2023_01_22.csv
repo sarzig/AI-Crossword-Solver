@@ -1,0 +1,141 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,4,0,Warming periods,5,THAWS
+6,6,0,11,0,"Activates, as yeast",6,PROOFS
+12,13,0,15,0,Chatter,3,GAB
+15,17,0,20,0,"Great Britain, geographically",4,ISLE
+19,0,1,4,1,"""My ___ (You’re Never Gonna Get It),"" 1992 hit by En Vogue",5,LOVIN
+20,6,1,11,1,Not a big Mac?,6,LAPTOP
+21,13,1,15,1,"Nail, as a test",3,ACE
+22,17,1,20,1,"""I am not a glutton — I am an explorer of ___"": Erma Bombeck",4,FOOD
+23,0,2,11,2,Kitchen at a barbecue restaurant?,12,CHILIFACTORY
+25,13,2,20,2,Potentially adoptable pup,8,STRAYDOG
+27,1,3,7,3,Misfit,7,ODDDUCK
+28,10,3,20,3,Result of a 1960s Haight-Ashbury shopping spree?,11,HIPPIEBOOTY
+30,3,4,6,4,It's in your blood,4,GENE
+31,8,4,13,4,Play parts,6,SCENES
+33,15,4,19,4,"Ones coming ""home"" at homecoming",5,ALUMS
+34,1,5,5,5,Quick-moving,5,BRISK
+36,7,5,12,5,Corp. shake-ups,6,REORGS
+37,14,5,17,5,Host,4,SLEW
+38,0,6,10,6,Highly visible belly button?,11,POINTYOUTIE
+40,12,6,14,6,"Up to, informally",3,TIL
+42,17,6,20,6,"Actress Fisher of ""Now You See Me""",4,ISLA
+46,0,7,3,7,Curious in the extreme,4,AGOG
+47,6,7,9,7,Streamlet,4,RILL
+48,11,7,20,7,Good friend who won't stop snooping?,10,NOSYBESTIE
+51,0,8,4,8,"The first one was built in 1925 in San Luis Obispo, Calif.",5,MOTEL
+53,6,8,8,8,"What to add to ""Iraq"" to make it adjectival",3,ANI
+54,10,8,13,8,Subwoofer sound,4,BASS
+55,15,8,20,8,"Jhumpa ___, author of the Pulitzer-winning ""Interpreter of Maladies""",6,LAHIRI
+56,3,9,6,9,Take a load off,4,REST
+58,8,9,11,9,"Some cameras, in brief",4,SLRS
+60,13,9,16,9,SETI subjects,4,UFOS
+62,18,9,20,9,"Language in which ""puzzle"" is ""pid sa""",3,LAO
+63,0,10,2,10,Burnable media,3,CDS
+66,4,10,16,10,Prenuptial agreement?,13,SWEETIETREATY
+69,18,10,20,10,"""Geaux Tigers!"" sch.",3,LSU
+70,0,11,2,11,Be an agent for,3,REP
+71,4,11,7,11,Feature of Sylvester's speech,4,LISP
+72,9,11,12,11,Comedian Rudolph,4,MAYA
+73,14,11,17,11,Taiwanese president ___ Ing-wen,4,TSAI
+75,0,12,5,12,Skateboard tricks,6,OLLIES
+77,7,12,10,12,"Went 90, say",4,SPED
+79,12,12,14,12,___ Tac (mint),3,TIC
+81,16,12,20,12,Throat bug,5,STREP
+85,0,13,9,13,Long anecdote from a complainer?,10,WHINYSTORY
+87,11,13,14,13,Italian mount,4,ETNA
+88,17,13,20,13,Astronomer Sagan,4,CARL
+89,0,14,3,14,Takes a load off,4,SITS
+90,6,14,8,14,One with an underground colony,3,ANT
+91,10,14,20,14,Tinker Bell or Puck?,11,CRAFTYFAIRY
+94,3,15,6,15,Fruit-based dessert … or a possible description of its flavor,4,TART
+97,8,15,13,15,"""Sorry to say, you guessed wrong""",6,ALASNO
+99,15,15,19,15,What many clocks and card games have,5,HANDS
+100,1,16,5,16,Whence feng shui,5,CHINA
+102,7,16,12,16,Skiing areas,6,SLOPES
+103,14,16,17,16,Didn't give forever,4,LENT
+104,0,17,10,17,Bad person for a gambler to make bets with?,11,PHONYBOOKIE
+106,13,17,19,17,Plant with purple-pink flowers,7,HEATHER
+109,0,18,7,18,Rustic abode,8,LOGCABIN
+110,9,18,20,18,Acolyte with a bad temper?,12,TESTYGROUPIE
+114,0,19,3,19,Part of Q.E.D.,4,ERAT
+115,5,19,7,19,Cozy stopover,3,INN
+116,9,19,14,19,"Nueva York, por ejemplo",6,ESTADO
+117,16,19,20,19,Word with code or rehearsal,5,DRESS
+118,0,20,3,20,Cozy spots,4,DENS
+119,5,20,7,20,It appears blue as a result of Rayleigh scattering,3,SKY
+120,9,20,14,20,Chimes and dimes vis-à-vis this clue's answer,6,RHYMES
+121,16,20,20,20,"Difficult to climb, in a way",5,STEEP
+1,0,0,0,2,"Trio with the 1995 #1 hit ""Waterfalls""",3,TLC
+2,1,0,1,3,Jolly laugh,4,HOHO
+3,2,0,2,3,Passionate,4,AVID
+4,3,0,3,9,Fragrant medicinal plant also called colic-root,10,WILDGINGER
+5,4,0,4,6,Most snarky,7,SNIDEST
+6,6,0,6,4,Finish second,5,PLACE
+7,7,0,7,3,Something to hang your hat on,4,RACK
+8,8,0,8,2,Elect,3,OPT
+9,9,0,9,2,Plains tribe,3,OTO
+10,10,0,10,6,Not to go,7,FORHERE
+11,11,0,11,5,"Bugging people, perhaps",6,SPYING
+12,13,0,13,4,Displays of shock,5,GASPS
+13,14,0,14,3,Start to play?,4,ACTI
+14,15,0,15,5,Put on no pretensions,6,BEREAL
+15,17,0,17,8,"""Fine by me""",9,IFYOUWISH
+16,18,0,18,4,Sin city,5,SODOM
+17,19,0,19,4,Commits piracy,5,LOOTS
+18,20,0,20,3,Avant-garde,4,EDGY
+24,5,2,5,6,"""My name is Prince, and I am ___"" (Prince lyric)",5,FUNKY
+26,16,2,16,5,Proficient,4,ABLE
+29,12,3,12,8,Sauces made with basil and pine nuts,6,PESTOS
+31,8,4,8,10,Songs to be played at a concert,7,SETLIST
+32,9,4,9,7,"Slinky, e.g.",4,COIL
+34,1,5,1,8,Sales promotion acronym,4,BOGO
+35,2,5,2,8,Hoot,4,RIOT
+36,7,5,7,8,Downfall,4,RUIN
+37,14,5,14,7,Shifty,3,SLY
+38,0,6,0,8,"""The Office"" role",3,PAM
+39,6,6,6,11,Gives a grand speech,6,ORATES
+41,13,6,13,10,It's up for debate,5,ISSUE
+43,18,6,18,10,Alternative to sparkling,5,STILL
+44,19,6,19,10,Turkish money,5,LIRAS
+45,20,6,20,10,"Letters found in a so-called ""supervocalic"" word",5,AEIOU
+48,11,7,11,11,"""Yuck!""",5,NASTY
+49,15,7,15,11,Spots on a Rorschach card,5,BLOTS
+50,16,7,16,12,They don't require much study,6,EASYAS
+52,4,8,4,13,"Stahl of ""60 Minutes""",6,LESLEY
+54,10,8,10,12,I'm toast!,5,BREAD
+57,5,9,5,13,"Like chicken cordon bleu, originally",5,SWISS
+59,9,9,9,13,"British sailor, in slang",5,LIMEY
+61,14,9,14,14,One who's rolling in money,6,FATCAT
+63,0,10,0,14,Is exultant,5,CROWS
+64,1,10,1,14,City of 16+ million straddling the Yamuna River,5,DELHI
+65,2,10,2,14,"7-10, e.g., in bowling",5,SPLIT
+67,7,10,7,14,Big name in printing,5,EPSON
+68,12,10,12,16,Plants used in wickerwork furniture,7,RATTANS
+74,17,11,17,20,"""Worth a try""",10,ITCANTHURT
+76,3,12,3,20,Gut feelings,9,INSTINCTS
+78,8,12,8,17,"Bit of hype, informally",6,PRTALK
+80,13,12,13,15,Scoop,4,INFO
+82,18,12,18,15,Worry for a speakeasy,4,RAID
+83,19,12,19,15,Slips up,4,ERRS
+84,20,12,20,14,Layer,3,PLY
+86,6,13,6,15,"Parlor offering, for short",3,TAT
+87,11,13,11,16,"Language in which ""puzzle"" is ""puzal""",4,ERSE
+91,10,14,10,20,"""Is that understood?""",7,CAPEESH
+92,15,14,15,18,"""Is that understood?""",5,YHEAR
+93,16,14,16,20,"State of uneasiness, informally",7,FANTODS
+95,4,15,4,18,"Seton who wrote ""Dragonwyck""",4,ANYA
+96,5,15,5,20,Prayer leaders,6,RABBIS
+98,9,15,9,20,Hang around,6,LOITER
+100,1,16,1,20,"Taking out the trash, for one",5,CHORE
+101,2,16,2,20,Navajo dwelling,5,HOGAN
+102,7,16,7,20,One of the Corleones,5,SONNY
+103,14,16,14,20,Interlocking bricks,5,LEGOS
+104,0,17,0,20,Made a case,4,PLED
+105,6,17,6,20,Word that may come from a pen,4,OINK
+106,13,17,13,20,"___ Park, home to the University of Chicago",4,HYDE
+107,18,17,18,20,One-on-one Olympics event,4,EPEE
+108,19,17,19,20,"""All ___!""",4,RISE
+111,11,18,11,20,Farm structure,3,STY
+112,12,18,12,20,Top part of Scotland?,3,TAM
+113,20,18,20,20,"""Are you thinking what I'm thinking?"" feeling",3,ESP

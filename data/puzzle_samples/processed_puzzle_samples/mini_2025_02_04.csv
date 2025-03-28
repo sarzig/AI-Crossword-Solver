@@ -1,0 +1,11 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,2,0,4,0,T-shirt or blouse,3,TOP
+4,0,1,4,1,Do a novelist's job,5,WRITE
+6,0,2,4,2,"Confusing answer to ""So I'm supposed to turn left?""",5,RIGHT
+7,0,3,3,3,"French ""to be""",4,ETRE
+8,0,4,3,4,___-do-well,4,NEER
+1,2,0,2,4,"Fearsome cat, in Spanish",5,TIGRE
+2,3,0,3,4,Alternative option,5,OTHER
+3,4,0,4,2,"Marcel the monkey, on ""Friends""",3,PET
+4,0,1,0,4,"Tiny bird with a piercing ""teakettle-teakettle!"" song",4,WREN
+5,1,1,1,4,Religious ceremony,4,RITE

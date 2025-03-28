@@ -1,0 +1,11 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,4,0,What each knuckle represents in a famous mnemonic device,5,MONTH
+6,0,1,4,1,Best Picture nominee starring Mikey Madison,5,ANORA
+7,0,2,4,2,Something set on a microwave,5,TIMER
+8,0,3,4,3,"""Here's to love!,"" e.g.",5,TOAST
+9,0,4,3,4,Burnt ___ (barbecue tidbits),4,ENDS
+1,0,0,0,4,"Not glossy, as a photo",5,MATTE
+2,1,0,1,4,"Publication with the headline ""History Sighs, Repeats Itself,"" with ""The""",5,ONION
+3,2,0,2,4,Wanderer,5,NOMAD
+4,3,0,3,4,Lock of hair,5,TRESS
+5,4,0,4,3,Comedian Kevin (with a name that's fitting for Valentine's Day),4,HART

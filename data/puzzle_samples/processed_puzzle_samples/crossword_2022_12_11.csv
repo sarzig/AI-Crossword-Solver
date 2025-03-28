@@ -1,0 +1,141 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,6,0,Letting up,7,ABATING
+8,8,0,11,0,35mm options,4,SLRS
+12,13,0,15,0,Rotter,3,CAD
+15,17,0,20,0,What a cafeteria tray can be used as,4,SLED
+19,0,1,6,1,"Creative, as thinking",7,LATERAL
+20,8,1,15,1,Tug of war or capture the flag,8,TEAMGAME
+22,17,1,20,1,Le Pew of Looney Tunes,4,PEPE
+23,0,2,9,2,Hypotenuse-finding formula,10,
+25,17,2,20,2,"Opposed to, in dialect",4,AGIN
+26,0,3,3,3,Frost,4,HOAR
+27,7,3,9,3,Prefix with pronoun,3,NEO
+28,11,3,14,3,"""No ifs, ___ or buts""",4,ANDS
+29,16,3,19,3,Asia's vanishing ___ Sea,4,ARAL
+30,0,4,4,4,Ethereal glows,5,AURAS
+32,6,4,8,4,"Young Henry V, to Falstaff",3,HAL
+33,10,4,13,4,Eins + zwei,4,DREI
+34,16,4,20,4,A-lister,5,CELEB
+36,3,5,6,5,"Evening, informally",4,NITE
+38,8,5,10,5,Pharmaceutical pioneer Lilly,3,ELI
+40,12,5,20,5,"Having an impeccable reputation, say",9,
+43,0,6,4,6,"One drinking soft drinks at a party, perhaps",5,
+48,14,6,20,6,"""Le Bonheur de Vivre"" painter",7,MATISSE
+49,0,7,2,7,"""Dust Tracks ___ Road"" (Zora Neale Hurston memoir)",3,ONA
+50,4,7,7,7,Egg on,4,URGE
+51,9,7,11,7,Implement at a regatta,3,OAR
+52,13,7,20,7,Doesn't comply with,8,DISOBEYS
+53,0,8,9,8,A Kool-Aid flavor,10,WATERMELON
+56,11,8,16,8,Serve,6,WAITON
+58,0,9,4,9,Ham it up,5,EMOTE
+59,6,9,8,9,Member of the fam,3,SIB
+60,10,9,14,9,"Eliot's ""___ Marner""",5,SILAS
+61,16,9,20,9,Cause of class struggle?,5,ESSAY
+66,0,10,3,10,Boor,4,LOUT
+67,7,10,10,10,Symbol of Irish heritage,4,
+69,17,10,20,10,Garnish on a Moscow mule,4,LIME
+70,0,11,4,11,Some young ladies abroad: Abbr.,5,SRTAS
+72,6,11,10,11,Things frequently stolen,5,BASES
+73,12,11,14,11,Pierre ou Marie,3,NOM
+75,16,11,20,11,Auditioners' goals,5,ROLES
+76,4,12,9,12,Like some lips,6,PURSED
+78,11,12,20,12,Common frequency for college classes,10,SEMIWEEKLY
+80,0,13,7,13,Bum,8,PATOOTIE
+84,9,13,11,13,Non reversal?,3,OUI
+86,13,13,16,13,Langston Hughes classic,4,ITOO
+87,18,13,20,13,Insta blurb,3,BIO
+88,0,14,6,14,Invertebrate with a floral eponym,7,ANEMONE
+89,8,14,18,14,"""The Pink Panther"" character",11,
+92,0,15,6,15,"Having successfully made it, slangily",7,
+94,10,15,12,15,Top-level foreign policy grp.,3,NSC
+95,14,15,17,15,Avant-garde,4,EDGY
+96,0,16,4,16,___ de leche,5,DULCE
+97,7,16,10,16,Internet star Majimbo known for her comedy videos,4,ELSA
+99,12,16,14,16,"Prince, but not a princess",3,SON
+101,16,16,20,16,"""Go jump in a lake!""",5,SCRAM
+105,1,17,4,17,"Oil alternative, in baking",4,LARD
+106,6,17,9,17,Durable furniture material,4,TEAK
+107,11,17,13,17,Texter's transition,3,BTW
+108,17,17,20,17,"___ Antipova (""Doctor Zhivago"" character)",4,LARA
+109,0,18,3,18,Gallic greeting,4,ALLO
+110,5,18,14,18,Composer who studied under Joseph Haydn,10,
+115,0,19,3,19,Bit by a bit,4,REIN
+116,5,19,12,19,Tournament favorites,8,ONESEEDS
+117,14,19,20,19,Group of tonal languages,7,CHINESE
+118,0,20,3,20,Day originally marked by a full moon in the early Roman calendar,4,IDES
+119,5,20,7,20,Hunk,3,WAD
+120,9,20,12,20,Like some forecasts and complexions,4,ROSY
+121,14,20,20,20,Wish otherwise,7,HOPENOT
+1,0,0,0,4,Leader of the pack,5,ALPHA
+2,1,0,1,4,Gulf Coast habitat,5,BAYOU
+3,2,0,2,4,Fragrant oil,5,ATTAR
+4,3,0,3,6,Resident of the most populous city in western Asia,7,TEHRANI
+5,4,0,4,2,"Income source for some older folks, in brief",3,IRA
+6,5,0,5,2,Do more than nudge,3,NAG
+7,6,0,6,2,Day-___,3,GLO
+8,8,0,8,6,"""Mean"" Joe Greene, e.g.",7,STEELER
+9,9,0,9,2,Simple shelter,3,
+10,10,0,10,2,"When doubled, overly enthusiastic",3,RAH
+11,11,0,11,4,Windshield annoyance,5,SMEAR
+12,13,0,13,5,"Rapper with the 2018 #1 album ""Invasion of Privacy""",6,CARDIB
+13,14,0,14,3,Midwest college town,4,AMES
+14,15,0,15,2,"Biden or Harris, for short",3,DEM
+15,17,0,17,7,One on a rack,8,SPARERIB
+16,18,0,18,7,"""In witness whereof,"" ""as hereinbefore mentioned,"" etc.",8,LEGALESE
+17,19,0,19,7,Disorder from which Dostoyevsky and many characters in his novels suffered,8,EPILEPSY
+18,20,0,20,2,Cozy spot,3,DEN
+21,12,1,12,6,Approach,6,GONEAR
+24,7,2,7,4,Protein-mimicking molecule,3,RNA
+29,16,3,16,9,Compound at a nail salon,7,ACETONE
+31,4,4,4,6,Ink on a contract,3,
+32,6,4,6,9,Beats around the bush … or bushes,6,HEDGES
+33,10,4,10,7,Sublime soprano,4,DIVA
+35,20,4,20,5,"Brings up, as a subject",2,
+37,5,5,5,8,"39+ weeks, for a pregnancy",4,TERM
+39,9,5,9,8,"Mane character in ""The Wizard of Oz""?",4,LION
+41,14,5,14,9,Leaves out,5,OMITS
+42,15,5,15,8,Prefix with constriction,4,VASO
+43,0,6,0,11,Wedding cake supports,6,DOWELS
+44,1,6,1,11,Charm,6,ENAMOR
+45,2,6,2,11,Didn't participate,6,SATOUT
+46,7,6,7,13,Big cheese's place?,8,DELICASE
+47,11,6,11,10,Physicist Schrödinger,5,ERWIN
+52,13,7,13,14,Like carbon monoxide,8,DIATOMIC
+54,3,8,3,11,"James who sang ""A Sunday Kind of Love""",4,ETTA
+55,8,8,8,12,"Like sumo wrestlers, medically speaking",5,OBESE
+57,12,8,12,12,Single-handedly,5,ALONE
+60,10,9,10,10,Adheres,2,
+62,17,9,17,12,Blackthorn fruit,4,SLOE
+63,18,9,18,14,Shiny top,6,
+64,19,9,19,14,Voting rights matriarch ___ Boynton Robinson,6,AMELIA
+65,20,9,20,14,"""Who, me?"" response",6,YESYOU
+68,9,10,9,14,"Deceived, in a way",5,LEDON
+71,4,11,4,17,Like one who's seen a ghost,7,SPOOKED
+72,6,11,6,15,In a few words,5,
+74,14,11,14,16,Hand warmer,6,MITTEN
+75,16,11,16,16,"Post-merger overhauls, informally",6,REORGS
+77,5,12,5,15,"Digital digest with the motto ""Cure ignorance""",4,UTNE
+78,11,12,11,15,Tastes,4,SIPS
+79,15,12,15,15,Something to knock on,4,WOOD
+80,0,13,0,16,Remunerated,4,PAID
+81,1,13,1,20,Made invalid,8,ANNULLED
+82,2,13,2,20,Prevaricate,8,TELLALIE
+83,3,13,3,20,Preceders of pis,8,OMICRONS
+85,10,13,10,16,Pres. Carter's alma mater,4,USNA
+89,8,14,8,19,Post-merger acquisitions?,6,INLAWS
+90,12,14,12,20,Cloud nine feeling,7,ECSTASY
+91,17,14,17,20,Swirling storm,7,CYCLONE
+93,7,15,7,20,Essential,6,NEEDED
+98,9,16,9,20,Many a Winter Olympian,5,SKIER
+100,13,16,13,18,___ goal (soccer blunder),3,OWN
+102,18,16,18,20,Cousin of a crow,5,RAVEN
+103,19,16,19,20,Childish retort,5,ARESO
+104,20,16,20,20,Painter Édouard often confused with painter Claude,5,MANET
+106,6,17,6,20,Fancy Feast flavor,4,TUNA
+107,11,17,11,20,Some boxers,4,BVDS
+109,0,18,0,20,"Name found in ""Variety""",3,ARI
+110,5,18,5,20,Setting for simmering,3,LOW
+111,10,18,10,20,Onetime auto make with the Metro and Prizm models,3,GEO
+112,14,18,14,18,Stately shade tree,1,
+113,15,18,15,20,Howe'er,3,THO
+114,16,18,16,20,Ball-and-socket joint,3,HIP

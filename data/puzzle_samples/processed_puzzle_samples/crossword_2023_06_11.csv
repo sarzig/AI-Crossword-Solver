@@ -1,0 +1,119 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,3,0,9,0,Major crop of North Carolina,7,TOBACCO
+8,13,0,20,0,Is already booked,8,HASPLANS
+16,2,1,9,1,Pen pal?,8,COAUTHOR
+17,12,1,20,1,"CARES, for Coronavirus Aid, Relief and Economic Security, e.g.",9,BACKRONYM
+18,1,2,9,2,Easy trucking distance,9,SHORTHAUL
+19,11,2,20,2,"White House daughter whom the Secret Service called ""Rosebud""",10,SASHAOBAMA
+20,0,3,8,3,First-ever Super Bowl M.V.P. (1967),9,BARTSTARR
+21,10,3,20,3,Flower whose name sounds like a branding iron,11,REDHOTPOKER
+22,0,4,2,4,"___ Sound, record label co-founded by Drake",3,OVO
+23,4,4,15,4,Faced off,12,WENTTOETOTOE
+25,18,4,20,4,Industrial conglomerate or its symbol on the New York Stock Exchange,3,ITT
+26,0,5,6,5,Agreement,7,CONCORD
+28,8,5,14,5,Ants : colony :: ___ : plague,7,CICADAS
+29,16,5,20,5,"Flower with a ""face""",5,PANSY
+31,0,6,4,6,"""Get ___, you two!""",5,AROOM
+32,7,6,13,6,Listing of recent phone history,7,CALLLOG
+33,15,6,17,6,Nickname that omits -eron,3,CAM
+34,3,7,12,7,Step outside for a bit,10,GETSOMEAIR
+37,14,7,19,7,Fortunetelling decks,6,TAROTS
+40,0,8,7,8,Not as thick,8,SKINNIER
+43,9,8,11,8,Rather thick,3,DIM
+44,13,8,20,8,Price tag caveat (buyer beware!),8,SOLDASIS
+46,0,9,3,9,"How, in Oaxaca",4,COMO
+47,5,9,8,9,"Philosopher who wrote ""Critique of Pure Reason""",4,KANT
+49,10,9,15,9,"Mont-Saint-___, France",6,MICHEL
+51,17,9,20,9,"Make warm and add spice to, as wine",4,MULL
+52,0,10,3,10,Excited cries,4,OOHS
+53,5,10,9,10,Related to part of the small intestine,5,ILEAC
+55,11,10,15,10,Words before corner or profit,5,TURNA
+56,17,10,20,10,Turf,4,AREA
+57,0,11,3,11,Grp. with barrels,4,OPEC
+58,5,11,10,11,Port city in Spain's Basque Country,6,BILBAO
+60,12,11,15,11,Serving two purposes,4,DUAL
+61,17,11,20,11,Garbage disposal spot,4,SINK
+62,0,12,7,12,Doesn't hide anything,8,BARESALL
+64,9,12,11,12,Sch. in Albuquerque,3,UNM
+66,13,12,20,12,Detritus from a hospital,8,BIOWASTE
+68,1,13,6,13,Guard,6,SENTRY
+69,8,13,17,13,Harmful aquatic overgrowth,10,ALGALBLOOM
+71,3,14,5,14,Poetic contraction,3,TIS
+72,7,14,13,14,Managed just fine,7,DIDOKAY
+73,16,14,20,14,Sharply dressed,5,NATTY
+77,0,15,4,15,Onetime Ringling Brothers employee,5,TAMER
+80,6,15,12,15,More pathetic,7,SORRIER
+81,14,15,20,15,Beer brand with a bicycle in its logo,7,FATTIRE
+83,0,16,2,16,Lead-in to puncture,3,ACU
+84,5,16,16,16,Root vegetable in Asian cuisine,12,DAIKONRADISH
+86,18,16,20,16,º: Abbr.,3,DEG
+87,0,17,10,17,Joker's catchphrase,11,JUSTKIDDING
+90,12,17,20,17,"Going on extravagant trips, as a politician might",9,JUNKETING
+92,0,18,9,18,101,10,INTROCLASS
+93,11,18,19,18,Like some chocolate,9,SEMISWEET
+94,0,19,8,19,Minor players?,9,KIDACTORS
+95,11,19,18,19,Where drivers might wait in line,8,CABSTAND
+96,0,20,7,20,Modern-day antiviolence slogan,8,STOPHATE
+97,11,20,17,20,"""To summarize ...""",7,INSHORT
+1,3,0,3,3,Call from a tugboat,4,TOOT
+2,4,0,4,8,Some boat crew members,9,OARSWOMEN
+3,5,0,5,5,Stick in the fridge?,6,BUTTER
+4,6,0,6,5,Close by,6,ATHAND
+5,7,0,7,4,Data analyst's creation,5,CHART
+6,8,0,8,7,A&E docuseries with footage of criminal trials,8,COURTCAM
+7,9,0,9,2,"The Magic, on scoreboards",3,ORL
+8,13,0,13,6,Status symbol?,7,HASHTAG
+9,14,0,14,5,Elicitors of some blessings,6,ACHOOS
+10,15,0,15,4,Move on ice,5,SKATE
+11,16,0,16,3,"Macbeth's dagger or Desdemona's handkerchief, e.g.",4,PROP
+12,17,0,17,3,"Spanish for ""wolf""",4,LOBO
+13,18,0,18,5,"Winner of the podrace in ""Star Wars: Episode I""",6,ANAKIN
+14,19,0,19,5,"Team seen in Queens, in brief",6,NYMETS
+15,20,0,20,5,Know-it-all,6,SMARTY
+16,2,1,2,6,"Prefix meaning ""time""",6,CHRONO
+17,12,1,12,7,Foul smell,7,BADODOR
+18,1,2,1,6,Really relish,5,SAVOR
+19,11,2,11,10,"Draw the line somewhere, say",9,SETALIMIT
+20,0,3,0,6,"South Florida city, to locals",4,BOCA
+21,10,3,10,9,Take back,7,RECLAIM
+24,9,4,9,8,De-squeaked,5,OILED
+27,3,5,3,15,"Expert, from the Italian",11,COGNOSCENTE
+29,16,5,16,8,Pal in cowboy-speak,4,PARD
+30,17,5,17,15,Trio in a Latin learner's lesson,11,AMOAMASAMAT
+32,7,6,7,12,Ivy seen among cliffs,7,CORNELL
+33,15,6,15,13,Caribbean stew,8,CALLALOO
+35,5,7,5,14,Beachside watering holes,8,TIKIBARS
+36,6,7,6,13,Marine animal that resembles a flower,7,SEALILY
+37,14,7,14,13,Pedicure target,7,TOENAIL
+38,18,7,18,12,Yiddish trouble,6,TSURIS
+39,19,7,19,12,Cellphone setting,6,SILENT
+40,0,8,0,12,"Shaggy's dog, to Shaggy",5,SCOOB
+41,1,8,1,13,Turtlelike foes in the Mario games,6,KOOPAS
+42,2,8,2,13,"""Present""",6,IMHERE
+44,13,8,13,14,Like some dense foliage,7,SHRUBBY
+45,20,8,20,12,"Satisfy, as thirst",5,SLAKE
+48,8,9,8,11,Caps Lock neighbor,3,TAB
+50,12,9,12,11,What can be a lot to stomach?,3,CUD
+54,9,10,9,18,"Brew holders, maybe",9,CAULDRONS
+59,10,11,10,17,Underway,7,ONGOING
+63,4,12,4,15,Kerfuffle,4,STIR
+65,11,12,11,16,Ending with taste or trouble,5,MAKER
+67,16,12,16,20,Ultimately emerged victorious,9,WONTHEWAR
+69,8,13,8,19,[Mwah!],7,AIRKISS
+70,12,13,12,20,"___ Covey, heroine of the hit book/film series ""To All the Boys I've Loved Before""",8,LARAJEAN
+72,7,14,7,20,"""Is this such a good idea?""",7,DOIDARE
+74,18,14,18,19,Cleaned (up),6,TIDIED
+75,19,14,19,18,Site of a historic church council,5,TRENT
+76,20,14,20,17,"Burglar, in older slang",4,YEGG
+77,0,15,0,20,Neighbors of Afghans,6,TAJIKS
+78,1,15,1,20,"Boxy window installation, in brief",6,ACUNIT
+79,2,15,2,20,Requirement,6,MUSTDO
+80,6,15,6,20,Pathetic bunch,6,SADLOT
+81,14,15,14,20,"Cross the line, say",6,FINISH
+82,15,15,15,20,Extends an invitation for,6,ASKSTO
+84,5,16,5,20,Authoritative pronouncements,5,DICTA
+85,13,16,13,20,"Makes simple, with ""down""",5,DUMBS
+88,3,17,3,20,Snare,4,TRAP
+89,4,17,4,20,Former New York City mayor Ed,4,KOCH
+91,17,17,17,20,Camp sight,4,TENT
+93,11,18,11,20,"Comp ___ (college discipline, informally)",3,SCI

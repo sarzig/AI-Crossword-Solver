@@ -1,0 +1,63 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,6,0,Get an engine going,7,POWERUP
+8,10,0,14,0,"Incurs an extra service charge, perhaps",5,ROAMS
+13,0,1,7,1,Cost-efficient,8,ECONOMIC
+15,10,1,14,1,"Georges ___, ""Habanera"" composer",5,BIZET
+16,0,2,8,2,"Jargon heard at Comic-Con or in a D&D game, humorously",9,NERDSPEAK
+18,10,2,14,2,Clearing,5,GLADE
+19,0,3,5,3,Specially trained teams,6,CADRES
+20,7,3,9,3,"""Tubular!""",3,RAD
+22,11,3,14,3,"Movement in ""The Nutcracker""",4,PLIE
+23,0,4,4,4,River featured in the Rig Veda,5,INDUS
+24,6,4,14,4,Fruit-filled loaf,9,DATEBREAD
+26,0,5,3,5,Pride parade participant?,4,LION
+27,5,5,13,5,Own up,9,COMECLEAN
+28,0,6,2,6,___ fly,3,SAC
+29,4,6,12,6,Antarctic explorer for whom a sea is named,9,JAMESROSS
+30,3,7,11,7,Attachments for speakers,9,LAPELMICS
+31,2,8,10,8,Blatant deceptions,9,NAKEDLIES
+32,12,8,14,8,Open for drinks,3,TAP
+35,1,9,9,9,"Monarchs, e.g.",9,AUTOCRATS
+36,11,9,14,9,Baby ___,4,YODA
+37,0,10,8,10,Setting for balloon darts or a ringtoss,9,GAMEBOOTH
+38,10,10,14,10,"Television star who went on the ""Legally Prohibited From Being Funny on Television Tour"" in 2010",5,CONAN
+39,0,11,3,11,Taiwanese electronics brand,4,ACER
+40,5,11,7,11,"Note extender, in sheet music",3,DOT
+41,9,11,14,11,"Lothlórien in ""The Lord of the Rings,"" e.g.",6,FOREST
+42,0,12,4,12,Make way for,5,LETBY
+44,6,12,14,12,"They believe ""the radical notion that women are people,"" per Marie Shear",9,FEMINISTS
+46,0,13,4,13,Siren call?,5,BLARE
+47,7,13,14,13,"Well, that works!",8,SURECURE
+48,0,14,4,14,OK,5,ALLOW
+49,8,14,14,14,Certain workplace protection?,7,DESKPAD
+1,0,0,0,6,"#2s, e.g.",7,PENCILS
+2,1,0,1,6,Locale of Niue and the Pitcairn Islands,7,OCEANIA
+3,2,0,2,6,"Common format for an essay, informally",7,WORDDOC
+4,3,0,3,5,Bypassing play,6,ENDRUN
+5,4,0,4,4,Many early wines,5,ROSES
+6,5,0,5,3,Professional squatters?,4,UMPS
+7,6,0,6,2,"Bit of ""Sweeney Todd"" fare",3,PIE
+8,10,0,10,2,"Recurring role for Kate McKinnon on ""S.N.L.""",3,RBG
+9,11,0,11,7,Extractor used on some seeds and nuts,8,OILPRESS
+10,12,0,12,6,"Their petals are used to make a traditional Korean wine called ""dugyeonju""",7,AZALEAS
+11,13,0,13,5,Turnpike feature,6,MEDIAN
+12,14,0,14,4,One taken for a ride,5,STEED
+14,7,1,7,13,Some sweet pick-me-ups,13,CARAMELLATTES
+17,8,2,8,10,"Contralto singer known as the ""First Lady of Radio""",9,KATESMITH
+21,9,3,9,9,Publicly criticizes,7,DECRIES
+24,6,4,6,12,Feature of the United States Capitol,9,DOMEDROOF
+25,10,4,10,8,They act as one,5,BLOCS
+27,5,5,5,11,Simple house style with gables,7,CAPECOD
+29,4,6,4,10,"Track star Ingebrigtsen who, at age 16, became the youngest person in history to run a sub-four-minute mile",5,JAKOB
+30,3,7,3,14,"""Peace, dude!""",8,LATERBRO
+31,2,8,2,14,Music genre for Linkin Park and Limp Bizkit,7,NUMETAL
+32,12,8,12,14,"Hits the weights, say",7,TONESUP
+33,13,8,13,14,"""To the stars,"" in Latin",7,ADASTRA
+34,14,8,14,14,De-briefed?,7,PANTSED
+35,1,9,1,14,Small juice container?,6,AACELL
+36,11,9,11,14,Jester named in a Shakespeare soliloquy,6,YORICK
+37,0,10,0,14,"First of four emperors in the ""Year of the Four Emperors""",5,GALBA
+38,10,10,10,14,Stack in an ice cream shop,5,CONES
+41,9,11,9,14,It's lit!,4,FIRE
+43,4,12,4,14,Material for Robin Hood's bow,3,YEW
+45,8,12,8,14,"Result of a downpour, perhaps",3,MUD

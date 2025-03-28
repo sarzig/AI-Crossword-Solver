@@ -1,0 +1,11 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,1,0,4,0,Urban green space,4,PARK
+5,0,1,4,1,Place to store computer files,5,DRIVE
+6,0,2,4,2,"""Inside Out"" girl",5,RILEY
+7,0,3,3,3,"The ""E"" of E.M.T.: Abbr.",4,EMER
+8,0,4,2,4,Word that can follow 1- and 5-Across to make locales for cars,3,WAY
+1,1,0,1,4,___ donna,5,PRIMA
+2,2,0,2,4,Alvin of dance,5,AILEY
+3,3,0,3,3,"One going cross-country in a camper, for short",4,RVER
+4,4,0,4,2,Escape room item,3,KEY
+5,0,1,0,4,Played a round of Pictionary,4,DREW

@@ -1,0 +1,11 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,3,0,Just go with it!,4,FLOW
+5,0,1,4,1,"Buenos ___, Argentina",5,AIRES
+7,0,2,4,2,Group of conspirators,5,CABAL
+8,0,3,4,3,"""Wicked"" star Cynthia",5,ERIVO
+9,1,4,4,4,"Irish ___, dish that might be made with a pint of Guinness",4,STEW
+1,0,0,0,3,"Confront, as facts",4,FACE
+2,1,0,1,4,You can't trust their stories,5,LIARS
+3,2,0,2,4,Move like a planet,5,ORBIT
+4,3,0,3,4,Salon job involving hair extensions,5,WEAVE
+6,4,1,4,4,"Not busy, business-wise",4,SLOW

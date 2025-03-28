@@ -1,0 +1,67 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,2,0,6,0,16th-century coinage of geographer Gerardus Mercator,5,ATLAS
+6,8,0,14,0,Fur-lined outerwear,7,ANORAKS
+13,1,1,6,1,It's bigger than a peck,6,SMOOCH
+14,8,1,14,1,Minuscule machine,7,NANOBOT
+15,0,2,14,2,"Learning to ride a bike, perhaps",15,CHILDHOODMEMORY
+17,0,3,4,3,"___ Lou Wood, ""Sex Education"" actress",5,AIMEE
+18,6,3,9,3,Exceptional,4,RARE
+19,11,3,14,3,"Final track on Beyoncé's ""Cowboy Carter""",4,AMEN
+20,0,4,3,4,Do a host's job,4,SEAT
+21,5,4,10,4,Walked with purpose,6,STRODE
+23,12,4,14,4,Hon,3,BAE
+24,0,5,2,5,A.M.A. member?,3,ASK
+25,4,5,11,5,"Hymn whose final couplet is known as ""Pie Jesu""",8,DIESIRAE
+27,0,6,6,6,University allowance,7,STIPEND
+29,8,6,12,6,Crepes often served with chutney,5,DOSAS
+31,2,7,5,7,Church section,4,NAVE
+32,7,7,13,7,Sought,7,ASPIRED
+34,0,8,7,8,Collar attachment,8,DOGLEASH
+37,9,8,14,8,Genoese sauces,6,PESTOS
+39,0,9,10,9,"Classic tune used as an ice cream truck jingle, with ""The""",11,ENTERTAINER
+41,12,9,14,9,"Show on which Phoebe Bridgers famously smashed a guitar, in brief",3,SNL
+42,0,10,2,10,Marching band syllable,3,PAH
+43,4,10,9,10,Got one's phone dirty?,6,SEXTED
+44,11,10,14,10,___ bean,4,FAVA
+45,0,11,3,11,"Anita nicknamed the ""Jezebel of Jazz""",4,ODAY
+47,5,11,8,11,"Extend, in a way",4,REUP
+48,10,11,14,11,Pop in,5,VISIT
+49,0,12,4,12,Noted tempter,5,SATAN
+51,6,12,14,12,Injury that usually involves two puncture wounds,9,SNAKEBITE
+53,0,13,4,13,"""Look at me go!""",5,IRULE
+54,7,13,13,13,Sauce made with Parmesan,7,ALFREDO
+55,0,14,4,14,"Cone made of canvas, say",5,TEPEE
+56,8,14,12,14,"""Like ___!""",5,ICARE
+1,2,0,2,14,"""Is it not?""",15,AMIMAKINGTHATUP
+2,3,0,3,4,Sign that might attract interest in signing,5,TOLET
+3,4,0,4,3,Mine find,4,LODE
+4,5,0,5,2,Interjection in Innsbruck,3,ACH
+5,6,0,6,6,"Blew a fuse, say",7,SHORTED
+6,8,0,8,7,"Galaxies, e.g.",8,ANDROIDS
+7,9,0,9,10,"Like a celebrity friend, often",11,NAMEDROPPED
+8,10,0,10,2,Small cube,3,ONE
+9,11,0,11,3,Where the Via della Conciliazione runs,4,ROMA
+10,12,0,12,4,"Oppenheimer's creation ... which ""Oppenheimer"" certainly wasn't",5,ABOMB
+11,13,0,13,4,"What the ancient Chinese referred to as ""Rivers and Mountains Embroidered on Silk""",5,KOREA
+12,14,0,14,4,Songwriter Jule,5,STYNE
+13,1,1,1,6,"Likely to shrink the most, say",6,SHIEST
+15,0,2,0,6,Panamanian pads,5,CASAS
+16,7,2,7,5,Rows,4,OARS
+21,5,4,5,11,Person who consumes a ritual meal to absorb wrongdoings of the dead,8,SINEATER
+22,10,4,10,9,Not taxing as much,6,EASIER
+25,4,5,4,10,"Rafael ___, All-Star third baseman for the Red Sox",6,DEVERS
+26,11,5,11,8,Places for rook piercings,4,EARS
+28,3,6,3,9,Washed out,4,PALE
+30,12,6,12,14,Reserves,9,SETSASIDE
+32,7,7,7,13,Steak often crusted in sesame seeds,7,AHITUNA
+33,13,7,13,13,Head of the Corleone family,7,DONVITO
+34,0,8,0,14,Mine find,7,DEPOSIT
+35,1,8,1,14,Untruthfully?,7,ONADARE
+36,6,8,6,12,"Tenor, alto, soprano, etc.",5,SAXES
+38,14,8,14,12,Upcoming schedule,5,SLATE
+40,8,9,8,14,Onetime subject of King Gyanendra,6,NEPALI
+44,11,10,11,14,"Inner strength, so to speak",5,FIBER
+46,3,11,3,14,Alma mater of three consecutive U.S. presidents,4,YALE
+48,10,11,10,14,"One of the ""grandchildren on your knee"" in the Beatles' ""When I'm Sixty-Four""",4,VERA
+50,4,12,4,14,"Born, in Québec",3,NEE
+52,9,12,9,14,Chain letters?,3,KFC

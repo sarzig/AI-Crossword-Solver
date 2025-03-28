@@ -1,0 +1,75 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,4,0,Suddenly stopped moving,5,FROZE
+6,6,0,9,0,Japanese noodle,4,SOBA
+10,11,0,14,0,Pronoun that's falling into disuse,4,WHOM
+14,0,1,4,1,Japanese noodle soup,5,RAMEN
+15,6,1,9,1,"Chicago paper, familiarly, with ""the""",4,TRIB
+16,11,1,14,1,Virtue signal?,4,HALO
+17,0,2,4,2,In plain sight,5,OVERT
+18,6,2,14,2,"The devil's workshop, it's said",9,IDLEHANDS
+20,0,3,11,3,Hiccup,12,MINORPROBLEM
+22,3,4,5,4,Like tres and cuatro relative to uno and dos,3,MAS
+23,7,4,10,4,Shade of black,4,COAL
+24,12,4,14,4,Pasture sound,3,MAA
+27,0,5,6,5,Casserole topped with guacamole or sour cream,7,TACOPIE
+31,9,5,14,5,They elevate a choir's performance,6,RISERS
+33,0,6,3,6,www addresses,4,URLS
+34,5,6,14,6,Comedian's stage performance,10,STANDUPACT
+37,0,7,4,7,Talk excessively,5,PRATE
+39,6,7,8,7,State leader?,3,TRI
+40,10,7,14,7,Relating to form,5,MODAL
+41,0,8,9,8,Burst of energy,10,POWERSURGE
+44,11,8,14,8,"Actress Skye of ""Say Anything …""",4,IONE
+45,0,9,5,9,Hole near a sole,6,EYELET
+46,8,9,14,9,Corridor,7,HALLWAY
+48,0,10,2,10,Surveyor's measure,3,ROD
+49,4,10,7,10,"Home plate is the ""fourth"" one",4,BASE
+52,9,10,11,10,"Michelle Obama, to Craig Robinson, for short",3,SIS
+53,3,11,14,11,"Common volleyball combo … or 20-, 34- and 41-Across together",12,BUMPSETSPIKE
+58,0,12,8,12,Most tacky,9,CHEESIEST
+61,10,12,14,12,Wrinkle remover,5,BOTOX
+62,0,13,3,13,"Dad humor, perhaps",4,CORN
+63,5,13,8,13,Bread in a tandoor,4,NAAN
+64,10,13,14,13,Papal vestment,5,ORALE
+65,0,14,3,14,Sacrifice a fly?,4,SWAT
+66,5,14,8,14,"Younger Stark daughter on ""Game of Thrones""",4,ARYA
+67,10,14,14,14,Book often shelved on its side,5,ATLAS
+1,0,0,0,3,Word on a gift tag,4,FROM
+2,1,0,1,3,Shankar who performed at Woodstock,4,RAVI
+3,2,0,2,3,"Black cat, maybe",4,OMEN
+4,3,0,3,9,"""Fiddler on the Roof"" star",10,ZEROMOSTEL
+5,4,0,4,5,Catch in a sting,6,ENTRAP
+6,6,0,6,3,Soup recipe instruction,4,STIR
+7,7,0,7,4,"Surgeon, informally",5,ORDOC
+8,8,0,8,4,Shire resident,5,BILBO
+9,9,0,9,6,Héloise's lover,7,ABELARD
+10,11,0,11,3,"""Kapow!""",4,WHAM
+11,12,0,12,2,Ancient Chinese dynasty,3,HAN
+12,13,0,13,2,Word with style or fashioned,3,OLD
+13,14,0,14,2,Sept. and Oct.,3,MOS
+19,10,2,10,7,"Element named after the Greek word for ""sun""",6,HELIUM
+21,5,3,5,6,Pitchfork-shaped letters,4,PSIS
+24,12,4,12,9,Place to pick daisies,6,MEADOW
+25,13,4,13,9,Mysterious knowledge,6,ARCANA
+26,14,4,14,9,Rick of Rickrolling fame,6,ASTLEY
+27,0,5,0,10,Earl of food storage fame,6,TUPPER
+28,1,5,1,10,Southwestern gully,6,ARROYO
+29,2,5,2,10,"Attacked, as by a tiger",6,CLAWED
+30,6,5,6,8,Shakespearean dying words,4,ETTU
+32,11,5,11,14,Party pooper,10,SPOILSPORT
+35,7,6,7,8,Flight board posting: Abbr.,3,ARR
+36,8,6,8,9,Near,4,NIGH
+38,4,7,4,12,"Personification of darkness, in Greek myth",6,EREBUS
+42,5,8,5,14,Cross-country runner's asset,7,STAMINA
+43,9,8,9,11,Big ___ (Seton Hall's conference),4,EAST
+47,10,9,10,14,"Portugal's capital, in Portugal",6,LISBOA
+50,6,10,6,14,Warrior's weapon,5,SPEAR
+51,7,10,7,14,Assignment often graded with a red pen,5,ESSAY
+53,3,11,3,14,"Not quite broken, say",4,BENT
+54,8,11,8,14,Mountain above Vulcan's forge,4,ETNA
+55,12,11,12,14,Right-leaning type?: Abbr.,4,ITAL
+56,13,11,13,14,Nut that's a source of caffeine,4,KOLA
+57,14,11,14,14,Noneternal flames?,4,EXES
+58,0,12,0,14,"Loops in, in a way",3,CCS
+59,1,12,1,14,It's not one of the five W's,3,HOW
+60,2,12,2,14,"The ""E"" of B.C.E.",3,ERA

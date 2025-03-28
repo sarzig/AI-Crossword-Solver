@@ -1,0 +1,15 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,1,0,5,0,Chocolate/marshmallow sandwich,5,SMORE
+6,1,1,5,1,Weighed down (with),5,LADEN
+7,0,2,6,2,Birthday cake inserts,7,CANDLES
+9,0,3,6,3,First U.S. state alphabetically,7,ALABAMA
+10,0,4,6,4,0%,7,NOTABIT
+11,1,5,5,5,Free-for-all fight,5,MELEE
+12,1,6,5,6,Puts on the market,5,SELLS
+1,1,0,1,6,Winding ski races,7,SLALOMS
+2,2,0,2,6,Herbivore seen off Florida shores,7,MANATEE
+3,3,0,3,6,Strange person,7,ODDBALL
+4,4,0,4,6,Give another name,7,RELABEL
+5,5,0,5,6,"Bowser and King Boo, in the Mario games",7,ENEMIES
+7,0,2,0,4,Container on the pantry shelf,3,CAN
+8,6,2,6,4,Took a chair,3,SAT

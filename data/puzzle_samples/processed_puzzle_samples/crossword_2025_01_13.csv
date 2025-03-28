@@ -1,0 +1,77 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,4,0,Place for gladiatorial combat,5,ARENA
+6,6,0,9,0,___ and seek,4,HIDE
+10,11,0,14,0,"""Money, Money, Money"" group",4,ABBA
+14,0,1,4,1,"Some jazz instruments, informally",5,SAXES
+15,6,1,9,1,Restaurant that offers a Mexican Tres Leches stack,4,IHOP
+16,11,1,14,1,"""Dagnabbit!""",4,DRAT
+17,0,2,9,2,Quality of a statement that feels plausible,10,TRUTHINESS
+19,11,2,14,2,"Lead-in to Worth, Wayne or Lauderdale",4,FORT
+20,0,3,3,3,Purges (of),4,RIDS
+21,5,3,7,3,"Holding hands outside, e.g., for short",3,PDA
+22,10,3,14,3,Shelf on a cliff,5,LEDGE
+23,0,4,2,4,Chewed and swallowed,3,ATE
+24,4,4,14,4,"High school or college seniors, usually",11,FOURTHYEARS
+27,0,5,4,5,"Disinfectant brand with the tagline ""Healthing""",5,LYSOL
+29,8,5,10,5,"Sweetheart, slangily",3,BAE
+30,12,5,14,5,Tit for ___,3,TAT
+31,3,6,9,6,Strings along,7,LEADSON
+35,11,6,14,6,"Visibly supports, as a university or sports team",4,REPS
+36,1,7,13,7,Tongue of Chaucer ... or what's literally shown in the shaded squares?,13,MIDDLEENGLISH
+39,0,8,3,8,Queue,4,LINE
+40,5,8,11,8,"Tightens one's ice skates, e.g.",7,LACESUP
+41,0,9,2,9,"German ""Phooey!""",3,ACH
+42,4,9,6,9,Give in to gravity,3,SAG
+43,10,9,14,9,"Gave up, as territory",5,CEDED
+47,0,10,10,10,Feel relief from anxiety,11,BREATHEEASY
+52,12,10,14,10,Do a whoopsie,3,ERR
+53,0,11,4,11,"""Rick and ___"" (adult animated sitcom)",5,MORTY
+54,7,11,9,11,Card that can have the highest or lowest value,3,ACE
+55,11,11,14,11,Leave roaring with laughter,4,SLAY
+56,0,12,3,12,"""Beware the ___ of March""",4,IDES
+57,5,12,14,12,Aid in preventing a shipwreck,10,LIGHTHOUSE
+60,0,13,3,13,Edible ice cream holder,4,CONE
+61,5,13,8,13,Competent,4,ABLE
+62,10,13,14,13,More than willing,5,EAGER
+63,0,14,3,14,"""At Last"" singer James",4,ETTA
+64,5,14,8,14,"Sent a private text, for short",4,DMED
+65,10,14,14,14,Journalism,5,PRESS
+1,0,0,0,5,Word before plane or projection,6,ASTRAL
+2,1,0,1,5,Uncommon thing,6,RARITY
+3,2,0,2,5,"Oozes, as charm",6,EXUDES
+4,3,0,3,3,Basketball goals,4,NETS
+5,4,0,4,2,Cigarette byproduct,3,ASH
+6,6,0,6,4,Holi celebrant,5,HINDU
+7,7,0,7,4,"""Rumor has it …""",5,IHEAR
+8,8,0,8,2,Uno x 2,3,DOS
+9,9,0,9,2,"Mini-albums, for short",3,EPS
+10,11,0,11,4,Cost for a commercial,5,ADFEE
+11,12,0,12,7,Hangout events for two guy friends,8,BRODATES
+12,13,0,13,7,Common chart for comparing data,8,BARGRAPH
+13,14,0,14,6,Swears (to),7,ATTESTS
+18,5,2,5,4,"Stock market debut, for short",3,IPO
+22,10,3,10,5,Caustic drain cleaner,3,LYE
+24,4,4,4,7,Made a quick retreat,4,FLED
+25,8,4,8,8,Kind of steak named after a letter of the alphabet,5,TBONE
+26,9,4,9,8,Chillaxes with friends,5,HANGS
+28,3,5,3,8,Ye ___ Shoppe,4,OLDE
+32,5,6,5,10,Arabic for God,5,ALLAH
+33,6,6,6,10,Digitally make to look younger,5,DEAGE
+34,7,6,7,8,Brief moment,3,SEC
+35,11,6,11,9,"Ready to eat, as fruit",4,RIPE
+36,1,7,1,14,Minuscule picture used in spycraft,8,MICRODOT
+37,2,7,2,14,Essential to the character of something,8,INHERENT
+38,10,7,10,10,"Football holder in ""Peanuts""",4,LUCY
+39,0,8,0,14,Cheese-loving test subjects,7,LABMICE
+42,4,9,4,11,Pigpen,3,STY
+44,12,9,12,14,Downpour,6,DELUGE
+45,13,9,13,14,Wipes out,6,ERASES
+46,14,9,14,14,Spinners in laundromats,6,DRYERS
+48,3,10,3,14,On the ocean,5,ATSEA
+49,7,10,7,14,Sharp-eyed bird,5,EAGLE
+50,8,10,8,14,Felt sore,5,ACHED
+51,9,10,9,12,"""Quiet on the ___!""",3,SET
+55,11,11,11,14,Fly high,4,SOAR
+57,5,12,5,14,Young feller,3,LAD
+58,6,12,6,14,"Company nicknamed ""Big Blue""",3,IBM
+59,10,12,10,14,"With it, in last-century slang",3,HEP

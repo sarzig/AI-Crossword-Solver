@@ -1,0 +1,77 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,3,0,Ponied up,4,PAID
+5,6,0,10,0,Grain husks,5,CHAFF
+10,12,0,14,0,Elev.,3,HGT
+13,0,1,3,1,"Where to find one's U.C.L., as suggested by its first letter",4,ULNA
+14,5,1,10,1,Feeling that can be caused by the final three letters of this answer,6,NAUSEA
+15,12,1,14,1,Afore,3,ERE
+16,0,2,10,2,"One who might object to the phrase ""around the globe""",11,FLATEARTHER
+18,12,2,14,2,Judo rank,3,DAN
+19,0,3,7,3,"""Obsequy"" and ""exequy"" are fancy terms for these rites",8,FUNERALS
+20,9,3,14,3,Stoops (to),6,DEIGNS
+22,0,4,2,4,Anger,3,IRE
+23,4,4,6,4,It starts with janeiro,3,ANO
+24,11,4,14,4,Suffix with centi- or milli-,4,PEDE
+25,0,5,3,5,Maker of squishy balls,4,NERF
+27,6,5,14,5,Easy-to-carry weapons,9,SMALLARMS
+32,3,6,5,6,"___ Cruces, N.M.",3,LAS
+35,7,6,10,6,Call on the high seas,4,AHOY
+36,12,6,14,6,"Muffin morsel, maybe",3,OAT
+37,2,7,12,7,State of order that this puzzle fails to achieve?,11,DUCKSINAROW
+40,0,8,2,8,Org. that specifically prohibits bowling pins and pool cues,3,TSA
+42,4,8,7,8,Word with shot or shine,4,MOON
+43,9,8,11,8,It holds a lot back,3,DAM
+44,0,9,8,9,Collection of fine threads,9,SPIDERWEB
+47,11,9,14,9,Cultivate,4,GROW
+51,0,10,3,10,Sub,4,HERO
+52,8,10,10,10,___ Lingus,3,AER
+55,12,10,14,10,One of 17 in Monopoly: Abbr.,3,AVE
+56,0,11,5,11,Oxymoronic-sounding pain relief brand,6,ICYHOT
+59,7,11,14,11,Their drawers might contain drawers,8,ARMOIRES
+61,0,12,2,12,Net supporter,3,RIM
+62,4,12,14,12,Unlikely sailors,11,LANDLUBBERS
+64,0,13,2,13,"Gossip, in slang",3,TEA
+65,4,13,9,13,Wears away,6,ERODES
+66,11,13,14,13,Lake Superior's ___ Royale,4,ISLE
+67,0,14,2,14,Mine is ⬛️⬛️⬛️-⬛️⬛️-⬛️⬛️⬛️⬛️: Abbr.,3,SSN
+68,4,14,8,14,Fresh,5,SASSY
+69,11,14,14,14,River where Achilles took a dip,4,STYX
+1,0,0,0,5,"Bird also called a ""sea parrot""",6,PUFFIN
+2,1,0,1,5,Draw,6,ALLURE
+3,2,0,2,5,More silly,6,INANER
+4,3,0,3,3,Inadvisable time to talk about one's ex,4,DATE
+5,6,0,6,5,Tennis star Alcaraz,6,CARLOS
+6,7,0,7,3,Simple shelters,4,HUTS
+7,8,0,8,2,Volcanic debris,3,ASH
+8,9,0,9,3,Social media display,4,FEED
+9,10,0,10,3,Cost to ride,4,FARE
+10,12,0,12,7,Natural property line,8,HEDGEROW
+11,13,0,13,6,She might be great,7,GRANDMA
+12,14,0,14,6,Most nail-biting,7,TENSEST
+14,5,1,5,4,____-violence (really tearing into an Indian appetizer?),4,NAAN
+17,4,2,4,4,Laundry detergent brand,3,ERA
+21,11,3,11,5,"Brew that might be ""double dry-hopped,"" for short",3,IPA
+26,3,5,3,7,Seasonal vaccine target,3,FLU
+28,7,5,7,9,State that's nearly 90% forested,5,MAINE
+29,8,5,8,7,"Philip of ""Kung Fu""",3,AHN
+30,9,5,9,8,"Appear, as a webpage",4,LOAD
+31,10,5,10,8,Harp-shaped constellation,4,LYRA
+33,4,6,4,9,"Company at the center of the murder in ""Who Framed Roger Rabbit""",4,ACME
+34,5,6,5,9,Candy bar with a toffee center,4,SKOR
+37,2,7,2,14,Proprietor of cheeses and butters,8,DAIRYMAN
+38,6,7,6,9,Farm female,3,SOW
+39,11,7,11,9,"""Holy cow!""",3,OMG
+40,0,8,0,14,Common merch items,7,TSHIRTS
+41,1,8,1,14,"Gorilla gorilla, e.g.",7,SPECIES
+45,3,9,3,11,Play-___,3,DOH
+46,8,9,8,14,"Fourth-most-produced grain worldwide (after corn, wheat and rice)",6,BARLEY
+48,12,9,12,14,"Hardest to find, perhaps",6,RAREST
+49,13,9,13,14,Too,6,OVERLY
+50,14,9,14,14,Bygone kingdom of ancient Britain,6,WESSEX
+53,9,10,9,13,Weighty birds,4,EMUS
+54,10,10,10,12,Deprive (of),3,ROB
+57,4,11,4,14,Flamenco cries,4,OLES
+58,5,11,5,14,Figure skater Lipinski,4,TARA
+59,7,11,7,14,Takes something as a plus?,4,ADDS
+60,11,11,11,14,Head of the Egyptian god Thoth,4,IBIS
+63,6,12,6,14,Some survey responses,3,NOS

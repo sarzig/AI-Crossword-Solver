@@ -1,0 +1,79 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,4,0,Gobble,5,SNARF
+6,6,0,9,0,"English pop duo with the 1984 hit ""Last Christmas""",4,WHAM
+10,11,0,14,0,First book after the four Gospels,4,ACTS
+14,0,1,4,1,"Slicker, as a winter road",5,ICIER
+15,6,1,9,1,Name of Sporty Spice in the Spice Girls,4,MELC
+16,11,1,14,1,"TV host Trevor with the memoir ""Born a Crime""",4,NOAH
+17,0,2,14,2,Convenient source of tinctures and tonics,15,CORNERDRUGSTORE
+20,3,3,5,3,"Bit of workout apparel, informally",3,TEE
+21,7,3,14,3,Dish with a Cantonese counterpart called egg foo yong,8,OMELETTE
+22,0,4,2,4,Tool that may be used as a hoe,3,ADZ
+25,4,4,6,4,Needs for in vitro fertilization,3,OVA
+27,8,4,10,4,Prefix with liberal,3,NEO
+28,12,4,14,4,Actor McShane,3,IAN
+29,0,5,8,5,"Singer of ""Despacito,"" which has more than eight billion views on YouTube",9,LUISFONSI
+32,10,5,14,5,Exploitative ones,5,USERS
+34,0,6,3,6,Mardi Gras follower,4,LENT
+35,5,6,7,6,Fish also called a nishikigoi,3,KOI
+36,9,6,11,6,Surreptitiously let in on an email,3,BCC
+37,1,7,13,7,"Popular camp activity … or, literally, what the circles are creating four times in this puzzle",13,SCAVENGERHUNT
+42,3,8,5,8,Kettle component,3,LID
+43,7,8,9,8,Figure painted by Warhol,3,MAO
+44,11,8,14,8,Skip out of a party,4,BAIL
+46,0,9,4,9,Canine welcomes,5,BARKS
+49,6,9,14,9,Item with hinged legs,9,CARDTABLE
+51,0,10,2,10,Salt Lake City-to-Minneapolis dir.,3,ENE
+52,4,10,6,10,"___ Jordan, a.k.a. the Green Lantern",3,HAL
+54,8,10,10,10,Neither's partner,3,NOR
+55,12,10,14,10,"Word after phone or, modernly, Zoom",3,SEX
+56,0,11,7,11,"Piece of blackboard chalk, geometrically",8,CYLINDER
+59,9,11,11,11,Stir-fry accessory,3,WOK
+61,0,12,14,12,"""That's not even the half of it ...""",15,OHYOUHAVENOIDEA
+66,0,13,3,13,Body personified by the Greek Titan Selene,4,MOON
+67,5,13,8,13,Walkie-talkie word,4,OVER
+68,10,13,14,13,"Cultivates, in a way",5,PLOWS
+69,0,14,3,14,"So, so, so long",4,EONS
+70,5,14,8,14,"""Barbie"" actor Michael",4,CERA
+71,10,14,14,14,"Like Pittsburgh's Canton Avenue, famously",5,STEEP
+1,0,0,0,2,[as printed!],3,SIC
+2,1,0,1,2,Cpl. or sgt.,3,NCO
+3,2,0,2,2,Word with open or central,3,AIR
+4,3,0,3,3,Monthly budget item,4,RENT
+5,4,0,4,5,No longer burdened by,6,FREEOF
+6,6,0,6,2,"Nuke, for one",3,WMD
+7,7,0,7,3,Hoagie,4,HERO
+8,8,0,8,5,Reunion attendees,6,ALUMNI
+9,9,0,9,4,"Janis Joplin's ""Me and Bobby ___""",5,MCGEE
+10,11,0,11,3,It may be a chip or two,4,ANTE
+11,12,0,12,5,Playground pathogen,6,COOTIE
+12,13,0,13,5,Dental detritus,6,TARTAR
+13,14,0,14,5,Glosses,6,SHEENS
+18,5,2,5,8,"Annulled, as a license",7,REVOKED
+19,10,2,10,7,Sit non-ergonomically,6,SLOUCH
+22,0,4,0,6,100%,3,ALL
+23,1,4,1,7,Union requirements,4,DUES
+24,2,4,2,7,Brass component,4,ZINC
+26,6,4,6,7,"In a bit, to a poet",4,ANON
+30,3,5,3,9,Celery component,5,STALK
+31,7,5,7,9,Greek letter that represents summation,5,SIGMA
+33,11,5,11,9,Marine photographer's aid,5,SCUBA
+36,9,6,9,12,"Hang with the boys, slangily",7,BRODOWN
+38,4,7,4,12,God whose avatars restore cosmic order,6,VISHNU
+39,8,7,8,10,Net,4,EARN
+40,12,7,12,10,Catches in the act,4,NABS
+41,13,7,13,10,Rummikub piece,4,TILE
+45,14,8,14,10,Superman foe ___ Luthor,3,LEX
+46,0,9,0,14,"""2 ___ 1"" (Spice Girls song)",6,BECOME
+47,1,9,1,14,"""O.K. ... moving on!""",6,ANYHOO
+48,2,9,2,14,Have as support,6,RELYON
+49,6,9,6,14,"Use an ax on, perhaps",6,CLEAVE
+50,10,9,10,14,Military force,6,TROOPS
+53,5,10,5,14,Like some committees,5,ADHOC
+57,3,11,3,14,+ or – bits,4,IONS
+58,7,11,7,14,"One vacationing in a camper, informally",4,RVER
+60,11,11,11,14,Bagpiper's wear,4,KILT
+62,8,12,8,14,Big time,3,ERA
+63,12,12,12,14,Fawn's mother,3,DOE
+64,13,12,13,14,Lamb's mother,3,EWE
+65,14,12,14,14,"Snake created by Medusa's blood, in myth",3,ASP

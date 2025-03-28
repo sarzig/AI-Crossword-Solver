@@ -1,0 +1,141 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,2,0,6,0,Partitions between nostrils,5,SEPTA
+6,9,0,12,0,Place to park a boat,4,SLIP
+10,15,0,18,0,Malt-drying kiln,4,OAST
+14,1,1,6,1,"Gave a look of ""Can you believe that?!""",6,STARED
+15,8,1,13,1,Smaller than small,6,ATOMIC
+17,15,1,19,1,Rub it in,5,GLOAT
+19,0,2,20,2,What you'll hear after-hours at a sports car sales lot?,21,THESILENCEOFTHELAMBOS
+23,0,3,4,3,Cry from a boxing coach,5,HITEM
+24,6,3,9,3,Swimmer's assignment,4,LANE
+25,12,3,15,3,"RC, for one",4,COLA
+26,17,3,20,3,"Fayetteville school, informally",4,UOFA
+27,0,4,3,4,"City that neighbors Ann Arbor, for short",4,YPSI
+28,5,4,20,4,Rodeo Drive uprising?,16,BEVERLYHILLSCOUP
+32,1,5,5,5,"Janelle of ""Moonlight""",5,MONAE
+34,9,5,11,5,Loire contents,3,EAU
+35,14,5,17,5,Per person,4,EACH
+36,0,6,13,6,Twisted jeans legs?,14,PANTSLABYRINTH
+42,16,6,20,6,Religion of the Maldives,5,ISLAM
+46,0,7,4,7,Mission statement's inspiration,5,ETHOS
+47,6,7,8,7,Expected,3,DUE
+48,10,7,15,7,Bounces around a pool table,6,CAROMS
+51,17,7,20,7,"Antagonist in ""Hop-o'-My-Thumb""",4,OGRE
+52,0,8,2,8,Drink with crumpets,3,TEA
+53,5,8,9,8,South Asian crepes,5,DOSAS
+55,12,8,16,8,Thrill,5,ELATE
+57,18,8,20,8,Mini manufacturer,3,BMW
+58,0,9,5,9,"Chihuahua, por ejemplo",6,ESTADO
+61,7,9,19,9,Staunch dedication to one's upper leg exercise routine?,13,THIGHFIDELITY
+65,3,10,6,10,Country whose name together with its capital city has only eight letters,4,PERU
+67,9,10,11,10,[I'm a cow!],3,MOO
+68,14,10,17,10,Take for a spin,4,DEMO
+69,1,11,13,11,Winter wear for a stegosaurus?,13,JURASSICPARKA
+75,15,11,20,11,"""I have my ___""",6,DOUBTS
+79,0,12,2,12,Understand,3,GET
+80,4,12,8,12,Palestinian political party,5,FATAH
+81,11,12,15,12,Some feds,5,NARCS
+83,18,12,20,12,"""Look, fireworks!""",3,OOH
+84,0,13,3,13,Diver's destination,4,REEF
+86,5,13,10,13,Labor class?,6,LAMAZE
+89,12,13,14,13,Airport code for a Delta hub,3,LGA
+90,16,13,20,13,It's a small world,5,GLOBE
+92,0,14,4,14,Bracket buster's victory,5,UPSET
+94,7,14,20,14,Tire-puncturing way across a river?,14,BRIDGEOFSPIKES
+97,3,15,6,15,Region,4,AREA
+100,9,15,11,15,Musician whose name sounds like an exclamation,3,ONO
+101,15,15,19,15,Message written on a Wonderland cake,5,EATME
+102,0,16,15,16,Introduction to a chiropractor's makeshift toolkit?,16,THISISSPINALTAPE
+110,17,16,20,16,Ankle-length dress,4,MAXI
+112,0,17,3,17,First automaker to conduct crash tests (1938),4,AUDI
+113,5,17,8,17,E.R. imperative,4,STAT
+114,11,17,14,17,Pair in an ellipse,4,FOCI
+115,16,17,20,17,Capital on the Atlantic,5,DAKAR
+116,0,18,20,18,Campaign to convince British P.M. Tony to change parties?,21,THEBLAIRSWITCHPROJECT
+121,1,19,5,19,"Like sailors' language, stereotypically",5,SALTY
+122,7,19,12,19,Operator of the Valley Flyer and Coast Starlight,6,AMTRAK
+123,14,19,19,19,Urge strongly,6,EXHORT
+124,2,20,5,20,Wranglers alternative,4,LEES
+125,8,20,11,20,Make,4,EARN
+126,14,20,18,20,Rulers until 1917,5,TSARS
+1,2,0,2,9,Top of a range?,10,STETSONHAT
+2,3,0,3,7,Enter smoothly,8,EASEINTO
+3,4,0,4,3,Proper partner?,4,PRIM
+4,5,0,5,2,Number on a bus. card,3,TEL
+5,6,0,6,4,First songwriter to win an Oscar for a James Bond theme,5,ADELE
+6,9,0,9,6,One in the driver's seat,7,STEERER
+7,10,0,10,2,Head of Eton?,3,LOO
+8,11,0,11,2,Global finance org.,3,IMF
+9,12,0,12,4,Word before or after perfect,5,PITCH
+10,15,0,15,5,Tribe whose flag features a circle of tepees on a red background,6,OGLALA
+11,16,0,16,2,French menu word,3,ALA
+12,17,0,17,7,To such an extent (that),8,SOMUCHSO
+13,18,0,18,4,"Game with a card that might say ""Lawyer: court judge legal crime case""",5,TABOO
+14,1,1,1,9,"Swabs, say",9,SHIPMATES
+15,8,1,8,4,Target for salicylic acid,4,ACNE
+16,13,1,13,4,"Fourth-most common surname in Korea (after Kim, Lee and Park)",4,CHOI
+18,19,1,19,4,Stinky ___ (popular Chinese street food),4,TOFU
+19,0,2,0,4,"""Your"" of yore",3,THY
+20,7,2,7,4,___ system (GPS device),3,NAV
+21,14,2,14,5,Vogue rival,4,ELLE
+22,20,2,20,4,April fool target,3,SAP
+28,5,4,5,6,___ Paese cheese,3,BEL
+29,10,4,10,7,Secular,4,LAIC
+30,11,4,11,7,"One-named singer with the 2016 hit ""Crush""",4,YUNA
+31,16,4,16,6,High school dept.,3,SCI
+33,4,5,4,7,Follower of smart or wise,3,ASS
+36,0,6,0,9,Comic Davidson,4,PETE
+37,6,6,6,8,Big whoop,3,ADO
+38,7,6,7,9,"Go over 21, say",4,BUST
+39,8,6,8,9,"""What she said""",4,YEAH
+40,12,6,12,9,Nonkosher,4,TREF
+41,13,6,13,9,Hindu Festival of Colors,4,HOLI
+43,18,6,18,9,"Community celebrated in June, in brief",4,LGBT
+44,19,6,19,9,Name of BTS's fan base,4,ARMY
+45,20,6,20,8,Kitten's sound,3,MEW
+49,14,7,14,10,Anti-D.U.I. org.,4,MADD
+50,15,7,15,12,Mounts,6,STEEDS
+53,5,8,5,13,Kind of fin,6,DORSAL
+54,9,8,9,11,"One offering intense but unrequited affection, in modern usage",4,SIMP
+56,16,8,16,11,Red Muppet,4,ELMO
+59,3,9,3,11,4/,3,APR
+60,4,9,4,12,___ Studies (Gallaudet University department),4,DEAF
+62,10,9,10,11,Indian state on the Arabian Sea,3,GOA
+63,11,9,11,12,"Mellophone, e.g.",4,HORN
+64,17,9,17,11,Debtor's note,3,IOU
+66,6,10,6,13,Arthur Ashe Stadium org.,4,USTA
+69,1,11,1,14,Wrangler maker,4,JEEP
+70,2,11,2,14,Great Basin natives,4,UTES
+71,7,11,7,14,"""Macbeth,"" but not ""Hamlet""",4,IAMB
+72,8,11,8,14,Burn a little,4,CHAR
+73,12,11,12,14,Vegetable that's massaged before eating,4,KALE
+74,13,11,13,14,Mythical ship that sailed to Colchis,4,ARGO
+76,18,11,18,20,Odds fellows?,10,BOOKMAKERS
+77,19,11,19,19,Specifically,9,TOBEEXACT
+78,20,11,20,14,"""___ All That"" (1999 rom-com)",4,SHES
+79,0,12,0,14,"""Despicable Me"" antihero",3,GRU
+82,14,12,14,14,Half-___,3,CAF
+85,3,13,3,20,"Within reach, as a goal",8,FEASIBLE
+87,9,13,9,16,Utah's ___ National Park,4,ZION
+88,10,13,10,16,"""Hairspray"" mom",4,EDNA
+90,16,13,16,15,Fig. on a transcript,3,GPA
+91,17,13,17,20,"One with a storied education, informally?",8,LITMAJOR
+93,4,14,4,16,"Race in which one begins in a wetsuit, for short",3,TRI
+95,11,14,11,20,Shade that one might find on the links?,7,GOLFTAN
+96,15,14,15,16,"""What did I tell you?""",3,SEE
+98,5,15,5,20,Some writing samples,6,ESSAYS
+99,6,15,6,18,Source of Italian bubbles,4,ASTI
+102,0,16,0,18,"Heart on one's sleeve, for short?",3,TAT
+103,1,16,1,19,Verbal shrugs,4,HUHS
+104,2,16,2,20,Perfect,5,IDEAL
+105,7,16,7,19,Prefix with legal,4,PARA
+106,8,16,8,20,"Exclamation while seeing oneself on the Jumbotron, perhaps",5,ITSME
+107,12,16,12,19,Tick follower,4,TOCK
+108,13,16,13,18,German lament,3,ACH
+109,14,16,14,20,Lab dropper,5,PIPET
+111,20,16,20,18,N.Y.C. subway inits.,3,IRT
+115,16,17,16,20,Capital of Qatar,4,DOHA
+117,4,18,4,20,Inits. on a cellphone,3,LTE
+118,9,18,9,20,Sports org. founded by Billie Jean King,3,WTA
+119,10,18,10,20,"Like the verb ""to be"": Abbr.",3,IRR
+120,15,18,15,20,Scripts,3,RXS

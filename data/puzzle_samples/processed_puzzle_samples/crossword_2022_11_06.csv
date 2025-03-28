@@ -1,0 +1,146 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,5,0,Opportunities for singles,6,ATBATS
+7,7,0,12,0,Marbled savory snack from China,6,TEAEGG
+13,14,0,17,0,A boatload,4,LOTS
+17,19,0,21,0,"""Keep Ya Head Up"" rapper, informally",3,PAC
+20,0,1,5,1,Home of the W.N.B.A.'s Wings,6,DALLAS
+21,7,1,12,1,Talk and talk and talk and talk,6,YAMMER
+22,14,1,17,1,On the deep,4,ASEA
+23,19,1,21,1,Poorly,3,ILL
+24,0,2,12,2,Why the party's about to get less hip?,13,SQUAREENROUTE
+26,14,2,21,2,Maker of the Switch console,8,NINTENDO
+28,1,3,4,3,Cremation receptacles,4,URNS
+29,6,3,8,3,Service that's not good?,3,LET
+30,11,3,16,3,"""The ___ Company"" (Frans Hals portrait)",6,MEAGRE
+32,18,3,21,3,Pie crust ingredient,4,LARD
+33,0,4,6,4,Army award attribute,7,HEROISM
+35,8,4,21,4,Realtor's exclamation about a primary bathroom?,14,HOWENSUITEITIS
+39,0,5,3,5,"Actress Moriarty of ""The Boys""",4,ERIN
+40,5,5,10,5,"""My package arrived!""",6,ITCAME
+42,12,5,15,5,"Landing info, in brief",4,ETAS
+43,17,5,20,5,Sorrowful sound,4,MOAN
+44,0,6,2,6,"""Not gonna ___ ...""",3,LIE
+45,4,6,7,6,Other: Sp.,4,OTRO
+46,9,6,14,6,Structure on the continental shelf,6,OILRIG
+48,16,6,18,6,Take (down),3,JOT
+49,0,7,11,7,How Shamu acknowledged the crowd's appreciation?,12,MARINEENCORE
+52,13,7,17,7,"Go from 60 to 0, say",5,RESET
+54,19,7,21,7,Grp. regulating global commerce,3,WTO
+57,3,8,8,8,Got by just fine,6,MADEDO
+58,10,8,12,8,"Some N.F.L. linemen, in brief",3,DTS
+60,15,8,21,8,Where someone might fiddle with your dance moves?,7,HOEDOWN
+62,1,9,4,9,Flat-topped military hat,4,KEPI
+64,7,9,9,9,Ocean State sch.,3,URI
+66,11,9,16,9,Takes the stage,6,GOESON
+69,18,9,21,9,Man's name that spells a fruit backward,4,EMIL
+70,0,10,21,10,"""Prepare for a sword fight, McKellen, Fleming and all other namesakes out there!""?",22,ENGARDEIANSOFTHEGALAXY
+75,0,11,3,11,Uncurbed enthusiasm,4,ZEAL
+76,5,11,10,11,Injury from a fistfight,6,FATLIP
+77,12,11,14,11,Byproduct of burning tobacco,3,TAR
+78,17,11,20,11,Bread maker?,4,MINT
+79,0,12,6,12,Casino do-overs,7,REDEALS
+81,9,12,11,12,Like many lifeguards,3,TAN
+83,13,12,18,12,Crews,6,POSSES
+86,0,13,2,13,"Neurodegenerative disease, for short",3,ALS
+87,4,13,8,13,1990s fitness fad,5,TAEBO
+90,10,13,21,13,Dish cooked to smooth things over after a fight?,12,MAKEUPENTREE
+95,3,14,5,14,"Cable channel with the comedy/drama ""Sistas""",3,BET
+96,7,14,12,14,"TV that's trash, e.g.",6,EWASTE
+98,14,14,17,14,Pops,4,DADS
+99,19,14,21,14,High point of a trip to Europe?,3,ALP
+100,1,15,4,15,The old you?,4,THOU
+102,6,15,9,15,It's full of hot air,4,KILN
+103,11,15,16,15,One small bite,6,ATASTE
+105,18,15,21,15,Word with bus or whistle,4,STOP
+106,0,16,13,16,What students in a karate class are often doing?,14,CHOPPINGENBLOC
+109,15,16,21,16,Spiny sea creatures,7,URCHINS
+111,0,17,3,17,Flatbread made with atta,4,ROTI
+112,5,17,10,17,Charge for a tutor,6,MENTEE
+113,13,17,15,17,Business card abbr.,3,TEL
+115,17,17,20,17,Hang ominously,4,LOOM
+116,0,18,7,18,Place for a lamp,8,ENDTABLE
+118,9,18,21,18,Challenge for a court jester?,13,THEROYALENNUI
+123,0,19,2,19,"""That's ___"" (""You may proceed"")",3,AGO
+124,4,19,7,19,___ film,4,CULT
+125,9,19,14,19,"North African stew, or the dish it's cooked in",6,TAGINE
+126,16,19,21,19,Intimidating in a cool way,6,BADASS
+127,0,20,2,20,"Flavor enhancer, for short",3,MSG
+128,4,20,7,20,Counterpart of -ful,4,LESS
+129,9,20,14,20,Wears down,6,ERODES
+130,16,20,21,20,Contents of a corn maze,6,STALKS
+1,0,0,0,2,Freeware annoyances,3,ADS
+2,1,0,1,7,Where you might order nopales or esquites,8,TAQUERIA
+3,2,0,2,7,"Less clear, as a memory",8,BLURRIER
+4,3,0,3,5,Support group with a hyphen in its name,6,ALANON
+5,4,0,4,4,Ankle bones,5,TARSI
+6,5,0,5,2,"About five o'clock, compass-wise",3,SSE
+7,7,0,7,3,"Daly of ""Cagney & Lacey""",4,TYNE
+8,8,0,8,5,Singer/actress Kitt,6,EARTHA
+9,9,0,9,2,"""Yo te ___""",3,AMO
+10,10,0,10,2,The Tasmanian one has been extinct since the 19th century,3,EMU
+11,11,0,11,4,"""Capisce?""",5,GETME
+12,12,0,12,6,Like wind power vis-à-vis natural gas,7,GREENER
+13,14,0,14,7,Something a parent might tell you to watch,8,LANGUAGE
+14,15,0,15,5,God who was said to be in love with his sister while still in the womb(!),6,OSIRIS
+15,16,0,16,4,Core position,5,TENET
+16,17,0,17,2,Took a load off,3,SAT
+17,19,0,19,5,Thing to bash at a bash,6,PINATA
+18,20,0,20,5,Buzz about space?,6,ALDRIN
+19,21,0,21,4,Thickheads,5,CLODS
+25,6,2,6,8,State symbol of Massachusetts,7,ELMTREE
+27,18,2,18,6,"""Middlemarch"" novelist, 1871",5,ELIOT
+31,13,3,13,7,Showing signs of life,5,ASTIR
+33,0,4,0,7,Commanding position,4,HELM
+34,5,4,5,8,"Located, to a builder",5,SITED
+36,9,4,9,7,Herman Melville's second novel,4,OMOO
+37,10,4,10,8,"""That's odd""",5,WEIRD
+38,17,4,17,8,Act unprofessionally?,5,EMOTE
+41,7,5,7,11,Channel,7,CONDUIT
+45,4,6,4,10,How you might walk after getting great news,5,ONAIR
+47,11,6,11,10,"""Hey, I had it first!""",5,LETGO
+48,16,6,16,10,"Comedian/actor Ken of ""The Hangover"" films",5,JEONG
+50,3,7,3,12,Skewer,6,IMPALE
+51,8,7,8,11,Pinkish-red shade,5,CORAL
+53,15,7,15,10,It moves one step at a time,4,SHOE
+54,19,7,19,11,"""Ain't I a ___?"" (Sojourner Truth speech)",5,WOMAN
+55,20,7,20,11,"Between, poetically",5,TWIXT
+56,21,7,21,10,Lead-in to a sale price,4,ONLY
+59,12,8,12,11,Lacking emotional toughness,4,SOFT
+61,18,8,18,13,"Remove from Zillow, say",6,DELIST
+62,1,9,1,13,"Show submission, in a way",5,KNEEL
+63,2,9,2,13,"""Jumpin' Jehoshaphat!""",5,EGADS
+65,9,9,9,12,Still competing,4,INIT
+67,13,9,13,13,Tour de France stage,5,ETAPE
+68,14,9,14,15,Envelops,7,SHROUDS
+70,0,10,0,13,"Pound who wrote ""In a Station of the Metro""",4,EZRA
+71,5,10,5,14,C sharp equivalent,5,DFLAT
+72,6,10,6,13,Slowly move (in),4,EASE
+73,10,10,10,14,"Sends unwanted texts to, maybe",5,SPAMS
+74,17,10,17,14,Utterances of agreement,5,AMENS
+80,4,12,4,16,Totally loved,5,ATEUP
+82,11,12,11,16,Present at birth,5,NATAL
+84,15,12,15,18,What's so flippin' easy to cook with?,7,SPATULA
+85,16,12,16,16,"Dinner at which ""Dayenu"" is sung",5,SEDER
+88,7,13,7,20,Fried pastries popular in New Orleans,8,BEIGNETS
+89,8,13,8,17,Baby that rarely sleeps at night,5,OWLET
+91,12,13,12,16,"Kind of high-fat, low-carb diet",4,KETO
+92,19,13,19,20,Unlike π,8,RATIONAL
+93,20,13,20,20,Business magnate who is a Stanford University dropout,8,ELONMUSK
+94,21,13,21,16,Actor Omar,4,EPPS
+95,3,14,3,18,"Electronic toy with a blue ""pull"" handle",5,BOPIT
+97,9,14,9,20,"""On Juneteenth"" author ___ Gordon-Reed",7,ANNETTE
+100,1,15,1,20,Some beachwear,6,THONGS
+101,2,15,2,20,Show-off,6,HOTDOG
+102,6,15,6,20,Mournful peals,6,KNELLS
+104,13,15,13,20,Play opener,6,ACTONE
+105,18,15,18,20,Rhimes with an eponymous production company,6,SHONDA
+106,0,16,0,20,Pummel,5,CREAM
+107,5,16,5,20,Infuse (with),5,IMBUE
+108,10,16,10,20,Joy of TV,5,BEHAR
+110,17,16,17,20,Sole connector?,5,CLEAT
+114,14,17,14,20,Potato peeler targets,4,EYES
+117,4,18,4,20,"Patella neighbor, in brief",3,ACL
+119,11,18,11,20,One may get in the way of a collaboration,3,EGO
+120,12,18,12,20,Purge (of),3,RID
+121,16,18,16,20,Abbr. in a birth announcement,3,LBS
+122,21,18,21,20,"Site used by NASA, in brief",3,ISS

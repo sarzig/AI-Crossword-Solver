@@ -1,0 +1,139 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,1,0,5,0,One way to order coffee,5,BLACK
+6,8,0,12,0,Nike competitor,5,ASICS
+11,15,0,20,0,Supporting character in costume?,6,MASCOT
+17,0,1,6,1,Relieves,7,SOOTHES
+19,8,1,13,1,Kiwi or cassowary,6,RATITE
+21,15,1,20,1,VCR medium,6,TVTAPE
+22,0,2,13,2,"""RUFFALO"" and ""TWAIN""?",14,QUOTATIONMARKS
+24,15,2,20,2,"Make comfier over time, as clothes",6,WEARIN
+25,0,3,2,3,Receptacle for remains,3,URN
+26,4,3,9,3,Meat-and-pastry dish,6,POTPIE
+27,11,3,15,3,Attempt to pull apart,5,RIPAT
+29,17,3,19,3,Number that looks like 16-Down in binary code,3,TWO
+30,0,4,3,4,Not eliminated yet,4,INIT
+32,6,4,8,4,Support for a swing,3,TEE
+33,10,4,20,4,HARLO and SMAR?,11,CUTOFFJEANS
+36,0,5,7,5,Drinker's structure made from stacked cans,8,BEERAMID
+39,9,5,14,5,"Famed San Francisco theater, with ""the""",6,CASTRO
+40,16,5,20,5,Like loose gemstones,5,UNSET
+41,3,6,6,6,"""Sign me up!""",4,IMIN
+42,8,6,10,6,"""___ All That,"" 2021 rom-com remake",3,HES
+43,12,6,16,6,Rip-offs at the movies,5,STUBS
+45,18,6,20,6,Norse goddess of death,3,HEL
+46,0,7,11,7,LORD and KEMP?,12,JUMPINGJACKS
+51,13,7,15,7,"Camera type, for short",3,SLR
+52,17,7,20,7,Only,4,MERE
+53,0,8,4,8,Flavoring for ouzo or sambuca,5,ANISE
+54,6,8,12,8,Stops,7,DESISTS
+56,15,8,20,8,Words of decree,6,ITISSO
+58,0,9,2,9,___ check,3,MIC
+59,5,9,9,9,"Diego Rivera's ""The Allegory of California,"" for one",5,MURAL
+60,11,9,17,9,Metal coatings,7,PATINAS
+63,0,10,8,10,*O'NEIL* and *ROGERS*?,9,STARBUCKS
+66,12,10,20,10,CEEEEENA and LENNNNNON?,9,LONGJOHNS
+70,3,11,9,11,Cutting tool with a reinforced spine,7,BACKSAW
+72,11,11,15,11,___ fritas (Cuban French fries),5,PAPAS
+73,18,11,20,11,Cry of surprise upon discovering the culprit,3,YOU
+74,0,12,5,12,"Sole survivor in ""Reservoir Dogs""",6,MRPINK
+77,8,12,14,12,Reply to a doubter,7,YESIDID
+79,16,12,20,12,Baseball award given to Shohei Ohtani in ’23,5,ALMVP
+81,0,13,3,13,Votes of confidence,4,YEAS
+82,5,13,7,13,Place for a stirrup,3,EAR
+85,9,13,20,13,WILDERODDENBERRY?,12,SPLICEDGENES
+87,0,14,2,14,"Standard to exceed, metaphorically",3,BAR
+88,4,14,8,14,Like security systems,5,ARMED
+90,10,14,12,14,Solar wind particle,3,ION
+91,14,14,17,14,Glow,4,AURA
+92,0,15,4,15,Go with the flow,5,ADAPT
+94,6,15,11,15,Part of a flight in which seatbelts must be worn,6,ASCENT
+96,13,15,20,15,"Portrayer of the show creator in ""The Truman Show""",8,EDHARRIS
+100,0,16,10,16,S-O-L-O and L-A-N-G-E?,11,DASHEDHOPES
+102,12,16,14,16,"""Pshaw!""",3,BAH
+103,17,16,20,16,"""Great"" child detective",4,NATE
+104,1,17,3,17,"When repeated, nickname for Time's 2023 Person of the Year",3,TAY
+105,5,17,9,17,Younger Jetson kid,5,ELROY
+106,11,17,16,17,Have the nerve,6,DARETO
+109,18,17,20,17,Moo goo ___ pan,3,GAI
+110,0,18,5,18,"""Got it now""",6,AHISEE
+112,7,18,20,18,RU$$ELL and BLA$$?,14,TWODOLLARBILLS
+115,0,19,5,19,___-than-thou,6,HOLIER
+116,7,19,12,19,Peaceful,6,SERENE
+117,14,19,20,19,Set one's sights,7,TOOKAIM
+118,0,20,5,20,Something found beneath an arch,6,INSOLE
+119,8,20,12,20,"Leaders of the fam, with ""the""",5,RENTS
+120,15,20,19,20,"""Lovergirl"" singer Marie",5,TEENA
+1,1,0,1,5,Title spy in a Robert Ludlum series,6,BOURNE
+2,2,0,2,5,Canadian dollar coin,6,LOONIE
+3,3,0,3,2,QB stat: Abbr.,3,ATT
+4,4,0,4,3,Cause to crack,4,CHAP
+5,5,0,5,3,"High-fat weight-loss diet, for short",4,KETO
+6,8,0,8,4,"Golfer Palmer, familiarly",5,ARNIE
+7,9,0,9,3,"""Ditto!""",4,SAME
+8,10,0,10,2,Give ___ go,3,ITA
+9,11,0,11,5,Wispy cloud,6,CIRRUS
+10,12,0,12,6,Half of a Caribbean nation,7,STKITTS
+11,15,0,15,4,Workweek inits.,5,MTWTF
+12,16,0,16,2,Roman farewell,3,AVE
+13,17,0,17,5,"The ""S"" of New York City's SIR train line",6,STATEN
+14,18,0,18,8,Auto refreshes?,9,CARWASHES
+15,19,0,19,8,Classic novel set in rural Nebraska,9,OPIONEERS
+16,20,0,20,2,See 29-Across,3,TEN
+17,0,1,0,5,Kind of kick in football,5,SQUIB
+18,6,1,6,11,Easy mark,11,SITTINGDUCK
+20,13,1,13,7,Gamers' games,7,ESPORTS
+23,7,2,7,5,Subjective piece,4,OPED
+28,14,3,14,7,Run ___ of,5,AFOUL
+31,3,4,3,8,"Strong poker holding, informally",5,TRIPS
+33,10,4,10,8,Wine vessels,5,CASKS
+34,16,4,16,6,Thin sauce,3,JUS
+35,20,4,20,8,Pope who met with Attila the Hun,5,STLEO
+37,4,5,4,8,French female friend,4,AMIE
+38,5,5,5,7,Max's counterpart,3,MIN
+39,9,5,9,9,Looney Tunes turtle,5,CECIL
+42,8,6,8,12,Gets to vote,7,HASASAY
+44,15,6,15,11,Takes along,6,BRINGS
+46,0,7,0,10,Sticky situations,4,JAMS
+47,1,7,1,10,Mole or mile,4,UNIT
+48,2,7,2,10,Glam rock?,4,MICA
+49,7,7,7,11,"Preserves in slices, as meat",5,JERKS
+50,11,7,11,9,Big name in motor oil,3,STP
+52,17,7,17,10,Soybean product,4,MISO
+55,12,8,12,14,First sultan of both Syria and Egypt,7,SALADIN
+57,16,8,16,10,Cap worn by dervishes,3,TAJ
+59,5,9,5,14,Person cleaning a horse's stable,6,MUCKER
+61,13,9,13,13,The weather is a classically bland one,5,TOPIC
+62,14,9,14,19,Neck and neck,11,INADEADHEAT
+64,3,10,3,13,Certain baseball stats,4,RBIS
+65,4,10,4,12,Severe social media punishment,3,BAN
+67,18,10,18,13,Music for the masses?,4,HYMN
+68,19,10,19,13,"Nine, in Italian",4,NOVE
+69,20,10,20,13,Has dinner,4,SUPS
+71,9,11,9,13,"Anderson who directed ""Asteroid City""",3,WES
+72,11,11,11,15,One in plane clothes,5,PILOT
+74,0,12,0,16,"""That's on me""",5,MYBAD
+75,1,12,1,20,Novel fund-raising idea?,9,READATHON
+76,2,12,2,20,"Glides over the coast, say",9,PARASAILS
+78,10,12,10,16,Favorably interprets,5,SPINS
+79,16,12,16,15,Tourist destination in northern India,4,AGRA
+80,17,12,17,16,Pick up,5,LEARN
+83,6,13,6,17,Titular character in a Menotti opera,5,AMAHL
+84,7,13,7,19,Some vacation destinations,7,RESORTS
+86,15,13,15,15,"""Obviously""",3,DUH
+88,4,14,4,16,"Did a great job on, in modern slang",3,ATE
+89,8,14,8,20,What's generated by solar panels,7,DCPOWER
+93,3,15,3,20,"Rehab therapy, informally",6,PHYSIO
+95,9,15,9,20,Friend of Winnie-the-Pooh,6,EEYORE
+96,13,15,13,18,Rap's ___ Sweatshirt,4,EARL
+97,18,15,18,20,Sleeve style with slanted seams,6,RAGLAN
+98,19,15,19,20,Padova's home,6,ITALIA
+99,20,15,20,19,Not-so-good vibration?,5,SEISM
+101,5,16,5,20,Big name in tractors,5,DEERE
+102,12,16,12,20,Farmers' rolls,5,BALES
+106,11,17,11,20,"""I forbid it""",4,DONT
+107,15,17,15,20,Leisurely gait,4,TROT
+108,16,17,16,20,Instrument with a vowel-heavy name,4,OBOE
+110,0,18,0,20,Tuna type,3,AHI
+111,4,18,4,20,Fish often served with kabayaki sauce,3,EEL
+113,10,18,10,20,Cubs' home,3,DEN
+114,17,18,17,20,Nickname for Isaac,3,IKE

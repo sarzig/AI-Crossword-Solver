@@ -1,0 +1,11 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,1,0,3,0,"""Good one!""",3,HAH
+4,0,1,4,1,Messages to the office staff,5,MEMOS
+6,0,2,4,2,Exclamations accompanied by nervous gulps,5,UHOHS
+7,0,3,4,3,Calculator key,5,MINUS
+8,1,4,3,4,___ Grand (Vegas casino),3,MGM
+1,1,0,1,4,Pronoun pair,5,HEHIM
+2,2,0,2,4,In the midst of,5,AMONG
+3,3,0,3,4,So-so,5,HOHUM
+4,0,1,0,3,Not saying a word,3,MUM
+5,4,1,4,3,Sound of a sizzling steak,3,SSS

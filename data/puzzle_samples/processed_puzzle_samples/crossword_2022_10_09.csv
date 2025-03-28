@@ -1,0 +1,139 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,6,0,"Like the protagonist at the start of ""28 Days Later""",7,INACOMA
+8,10,0,15,0,–,6,HSWEEP
+14,17,0,20,0,"Lady Macduff, e.g.",4,SCOT
+18,0,1,6,1,Group of fighters,7,MILITIA
+19,8,1,15,1,One way to recoil,8,INHORROR
+21,17,1,20,1,Male deer,4,HART
+22,0,2,6,2,"""My ___"" (#1 hit for the Knack)",7,SHARONA
+23,8,2,15,2,One of the two main branches of Buddhism,8,MAHAYANA
+24,17,2,20,2,N.B.A. All-Star Gobert,4,RUDY
+25,3,3,10,3,*Worker with a brush [three rungs],8,CHIMNEYH
+27,15,3,20,3,Fuel option,6,DIESEL
+29,0,4,3,4,"""Ciao!""",4,TATA
+32,5,4,8,4,Completely pooped,4,BEAT
+33,10,4,19,4,–,10,HCOMMANDER
+38,0,5,2,5,A.C.C. school,3,UVA
+39,4,5,7,5,Place with counselors,4,CAMP
+40,10,5,14,5,Maker of Pilots and Passports,5,HONDA
+41,16,5,18,5,Team ___,3,USA
+42,0,6,2,6,"""___ Canto"" (2001 Ann Patchett novel)",3,BEL
+43,4,6,8,6,Structure resembling a pergola,5,ARBOR
+45,10,6,16,6,–,7,HPICKER
+47,18,6,20,6,Airport with a BART station,3,SFO
+50,0,7,4,7,"Mail, e.g.",5,ARMOR
+52,6,7,11,7,Otis who founded the Otis Elevator Company,6,ELISHA
+54,14,7,20,7,Expelled from the body,7,EGESTED
+56,1,8,10,8,*Captain with a periscope [four rungs],10,SUBMARINEH
+58,12,8,15,8,"Some military wear, informally",4,CAMO
+60,17,8,20,8,Carpet specification,4,PILE
+61,1,9,5,9,Former make of Ford,5,EDSEL
+62,8,9,10,9,[I'm frustrated!],3,GAH
+63,12,9,14,9,Lab eggs,3,OVA
+64,17,9,20,9,"Animation and sculpting, for two",4,ARTS
+65,3,10,17,10,Advances through corporate ranks … and what the answer to each starred clue in this puzzle does,15,CLIMBSTHELADDER
+71,0,11,3,11,"""Mon ___!""",4,DIEU
+74,6,11,8,11,"Singer Grande, to fans",3,ARI
+75,10,11,12,11,Center,3,HUB
+76,15,11,19,11,Celebrity gossip show with an exclamation point in its title,5,ENEWS
+79,0,12,3,12,Map inits. until 1991,4,USSR
+80,5,12,8,12,Pest control brand,4,DCON
+81,10,12,19,12,–,10,HREPAIRMAN
+84,0,13,6,13,"""Really good work!""",7,NICEJOB
+86,9,13,14,13,Sung by a group,6,CHORAL
+87,16,13,20,13,Writer known for his anthropomorphic animal characters,5,AESOP
+89,0,14,2,14,"""When r u coming?""",3,ETA
+90,4,14,10,14,*Seasonal orchard worker [eight rungs],7,CHERRYH
+93,12,14,16,14,Staple of Dutch Golden Age art,5,TULIP
+95,18,14,20,14,"Feeling while watching a volcanic eruption, perhaps",3,AWE
+96,2,15,4,15,According to,3,PER
+98,6,15,10,15,Narwhal's tusk,5,TOOTH
+99,13,15,16,15,Pleasant speech cadence,4,LILT
+100,18,15,20,15,"Pen that aptly rhymes with ""click""",3,BIC
+101,1,16,10,16,*Worker for AT&T or Verizon [four rungs],10,TELEPHONEH
+103,12,16,15,16,Common wall mirror shape,4,OVAL
+104,17,16,20,16,Sound on Old MacDonald's farm,4,OINK
+105,0,17,5,17,Chicken scratch,6,SCRAWL
+106,10,17,17,17,–,8,HPAINTER
+109,0,18,3,18,Worker who probably isn't paid enough,4,PEON
+110,5,18,12,18,"Really, really spicy",8,ULTRAHOT
+115,14,18,20,18,1/100 of a franc,7,CENTIME
+119,0,19,3,19,Dirt clump,4,CLOD
+120,5,19,12,19,"Googles, e.g.",8,SEARCHES
+121,14,19,20,19,"Like people in crowds, whether intentionally or not",7,ELBOWED
+122,0,20,3,20,Donations for the needy,4,ALMS
+123,5,20,10,20,*One putting a coat on outside [three rungs],6,HOUSEH
+124,14,20,20,20,Surreptitious assents,7,SLYNODS
+1,0,0,0,2,"Communications on Slack, e.g.",3,IMS
+2,1,0,1,2,Org. funding Covid-19 research,3,NIH
+3,2,0,2,2,In the manner of,3,ALA
+4,3,0,3,4,Roughly,5,CIRCA
+5,4,0,4,3,"""Then again ...,"" in a tweet",4,OTOH
+6,5,0,5,6,Upscale hotel room fixture,7,MINIBAR
+7,6,0,6,8,"One calling for a tow, maybe",9,AAAMEMBER
+8,10,0,10,20,Visual depiction of the apparatus used by the starred professionals,21,HHHHHHHHHHHHHHHHHHHHH
+9,11,0,11,2,"""___ wise guy, eh?""",3,SOA
+10,12,0,12,2,Like some humor,3,WRY
+11,13,0,13,2,Important stretch,3,ERA
+12,14,0,14,2,Stretch longer than an 11-Down,3,EON
+13,15,0,15,4,Mario who founded a fashion empire,5,PRADA
+14,17,0,17,5,"Snowboards well, informally",6,SHREDS
+15,18,0,18,9,Rabble-rouse,10,CAUSEASTIR
+16,19,0,19,4,Something taken by a waiter,5,ORDER
+17,20,0,20,3,"""Cya!""",4,TTYL
+19,8,1,8,4,"""How ___ Your Mother""",4,IMET
+20,9,1,9,3,Con's vote,3,NAY
+26,7,3,7,8,Mafia : Sicilia :: Camorra : ___,6,NAPOLI
+28,16,3,16,7,Harden,5,INURE
+29,0,4,0,7,"Latin for ""trumpet""",4,TUBA
+30,1,4,1,9,Disinclined,6,AVERSE
+31,2,4,2,9,Temple text,6,TALMUD
+34,11,4,11,7,"Beach in Rio de Janeiro, informally",4,COPA
+35,12,4,12,6,"""From now ___ won't be hanging around"" (bluegrass lyric)",3,ONI
+36,13,4,13,6,"1600, in ancient Rome",3,MDC
+37,14,4,14,10,Tick off,7,MAKEMAD
+39,4,5,4,10,"___-by-the-Sea, Calif.",6,CARMEL
+44,8,6,8,12,"Welcomes, as the new year",7,RINGSIN
+46,15,6,15,8,Narcissist's treasure,3,EGO
+48,19,6,19,9,Perceived,4,FELT
+49,20,6,20,9,Output from Sappho,4,ODES
+51,3,7,3,13,Cloud,7,OBSCURE
+53,9,7,9,10,Adjustable bike part,4,SEAT
+55,17,7,17,13,"""I don't wanna hear it""",7,SPAREME
+57,5,8,5,10,Boxer Laila,3,ALI
+58,12,8,12,14,"Stephen who said ""Think books aren't scary? Well, think about this: You can't spell 'Book' without 'Boo!'""",7,COLBERT
+59,13,8,13,10,Director DuVernay,3,AVA
+66,6,10,6,16,Play title that superstitious actors avoid saying aloud in theaters,7,MACBETH
+67,7,10,7,12,Certain sib,3,BRO
+68,11,10,11,13,Currency to which the Maltese scudo is pegged,4,EURO
+69,15,10,15,12,Opus ___,3,DEI
+70,16,10,16,15,"Hypnotized, say",6,ENRAPT
+71,0,11,0,14,Sci-fi novel made into films in 1984 and 2021,4,DUNE
+72,1,11,1,14,"Skeptical reply to ""That's true""",4,ISIT
+73,2,11,2,20,Activity one tries to get out of?,10,ESCAPEROOM
+77,18,11,18,16,Sushi condiment,6,WASABI
+78,19,11,19,16,"Strand, perhaps",6,SNOWIN
+80,5,12,5,14,"""Silly me!""",3,DOH
+82,13,12,13,17,Pope of 1963-78,6,PAULVI
+83,14,12,14,20,Government bonds?,9,ALLIANCES
+85,4,13,4,17,Preppy clothing brand,5,JCREW
+86,9,13,9,16,Ending with leuko- or oo-,4,CYTE
+88,20,13,20,16,Quick kiss,4,PECK
+91,7,14,7,16,"One with a marsupium, affectionately",3,ROO
+92,8,14,8,16,"Bacardi, e.g., in México",3,RON
+94,15,14,15,20,Threat from a squealer,7,ILLTELL
+97,3,15,3,20,Antelopes with twisty horns,6,ELANDS
+101,1,16,1,20,Immune system agent,5,TCELL
+102,5,16,5,20,Like luxurious pillows,5,PLUSH
+103,12,16,12,19,Breakfast that may be prepared overnight,4,OATS
+104,17,16,17,20,Former N.F.L. QB Kyle,5,ORTON
+105,0,17,0,20,Pet rescue org.,4,SPCA
+107,11,17,11,19,"""The Black Cat"" author",3,POE
+108,16,17,16,20,Genderqueer identity,4,ENBY
+111,6,18,6,20,"Soccer star Messi, familiarly",3,LEO
+112,7,18,7,20,"Delta ___ Chi, house in ""Animal House""",3,TAU
+113,8,18,8,20,B&O and Reading: Abbr.,3,RRS
+114,9,18,9,20,"Either half of pocket rockets, in poker slang",3,ACE
+116,18,18,18,20,___ Jima,3,IWO
+117,19,18,19,20,"Rx from a doc, e.g.",3,MED
+118,20,18,20,20,"Newsroom heads, for short",3,EDS

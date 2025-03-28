@@ -1,0 +1,11 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,4,0,Flowers that bloom in late winter,5,CROCI
+6,0,1,4,1,"Energy fields ""read"" by psychics",5,AURAS
+7,0,2,4,2,"Conflict jarringly, as colors",5,CLASH
+8,0,3,3,3,"Head, in French",4,TETE
+9,0,4,2,4,Wrathful feeling,3,IRE
+1,0,0,0,4,"Prickly pears, e.g.",5,CACTI
+2,1,0,1,4,"What'll give you an inch, but not a mile",5,RULER
+3,2,0,2,4,Make a speech,5,ORATE
+4,3,0,3,3,Detective's assignment,4,CASE
+5,4,0,4,2,"""Kinda sorta""",3,ISH

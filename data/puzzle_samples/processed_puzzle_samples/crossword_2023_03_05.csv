@@ -1,0 +1,141 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,6,0,Commuter's ticket,7,BUSPASS
+8,8,0,14,0,They take bows,7,ARCHERS
+15,17,0,20,0,"G-rated, say",4,TAME
+19,0,1,6,1,"""It's not coming to me""",7,IFORGET
+20,8,1,14,1,Floral brew,7,ROSETEA
+21,16,1,20,1,Quintessential ingredient to borrow from a neighbor,5,SUGAR
+22,0,2,14,2,Dine out,15,GOTOARESTAURANT
+24,16,2,20,2,Competitive setting in Fortnite,5,ARENA
+25,3,3,9,3,Like many phone cards,7,PREPAID
+26,12,3,14,3,Often-mispunctuated word,3,ITS
+27,16,3,20,3,"Lets it all out, say",5,VENTS
+28,0,4,2,4,"Aurora, to the Greeks",3,EOS
+31,5,4,8,4,"Powerful weapon, for short",4,NUKE
+32,10,4,13,4,Pop option,4,COLA
+34,15,4,20,4,"Firefly, e.g.",6,BEETLE
+35,0,5,7,5,Aid in some makeshift repairs,8,DUCTTAPE
+38,9,5,20,5,Blackhead remover,12,PORECLEANSER
+40,0,6,4,6,Company that created Pong,5,ATARI
+41,8,6,16,6,They can make a huge impact,9,ASTEROIDS
+42,0,7,4,7,Spongy mushroom,5,MOREL
+43,6,7,9,7,"Movie character who said ""I love you"" to 110-Across",4,LEIA
+45,13,7,15,7,"Network supported by ""Viewers Like You""",3,PBS
+46,17,7,20,7,"Literary character who cries ""I am madness maddened!""",4,AHAB
+50,1,8,3,8,Bog,3,FEN
+51,5,8,8,8,Ill-humored,4,DOUR
+52,10,8,12,8,"""Cool!""",3,RAD
+55,16,8,20,8,Act theatrically,5,EMOTE
+56,0,9,3,9,"""Meet the Press"" host Chuck",4,TODD
+57,5,9,13,9,Attractions for antique hunters,9,YARDSALES
+60,15,9,20,9,Donnybrooks,6,BRAWLS
+61,0,10,2,10,Ironically funny,3,WRY
+62,4,10,16,10,Part of many a weight-loss ad,13,BEFOREPICTURE
+64,18,10,20,10,Buck chaser?,3,DOE
+65,0,11,5,11,Something checked at a T.S.A. checkpoint,6,IDCARD
+67,7,11,15,11,One vs. 52?,9,SOLITAIRE
+68,17,11,20,11,Go on and on,4,RANT
+69,0,12,4,12,"""Cool!""",5,NEATO
+70,8,12,10,12,Crib,3,PAD
+71,12,12,15,12,Bad impression?,4,DENT
+72,17,12,19,12,Tiny bit of work,3,ERG
+73,0,13,3,13,Famed Deco designer,4,ERTE
+74,5,13,7,13,"Whitman of ""Parenthood""",3,MAE
+77,11,13,14,13,Aftermath of a toddler's meal,4,MESS
+78,16,13,20,13,Train that stops in New Haven and New York,5,ACELA
+80,4,14,12,14,They often don't mature until they turn 30,9,MORTGAGES
+84,16,14,20,14,Yucatán native,5,MAYAN
+85,0,15,11,15,Lie out on a scorching day,12,BAKEINTHESUN
+89,13,15,20,15,Landmark at the entrance to Narnia,8,LAMPPOST
+92,0,16,5,16,"""Yeah, but still ...""",6,EVENSO
+93,7,16,10,16,Online handicrafts marketplace,4,ETSY
+94,12,16,15,16,"Bareilles who sang ""Love Song""",4,SARA
+95,18,16,20,16,Tribe native to the Great Basin,3,UTE
+96,0,17,4,17,Suit fabric,5,SERGE
+97,6,17,8,17,Agcy. impersonated in some scam calls,3,IRS
+98,11,17,17,17,Crouched in terror,7,COWERED
+101,0,18,4,18,Private,5,INNER
+102,6,18,20,18,"Vegetarian options … or what the shaded letters in this puzzle are, phonetically",15,MEATSUBSTITUTES
+108,0,19,4,19,"""The Three Musketeers"" action scenes",5,DUELS
+109,6,19,12,19,Flatten,7,PANCAKE
+110,14,19,20,19,"Movie character who replied ""I know"" to 43-Across",7,HANSOLO
+111,0,20,3,20,They may be long and shocking,4,EELS
+112,6,20,12,20,Clink,7,SLAMMER
+113,14,20,20,20,Gray matter?,7,ANATOMY
+1,0,0,0,2,Tom Hanks movie featuring a giant piano,3,BIG
+2,1,0,1,2,It might turn out to be a drone,3,UFO
+3,2,0,2,2,Barfly,3,SOT
+4,3,0,3,3,"Blue diamond in ""Titanic,"" e.g.",4,PROP
+5,4,0,4,3,Lab culture medium,4,AGAR
+6,5,0,5,5,Star close to Venus?,6,SERENA
+7,6,0,6,5,Take responsibility,6,STEPUP
+8,8,0,8,4,Bandleader Shaw,5,ARTIE
+9,9,0,9,3,Share the ___ (sign),4,ROAD
+10,10,0,10,2,Fort Collins sch.,3,CSU
+11,11,0,11,2,"""___ Loss"" (2022 #1 album by Drake and 21 Savage)",3,HER
+12,12,0,12,6,Cyber Monday merchant,7,ETAILER
+13,13,0,13,7,"Mall security guard, pejoratively",8,RENTACOP
+14,14,0,14,3,Exams with a 400-1600 range,4,SATS
+15,17,0,17,5,Soup-serving dish,6,TUREEN
+16,18,0,18,5,Interfacers with publishers,6,AGENTS
+17,19,0,19,5,Layer between the crust and the core,6,MANTLE
+18,20,0,20,5,"Need for a tough crossword, perhaps",6,ERASER
+21,16,1,16,6,Command for creating a revised draft,6,SAVEAS
+23,7,2,7,5,Sushi bar drink,4,SAKE
+28,0,4,0,7,Wax-coated cheese,4,EDAM
+29,1,4,1,13,Like words this clue the in?,10,OUTOFORDER
+30,2,4,2,13,Easily frightened sort,10,SCAREDYCAT
+32,10,4,10,6,Where you might go down in the ranks?,3,COT
+33,11,4,11,6,Bauxite or galena,3,ORE
+34,15,4,15,7,Things usually made in the morning,4,BEDS
+36,3,5,3,9,What's in,5,TREND
+37,4,5,4,7,'Fore,3,TIL
+38,9,5,9,7,"MADD ad, e.g.",3,PSA
+39,14,5,14,7,Lefty,3,LIB
+41,8,6,8,12,Apple wireless file transfer,7,AIRDROP
+43,6,7,6,10,Do nothing,4,LOAF
+44,7,7,7,11,Paris bar tender?,5,EUROS
+46,17,7,17,9,Reddit Q&A,3,AMA
+47,18,7,18,16,"""The nerve!""",10,HOWDAREYOU
+48,19,7,19,16,Finally,10,ATLONGLAST
+49,20,7,20,11,Under siege,5,BESET
+51,5,8,5,11,"Turned red, say",4,DYED
+52,10,8,10,12,Like an allegro tempo,5,RAPID
+53,11,8,11,11,Landed,4,ALIT
+54,12,8,12,14,"Subjects of VH1's ""I Love the ..."" series",7,DECADES
+55,16,8,16,10,'Fore,3,ERE
+56,0,9,0,13,Packaging string,5,TWINE
+58,9,9,9,12,Actress Ward,4,SELA
+59,13,9,13,13,"Many teens' rooms, to parents",5,STIES
+60,15,9,15,12,Pulitzer-winning columnist Stephens,4,BRET
+62,4,10,4,12,"""Du-u-u-ude!""",3,BRO
+63,14,10,14,13,Large coffee vessels,4,URNS
+66,3,11,3,13,Made a fast stop?,3,ATE
+68,17,11,17,15,"""Previously on ..."" segment",5,RECAP
+74,5,13,5,16,"""The kissing disease""",4,MONO
+75,6,13,6,15,"""Coming face to face with yourself,"" per Jackson Pollock",3,ART
+76,7,13,7,20,Otherworldly,8,ETHEREAL
+77,11,13,11,15,Minority in New Zealand's parliament,3,MEN
+78,16,13,16,15,"What goes ""up to 11,"" in ""This Is Spinal Tap""",3,AMP
+79,20,13,20,16,Pot grower?,4,ANTE
+80,4,14,4,19,Skinflints,6,MISERS
+81,8,14,8,20,"Does well on a test, say",7,GETSANA
+82,9,14,9,16,Wild donkey,3,ASS
+83,10,14,10,16,Fellow,3,GUY
+85,0,15,0,20,Along,6,BESIDE
+86,1,15,1,20,Many a Monopoly property,6,AVENUE
+87,2,15,2,20,Ear piece?,6,KERNEL
+88,3,15,3,20,"Marx's co-author for ""The Communist Manifesto""",6,ENGELS
+89,13,15,13,18,They can be passed but not failed,4,LAWS
+90,14,15,14,20,"Franklin who sang ""R-E-S-P-E-C-T""",6,ARETHA
+91,15,15,15,20,Robin Hood's love,6,MARIAN
+94,12,16,12,20,On the wagon,5,SOBER
+97,6,17,6,20,Little mischief-makers,4,IMPS
+98,11,17,11,20,Veggie that's often pickled,4,CUKE
+99,16,17,16,20,"Virgil described its ""cloud of pitch-black whirling smoke""",4,ETNA
+100,17,17,17,20,Sign of neglect,4,DUST
+103,9,18,9,20,Channel that airs old MGM and RKO films,3,TCM
+104,10,18,10,20,"___ Bankman-Fried, fallen crypto mogul",3,SAM
+105,18,18,18,20,Excessively,3,TOO
+106,19,18,19,20,"Boston's Liberty Tree, for one",3,ELM
+107,20,18,20,20,Kind of sauce for dim sum,3,SOY

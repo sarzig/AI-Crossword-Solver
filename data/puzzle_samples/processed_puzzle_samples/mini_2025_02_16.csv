@@ -1,0 +1,11 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,4,0,What has two hands around your wrist?,5,WATCH
+6,0,1,4,1,Sneeze sound,5,ACHOO
+7,0,2,4,2,Elevator choice,5,FLOOR
+8,0,3,4,3,___ and Caicos,5,TURKS
+9,0,4,4,4,"Magnetoreception, for many migratory birds and fish",5,SENSE
+1,0,0,0,4,"Floats, as a smell",5,WAFTS
+2,1,0,1,4,"""I don't have ___"" (""Beats me"")",5,ACLUE
+3,2,0,2,4,Rosebush protector,5,THORN
+4,3,0,3,4,Too many might be in the kitchen,5,COOKS
+5,4,0,4,4,Basketball game with a spelled-out score,5,HORSE

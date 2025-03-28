@@ -1,0 +1,65 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,4,0,Ducked (out),5,SNUCK
+6,9,0,14,0,High chairs?,6,STOOLS
+12,0,1,5,1,Polo participants,6,PONIES
+14,8,1,14,1,Sarcastic response to an obvious statement,7,WHOKNEW
+15,0,2,6,2,"GarageBand and iMovie, e.g.",7,IOSAPPS
+17,8,2,14,2,"""Don't wait up"" occasion, perhaps",7,HOTDATE
+18,0,3,2,3,"""This is ___""",3,CNN
+19,4,3,10,3,Makes fit,7,TAILORS
+21,12,3,14,3,It might change your perspective,3,LSD
+22,0,4,9,4,"""No doubt in my mind""",10,YEAHIMSURE
+24,11,4,14,4,Do some light work?,4,LASE
+25,1,5,8,5,Brainstorm out loud,8,SPITBALL
+26,10,5,14,5,"Text with 114 suwar, in a classic spelling",5,KORAN
+27,2,6,7,6,"Walk in the park, maybe",6,STROLL
+28,9,6,13,6,___ swear,5,PINKY
+29,3,7,6,7,M.L.B. team that was the first to trade a player for himself (Harry Chiti in 1962),4,METS
+30,8,7,11,7,Group,4,GANG
+31,1,8,5,8,Some court statements,5,PLEAS
+33,7,8,12,8,Weight,6,BURDEN
+35,0,9,4,9,Capital where the won is spent,5,SEOUL
+36,6,9,13,9,"""Be right there!""",8,WAITASEC
+38,0,10,3,10,Org. for seniors,4,AARP
+39,5,10,14,10,"Insert in a tall glass, perhaps",10,BENDYSTRAW
+41,0,11,2,11,Basic cable channel,3,USA
+42,4,11,10,11,Component of many a trial,7,PLACEBO
+43,12,11,14,11,Bear necessity?,3,FUR
+44,0,12,6,12,Private watering hole?,7,CANTEEN
+46,8,12,14,12,Speculate,7,SURMISE
+48,0,13,6,13,Rivet,7,ENGROSS
+49,9,13,14,13,They're set in rings,6,STONES
+50,0,14,5,14,Rathskeller supply,6,STEINS
+51,10,14,14,14,Growing pain?,5,ANGST
+1,0,0,0,4,Salacious,5,SPICY
+2,1,0,1,5,Unclaimed,6,NOONES
+3,2,0,2,6,"Opens, as a onesie",7,UNSNAPS
+4,3,0,3,2,Counterpart to Britain's MI6,3,CIA
+5,4,0,4,9,"Didn't soft-pedal something, say",10,KEPTITREAL
+6,9,0,9,4,Surf site,5,SHORE
+7,10,0,10,3,Squirts,4,TOTS
+8,11,0,11,2,Approved,3,OKD
+9,12,0,12,6,For fun,7,ONALARK
+10,13,0,13,6,Hypothetical starting point?,7,LETSSAY
+11,14,0,14,5,2024 NATO inductee,6,SWEDEN
+13,5,1,5,8,Sources of many unwelcome messages online,8,SPAMBOTS
+14,8,1,8,5,It stands out in a print,5,WHORL
+16,6,2,6,7,Natural rug fibers,6,SISALS
+20,7,3,7,6,Quiet,4,LULL
+23,3,4,3,10,"""Feel free to reach out""",7,HITMEUP
+24,11,4,11,10,Nile superlative,7,LONGEST
+26,10,5,10,14,"Not quite, informally",10,KINDASORTA
+28,9,6,9,13,Rolling source of entertainment,8,PARTYBUS
+30,8,7,8,12,They'll show you the way,6,GUIDES
+31,1,8,1,14,___ poet (description of Robert Burns),7,PEASANT
+32,2,8,2,14,Grand Marnier ingredient avec un cognac,7,LORANGE
+33,7,8,7,11,Court seat,4,BANC
+34,12,8,12,14,"Making weaker, in gamer jargon",7,NERFING
+35,0,9,0,14,Sriracha and sambal,6,SAUCES
+36,6,9,6,13,Ceases nursing,5,WEANS
+37,13,9,13,14,Prompts,6,CAUSES
+39,5,10,5,14,"""God ___""",5,BLESS
+40,14,10,14,14,Pull with force,5,WREST
+42,4,11,4,14,Serf,4,PEON
+45,3,12,3,14,Prefix with athlete,3,TRI
+47,11,12,11,14,Start to work?: Abbr.,3,MON

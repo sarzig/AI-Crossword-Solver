@@ -1,0 +1,11 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,4,0,Flexible gymnastics move,5,SPLIT
+6,0,1,4,1,Innocently clueless,5,NAIVE
+7,0,2,4,2,Keeping it to zero is a Sisyphean task,5,INBOX
+8,0,3,4,3,___ cotta (pottery material),5,TERRA
+9,0,4,4,4,"Looks fabulous, in slang",5,SLAYS
+1,0,0,0,4,Foul tempers,5,SNITS
+2,1,0,1,4,Group of speakers at a conference,5,PANEL
+3,2,0,2,4,Fall zodiac sign,5,LIBRA
+4,3,0,3,4,Tusk stuff,5,IVORY
+5,4,0,4,4,State university that has a trademark on burnt orange,5,TEXAS

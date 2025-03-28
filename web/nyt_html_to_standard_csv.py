@@ -1,25 +1,29 @@
+from datetime import datetime
 import os
 import random
 import re
 import pandas as pd
 from bs4 import BeautifulSoup
-
-from clue_classification_and_processing.helpers import get_project_root
 from objects.crossword_and_clue import Crossword
+from clue_classification_and_processing.helpers import get_project_root
+
 
 """
 This entire parsing was created with ChatGPT.
 
 Using saved html, this converts a crossword into a meaningful dataframe / saves
 to csv.
+
+Functions:
+ * get_coordinates(x, y, cell_size, cell_offset)
+ * puzzle_html_to_df(filename)
+ * get_random_clue_df(folder=r"data/puzzle_samples/raw_html/", return_type="All")
+ * process_all_raw_html_to_csv() - looks for all html files in raw_html and converts to csv
+ * rename_puzzles() - helper to rename puzzles from NYT download format to my format
 """
 
-import re
-import pandas as pd
-from bs4 import BeautifulSoup
 
-
-def get_coords(x, y, cell_size, cell_offset):
+def get_coordinates(x, y, cell_size, cell_offset):
     col = round((float(x) - cell_offset) / cell_size)
     row = round((float(y) - cell_offset) / cell_size)
     return row, col
@@ -92,7 +96,7 @@ def puzzle_html_to_df(filename):
 
         cell_id = int(cell_id_match.group(1))
         x, y = rect['x'], rect['y']
-        row, col = get_coords(x, y, cell_size=cell_size, cell_offset=cell_offset)
+        row, col = get_coordinates(x, y, cell_size=cell_size, cell_offset=cell_offset)
 
         clue_number = None
         for t in text_tags:
@@ -213,7 +217,6 @@ def get_random_clue_df(folder=r"data/puzzle_samples/raw_html/", return_type="All
     if folder == r"data/puzzle_samples/raw_html/":
         folder = os.path.join(get_project_root(), folder)
 
-    print(folder)
     # Normalize return type
     return_type = return_type.lower()
 
@@ -256,26 +259,70 @@ def get_random_clue_df(folder=r"data/puzzle_samples/raw_html/", return_type="All
     return result_dict
 
 
-def process_all_raw_html():
+def process_all_raw_html_to_csv(overwrite=False):
     """
     Calls get_random_clue_df (which converts all html files from raw_html into clue_df
     format). Then saves each file as a csv.
     :return: True if no errors arise
     """
+    print("Getting all dataframe from raw html files")
     all_clue_dfs = get_random_clue_df(return_type="all")
+
     save_folder = fr"{get_project_root()}/data/puzzle_samples/processed_puzzle_samples"
 
     for puzzle_name in all_clue_dfs.keys():
         save_path = fr"{save_folder}/{puzzle_name}.csv"
-        print(save_path)
-        clue_df = all_clue_dfs[puzzle_name]
-        clue_df.to_csv(save_path, index=False)
+        if os.path.exists(save_path) and overwrite is False:
+            print(f"Not overwriting csv because file already exists and overwright=False: {save_path}")
+            continue
+        else:
+            print(save_path)
+            clue_df = all_clue_dfs[puzzle_name]
+            print(clue_df)
+            clue_df.to_csv(save_path, index=False)
 
     return True
 
-mini_loc = f"{get_project_root()}/data/puzzle_samples/raw_html/mini.html"
-clue_df = puzzle_html_to_df(mini_loc)
-my_crossword = Crossword(clue_df=clue_df)
+def rename_puzzles():
+    """
+    Chatgpt function. This just renames from the standard format that puzzles download as into a more easily
+    readable / parsable format.
+
+    :return: nothing
+    """
+    raw_puzzle_loc = f"{get_project_root()}/data/puzzle_samples/raw_html"
+    pattern = re.compile(r"^(?P<day>\w+), (?P<month>\w+) (?P<day_num>\d{1,2}),"
+                         r" (?P<year>\d{4}) The (?P<type>Mini|Crossword) puzzle — The New York Times\.html$")
+
+    for filename in os.listdir(raw_puzzle_loc):
+        match = pattern.match(filename)
+        if match:
+            month_str = match.group("month")
+            try:
+                month_num = datetime.strptime(month_str, "%B").month
+            except ValueError:
+                print(f"Skipping: Invalid month in filename: {filename}")
+                continue
+
+            year = match.group("year")
+            day = match.group("day_num").zfill(2)
+            month = str(month_num).zfill(2)
+            puzzle_type = match.group("type").lower()  # "crossword" or "mini"
+            new_name = f"{puzzle_type}_{year}_{month}_{day}.html"
+
+            old_path = os.path.join(raw_puzzle_loc, filename)
+            new_path = os.path.join(raw_puzzle_loc, new_name)
+
+            if not os.path.exists(new_path):  # avoid accidental overwrite
+                os.rename(old_path, new_path)
+                print(f"Renamed: {filename} → {new_name}")
+            else:
+                print(f"Skipped (already exists): {new_name}")
+
+
+#mini_loc = f"{get_project_root()}/data/puzzle_samples/raw_html/mini.html"
+#clue_df = puzzle_html_to_df(mini_loc)
+#my_crossword = Crossword(clue_df=clue_df)
 
 
 # proj_root = get_project_root()

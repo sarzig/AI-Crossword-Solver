@@ -1,0 +1,11 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,1,0,3,0,"PlantNet or iNaturalist, e.g.",3,APP
+4,0,1,4,1,"British singer whose ""Carpool Karaoke"" video has over 250 million views on YouTube",5,ADELE
+6,0,2,4,2,Floral symbol in Buddhist art,5,LOTUS
+7,0,3,4,3,Parcel of land,5,TRACT
+8,1,4,3,4,Antlered grazer in Yellowstone,3,ELK
+1,1,0,1,4,Love to pieces,5,ADORE
+2,2,0,2,4,Part of a flower,5,PETAL
+3,3,0,3,4,"Remove, as a 2-Down",5,PLUCK
+4,0,1,0,3,Ctrl-___-Delete,3,ALT
+5,4,1,4,3,"Jokey suffix with ""best""",3,EST

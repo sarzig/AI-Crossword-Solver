@@ -1,0 +1,18 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,4,0,First full month of spring,5,APRIL
+6,0,1,6,1,Big cost for a working parent,7,DAYCARE
+9,0,2,6,2,Affectionate toward,7,SWEETON
+10,3,3,6,3,"Pb, on the periodic table",4,LEAD
+11,0,4,6,4,Washington N.B.A. team,7,WIZARDS
+14,0,5,5,5,Company that created ChatGPT,6,OPENAI
+15,0,6,5,6,Walk like a duck,6,WADDLE
+1,0,0,0,2,Targets of internet blockers,3,ADS
+2,1,0,1,2,Bear hand,3,PAW
+3,2,0,2,2,"What ""them good old boys were drinkin',"" in Don McLean's ""American Pie""",3,RYE
+4,3,0,3,6,"Country with a renowned ""Ring Road""",7,ICELAND
+5,4,0,4,6,Like a career move that doesn't improve salary or title,7,LATERAL
+7,5,1,5,6,Band assistant,6,ROADIE
+8,6,1,6,4,Conclusions,4,ENDS
+11,0,4,0,6,Knock the socks off,3,WOW
+12,1,4,1,6,"Hoppy brew, for short",3,IPA
+13,2,4,2,6,"British ""Z""",3,ZED

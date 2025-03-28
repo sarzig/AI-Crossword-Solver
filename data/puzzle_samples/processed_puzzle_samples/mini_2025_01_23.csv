@@ -1,0 +1,11 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,1,0,4,0,"""It's only a ___"" (response to a sore loser)",4,GAME
+5,0,1,4,1,Here's a pointer!,5,ARROW
+6,0,2,4,2,"ME, in an address",5,MAINE
+7,0,3,4,3,Fencing swords at the Olympics,5,EPEES
+8,0,4,3,4,"Fit one inside the other, like measuring cups",4,NEST
+1,1,0,1,4,Purple candy flavor,5,GRAPE
+2,2,0,2,4,Zodiac ram,5,ARIES
+3,3,0,3,4,"French painter of ""Water Lilies""",5,MONET
+4,4,0,4,3,Rams' mates,4,EWES
+5,0,1,0,4,Last word of grace,4,AMEN

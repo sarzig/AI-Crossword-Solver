@@ -1,0 +1,141 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,3,0,"Deets, say",4,INFO
+5,5,0,9,0,Like pangolins and armadillos,5,SCALY
+10,11,0,16,0,Pacific weather phenomenon,6,ELNINO
+16,18,0,20,0,"000-00-0002, for Mr. Burns on ""The Simpsons"": Abbr.",3,SSN
+19,0,1,3,1,Apt name for a protestor?,4,NEAL
+20,5,1,9,1,"Shire of ""The Godfather""",5,TALIA
+21,11,1,16,1,"""What's the ___?""",6,MATTER
+22,18,1,20,1,Job listing letters,3,EEO
+23,0,2,20,2,"Play about love and heartbreak in ancient Greece [1605, 431 B.C.]",21,AMIDSUMMERNIGHTSDREAM
+27,0,3,4,3,Danger,5,PERIL
+28,6,3,11,3,Cater (to),6,PANDER
+29,15,3,20,3,Where people might come to a happy medium?,6,SEANCE
+30,0,4,6,4,Is worth it,7,PAYSOFF
+32,9,4,14,4,"""The Taming of the Shrew"" sister",6,BIANCA
+36,16,4,20,4,Wheels,5,AUTOS
+37,2,5,20,5,"Timeless children's classic about country dwellers' friendships [1908, 1881]",19,THEWINDINTHEWILLOWS
+41,0,6,2,6,Farm cry,3,BAA
+43,5,6,9,6,Vented appliance,5,DRYER
+44,11,6,15,6,"Comedy talk show from 2003 to 2022, familiarly",5,ELLEN
+45,0,7,4,7,Superlative score,5,APLUS
+48,6,7,10,7,"""Great Caesar's ghost!""",5,EGADS
+50,15,7,20,7,"Eat, baby-style",6,SUCKLE
+56,0,8,5,8,Timid,6,TREPID
+58,10,8,14,8,It's symbolized by a crescent moon and star,5,ISLAM
+63,16,8,20,8,Jewish folklore creature,5,GOLEM
+64,3,9,20,9,"Magnum opus about a young man, family and the concept of free will [1866, 1965]",18,CRIMEANDPUNISHMENT
+70,0,10,3,10,Not according to plan,4,AWRY
+73,5,10,9,10,Celebrity chef DiSpirito,5,ROCCO
+74,11,10,15,10,"""Go ahead, shoot!""",5,ASKME
+75,17,10,20,10,"Major and Commander, to Biden",4,PETS
+76,0,11,17,11,"Coming-of-age novel about a teenage boy and his isolation [1951, 1986]",18,THECATCHERINTHERYE
+80,0,12,4,12,Like an old apple,5,MEALY
+81,6,12,10,12,Chicken ___ (South Asian dish),5,KORMA
+82,15,12,20,12,Phenomenon also known as data decay,6,BITROT
+86,0,13,5,13,Placid,6,SERENE
+88,10,13,14,13,Rapper ___ Thee Stallion,5,MEGAN
+93,16,13,20,13,Drudges,5,PEONS
+94,5,14,9,14,Celebratory smoke,5,CIGAR
+99,11,14,15,14,"Veered, as an airplane",5,YAWED
+101,18,14,20,14,Just peachy,3,AOK
+102,0,15,18,15,"Tale about soldiers and treachery in southern Europe [1940, 1603]",19,FORWHOMTHEBELLTOLLS
+110,0,16,4,16,Polynesian greeting,5,ALOHA
+111,6,16,11,16,Kleenex : tissue :: ___ : sticky note,6,POSTIT
+112,14,16,20,16,Yellow-brown shade,7,WHEATEN
+115,0,17,5,17,"Mercury and Mars, for two",6,TENORS
+117,9,17,14,17,Grp. promoting world peace,6,UNESCO
+120,16,17,20,17,College athletics channel,5,ESPNU
+121,0,18,20,18,"""In a nutshell"" … or an alternative title for this puzzle?",21,TOMAKEALONGSTORYSHORT
+126,0,19,2,19,"Wallach of ""Baby Doll""",3,ELI
+127,4,19,9,19,Stoat in its white winter coat,6,ERMINE
+128,11,19,15,19,Lawyer's favorite dessert?,5,TORTE
+129,17,19,20,19,Asteroid discovered in 1898,4,EROS
+130,0,20,2,20,"Name that means ""king""",3,REX
+131,4,20,9,20,City that lends its name to a variety of ice cream,6,NAPLES
+132,11,20,15,20,Warren in the Baseball Hall of Fame,5,SPAHN
+133,17,20,20,20,Fashion letters,4,DKNY
+1,0,0,0,4,Modern kind of purchase,5,INAPP
+2,1,0,1,4,Locale for many Panhellenic Games,5,NEMEA
+3,2,0,2,8,"""Rapunzel"" or ""Rumpelstiltskin""",9,FAIRYTALE
+4,3,0,3,5,Kinda getting up there,6,OLDISH
+5,5,0,5,2,Poker great Ungar,3,STU
+6,6,0,6,7,Burner on a range?,8,CAMPFIRE
+7,7,0,7,3,Michigan liberal arts college,4,ALMA
+8,8,0,8,3,Certain collateral,4,LIEN
+9,9,0,9,7,"Convict, in old slang",8,YARDBIRD
+10,11,0,11,6,Persian Gulf territory,7,EMIRATE
+11,12,0,12,2,Gamer's headache,3,LAG
+12,13,0,13,2,Degree in mathematics?,3,NTH
+13,14,0,14,2,"Voice role for Snoop Dogg in 2019's ""The Addams Family""",3,ITT
+14,15,0,15,3,Federal agent who was the inspiration for Dick Tracy,4,NESS
+15,16,0,16,5,Nightmare,6,ORDEAL
+16,18,0,18,5,Addressed,6,SEENTO
+17,19,0,19,5,Manatee,6,SEACOW
+18,20,0,20,5,Adspeak claim of convenience,6,NOMESS
+24,4,2,4,5,Gin add-in,4,SLOE
+25,10,2,10,5,German refusal,4,NEIN
+26,17,2,17,5,One of Cuba's Castros,4,RAUL
+31,5,4,5,6,Subject line abbreviation,3,FWD
+33,12,4,12,6,"Wild group, for short",3,NHL
+34,13,4,13,6,"One of many in the ""Disney Morgue""",3,CEL
+35,14,4,14,6,Leave gobsmacked,3,AWE
+38,7,5,7,7,Scoreboard letters at MetLife Stadium,3,NYG
+39,8,5,8,7,D.O.J. branch,3,DEA
+40,15,5,15,7,Helpful connections,3,INS
+41,0,6,0,8,Halloween symbol,3,BAT
+42,1,6,1,8,Busy month for a C.P.A.,3,APR
+46,3,7,3,13,"Turn from an old pallet into a bookcase, for example",7,UPCYCLE
+47,4,7,4,9,Title for Charlie Chaplin,3,SIR
+49,10,7,10,9,"""Toy Story"" toy torturer",3,SID
+51,16,7,16,9,"""I can't believe this!""",3,UGH
+52,17,7,17,13,Go head-to-head (with),7,COMPETE
+53,18,7,18,10,"Paul who painted ""Cat and Bird""",4,KLEE
+54,19,7,19,10,Advanced,4,LENT
+55,20,7,20,10,Some F.D.N.Y. pros,4,EMTS
+57,5,8,5,11,Juicy gossip,4,DIRT
+59,11,8,11,11,Time measurement,4,SPAN
+60,12,8,12,11,One of a classic septet,4,LUST
+61,13,8,13,11,"""Key of the Nile""",4,ANKH
+62,14,8,14,11,Act out?,4,MIME
+65,6,9,6,12,Imitation,4,MOCK
+66,7,9,7,12,Amazon device,4,ECHO
+67,8,9,8,12,Laptop brand,4,ACER
+68,9,9,9,12,It's just what you'd expect,4,NORM
+69,15,9,15,12,Bosnian's neighbor,4,SERB
+70,0,10,0,13,After-hours conveniences,4,ATMS
+71,1,10,1,13,Cry at an amusement park,4,WHEE
+72,2,10,2,13,Parent,4,REAR
+77,4,11,4,13,Philosopher Rand who rejected altruism,3,AYN
+78,10,11,10,13,"""___ What ___"" (song from ""La Cage aux Folles"")",3,IAM
+79,16,11,16,13,Doggy's sound,3,YIP
+83,18,12,18,20,Carving station option,9,ROASTPORK
+84,19,12,19,14,Hawaiian fish also called a wahoo,3,ONO
+85,20,12,20,14,"""Shame!""",3,TSK
+87,5,13,5,15,Prefix with hotel,3,ECO
+89,11,13,11,20,Exams that are essentially impossible to study for,8,EYETESTS
+90,12,13,12,15,"___ Gadot of ""Wonder Woman""",3,GAL
+91,13,13,13,15,Piercing tool,3,AWL
+92,14,13,14,20,Basis for an annual Forbes list,8,NETWORTH
+95,6,14,6,16,Hobgoblin,3,IMP
+96,7,14,7,16,V8 debut of 1964,3,GTO
+97,8,14,8,16,Music to a masseur's ears,3,AHS
+98,9,14,9,20,"Optimizes, as an engine",7,RETUNES
+100,15,14,15,16,Play-___,3,DOH
+102,0,15,0,20,"More loaded, as a wallet",6,FATTER
+103,1,15,1,20,Stadium chant,6,OLEOLE
+104,2,15,2,20,A.F.L. All-Time Team member with a law degree,6,RONMIX
+105,3,15,3,18,"""No. Way!""",4,WHOA
+106,4,15,4,20,"Old-timey ""listen""",6,HARKEN
+107,10,15,10,18,Default search engine for Microsoft Edge,4,BING
+108,16,15,16,18,Some classic jeans,4,LEES
+109,17,15,17,20,Tethered,6,LASHED
+113,19,16,19,20,"""___: The Smartest Guys in the Room"" (2005 documentary)",5,ENRON
+114,20,16,20,20,Wackadoo,5,NUTSY
+116,5,17,5,20,Protein-rich blood components,4,SERA
+118,12,17,12,20,"""Uncle!""",4,STOP
+119,13,17,13,20,"""Downton Abbey"" role",4,CORA
+122,6,18,6,20,Zhuzh (up),3,AMP
+123,7,18,7,20,Small word for small,3,LIL
+124,8,18,8,20,Hydrogen's atomic number,3,ONE
+125,15,18,15,20,Itch,3,YEN

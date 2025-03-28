@@ -1,0 +1,148 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,5,0,Try to hit,6,SWATAT
+7,7,0,10,0,Numbskull,4,DOPE
+11,12,0,14,0,"With 108-Down, hot stretch of summer",3,DOG
+14,17,0,21,0,Moment of inspiration,5,FLASH
+19,0,1,5,1,"""He's"" this, in a 1963 hit for the Chiffons",6,SOFINE
+20,7,1,10,1,Woes,4,ILLS
+21,12,1,15,1,"""I know, I know!""",4,OHOH
+23,17,1,21,1,"What this might mean: """,5,DITTO
+24,0,2,10,2,"English poet who wrote ""The Highwayman""",11,ALFREDNOYES
+26,12,2,15,2,World Cup org.,4,FIFA
+27,17,2,21,2,Digs in the ice?,5,IGLOO
+28,1,3,4,3,Persian ___ (rugmaker's deliberate mistake),4,FLAW
+29,6,3,9,3,Humorist Bombeck,4,ERMA
+30,11,3,21,3,Early American pseudonym,11,POORRICHARD
+32,0,4,3,4,Within,4,AMID
+33,5,4,12,4,"Prop that enabled Houdini to ""walk through"" a brick wall",8,TRAPDOOR
+35,14,4,16,4,Napoleonic ___,3,ERA
+36,18,4,21,4,Sounds of disapproval,4,TSKS
+37,0,5,11,5,Accept imminent punishment,12,FACETHEMUSIC
+39,13,5,18,5,Republic toppled in 1933,6,WEIMAR
+41,0,6,2,6,Red block in Minecraft,3,TNT
+42,4,6,8,6,Sopranos' highlights,5,ARIAS
+43,10,6,13,6,Rapper Fiasco,4,LUPE
+45,15,6,21,6,Curse out,7,SWEARAT
+49,3,7,6,7,Word with open or pigeon,4,TOED
+50,9,7,14,7,"I, personally",6,MYSELF
+52,16,7,21,7,Bird associated with bats,6,ORIOLE
+53,0,8,5,8,Place side by side,6,APPOSE
+56,7,8,9,8,Doctrine of East Asia,3,TAO
+58,12,8,14,8,Six-Day War combatant: Abbr.,3,ISR
+59,16,8,21,8,Natural fertilizer,6,MANURE
+60,0,9,3,9,Jack of old TV,4,PAAR
+61,6,9,11,9,Neighbor of Jammu and Kashmir,6,PUNJAB
+64,13,9,17,9,"Instrument that makes a ""tsst"" sound",5,HIHAT
+66,19,9,21,9,"""Mazel ___!""",3,TOV
+67,0,10,2,10,Wrestler's goal,3,PIN
+68,4,10,17,10,Caesar salad ingredient,14,HEARTOFROMAINE
+71,19,10,21,10,Clanton at the O.K. Corral,3,IKE
+72,0,11,2,11,It's over here,3,END
+73,4,11,8,11,Ground,5,EARTH
+74,10,11,15,11,"Works a wedding, perhaps",6,CATERS
+75,18,11,21,11,Flying ___ (martial arts strike),4,KNEE
+76,0,12,5,12,Spots for snorkeling,6,ATOLLS
+78,7,12,9,12,Women's ___,3,LIB
+80,12,12,14,12,Helpful connections,3,INS
+81,16,12,21,12,Friendly conversation ender,6,CHEERS
+83,0,13,5,13,Wrap on a rancho,6,SERAPE
+84,7,13,12,13,Opts,6,ELECTS
+87,15,13,18,13,Horse-drawn carriage,4,SHAY
+88,0,14,6,14,"""In Praise of Folly"" essayist",7,ERASMUS
+90,8,14,11,14,Norman or English king?,4,LEAR
+91,13,14,17,14,"With 93-Across, young river critter",5,OTTER
+93,19,14,21,14,See 91-Across,3,PUP
+96,3,15,8,15,"Tribal circle, perhaps",6,TEPEES
+98,10,15,21,15,"Scramble some eggs, say",12,FIXBREAKFAST
+101,0,16,3,16,Smile … or shine,4,BEAM
+104,5,16,7,16,Burden,3,TAX
+105,9,16,16,16,Large electromotive unit,8,MEGAVOLT
+106,18,16,21,16,Strong cleaners,4,LYES
+107,0,17,10,17,Branch of dentistry that specializes in root canals,11,ENDODONTICS
+110,12,17,15,17,"Name hidden backward in ""excellent""",4,NELL
+111,17,17,20,17,Actress Teri,4,GARR
+112,0,18,4,18,"Davis of ""Thelma & Louise""",5,GEENA
+113,6,18,9,18,"Go to sleep, with ""out""",4,CONK
+114,11,18,21,18,"Noted songwriter behind Wynonna Judd's ""Tell Me Why"" and Linda Ronstadt's ""All My Life""",11,KARLABONOFF
+117,0,19,4,19,You can't run on this for long,5,EMPTY
+118,6,19,9,19,"___ Martell, ""Game of Thrones"" princess",4,ELIA
+119,11,19,14,19,Goods for sale: Abbr.,4,MDSE
+120,16,19,21,19,Taiwan-born filmmaker,6,ANGLEE
+121,0,20,4,20,"George Washington chopping down a cherry tree, and others",5,MYTHS
+122,7,20,9,20,Total mess,3,STY
+123,11,20,14,20,"Sought redress, in a way",4,SUED
+124,16,20,21,20,Heeded an owner's order,6,HEELED
+1,0,0,0,2,Org. created under F.D.R.,3,SSA
+2,1,0,1,6,Howler of a movie?,7,WOLFMAN
+3,2,0,2,6,Beset,7,AFFLICT
+4,3,0,3,5,Rant,6,TIRADE
+5,4,0,4,3,"""So let us begin ___ …"": J.F.K.",4,ANEW
+6,5,0,5,2,Talk acronym,3,TED
+7,7,0,7,6,Model for a grade schooler,7,DIORAMA
+8,8,0,8,6,Mountain residence,7,OLYMPUS
+9,9,0,9,5,Argues,6,PLEADS
+10,10,0,10,2,What three dots might mean,3,ESS
+11,12,0,12,4,Accomplish on behalf of,5,DOFOR
+12,13,0,13,3,Home of Kenyon College,4,OHIO
+13,14,0,14,5,"Walk, so to speak",6,GOFREE
+14,17,0,17,3,Org. created under F.D.R.,4,FDIC
+15,18,0,18,8,Shower,9,LIGHTRAIN
+16,19,0,19,4,Eponym for one of the earth's five oceans,5,ATLAS
+17,20,0,20,4,"Baby bearer, maybe",5,STORK
+18,21,0,21,4,Stove toppers,5,HOODS
+22,15,1,15,6,Vice president after Pence,6,HARRIS
+25,6,2,6,7,One of Neptune's moons,6,NEREID
+30,11,3,11,7,Second half of an incantation,5,POCUS
+31,16,3,16,10,Helen Reddy's signature hit,8,IAMWOMAN
+32,0,4,0,6,"Rearward, to a rear admiral",3,AFT
+33,5,4,5,8,It shares space with #,5,THREE
+34,10,4,10,7,Like dipsticks,4,OILY
+38,4,5,4,8,Southwestern art hub,4,TAOS
+39,13,5,13,12,"Tom Jones and Anthony Hopkins, by birth",8,WELSHMEN
+40,17,5,17,10,Make bubbly,6,AERATE
+44,12,6,12,8,Suzhou Museum architect,3,PEI
+46,19,6,19,12,"Same old, same old",7,ROUTINE
+47,20,6,20,12,"He set a Guinness World Record in 2014, reporting for 34 consecutive hours",7,ALROKER
+48,21,6,21,12,Boob tubes,7,TEEVEES
+49,3,7,3,9,"Northernmost N.B.A. city, on scoreboards",3,TOR
+50,9,7,9,10,Magic power,4,MOJO
+51,14,7,14,12,Brotherly figures,6,FRIARS
+53,0,8,0,14,Placate,7,APPEASE
+54,1,8,1,14,Job with numerous applications?,7,PAINTER
+55,2,8,2,14,"Her name is Greek for ""all-gifted""",7,PANDORA
+56,7,8,7,13,One always having a place to hide,6,TURTLE
+57,8,8,8,15,Mounds of activity,8,ANTHILLS
+61,6,9,6,11,The standard,3,PAR
+62,10,9,10,11,"Pro Bowl side, for short",3,AFC
+63,11,9,11,11,Item with straps,3,BRA
+65,15,9,15,11,___ Master's Voice,3,HIS
+68,4,10,4,15,"""I'm in trouble!""",6,HELPME
+69,5,10,5,17,Approach gradually,8,EASEUPTO
+70,12,10,12,13,One who gave us all a lift?,4,OTIS
+75,18,11,18,13,Development in cryptography,3,KEY
+77,3,12,3,20,"A few weeks ago, probably",9,LASTMONTH
+79,9,12,9,14,Worker with a comb,3,BEE
+81,16,12,16,16,Mountebank,5,CHEAT
+82,17,12,17,15,"""Listen!""",4,HARK
+85,10,13,10,17,Some hangouts for remote workers,5,CAFES
+86,11,13,11,16,"It has its ratios, for short",4,TRIG
+87,15,13,15,18,"Popular beer brand, casually",6,STELLA
+89,6,14,6,19,Meeting with a dead line?,6,SEANCE
+91,13,14,13,20,One side of the coin,7,OBVERSE
+92,14,14,14,20,Baited online,7,TROLLED
+93,19,14,19,20,What all companies try to make,7,PAYROLL
+94,20,14,20,20,Service charge,7,USERFEE
+95,21,14,21,16,Scoring figs.,3,PTS
+97,7,15,7,20,Lifts up,6,EXTOLS
+99,12,15,12,20,Literary utopia,6,XANADU
+100,18,15,18,20,Projecting edge,6,FLANGE
+101,0,16,0,20,Deck out with spangles,5,BEGEM
+102,1,16,1,20,The other side,5,ENEMY
+103,2,16,2,20,Crackerjack,5,ADEPT
+105,9,16,9,20,Longtime sports journalist Jim,5,MCKAY
+108,4,17,4,20,See 11-Across,4,DAYS
+109,8,17,8,20,Still competing,4,INIT
+111,17,17,17,20,Sold out,4,GONE
+114,11,18,11,20,Tour de France distance units: Abbr.,3,KMS
+115,16,18,16,20,"""___, humbug!""",3,BAH
+116,21,18,21,20,"Added paper to, as a printer",3,FED

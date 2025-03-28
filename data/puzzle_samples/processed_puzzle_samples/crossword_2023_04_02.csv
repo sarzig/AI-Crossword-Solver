@@ -1,0 +1,141 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,1,0,7,0,"""Nah, you're not!"" retort",7,YEAHIAM
+8,9,0,13,0,Comedy club sounds,5,HAHAS
+13,15,0,20,0,Port of Mexico,6,PUERTO
+19,0,1,7,1,Where to hear amateur bands?,8,HAMRADIO
+20,9,1,13,1,Wear down,5,ERODE
+21,15,1,20,1,"""It is better to be ___ than to be pitied"": Herodotus",6,ENVIED
+22,0,2,9,2,Spaceship battle? / An iconic van Gogh,10,
+24,15,2,20,2,Big hit,6,TRIPLE
+25,0,3,3,3,Timbre,4,TONE
+26,6,3,10,3,___-nest,5,MARES
+27,12,3,18,3,Some fairy tale characters,7,DAMSELS
+29,0,4,2,4,Coffee maker insert,3,POD
+30,4,4,11,4,"Student council electee, informally",8,CLASSREP
+33,13,4,16,4,"Booze it up, old-style",4,TOPE
+34,18,4,20,4,Grp. with cryptanalysts,3,NSA
+37,3,5,7,5,Sounds of saxophones,5,WAILS
+38,11,5,13,5,Flying invention by a classic automaker? / An iconic Klee,3,
+41,0,6,6,6,"""You're on!""",7,ITSABET
+44,8,6,14,6,Why cases might go cold,7,NOLEADS
+47,17,6,20,6,N.F.L. sportscaster Andrews,4,ERIN
+48,0,7,3,7,"Slangy reply when Bart's sister asks ""What's Covid?"" / An iconic Leonardo",4,
+50,12,7,14,7,"West Coast football powerhouse, in brief",3,USC
+51,16,7,20,7,"Gravy, you might say",5,EXTRA
+52,0,8,4,8,Curmudgeons,5,CRABS
+53,7,8,11,8,Come next,5,ENSUE
+55,14,8,16,8,Maximal ending,3,EST
+57,18,8,20,8,Anago or unagi,3,EEL
+58,0,9,3,9,Dance accompanied by pahu drums,4,HULA
+59,5,9,8,9,Blue berry,4,SLOE
+61,10,9,12,9,"Popular a.m. show, familiarly",3,GMA
+63,14,9,20,9,Essential qualities,7,NATURES
+65,3,10,6,10,Reason Mercury gets eclipsed? / An iconic Botticelli,4,
+69,0,11,6,11,Remark from the financially or vertically challenged,7,IMSHORT
+72,8,11,10,11,"""Don't judge a book by its cover,"" e.g.",3,SAW
+73,12,11,15,11,War game,4,RISK
+74,17,11,20,11,Put out,4,EMIT
+78,0,12,2,12,Word of advice,3,TIP
+79,4,12,6,12,Academic must: Abbr.,3,REQ
+80,9,12,13,12,Cause of some Yellowstone traffic jams,5,BISON
+82,16,12,20,12,Hang loose?,5,DRAPE
+83,0,13,4,13,Like some covers and kisses,5,BLOWN
+85,6,13,8,13,Zip it!,3,FLY
+88,10,13,13,13,Post-dinosaur period? / An iconic Magritte,4,
+91,0,14,3,14,What a wristwatch wraps around,4,ULNA
+92,6,14,12,14,Hated with a passion,7,LOATHED
+94,14,14,20,14,No small favor,7,HUGEASK
+95,0,15,0,15,Opposite of liberal doves? / An iconic Hopper,1,
+98,13,15,17,15,"Participate in a marathon, say",5,BINGE
+99,0,16,2,16,Notice,3,SEE
+100,4,16,7,16,Notice,4,SIGN
+101,9,16,16,16,"""Unfortunately, yes""",8,AFRAIDSO
+105,18,16,20,16,Schumer of comedy,3,AMY
+108,2,17,8,17,In fashion?,7,DRESSED
+111,10,17,14,17,"""Cute"" vowel sound",5,LONGU
+112,17,17,20,17,"California city whose name means ""tar""",4,BREA
+113,0,18,5,18,"Dalmatians, e.g.",6,CROATS
+115,7,18,20,18,"Planning one's 24-hour itinerary? / An iconic Michelangelo, with ""The""",14,
+119,0,19,5,19,Ill-considered,6,UNWISE
+120,7,19,11,19,U.S. swimming gold medalist Ledecky,5,KATIE
+121,13,19,20,19,Private meeting,8,ONEONONE
+122,0,20,5,20,Like in-flight smoking,6,BANNED
+123,7,20,11,20,"Tell jokes until PowerPoint unfreezes, e.g.",5,STALL
+124,13,20,19,20,Apt word spelled by the new letters that alter this puzzle's seven works,7,FORGERY
+1,1,0,1,4,"""Yippee!""",5,YAHOO
+2,2,0,2,4,"Touch up, as text",5,EMEND
+3,3,0,3,3,Bottom of the Thames?,4,ARSE
+4,4,0,4,2,Cowlick concealer,3,HAT
+5,5,0,5,2,Rocky Mountain state: Abbr.,3,IDA
+6,6,0,6,7,Flag carrier in the Mediterranean,8,AIRMALTA
+7,7,0,7,5,Quagmire,6,MORASS
+8,9,0,9,2,"Subject of the biography ""Mr. Playboy""",3,
+9,10,0,10,4,Crop up,5,ARISE
+10,11,0,11,2,Enjoy more than one's fair share of,3,HOG
+11,12,0,12,3,"Focusing issue, in brief",4,ADHD
+12,13,0,13,5,Pitted against one another,6,
+13,15,0,15,5,Where fur coats get cleaned?,6,PETSPA
+14,16,0,16,5,"Loosen, as a spool",6,UNREEL
+15,17,0,17,3,Nefarious,4,EVIL
+16,18,0,18,9,Real doozy,10,RIPSNORTER
+17,19,0,19,2,No. for a résumé,3,TEL
+18,20,0,20,2,Work of praise,3,ODE
+19,0,1,0,4,Dot-com start-up?,4,HTTP
+23,8,2,8,4,Cornerstone figs.,3,YRS
+28,14,3,14,11,"Zoos, so to speak",9,MOBSCENES
+30,4,4,4,8,"Los ___, vacation hot spot in Mexico",5,CABOS
+31,5,4,5,7,One may be on the house,4,LIEN
+32,11,4,11,6,Start for made or paid,3,PRE
+35,19,4,19,9,Big ball,6,SOIREE
+36,20,4,20,9,Records of the past,6,ANNALS
+37,3,5,3,7,Relaxing soak,3,
+39,12,5,12,7,___ de vie,3,EAU
+40,17,5,17,7,N.Y.C. ave. east of Park,3,LEX
+41,0,6,0,9,Hankering,4,ITCH
+42,1,6,1,9,Drive-___,4,THRU
+43,2,6,2,9,Prey for a polar bear,4,SEAL
+44,8,6,8,11,"N.F.L. team with the mascot Sourdough Sam, to fans",6,NINERS
+45,9,6,9,8,Old spy org.,3,OSS
+46,10,6,10,14,Giggle alongside (not at!),9,LAUGHWITH
+49,7,7,7,10,First pope in a line of 13,4,LEOI
+51,16,7,16,10,"""How could you?!,"" playfully",4,ETTU
+54,11,8,11,10,Punk offshoot,3,EMO
+56,15,8,15,11,"Scored, as free throws",4,SANK
+59,5,9,5,12,Super-dry,4,SERE
+60,6,9,6,10,"Rainbows in the sky, perhaps",2,
+62,12,9,12,14,Sporting a natural style,6,AFROED
+64,17,9,17,15,It'll cost you,7,USERFEE
+66,4,10,4,13,"Per musician Charlie Parker, ""If you don't live it, it won't come out your ___""",4,HORN
+67,9,10,9,12,"Neighbor of the ""~"" key",3,TAB
+68,13,10,13,13,"Tree climbers, perhaps",4,
+69,0,11,0,15,Vampire's cry in sunlight,5,
+70,1,11,1,16,"""Stranger Things"" actress ___ Bobby Brown",6,MILLIE
+71,2,11,2,20,"Wipe clean, as a car",10,SPONGEDOWN
+75,18,11,18,14,"Baby's first word, commonly",4,MAMA
+76,19,11,19,14,"Hoppy offerings, in brief",4,IPAS
+77,20,11,20,14,Good practice for a half-marathon,4,TENK
+81,11,12,11,14,That ship,3,SHE
+82,16,12,16,16,"Pooch, in slang",5,DOGGO
+84,3,13,3,15,"""Oh, cry me a river!""",3,WAH
+86,7,13,7,20,Feature of décolleté clothing,8,LOWNECKS
+87,8,13,8,15,Run off at the mouth,3,YAK
+89,14,13,14,20,"""Hmm, never really thought about it …""",8,OHIDUNNO
+90,15,13,15,16,Some vow takers,4,NUNS
+93,9,14,9,16,Org. with X-rays,3,TSA
+96,4,15,4,20,African menace,6,TSETSE
+97,5,15,5,20,Spoke menacingly,6,HISSED
+98,13,15,13,20,"Embarrassing fail, in modern lingo",6,BIGOOF
+102,10,16,10,20,Whip around wildly,5,FLAIL
+103,11,16,11,20,Canned tomatoes brand,5,ROTEL
+104,12,16,12,18,Grammy winner DiFranco,3,ANI
+105,18,16,18,20,Fire,5,ARDOR
+106,19,16,19,20,Playground bully,5,MEANY
+107,20,16,20,18,"""Aren't I somethin'?!""",3,
+109,3,17,3,20,It may lead to greener pastures,4,RAIN
+110,8,17,8,20,"""Darn it all!""",4,DRAT
+112,17,17,17,20,Bugaboo,4,BANE
+113,0,18,0,20,Baby hyena,3,CUB
+114,1,18,1,20,Modern vaccine component,3,RNA
+116,9,18,9,20,η,3,ETA
+117,15,18,15,20,"Above, to a bard",3,OER
+118,16,18,16,20,A thick one may be found in a bank,3,FOG

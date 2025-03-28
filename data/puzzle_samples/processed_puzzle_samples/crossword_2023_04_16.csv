@@ -1,0 +1,141 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,4,0,Inundates with messages,5,SPAMS
+6,6,0,9,0,Starting from,4,ASOF
+10,11,0,14,0,Farm male,4,BOAR
+14,16,0,20,0,Slip,5,LAPSE
+19,0,1,4,1,Word spelled starting with an alif in Arabic,5,ALLAH
+20,6,1,9,1,"Style of Chicago's NBC Tower, informally",4,DECO
+21,11,1,14,1,Traditional wisdom,4,LORE
+22,16,1,20,1,Fine woodworking detail,5,INLAY
+23,0,2,4,2,Blender button,5,PULSE
+24,6,2,20,2,Lottery prize?,15,AWARDOFTHESTATE
+27,0,3,4,3,"Deception, metaphorically",5,SMOKE
+28,7,3,11,3,Cambridgeshire's historic ___ Hall,5,ELTON
+29,13,3,20,3,"They were once advertised with the slogan ""Polly wants a cracker?""",8,SALTINES
+30,1,4,12,4,Painted 25% of the house?,12,BRUSHEDASIDE
+34,14,4,17,4,"""Eww, yuck!""",4,BLEH
+35,3,5,7,5,It's a snap,5,PHOTO
+36,10,5,13,5,768 parts of a gal.,4,TSPS
+38,15,5,20,5,Lacking in vitality,6,ANEMIC
+42,0,6,2,6,Heavy cookware item,3,WOK
+45,5,6,9,6,Dancer's boss,5,SANTA
+48,12,6,14,6,Cruet contents,3,OIL
+50,16,6,20,6,Hogwash,5,TRIPE
+51,0,7,6,7,Obama's first chief of staff,7,EMANUEL
+54,8,7,20,7,Make one's long story overly short?,13,ABRIDGETOOFAR
+58,0,8,5,8,Canner's purchase,6,LABELS
+59,7,8,15,8,Dog owner's hope … or a cat owner's pipe dream?,9,OBEDIENCE
+60,18,8,20,8,"Regulator of e-cigarettes, for short",3,FDA
+61,0,9,4,9,Butter maker,5,CHURN
+62,6,9,11,9,Trees whose wood is used for model airplanes,6,BALSAS
+63,14,9,17,9,"One of Randall's daughters on ""This Is Us""",4,TESS
+66,0,10,8,10,"Just the refreshments, not the viewing?",9,HALFAWAKE
+68,12,10,20,10,Ode to reparation for sin?,9,ATONEPOEM
+73,3,11,6,11,Hunt out,4,SEEK
+74,9,11,14,11,Really into,6,HOTFOR
+77,16,11,20,11,Tic-tac-toe sides,5,XANDO
+78,0,12,2,12,Went unused,3,SAT
+81,5,12,13,12,"Make easier to tear, in a way",9,PERFORATE
+84,15,12,20,12,One of twenty-five in this clue,6,LETTER
+85,0,13,12,13,One darling percussion instrument?,13,ACUTETRIANGLE
+88,14,13,20,13,Sage,7,WISEONE
+89,0,14,4,14,Work with a pick and an ax?,5,STRUM
+90,6,14,8,14,Apt name for a worrywart,3,STU
+91,11,14,15,14,Off-white shade,5,CREAM
+93,18,14,20,14,"""Gangnam Style"" rapper",3,PSY
+94,0,15,5,15,Track star?,6,SINGER
+96,7,15,10,15,"Giant things in the 1954 sci-fi film ""Them!""",4,ANTS
+99,13,15,17,15,Taunts,5,GIBES
+102,3,16,6,16,Kind of exam,4,ORAL
+104,8,16,19,16,Where stealth is found in the dictionary?,12,AHEADOFSTEAM
+109,0,17,7,17,Looking blue,8,SADFACED
+113,9,17,13,17,Shoelace tip,5,AGLET
+114,16,17,20,17,Goes to town on,5,HASAT
+116,0,18,14,18,Successfully used Rogaine?,15,SLOWLYGREWAPART
+119,16,18,20,18,Legendary figures,5,ICONS
+120,0,19,4,19,"2020 movie lead-in to ""land""",5,NOMAD
+121,6,19,9,19,"The ""a"" of a.m.",4,ANTE
+122,11,19,14,19,"The ""E"" of HOMES",4,ERIE
+123,16,19,20,19,Drum also known as a tumbadora,5,CONGA
+124,0,20,4,20,Lawsuit filers,5,SUERS
+125,6,20,9,20,Get into a computer's memory,4,LOAD
+126,11,20,14,20,"""___ Blue""",4,NYPD
+127,16,20,20,20,Word with word or jar,5,SWEAR
+1,0,0,0,3,Drains,4,SAPS
+2,1,0,1,4,Vertically level,5,PLUMB
+3,2,0,2,4,"""It's ___ nothing""",5,ALLOR
+4,3,0,3,5,"Protect oneself against Covid, say",6,MASKUP
+5,4,0,4,5,Expression of exasperation,6,SHEESH
+6,6,0,6,2,"___ Limón, first Latina poet laureate of the U.S.",3,ADA
+7,7,0,7,6,Like clothing patches,7,SEWEDON
+8,8,0,8,4,City west of Daytona Beach,5,OCALA
+9,9,0,9,4,Kids' creations from sofa cushions,5,FORTS
+10,11,0,11,5,Lightheaded sorts?,6,BLONDS
+11,12,0,12,2,"[Man, that hurts!]",3,OOF
+12,13,0,13,3,"Creative writing and industrial design, for two",4,ARTS
+13,14,0,14,4,Restorative process,5,REHAB
+14,16,0,16,7,Hear,8,LISTENTO
+15,17,0,17,7,Flawed but relatable protagonist,8,ANTIHERO
+16,18,0,18,3,"""___ ahead"" (redundant advice)",4,PLAN
+17,19,0,19,3,Fill,4,SATE
+18,20,0,20,3,Most spiders have eight of them,4,EYES
+25,10,2,10,5,Egging-on phrase,4,DOIT
+26,15,2,15,5,"""First Lady of Song,"" familiarly",4,ELLA
+31,5,4,5,8,Pulls a fast one on,5,HOSES
+32,6,4,6,7,And others: Abbr.,4,ETAL
+33,12,4,12,8,Classical form of poetry,5,EPODE
+37,13,5,13,8,Symptom,4,SIGN
+39,18,5,18,8,Tee off,4,MIFF
+40,19,5,19,8,Product used with a stylus,4,IPAD
+41,20,5,20,8,Actor Michael,4,CERA
+42,0,6,0,10,"Raquel of ""Fantastic Voyage""",5,WELCH
+43,1,6,1,10,Hold 'em variation,5,OMAHA
+44,2,6,2,10,World capital located more than a mile above sea level,5,KABUL
+46,8,6,8,10,Reserve for later … or something to reserve,5,TABLE
+47,9,6,9,9,Fivers,4,ABES
+49,14,6,14,11,Class speaker,6,LECTOR
+52,3,7,3,11,"Weakens, in video game lingo",5,NERFS
+53,4,7,4,11,Arm bones,5,ULNAE
+55,10,7,10,9,Nutrition fig.,3,RDA
+56,11,7,11,9,"""___ for Innocent"" (Sue Grafton novel)",3,IIS
+57,15,7,15,10,Many an Olympic gold medalist in gymnastics,4,TEEN
+59,7,8,7,10,Sturdy flooring material,3,OAK
+62,6,9,6,14,"The Keebler elves, e.g.",6,BAKERS
+64,16,9,16,13,"Makes more attractive, with ""up""",5,SEXES
+65,17,9,17,13,Flood,5,SPATE
+67,5,10,5,13,Shed some tears,4,WEPT
+68,12,10,12,14,Fairy tale ending?,5,AFTER
+69,13,10,13,12,"Hoof, in part",3,TOE
+70,18,10,18,14,Ranked #1,5,ONTOP
+71,19,10,19,14,Utopias,5,EDENS
+72,20,10,20,14,"Amsterdam of ""The Dick Van Dyke Show""",5,MOREY
+74,9,11,9,13,Affectionate sobriquet,3,HON
+75,10,11,10,13,Many a URL ending,3,ORG
+76,11,11,11,14,Common deodorant ingredient,4,TALC
+78,0,12,0,15,Freshness,4,SASS
+79,1,12,1,15,When the curtains open,4,ACTI
+80,2,12,2,15,Time to go,4,TURN
+82,7,12,7,15,"The Beatles' ""Lovely ___""",4,RITA
+83,8,12,8,16,Animal life,5,FAUNA
+84,15,12,15,16,An arm and a leg,5,LIMBS
+86,3,13,3,20,Back-and-forth struggle,8,TUGOFWAR
+87,4,13,4,20,Rare finds in Minecraft,8,EMERALDS
+88,14,13,14,16,Ragamuffin,4,WAIF
+92,13,14,13,20,Narcissist's indulgence,7,EGOTRIP
+95,5,15,5,18,Salacious,4,RACY
+97,9,15,9,20,Unfrozen,6,THAWED
+98,10,15,10,18,Genesis creator,4,SEGA
+100,16,15,16,20,Branch of philosophy,6,ETHICS
+101,17,15,17,20,Manatee,6,SEACOW
+103,6,16,6,20,Rightful,5,LEGAL
+105,11,16,11,20,Muesli brand,5,ALPEN
+106,12,16,12,20,Affectionate sobriquet,5,DEARY
+107,18,16,18,20,In sync,5,ASONE
+108,19,16,19,20,Japanese graphic novel style,5,MANGA
+109,0,17,0,20,Nine-digit IDs,4,SSNS
+110,1,17,1,20,M.L.B. family name,4,ALOU
+111,2,17,2,20,Cupola relative,4,DOME
+112,7,17,7,20,Early Bond villain,4,DRNO
+115,20,17,20,20,Old imperial title,4,TSAR
+117,8,18,8,20,Itinerary initials,3,ETA
+118,14,18,14,20,Excellent adventurer of film,3,TED

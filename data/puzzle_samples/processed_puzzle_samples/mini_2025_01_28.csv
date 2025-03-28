@@ -1,0 +1,11 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,4,0,Magic accessory for Gandalf the Grey,5,STAFF
+6,0,1,4,1,Item often cut with a pocket-sized guillotine cutter,5,CIGAR
+7,0,2,4,2,Fill with awe,5,AMAZE
+8,0,3,4,3,Flood stopper,5,LEVEE
+9,0,4,4,4,"Word repeated in ""Any ___ is good ___""",5,PRESS
+1,0,0,0,4,Top of the head,5,SCALP
+2,1,0,1,4,Track meet official,5,TIMER
+3,2,0,2,4,Plant used to make tequila,5,AGAVE
+4,3,0,3,4,Flusters,5,FAZES
+5,4,0,4,4,"Saves from jail in Capture the Flag, say",5,FREES

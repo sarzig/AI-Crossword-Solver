@@ -1,0 +1,79 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,4,0,In first place,5,ONTOP
+6,6,0,9,0,Help with a crime,4,ABET
+10,11,0,14,0,Wild guess,4,STAB
+14,0,1,4,1,"Nintendo character who says ""It's-a-me!""",5,MARIO
+15,6,1,9,1,"""Voilà!""",4,TADA
+16,11,1,14,1,"Swimmer's response to ""Marco!""",4,POLO
+17,0,2,4,2,"""Let's see what you've got,"" in poker",5,ICALL
+18,6,2,9,2,Minor deviation,4,BLIP
+19,11,2,14,2,Large-screen film format,4,IMAX
+20,0,3,12,3,2018 Childish Gambino hit that won the Grammy for Song of the Year,13,THISISAMERICA
+23,0,4,2,4,"Telemachus, to Odysseus",3,SON
+24,4,4,7,4,Movie locations,4,SETS
+25,9,4,14,4,"2,000 pounds",6,ONETON
+28,3,5,5,5,"Card up one's sleeve, perhaps",3,ACE
+29,8,5,10,5,"Follower of ""www""",3,DOT
+30,12,5,14,5,___ Jima,3,IWO
+31,0,6,10,6,Pixar film that takes place mostly underwater,11,FINDINGNEMO
+36,12,6,14,6,Tennis do-over,3,LET
+37,0,7,3,7,"Base's opposite, in chemistry",4,ACID
+38,6,7,8,7,Not feel so hot,3,AIL
+39,11,7,14,7,Vocal part that often provides harmony to a soprano melody,4,ALTO
+40,0,8,2,8,"What fits the Venn diagram of ""Computers"" and ""Pastas""?",3,MAC
+41,4,8,14,8,Holder of bait,11,FISHINGHOOK
+45,0,9,2,9,"Before, poetically",3,ERE
+46,4,9,6,9,Bit of band equipment,3,AMP
+47,9,9,11,9,Roadside assistance org.,3,AAA
+48,0,10,5,10,Do some cryptography,6,DECODE
+50,7,10,10,10,"Flushed, as cheeks",4,ROSY
+52,12,10,14,10,Airport screening grp.,3,TSA
+55,2,11,14,11,"Affirmative at sea ... or a phonetic hint to what's found sequentially in 20-, 31- and 41-Across",13,AYEAYECAPTAIN
+58,0,12,3,12,Being broadcast,4,ONTV
+60,5,12,8,12,0%,4,NONE
+61,10,12,14,12,"Participated in an Ironman, e.g.",5,RACED
+62,0,13,3,13,Lingerie fabric,4,LACE
+63,5,13,8,13,World's largest furniture company,4,IKEA
+64,10,13,14,13,Dark shade of green,5,OLIVE
+65,0,14,3,14,"Dry, as skin",4,ASHY
+66,5,14,8,14,Unit of suburbia,4,TOWN
+67,10,14,14,14,Portions (out),5,METES
+1,0,0,0,4,Leaves out,5,OMITS
+2,1,0,1,4,Cheese-covered chip,5,NACHO
+3,2,0,2,4,Subway vehicle,5,TRAIN
+4,3,0,3,3,Some paintings,4,OILS
+5,4,0,4,6,"College major for government studies, informally",7,POLISCI
+6,6,0,6,4,"Chance for a hit, in baseball",5,ATBAT
+7,7,0,7,4,Soothing ointments,5,BALMS
+8,8,0,8,3,"Falco of ""The Sopranos""",4,EDIE
+9,9,0,9,6,Locale for beers on draft,7,TAPROOM
+10,11,0,11,4,Zhuzh (up),5,SPICE
+11,12,0,12,8,Ingredient in salsa verde,9,TOMATILLO
+12,13,0,13,2,In the style of,3,ALA
+13,14,0,14,2,Container for a birthday gift,3,BOX
+21,5,3,5,6,Witnessed,4,SEEN
+22,10,3,10,6,Really digging,4,INTO
+26,13,4,13,8,Have because of,5,OWETO
+27,14,4,14,8,Simply unacceptable,5,NOTOK
+28,3,5,3,7,Tally up,3,ADD
+29,8,5,8,8,Where cold cuts are cut,4,DELI
+31,0,6,0,10,Widely known,5,FAMED
+32,1,6,1,10,"""Fine, see if ___!""",5,ICARE
+33,2,6,2,14,Kudos to an eagle-eyed proofreader,9,NICECATCH
+34,6,6,6,9,[What?!],4,GASP
+35,7,6,7,8,Medical research org.,3,NIH
+39,11,7,11,9,Cry of understanding,3,AHA
+41,4,8,4,11,Become less bright,4,FADE
+42,5,8,5,14,"""Seriously!""",7,IMEANIT
+43,9,8,9,11,Org. that shoots for the stars?,4,NASA
+44,10,8,10,14,Queer-friendly high school dance,7,GAYPROM
+49,3,10,3,14,"Yiddish ""Yeesh!""",5,OYVEY
+50,7,10,7,14,Subscribe for another year,5,RENEW
+51,8,10,8,14,Place for barnacles and barracudas,5,OCEAN
+52,12,10,12,14,Understood without being stated,5,TACIT
+53,13,10,13,14,Kitchen strainer,5,SIEVE
+54,14,10,14,14,Mountain range that extends from Venezuela to Argentina,5,ANDES
+56,6,11,6,14,Musician Ono,4,YOKO
+57,11,11,11,14,Story,4,TALE
+58,0,12,0,14,Portuguese greeting,3,OLA
+59,1,12,1,14,Rap's Lil ___ X,3,NAS

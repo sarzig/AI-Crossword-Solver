@@ -1,0 +1,11 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,2,0,4,0,Dream-conducive sleep stage,3,REM
+4,0,1,4,1,Italian fashion label,5,PRADA
+6,0,2,4,2,"Amazon, but not eBay",5,RIVER
+7,0,3,4,3,Unlocks,5,OPENS
+8,0,4,2,4,Straw ___ (intentionally misrepresented arguments),3,MEN
+1,2,0,2,4,Bird in a Poe poem,5,RAVEN
+2,3,0,3,3,Biblical garden,4,EDEN
+3,4,0,4,3,"Where the invading aliens come from in H.G. Wells's ""The War of the Worlds""",4,MARS
+4,0,1,0,4,When a high schooler might take a limo,4,PROM
+5,1,1,1,4,Ready for picking,4,RIPE

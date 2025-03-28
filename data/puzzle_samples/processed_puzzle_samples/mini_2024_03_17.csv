@@ -1,0 +1,11 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,4,0,"Word meaning ""beverage"" that scores 20 points in Scrabble",5,QUAFF
+6,0,1,4,1,"Value of B or C, in Scrabble",5,THREE
+7,0,2,4,2,"The ""R"" of the state abbreviation R.I.",5,RHODE
+8,1,3,3,3,Wear and tear,3,USE
+9,1,4,3,4,Evil spell,3,HEX
+1,0,0,0,2,15 minutes of an N.F.L. game: Abbr.,3,QTR
+2,1,0,1,4,"""Sure, sure ...""",5,UHHUH
+3,2,0,2,4,Came up,5,AROSE
+4,3,0,3,4,Company with planes that ship,5,FEDEX
+5,4,0,4,2,Penalty for using another bank's A.T.M.,3,FEE

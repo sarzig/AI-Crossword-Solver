@@ -1,0 +1,69 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,8,0,Home in the country?,9,USEMBASSY
+10,11,0,14,0,"Red container, maybe",4,CASK
+14,0,1,8,1,"Second woman, after Kathryn Bigelow, to win a best director Oscar (2020)",9,CHLOEZHAO
+15,10,1,14,1,"___ Huang, whose ""Fresh Off the Boat"" memoir was turned into an ABC sitcom",5,EDDIE
+16,0,2,8,2,Alternative to a chop or shank,9,LAMBSTEAK
+17,10,2,14,2,Rage,5,CRAZE
+18,0,3,5,3,Shopping meccas of old,6,AGORAE
+19,7,3,14,3,Sauce named after a steward to Louis XIV,8,BECHAMEL
+21,3,4,5,4,Hit entertainment org. in Vegas?,3,UFC
+22,9,4,12,4,Informal suggestions,4,RECS
+23,0,5,5,5,Historic founder of the Shakers,6,ANNLEE
+26,7,5,14,5,"""Totally didn't see that one coming,"" sarcastically",8,SHOCKING
+30,0,6,3,6,"Head shop purchase, nowadays",4,VAPE
+31,5,6,10,6,Language spoken in northern New York,6,MOHAWK
+33,12,6,14,6,What goes around in the Pacific?,3,LEI
+34,0,7,2,7,[Back off!],3,GRR
+35,4,7,10,7,Supports,7,UPHOLDS
+36,12,7,14,7,Recording inits.,3,VHS
+37,0,8,2,8,___ on one's 38-Across,3,ACT
+38,4,8,9,8,See 37-Across,6,BEHALF
+39,11,8,14,8,"Name combining with El-, Eg- or Engel-",4,BERT
+40,0,9,7,9,Just *done* with something,8,SOOVERIT
+42,9,9,14,9,Development area,6,UTERUS
+44,2,10,5,10,Un animal del zodíaco,4,TORO
+45,9,10,11,10,"Hip-hop group with the 1990 hit ""100 Miles and Runnin'""",3,NWA
+46,0,11,7,11,Truly awful,8,THEWORST
+50,9,11,14,11,Fudge substitute,6,DARNIT
+54,0,12,4,12,"""Holy oleo!"" speaker",5,ROBIN
+55,6,12,14,12,Designation for some apartments,9,LOWINCOME
+57,0,13,4,13,Vacuous,5,INANE
+58,6,13,14,13,"Creature whose name means ""forest person""",9,ORANGUTAN
+59,0,14,3,14,"Simon of ""Shaun of the Dead""",4,PEGG
+60,6,14,14,14,"Get carried along, in a way",9,PIGGYBACK
+1,0,0,0,3,Holder of the longest winning streak in N.C.A.A. men's basketball history (88 games),4,UCLA
+2,1,0,1,3,High-piled style,4,SHAG
+3,2,0,2,3,Popular red Halloween costume,4,ELMO
+4,3,0,3,6,"Ochlocracy, by another name",7,MOBRULE
+5,4,0,4,5,"""Take care""",6,BESAFE
+6,5,0,5,11,"Ancient figure called the ""huey tlatoani"" by his subjects",12,AZTECEMPEROR
+7,6,0,6,2,"""___ Came to Me"" (2023 rom-com)",3,SHE
+8,7,0,7,3,Maker of the 900 in '94 and the 9-3 in '99,4,SAAB
+9,8,0,8,3,Join the team?,4,YOKE
+10,11,0,11,5,Music stand,6,CDRACK
+11,12,0,12,9,David Stern's successor as N.B.A. commissioner,10,ADAMSILVER
+12,13,0,13,3,"L or M, but not N or O",4,SIZE
+13,14,0,14,3,"Collapse, with ""over""",4,KEEL
+15,10,1,10,7,Things sent from some online accounts,7,ECHECKS
+20,9,3,9,14,Kickstarter activity,12,CROWDFUNDING
+23,0,5,0,9,Portmanteau term for airplane fuel,5,AVGAS
+24,1,5,1,9,"Traffic figure, in brief",5,NARCO
+25,2,5,2,14,Iconic bit of media merch,10,NPRTOTEBAG
+26,7,5,7,9,Tiny swine,5,SHOAT
+27,8,5,8,8,"Room for a meal, perhaps",4,HALL
+28,13,5,13,9,"Writer of 1929's ""Letters From a Father to His Daughter"" while imprisoned",5,NEHRU
+29,14,5,14,9,Essences,5,GISTS
+32,6,6,6,9,"Hesitant response to ""Is that you?""",4,OHHI
+35,4,7,4,13,Premium service with discounts on rides,7,UBERONE
+39,11,8,11,14,Babe in the woods?,7,BEARCUB
+41,3,9,3,14,Oath activity,6,VOWING
+43,10,9,10,14,Like some country singers' voices,6,TWANGY
+46,0,11,0,14,Word with round or power,4,TRIP
+47,1,11,1,14,Perfect over time,4,HONE
+48,6,11,6,14,Refuse to eat?,4,SLOP
+49,7,11,7,14,Spelling seen in credits,4,TORI
+51,12,11,12,14,"""___ chance""",4,NOTA
+52,13,11,13,14,Cook's offering with chips?,4,IMAC
+53,14,11,14,14,Many a charity run,4,TENK
+56,8,12,8,14,Jokester,3,WAG

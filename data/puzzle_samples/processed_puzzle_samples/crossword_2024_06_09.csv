@@ -1,0 +1,141 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,3,0,Sacks,4,BAGS
+5,5,0,7,0,San Diego winter hrs.,3,PST
+8,9,0,12,0,Lead-in to bad news,4,ALAS
+12,14,0,18,0,"""Bennie and the Jets,"" vis-à-vis ""Candle in the Wind""",5,BSIDE
+17,0,1,7,1,"Bar order that's dairy-free, despite its name",8,CREAMALE
+19,9,1,12,1,Hockey fake-out,4,DEKE
+20,14,1,19,1,On deck,6,UPNEXT
+22,0,2,12,2,Sweet loaf with a swirl,13,CINNAMONBREAD
+24,14,2,20,2,"""Get real!""",7,DREAMON
+26,0,3,4,3,Like some dive bars and granola bars,5,SEEDY
+27,6,3,10,3,Tried to get on one's side,5,WOOED
+28,12,3,15,3,Q5 maker,4,AUDI
+30,17,3,20,3,Pro ___,4,RATA
+31,2,4,20,4,Triple-platinum song from Taylor Swift's debut album,19,TEARDROPSONMYGUITAR
+35,0,5,3,5,Electrical network,4,GRID
+37,5,5,7,5,Western Hemisphere grp. since 1948,3,OAS
+38,11,5,14,5,Global bank headquartered in London,4,HSBC
+39,16,5,20,5,Hockey Hall-of-Famer Cam,5,NEELY
+40,0,6,2,6,Block letters?,3,ABC
+41,4,6,6,6,Work diligently at,3,PLY
+42,8,6,11,6,Ice cream brand with brown-and-white striped lids,4,EDYS
+45,13,6,16,6,"Bear who loves a ""pic-a-nic""",4,YOGI
+47,0,7,5,7,"Colt, for one",6,PISTOL
+49,7,7,20,7,"Potato battery or model volcano, e.g.",14,SCIENCEPROJECT
+55,3,8,5,8,See 23-Down,3,HOO
+56,7,8,12,8,Lines connected to pumps?,6,AORTAS
+57,15,8,20,8,Win over,6,ENAMOR
+58,0,9,9,9,"Extra source of income, slangily",10,SIDEHUSTLE
+62,11,9,14,9,___ chips,4,PITA
+65,16,9,20,9,Close call,5,SCARE
+66,0,10,3,10,Christmas poem opener,4,TWAS
+67,5,10,7,10,Big container,3,TUB
+68,13,10,15,10,Pros with IVs,3,RNS
+70,17,10,20,10,Bauhaus artist Paul,4,KLEE
+71,0,11,4,11,"Prepare to massage, perhaps",5,OILUP
+73,6,11,9,11,Part of a Viking funeral,4,PYRE
+76,11,11,20,11,Side dish at a summer cookout,10,FRUITSALAD
+79,0,12,5,12,Yoga positions,6,ASANAS
+81,8,12,13,12,"___ Gershovitz, birth name of Ira Gershwin",6,ISRAEL
+83,15,12,17,12,"Wee, informally",3,LIL
+84,0,13,13,13,Classic game show intro,14,THISISJEOPARDY
+87,15,13,20,13,Remove a plug from,6,UNSTOP
+91,4,14,7,14,Ancient region once conquered by Julius Caesar,4,GAUL
+92,9,14,12,14,Gobsmacks,4,AWES
+93,14,14,16,14,Old dating inits.,3,BCE
+94,18,14,20,14,Ending with concert,3,INA
+95,0,15,4,15,Accelerated H.S. science class,5,APBIO
+99,6,15,9,15,"Priory of ___, guardians of a monumental secret in ""The Da Vinci Code""",4,SION
+101,13,15,15,15,Fashion designer Anna,3,SUI
+102,17,15,20,15,"""I feel that!""",4,AMEN
+103,0,16,18,16,"Pay a backhanded compliment, perhaps",19,DAMNWITHFAINTPRAISE
+109,0,17,3,17,Members of a famous boxing family,4,ALIS
+110,5,17,8,17,Updo hairstyle,4,POUF
+111,10,17,14,17,Flat's problem,5,NOAIR
+112,16,17,20,17,Cookie brand named for its signature ingredient,5,NILLA
+115,0,18,6,18,Upgrade for a growing family,7,MINIVAN
+117,8,18,20,18,Popular charity event … or a hint to this puzzle's circled letters,13,SILENTAUCTION
+120,1,19,6,19,"Error message on a Blu-Ray player, maybe",6,NODISC
+121,8,19,11,19,List-ending abbr.,4,ETAL
+122,13,19,20,19,Got to,8,ATTAINED
+123,2,20,6,20,Actress Witherspoon,5,REESE
+124,8,20,11,20,Gives a ride to the body shop,4,TOWS
+125,13,20,15,20,"Looney Tunes devil, for short",3,TAZ
+126,17,20,20,20,Puts in stitches,4,SEWS
+1,0,0,0,3,List that only the sender sees,4,BCCS
+2,1,0,1,3,Soul singer India.___,4,ARIE
+3,2,0,2,7,Field with a pool?,8,GENETICS
+4,3,0,3,5,Like a proper shuffleboard table,6,SANDED
+5,5,0,5,2,"Grier of ""Foxy Brown""",3,PAM
+6,6,0,6,6,Sleepy time at work,7,SLOWDAY
+7,7,0,7,5,Barbershop fixtures?,6,TENORS
+8,9,0,9,4,"One selling space, informally",5,ADREP
+9,10,0,10,4,"Top city in England, by the sound of it?",5,LEEDS
+10,11,0,11,2,T'Challa ___ Black Panther,3,AKA
+11,12,0,12,5,"Accords, e.g.",6,SEDANS
+12,14,0,14,7,"Genre for ""Turner & Hooch"" and ""21 Jump Street""",8,BUDDYCOP
+13,15,0,15,4,Bit of rosemary,5,SPRIG
+14,16,0,16,2,Chemical suffix,3,INE
+15,17,0,17,5,Baby doll,6,DEARIE
+16,18,0,18,5,Former friend,6,EXMATE
+18,4,1,4,4,Early pyramid builders,4,MAYA
+21,19,1,19,5,All-encompassing,5,TOTAL
+23,8,2,8,4,"With 55-Across, ""Oh, cry me a river!""",3,BOO
+25,20,2,20,5,Hardly,4,NARY
+29,13,3,13,7,"""Yeah … I'm gonna go now""",5,UMBYE
+32,5,4,5,10,Introduce,7,ROLLOUT
+33,11,4,11,9,"""Hot damn!""",6,OHSNAP
+34,16,4,16,9,Couplings,6,UNIONS
+35,0,5,0,7,Intervening period,3,GAP
+36,1,5,1,7,One of four for a grand slam,3,RBI
+41,4,6,4,9,Bear who loves honey,4,POOH
+42,8,6,8,9,Green sci.,4,ECOL
+43,9,6,9,9,Dreadful,4,DIRE
+44,10,6,10,8,"""Better ___ …""",3,YET
+46,15,6,15,8,Test for college srs.,3,GRE
+48,3,7,3,13,Fitting N.B.A. team to go on a hot streak?,7,THESUNS
+49,7,7,7,11,Waited,5,SATBY
+50,12,7,12,9,TV franchise since 2000,3,CSI
+51,17,7,17,13,Wild dogs,7,JACKALS
+52,18,7,18,11,"""Gotta catch ___!"" (Pokémon phrase)",5,EMALL
+53,19,7,19,11,Chick of jazz,5,COREA
+54,20,7,20,11,Trapped up in the branches,5,TREED
+58,0,9,0,13,Short-tailed weasel,5,STOAT
+59,1,9,1,13,"""That would be nice""",5,IWISH
+60,2,9,2,13,Start of an Eastern religious title,5,DALAI
+61,6,9,6,11,"""Yo!""",3,SUP
+63,13,9,13,13,Without a doubt,5,TRULY
+64,14,9,14,11,"""Wheel of Fortune"" buy",3,ANI
+69,15,10,15,16,Caribbean nation whose capital is Castries,7,STLUCIA
+72,4,11,4,16,Chinese gambling game with dominoes,6,PAIGOW
+74,8,11,8,13,Carnival city,3,RIO
+75,9,11,9,16,Neighbor of Francia,6,ESPANA
+76,11,11,11,14,Cab charge,4,FARE
+77,12,11,12,14,"Cabs, e.g.",4,REDS
+78,16,11,16,14,Opposite side divided by the hypotenuse,4,SINE
+80,5,12,5,14,Agcy. for retirees,3,SSA
+82,10,12,10,14,"""Tartare""",3,RAW
+85,6,13,6,20,"Never, ever again",8,JUSTONCE
+86,7,13,7,17,Yale of Yale University,5,ELIHU
+88,18,13,18,20,History book graphic,8,TIMELINE
+89,19,13,19,15,"Fee, in dollars, to run the inaugural N.Y.C. marathon in 1970",3,ONE
+90,20,13,20,15,Give a bad review,3,PAN
+93,14,14,14,20,Mozzarella with a creamy core,7,BURRATA
+95,0,15,0,18,Leading man?,4,ADAM
+96,1,15,1,19,Whom Biden debated in 2008,5,PALIN
+97,2,15,2,20,"Bach's ""Mass in ___""",6,BMINOR
+98,3,15,3,20,Like the first post position in horse racing,6,INSIDE
+100,8,15,8,20,Counterbalance,6,OFFSET
+101,13,15,13,20,Show utter contempt for,6,SPITAT
+102,17,15,17,20,Presently,6,ASITIS
+104,5,16,5,20,"""Skip me""",5,IPASS
+105,10,16,10,20,"Arnold Schwarzenegger, to Chris Pratt",5,INLAW
+106,11,16,11,20,Christmas carols,5,NOELS
+107,12,16,12,18,Bronzed,3,TAN
+108,16,16,16,19,Early pyramid builders,4,INCA
+113,19,17,19,20,MGM co-founder Marcus,4,LOEW
+114,20,17,20,20,"""No ifs, ___ or buts""",4,ANDS
+116,4,18,4,20,Go toe-to-toe,3,VIE
+118,9,18,9,20,Judge Lance of the O.J. Simpson trial,3,ITO
+119,15,18,15,20,Potato chip brand,3,UTZ

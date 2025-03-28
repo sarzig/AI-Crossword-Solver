@@ -1,0 +1,141 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,3,0,Concerning sights at beaches,4,FINS
+5,5,0,7,0,Badly,3,ILL
+8,10,0,14,0,"Catherine O'Hara's role on ""Schitt's Creek""",5,MOIRA
+13,16,0,20,0,Get in the loop?,5,LASSO
+18,0,1,3,1,Smart ___,4,ALEC
+19,5,1,8,1,Regard,4,DEEM
+21,10,1,14,1,Regarding,5,ABOUT
+22,16,1,20,1,"""Gotcha,"" more informally",5,IMHIP
+23,0,2,14,2,"A lover of gossip, the Netflix user …",15,SHARESANACCOUNT
+26,16,2,20,2,Savage,5,BEAST
+27,0,3,4,3,Actor Channing,5,TATUM
+28,6,3,13,3,Defense of a history paper?,8,FORTRESS
+29,15,3,20,3,"Andy who voiced Gollum in ""The Lord of the Rings""",6,SERKIS
+30,1,4,6,4,Goal of some criminal justice advocacy groups,6,NOBAIL
+32,8,4,10,4,Honey,3,BOO
+33,13,4,18,4,Flower cultivated by the Aztecs,6,DAHLIA
+35,4,5,8,5,Like a dream scenario,5,IDEAL
+37,11,5,15,5,"""Bodak Yellow"" rapper ___ B",5,CARDI
+39,17,5,19,5,Farm share inits.,3,CSA
+41,0,6,20,6,The smoothie bar worker …,21,HASALLTHEJUICYDETAILS
+49,0,7,3,7,Food thickener,4,AGAR
+50,5,7,7,7,Ending with book or boor,3,ISH
+51,9,7,12,7,Home of the 2003 Nobel Peace Prize winner Shirin Ebadi,4,IRAN
+52,15,7,20,7,Hang loose,6,DANGLE
+53,0,8,4,8,Proportion,5,RATIO
+55,8,8,14,8,Cretan-born painter who was a leader of the Spanish Renaissance,7,ELGRECO
+58,16,8,20,8,Antianxiety drug with a palindromic name,5,XANAX
+59,0,9,11,9,The Boston Harbor worker …,12,SPILLSTHETEA
+63,13,9,17,9,Denim jacket adornment,5,PATCH
+65,0,10,2,10,Farm female,3,HEN
+66,4,10,8,10,Assembly kit piece,5,DOWEL
+67,12,10,16,10,"""Woot woot!""",5,YAHOO
+68,18,10,20,10,Print maker,3,PAW
+71,3,11,7,11,"Clock-changing time, for daylight saving time",5,TWOAM
+72,9,11,20,11,The cooking show contestant …,12,STIRSUPDRAMA
+76,0,12,4,12,"""___ bleu!""",5,SACRE
+79,6,12,12,12,Draws out,7,SIPHONS
+81,16,12,20,12,Currency exchange option,5,EUROS
+82,0,13,5,13,"___ Questionnaire, character assessment that might ask ""What is your idea of perfect happiness?""",6,PROUST
+84,8,13,11,13,Plane prefix,4,AERO
+85,13,13,15,13,Big name in wings,3,KFC
+88,17,13,20,13,Words after break or shake,4,ITUP
+89,0,14,20,14,The athlete in the locker room …,21,AIRSTHEIRDIRTYLAUNDRY
+94,1,15,3,15,"""___ is never finished, only abandoned"": Leonardo da Vinci",3,ART
+95,5,15,9,15,Puts in order,5,RANKS
+96,12,15,16,15,New York City's mayor after de Blasio,5,ADAMS
+97,2,16,7,16,Auction actions,6,OFFERS
+99,10,16,12,16,Bag,3,NAB
+101,14,16,19,16,Useless,6,NOHELP
+105,0,17,5,17,Small lump,6,NODULE
+107,7,17,14,17,Wash with a spray,8,HOSEDOWN
+111,16,17,20,17,Sneeze guard?,5,ELBOW
+113,0,18,4,18,___ acid,5,AMINO
+114,6,18,20,18,And the up-and-coming trial judge …,15,WANTSTOHEARMORE
+116,0,19,4,19,"Red animal in the 2022 Pixar film ""Turning Red""",5,PANDA
+117,6,19,10,19,Home of the rides Frozen Ever After and Remy's Ratatouille Adventure,5,EPCOT
+118,12,19,15,19,Big name in party cups,4,SOLO
+119,17,19,20,19,"""Peter Pan"" pirate",4,SMEE
+120,0,20,4,20,Teenage torment,5,ANGST
+121,6,20,10,20,Toots,5,BEEPS
+122,13,20,15,20,"""That's a big ___""",3,ASK
+123,17,20,20,20,Baking soda unit: Abbr.,4,TBSP
+1,0,0,0,3,What many do during Ramadan and Yom Kippur,4,FAST
+2,1,0,1,4,Representative Omar,5,ILHAN
+3,2,0,2,4,"""Suh-weet!""",5,NEATO
+4,3,0,3,4,Second- or third-stringer,5,SCRUB
+5,5,0,5,2,"Things that may be checked at the door, for short",3,IDS
+6,6,0,6,7,Handouts at some protests,8,LEAFLETS
+7,7,0,7,3,"Former ""Tonight Show"" host",4,LENO
+8,10,0,10,4,Econ subfield,5,MACRO
+9,11,0,11,3,It's used to tune an orchestra,4,OBOE
+10,12,0,12,3,Money promises,4,IOUS
+11,13,0,13,6,Gets fully depleted,7,RUNSDRY
+12,14,0,14,2,Football box score abbr.,3,ATT
+13,16,0,16,4,Print issue?,5,LIBEL
+14,17,0,17,9,Best-selling Chimamanda Ngozi Adichie novel whose protagonist leaves Nigeria for a U.S. university,10,AMERICANAH
+15,18,0,18,8,"""Hang loose"" hand gesture",9,SHAKASIGN
+16,19,0,19,3,Avid assent in Acapulco,4,SISI
+17,20,0,20,3,Goes (for),4,OPTS
+20,8,1,8,6,High-end countertop choice,6,MARBLE
+24,4,2,4,6,"Communicate with, in a way",5,EMAIL
+25,9,2,9,4,Silicon Valley exec,3,CTO
+29,15,3,15,7,Drew away,5,SHIED
+31,5,4,5,7,Savory rice cake of southern India,4,IDLI
+34,14,4,14,6,Chime in,3,ADD
+36,7,5,7,7,"""That feels good!""",3,AHH
+37,11,5,11,9,"One-named collaborator with Missy Elliott on ""1, 2 Step"" and ""Lose Control""",5,CIARA
+38,12,5,12,8,Teenage torment,4,ACNE
+40,19,5,19,8,Penne ___ vodka,4,ALLA
+41,0,6,0,10,Tough,5,HARSH
+42,1,6,1,10,Clearly stunned,5,AGAPE
+43,2,6,2,10,"Audited a class, perhaps",5,SATIN
+44,3,6,3,9,Edible piece from a pomegranate,4,ARIL
+45,9,6,9,9,"Suddenly say ""I don't"" to, say",4,JILT
+46,10,6,10,9,Push,4,URGE
+47,16,6,16,12,Auditing guideline,7,TAXCODE
+48,20,6,20,8,Dr. Ruth's field,3,SEX
+54,4,8,4,14,Where Wells Fargo got its start,7,OLDWEST
+55,8,8,8,10,Delicacy with kabayaki sauce,3,EEL
+56,13,8,13,11,"47-Down experts, for short",4,CPAS
+57,14,8,14,11,Home of Wheeler Army Airfield,4,OAHU
+60,5,9,5,11,"Phillipa of Broadway's ""Hamilton""",3,SOO
+61,6,9,6,12,What comes before the night before Christmas?,4,TWAS
+62,7,9,7,12,Half: Prefix,4,HEMI
+64,15,9,15,11,"Dreidel, e.g.",3,TOP
+67,12,10,12,12,Times of one's life: Abbr.,3,YRS
+68,18,10,18,14,Medicare section that covers prescription drugs,5,PARTD
+69,19,10,19,14,Francophile's love,5,AMOUR
+70,20,10,20,14,Like some old-money Americans,5,WASPY
+71,3,11,3,20,Some sources of old money,10,TRUSTFUNDS
+72,9,11,9,15,Loses layers,5,SHEDS
+73,10,11,10,14,Grammy-nominated Amos,4,TORI
+74,11,11,11,14,"""___ out?"" (question to a pet)",4,INOR
+75,17,11,17,14,"Bankrupt, say",4,RUIN
+76,0,12,0,14,"Destination for a ""Treat yourself"" day",3,SPA
+77,1,12,1,15,Opera highlight,4,ARIA
+78,2,12,2,20,Wearing down,9,CORRODING
+80,8,12,8,15,Part of PRNDL,4,PARK
+83,5,13,5,17,How March may be written,5,THREE
+85,13,13,13,15,"Syd tha ___, onetime hip-hop moniker",3,KYD
+86,14,13,14,20,Some fall weather attire,8,FLANNELS
+87,15,13,15,16,___ pants,4,CAMO
+90,6,14,6,16,Musical skill,3,EAR
+91,7,14,7,20,Fit,7,INSHAPE
+92,12,14,12,19,They must be avoided at all times,6,TABOOS
+93,16,14,16,18,"Welcome, with ""in""",5,USHER
+98,4,16,4,20,Ice cream treat,5,FLOAT
+99,10,16,10,20,"Fits, as matryoshka dolls",5,NESTS
+100,11,16,11,18,Big inits. in home security,3,ADT
+102,17,16,17,20,"Nightmarish address, for short",5,ELMST
+103,18,16,18,20,"Slangy thing that may be ""dropped"" in a serious relationship",5,LBOMB
+104,19,16,19,20,Sweat spots,5,PORES
+105,0,17,0,20,Spot for Golden State estates,4,NAPA
+106,1,17,1,20,U.N. member classified as a sultanate,4,OMAN
+108,8,17,8,20,In times past,4,ONCE
+109,9,17,9,20,Subway map dot,4,STOP
+110,13,17,13,20,"""No way!""",4,WHOA
+112,20,17,20,20,"Mourn, maybe",4,WEEP
+114,6,18,6,20,It's designed to catch bugs,3,WEB
+115,15,18,15,20,Doin' just fine,3,AOK
