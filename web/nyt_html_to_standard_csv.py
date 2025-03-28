@@ -1,10 +1,9 @@
-from datetime import datetime
 import os
 import random
 import re
 import pandas as pd
 from bs4 import BeautifulSoup
-from objects.crossword_and_clue import Crossword
+from datetime import datetime
 from clue_classification_and_processing.helpers import get_project_root
 
 
@@ -20,6 +19,7 @@ Functions:
  * get_random_clue_df(folder=r"data/puzzle_samples/raw_html/", return_type="All")
  * process_all_raw_html_to_csv() - looks for all html files in raw_html and converts to csv
  * rename_puzzles() - helper to rename puzzles from NYT download format to my format
+ * all_puzzle_csv() - helper to get a large csv with data from all 200+ puzzles in root/data/puzzle_samples
 """
 
 
@@ -273,7 +273,7 @@ def process_all_raw_html_to_csv(overwrite=False):
     for puzzle_name in all_clue_dfs.keys():
         save_path = fr"{save_folder}/{puzzle_name}.csv"
         if os.path.exists(save_path) and overwrite is False:
-            print(f"Not overwriting csv because file already exists and overwright=False: {save_path}")
+            print(f"Not overwriting csv because file already exists and overwrite=False: {save_path}")
             continue
         else:
             print(save_path)
@@ -282,6 +282,7 @@ def process_all_raw_html_to_csv(overwrite=False):
             clue_df.to_csv(save_path, index=False)
 
     return True
+
 
 def rename_puzzles():
     """
@@ -320,14 +321,33 @@ def rename_puzzles():
                 print(f"Skipped (already exists): {new_name}")
 
 
-#mini_loc = f"{get_project_root()}/data/puzzle_samples/raw_html/mini.html"
-#clue_df = puzzle_html_to_df(mini_loc)
-#my_crossword = Crossword(clue_df=clue_df)
+def get_all_puzzle_csv(overwrite=False):
+    """
+    Looks in the processed_puzzle_samples folder and gets all csvs
+    :return:
+    """
+    # if this already exists, just pull it from processed puzzle samples folder.
 
+    # path where crossword puzzles are stored
+    crossword_csv_path = rf"{get_project_root()}\data\puzzle_samples\processed_puzzle_samples"
+    combo_file_path = rf"{crossword_csv_path}\all_puzzles.csv"
 
-# proj_root = get_project_root()
-# print(f"proj_root:{proj_root}")
-# html_path = fr"{proj_root}/data/puzzle_samples/raw_html/mini_03262025.html"
-# print(f"html_path:{html_path}")
-# clue_df = puzzle_html_to_df(html_path)
-# clue_df.to_csv(r"C:\Users\witzi\OneDrive\Documents\neu_part_2\CS5100_FAI\code\ai_crossword_solver\data\puzzle_samples\sunday_03092025.csv")
+    # if file already exists, don't re-do efforts
+    if overwrite is False and os.path.exists(combo_file_path):
+        all_csv_df = pd.read_csv(combo_file_path)
+        return all_csv_df
+
+    # Get a list of all csv file paths within the folder crossword_csv_path
+    all_dfs = []
+    all_files = [f for f in os.listdir(crossword_csv_path) if f.endswith('.csv')]
+    print(all_files)
+    for file in all_files:
+        full_path = os.path.join(crossword_csv_path, file)
+        df = pd.read_csv(full_path)
+
+        # Extract puzzle_name from the filename (just drops .csv)
+        df["puzzle_name"] = file[:-4]
+
+        all_dfs.append(df)
+
+    return pd.concat(all_dfs, ignore_index=True)

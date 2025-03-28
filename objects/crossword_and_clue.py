@@ -365,7 +365,7 @@ class Crossword:
             else:
                 raise ValueError(f"Unsupported direction in location: {grid_location}")
 
-"""
+
 lg_loc = f"{get_project_root()}/data/puzzle_samples/sunday_03092025.csv"
 med_loc = f"{get_project_root()}/data/puzzle_samples/wednesday_03262025.xlsx"
 mini_loc = f"{get_project_root()}/data/puzzle_samples/mini_03262025.xlsx"
@@ -374,4 +374,3 @@ df = pd.read_csv(lg_loc)
 my_crossword = Crossword(clue_df=df)
 my_crossword.detailed_print()
 result = my_crossword.place_word("hello", "5-across")
-"""
