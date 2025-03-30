@@ -1,7 +1,7 @@
 import pandas as pd
 import pytest
 
-from objects.crossword_and_clue import validate_clue_df
+from puzzle_objects.crossword_and_clue import validate_clue_df
 
 # Gen AI assisted!
 
