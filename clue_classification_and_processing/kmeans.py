@@ -23,7 +23,11 @@ nltk.download('averaged_perceptron_tagger')
 nltk.download('wordnet')
 
 # Load my dataset
+<<<<<<< Updated upstream:clue_classification_and_processing/kmeans.py
 clues = pd.read_csv(r"data/nytcrosswords.csv", encoding='latin1')
+=======
+clues = pd.read_csv(r"data\nytcrosswords.csv", encoding='latin1')
+>>>>>>> Stashed changes:xword/kmeans.py
 
 # Function to classify crossword answers
 def classify_language(answer):

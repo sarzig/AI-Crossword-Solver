@@ -10,7 +10,7 @@ Type of clue --> synonym search, OR definition then synonym
 Type of clue --> dictionary search (searching definition)
 * Sit Shiva, e.g. (mourn)
 
-Clues often indicate that the answer should be brief, acronomy, or
+Clues often indicate that the answer should be brief, acronym, or
 shortened
 * ..., in brief
 * ..., for short
@@ -20,5 +20,5 @@ shortened
 Questions for Raj: 
 
 * If we apply all methodologies to all clues, assess success rate, 
-  can we cluster based on methology succes rate
+  can we cluster based on methology success rate
 * 
