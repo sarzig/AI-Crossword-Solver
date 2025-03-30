@@ -173,24 +173,96 @@ def get_all_wikipedia_pages(input_list=None, remove_underscore=True, down_case=T
     return titles
 
 
-original_wikipedia_title_list = get_all_wikipedia_pages_of_interest()
-no_underscore_downcase = get_all_wikipedia_pages(input_list=original_wikipedia_title_list,
-                                                 remove_underscore=True,
-                                                 down_case=True)
-no_underscore_downcase_human_name_optimize = get_all_wikipedia_pages(input_list=original_wikipedia_title_list,
-                                                                     remove_underscore=True,
-                                                                     down_case=True,
-                                                                     human_name_optimize=False)
+def make_wikipedia_lookup_dataframe():
+    """
+    Speeds up interaction with enwiki-latest-all-titles-in-ns0 by pre-processing into tokens,
+    lowercasing, removing underscores and flipping commas.
+    :return:
+    """
+    print("Making lookup dataframe from enwiki-latest-all-titles-in-ns0. May take several minutes...")
+    original_wikipedia_title_list = get_all_wikipedia_pages_of_interest()
+    no_underscore_downcase = get_all_wikipedia_pages(input_list=original_wikipedia_title_list,
+                                                     remove_underscore=True,
+                                                     down_case=True)
+    no_underscore_downcase_human_name_optimize = get_all_wikipedia_pages(input_list=original_wikipedia_title_list,
+                                                                         remove_underscore=True,
+                                                                         down_case=True,
+                                                                         human_name_optimize=False)
 
-titles_df = pd.Dataframe({"original": original_wikipedia_title_list,
-                          "no_underscore_downcase": no_underscore_downcase,
-                          "human_name_optimize": no_underscore_downcase_human_name_optimize})
+    titles_df = pd.DataFrame({
+        "original": original_wikipedia_title_list,
+        "no_underscore_downcase": no_underscore_downcase,
+        "no_underscore_downcase_tokens": [title.split() for title in no_underscore_downcase],
+        "human_name_optimize": no_underscore_downcase_human_name_optimize,
+        "human_name_optimize_tokens": [title.split() for title in no_underscore_downcase_human_name_optimize],
+    })
+
+    print("make_wikipedia_lookup_dataframe completed.")
+
+    return titles_df
 
 
-def best_wikipedia_pages_for_entity(entity, wiki_titles, limit=5, threshold=80):
+def score_match(input_text, candidate_text):
+    input_tokens = input_text.lower().split()
+    candidate_tokens = candidate_text.lower().split()
+
+    if input_tokens == candidate_tokens:
+        return 1.0  # exact match
+
+    # Count matching words in order
+    match_count = sum(1 for i, word in enumerate(input_tokens)
+                      if i < len(candidate_tokens) and word == candidate_tokens[i])
+
+    total_words = max(len(input_tokens), len(candidate_tokens))
+    if match_count == 0:
+        return 0.0
+    else:
+        diff = total_words - match_count
+        return 1 - (diff / total_words)
+
+
+def find_best_wikipedia_page_lookup(text, lookup_table, top_k=500):
+    """
+    Fast version using pre-tokenized columns and direct loop.
+    Assumes lookup_table includes *_tokens columns.
+    """
+    text_tokens = text.lower().split()
+    len_text = len(text_tokens)
+
+    def score(candidate_tokens):
+        if text_tokens == candidate_tokens:
+            return 1.0
+        match_count = sum(
+            1 for i, token in enumerate(text_tokens)
+            if i < len(candidate_tokens) and token == candidate_tokens[i]
+        )
+        if match_count == 0:
+            return 0.0
+        total = max(len(candidate_tokens), len_text)
+        return 1 - (total - match_count) / total
+
+    scores = []
+    for original, tokens1, tokens2 in zip(
+        lookup_table["original"],
+        lookup_table["no_underscore_downcase_tokens"],
+        lookup_table["human_name_optimize_tokens"]
+    ):
+        score1 = score(tokens1)
+        score2 = score(tokens2)
+        final_score = max(score1, score2)
+        if final_score > 0:
+            scores.append((original, final_score))
+
+    scores.sort(key=lambda x: (-x[1], x[0]))
+    return scores[:top_k]
+
+
+def best_wikipedia_pages_for_entity_fuzzy(entity, wiki_titles, limit=5, threshold=80):
     """
     Given an entity and a list of Wikipedia page titles, returns a ranked list
     of titles that most closely match the entity using fuzzy string matching.
+
+    # genai attempt, not sure about this one.
 
     :param entity: str, entity or clue text
     :param wiki_titles: list of str, all Wikipedia page titles
@@ -201,7 +273,6 @@ def best_wikipedia_pages_for_entity(entity, wiki_titles, limit=5, threshold=80):
     matches = process.extract(entity, wiki_titles, scorer=fuzz.token_sort_ratio, limit=limit)
     filtered_matches = [title for title, score in matches if score >= threshold]
     return filtered_matches if filtered_matches else None
-
 
 
 def extract_wikipedia_search_terms_proper_nouns(clue_text):
@@ -224,8 +295,6 @@ def extract_wikipedia_search_terms_proper_nouns(clue_text):
     search_terms = list(set(proper_nouns))
 
     return search_terms
-
-
 
 
 def extract_wikipedia_search_terms_named_entities(clue_text):
@@ -347,3 +416,5 @@ time_end = time.time()
 
 clues.to_excel("Wikipedia named entity search2.xlsx")
 '''
+
+lookup_df = make_wikipedia_lookup_dataframe()
