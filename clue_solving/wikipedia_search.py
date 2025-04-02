@@ -219,6 +219,23 @@ else:
     print("No Wikipedia pages matched the exact title length requirement.")
 
 
+clue = "It's the freakin' weekend"
+word_length = 5  # Optional, can be None
+results = search_wikipedia_for_clue(clue, word_length)
+
+# Print results
+print("\nWikipedia Word Frequency Results:")
+print("-" * 60)
+for word, data in results["highest_word_counts"].items():
+    print(f"{word.capitalize()} - Count: {data['count']} (Found in: {data['page']})")
+
+print("\nAll Wikipedia pages retrieved:")
+if results["filtered_wikipedia_results"]:
+    for title in results["filtered_wikipedia_results"].keys():
+        print(f"- {title}")
+else:
+    print("No Wikipedia pages matched the exact title length requirement.")
+
 ######################################################################################################
 # Large Batch Testing
 ######################################################################################################
