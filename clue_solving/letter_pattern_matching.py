@@ -16,10 +16,13 @@ def find_words_by_pattern(pattern):
 # Example Usage
 ######################################################################################################
 
-# Five-letter words starting with "t"
-pattern = "t...."  
-# Possible Output: ['tiger', 'table', 'twist']
-print(find_words_by_pattern(pattern))  
+# # Five-letter words starting with "t"
+# pattern = "t...."  
+# # Possible Output: ['tiger', 'table', 'twist']
+# print(find_words_by_pattern(pattern))  
 
-pattern2 = "t..f..a"
-print(find_words_by_pattern(pattern2))  
+# pattern2 = "t..f..a"
+# print(find_words_by_pattern(pattern2))  
+
+# pattern3 = "ta."
+# print(find_words_by_pattern(pattern3))  
