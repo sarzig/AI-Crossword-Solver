@@ -398,30 +398,104 @@ class Crossword:
             else:
                 raise ValueError(f"Unsupported direction in location: {grid_location}")
 
-    def subset_crossword(self, grid_location):
+    def subset_crossword(self, grid_location, branching_factor=1, threshold=0.25, return_type="add"):
         """
-        This creates a subset of the crossword: it uses a single clue and gets all clues that
-        interface with that clue (those that contain a coordinate in common with the
-        grid_location)
+        Create a subset of the crossword that includes all clues that intersect
+        with the given clue (via a shared coordinate). If branching_factor is 1, it
+        will get all words that intersect with the original word.
 
+        If branching_factor is 2, it will get all words that intersect with the
+        result of branching factor of 1.
 
+        Once the branches have been set, there is a threshhold for which other
+        clues are included in the subset. If a clue is a 100% subset of clues
+        previously covered, it will always be subsetted. Otherwise, clues are
+        added to the subset based on threshold - a 4-letter clue with 2 letters
+        overlapping with subsetted clues will be included for a threshold of 0.5 or
+        above.
+
+        :param branching_factor: How many degres away from first word should be subsetted
+        :param threshold: percent threshold after which secondary clues should be considered part of subset
+        as well
         :param grid_location: location like "21-Across"
-        :returns: nothing, but adds to self.subset_dict where keys are grid_location
+        :returns: nothing, but adds to self.subset_dict with the grid_location as key
         """
 
-        subset_df = # same columns as self.clue_df
-
-        if grid_location not in self.clue_df["grid_location"].values:
+        if grid_location not in self.clue_df["number_direction"].values:
             raise ValueError(f"Clue {grid_location} not found in the clue dataframe.")
 
-        coordinates = self.clue_df["grid_location"]
+        # Get the coordinate set of the target clue - this is initial set of coordinates
+        next_pass_coordinates = my_crossword.clue_df.set_index("number_direction").at[grid_location, "coordinate_set"]
 
-        for coordinate_pair in coordinates:
-            if coordinate_pair in self.clue_df["coordinate_set"]
-                # add the word to the
+        # Get the subset of the clue_df for which one or more coordinates is in initial_word_coordinates
+
+        intersections = {grid_location: "original word"}
+        for i in range(branching_factor + 1):
+            if len(intersections) == len(self.clue_df):
+                break
+
+            coordinates_to_match = list(set(next_pass_coordinates))
+            next_pass_coordinates = []
+
+            # Iterate across dataframe (yes, it's inefficient, but these are 100 rows only)
+            for idx, row in self.clue_df.iterrows():
+
+                # If the word is already captured in intersections, skip
+                if row["number_direction"] in intersections.keys():
+                    continue
+
+                # Final pass: apply threshold rule
+                if i == branching_factor:
+                    overlap = set(row["coordinate_set"]) & set(coordinates_to_match)
+                    percent_overlap = len(overlap) / len(row["coordinate_set"])
+
+                    if percent_overlap >= threshold or set(row["coordinate_set"]).issubset(coordinates_to_match):
+                        intersections[row["number_direction"]] = f"{i} pass match: {round(percent_overlap * 100)}%"
+                        next_pass_coordinates += row["coordinate_set"]
+                        continue
+
+                # Earlier passes: any coordinate match is enough
+                else:
+                    if any(coord in coordinates_to_match for coord in row["coordinate_set"]):
+                        intersections[row["number_direction"]] = f"{i} pass intersection"
+                        next_pass_coordinates += row["coordinate_set"]
+                        continue
+
+        '''
+        second_pass_coordinates = list(set(second_pass_coordinates))
+
+        third_pass_coordinates = []
+        for idx, row in self.clue_df.iterrows():
+
+            # If the word is already captures in intersections, skip
+            if row["number_direction"] in intersections.keys():
+                continue
+
+            row_coordinates = row["coordinate_set"]
+
+            # Check if any coordinates in the row overlap with initial_word_coordinates
+            for coordinate in second_pass_coordinates:
+                if coordinate in row_coordinates:
+                    # count the number of coordinates in row_coordinates that are in
+                    #
+                    intersections[row["number_direction"]] = f"second pass intersection: {percent_overlap}"
+                    third_pass_coordinates = third_pass_coordinates + row_coordinates
+                    continue
+        third_pass_coordinates = list(set(third_pass_coordinates))
+        '''
+
+        if return_type == "dict":
+            return intersections
+        elif return_type == "df":
+            return self.clue_df[self.clue_df["number_direction"].isin(intersections.keys())].copy()
+        elif return_type == "crossword":
+            return Crossword(self.clue_df[self.clue_df["number_direction"].isin(intersections.keys())].copy())
+        elif return_type == "add to subset list":
+            self.subset_dict[grid_location] = Crossword(self.clue_df[self.clue_df["number_direction"].isin(intersections.keys())].copy())
 
 
-lg_loc = f"{get_project_root()}/data/puzzle_samples/sunday_03092025.csv"
+
+lg_loc = f"{get_project_root()}/data/puzzle_samples/processed_puzzle_samples/crossword_2024_06_12.csv"
 med_loc = f"{get_project_root()}/data/puzzle_samples/wednesday_03262025.xlsx"
 mini_loc = f"{get_project_root()}/data/puzzle_samples/mini_03262025.xlsx"
 
@@ -429,3 +503,11 @@ df = pd.read_csv(lg_loc)
 my_crossword = Crossword(clue_df=df)
 my_crossword.detailed_print()
 #result = my_crossword.place_word("hello", "5-across")
+
+intersection_dict = my_crossword.subset_crossword("1-Across", 1, threshold=2/3, return_type="add to subset list")
+#full_subset = pd.concat([subset, additional])
+#subset_crossword = Crossword(subset)
+#subset_crossword.detailed_print()
+
+#for key in intersection_dict.keys():
+#    print(f"{key}: {intersection_dict[key]}")

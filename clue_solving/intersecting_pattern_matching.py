@@ -2,6 +2,7 @@ from itertools import product
 from collections import defaultdict
 from letter_pattern_matching import find_words_by_pattern
 
+
 # Each constraint is a tuple: (word_index1, word_index2, index_in_word1, index_in_word2)
 def find_multi_intersections(patterns, constraints):
     candidate_lists = [find_words_by_pattern(p) for p in patterns]
