@@ -118,7 +118,12 @@ class Crossword:
 
         # Count number of clues and number of white spaces - useful for calculations
         self.number_clues = len(self.clue_df)
-        self.number_fillable_spaces = np.sum(self.grid != "[■]")
+        self.number_fillable_spaces = np.sum(self.grid != "■")
+
+        # If solving using subsets, this tracks the subsets.
+        # subset list is a dict of Crossword objects where the key is something like "5-Across"
+        # or "42-Down"
+        self.subset_dict = {}
 
     @staticmethod
     def get_direction(clue_entry):
@@ -182,9 +187,37 @@ class Crossword:
         self.optional_check_length()
         self.optional_check_answer_length()
 
+        # Add coordinate set - allows for faster sub-setting
+        self.clue_df["coordinate_set"] = self.clue_df.apply(
+            lambda row: self.get_coordinate_set(
+                start_col=row["start_col"],
+                start_row=row["start_row"],
+                end_col=row["end_col"],
+                end_row=row["end_row"]
+            ),
+            axis=1
+        )
+
+    def get_coordinate_set(self, start_col, start_row, end_col, end_row):
+        iterate_row = end_row > start_row
+
+        # For "Down" clues, iterate the row downwards
+        if iterate_row:
+            coordinates = [(start_col, y) for y in range(start_row, end_row + 1)]
+        else:
+            coordinates = [(x, start_row) for x in range(start_col, end_col + 1)]
+
+        return coordinates
+
+    def add_coordinate_set(self):
+        """
+        Go through dataframe
+        :return:
+        """
+
     def generate_grid(self):
-        # Create a blank crossword grid filled with "[X]"
-        grid = np.full((self.grid_height, self.grid_width), "[■]", dtype=object)
+        # Create a blank crossword grid filled with "■"
+        grid = np.full((self.grid_height, self.grid_width), "■", dtype=object)
 
         # Based on contents of the clue_df, remove the [X]s:
         for _, clue in self.clue_df.iterrows():
@@ -196,10 +229,10 @@ class Crossword:
             # Determine direction
             if start_row == end_row:  # Across
                 for c in range(start_col, end_col + 1):
-                    grid[start_row][c] = "[ ]"
+                    grid[start_row][c] = " "
             elif start_col == end_col:  # Down
                 for r in range(start_row, end_row + 1):
-                    grid[r][start_col] = "[ ]"
+                    grid[r][start_col] = " "
             else:
                 raise ValueError(f"Invalid clue direction (not across or down): {clue.to_dict()}")
 
@@ -215,7 +248,7 @@ class Crossword:
         lines.append(horizontal_border)
         lines.append(empty_line)  # bordered blank line after top border
         for row in self.grid:
-            line = "|   " + "".join(cell for cell in row) + "   |"
+            line = "|   " + "".join(f"[{cell}]" for cell in row) + "   |"
             lines.append(line)
         lines.append(empty_line)  # bordered blank line before bottom border
         lines.append(horizontal_border)
@@ -241,7 +274,7 @@ class Crossword:
 
     def calculate_completion_percentage_by_char(self):
         # Percent completion (based on how many [ ] vs non-[X] cells)
-        empties = (self.grid == "[ ]").sum()
+        empties = (self.grid == " ").sum()
         percent_complete = ((self.number_fillable_spaces - empties) / self.number_fillable_spaces * 100)
 
         return percent_complete
@@ -343,10 +376,10 @@ class Crossword:
         start_col = clue["start_col"]
 
         for i, char in enumerate(word):
-            target = f"[{char}]"
+            target = f"{char}"
             if "Across" in grid_location:
                 current = self.grid[start_row][start_col + i]
-                if current != "[ ]" and current != target:
+                if current != " " and current != target:
                     if not allow_overwriting:
                         raise ValueError(f"Cannot overwrite non-empty cell at ({start_row}, {start_col + i})")
                     if flag_overwriting:
@@ -355,7 +388,7 @@ class Crossword:
 
             elif "Down" in grid_location:
                 current = self.grid[start_row + i][start_col]
-                if current != "[ ]" and current != target:
+                if current != " " and current != target:
                     if not allow_overwriting:
                         raise ValueError(f"Cannot overwrite non-empty cell at ({start_row + i}, {start_col})")
                     if flag_overwriting:
@@ -365,6 +398,28 @@ class Crossword:
             else:
                 raise ValueError(f"Unsupported direction in location: {grid_location}")
 
+    def subset_crossword(self, grid_location):
+        """
+        This creates a subset of the crossword: it uses a single clue and gets all clues that
+        interface with that clue (those that contain a coordinate in common with the
+        grid_location)
+
+
+        :param grid_location: location like "21-Across"
+        :returns: nothing, but adds to self.subset_dict where keys are grid_location
+        """
+
+        subset_df = # same columns as self.clue_df
+
+        if grid_location not in self.clue_df["grid_location"].values:
+            raise ValueError(f"Clue {grid_location} not found in the clue dataframe.")
+
+        coordinates = self.clue_df["grid_location"]
+
+        for coordinate_pair in coordinates:
+            if coordinate_pair in self.clue_df["coordinate_set"]
+                # add the word to the
+
 
 lg_loc = f"{get_project_root()}/data/puzzle_samples/sunday_03092025.csv"
 med_loc = f"{get_project_root()}/data/puzzle_samples/wednesday_03262025.xlsx"
@@ -373,4 +428,4 @@ mini_loc = f"{get_project_root()}/data/puzzle_samples/mini_03262025.xlsx"
 df = pd.read_csv(lg_loc)
 my_crossword = Crossword(clue_df=df)
 my_crossword.detailed_print()
-result = my_crossword.place_word("hello", "5-across")
+#result = my_crossword.place_word("hello", "5-across")
