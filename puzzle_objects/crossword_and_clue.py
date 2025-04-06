@@ -1,5 +1,10 @@
 import numpy as np
 import pandas as pd
+import sys
+import os
+
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+
 from clue_classification_and_processing.helpers import conditional_raise, print_if, get_project_root
 
 
@@ -366,7 +371,7 @@ class Crossword:
                 raise ValueError(f"Unsupported direction in location: {grid_location}")
 
 
-lg_loc = f"{get_project_root()}/data/puzzle_samples/sunday_03092025.csv"
+lg_loc = f"{get_project_root()}/data/puzzle_samples/processed_puzzle_samples/crossword_2022_06_12.csv"
 med_loc = f"{get_project_root()}/data/puzzle_samples/wednesday_03262025.xlsx"
 mini_loc = f"{get_project_root()}/data/puzzle_samples/mini_03262025.xlsx"
 
