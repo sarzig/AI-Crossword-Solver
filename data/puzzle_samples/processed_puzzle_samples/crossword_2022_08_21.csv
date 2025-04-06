@@ -1,0 +1,121 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,3,0,7,0,Farm cry,5,BLEAT
+6,9,0,18,0,Singer Celia Cruz or actress Rosie Perez,10,AFROLATINA
+16,2,1,7,1,"Second-least populous state capital, after Montpelier",6,PIERRE
+17,9,1,19,1,Like fire drills and dress rehearsals,11,PREPARATIVE
+19,1,2,7,2,It may give a bowler a hook,7,HATTREE
+20,9,2,20,2,"""We must wait to see what happens""",12,TIMEWILLTELL
+22,0,3,3,3,"Pause, in music",4,REST
+23,5,3,8,3,Legal profession?,4,OATH
+25,10,3,16,3,Embarrassing miss,7,AIRBALL
+26,18,3,20,3,___ culpa,3,MEA
+27,0,4,5,4,Gently enter,6,EASEIN
+29,7,4,9,4,Fifth-century nomad of central Asia,3,HUN
+31,11,4,13,4,"""___ Te Ching""",3,TAO
+32,17,4,20,4,"Needing another dryer cycle, say",4,DAMP
+33,0,5,2,5,Org. that regulates pet food and false eyelashes,3,FDA
+34,4,5,10,5,"Design, as software",7,DEVELOP
+37,12,5,15,5,Showcase for a first chair in an orchestra,4,SOLO
+40,17,5,20,5,Some Minecraft blocks,4,ORES
+41,0,6,2,6,Only sch. to have a gold medal winner in every Summer Olympics since 1912,3,USC
+42,4,6,11,6,Nuclear model named for a physicist,8,BOHRATOM
+44,13,6,15,6,Actress Dennings,3,KAT
+45,17,6,20,6,Symbol of longevity in Chinese numerology,4,NINE
+46,0,7,6,7,"""We don't need to hear the details!""",7,SPAREUS
+48,8,7,12,7,Carpentry peg,5,DOWEL
+50,14,7,19,7,"Attack, Quixote-style",6,TILTAT
+52,0,8,5,8,Specialized vocabularies,6,ARGOTS
+53,7,8,17,8,Indicators of status in Maori culture,11,FACETATTOOS
+55,0,9,3,9,Disney girl who fosters an alien,4,LILO
+56,6,9,19,9,J.G. Ballard dystopia about a man stranded between motorways,14,CONCRETEISLAND
+59,0,10,3,10,Huff,4,SNIT
+60,5,10,15,10,Agreement,11,CONCURRENCE
+61,17,10,20,10,Has an understanding,4,SEES
+63,1,11,14,11,Where many people walk out?,14,GAYPRIDEPARADE
+65,17,11,20,11,"Juan ___, baseball star nicknamed ""Childish Bambino""",4,SOTO
+66,3,12,13,12,Seattle team,11,THEMARINERS
+67,15,12,20,12,Pressed (down),6,TAMPED
+69,1,13,6,13,Sci. class with dissections,6,BIOLAB
+71,8,13,12,13,"E.C. ___, creator of Popeye",5,SEGAR
+72,14,13,20,13,Pharmaceutical company whose Nasdaq symbol is MRNA,7,MODERNA
+73,0,14,3,14,Kind of high-fat diet used as an epilepsy therapy,4,KETO
+74,5,14,7,14,"""The Marvelous ___ Maisel""",3,MRS
+76,9,14,16,14,Set aside,8,DEDICATE
+78,18,14,20,14,"Like Plan B, for short",3,OTC
+79,0,15,3,15,Fromage base,4,LAIT
+80,5,15,8,15,Royal house on the Arabian Peninsula,4,SAUD
+82,10,15,16,15,It's back on Broadway,7,REVIVAL
+83,18,15,20,15,"""Candyman"" director DaCosta",3,NIA
+84,0,16,3,16,Online shopping site for handicrafts,4,ETSY
+85,7,16,9,16,Vanilla unit,3,POD
+87,11,16,13,16,Kangaroo ___,3,RAT
+88,15,16,20,16,"Mermaid's home, maybe",6,LAGOON
+90,0,17,2,17,Connections,3,INS
+91,4,17,10,17,Like many a dinner function,7,CATERED
+95,12,17,15,17,Orpheus' instrument,4,LYRE
+97,17,17,20,17,They've taken the veil,4,NUNS
+98,0,18,11,18,Its falls are quite dramatic,12,NIAGARARIVER
+101,13,18,19,18,Freeway dividers,7,MEDIANS
+103,1,19,11,19,Dillydallying,11,KILLINGTIME
+104,13,19,18,19,"""We're all ___ here""",6,ADULTS
+105,2,20,11,20,Informal favor request,10,DOMEASOLID
+106,13,20,17,20,Some bishops,5,POPES
+1,3,0,3,4,"Response to ""Danke""",5,BITTE
+2,4,0,4,2,"""If we must die, O ___ us nobly die"": Claude McKay",3,LET
+3,5,0,5,8,Like the concept of a flat Earth,9,ERRONEOUS
+4,6,0,6,3,Side-by-side calculation,4,AREA
+5,7,0,7,6,Certain chew toy,7,TEETHER
+6,9,0,9,2,Fitting,3,APT
+7,10,0,10,3,"Cold, as agua",4,FRIA
+8,11,0,11,4,Word on an invoice,5,REMIT
+9,12,0,12,5,"What the musicals ""Beggar's Holiday"" and ""Rent"" are based on",6,OPERAS
+10,13,0,13,6,Compendium of case reports,7,LAWBOOK
+11,14,0,14,3,Met highlight,4,ARIA
+12,15,0,15,3,Like one on stilts,4,TALL
+13,16,0,16,3,"""C'mon, ___ be fun""",4,ITLL
+14,17,0,17,2,Small fault,3,NIT
+15,18,0,18,7,"Words before ""gratia plena, Dominus tecum""",8,AVEMARIA
+16,2,1,2,11,"Italian dance form from the Spanish for ""walk in the street""",11,PASSACAGLIA
+18,19,1,19,7,"Erbium, terbium or ytterbium",7,ELEMENT
+19,1,2,1,11,Dance move that resembles a front flip,10,HEADSPRING
+21,20,2,20,6,Momentary slip,5,LAPSE
+22,0,3,0,10,Negative responses,8,REFUSALS
+24,8,3,8,13,Performers wearing pa'us and malos,11,HULADANCERS
+28,4,4,4,8,"""Seems likely""",5,IDBET
+30,9,4,9,14,Having free time,11,NOTOCCUPIED
+32,17,4,17,13,"""That's enough lip out of you!""",10,DONTSASSME
+35,6,5,6,7,Kind of tape,3,VHS
+36,10,5,10,15,"""Mighty Morphin"" TV character",11,POWERRANGER
+38,14,5,14,11,Crystalline structure,7,LATTICE
+39,15,5,15,10,Useless,6,OTIOSE
+43,11,6,11,16,Utility company professional,11,METERREADER
+47,3,7,3,16,Descriptor for IHOP's Fresh 'N Fruity pancakes,10,ROOTYTOOTY
+49,12,7,12,17,Result of a delay,11,LATEARRIVAL
+51,16,7,16,9,Twitter titter,3,LOL
+53,7,8,7,12,Actress/activist Jane,5,FONDA
+54,13,8,13,12,Minds,5,TENDS
+56,6,9,6,15,Portuguese city with a historic university founded in 1290,7,COIMBRA
+57,18,9,18,19,They don't express gender,11,NEOPRONOUNS
+58,19,9,19,18,After-school activities one wouldn't list on a college app,10,DETENTIONS
+60,5,10,5,15,Really wallops,6,CREAMS
+62,20,10,20,17,"Noisemakers dangling below a ""Just Married"" sign",8,SODACANS
+64,4,11,4,13,Keystone State airport code,3,PHL
+67,15,12,15,20,Tallied,9,TOTALEDUP
+68,16,12,16,16,Journalist/screenwriter ___ Rogers St. Johns,5,ADELA
+69,1,13,1,19,Bongo-playing 1950s stereotype,7,BEATNIK
+70,2,13,2,20,Introduction to an adage,8,ITISSAID
+72,14,13,14,15,"Dirk Nowitzki, for 21 seasons, in brief",3,MAV
+73,0,14,0,18,Designer Anne,5,KLEIN
+75,7,14,7,20,High-speed races with gates,7,SUPERGS
+77,13,14,13,20,"Guide outside a bus station, often",7,CITYMAP
+81,8,15,8,20,Triangular snack chip,6,DORITO
+86,9,16,9,20,New Jersey athlete,5,DEVIL
+89,17,16,17,20,Cloud on a summer day,5,GNATS
+91,4,17,4,20,Like suboptimal kite-flying weather,4,CALM
+92,5,17,5,20,"Singer with the album ""Voyage to India""",4,ARIE
+93,6,17,6,20,Ethiopia's Lake ___,4,TANA
+94,10,17,10,20,Kind of bra cup,4,DEMI
+96,14,17,14,20,Overhaul,4,REDO
+99,3,18,3,20,Day-___,3,GLO
+100,11,18,11,20,Word with hot or headed,3,RED
+102,16,18,16,20,Bit of land in la mer,3,ILE

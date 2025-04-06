@@ -1,0 +1,11 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,3,0,"Bowser in the Mario games, e.g.",4,BOSS
+5,0,1,4,1,It's made to measure,5,RULER
+7,0,2,4,2,Video game company named after a term in the board game Go,5,ATARI
+8,0,3,4,3,Exercise similar to a crunch,5,SITUP
+9,0,4,4,4,Unwelcome message on a graded paper,5,SEEME
+1,0,0,0,4,Word before knuckles or tacks,5,BRASS
+2,1,0,1,4,Pop-up button?,5,OUTIE
+3,2,0,2,4,Classic blackboard material,5,SLATE
+4,3,0,3,4,Concentrated form of many cosmetics,5,SERUM
+6,4,1,4,4,"Ready to eat, as fruit",4,RIPE

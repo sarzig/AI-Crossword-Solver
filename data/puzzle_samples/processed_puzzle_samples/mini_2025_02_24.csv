@@ -1,0 +1,11 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,2,0,"""Over here!""",3,HEY
+4,0,1,4,1,Words after a defeat,5,ILOST
+7,0,2,4,2,Dwarf planet that's only about half the width of the United States,5,PLUTO
+8,0,3,4,3,1995 thriller whose title is stylized with a digit,5,SEVEN
+9,1,4,4,4,"""This just in ..."" program",4,NEWS
+1,0,0,0,3,Joints at the meeting of the thigh bone and pelvis,4,HIPS
+2,1,0,1,4,Astronaut Ochoa,5,ELLEN
+3,2,0,2,4,"""___ got mail""",5,YOUVE
+5,3,1,3,4,Gumbo or goulash,4,STEW
+6,4,1,4,4,Lots and lots,4,TONS

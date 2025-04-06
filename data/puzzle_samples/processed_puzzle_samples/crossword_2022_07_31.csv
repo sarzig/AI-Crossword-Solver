@@ -1,0 +1,141 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,7,0,Condiment at a pho shop,8,SRIRACHA
+9,9,0,14,0,"Got too scared, with ""out""",6,WIMPED
+15,16,0,20,0,Shelve,5,DEFER
+20,0,1,7,1,Big picture,8,WIDESHOT
+21,9,1,14,1,Author/journalist Welteroth,6,ELAINE
+22,16,1,20,1,"""The ___ Holmes Mysteries"" (young adult detective series)",5,ENOLA
+23,0,2,7,2,Nationwide competitor,8,ALLSTATE
+24,9,2,20,2,Places where some belts are tightened?,12,BELLYBOTTOMS
+26,0,3,5,3,Longtime surname on late-night TV,6,MEYERS
+27,8,3,13,3,Rooibos by another name,6,REDTEA
+28,15,3,18,3,Simpson imp,4,BART
+29,3,4,12,4,"Stephen Crane's ""The Red Badge of Courage,"" e.g.?",10,COMBATREAD
+32,14,4,20,4,Gave the scoop,7,BRIEFED
+35,0,5,3,5,Its presence on Mars offers a clue to life,4,SALT
+38,6,5,8,5,Growler's contents,3,ALE
+39,13,5,16,5,Actress Lena,4,OLIN
+40,18,5,20,5,Can,3,AXE
+41,0,6,2,6,"Medical gloves and N95 masks, for short",3,PPE
+42,4,6,7,6,Pen,4,CAGE
+44,9,6,15,6,"Andy Dufresne in ""The Shawshank Redemption,"" e.g.",7,ESCAPEE
+48,17,6,20,6,Pear-shaped instrument,4,LUTE
+49,0,7,5,7,"Buy a lot of, with ""on""",6,LOADUP
+51,7,7,20,7,Lawyer with absurdly exaggerated humor?,14,CAMPYCOUNSELOR
+54,0,8,6,8,"Where Camus's ""The Plague"" is set",7,ALGERIA
+56,8,8,13,8,Circuit board components,6,DIODES
+57,16,8,20,8,"Count, e.g.",5,TITLE
+58,0,9,10,9,Sleep phase?,11,SLUMBERPART
+60,13,9,17,9,Coconut-covered cookie,5,SAMOA
+63,0,10,2,10,It might get the weed out,3,HOE
+64,4,10,9,10,Flagship vehicle line for Mercedes-Benz,6,SCLASS
+65,11,10,16,10,Encourage,6,SPURON
+67,18,10,20,10,Dallas-to-Austin dir.,3,SSW
+70,3,11,7,11,"Test, as a new mattress",5,LIEON
+71,10,11,20,11,Harvesting machine that needs cleaning?,11,GRIMYREAPER
+73,0,12,4,12,Didn't just sit there,5,ACTED
+76,7,12,12,12,"Vouch for, with ""to""",6,ATTEST
+79,14,12,20,12,Mythical weaver,7,ARACHNE
+80,0,13,13,13,Doctor's description of the birth of triplet sons?,14,THREETIMESALAD
+84,15,13,20,13,"""Well, maybe""",6,IGUESS
+85,0,14,3,14,"Connect, as two devices",4,PAIR
+86,5,14,11,14,Rhetoric,7,ORATORY
+87,13,14,16,14,Relax,4,EASE
+89,18,14,20,14,No longer active: Abbr.,3,RET
+90,0,15,2,15,Golf ball's path,3,ARC
+91,4,15,7,15,City north of Des Moines,4,AMES
+92,12,15,14,15,Slangy turndown,3,NAH
+93,17,15,20,15,Cinco + uno,4,SEIS
+94,0,16,6,16,They might get all over the floor,7,ROOMBAS
+96,8,16,17,16,Battle between Tinker Bell and Princess Ozma?,10,FAIRYFIGHT
+102,2,17,5,17,Cream,4,ROUT
+103,7,17,12,17,"""Ready?""",6,ALLSET
+104,15,17,20,17,Some Guinness records,6,LEASTS
+108,0,18,11,18,Census-taking of a Midwest capital?,12,MADISONCOUNT
+111,13,18,20,18,Begin,8,STARTOUT
+113,0,19,4,19,Bel ___ (Italian cheese),5,PAESE
+114,6,19,11,19,Charm,6,ENAMOR
+115,13,19,20,19,Become aware of … or a homophonic description of four letter shifts in this puzzle's grid,8,WISEUPTO
+116,0,20,4,20,Partners of hinds,5,HARTS
+117,6,20,11,20,Reaches,6,GETSTO
+118,13,20,20,20,Comes clean,8,FESSESUP
+1,0,0,0,3,"Proceeded down a lane, maybe",4,SWAM
+2,1,0,1,3,Tick off,4,RILE
+3,2,0,2,3,Without much thought,4,IDLY
+4,3,0,3,5,Excise surgically,6,RESECT
+5,4,0,4,4,Household robot from Amazon,5,ASTRO
+6,5,0,5,4,Abyss,5,CHASM
+7,6,0,6,2,Like some towels and topics,3,HOT
+8,7,0,7,2,Put away,3,ATE
+9,9,0,9,4,Big name in grills,5,WEBER
+10,10,0,10,4,"___ la Cité, home of Notre-Dame",5,ILEDE
+11,11,0,11,4,"Smallest country in the E.U., by area",5,MALTA
+12,12,0,12,4,Stacked,5,PILED
+13,13,0,13,3,"Musical artist known as the ""Queen of New Age""",4,ENYA
+14,14,0,14,2,Interior secretary Haaland,3,DEB
+15,16,0,16,5,Hold in custody,6,DETAIN
+16,17,0,17,4,___ nous,5,ENTRE
+17,18,0,18,8,Server error,9,FOOTFAULT
+18,19,0,19,2,"The Liberty Tree, e.g.",3,ELM
+19,20,0,20,2,"Some free housing recipients, for short",3,RAS
+25,15,2,15,7,Longtime surname on late-night TV,6,OBRIEN
+27,8,3,8,5,Fwy. or expy.,3,RTE
+30,6,4,6,6,"Clutch, e.g.",3,BAG
+31,7,4,7,7,"Name hidden in ""global economy""",4,ALEC
+32,14,4,14,7,Couleur de l'océan,4,BLEU
+33,19,4,19,8,Rhapsodize over,5,EXTOL
+34,20,4,20,8,Caterpillar alternative,5,DEERE
+35,0,5,0,10,Disruption for a poolside sunbather,6,SPLASH
+36,1,5,1,10,God associated with the moon,6,APOLLO
+37,2,5,2,10,American ___,6,LEAGUE
+39,13,5,13,11,Marsupial that goes into shock when frightened,7,OPOSSUM
+42,4,6,4,13,Kind of parking,8,CURBSIDE
+43,5,6,5,11,Each,6,APIECE
+44,9,6,9,10,Arab leaders,5,EMIRS
+45,10,6,10,9,"""I spilled ___ remover on my dog. Now he's gone"": Steven Wright",4,SPOT
+46,11,6,11,8,"Dancer Charisse of ""Singin' in the Rain""",3,CYD
+47,12,6,12,8,Wizard,3,ACE
+48,17,6,17,9,Sci-fi daughter of Padmé,4,LEIA
+50,3,7,3,9,D as in D.C.?: Abbr.,3,DEM
+52,8,7,8,10,"Some prosecutors, for short",4,ADAS
+53,16,7,16,14,Primeval,8,STONEAGE
+55,6,8,6,11,First name in folk,4,ARLO
+59,7,9,7,15,Some wide-brimmed hats,7,PANAMAS
+61,14,9,14,12,"Killer of the Night King on ""Game of Thrones""",4,ARYA
+62,15,9,15,14,"___ Day, early collaborator with Prince",6,MORRIS
+65,11,10,11,14,"""r u 4 real?""",5,SRSLY
+66,12,10,12,13,Serving with a meze platter,4,PITA
+67,18,10,18,15,It's a ball,6,SPHERE
+68,19,10,19,15,Japanese honorific,6,SENSEI
+69,20,10,20,15,Pries (from),6,WRESTS
+70,3,11,3,14,Icky look,4,LEER
+71,10,11,10,14,"Boots, helmets, rope, etc.",4,GEAR
+72,17,11,17,13,Prefix with puncture,3,ACU
+73,0,12,0,16,For face value,5,ATPAR
+74,1,12,1,16,One-named entertainer from Spain,5,CHARO
+75,2,12,2,20,Hand-held device used by Mr. Spock,9,TRICORDER
+77,8,12,8,14,Lunar New Year,3,TET
+78,9,12,9,14,General name for a dish?,3,TSO
+81,5,13,5,18,Shade of red,6,TOMATO
+82,6,13,6,16,Ticks off,4,IRES
+83,13,13,13,16,"Like Juliette Gordon Low, founder of the Girl Scouts",4,DEAF
+88,14,14,14,16,Fish in a poke bowl,3,AHI
+91,4,15,4,20,"Unfairly takes advantage of, as a policy",6,ABUSES
+92,12,15,12,17,WaPo alternative,3,NYT
+93,17,15,17,20,Square figure?,6,STATUE
+95,3,16,3,20,Like a tasty cake,5,MOIST
+96,8,16,8,20,Ice cream treat,5,FLOAT
+97,9,16,9,20,"They might hold on to their caps, for short",5,ALUMS
+98,10,16,10,20,"""Failure ___ an option""",5,ISNOT
+99,11,16,11,20,Back in style,5,RETRO
+100,15,16,15,20,You can see right through it,5,GLASS
+101,16,16,16,20,Beginning of a toast,5,HERES
+103,7,17,7,20,What concealer might conceal,4,ACNE
+105,18,17,18,20,Soaks (up),4,SOPS
+106,19,17,19,20,"Co-author of 2016's ""The Book of Joy,"" along with the Dalai Lama",4,TUTU
+107,20,17,20,20,Break … or brake,4,STOP
+108,0,18,0,20,Inits. on the road,3,MPH
+109,1,18,1,20,Inits. on the road,3,AAA
+110,6,18,6,20,"Darkroom item, in brief",3,NEG
+111,13,18,13,20,Personal ad abbr.,3,SWF
+112,14,18,14,20,No-win situation,3,TIE

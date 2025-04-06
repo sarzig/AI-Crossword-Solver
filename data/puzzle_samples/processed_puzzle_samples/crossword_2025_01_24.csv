@@ -1,0 +1,69 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,3,0,Go by,4,PASS
+5,5,0,8,0,Mobile,4,CELL
+9,10,0,14,0,Work on Wall Street,5,TRADE
+14,0,1,8,1,Fall forecasting aids,9,EXITPOLLS
+16,10,1,14,1,Chopped,5,HEWED
+17,0,2,8,2,Material used by many deck builders,9,CEDARWOOD
+18,10,2,14,2,One of three countries straddled by Mont Dolent,5,ITALY
+19,3,3,7,3,Much Consumer Reports work,5,TESTS
+20,9,3,14,3,Green-skinned god of the afterlife,6,OSIRIS
+21,0,4,13,4,Is big in the news,14,MAKESHEADLINES
+25,0,5,5,5,Go by,6,ELAPSE
+26,8,5,11,5,"""Give it a ___!""",4,REST
+27,0,6,10,6,Newspaper version with updates from the morning,11,LATEEDITION
+30,12,6,14,6,Media outlet with a Francophone counterpart,3,CBC
+33,0,7,4,7,Revise,5,EMEND
+34,6,7,8,7,Make some calls?,3,REF
+35,10,7,14,7,Florida city with the U.S.'s largest equestrian center,5,OCALA
+37,0,8,2,8,Greek goddess sleeping near the river Oceanus,3,EOS
+38,4,8,14,8,"TV family you ""meet"" in the show's theme song",11,FLINTSTONES
+41,3,9,6,9,"Temperature gauges, sometimes",4,TOES
+42,9,9,14,9,"Eschew cooking, say",6,EATOUT
+43,1,10,14,10,Accept financial responsibility,14,BEARTHEEXPENSE
+47,0,11,5,11,Rings in a bakery,6,DONUTS
+48,7,11,11,11,___ America,5,LATIN
+49,0,12,4,12,Development sites?,5,UTERI
+50,6,12,14,12,"Activist who said ""From the time I was a child, I tried to protest against disrespectful treatment""",9,ROSAPARKS
+54,0,13,4,13,Rugby formation,5,SCRUM
+55,6,13,14,13,Type of question not asked in 20 Questions,9,OPENENDER
+56,0,14,4,14,"""___ Magnificent Men in Their Flying Machines"" (1965 film)",5,THOSE
+57,6,14,9,14,Big swig,4,BELT
+58,11,14,14,14,Graffitists' signatures,4,TAGS
+1,0,0,0,2,"Bodybuilder's pride, informally",3,PEC
+2,1,0,1,2,Dismiss,3,AXE
+3,2,0,2,2,"""Toy Story"" antagonist",3,SID
+4,3,0,3,7,"Sing Sing, e.g.",8,STATEPEN
+5,5,0,5,6,Dairy farm structure,7,COWSHED
+6,6,0,6,4,Mexican grilled corn dish,5,ELOTE
+7,7,0,7,4,Literature Nobelist Mario Vargas ___,5,LLOSA
+8,8,0,8,2,"""The Psychedelic Reader"" subj.",3,LSD
+9,10,0,10,13,English translation of a paradoxical line in a Magritte painting,14,THISISNOTAPIPE
+10,11,0,11,5,Change one's tone again?,6,RETINT
+11,12,0,12,4,On to things,5,AWARE
+12,13,0,13,4,Sub stations?,5,DELIS
+13,14,0,14,3,Originator of Rocky Road ice cream,4,EDYS
+15,4,1,4,14,Rushed,14,PRESSEDFORTIME
+20,9,3,9,6,Nondairy offering,4,OLEO
+21,0,4,0,8,Close combat,5,MELEE
+22,1,4,1,8,Image on the back side of the state seal of Texas,5,ALAMO
+23,2,4,2,8,Supermodels Upton and Moss,5,KATES
+24,8,4,8,8,Meander,5,DRIFT
+28,6,6,6,10,Like many immigrants to the U.S. beginning in 1845,5,IRISH
+29,7,6,7,8,Hamilton bill,3,TEN
+30,12,6,12,10,Collection of works,5,CANON
+31,13,6,13,10,Some stripes on drapeaux français,5,BLEUS
+32,14,6,14,10,"Drone bees, e.g.",5,CASTE
+36,11,7,11,14,"One paying half for quarters, say",8,COTENANT
+39,5,8,5,11,"""Sure, count me in""",4,LETS
+40,9,8,9,14,Seafarer's device,7,SEXTANT
+41,3,9,3,14,Best-selling American car of the 1990s,6,TAURUS
+43,1,10,1,14,Mess up,5,BOTCH
+44,2,10,2,14,When many resoluciones de año nuevo are broken,5,ENERO
+45,7,10,7,14,Give a run for your honey?,5,ELOPE
+46,8,10,8,14,Art accessory rarely used by Jackson Pollock,5,EASEL
+47,0,11,0,14,"Clean up, in a way",4,DUST
+50,6,12,6,14,"Mug, say",3,ROB
+51,12,12,12,14,Nutritional inits.,3,RDA
+52,13,12,13,14,Stock item in a brewery,3,KEG
+53,14,12,14,14,Commencement attendees: Abbr.,3,SRS

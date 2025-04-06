@@ -1,0 +1,141 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,5,0,Villains' antagonists,6,HEROES
+7,7,0,12,0,"""Uh, sure""",6,IGUESS
+13,14,0,16,0,Power project,3,DAM
+16,18,0,20,0,Real mess,3,STY
+19,0,1,5,1,"2008 Lil Wayne song that opens ""Young Money! You dig?""",6,AMILLI
+20,7,1,16,1,Subject of clip art?,10,BONSAITREE
+22,18,1,20,1,"""What do we have here?!""",3,OHO
+23,0,2,5,2,Word before the year on U.S. paper currency,6,SERIES
+24,7,2,16,2,Small thing to keep on track,10,MODELTRAIN
+25,18,2,20,2,"Human rights activist Xiaobo, the first Chinese citizen to be awarded the Nobel Peace Prize (2010)",3,LIU
+26,0,3,9,3,Presses CTRL+P  +  _____  +  Easter egg coloring,10,PRINCESSDI
+28,12,3,20,3,"_____  +  Scroungy mutt +  Parent's sister, in some regions",9,AUCOURANT
+30,3,4,6,4,Active Sicilian volcano,4,ETNA
+31,8,4,11,4,European river that's an anagram of REED,4,EDER
+34,13,4,15,4,Promise to pay,3,IOU
+35,17,4,20,4,[I'm frustrated!],4,ARGH
+36,0,5,2,5,Fragrant noodle soup made with beef,3,PHO
+39,4,5,8,5,"Like Captain James T. Kirk, by birth",5,IOWAN
+41,10,5,13,5,"Número de ""Años de Soledad"" in a Gabriel García Márquez novel",4,CIEN
+43,16,5,20,5,Follows,5,OBEYS
+44,0,6,7,6,"_____  +  Golfer's cry  +  ""Ugh!""",8,EUPHORIC
+46,9,6,18,6,Column crossers  +  Sentry  +  _____,10,ROSEGARDEN
+49,0,7,4,7,"""Encore!""",5,AGAIN
+50,6,7,12,7,Irks,7,NETTLES
+52,14,7,16,7,Crossed off,3,XED
+53,18,7,20,7,Gangster film prop,3,GAT
+56,0,8,5,8,"""Holy"" city",6,TOLEDO
+58,7,8,11,8,Nongendered possessive,5,THEIR
+59,13,8,20,8,Insult that's also a measurement device,8,DIPSTICK
+61,4,9,9,9,"""The landlords of New York,"" once",6,ASTORS
+63,11,9,15,9,One cast in a fantasy movie,5,SPELL
+65,17,9,20,9,Digging,4,INTO
+66,0,10,8,10,"French festival, familiarly  +  _____  +  Actor Michael",9,CANDYCANE
+70,12,10,20,10,Punching tool  +  Chopping tool  +  _____,9,ALLACCESS
+72,0,11,3,11,Cherubic archer,4,AMOR
+73,5,11,9,11,Foil lookalikes,5,EPEES
+75,11,11,16,11,Seoul-based carrier,6,ASIANA
+76,0,12,7,12,Influential sorts,8,BIGSHOTS
+78,9,12,13,12,Rod with seven A.L. batting titles,5,CAREW
+80,15,12,20,12,Athlete's cup,6,TROPHY
+85,0,13,2,13,Flattering verse,3,ODE
+86,4,13,6,13,In the manner of,3,ALA
+87,8,13,14,13,"Demonstrate extreme flexibility, as an acrobat",7,CONTORT
+89,16,13,20,13,Opposite of neo-,5,PALEO
+90,2,14,11,14,Tandoor bread  +  Harlem music venue  +  _____,10,NONAPOLOGY
+93,13,14,20,14,Word of obligation  +  _____  +  Punxsutawney name,8,AUTOFILL
+95,0,15,4,15,Some origin stories,5,MYTHS
+97,7,15,10,15,"Response to ""Shall we?""",4,LETS
+98,12,15,16,15,H.S. science class for some college-bound students,5,APBIO
+99,18,15,20,15,Rocky Mountain bugler,3,ELK
+100,0,16,3,16,"Move, in real estate lingo",4,RELO
+101,5,16,7,16,Pioneered,3,LED
+103,9,16,12,16,Immediately,4,STAT
+105,14,16,17,16,Couple of llamas?,4,ELLS
+107,0,17,8,17,Rug rat  +  Magic stick  +  _____,9,TAEKWONDO
+110,11,17,20,17,Soccer score  +  _____  +  Scottish inlets,10,GOLDILOCKS
+115,0,18,2,18,Resistor unit,3,OHM
+116,4,18,13,18,Iconic 1984 movie vehicle that was a combination ambulance/hearse,10,ECTOMOBILE
+119,15,18,20,18,"""Anything for you!""",6,NAMEIT
+120,0,19,2,19,Actress de Armas,3,ANA
+121,4,19,13,19,Annoyances when trying to make change,10,LARGEBILLS
+122,15,19,20,19,"Challenging, informally",6,GNARLY
+123,0,20,2,20,"Corleone, for one",3,DON
+124,4,20,6,20,Toilet paper spec,3,PLY
+125,8,20,13,20,"Most likely to offer solace, say",6,NICEST
+126,15,20,20,20,Calm,6,SEDATE
+1,0,0,0,3,Fastener used with a padlock,4,HASP
+2,1,0,1,3,"The ""E"" in FEMA: Abbr.",4,EMER
+3,2,0,2,3,"""Diamonds"" singer, to fans",4,RIRI
+4,3,0,3,4,"QB protectors, collectively",5,OLINE
+5,4,0,4,10,Time to decide who's in or out,11,ELECTIONDAY
+6,5,0,5,6,Polite Spanish assent,7,SISENOR
+7,7,0,7,3,"ThinkPads, e.g., once",4,IBMS
+8,8,0,8,5,"""Doc"" in the Mets Hall of Fame",6,GOODEN
+9,9,0,9,4,"Removed, as a knot",5,UNDID
+10,10,0,10,2,Language suffix,3,ESE
+11,11,0,11,2,Spanish seasoning,3,SAL
+12,12,0,12,3,"Hindu goddess in the ""Ramayana""",4,SITA
+13,14,0,14,4,Serpentine constellation,5,DRACO
+14,15,0,15,4,Ambidextrous features?,5,AEIOU
+15,16,0,16,3,It may have just desserts,4,MENU
+16,18,0,18,10,Converter of natural heat energy,11,SOLARENGINE
+17,19,0,19,5,Doohickey,6,THINGY
+18,20,0,20,5,"Tweens, e.g.",6,YOUTHS
+21,13,1,13,6,Making level,6,TRUING
+27,6,3,6,7,Welcomed at the door,5,SAWIN
+29,17,3,17,6,Broccoli follower,4,RABE
+32,10,4,10,8,Intestinal bacterium,5,ECOLI
+33,11,4,11,9,Choir platforms,6,RISERS
+36,0,5,0,8,Boggy stuff,4,PEAT
+37,1,5,1,8,Literary award shaped like a rocket,4,HUGO
+38,2,5,2,8,Milky gemstone,4,OPAL
+40,7,5,7,12,Common solvents,8,ACETONES
+42,12,5,12,7,Some R.P.I. grads,3,EES
+43,16,5,16,8,Chances,4,ODDS
+45,3,6,3,8,Hurry,3,HIE
+46,9,6,9,9,Waze suggestions: Abbr.,4,RTES
+47,14,6,14,11,"Armpit, anatomically",6,AXILLA
+48,15,6,15,12,"Move to a larger pot, say",7,REPLANT
+51,8,7,8,11,More than a couple,5,THREE
+54,19,7,19,10,Doesn't just sit there,4,ACTS
+55,20,7,20,10,Boxing stats,4,TKOS
+57,5,8,5,14,Influential leader of the Seminole people,7,OSCEOLA
+59,13,8,13,15,Burrito-shaped lunch counter item,8,DELIWRAP
+60,17,8,17,10,Part of X-X-X,3,TIC
+62,6,9,6,14,[Is this thing on?],6,TAPTAP
+64,12,9,12,13,"Scenic stroll, from the Spanish",5,PASEO
+66,0,10,0,13,"Baja Peninsula resort, for short",4,CABO
+67,1,10,1,13,In the thick of,4,AMID
+68,2,10,2,20,Hardly Mr. Nice Guy,11,NOGENTLEMAN
+69,3,10,3,12,Hippocratic oath takers: Abbr.,3,DRS
+71,16,10,16,20,Path covered with diamonds,11,CARPOOLLANE
+74,9,11,9,16,Vamooses,6,SCOOTS
+75,11,11,11,14,Pretentiously affected,4,ARTY
+77,4,12,4,15,"""Frozen"" villain",4,HANS
+79,10,12,10,16,Existential emotion,5,ANGST
+81,17,12,17,14,Goofus,3,OAF
+82,18,12,18,15,Dance squat,4,PLIE
+83,19,12,19,15,"Where 95-Down's Wild Ride ends, at Disneyland",4,HELL
+84,20,12,20,15,Key ingredient in key lime pie,4,YOLK
+87,8,13,8,15,Rock & Roll Hall of Fame city: Abbr.,3,CLE
+88,14,13,14,17,"Floated down a river, say",5,TUBED
+91,3,14,3,17,"""Hmm, gotcha""",4,OHOK
+92,7,14,7,19,"Unteachable sort, in a saying",6,OLDDOG
+94,15,14,15,20,Tessellations,7,TILINGS
+95,0,15,0,20,"""The Wind in the Willows"" squire",6,MRTOAD
+96,1,15,1,20,"""Nice try, but I don't think so""",6,YEAHNO
+98,12,15,12,20,Islands that form atop underwater volcanoes,6,ATOLLS
+101,5,16,5,20,Making all the stops,5,LOCAL
+102,6,16,6,20,Portion of a log,5,ENTRY
+104,11,16,11,20,Quick to think or act,5,AGILE
+106,17,16,17,20,[Grrr!],5,SOMAD
+108,4,17,4,20,"""Eh, what can you do?!""",4,WELP
+109,8,17,8,20,"Black cat, classically",4,OMEN
+111,13,17,13,20,For fear that,4,LEST
+112,18,17,18,20,"Michael of 2007's ""Superbad""",4,CERA
+113,19,17,19,20,Wraparound garment,4,KILT
+114,20,17,20,20,Eye affliction,4,STYE
+117,9,18,9,20,Belt worn with a yukata,3,OBI
+118,10,18,10,20,Company that owns Wite-Out,3,BIC

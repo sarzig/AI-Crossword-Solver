@@ -1,0 +1,77 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,2,0,Theater backdrop,3,SET
+4,5,0,8,0,Regarding,4,ASTO
+8,11,0,14,0,Simple trade,4,SWAP
+12,0,1,3,1,General ___ chicken,4,TSOS
+14,5,1,9,1,"Irksome, like a fly",5,PESKY
+16,11,1,14,1,"""Therefore …""",4,ERGO
+17,0,2,3,2,"Gemstone with a ""fire"" variety",4,OPAL
+18,5,2,9,2,Theater centerpiece,5,STAGE
+19,11,2,14,2,Where the rubber meets the road?,4,TIRE
+20,0,3,5,3,Like much '90s music and video games,6,ONDISC
+22,7,3,10,3,Novelist Jaffe,4,RONA
+24,12,3,14,3,Put (down),3,SET
+25,0,4,6,4,Cleaning implement for bunnies?,7,DUSTMOP
+27,8,4,13,4,Significant,6,OFNOTE
+29,3,5,6,5,"Like feet after a race, perhaps",4,SORE
+30,8,5,13,5,Grooming option for a pampered pooch,6,DOGSPA
+31,0,6,2,6,"Prepare, as the dinner table",3,SET
+34,4,6,7,6,Draft beer receptacles,4,KEGS
+36,9,6,14,6,Detox centers,6,REHABS
+38,0,7,4,7,Banish,5,EXILE
+40,6,7,8,7,Written in stone,3,SET
+42,10,7,14,7,Soup server's spoon,5,LADLE
+43,0,8,5,8,"Alert about a crime, say",6,TIPOFF
+45,7,8,10,8,Surf's partner on a menu,4,TURF
+47,12,8,14,8,Unit for a comedian or musician,3,SET
+48,1,9,6,9,Mushroom's reproductive cells,6,SPORES
+50,8,9,11,9,___ and switch,4,BAIT
+52,1,10,6,10,"Put into a Word document, say",6,TYPEUP
+53,8,10,14,10,Cheat sheet info,7,ANSWERS
+57,0,11,2,11,Like hard plaster,3,SET
+58,4,11,7,11,Home of the Tree of the Knowledge of Good and Evil,4,EDEN
+60,9,11,14,11,Contribute a little,6,CHIPIN
+61,0,12,3,12,"Years, in Portuguese",4,ANOS
+63,5,12,9,12,Overflowing (with),5,AWASH
+65,11,12,14,12,Make over,4,REDO
+66,0,13,3,13,Colorful slushy drink,4,ICEE
+67,5,13,9,13,"Rhyme for ""Chevy"" in Don McLean's ""American Pie""",5,LEVEE
+68,11,13,14,13,Painful toy to step on,4,LEGO
+69,0,14,3,14,In case,4,LEST
+70,6,14,9,14,Counterparts of dahs,4,DITS
+71,12,14,14,14,"Guinness world record holder for ""English word with the most meanings""",3,SET
+1,0,0,0,4,Got up,5,STOOD
+2,1,0,1,4,College sports channel,5,ESPNU
+3,2,0,2,4,Frogs' wartier cousins,5,TOADS
+4,5,0,5,6,H.S. test result that can translate into college credit,7,APSCORE
+5,6,0,6,2,Part of a tennis match,3,SET
+6,7,0,7,3,Bygone Russian ruler,4,TSAR
+7,8,0,8,5,"""All right, that's fine""",6,OKGOOD
+8,11,0,11,2,"Sink, as the sun",3,SET
+9,12,0,12,8,Cushions in front of a computer keyboard,9,WRISTPADS
+10,13,0,13,8,Pleasant and accommodating,9,AGREEABLE
+11,14,0,14,3,Philip Larkin or Patricia Lockwood,4,POET
+13,3,1,3,5,Vent openings,5,SLITS
+15,9,1,9,6,Strongly desire,6,YENFOR
+21,4,3,4,11,Like areas where cigarettes are not permitted,9,SMOKEFREE
+23,10,3,10,11,Striped swimmer named for a heavenly being,9,ANGELFISH
+26,6,4,6,7,Things to hang one's hat on,4,PEGS
+28,11,4,11,7,Agcy. that monitors workplace hazards,4,OSHA
+31,0,6,0,8,Mathematical grouping using curly brackets,3,SET
+32,1,6,1,14,Being,9,EXISTENCE
+33,2,6,2,14,You might stand on them to reach something,9,TIPPYTOES
+35,7,6,7,8,Having everything one needs,3,SET
+37,14,6,14,8,Volleyball move before a spike,3,SET
+39,3,7,3,10,"""Bunny ear"" made while tying a shoelace",4,LOOP
+41,8,7,8,10,Deep brass instrument,4,TUBA
+44,5,8,5,13,Like England between the ninth and 15th centuries,6,FEUDAL
+46,9,8,9,14,Cattle farms,7,RANCHES
+49,6,9,6,14,"Shot out, as lava",6,SPEWED
+51,11,9,11,13,Spin around,5,TWIRL
+54,12,10,12,14,Fencing swords,5,EPEES
+55,13,10,13,14,Mountain spine,5,RIDGE
+56,14,10,14,14,Stuck-up sort,5,SNOOT
+57,0,11,0,14,Mast attachment,4,SAIL
+59,7,11,7,14,"Blue race in ""Avatar""",4,NAVI
+62,3,12,3,14,Complete collection,3,SET
+64,8,12,8,14,"Adjust, as a watch",3,SET

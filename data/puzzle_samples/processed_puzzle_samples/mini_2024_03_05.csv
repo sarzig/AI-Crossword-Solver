@@ -1,0 +1,11 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,1,0,4,0,Totally convinced,4,SOLD
+5,0,1,4,1,Sound during pollen season,5,ACHOO
+6,0,2,4,2,Stack in a kitchen cabinet,5,BOWLS
+7,0,3,3,3,Greek god of love,4,EROS
+8,0,4,2,4,Morning moisture,3,DEW
+1,1,0,1,4,"What Hans Zimmer contributed to ""The Lion King"" and ""Dune""",5,SCORE
+2,2,0,2,4,"""Wait, that's crazy!""",5,OHWOW
+3,3,0,3,3,"Cracks up, in textspeak",4,LOLS
+4,4,0,4,2,Hair arrangements,3,DOS
+5,0,1,0,4,Still under the covers,4,ABED

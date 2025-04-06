@@ -1,0 +1,77 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,3,0,Captain's position,4,HELM
+5,5,0,8,0,"Person of the year, for short?",4,ALUM
+9,11,0,14,0,Degs. from Northwestern's Kellogg School,4,MBAS
+13,0,1,3,1,"""Never get involved in a land war in ___"" (advice in ""The Princess Bride"")",4,ASIA
+14,5,1,8,1,Common provider of free Wi-Fi,4,CAFE
+15,10,1,14,1,Animal life,5,FAUNA
+16,0,2,8,2,Wait + see,9,STOPWATCH
+18,10,2,14,2,Top-flight destination?,5,ATTIC
+19,0,3,2,3,Title for a crime boss,3,DON
+20,4,3,6,3,Items often stored in plastic protectors,3,IDS
+21,8,3,12,3,Touch of color,5,TINCT
+23,0,4,5,4,Early-age garment,6,ONESIE
+25,7,4,14,4,Give + take,8,HANDHOLD
+28,0,5,3,5,Prudent,4,WISE
+29,5,5,7,5,"Sport that takes place in an octagon, for short",3,MMA
+31,9,5,14,5,Abolitionist senator Charles,6,SUMNER
+32,0,6,3,6,Org. with the Artemis program,4,NASA
+33,5,6,8,6,Where Captain Kirk was born and raised,4,IOWA
+35,10,6,14,6,Moves gingerly,5,EASES
+36,3,7,11,7,Kiss + tell,9,SMACKTALK
+39,0,8,4,8,"Evening stroll, from the Spanish",5,PASEO
+42,6,8,9,8,Drummers' collections,4,KITS
+43,11,8,14,8,Blows it,4,ERRS
+47,0,9,5,9,Symbols of humble beginnings,6,ACORNS
+49,7,9,9,9,Dropped behind?,3,SAT
+50,11,9,14,9,Gather,4,REAP
+51,0,10,7,10,Hit + run,8,SLAPDASH
+53,9,10,14,10,"""Fiddler on the Roof"" setting",6,RUSSIA
+55,2,11,6,11,Actor Reeves,5,KEANU
+56,8,11,10,11,Miranda rights reader,3,COP
+57,12,11,14,11,"What a fixer-upper home needs, casually",3,TLC
+58,0,12,4,12,Like Rudolph's nose,5,SHINY
+60,6,12,14,12,Cut + paste,9,CHOPSTICK
+63,0,13,4,13,Big name in ketchup,5,HUNTS
+64,6,13,9,13,Gorilla who was said to have developed the vocabulary level of a three-year-old human,4,KOKO
+65,11,13,14,13,Ultrafastidious,4,ANAL
+66,0,14,3,14,No-no for vegans,4,EGGS
+67,6,14,9,14,"""No ___"" (airplane wing warning)",4,STEP
+68,11,14,14,14,Enemy of Hop-o'-My-Thumb,4,OGRE
+1,0,0,0,6,Knows by heart,7,HASDOWN
+2,1,0,1,6,What's opposite Finland on the Gulf of Finland,7,ESTONIA
+3,2,0,2,6,Cubs manager?,7,LIONESS
+4,3,0,3,2,Common encyclopedia graphic,3,MAP
+5,5,0,5,7,Professor's realm,8,ACADEMIA
+6,6,0,6,3,"Targets of pull-down exercises, in brief",4,LATS
+7,7,0,7,2,29-Across org.,3,UFC
+8,8,0,8,4,Conductor Zubin,5,MEHTA
+9,11,0,11,10,"Fixer-uppers, of a sort",11,MATCHMAKERS
+10,12,0,12,6,Remote possibilities?,7,BUTTONS
+11,13,0,13,2,Good guess for a single letter in a cryptogram,3,ANI
+12,14,0,14,2,"Alveolus, e.g.",3,SAC
+15,10,1,10,7,Big name in sports betting,7,FANDUEL
+17,4,2,4,4,Console with a sensor bar,3,WII
+22,9,3,9,5,Entrees,3,INS
+24,3,4,3,14,"Creatures that kill Laocoön in the ""Aeneid""",11,SEASERPENTS
+25,7,4,7,10,Aggressively pro-war,7,HAWKISH
+26,13,4,13,6,"""To Kill a Mockingbird"" writer",3,LEE
+27,14,4,14,6,Rx writers: Abbr.,3,DRS
+30,6,5,6,8,Imitation,4,MOCK
+34,8,6,8,9,"""___ boy!""",4,ATTA
+37,4,7,4,13,Times to get back to work,7,MONDAYS
+38,9,7,9,14,Rocket-shaped frozen treat,8,ASTROPOP
+39,0,8,0,10,Faux ___,3,PAS
+40,1,8,1,10,"Wounded knee site, for short",3,ACL
+41,2,8,2,14,Very wet,7,SOAKING
+44,12,8,12,14,Not in motion,7,RESTING
+45,13,8,13,14,"Caboose, e.g.",7,RAILCAR
+46,14,8,14,14,Gap filler,7,SPACKLE
+48,5,9,5,11,"The ""S"" of U.C.S.D.",3,SAN
+52,6,10,6,14,Uses a straw,5,SUCKS
+54,10,10,10,12,FedEx competitor,3,UPS
+56,8,11,8,14,Popular pop,4,COKE
+58,0,12,0,14,"""Steady as ___ goes!""",3,SHE
+59,1,12,1,14,Keep close to,3,HUG
+61,7,12,7,14,"Between 90 and 100, say",3,HOT
+62,11,12,11,14,Confucian philosophy,3,TAO

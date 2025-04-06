@@ -1,0 +1,73 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,2,0,Necessary skill for an E.M.T.,3,CPR
+4,5,0,8,0,T-shirt specification,4,SIZE
+8,11,0,14,0,___ song (final act),4,SWAN
+12,0,1,2,1,Lode load,3,ORE
+13,4,1,9,1,Invader of Gaul in 451,6,ATTILA
+15,11,1,14,1,Athlete declared a national treasure by Brazil after the 1958 World Cup,4,PELE
+16,0,2,2,2,Parking area,3,LOT
+17,4,2,14,2,"Sloppily making out, in slang",11,SUCKINGFACE
+19,0,3,4,3,Mild Dutch cheese,5,GOUDA
+21,6,3,10,3,"""___ la vista, baby!""",5,HASTA
+22,12,3,14,3,Curtain hanger's need,3,ROD
+23,0,4,5,4,Steep-roofed house,6,AFRAME
+25,8,4,14,4,Pioneering computer game originally called Micropolis,7,SIMCITY
+27,0,5,13,5,Piece of jewelry consisting of a single line of diamonds,14,TENNISBRACELET
+30,0,6,2,6,Newsroom V.I.P.s,3,EDS
+31,5,6,7,6,"The Dolphins, on scoreboards",3,MIA
+32,10,6,12,6,"""Is ___ children learning?"" (Bushism)",3,OUR
+33,3,7,11,7,"Card game whose winning hands can be found hidden in 17-, 27-, 42- and 54-Across",9,TWENTYONE
+37,2,8,4,8,"""___ real question is ...""",3,THE
+38,7,8,9,8,Ingredient in vinaigrette,3,OIL
+39,12,8,14,8,"""So cool!""",3,RAD
+42,1,9,14,9,Wildflower with a royal name,14,QUEENANNESLACE
+47,0,10,6,10,Paying attention,7,TUNEDIN
+48,9,10,14,10,"Vanilla/chocolate ice cream combos, e.g.",6,SWIRLS
+49,0,11,2,11,Affirmative vote,3,YEA
+50,4,11,8,11,"Provide, as with an ability",5,ENDUE
+53,10,11,14,11,"Colludes with, as a criminal",5,ABETS
+54,0,12,10,12,Sleek leather outerwear,11,RACERJACKET
+57,12,12,14,12,"""Huh!""",3,GEE
+58,0,13,3,13,"Those, in Spanish",4,ESAS
+59,5,13,10,13,Bowling venues,6,ALLEYS
+60,12,13,14,13,Part of an African elephant shaped like Africa,3,EAR
+61,0,14,3,14,"Match up, as two devices",4,SYNC
+62,6,14,9,14,Life of Riley,4,EASE
+63,12,14,14,14,"Actor who was cast in ""Rocky III"" after winning an “America’s Toughest Bouncer” competition",3,MRT
+1,0,0,0,6,University that shares its name with an oral hygiene brand,7,COLGATE
+2,1,0,1,6,Did some checking for errors,7,PROOFED
+3,2,0,2,6,Taxing tasks?,7,RETURNS
+4,5,0,5,2,Apt name for a worrier,3,STU
+5,6,0,6,3,Strong desire,4,ITCH
+6,7,0,7,3,Mosquito-borne virus in 2016 news,4,ZIKA
+7,8,0,8,5,Michigan congresswoman Slotkin,6,ELISSA
+8,11,0,11,2,Spec on some moisturizers,3,SPF
+9,12,0,12,6,More exhausted,7,WEARIER
+10,13,0,13,5,"""Little Women"" author",6,ALCOTT
+11,14,0,14,4,"Constantly seeking validation, say",5,NEEDY
+13,4,1,4,5,"""Same here""",5,ASAMI
+14,9,1,9,5,Stunt,5,ANTIC
+18,10,2,10,7,"""Let's do this thing!""",6,GAMEON
+20,3,3,3,5,Actor Aykroyd,3,DAN
+24,5,4,5,7,Salinger title heroine,4,ESME
+26,11,4,11,7,"Fingerprint or footprint, perhaps",4,CLUE
+28,6,5,6,7,Overhead compartment on an airplane,3,BIN
+29,7,5,7,9,Betray by blabbing,5,RATON
+33,3,7,3,10,Rap's Megan ___ Stallion,4,THEE
+34,4,7,4,12,Gardener's device,6,WEEDER
+35,8,7,8,9,Yang's counterpart,3,YIN
+36,9,7,9,10,Cries at some football games,4,OLES
+37,2,8,2,14,Tin in a cat owner's pantry,7,TUNACAN
+39,12,8,12,14,One-in-a-million find,7,RAREGEM
+40,13,8,13,14,Common knee injury for athletes,7,ACLTEAR
+41,14,8,14,14,You might leave room for it,7,DESSERT
+42,1,9,1,14,"Seasick, say",6,QUEASY
+43,5,9,5,13,"One who historically didn't wear all black, despite popular depiction",5,NINJA
+44,6,9,6,14,"""Go, go, go!,"" to Goya",6,ANDALE
+45,10,9,10,13,Thwacks,5,SWATS
+46,11,9,11,11,Ad-___ (go off-script),3,LIB
+47,0,10,0,14,Wheels on a lorry,5,TYRES
+51,7,11,7,14,"It had more freshman applicants in 2023 than any other U.S. university (145,910)",4,UCLA
+52,8,11,8,14,Squeaks (by),4,EKES
+55,3,12,3,14,Key used to exit,3,ESC
+56,9,12,9,14,"""Good ___!"" (compliment to a hitter)",3,EYE

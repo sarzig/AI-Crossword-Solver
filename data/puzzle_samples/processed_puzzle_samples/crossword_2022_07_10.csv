@@ -1,0 +1,141 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,3,0,😂,4,ROFL
+5,5,0,8,0,Left speechless,4,AWED
+9,10,0,14,0,"Reward for sitting, say",5,TREAT
+14,16,0,20,0,Entice,5,TEMPT
+19,0,1,3,1,Something we share,4,OURS
+20,5,1,8,1,Rocker John whose surname sounds like a leafy vegetable,4,CALE
+21,10,1,14,1,"""___ Man Chant,"" song by Bob Marley and the Wailers",5,RASTA
+22,16,1,20,1,Diarist Nin,5,ANAIS
+23,0,2,8,2,Where some stable relationships form?,9,STUDFARMS
+25,10,2,14,2,San Diego State athlete,5,AZTEC
+26,16,2,20,2,Verge,5,BRINK
+27,0,3,2,3,Name that's 98-Across backward,3,ARI
+28,4,3,8,3,"The sky, they say",5,LIMIT
+29,10,3,12,3,"""All the Light We Cannot ___"" (2015 Pulitzer-winning novel)",3,SEE
+30,14,3,20,3,Certain Chinese teas,7,OOLONGS
+32,1,4,4,4,Roman emperor after Nero and Galba,4,OTHO
+34,6,4,10,4,"Heep of ""David Copperfield""",5,URIAH
+36,12,4,18,4,"Drop the ""Donuts"" from ""Dunkin' Donuts,"" e.g.",7,REBRAND
+38,2,5,4,5,Some four-year degrees: Abbr.,3,BAS
+39,6,5,10,5,Kind of attack with no attacker,5,PANIC
+40,13,5,15,5,Michael Jackson hit whose title is heard 88 times in the song,3,BAD
+41,18,5,20,5,What might accompany a grave admission?,3,RIP
+44,0,6,6,6,Claws,7,TEARSAT
+47,8,6,11,6,"Cheese with a light, nutty flavor",4,EDAM
+49,13,6,20,6,Quite an uproar,8,BROUHAHA
+52,0,7,6,7,Design style influenced by Cubism,7,ARTDECO
+53,8,7,12,7,Fabric often dyed with indigo,5,DENIM
+55,14,7,20,7,Each of its interior angles measures 135°,7,OCTAGON
+56,0,8,7,8,"Swing preventer, of a sort",8,DOORSTOP
+58,9,8,14,8,Like some vows,6,SOLEMN
+60,16,8,20,8,Run off together,5,ELOPE
+61,0,9,2,9,Personal ID,3,SSN
+62,5,9,8,9,"Like a sweater that shrank in the dryer, maybe",4,SNUG
+64,10,9,13,9,Its alphabet includes delta,4,NATO
+65,15,9,20,9,Some Brothers Grimm villains,6,CRONES
+66,3,10,5,10,Artless nickname?,3,STU
+68,7,10,9,10,Tease,3,RIB
+70,11,10,13,10,Sarcastic punch line,3,NOT
+71,15,10,17,10,That guy's,3,HIS
+72,0,11,5,11,Forty winks,6,CATNAP
+75,7,11,10,11,Threads,4,GARB
+77,12,11,15,11,Tepid greeting,4,OHHI
+79,18,11,20,11,Second word of many a limerick,3,WAS
+82,0,12,4,12,Sans-serif font,5,ARIAL
+83,6,12,11,12,Thesis writer,6,SENIOR
+85,13,12,20,12,Meaning of a signal flare,8,SENDHELP
+88,0,13,6,13,2021 Aretha Franklin biopic,7,RESPECT
+90,8,13,12,13,Strained,5,TAXED
+92,14,13,20,13,"Greek name meaning ""golden one""",7,AURELIA
+93,0,14,7,14,"Something filmed in Broadway's Ed Sullivan Theater, with ""The""",8,LATESHOW
+95,9,14,12,14,Journalist Skeeter in the Harry Potter books,4,RITA
+96,14,14,20,14,Train segment,7,RAILCAR
+97,0,15,2,15,Butt end,3,ASH
+98,5,15,7,15,Name that's 27-Across backward,3,IRA
+99,10,15,14,15,"""Sweet dreams!""",5,NIGHT
+101,16,15,18,15,Rapper ___ Rida,3,FLO
+102,2,16,8,16,It's not a good look,7,EVILEYE
+106,10,16,14,16,Family/species go-between,5,GENUS
+107,16,16,19,16,The last thing you need?,4,TOMB
+109,0,17,6,17,"Like the community portrayed in Netflix's ""Unorthodox""",7,HASIDIC
+111,8,17,10,17,Piercing tool,3,AWL
+113,12,17,16,17,Tickle,5,AMUSE
+115,18,17,20,17,"Evian, in its native land",3,EAU
+117,0,18,4,18,Cruciverbalist's favorite cookies?,5,OREOS
+118,6,18,10,18,"""Well, gosh!""",5,OHGEE
+120,12,18,20,18,Tipsy trips,9,BARCRAWLS
+122,0,19,4,19,Teatro alla ___,5,SCALA
+123,6,19,10,19,"Takes a car, in a way",5,UBERS
+124,12,19,15,19,"Lab assistant in ""Young Frankenstein""",4,INGA
+125,17,19,20,19,It may be upper or lower,4,CASE
+126,0,20,4,20,Blue book filler,5,ESSAY
+127,6,20,10,20,Much of a sponge,5,PORES
+128,12,20,15,20,"Mad, with ""off""",4,TEED
+129,17,20,20,20,Word of surprise,4,EGAD
+1,0,0,0,3,"Santa ___, Calif.",4,ROSA
+2,1,0,1,4,Closing section,5,OUTRO
+3,2,0,2,9,Banana wielded by a maestro in a pinch?,10,FRUITBATON
+4,3,0,3,2,Drug that can be microdosed,3,LSD
+5,5,0,5,3,Berry in a bowl,4,ACAI
+6,6,0,6,9,Animated short before a Pixar movie?,10,WARMUPTOON
+7,7,0,7,5,New York resting place for Mark Twain,6,ELMIRA
+8,8,0,8,7,In the stars,8,DESTINED
+9,10,0,10,9,Give a scathing review of a major camera brand?,10,TRASHCANON
+10,11,0,11,3,Demolish,4,RAZE
+11,12,0,12,4,Compound with a fruity smell,5,ESTER
+12,13,0,13,2,"Had a hero, say",3,ATE
+13,14,0,14,8,Mexican street food mogul?,9,TACOBARON
+14,16,0,16,4,Pair of small hand drums,5,TABLA
+15,17,0,17,4,Defunct company of accounting fraud fame,5,ENRON
+16,18,0,18,9,"Smaug, in ""The Hobbit""?",10,MAINDRAGON
+17,19,0,19,3,Send an e-message to,4,PING
+18,20,0,20,3,Makes shame-y noises,4,TSKS
+24,4,2,4,8,Does a fad 2010s dance,7,FLOSSES
+31,15,3,15,7,Pro using cutting-edge technology?,5,ORDOC
+33,3,4,3,8,Movie rating that's practically NC-17,5,HARDR
+35,9,4,9,8,Political staffers,5,AIDES
+37,13,4,13,6,Retreat,3,EBB
+42,19,5,19,9,"""Fingers crossed!""",5,IHOPE
+43,20,5,20,9,Window units,5,PANES
+44,0,6,0,9,Small amounts,4,TADS
+45,1,6,1,9,God whose name sounds almost like the ammunition he uses,4,EROS
+46,5,6,5,11,Starts to go haywire,6,ACTSUP
+48,11,6,11,10,Where 122-Across can be found,5,MILAN
+50,16,6,16,10,Places for placentas,5,UTERI
+51,17,6,17,10,Surrounding lights,5,HALOS
+54,12,7,12,11,Movement championed by the Silence Breakers,5,METOO
+57,7,8,7,12,Get rid of,5,PURGE
+59,13,8,13,12,Light-headed sorts?,5,MOTHS
+63,8,9,8,13,"Word after gas or ice, in astronomy",5,GIANT
+65,15,9,15,14,Novelist Achebe,6,CHINUA
+66,3,10,3,14,Wizard's name in books and movies,5,SNAPE
+67,4,10,4,14,Spun things,5,TALES
+69,9,10,9,14,Kind of patch that may create holes instead of repairing them,5,BRIAR
+72,0,11,0,15,Otis and ___ (1960s R&B duo),5,CARLA
+73,1,11,1,15,Disciplines,5,AREAS
+74,2,11,2,20,"Response to ""Why art thou queasy?""",10,TISTHESEAS
+76,10,11,10,20,What Amazon retirees enjoy most?,10,BOXINGLESS
+78,14,11,14,20,Result of love at first sight?,10,HEARTSURGE
+79,18,11,18,20,What a dog greets its returning family with?,10,WELCOMEWAG
+80,19,11,19,14,Inter ___,4,ALIA
+81,20,11,20,14,Trade jabs,4,SPAR
+83,6,12,6,20,Retail takeover scheme?,9,STORECOUP
+84,11,12,11,16,"Fix, as laces",5,RETIE
+86,16,12,16,18,Nomad,7,DRIFTER
+87,17,12,17,16,Annyeonghaseyo : Korean :: ___ : English,5,HELLO
+89,5,13,5,17,Tailgating dish,5,CHILI
+91,12,13,12,20,"""Tarnation!""",8,DAGNABIT
+94,7,14,7,16,"Very, colloquially",3,WAY
+100,13,15,13,20,Compassionate,6,HUMANE
+103,3,16,3,20,Actress Davis who was the first African American to win the Triple Crown of Acting,5,VIOLA
+104,4,16,4,20,Start of a guesstimate,5,IDSAY
+105,8,16,8,20,Like a proverbial beaver,5,EAGER
+108,19,16,19,20,Model material,5,BALSA
+109,0,17,0,20,Place for a run?,4,HOSE
+110,1,17,1,20,"Rainbows, e.g.",4,ARCS
+112,9,17,9,20,"""___ saved!""",4,WERE
+114,15,17,15,20,Large amount,4,SCAD
+116,20,17,20,20,Bookstore sticker,4,USED
+119,7,18,7,20,"""Euphoria"" airer",3,HBO
+121,17,18,17,20,Excellent service?,3,ACE

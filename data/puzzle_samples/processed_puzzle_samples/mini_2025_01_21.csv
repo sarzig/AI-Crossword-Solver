@@ -1,0 +1,11 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,3,0,Kinda wet,4,DAMP
+5,0,1,4,1,Standoffish,5,ALOOF
+7,0,2,4,2,"Creature on a lifeboat with Pi, in ""Life of Pi""",5,TIGER
+8,0,3,4,3,Less than 90°,5,ACUTE
+9,1,4,4,4,"""What ___ is new?""",4,ELSE
+1,0,0,0,3,What hasn't been processed if it's raw,4,DATA
+2,1,0,1,4,Character who climbs through the looking glass,5,ALICE
+3,2,0,2,4,Tycoon,5,MOGUL
+4,3,0,3,4,Ones working with meters and feet?,5,POETS
+6,4,1,4,4,Complimentary,4,FREE

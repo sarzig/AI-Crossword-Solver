@@ -1,0 +1,11 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,4,0,"Scooter seen in ""Roman Holiday""",5,VESPA
+6,0,1,4,1,Pig Latin rejection,5,IXNAY
+7,0,2,4,2,"""The First ___"" (phrase on Delaware license plates)",5,STATE
+8,0,3,4,3,Zodiac ram,5,ARIES
+9,1,4,3,4,Each and every one,3,ALL
+1,0,0,0,3,Big name in cards,4,VISA
+2,1,0,1,4,"When repeated, newsie's cry",5,EXTRA
+3,2,0,2,4,It moves slow as shell,5,SNAIL
+4,3,0,3,4,"Dev of 2024's ""Monkey Man""",5,PATEL
+5,4,0,4,3,Affirmative votes,4,AYES

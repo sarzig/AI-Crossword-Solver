@@ -1,0 +1,141 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,6,0,Precision woodworking tool,7,FRETSAW
+8,9,0,13,0,"When repeated, a 1999 #1 Santana hit",5,MARIA
+13,15,0,20,0,Passionate,6,ARDENT
+19,0,1,6,1,Ingredient in a Caesar salad,7,ROMAINE
+20,8,1,13,1,A tick or a tock,6,SECOND
+21,15,1,20,1,Highly luminous galactic object,6,QUASAR
+22,0,2,13,2,"*""Let's stick with what we've got …""",14,ABIRDINTHEHAND
+24,15,2,20,2,Dissimilar to,6,UNLIKE
+25,0,3,3,3,"Trivia lover, maybe",4,NERD
+26,6,3,9,3,Blockhead,4,TWIT
+27,11,3,15,3,SkyMiles offerer,5,DELTA
+29,17,3,20,3,Pulitzer winner James,4,AGEE
+30,3,4,9,4,Modern dance pioneer Duncan,7,ISADORA
+33,11,4,20,4,"*""How clever we both are ...""",10,GREATMINDS
+35,1,5,6,5,Spice grinder,6,PESTLE
+37,8,5,11,5,"Locale of Hephaestus' forge, in mythology",4,ETNA
+39,14,5,17,5,"Jessica of ""The Illusionist""",4,BIEL
+40,0,6,2,6,Writer/humorist Frazier,3,IAN
+41,4,6,7,6,"""What a pity!""",4,ALAS
+43,10,6,13,6,"A butterfly flying into your home is a good one, some say",4,OMEN
+46,15,6,20,6,They may be yawning,6,CHASMS
+50,0,7,14,7,"*""Look who it is ...""",15,SPEAKOFTHEDEVIL
+55,17,7,20,7,Ground grain,4,MEAL
+56,0,8,5,8,Road hog?,6,HARLEY
+57,7,8,9,8,"Kind of cable, for short",3,AUX
+58,12,8,15,8,Twitter boss Musk,4,ELON
+60,17,8,20,8,Target of tetracycline,4,ACNE
+61,2,9,4,9,"""Little"" car of song that's ""really lookin' fine""",3,GTO
+62,6,9,11,9,Orion's belt points to it,6,SIRIUS
+65,14,9,16,9,Groovy,3,FAB
+67,18,9,20,9,Chew out,3,RIP
+68,0,10,20,10,"*""Timid types shouldn't be here ...""",21,IFYOUCANTSTANDTHEHEAT
+74,0,11,2,11,Spot for a tat,3,PEC
+75,4,11,6,11,Male turkey,3,TOM
+76,9,11,14,11,Obsolescent circus workers,6,TAMERS
+77,16,11,18,11,Fate,3,LOT
+78,0,12,3,12,Carpenter's tool,4,ADZE
+80,5,12,8,12,Goes up and down,4,BOBS
+83,11,12,13,12,Honey,3,BAE
+84,15,12,20,12,Hardly tiptoes,6,CLOMPS
+87,0,13,3,13,Classic Memphis-based record label,4,STAX
+88,6,13,20,13,"*""Looks can be deceiving ...""",15,ALLTHATGLITTERS
+92,0,14,5,14,"From A to Z, maybe",6,SORTED
+95,7,14,10,14,"Pants, slangily",4,TROU
+96,13,14,16,14,Except,4,SAVE
+97,18,14,20,14,Palindromic prefix,3,NON
+98,3,15,6,15,Director Kazan,4,ELIA
+100,9,15,12,15,Something a beanie lacks,4,BRIM
+103,14,15,19,15,Parody,6,SENDUP
+105,0,16,9,16,"*""Well, if the locals are doing it ...""",10,WHENINROME
+110,11,16,17,16,"Tammy who sang ""Stand by Your Man""",7,WYNETTE
+112,0,17,3,17,Occupied,4,HELD
+113,5,17,9,17,"Greek word meaning ""character""",5,ETHOS
+114,11,17,14,17,See 111-Down,4,AGER
+115,17,17,20,17,Where there's smoke,4,FLUE
+119,0,18,5,18,"Gather, as volunteers",6,ENLIST
+121,7,18,20,18,"""Etc., etc."" … or a statement about answers to this puzzle's starred clues?",14,YOUKNOWTHEREST
+125,0,19,5,19,Commonly contracted two-word phrase,6,ARENOT
+126,7,19,12,19,Why you might run out,6,ERRAND
+127,14,19,20,19,Makes gassy,7,AERATES
+128,0,20,5,20,"Get goose bumps, say",6,TINGLE
+129,7,20,11,20,"""Ciao!""",5,SEEYA
+130,14,20,20,20,Popular papal name,7,GREGORY
+1,0,0,0,3,Nickname that drops -ces,4,FRAN
+2,1,0,1,3,"Very formal, or very informal, garment",4,ROBE
+3,2,0,2,3,Royal title,4,EMIR
+4,3,0,3,5,"The time machine on ""Doctor Who""",6,TARDIS
+5,4,0,4,2,"""Toy Story"" antagonist",3,SID
+6,5,0,5,2,What makes creamer creamier?,3,ANI
+7,6,0,6,7,What Beethoven did in his 30s and 40s,8,WENTDEAF
+8,9,0,9,5,Use as a rendezvous point,6,MEETAT
+9,10,0,10,2,Essen exclamation,3,ACH
+10,11,0,11,7,"What an ""@"" might signify",8,ROADGAME
+11,12,0,12,4,Word with ear or peace,5,INNER
+12,13,0,13,4,Confuse,5,ADDLE
+13,15,0,15,6,Like swimming and surfing,7,AQUATIC
+14,16,0,16,2,It's worth one point in cricket,3,RUN
+15,17,0,17,8,"With Desmond Tutu, co-author of the 2016 best seller ""The Book of Joy""",9,DALAILAMA
+16,18,0,18,4,"Complete, as a .pdf contract",5,ESIGN
+17,19,0,19,4,Au naturel,5,NAKED
+18,20,0,20,4,Canopy makeup,5,TREES
+20,8,1,8,5,British draft horse,5,SHIRE
+23,7,2,7,4,English dos,3,TWO
+28,14,3,14,5,"Four to five spaces, typically",3,TAB
+31,4,4,4,11,Police operation requiring patience,8,STAKEOUT
+32,5,4,5,8,"Rose gold, e.g.",5,ALLOY
+34,16,4,16,6,"""It's ... OK""",3,MEH
+35,1,5,1,8,Family member that's also a letter in the NATO alphabet,4,PAPA
+36,2,5,2,14,One charged with climate policy,10,ENERGYCZAR
+38,10,5,10,7,Go-ahead,3,NOD
+40,0,6,0,8,Sorta,3,ISH
+42,7,6,7,10,Deck treatment,5,STAIN
+44,12,6,12,8,"""Who's That Girl?"" rapper",3,EVE
+45,13,6,13,8,It's nothing,3,NIL
+47,18,6,18,15,Where a grilled cheese can be found at McDonald's,10,SECRETMENU
+48,19,6,19,10,Suffix for a fad,5,MANIA
+49,20,6,20,10,Was out,5,SLEPT
+51,3,7,3,10,Choir voice,4,ALTO
+52,8,7,8,10,Smart,4,HURT
+53,9,7,9,11,Have a life,5,EXIST
+54,14,7,14,11,Sends high into the sky,5,LOFTS
+59,15,8,15,10,"""I don't think so""",3,NAH
+62,6,9,6,13,Its largest islands are Savai'i and Upolu,5,SAMOA
+63,10,9,10,11,"The Jazz, on scoreboards",3,UTA
+64,11,9,11,13,Carnival dance,5,SAMBA
+66,16,9,16,16,Glamping option named for its shape,8,BELLTENT
+68,0,10,0,14,"""No bid""",5,IPASS
+69,1,10,1,14,"Gave, as nourishment",5,FEDTO
+70,5,10,5,12,Male swan,3,COB
+71,12,10,12,13,Shipshape,4,NEAT
+72,13,10,13,14,Bottom of the barrel,5,DREGS
+73,17,10,17,13,Knee-slapper,4,HOOT
+79,3,12,3,20,Like many suitcase handles,9,EXTENDING
+81,7,12,7,14,Club relative,3,BLT
+82,8,12,8,14,"Canon offering, in brief",3,SLR
+84,15,12,15,16,Spotted nocturnal mammal,5,CIVET
+85,19,12,19,15,Play thing?,4,PROP
+86,20,12,20,14,"Bit of redacted info, for short",3,SSN
+89,9,13,9,20,Indubitably,8,TOBESURE
+90,10,13,10,15,"""Ben-___""",3,HUR
+91,14,13,14,20,A little light combat?,8,LASERTAG
+93,4,14,4,16,___ Lilly & Co.,3,ELI
+94,5,14,5,20,Breakfast nook,7,DINETTE
+99,6,15,6,17,"""Have you heard about batik? It's a dyeing ___"" (groaner)",3,ART
+101,11,15,11,20,Childish plea,6,IWANNA
+102,12,15,12,19,"""Holy smokes!""",5,MYGOD
+104,17,15,17,20,"Do some maintenance on, as a PC's disk",6,DEFRAG
+105,0,16,0,20,Resource in the game Catan,5,WHEAT
+106,1,16,1,20,French name that is an anagram of a German river,5,HENRI
+107,2,16,2,20,"Pompeo of ""Grey's Anatomy""",5,ELLEN
+108,7,16,7,20,"""Now I remember!""",5,OHYES
+109,8,16,8,20,Poet Marianne,5,MOORE
+111,13,16,13,18,"With 114-Across, crystal collector, perhaps",3,NEW
+116,18,17,18,20,Mother of Apollo and Artemis,4,LETO
+117,19,17,19,20,"Account holder, e.g.",4,USER
+118,20,17,20,20,Popular online marketplace,4,ETSY
+120,4,18,4,20,Day on Mars,3,SOL
+122,10,18,10,20,"Either of two lead characters in ""Kiss Me, Kate""",3,KAY
+123,15,18,15,20,Homophone of 90-Down,3,HER
+124,16,18,16,20,Poetic palindrome,3,ERE

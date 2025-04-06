@@ -1,0 +1,148 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,3,0,Gas light,4,NEON
+5,5,0,8,0,Spa garment,4,ROBE
+9,10,0,13,0,"Hebrew word for ""spring""",4,AVIV
+13,17,0,21,0,Ideal course,5,PLANA
+18,0,1,3,1,Chow chow chow,4,ALPO
+19,5,1,13,1,"Presidential ""pet"" that sprouts an Afro",9,CHIAOBAMA
+21,16,1,21,1,"Challah braids, e.g.",6,LOAVES
+22,0,2,13,2,Bus?,14,CLEARASCRYSTAL
+24,15,2,21,2,Bowlers,7,DERBIES
+25,0,3,4,3,Ingredient in un cortado,5,LECHE
+26,6,3,9,3,___ across the board (perfect score),4,TENS
+27,12,3,16,3,Subatomic particles,5,MUONS
+29,18,3,21,3,"Antiquated, quaintly",4,OLDE
+30,4,4,8,4,Looks to pick things up,5,SHOPS
+32,10,4,21,4,Photosynthesize?,12,GREENASGRASS
+35,0,5,7,5,Some classic Chuck Taylor All Stars,8,HIGHTOPS
+39,9,5,12,5,"Little Energizers, say",4,AAAS
+40,14,5,18,5,Replay tech.,5,SLOMO
+41,0,6,5,6,United,6,ALLIED
+42,8,6,13,6,Volunteer,6,ENLIST
+44,15,6,21,6,Gift for a budding myrmecologist,7,ANTFARM
+48,0,7,11,7,Peal?,12,SOUNDASABELL
+51,13,7,16,7,Garments often seen at royal weddings,4,ALBS
+53,18,7,21,7,Stead,4,LIEU
+54,0,8,3,8,Secondhand,4,USED
+55,6,8,9,8,"""American Greed"" network",4,CNBC
+56,12,8,15,8,"""Jump"" duo ___ Kross",4,KRIS
+57,17,8,21,8,Finales,5,CODAS
+58,0,9,2,9,Disposable sock in a shoe store,3,PED
+59,4,9,7,9,Frame of mind,4,MOOD
+61,9,9,14,9,Abhor,6,DETEST
+64,16,9,21,9,Words stealthily mouthed to a friend while stuck in a boring conversation,6,SAVEME
+65,3,10,18,10,Photoshop?,16,PRETTYASAPICTURE
+68,0,11,5,11,Olympic snowboarding event,6,BIGAIR
+71,7,11,12,11,Family-style meal with simmering broth,6,HOTPOT
+72,14,11,17,11,Frolic,4,ROMP
+73,19,11,21,11,Intelligence org.,3,NSA
+76,0,12,4,12,Stinks,5,ODORS
+77,6,12,9,12,Actress Ward,4,SELA
+78,12,12,15,12,"Kristen of ""Barb and Star Go to Vista Del Mar""",4,WIIG
+80,18,12,21,12,Mama pigs,4,SOWS
+81,0,13,3,13,"Full house, in poker slang",4,BOAT
+82,5,13,8,13,Exquisitely made basket,4,DUNK
+83,10,13,21,13,Sting?,12,SMARTASAWHIP
+87,0,14,6,14,Olympic runner ___ Felix,7,ALLYSON
+89,8,14,13,14,Takes an oath,6,SWEARS
+91,16,14,21,14,"Role on ""Seinfeld""",6,ELAINE
+92,3,15,7,15,Onetime Turkish title,5,PASHA
+94,9,15,12,15,"""What's the ___?""",4,HARM
+95,14,15,21,15,Aggressively enterprising sort,8,GOGETTER
+97,0,16,11,16,Iron?,12,SMOOTHASSILK
+101,13,16,17,16,"2006 mockumentary with a 2020 ""Subsequent Moviefilm""",5,BORAT
+102,0,17,3,17,___ Alto,4,PALO
+103,5,17,9,17,Multiple-choice choice,5,OTHER
+104,12,17,15,17,Drudge,4,PEON
+105,17,17,21,17,It's-time connector,5,ABOUT
+110,0,18,6,18,Tickler's targets,7,ARMPITS
+112,8,18,21,18,Quenched?,14,PLEASEDASPUNCH
+116,0,19,5,19,Soaks in hot water,6,STEEPS
+117,8,19,16,19,"Wear white to a chili cook-off, you might say",9,TEMPTFATE
+118,18,19,21,19,Marathon segment,4,MILE
+119,0,20,4,20,Setting for ultra close-up photos,5,MACRO
+120,8,20,11,20,"For two, musically",4,ADUE
+121,13,20,16,20,Crockpot creation,4,STEW
+122,18,20,21,20,Collared shirt accessory,4,STAY
+1,0,0,0,3,"Table salt, to a chemist",4,NACL
+2,1,0,1,3,One of the Hearst magazines,4,ELLE
+3,2,0,2,3,International grp. headquartered in Vienna,4,OPEC
+4,3,0,3,3,Comedian Trevor,4,NOAH
+5,5,0,5,2,TV brand,3,RCA
+6,6,0,6,5,"""You're embarrassing me!""",6,OHSTOP
+7,7,0,7,5,Muscles targeted by curls,6,BICEPS
+8,8,0,8,4,Brings in,5,EARNS
+9,10,0,10,2,Muscles targeted by planks,3,ABS
+10,11,0,11,2,Large container,3,VAT
+11,12,0,12,6,Cry from someone who's disheveled,7,IMAMESS
+12,13,0,13,4,Esteem,5,VALUE
+13,17,0,17,2,"""___ qué?"" (""Why?,"" in Spanish)",3,POR
+14,18,0,18,10,"Passion project, perhaps",11,LABOROFLOVE
+15,19,0,19,4,Spanish city enclosed within intact medieval walls,5,AVILA
+16,20,0,20,4,"Food, air, water, etc.",5,NEEDS
+17,21,0,21,4,Tushies,5,ASSES
+20,9,1,9,3,Yiddish laments,3,OYS
+21,16,1,16,7,Teachers' teachings,7,LESSONS
+23,4,2,4,7,Took five,6,RESTED
+24,15,2,15,8,23andMe facilities,7,DNALABS
+28,14,3,14,5,Ending with clip or slip,3,ONS
+31,5,4,5,7,"""Today"" co-host Kotb",4,HODA
+32,10,4,10,7,Chutzpah,4,GALL
+33,11,4,11,7,Commuter option,4,RAIL
+34,17,4,17,6,Big Ben hrs.,3,GMT
+35,0,5,0,9,"Hosts, as at a penthouse",5,HASUP
+36,1,5,1,9,"""Can't win 'em all""",5,ILOSE
+37,2,5,2,9,"Affixed in a scrapbook, say",5,GLUED
+38,3,5,3,8,Posterior,4,HIND
+39,9,5,9,12,Evidence derived from personal experience and observation rather than systematic research and analysis,8,ANECDATA
+42,8,6,8,8,Recede,3,EBB
+43,13,6,13,10,Ankle bones,5,TARSI
+45,19,6,19,9,Help around the House,4,AIDE
+46,20,6,20,9,Paper purchase,4,REAM
+47,21,6,21,9,Think out loud,4,MUSE
+49,6,7,6,10,Subject of Queen Mary,4,SCOT
+50,7,7,7,13,Phrase that may be repeated in a long story,7,ANDTHEN
+52,14,7,14,13,"Course for an English major, informally",7,LITCRIT
+56,12,8,12,15,Stayed toasty,8,KEPTWARM
+57,17,8,17,11,Kvetch,4,CARP
+59,4,9,4,12,"Scans that may involve dye injections, in brief",4,MRIS
+60,5,9,5,11,Anthem contraction,3,OER
+62,10,9,10,11,"Pseudoscientific ability, for short",3,ESP
+63,11,9,11,11,"Terence who's known as the ""Mozart of Mathematics""",3,TAO
+64,16,9,16,11,Total,3,SUM
+65,3,10,3,20,One who's no fun at all,11,PARTYPOOPER
+66,8,10,8,14,Breakfast centers?,5,YOLKS
+67,15,10,15,13,Ancient Roman formal wear,4,TOGA
+68,0,11,0,14,Tea served with a jumbo straw,4,BOBA
+69,1,11,1,14,"Golden calf, for one",4,IDOL
+70,2,11,2,14,Hockey score,4,GOAL
+73,19,11,19,15,Pitch-perfect?,5,NOHIT
+74,20,11,20,15,Pigs,5,SWINE
+75,21,11,21,15,"""___ my last email …""",5,ASPER
+77,6,12,6,18,Shade providers,7,SUNHATS
+79,13,12,13,14,"""Where's My Refund?"" org.",3,IRS
+80,18,12,18,15,Whack,4,SWAT
+82,5,13,5,19,"Down B-52s, say",7,DOSHOTS
+83,10,13,10,16,Close tightly,4,SEAL
+84,11,13,11,16,Signifying symbol,4,MARK
+85,16,13,16,16,Company that created a Sonic boom?,4,SEGA
+86,17,13,17,18,Handle at the bar,6,ALETAP
+88,4,14,4,16,Succeeded at musical chairs,3,SAT
+90,9,14,9,20,Imagine ___ Peace (Ben & Jerry's flavor),7,WHIRLED
+93,7,15,7,17,Campfire remnant,3,ASH
+95,14,15,14,20,Skilled in,6,GOODAT
+96,15,15,15,20,Elaborately decorated,6,ORNATE
+97,0,16,0,20,Muscle contraction,5,SPASM
+98,1,16,1,20,"Kauffman who co-created ""Friends""",5,MARTA
+99,2,16,2,20,Ancient Mesoamerican civilization,5,OLMEC
+100,8,16,8,20,Places for some piercings,5,SEPTA
+101,13,16,13,20,Objections,5,BEEFS
+104,12,17,12,19,Winter setting in S.F.,3,PST
+106,18,17,18,20,Tushies,4,BUMS
+107,19,17,19,20,"""Dealing with that right now!""",4,ONIT
+108,20,17,20,20,Campus with the ZIP code 90095,4,UCLA
+109,21,17,21,20,Place to swim or play b-ball,4,THEY
+111,4,18,4,20,"Stock launch, in brief",3,IPO
+113,10,18,10,20,Image on Australia's coat of arms,3,EMU
+114,11,18,11,20,"Donkey Kong, for one",3,APE
+115,16,18,16,20,"Make final, with ""up""",3,SEW

@@ -1,0 +1,11 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,4,0,"What ""rizz,"" Oxford's 2023 Word of the Year, means",5,CHARM
+6,0,1,4,1,Vowel group,5,AEIOU
+7,0,2,4,2,"Kings, queens and jokers",5,CARDS
+8,0,3,4,3,Providers of oxygen to earth's atmosphere,5,TREES
+9,0,4,2,4,"""___ all good""",3,ITS
+1,0,0,0,4,Desert flora,5,CACTI
+2,1,0,1,4,"Tin Man's wish in ""The Wizard of Oz""",5,HEART
+3,2,0,2,4,"Buenos ___, Argentina",5,AIRES
+4,3,0,3,3,"Went on, as a roller coaster",4,RODE
+5,4,0,4,3,"Tousle, as hair",4,MUSS

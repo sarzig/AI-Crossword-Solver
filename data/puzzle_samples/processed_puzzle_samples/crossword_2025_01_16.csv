@@ -1,0 +1,70 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,2,0,"Gaming ___ (console alternatives, for short)",3,PCS
+4,4,0,7,0,Command to a skydiver,4,JUMP
+8,9,0,13,0,Make a quick appearance,5,POPIN
+13,0,1,2,1,Bad sound to hear while bending over,3,RIP
+14,4,1,7,1,"Taylor-Joy of ""The Queen's Gambit""",4,ANYA
+15,9,1,13,1,Have a loan from,5,OWETO
+16,0,2,2,2,"Unfriendly, as a relationship",3,ICY
+17,4,2,13,2,Brouhahas / Most appalling,10,MOBSCENEST
+19,0,3,3,3,Letters put in boxes,4,MAIL
+21,6,3,9,3,"First half of a two-volume encyclopedia on physics, aptly?",4,ATOM
+22,11,3,13,3,Org. for important adults in a child's life,3,PTA
+23,0,4,8,4,"""The Incredibles"" costumer / Science class display",9,EDNAMODEL
+26,10,4,13,4,Smallest bit,4,WHIT
+27,0,5,5,5,Roasts,6,RAGSON
+28,8,5,13,5,In,6,ATHOME
+30,3,6,7,6,Singer/songwriter ___ Reznor,5,TRENT
+33,9,6,13,6,Worked (up),5,RILED
+34,2,7,11,7,Lock up for the night / Despairs,10,CLOSESHOPE
+36,0,8,4,8,Woodwinds that are usually black,5,OBOES
+38,6,8,10,8,It's all wound up,5,SPOOL
+39,0,9,5,9,"Sent a reminder text, in lingo",6,PINGED
+41,8,9,13,9,Weird flexes?,6,SPASMS
+45,0,10,3,10,Cornhole action,4,TOSS
+46,5,10,13,10,Like some activities at a mountain lodge / Marketing fodder,9,APRESSKIT
+49,0,11,2,11,Affirmation not usually spoken at a Jewish wedding,3,IDO
+50,4,11,7,11,"""My man!""",4,BRUH
+51,10,11,13,11,"Grow a team, say",4,HIRE
+52,0,12,9,12,"Set of educational standards … or a hint to 17-, 23-, 34- and 46-Across",10,COMMONCORE
+56,11,12,13,12,"What follows T.S.A., weirdly",3,PRE
+57,0,13,4,13,Capital east of the Jordan River,5,AMMAN
+58,6,13,9,13,Like some fabrics,4,KNIT
+59,11,13,13,13,Early tech giant,3,AOL
+60,0,14,4,14,Not too sure,5,LEERY
+61,6,14,9,14,Genesis creator,4,SEGA
+62,11,14,13,14,"Like cabernet sauvignon wine, typically",3,DRY
+1,0,0,0,5,Part of a makeup routine,6,PRIMER
+2,1,0,1,5,Part of a summer swarm,6,CICADA
+3,2,0,2,5,Getting a sneak peek?,6,SPYING
+4,4,0,4,2,Sticky stuff,3,JAM
+5,5,0,5,2,Point value of any vowel in Spanish Scrabble,3,UNO
+6,6,0,6,4,"""That's on me""",5,MYBAD
+7,7,0,7,4,Wasabi or miso,5,PASTE
+8,9,0,9,3,Something a meter reader reads?,4,POEM
+9,10,0,10,2,"Take responsibility for, as a mistake",3,OWN
+10,11,0,11,7,Lookout point,8,PEEPHOLE
+11,12,0,12,6,"""Let's do this thing""",7,ITSTIME
+12,13,0,13,6,"Covered in marginalia, maybe",7,NOTATED
+18,8,2,8,5,Soft drink named for a nut,4,COLA
+20,3,3,3,10,Final race stretches … or what racers may be on by then,8,LASTLEGS
+24,4,4,4,9,Down in the dumps,6,MOROSE
+25,5,4,5,7,Infrequently counterfeited bills,4,ONES
+26,10,4,10,11,"""What just happened?"" reaction",8,WHIPLASH
+29,9,5,9,10,"North Korea has the fourth-highest number of these, after China, India and the U.S.",6,TROOPS
+31,6,6,6,8,"Original Super Mario console, in brief",3,NES
+32,7,6,7,8,Equivalent of 16 pinches: Abbr.,3,TSP
+34,2,7,2,14,Something to put stock in,8,CONSOMME
+35,8,7,8,10,Sprinkler attachment,4,HOSE
+36,0,8,0,14,Vision-related,7,OPTICAL
+37,1,8,1,14,Housing bubble?,7,BIODOME
+40,5,9,5,12,"""Phooey!""",4,DARN
+42,11,9,11,14,Button clicked to advance to a YouTube video,6,SKIPAD
+43,12,9,12,14,Aid in self-reflection,6,MIRROR
+44,13,9,13,14,Unflinching,6,STEELY
+47,6,10,6,14,Goal seekers?,5,PUCKS
+48,7,10,7,14,River through Lyon,5,RHONE
+50,4,11,4,14,What a good fillet of fish isn't,4,BONY
+53,3,12,3,14,"Word that becomes its own synonym if you add a ""k"" to the end",3,MAR
+54,8,12,8,14,Fix the wrong way?,3,RIG
+55,9,12,9,14,H,3,ETA

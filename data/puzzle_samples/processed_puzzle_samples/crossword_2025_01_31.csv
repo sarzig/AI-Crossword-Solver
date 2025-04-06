@@ -1,0 +1,69 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,2,0,Many job fair attendees: Abbr.,3,SRS
+4,5,0,14,0,"""We're done, folks!""",10,THATSAWRAP
+14,0,1,3,1,Draws from,4,TAPS
+16,5,1,14,1,One with sound judgment?,10,AUDIOPHILE
+17,0,2,3,2,God for whom Wednesday is named,4,ODIN
+18,5,2,14,2,Capsules that can track health info,10,SMARTPILLS
+19,0,3,3,3,"Number of countries whose names both start and end with ""A""",4,NINE
+20,5,3,14,3,"""Truth is …""",10,TOBEHONEST
+21,0,4,6,4,Alpine crooner,7,YODELER
+23,9,4,11,4,"""Ich bin ___ Berliner""",3,EIN
+24,1,5,5,5,Went out for a bit,5,DOZED
+25,7,5,14,5,Animal resting place,8,BARNYARD
+30,0,6,4,6,Like a basketball court's three-point line,5,ARCED
+31,6,6,10,6,Short-distance driver,5,VALET
+32,12,6,14,6,Scolding word,3,BAD
+33,0,7,3,7,"Tells on, with ""out""",4,RATS
+34,6,7,8,7,Useful acquaintances,3,INS
+35,11,7,14,7,Big acronym in purifying filters,4,HEPA
+36,0,8,2,8,"""Yo te ___""",3,AMO
+37,4,8,8,8,"Hinduism's ""king of fruits""",5,MANGO
+39,10,8,14,8,Permit to pass,5,LETBY
+40,0,9,7,9,"Pool and darts, often",8,BARGAMES
+42,9,9,13,9,"Cruz known as the ""Queen of Salsa""",5,CELIA
+43,3,10,5,10,"Emmy-winning actress Edebiri of ""The Bear""",3,AYO
+44,8,10,14,10,1940s Chinese revolutionaries,7,MAOISTS
+46,0,11,9,11,He's taken!,10,MARRIEDMAN
+51,11,11,14,11,Way,4,PATH
+52,0,12,9,12,"""Seems fishy to me""",10,IDONTBUYIT
+53,11,12,14,12,Qualified,4,ABLE
+54,0,13,9,13,Focus group?,10,CAMERACREW
+55,11,13,14,13,A buck or two,4,DEER
+56,0,14,9,14,Listless look,10,EMPTYSTARE
+57,12,14,14,14,"Wanders around a terminal, for short?",3,TSA
+1,0,0,0,4,Insensitive to human feeling,5,STONY
+2,1,0,1,9,Air play?,10,RADIODRAMA
+3,2,0,2,9,"Public relations pro, informally",10,SPINDOCTOR
+4,5,0,5,5,Tried a bit of,6,TASTED
+5,6,0,6,4,"""The most engaging cowardice,"" per Robert Frost",5,HUMOR
+6,7,0,7,3,Not much hair cream,4,ADAB
+7,8,0,8,3,It goes bald over time,4,TIRE
+8,9,0,9,6,"""Deal with it!""",7,SOTHERE
+9,10,0,10,6,Select,7,APPOINT
+10,11,0,11,5,Stable call,6,WHINNY
+11,12,0,12,3,"Rankle, with ""up""",4,RILE
+12,13,0,13,3,Tell-___ (exposing accounts),4,ALLS
+13,14,0,14,3,"Persistent interrupter, say",4,PEST
+15,3,1,3,7,Some causes for blessings,7,SNEEZES
+22,4,4,4,6,Was second to none,3,LED
+25,7,5,7,9,"Hairstyle for Violet in ""Peanuts""",5,BANGS
+26,8,5,8,8,It's followed by an extra point,4,ALSO
+27,12,5,12,14,"""You lost! Pay up!""",10,ABETISABET
+28,13,5,13,14,Wars of words?,10,RAPBATTLES
+29,14,5,14,8,Time for action,4,DDAY
+30,0,6,0,9,"Palestinian, e.g.",4,ARAB
+31,6,6,6,9,"Bougainvillea, for one",4,VINE
+35,11,7,11,13,Feature of many hospital roofs,7,HELIPAD
+37,4,8,4,14,Request following some failed attempts,7,MAYITRY
+38,5,8,5,14,Tiny shape-shifters,7,AMOEBAS
+39,10,8,10,10,"Passionate, domineering sort, it's said",3,LEO
+41,3,9,3,14,Deep red,6,GARNET
+42,9,9,9,14,"""What's stopping us?""",6,CANTWE
+44,8,10,8,14,"Hermann ___, champion skier known as ""The Herminator""",5,MAIER
+45,14,10,14,14,Princess twin of He-Man,5,SHERA
+46,0,11,0,14,Cat's scan?,4,MICE
+47,1,11,1,14,"Actor DeVine of ""Pitch Perfect""",4,ADAM
+48,2,11,2,14,Easy win,4,ROMP
+49,6,11,6,14,One might be full of tears,4,DUCT
+50,7,11,7,14,Woman's name that becomes another woman's name if you interchange its second and fourth letters,4,MYRA

@@ -1,0 +1,141 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,3,0,Department store department,4,MENS
+5,5,0,8,0,Tater,4,SPUD
+9,10,0,14,0,Indian state along the Himalayas,5,ASSAM
+14,17,0,20,0,Largest organ in the human body,4,SKIN
+18,0,1,3,1,"""None for me""",4,IMOK
+19,5,1,8,1,Big name in syrup,4,KARO
+20,10,1,14,1,"Dessert you might top with gummy bears and chocolate chips, informally",5,FROYO
+21,16,1,20,1,Practical,5,UTILE
+22,0,2,14,2,Hard / work,15,DIVISIONOFLABOR
+25,16,2,20,2,Place for a bob and weave,5,SALON
+26,0,3,6,3,Measured,7,GRADUAL
+27,8,3,10,3,Sky safety org.,3,FAA
+28,14,3,20,3,"Starting point, of sorts",7,PREMISE
+30,0,4,2,4,Key above a tilde,3,ESC
+31,4,4,20,4,New York × paper,17,PRODUCTOFTHETIMES
+36,2,5,5,5,"James who wrote the screenplay for ""The Night of the Hunter"" (1955)",4,AGEE
+38,7,5,9,5,Language suffix,3,ESE
+39,11,5,13,5,"One answering to a board, for short",3,CEO
+40,15,5,18,5,"""Strega ___"" (classic children's folk tale)",4,NONA
+41,0,6,3,6,"""That's just … wrong""",4,UMNO
+43,5,6,7,6,"Arjuna's skill, in the ""Mahabharata""",3,AIM
+45,10,6,15,6,"Come to rest, as sediment",6,SETTLE
+47,17,6,19,6,Creature whose narrow waist is called a petiole,3,ANT
+49,0,7,4,7,Encyclopedia filler,5,FACTS
+51,6,7,14,7,√generate,9,ROOTCAUSE
+54,18,7,20,7,Food that becomes its own container if you change the last letter,3,JAM
+56,0,8,6,8,"Brush wolves, by another name",7,COYOTES
+58,8,8,12,8,"Fixes a hole, say",5,DARNS
+59,14,8,20,8,Post-spring cleaning event,7,TAGSALE
+63,3,9,5,9,Essential ___,3,OIL
+64,7,9,10,9,Heap,4,PILE
+65,13,9,20,9,Nashville neighborhood known for its many recording studios,8,MUSICROW
+66,1,10,19,10,It's what ﹣ you think,19,DIFFERENCEOFOPINION
+71,0,11,7,11,"Theatrical release, typically",8,FINALCUT
+72,10,11,13,11,Many humanitarian grps.,4,NGOS
+73,15,11,17,11,___ Khan,3,AGA
+74,0,12,6,12,Turkish travel stops,7,IMARETS
+75,8,12,12,12,"""Gimme an A …!,"" e.g.",5,CHEER
+77,14,12,20,12,Like the presidency of Martin Van Buren,7,ONETERM
+81,0,13,2,13,"Back, informally",3,REP
+82,6,13,14,13,(Pixar movie)2,9,SQUAREDUP
+85,16,13,20,13,Puts on the line,5,RISKS
+86,1,14,3,14,Egg ___,3,SAC
+88,5,14,10,14,Pickleball venues,6,COURTS
+89,13,14,15,14,Certain sib,3,SIS
+91,17,14,20,14,Dove calls,4,COOS
+92,2,15,5,15,Something tied with a tongue?,4,SHOE
+94,7,15,9,15,"""___  got it!""",3,IVE
+95,11,15,13,15,Studio with an iconic lion,3,MGM
+97,15,15,18,15,"Pressure, so to speak",4,HEAT
+99,0,16,16,16,∫ workout routine,17,INTEGRATEDCIRCUIT
+104,18,16,20,16,"Name that drops ""-jah""",3,ELI
+107,0,17,6,17,Burrowing rodent,7,MOLERAT
+108,10,17,12,17,"That, in Spanish",3,ESO
+109,14,17,20,17,Like some parking and poetry,7,METERED
+111,0,18,4,18,Come up,5,ARISE
+112,6,18,20,18,Rocket science + brain surgery,15,ADDEDCOMPLEXITY
+117,0,19,4,19,Social workspaces for some remote workers,5,CAFES
+118,6,19,10,19,Boondi ___ (yogurt dish with fried chickpea flour),5,RAITA
+119,12,19,15,19,Strove,4,VIED
+120,17,19,20,19,Subj. for a bio major,4,ECOL
+121,0,20,3,20,Winter haven for some small mammals,4,SHED
+122,6,20,10,20,Word with peace or beauty,5,INNER
+123,12,20,15,20,Gridiron positions,4,ENDS
+124,17,20,20,20,Throws out,4,CANS
+1,0,0,0,4,Small fly,5,MIDGE
+2,1,0,1,4,Leaders in Qatar,5,EMIRS
+3,2,0,2,8,Bad sign for a weary traveler,9,NOVACANCY
+4,3,0,3,3,"Fishtail, say",4,SKID
+5,5,0,5,6,"Aspen, for one",7,SKIAREA
+6,6,0,6,4,Hugo-winning sci-fi author Bacigalupi,5,PAOLO
+7,7,0,7,2,Coffee container,3,URN
+8,8,0,8,5,Ding-dong,6,DOOFUS
+9,10,0,10,4,Note in the F minor scale,5,AFLAT
+10,11,0,11,2,Spanish title: Abbr.,3,SRA
+11,12,0,12,2,Break down,3,SOB
+12,13,0,13,2,"Actress Edebiri of ""The Bear""",3,AYO
+13,14,0,14,4,Transmogrify,5,MORPH
+14,17,0,17,6,Staying power,7,STAMINA
+15,18,0,18,10,"It's been called ""the roof of Africa""",11,KILIMANJARO
+16,19,0,19,4,Words of defeat,5,ILOSE
+17,20,0,20,4,Spanish babies,5,NENES
+21,16,1,16,5,Be of ___ (assist),5,USETO
+23,4,2,4,5,"Building manager, familiarly",4,SUPE
+24,9,2,9,5,Confront,4,FACE
+29,15,3,15,6,Philosopher Descartes,4,RENE
+32,7,4,7,7,"Females 35-44, e.g.",4,DEMO
+33,11,4,11,8,"English translation of the Irish ""aigéan""",5,OCEAN
+34,12,4,12,8,Post-embryo stage,5,FETUS
+35,13,4,13,7,Onesie wearers,4,TOTS
+37,3,5,3,12,Cross the line,8,GOTOOFAR
+41,0,6,0,8,Mixed martial arts org.,3,UFC
+42,1,6,1,8,Iconic Warhol subject,3,MAO
+44,6,6,6,8,"Letters before "".gov""",3,IRS
+45,10,6,10,14,Advance film copies sent to critics,9,SCREENERS
+46,14,6,14,10,Relent,5,LETUP
+48,19,6,19,10,"Nature's fishhook, you might say",5,TALON
+50,4,7,4,12,Tamp down,6,STIFLE
+52,8,7,8,10,"Sleipnir's rider, in myth",4,ODIN
+53,9,7,9,10,Soft rock,4,TALC
+55,20,7,20,9,Pokémon with a catlike appearance,3,MEW
+57,5,8,5,12,Put in power,5,ELECT
+60,15,8,15,12,Like about 60% of the world's population,5,ASIAN
+61,16,8,16,13,"One of the ""holy trinity"" ingredients in Indian cuisine",6,GINGER
+62,17,8,17,15,Real pain in the butt?,8,SCIATICA
+64,7,9,7,11,Sitter's charge,3,PET
+65,13,9,13,11,"Personal approaches, in brief",3,MOS
+66,1,10,1,14,Coins made primarily of copper,5,DIMES
+67,2,10,2,20,"""When I was much younger …""",11,INAPASTLIFE
+68,6,10,6,14,___-Japanese War,5,RUSSO
+69,11,10,11,13,S-shaped molding in architecture,4,OGEE
+70,12,10,12,13,"Cross, as a stream",4,FORD
+71,0,11,0,13,Evergreen variety,3,FIR
+75,8,12,8,16,Bend,5,CURVE
+76,9,12,9,16,"Gave zero stars, say",5,HATED
+77,14,12,14,14,Nail polish brand,3,OPI
+78,18,12,18,20,What few people know,9,ESOTERICA
+79,19,12,19,14,Old-time film studio,3,RKO
+80,20,12,20,14,Things eds. edit,3,MSS
+83,7,13,7,16,Bail,4,QUIT
+84,13,13,13,16,"""Semper Fi"" grp.",4,USMC
+87,3,14,3,20,Ticked (off),7,CHEESED
+88,5,14,5,17,"Michael of ""Barbie""",4,CERA
+90,15,14,15,20,Some equipment in hand-to-hand combat,7,SHIELDS
+93,4,15,4,19,Mean-spirited sorts,5,OGRES
+95,11,15,11,18,This and that: Abbr.,4,MISC
+96,12,15,12,20,Record feature,6,GROOVE
+98,16,15,16,18,Suffix with kitchen,4,ETTE
+99,0,16,0,20,Big Apple purchases,5,IMACS
+100,1,16,1,20,"""Visions"" singer/songwriter Jones",5,NORAH
+101,6,16,6,20,Company whose logo is said to resemble Mount Fuji,5,ATARI
+102,10,16,10,20,Evergreen variety,5,CEDAR
+103,14,16,14,20,"Cried foul, perhaps?",5,UMPED
+105,19,16,19,20,Subtly indicate,5,LETON
+106,20,16,20,20,Pastoral poems,5,IDYLS
+110,17,17,17,20,Suit,4,EXEC
+113,7,18,7,20,Fashion designer Dapper ___,3,DAN
+114,8,18,8,20,Loud noise,3,DIN
+115,9,18,9,20,Season of 2024's Jeux Olympiques,3,ETE
+116,13,18,13,20,"""Pachinko"" author ___ Jin Lee",3,MIN

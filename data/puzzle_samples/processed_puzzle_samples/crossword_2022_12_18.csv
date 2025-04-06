@@ -1,0 +1,123 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,6,0,"""I'm in heaven!""",7,AHBLISS
+8,10,0,14,0,Word of gratitude overseas,5,MERCI
+13,16,0,20,0,Optimists keep them high,5,HOPES
+18,0,1,6,1,Bunk,7,BALONEY
+19,9,1,20,1,One might crawl out of the woodwork,12,CARPENTERANT
+21,0,2,6,2,Goofed (around),7,CLOWNED
+22,8,2,20,2,"""I'm in heaven!""",13,THISISTHELIFE
+23,0,3,5,3,"Entered a school zone, say",6,SLOWED
+24,7,3,11,3,What used to be yours?,5,THINE
+25,13,3,20,3,"Got a newer smartphone, maybe",8,TRADEDUP
+26,1,4,4,4,Persian polymath Khayyám,4,OMAR
+27,6,4,10,4,Quibbles,5,CARPS
+28,12,4,14,4,"Many a consulting hire, for short",3,MBA
+29,16,4,20,4,They may be locked and loaded,5,SAFES
+30,0,5,3,5,"Loretta who played ""Hot Lips"" Houlihan on ""M*A*S*H""",4,SWIT
+31,5,5,9,5,"All-woman rock band with the 1982 hit ""Vacation""",5,GOGOS
+32,11,5,15,5,Bit of deception,5,FEINT
+34,17,5,20,5,"Scrubbed, as a rocket launch",4,NOGO
+35,0,6,8,6,Go through,9,PENETRATE
+37,10,6,16,6,Moves to attack,7,COMESAT
+39,18,6,20,6,"___ Carter, most-recorded jazz bassist in history",3,RON
+40,0,7,7,7,Exercise typically done lying down,8,LEGRAISE
+41,9,7,17,7,"Largest U.S. state capital by population, on a postmark",9,PHOENIXAZ
+43,0,8,2,8,"When doubled, a classic Mardi Gras tune",3,IKO
+44,4,8,12,8,Annual honors celebrating African American achievement,9,BETAWARDS
+46,14,8,18,8,Likely Cotton Bowl attendee,5,TEXAN
+48,0,9,3,9,Place in math class,4,TENS
+50,5,9,13,9,Many equal rights champions,9,FEMINISTS
+52,15,9,19,9,"Pros and cons, e.g.",5,SIDES
+54,0,10,4,10,Peevish displays,5,SNITS
+56,6,10,14,10,Welcome sights on road trips,9,RESTSTOPS
+58,16,10,20,10,"""Boxcars""",5,SIXES
+60,1,11,5,11,Style of column at Berlin's Brandenburg Gate,5,DORIC
+62,7,11,15,11,2017 chart-topping hit whose YouTube video was the first to reach 3 billion views,9,DESPACITO
+64,17,11,20,11,"Mark in art, in a way",4,ETCH
+65,2,12,6,12,Playground game cry,5,NOTIT
+67,8,12,16,12,Joke that goes over the line?,9,CRANKCALL
+69,18,12,20,12,Turf ___ (football injury),3,TOE
+70,3,13,11,13,Caused to kvell,9,MADEPROUD
+72,13,13,20,13,"""This really needs to stop!""",8,IMSODONE
+74,0,14,2,14,Piece of fudge?,3,FIB
+77,4,14,10,14,Reveal the juiciest details,7,TELLALL
+78,12,14,20,14,Squatting motions,9,KNEEBENDS
+79,0,15,3,15,Muslim leader,4,IMAM
+81,5,15,9,15,Volleyball star-turned-model Gabrielle,5,REECE
+82,11,15,15,15,Close up on the screen?,5,GLENN
+83,17,15,20,15,Scotland's ___ Lomond,4,LOCH
+84,0,16,4,16,Charged,5,RANAT
+86,6,16,8,16,Neighbor of India: Abbr.,3,PAK
+87,10,16,14,16,"Having a sailor's mouth, so to speak",5,CRASS
+88,16,16,19,16,Group once led by Darth Sidious,4,SITH
+89,0,17,7,17,"Paintings such as ""View of Toledo""",8,ELGRECOS
+91,9,17,13,17,Given name of Caligula and Augustus,5,GAIUS
+92,15,17,20,17,Harshly criticize,6,LASHAT
+94,0,18,12,18,Joint accounts?,13,POLICEREPORTS
+96,14,18,20,18,"Québécois dish of French fries, cheese curds and gravy",7,POUTINE
+97,0,19,11,19,Some limited-time offers,12,ONESHOTDEALS
+98,14,19,20,19,Rhythmic pattern,7,CADENCE
+99,0,20,4,20,Peevish,5,TESTY
+100,6,20,10,20,"""Somewhat""",5,SORTA
+101,14,20,20,20,Wee bit,7,SMIDGEN
+1,0,0,0,3,Fundamentals,4,ABCS
+2,1,0,1,11,Portmanteau for an extended autumn celebration,12,HALLOWEEKEND
+3,2,0,2,12,Fried appetizer that resembles a blossom,13,BLOOMINGONION
+4,3,0,3,7,Ebb tide feature,8,LOWWATER
+5,4,0,4,4,___ child,5,INNER
+6,5,0,5,3,Number in a tournament,4,SEED
+7,6,0,6,2,Pink Floyd co-founder Barrett,3,SYD
+8,10,0,10,4,Primary pipes,5,MAINS
+9,11,0,11,3,Hebrides tongue,4,ERSE
+10,12,0,12,2,"Engineering sch. in Troy, N.Y.",3,RPI
+11,13,0,13,7,"""That's fine,"" in French",8,CESTBIEN
+12,14,0,14,8,Making its way there,9,INTRANSIT
+13,16,0,16,4,Doesn't ignore,5,HEEDS
+14,17,0,17,5,"Author Susan played by Meryl Streep in 2002's ""Adaptation""",6,ORLEAN
+15,18,0,18,6,"Covered, in a way",7,PAIDFOR
+16,19,0,19,6,"Really hot, slangily",7,ENFUEGO
+17,20,0,20,6,"Squooshes, maybe",7,STEPSON
+19,9,1,9,5,Bad things to find in a tea set,5,CHIPS
+20,15,1,15,3,"Lil Wayne's ""___ Carter V""",3,THA
+22,8,2,8,6,Sudden pang,5,THROE
+24,7,3,7,11,Worked on in tandem,9,TAGTEAMED
+27,6,4,6,10,"Amusement park ride, informally",7,COASTER
+28,12,4,12,12,Sort of investment purchase with a spike in popularity through social media,9,MEMESTOCK
+30,0,5,0,10,Skedaddles,6,SPLITS
+31,5,5,5,9,"""Oh, good ___!""",5,GRIEF
+32,11,5,11,13,One might offer concessions,9,FOODSTAND
+33,15,5,15,9,Early springtime woe,5,TAXES
+36,4,6,4,8,Neighbor of the Q key,3,TAB
+37,10,6,10,14,"Basketball legend nicknamed the ""Point God""",9,CHRISPAUL
+38,16,6,16,10,Their business is picking up,5,TAXIS
+41,9,7,9,15,Term for a male opera character played by a woman,9,PANTSROLE
+42,17,7,17,11,"""White Teeth"" novelist Smith",5,ZADIE
+45,8,8,8,16,Witticism,9,WISECRACK
+47,18,8,18,20,Very little,13,NEXTTONOTHING
+49,3,9,3,13,River: Ger.,5,STROM
+51,13,9,13,17,Thai cuisine quality,9,SPICINESS
+53,19,9,19,20,Opportunity to make things right,12,SECONDCHANCE
+55,4,10,4,14,"Occupy, as a booth",5,SITAT
+57,14,10,14,16,Landing sites for bees,7,STAMENS
+59,20,10,20,15,"""Good Lord!""",6,SHEESH
+61,5,11,5,15,Apple product,5,CIDER
+63,15,11,15,15,"Elizabeth who starred in Marvel's ""WandaVision""",5,OLSEN
+66,6,12,6,20,Gets there in no time?,9,TELEPORTS
+68,16,12,16,14,Defensive badminton shot,3,LOB
+71,7,13,7,20,"""Go right ahead!""",8,PLEASEDO
+73,17,13,17,20,Removed from an exchange,8,DELISTED
+74,0,14,0,20,Earthenware container for transporting heat,7,FIREPOT
+75,1,14,1,20,"""No one's here but me""",7,IMALONE
+76,2,14,2,20,Ornamental bracelets,7,BANGLES
+78,12,14,12,18,2019 animated Christmas film nominated for an Academy Award,5,KLAUS
+80,3,15,3,20,New York college known for its polls,6,MARIST
+82,11,15,11,19,Southern breakfast bowlful,5,GRITS
+85,4,16,4,20,"Into gadgets, say",5,TECHY
+87,10,16,10,20,Soul singer Thomas,5,CARLA
+88,16,16,16,20,Mecca resident,5,SAUDI
+90,5,17,5,19,Boardroom V.I.P.,3,CEO
+91,9,17,9,20,Parent of kids,4,GOAT
+92,15,17,15,20,"Mix of sand, silt and clay",4,LOAM
+93,20,17,20,20,Many a TikTok user,4,TEEN
+95,8,18,8,20,"""___ my last email …""",3,PER
+96,14,18,14,20,IT department inventory,3,PCS

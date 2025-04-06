@@ -1,0 +1,11 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,4,0,Button whose icon is a triangle above a rectangle,5,EJECT
+6,0,1,4,1,"Only primate species that can have blue eyes, aside from human",5,LEMUR
+7,0,2,4,2,"""Of course,"" in Spanish",5,CLARO
+8,0,3,4,3,Star-studded group,5,ALIST
+9,0,4,3,4,Classic fixture outside a barbershop,4,POLE
+1,0,0,0,4,"Famous Yosemite landmark, familiarly",5,ELCAP
+2,1,0,1,4,What jiggles after it's set,5,JELLO
+3,2,0,2,4,"One might end with ""Best,""",5,EMAIL
+4,3,0,3,4,"""$%@!,"" e.g.",5,CURSE
+5,4,0,4,3,Jogging gait,4,TROT

@@ -1,0 +1,69 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,7,0,Experience that'll change one's mind,8,ACIDTRIP
+9,10,0,14,0,"___ Fierce, onetime Beyoncé persona",5,SASHA
+14,0,1,8,1,Broad views,9,PANORAMAS
+16,10,1,14,1,Up to,5,UNTIL
+17,0,2,8,2,Dessert often flavored with cinnamon and vanilla,9,APPLETART
+18,10,2,14,2,[Back away from my doghouse!],5,SNARL
+19,0,3,4,3,Give in under pressure,5,CRACK
+20,6,3,9,3,Beef,4,FEUD
+22,11,3,14,3,Old oath,4,EGAD
+23,0,4,3,4,Engage,4,HIRE
+24,5,4,10,4,Wild West outlaw,6,BANDIT
+26,12,4,14,4,What might check your id?,3,EGO
+27,0,5,2,5,Setting for the Times Square ball drop: Abbr.,3,EST
+28,4,5,14,5,"Sojourner Truth speech in which she said ""You need not be afraid to give us our rights""",11,AINTIAWOMAN
+30,3,6,5,6,"Lee who directed ""Sense and Sensibility""",3,ANG
+31,7,6,14,6,"E to F, for example",8,SEMITONE
+32,1,7,6,7,Part of some beauty treatments and the lunar cycle,6,WAXING
+35,8,7,13,7,Napa neighbor,6,SONOMA
+36,0,8,7,8,Brief getaway for newlyweds,8,MINIMOON
+38,9,8,11,8,Word between two names,3,NEE
+39,0,9,10,9,Grab bag contents,11,ODDSANDENDS
+41,12,9,14,9,Deg. held by Shaquille O'Neal and Melinda Gates,3,MBA
+44,0,10,2,10,Amp (up),3,REV
+45,4,10,9,10,Tools for certain appraisers,6,LOUPES
+46,11,10,14,10,"Where ""sabaidee"" means ""hello""",4,LAOS
+47,0,11,3,11,They're heard in a herd,4,MOOS
+49,5,11,8,11,Solo,4,STAG
+50,10,11,14,11,Pseudoscientific bodily emanations,5,AURAS
+51,0,12,4,12,Morphine source,5,OPIUM
+53,6,12,14,12,Figure in history or math?,9,CLASSMATE
+55,0,13,4,13,"""Passing"" author Larsen",5,NELLA
+56,6,13,14,13,Attacks in the press,9,HITPIECES
+57,0,14,4,14,Sinuous,5,SNAKY
+58,7,14,14,14,Five-limbed marine creatures,8,SEASTARS
+1,0,0,0,5,"Cochise, for one",6,APACHE
+2,1,0,1,5,Calf-length pants,6,CAPRIS
+3,2,0,2,5,To an extent,6,INPART
+4,3,0,3,4,"Sweetly, in music",5,DOLCE
+5,4,0,4,3,Footslog,4,TREK
+6,5,0,5,2,First sign in the Chinese zodiac,3,RAT
+7,6,0,6,5,"""Love your work!""",6,IMAFAN
+8,7,0,7,6,Typical Little League coaches,7,PARENTS
+9,10,0,10,2,"Dubious, in modern lingo",3,SUS
+10,11,0,11,3,"""___ of Avonlea,"" literary sequel of 1909",4,ANNE
+11,12,0,12,7,"Many a child actor's ""manager""",8,STAGEMOM
+12,13,0,13,7,Main script of written Japanese,8,HIRAGANA
+13,14,0,14,6,Finish line?,7,ALLDONE
+15,8,1,8,7,Collegiate focus,7,STUDIES
+21,9,3,9,10,"Play areas that, despite their name, are actually squares",8,DIAMONDS
+24,5,4,5,11,Things to avoid at all costs,8,BIGNONOS
+25,10,4,10,9,Coils,6,TWINES
+28,4,5,4,10,"""Till one has loved an ___ a part of one's soul remains unawakened"": Anatole France",6,ANIMAL
+29,11,5,11,8,___-Missouria Tribe,4,OTOE
+30,3,6,3,9,Center of a revolution,4,AXIS
+32,1,7,1,14,Unguarded on the field,8,WIDEOPEN
+33,2,7,2,14,"""Ta-da!""",8,ANDVOILA
+34,6,7,6,13,Share the bill,7,GODUTCH
+36,0,8,0,14,Group that practices baptism for the dead,7,MORMONS
+37,7,8,7,14,Many Everest climbers,7,NEPALIS
+40,8,9,8,14,Render pointless,6,NEGATE
+41,12,9,12,14,Instrument that might contain dried beans,6,MARACA
+42,13,9,13,14,Flat-topped straw hat,6,BOATER
+43,14,9,14,14,Look at critically,6,ASSESS
+46,11,10,11,14,"""12 Angry Men"" director",5,LUMET
+48,3,11,3,14,Grump,4,SULK
+50,10,11,10,14,How a home might be sold in a seller's market,4,ASIS
+52,4,12,4,14,___ Day (European festival),3,MAY
+54,9,12,9,14,Business with lockers for storing valuables,3,SPA

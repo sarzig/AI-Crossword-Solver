@@ -1,0 +1,75 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,2,0,"Org. of the main characters in ""The Americans""",3,KGB
+4,4,0,7,0,What might rain down on opposing players,4,BOOS
+8,9,0,14,0,"Words before ""Obi-Wan Kenobi. You're my only hope""",6,HELPME
+14,0,1,2,1,Drum location,3,EAR
+15,4,1,7,1,___-Seltzer,4,ALKA
+16,9,1,14,1,Gamer's likeness,6,AVATAR
+17,0,2,2,2,It follows ka in the Spanish alphabet,3,ELE
+18,4,2,7,2,500 sheets of paper,4,REAM
+19,9,2,14,2,Barbershop stock,6,RAZORS
+20,0,3,11,3,"Jay Gatsby, to Nick Carraway?",12,PLAYBOYBUDDY
+23,0,4,4,4,Puffs,5,TOKES
+24,6,4,10,4,Move slightly,5,BUDGE
+25,12,4,14,4,Many '90s music purchases,3,CDS
+28,0,5,3,5,Chooses,4,OPTS
+29,5,5,8,5,Company that once sold the Magic 8 Ball,4,TYCO
+30,11,5,14,5,Kipling or Keats,4,POET
+31,2,6,14,6,Mare/hare pair?,13,HORSEANDBUNNY
+35,0,7,5,7,Spain and Portugal,6,IBERIA
+37,9,7,14,7,Steakhouse order,6,RIBEYE
+38,0,8,12,8,Horse-drawn party vehicle?,13,DRINKINGBUGGY
+42,0,9,3,9,Cuckoo,4,LOCO
+43,6,9,9,9,"The ""A"" of U.A.E.",4,ARAB
+44,11,9,14,9,Morning TV host Kelly,4,RIPA
+47,0,10,2,10,Animal that sounds like you?,3,EWE
+48,4,10,8,10,"""___ intended!""",5,NOPUN
+50,10,10,14,10,Sneaky schemes,5,RUSES
+51,3,11,14,11,"Tennis format … or a description of some of the letters in 20-, 31- and 38-Across",12,MIXEDDOUBLES
+53,0,12,5,12,Noted name in suits,6,ARMANI
+56,7,12,10,12,Yaks,4,GABS
+57,12,12,14,12,"Feeling induced by a total eclipse, perhaps",3,AWE
+58,0,13,5,13,Grinned broadly,6,BEAMED
+59,7,13,10,13,"The ""grand slam"" of showbiz",4,EGOT
+60,12,13,14,13,Souvenir for a Final Four team,3,NET
+61,0,14,5,14,Box up,6,ENCASE
+62,7,14,10,14,Takes in,4,SEES
+63,12,14,14,14,___ Moines,3,DES
+1,0,0,0,5,Stick with,6,KEEPTO
+2,1,0,1,5,Racehorse's gait,6,GALLOP
+3,2,0,2,10,Get a party going,11,BREAKTHEICE
+4,4,0,4,4,Zingers,5,BARBS
+5,5,0,5,3,Butter alternative,4,OLEO
+6,6,0,6,6,"""Well, see ya!""",7,OKAYBYE
+7,7,0,7,6,Italian anise-flavored liqueur,7,SAMBUCA
+8,9,0,9,4,"Feature of golf and rugby, but not gymnastics or luge?",5,HARDG
+9,10,0,10,4,Dodge,5,EVADE
+10,11,0,11,3,Having little hustle,4,LAZY
+11,12,0,12,2,"Bankable vacation, for short",3,PTO
+12,13,0,13,2,Tarnish,3,MAR
+13,14,0,14,2,Hosp. areas,3,ERS
+21,3,3,3,9,"""Just tell me which it is!""",7,YESORNO
+22,8,3,8,6,Japanese noodle,4,UDON
+25,12,4,12,14,Locale of the Nathan's Hot Dog Eating Contest,11,CONEYISLAND
+26,13,4,13,7,Refute,4,DENY
+27,14,4,14,7,Eye irritation,4,STYE
+29,5,5,5,8,Former Taiwanese president ___ Ing-wen,4,TSAI
+30,11,5,11,11,Eats that pair well with beer,7,PUBGRUB
+32,4,6,4,8,"Former N.B.A. star Smits, the ""Dunking Dutchman""",3,RIK
+33,9,6,9,9,Wallop,4,DRUB
+34,10,6,10,8,1988 film for which Tom Hanks received his first Oscar nomination,3,BIG
+35,0,7,0,10,Not doing anything,4,IDLE
+36,1,7,1,10,Part of your body that might be furrowed or raised,4,BROW
+39,6,8,6,11,Back of the neck,4,NAPE
+40,7,8,7,14,They are sometimes held too long,7,GRUDGES
+41,8,8,8,14,Item in a first-aid kit,7,BANDAGE
+45,13,9,13,14,Humorous nickname for the largest player on your baseball team,6,PEEWEE
+46,14,9,14,14,Strengths,6,ASSETS
+48,4,10,4,14,Dressed to the ___,5,NINES
+49,5,10,5,14,See 50-Down,5,OXIDE
+50,10,10,10,14,Develops iron 49-Down,5,RUSTS
+51,3,11,3,14,Fairy tale bear who apparently liked cold porridge and soft chairs,4,MAMA
+52,9,11,9,14,Thin woodwind,4,OBOE
+53,0,12,0,14,19th-century presidential nickname,3,ABE
+54,1,12,1,14,Stimpy's cartoon friend,3,REN
+55,2,12,2,14,___ and cheese,3,MAC

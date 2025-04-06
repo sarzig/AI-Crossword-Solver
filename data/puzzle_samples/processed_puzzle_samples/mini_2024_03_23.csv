@@ -1,0 +1,15 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,2,0,4,0,Battering ___,3,RAM
+4,1,1,5,1,Did some computer programming,5,CODED
+6,0,2,6,2,Coating on lashes,7,MASCARA
+8,0,3,6,3,Major influence on Walt Whitman and Henry David Thoreau,7,EMERSON
+9,0,4,6,4,Chocolate hazelnut spread,7,NUTELLA
+10,1,5,5,5,"""Stainless"" stuff",5,STEEL
+11,2,6,4,6,H.S. courses for college credit,3,APS
+1,2,0,2,6,"___ Stone, key to deciphering Egyptian hieroglyphics",7,ROSETTA
+2,3,0,3,6,The insidious proliferation of modern marketing,7,ADCREEP
+3,4,0,4,6,Red spots on the skin,7,MEASLES
+4,1,1,1,5,"Albert ___, Nobel-winning author of ""The Stranger""",5,CAMUS
+5,5,1,5,5,Dryly humorous,5,DROLL
+6,0,2,0,4,Dudes,3,MEN
+7,6,2,6,4,California's Santa ___ winds,3,ANA

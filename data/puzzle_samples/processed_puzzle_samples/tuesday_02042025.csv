@@ -1,0 +1,75 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,4,0,Wandering soul,5,NOMAD
+6,6,0,9,0,"""Dónde ___ la biblioteca?""",4,ESTA
+10,11,0,14,0,Monster akin to a Japanese oni,4,OGRE
+14,0,1,4,1,"""Your concerns matter to me""",5,ICARE
+15,6,1,9,1,Little crack,4,QUIP
+16,11,1,14,1,Cook the surface of,4,SEAR
+17,0,2,9,2,Noiseless?,10,QUITEQUIET
+19,11,2,14,2,"N.Y.C. home of Warhol's ""Campbell's Soup Cans""",4,MOMA
+20,0,3,2,3,What one size might fit,3,ALL
+21,4,3,7,3,Completely wreck,4,RUIN
+22,10,3,14,3,"Rock and roll, but not rhythm and blues",5,VERBS
+23,0,4,3,4,The Crimson Tide,4,BAMA
+25,5,4,14,4,View of Earth from heaven?,10,ANGELANGLE
+28,1,5,6,5,Newly decorated,6,REDONE
+30,8,5,14,5,First-rate,7,TOPTIER
+31,2,6,4,6,Grandma,3,NAN
+32,7,6,10,6,"Guy's name that's old slang for ""OK""",4,JAKE
+33,12,6,14,6,Podcaster's income stream,3,ADS
+34,3,7,11,7,"Gymnastic feats ... or what the two halves of the answers to 17-, 25-, 49- and 58-Across do?",9,BACKFLIPS
+38,0,8,2,8,TNT's sister channel,3,TBS
+41,4,8,7,8,Blue feeling,4,FUNK
+42,10,8,12,8,"Animal hidden in this clue, if you read it aloud",3,EWE
+44,0,9,6,9,Warm drink served from a tokkuri,7,HOTSAKE
+46,8,9,13,9,Hyundai electric cars,6,IONIQS
+49,0,10,9,10,"""There are ways to leave""?",10,EXITSEXIST
+51,11,10,14,10,Dog that's not a purebred,4,MUTT
+53,0,11,4,11,Railroad station,5,DEPOT
+54,7,11,10,11,"Post-it, e.g.",4,NOTE
+56,12,11,14,11,Good name for a long-term investor?,3,IRA
+57,0,12,3,12,___ fees,4,USER
+58,5,12,14,12,Spite over an incomplete mobile payment?,10,VENMOVENOM
+61,0,13,3,13,Eat in style,4,DINE
+62,5,13,8,13,Olympic equipment with body contact detection technology,4,EPEE
+63,10,13,14,13,"Dwindle, as support",5,ERODE
+64,0,14,3,14,Oft-unwanted bread pieces,4,ENDS
+65,5,14,8,14,"Teri of ""After Hours""",4,GARR
+66,10,14,14,14,"One section of a big band, informally",5,SAXES
+1,0,0,0,4,Face covering with an opening around the eyes,5,NIQAB
+2,1,0,1,5,Eye-related,6,OCULAR
+3,2,0,2,6,Guys whose profession sounds redundant,7,MAILMEN
+4,3,0,3,2,"""Making money is ___ and working is ___ and good business is the best ___"": Andy Warhol",3,ART
+5,4,0,4,3,State animal of Illinois,4,DEER
+6,6,0,6,5,Like donkeys and zebras,6,EQUINE
+7,7,0,7,4,Taking action against,5,SUING
+8,8,0,8,2,Cause for overtime,3,TIE
+9,9,0,9,2,Like the names of the track athletes Usain Bolt and Lisa Lightfoot,3,APT
+10,11,0,11,5,"Actress Emily of ""Hannah Montana""",6,OSMENT
+11,12,0,12,6,"Only U.S. state whose Wikipedia article has a ""(U.S. state)"" disambiguator",7,GEORGIA
+12,13,0,13,6,Went on and on,7,RAMBLED
+13,14,0,14,6,Writers' blocks?,7,ERASERS
+18,5,2,5,5,"Actor Ke Huy ___ of ""Everything Everywhere All at Once""",4,QUAN
+22,10,3,10,9,Puff piece?,7,VAPEPEN
+24,3,4,3,7,"Not much, as of mayonnaise",4,ADAB
+26,8,4,8,7,Abbr. that might go after a list of authors,4,ETAL
+27,9,4,9,7,Norse god capable of shape-shifting into animals,4,LOKI
+29,4,5,4,11,Not eating anything,7,ONAFAST
+32,7,6,7,8,"One hub for Delta and American Airlines, in brief",3,JFK
+35,5,7,5,10,Common crudités veggie,4,CUKE
+36,6,7,6,10,Toy set that can be used to build roller coasters,4,KNEX
+37,11,7,11,10,Do some strokes,4,SWIM
+38,0,8,0,14,Nickname for filmdom's Jeffrey Lebowski,7,THEDUDE
+39,1,8,1,14,Pens,7,BOXESIN
+40,2,8,2,14,Fixed regular allowance,7,STIPEND
+43,12,8,12,14,Start to fall?,7,EQUINOX
+45,3,9,3,14,Mall units,6,STORES
+46,8,9,8,14,Molecule that shares its formula with another,6,ISOMER
+47,9,9,9,12,Palindromic Italian number,4,OTTO
+48,13,9,13,14,Walked purposefully,6,STRODE
+50,7,10,7,14,Word with tube or circle,5,INNER
+52,14,10,14,14,Tones down,5,TAMES
+55,10,11,10,14,Holidays that aren't typically federal holidays,4,EVES
+58,5,12,5,14,Chillax,3,VEG
+59,6,12,6,14,"Org. that regulates ""forever chemicals""",3,EPA
+60,11,12,11,14,Historic stretch,3,ERA

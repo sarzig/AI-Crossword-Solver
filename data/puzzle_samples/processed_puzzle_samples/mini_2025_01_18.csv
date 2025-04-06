@@ -1,0 +1,17 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,4,0,Worked in Microsoft Word,5,TYPED
+6,0,1,5,1,"With 14-Across, comedy writer who takes a road trip with Will Ferrell in a 2024 Netflix documentary",6,HARPER
+8,0,2,6,2,Pseudonyms,7,ALIASES
+10,0,3,2,3,Director Burton,3,TIM
+11,4,3,6,3,"""Oh, there ___ again!""",3,IGO
+12,0,4,6,4,10-legged marine crustacean,7,SEACRAB
+14,1,5,6,5,See 6-Across,6,STEELE
+15,2,6,6,6,Like the firstborn of two children,5,ELDER
+1,0,0,0,4,"""___ all there is to it!""",5,THATS
+2,1,0,1,5,Ivy Leaguers in Connecticut,6,YALIES
+3,2,0,2,6,Man or mandrill,7,PRIMATE
+4,3,0,3,2,Org. concerned with clean air and water,3,EPA
+5,4,0,4,6,Wished for,7,DESIRED
+7,5,1,5,6,Lavishly entertain (with),6,REGALE
+9,6,2,6,6,Not drinking any alcohol,5,SOBER
+13,3,4,3,6,Collectible cartoon image sold at Disney World,3,CEL

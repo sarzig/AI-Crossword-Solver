@@ -1,0 +1,11 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,2,0,4,0,Sound of mosquito electrocution,3,ZAP
+4,1,1,4,1,Niche publication printed in small batches,4,ZINE
+5,0,2,4,2,Nintendo princess,5,ZELDA
+6,0,3,3,3,"Malevolent creatures in ""The Lord of the Rings""",4,ORCS
+7,0,4,2,4,Cry of delight,3,OOH
+1,2,0,2,4,Zip,5,ZILCH
+2,3,0,3,3,"""No ifs, ___ or buts""",4,ANDS
+3,4,0,4,2,Sphere in a stir-fry,3,PEA
+4,1,1,1,4,Zip,4,ZERO
+5,0,2,0,4,What parents with toddlers might compare their household to,3,ZOO

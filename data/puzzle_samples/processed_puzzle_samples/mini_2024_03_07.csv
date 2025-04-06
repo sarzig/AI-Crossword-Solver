@@ -1,0 +1,11 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,1,0,3,0,"2 or 3, typically, in mini-golf",3,PAR
+4,0,1,4,1,"Like a cake made without eggs, milk and butter",5,VEGAN
+6,0,2,4,2,Nintendo character in purple overalls,5,WARIO
+7,0,3,4,3,Candle option,5,SCENT
+8,1,4,3,4,"What every barking dog is actually saying, in a classic ""The Far Side"" cartoon",3,HEY
+1,1,0,1,4,Nintendo character in a pink dress,5,PEACH
+2,2,0,2,4,"""Right on""",5,AGREE
+3,3,0,3,4,Bad forecast for beach week,5,RAINY
+4,0,1,0,3,"Some German cars, for short",3,VWS
+5,4,1,4,3,"""___ to mention ...""",3,NOT

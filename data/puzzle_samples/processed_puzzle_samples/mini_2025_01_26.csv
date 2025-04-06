@@ -1,0 +1,11 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,3,0,Instrument in a band's rhythm section,4,BASS
+5,0,1,4,1,"The name Jane Doe, e.g.",5,ALIAS
+7,0,2,4,2,Legendary actress Greta,5,GARBO
+8,0,3,4,3,Manicurist's board,5,EMERY
+9,0,4,3,4,Singular,4,LONE
+1,0,0,0,4,"The ""bun"" for a breakfast sandwich, often",5,BAGEL
+2,1,0,1,4,"Texas landmark at which Pee-Wee Herman asks ""Where's the basement? … Aren't we gonna see the basement?""",5,ALAMO
+3,2,0,2,4,Sound from an ambulance,5,SIREN
+4,3,0,3,4,Certain sword spelled the British way,5,SABRE
+6,4,1,4,3,Base of miso,3,SOY

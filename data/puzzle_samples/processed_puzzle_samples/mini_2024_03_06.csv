@@ -1,0 +1,11 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,3,0,Green space in a city,4,PARK
+5,0,1,3,1,"Site with a ""Buy It Now"" button",4,EBAY
+6,0,2,4,2,One providing SAT navigation,5,TUTOR
+8,1,3,4,3,Baked pasta dish,4,ZITI
+9,1,4,4,4,Company whose name became a verb in the 2020s,4,ZOOM
+1,0,0,0,2,___ project,3,PET
+2,1,0,1,4,Full of activity and excitement,5,ABUZZ
+3,2,0,2,4,"2:3, for example",5,RATIO
+4,3,0,3,4,"Hit Phoebe Bridgers song with the lyric ""The band took the speed train""",5,KYOTO
+7,4,2,4,4,Area from which most view the Grand Canyon,3,RIM

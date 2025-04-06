@@ -1,0 +1,79 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,3,0,"Recedes, as the tide",4,EBBS
+5,5,0,9,0,Server error?,5,FAULT
+10,11,0,14,0,Musical staff symbol,4,CLEF
+14,0,1,3,1,Long hike,4,TREK
+15,5,1,9,1,Politico Marco,5,RUBIO
+16,11,1,14,1,"Tomato variety that, despite its name, was actually developed in Maryland",4,ROMA
+17,0,2,3,2,"Lincoln, Jackson or Madison",4,CITY
+18,5,2,9,2,"""___ we all!""",5,ARENT
+19,11,2,14,2,"Fairy tale's second word, often",4,UPON
+20,0,3,11,3,*Base of operations,12,HEADQUARTERS
+23,3,4,6,4,"Birth control options, for short",4,IUDS
+24,10,4,14,4,Bother greatly,5,EATAT
+28,0,5,5,5,Three-time Super Bowl winner Kelce,6,TRAVIS
+31,7,5,14,5,*Lively get-togethers,8,SHINDIGS
+34,0,6,4,6,Constant critic,5,HATER
+35,6,6,9,6,Like a cherry vis-à-vis a sundae,4,ATOP
+36,11,6,14,6,Fashion magazine founded in Paris,4,ELLE
+37,0,7,2,7,Japanese vegetable,3,UDO
+38,4,7,10,7,*One of a pair that a skater might wear,7,KNEEPAD
+41,12,7,14,7,Ease (up),3,LET
+42,0,8,3,8,"Bite-size, say",4,MINI
+44,5,8,8,8,The ___ Tour (Taylor Swift concert series),4,ERAS
+45,10,8,14,8,"Stimulates, as an appetite",5,WHETS
+47,0,9,7,9,*Figurative setting for a shady deal,8,BACKROOM
+49,9,9,14,9,Vehicle in a funeral procession,6,HEARSE
+50,0,10,4,10,Stylishly streamlined,5,SLEEK
+51,8,10,11,10,"""Who Framed Roger Rabbit"" frames",4,CELS
+52,3,11,14,11,Weightlifter's pursuit … or a hint to both halves of the answers to the starred clues,12,BODYBUILDING
+59,0,12,3,12,"Where you might sleep while ""in the doghouse""",4,SOFA
+62,5,12,9,12,Defeats by a large margin,5,ROUTS
+63,11,12,14,12,Mental spark,4,IDEA
+64,0,13,3,13,"Fe, on the periodic table",4,IRON
+65,5,13,9,13,Own up (to),5,ADMIT
+66,11,13,14,13,Spam spewers,4,BOTS
+67,0,14,3,14,Prefix with phone or church,4,MEGA
+68,5,14,9,14,Key Watergate evidence,5,TAPES
+69,11,14,14,14,"Result of ignoring a ""Caution: Wet Floor"" sign, perhaps",4,SLIP
+1,0,0,0,3,Carve in stone,4,ETCH
+2,1,0,1,3,Soft French cheese,4,BRIE
+3,2,0,2,3,Β or β,4,BETA
+4,3,0,3,6,"Take a leap of faith, quite literally",7,SKYDIVE
+5,5,0,5,5,Impostors,6,FRAUDS
+6,6,0,6,4,Invisible emanations,5,AURAS
+7,7,0,7,3,"Sedan summoned with a smartphone, say",4,UBER
+8,8,0,8,3,Fuzzy stuff in a trap,4,LINT
+9,9,0,9,3,Carry around,4,TOTE
+10,11,0,11,6,Relentless campaign,7,CRUSADE
+11,12,0,12,2,Cut (off),3,LOP
+12,13,0,13,2,Broody subculture,3,EMO
+13,14,0,14,2,Ceiling spinner,3,FAN
+21,4,3,4,7,Peculiarity,5,QUIRK
+22,10,3,10,5,Stimpy's cartoon pal,3,REN
+25,12,4,12,9,Farm tool for breaking up soil,6,TILLER
+26,13,4,13,9,Shoelace tips,6,AGLETS
+27,14,4,14,9,African fly with a reduplicative name,6,TSETSE
+28,0,5,0,10,Rating units for Siskel and Ebert,6,THUMBS
+29,1,5,1,10,Like the symmetry of a starfish,6,RADIAL
+30,2,5,2,10,Immediately,6,ATONCE
+31,7,5,7,9,Eruption from a geyser,5,STEAM
+32,8,5,8,8,What gives beer its bitterness,4,HOPS
+33,9,5,9,7,"Bitter beer, in brief",3,IPA
+35,6,6,6,9,Prefix with dynamic,4,AERO
+39,5,7,5,9,"""The Matrix"" hero",3,NEO
+40,10,7,10,11,Reside,5,DWELL
+43,3,8,3,14,Japanese art of flower arranging,7,IKEBANA
+46,11,8,11,14,Stakes a claim (on),7,HASDIBS
+48,4,9,4,11,"Studio behind ""King Kong"" and ""Citizen Kane""",3,RKO
+49,9,9,9,14,"The ""jobs"" in ""The Italian Job,"" e.g.",6,HEISTS
+51,8,10,8,14,___ patootie,5,CUTIE
+53,5,11,5,14,"""Well, shucks!""",4,DRAT
+54,6,11,6,14,"A Jedi mentor, he was",4,YODA
+55,7,11,7,14,Protuberance,4,BUMP
+56,12,11,12,14,"Ariana Grande, to Arianators, e.g.",4,IDOL
+57,13,11,13,14,"___ pot, container for rinsing nasal passages",4,NETI
+58,14,11,14,14,Sound of shock,4,GASP
+59,0,12,0,14,"Computer replication of real-world events, for short",3,SIM
+60,1,12,1,14,Mined matter,3,ORE
+61,2,12,2,14,Ground-hugging cloud,3,FOG

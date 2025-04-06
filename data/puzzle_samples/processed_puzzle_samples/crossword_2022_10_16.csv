@@ -1,0 +1,140 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,4,0,"""Te quiero ___"" (Spanish words of endearment)",5,MUCHO
+6,6,0,14,0,"___ axis, half of an ellipse's shorter diameter",9,SEMIMINOR
+15,16,0,20,0,See-worthy?,5,PAPAL
+20,0,1,4,1,"Volume on an iPad, say",5,EBOOK
+21,6,1,14,1,"Singer of ""Fame"" fame",9,IRENECARA
+22,16,1,20,1,"""___: Game Over"" (2014 video game documentary)",5,ATARI
+23,0,2,4,2,Grown-up efts,5,NEWTS
+24,6,2,14,2,Old-fashioned letter opener,9,DEARMADAM
+25,16,2,20,2,Turn into confetti,5,SHRED
+26,1,3,5,3,"12/25, e.g.",5,RATIO
+28,8,3,12,3,"___ Lewis, singer of the 2007 #1 hit ""Bleeding Love""",5,LEONA
+29,15,3,19,3,"Tennis star Naomi, who was born in 29-Across",5,OSAKA
+30,2,4,8,4,"""I'm gonna tell you something huge""",7,BIGNEWS
+33,12,4,18,4,Mossy growths,7,LICHENS
+36,0,5,7,5,"River with a ""White"" counterpart",8,BLUENILE
+38,9,5,11,5,"Lil ___ Howery (""Get Out"" actor)",3,REL
+41,13,5,20,5,"Stuffs into a hole, say",8,RAMSDOWN
+44,0,6,2,6,"F-, for one",3,ION
+45,5,6,15,6,Ritual with bamboo utensils,11,TEACEREMONY
+48,18,6,20,6,"God, in Italy",3,DIO
+49,0,7,3,7,"Repeated word in an ""Animal House"" chant",4,TOGA
+51,6,7,14,7,Pastry with the same shape as an Argentine medialuna,9,CROISSANT
+52,17,7,20,7,Attorney general before Garland,4,BARR
+53,0,8,9,8,"Online promotions, collectively",10,EMARKETING
+56,11,8,20,8,What businesses go by,10,TRADENAMES
+59,3,9,8,9,Cut down,6,LESSEN
+60,12,9,17,9,"""Eureka!""",6,IGOTIT
+61,0,10,5,10,Word with easy or stop,6,STREET
+64,7,10,13,10,Provide change in quarters?,7,REHOUSE
+68,15,10,20,10,"Long, tragic stories",6,ILIADS
+72,0,11,6,11,Up to this point,7,THUSFAR
+74,8,11,12,11,"Best Supporting Actress nominee for ""The Power of the Dog,"" 2021",5,DUNST
+75,14,11,20,11,"Letter opener, pencil cup, inbox tray, etc.",7,DESKSET
+76,0,12,2,12,Phanerozoic ___ (what we live in),3,EON
+77,5,12,7,12,"Classroom aides, for short",3,TAS
+79,9,12,11,12,British term of address,3,GUV
+80,13,12,15,12,"Currency for the prize on ""Squid Game""",3,WON
+81,18,12,20,12,"Reddit Q&A session, in brief",3,AMA
+82,0,13,7,13,Most unpleasantly old and mildewy,8,MUSTIEST
+85,9,13,11,13,Letters before Constitution or Enterprise,3,USS
+86,13,13,20,13,Popular subcompact hatchback from Japan,8,HONDAFIT
+89,1,14,9,14,Rock commonly used in asphalt,9,SANDSTONE
+91,11,14,19,14,Part of a hotel with décor fitting a certain motif,9,THEMEROOM
+93,2,15,4,15,"Video game series with settings in Liberty City and San Andreas, for short",3,GTA
+94,6,15,8,15,Gobsmack,3,AWE
+95,12,15,14,15,Scottish interjection,3,AYE
+96,16,15,18,15,"""Everything Everywhere ___ at Once"" (Michelle Yeoh movie)",3,ALL
+97,0,16,2,16,R&B artist whose name sounds like a pronoun,3,HER
+99,4,16,6,16,Eats,3,HAS
+101,8,16,12,16,Travis of country music,5,TRITT
+105,14,16,16,16,"One of 2,297 for Hank Aaron, for short",3,RBI
+107,18,16,20,16,Annoyance for a Twitch streamer,3,LAG
+110,0,17,5,17,Figure with equal angles,6,ISOGON
+112,7,17,13,17,"Sunday ___ (end-of-week anxiety, casually)",7,SCARIES
+114,15,17,20,17,Country whose flag depicts a machete,6,ANGOLA
+116,0,18,3,18,"With 121-Across, company that sells scuba gear",4,AQUA
+117,5,18,15,18,Certain furniture store purchases,11,OTTOMANSETS
+120,17,18,20,18,Missing,4,AWOL
+121,0,19,3,19,See 116-Across,4,LUNG
+122,5,19,15,19,"""Be My Baby"" group, 1963",11,THERONETTES
+123,17,19,20,19,Bygone Microsoft media player,4,ZUNE
+124,0,20,3,20,The lights in fairy lights,4,LEDS
+125,6,20,9,20,"Some travel considerations, in brief",4,ETDS
+126,11,20,14,20,Tarnish,4,SOIL
+127,17,20,20,20,Donkey Kong and others,4,APES
+1,0,0,0,2,"Bachelors, e.g.",3,MEN
+2,1,0,1,3,___ Eats,4,UBER
+3,2,0,2,8,Ninja Turtle's catchphrase,9,COWABUNGA
+4,3,0,3,5,One who's super-good-looking,6,HOTTIE
+5,4,0,4,5,Affirmative gesture,6,OKSIGN
+6,6,0,6,2,*Baseball pitching style … or a weapon,3,SID
+7,7,0,7,2,Afore,3,ERE
+8,8,0,8,4,Dining hall offerings,5,MEALS
+9,9,0,9,3,"About, on a 10-Down",4,INRE
+10,10,0,10,3,See 9-Down,4,MEMO
+11,11,0,11,3,Volunteer's words,4,ICAN
+12,12,0,12,4,"Tennis's ""King of Clay""",5,NADAL
+13,13,0,13,2,"Hour, in Italy",3,ORA
+14,14,0,14,2,*Big name in hotels,3,RAM
+15,16,0,16,5,Access providers,6,PASSES
+16,17,0,17,5,Within reach,6,ATHAND
+17,18,0,18,8,"Actress who played ""Jessica"" in ""Parasite""",9,PARKSODAM
+18,19,0,19,3,No-go ___,4,AREA
+19,20,0,20,2,Something to pry or twist off,3,LID
+27,5,3,5,6,Volunteer's words,4,ONIT
+29,15,3,15,6,[Gasp!],4,OHMY
+31,6,4,6,9,Chooses,6,ELECTS
+32,7,4,7,10,More run-down,7,WEARIER
+34,13,4,13,10,Period in ancient history,7,IRONAGE
+35,14,4,14,9,Like a defeatist's attitude,6,CANTDO
+36,0,5,0,8,*Indentation on a chew toy,4,BITE
+37,1,5,1,8,Textile-making device,4,LOOM
+38,9,5,9,8,*Light again,4,REIG
+39,10,5,10,7,"""I mean …"" sounds",3,ERS
+40,11,5,11,8,"*Whom Holmes tells ""You do find it very hard to tackle the facts""",4,LEST
+42,19,5,19,8,Telegram,4,WIRE
+43,20,5,20,8,*Many a Viking,4,NORS
+46,8,6,8,11,Pulled a fast one on,6,CONNED
+47,12,6,12,11,College near Vassar,6,MARIST
+50,3,7,3,11,Where van Gogh and Gauguin briefly lived together,5,ARLES
+52,17,7,17,11,Dyeing method using wax,5,BATIK
+54,4,8,4,11,Chief ___ (rapper with a rhyming name),4,KEEF
+55,5,8,5,14,Where feudal workers worked,7,ESTATES
+57,15,8,15,14,"French equivalent of ""Stephen""",7,ETIENNE
+58,16,8,16,11,"___ van der Poel, Olympic speed skater",4,NILS
+61,0,10,0,13,Academic acronym,4,STEM
+62,1,10,1,14,*Grand,5,THOUS
+63,2,10,2,20,Hits shore unintentionally,11,RUNSAGROUND
+65,9,10,9,14,*Early French Protestants,5,HUGUE
+66,10,10,10,13,Burden,4,ONUS
+67,11,10,11,14,*Basic rivalry,5,USVST
+69,18,10,18,20,"""Continuing where we left off last time …""",11,ASAFOLLOWUP
+70,19,10,19,14,"*""G.I. Jane"" star, 1997",5,DEMIM
+71,20,10,20,13,"Field goal avg., e.g.",4,STAT
+73,6,11,6,16,"Believers in Jah, informally",6,RASTAS
+75,14,11,14,16,"Fatalistic sort, in slang",6,DOOMER
+78,7,12,7,15,Place in an overhead bin,4,STOW
+80,13,12,13,15,No ___! (punnily named dairy-free chocolate brand),4,WHEY
+83,3,13,3,15,Explosive stuff,3,TNT
+84,4,13,4,17,U.S. ID?,5,IDAHO
+87,16,13,16,17,Bad place to pour grease,5,DRAIN
+88,17,13,17,15,"""Have ___ make my email stop"" (Destiny's Child lyric)",3,AOL
+90,8,14,8,20,Cable in the middle of a tennis court,7,NETCORD
+92,12,14,12,20,Would really rather not,7,HATESTO
+97,0,16,0,20,"""What's up, everyone!""",5,HIALL
+98,1,16,1,20,-ish,5,ESQUE
+100,5,16,5,19,"*""Encore!""",4,ANOT
+102,9,16,9,20,"Fidel ___, 1990s Philippine leader",5,RAMOS
+103,10,16,10,19,Tehran's home,4,IRAN
+104,11,16,11,20,Fork prongs,5,TINES
+106,15,16,15,19,*Actress Angela,4,BASS
+108,19,16,19,20,How to play solitaire,5,ALONE
+109,20,16,20,20,They have high ratings on the Beaufort scale,5,GALES
+111,3,17,3,20,Jokester's arsenal,4,GAGS
+112,7,17,7,20,"""Leave it,"" on paper",4,STET
+113,13,17,13,20,Alien-seeking org.,4,SETI
+115,17,17,17,20,Strip near Tel Aviv,4,GAZA
+118,6,18,6,20,Beverage at un café,3,THE
+119,14,18,14,20,Business card abbr.,3,TEL

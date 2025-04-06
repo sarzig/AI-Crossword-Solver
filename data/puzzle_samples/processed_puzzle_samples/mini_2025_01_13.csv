@@ -1,0 +1,11 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,3,0,"Raygun or Moo Deng, in 2024",4,MEME
+5,0,1,4,1,"Avoid, as one's taxes",5,EVADE
+7,0,2,4,2,Sotomayor of the Supreme Court,5,SONIA
+8,0,3,4,3,Comical routines in a school talent show,5,SKITS
+9,0,4,4,4,"""I only eat unleavened bread now; I'm on the path of ___ resistance!"" (groaner)",5,YEAST
+1,0,0,0,4,Like a roommate who leaves dishes in the sink and socks on the sofa,5,MESSY
+2,1,0,1,4,Bring to mind,5,EVOKE
+3,2,0,2,4,"Ending with ego, pyro- or klepto-",5,MANIA
+4,3,0,3,4,"Polishes, as an article",5,EDITS
+6,4,1,4,4,"""___ of Eden"" (Steinbeck novel)",4,EAST

@@ -1,0 +1,17 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,1,0,5,0,One-for-one trades,5,SWAPS
+6,0,1,6,1,Subway stop,7,STATION
+8,0,2,6,2,"With 11-Across, gathering that's typically attended every five years",7,COLLEGE
+9,0,3,2,3,"Patchett who wrote ""Bel Canto""",3,ANN
+10,4,3,6,3,In addition,3,TOO
+11,0,4,6,4,See 8-Across,7,REUNION
+13,1,5,5,5,Place to testify in court,5,STAND
+14,2,6,4,6,"The ""S"" of iOS: Abbr.",3,SYS
+1,1,0,1,5,"Mick Jagger's band, familiarly, with ""the""",6,STONES
+2,2,0,2,6,"Crunchy bits in a brownie, maybe",7,WALNUTS
+3,3,0,3,2,"Georgia's capital, for short",3,ATL
+4,4,0,4,6,Dessert containers that inspired the Frisbee,7,PIETINS
+5,5,0,5,5,"Words repeated before ""I got you"" in James Brown's ""I Got You""",6,SOGOOD
+6,0,1,0,4,"Evil lion in ""The Lion King""",4,SCAR
+7,6,1,6,4,Fluorescent shade,4,NEON
+12,3,4,3,6,Dissenting vote,3,NAY

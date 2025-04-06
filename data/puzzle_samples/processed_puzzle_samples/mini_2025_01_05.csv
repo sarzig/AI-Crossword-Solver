@@ -1,0 +1,11 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,1,0,4,0,"What ""verb"" or ""adjective"" is, confusingly",4,NOUN
+5,0,1,4,1,On the ___ (free),5,HOUSE
+6,0,2,4,2,One holding a deed,5,OWNER
+7,0,3,4,3,"Large in scope, as a photography lens",5,MACRO
+8,0,4,3,4,They're rolled in annoyance,4,EYES
+1,1,0,1,4,"""You've got to be kidding!""",5,NOWAY
+2,2,0,2,4,Unit equal to roughly 28 grams,5,OUNCE
+3,3,0,3,4,App customers,5,USERS
+4,4,0,4,3,Infamous Roman emperor,4,NERO
+5,0,1,0,4,"Where the heart is, it's said",4,HOME

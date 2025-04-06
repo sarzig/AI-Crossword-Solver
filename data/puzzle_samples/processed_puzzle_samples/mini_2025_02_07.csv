@@ -1,0 +1,11 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,4,0,"""Be quiet!""",5,SHUSH
+6,0,1,4,1,Knight's weapon,5,LANCE
+7,0,2,4,2,Senior figure,5,ELDER
+8,0,3,4,3,"""In any ___ ...""",5,EVENT
+9,0,4,4,4,"""Emilia ___"" (2024 film with the most Oscar nominations)",5,PEREZ
+1,0,0,0,4,What newborns do for much of the day,5,SLEEP
+2,1,0,1,4,Cut in two,5,HALVE
+3,2,0,2,4,"What ""U"" stands for in ""O/U""",5,UNDER
+4,3,0,3,4,Acting class assignment,5,SCENE
+5,4,0,4,4,Standard unit of frequency,5,HERTZ

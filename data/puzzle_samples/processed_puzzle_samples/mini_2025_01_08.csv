@@ -1,0 +1,11 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,3,0,"Word on the front door of the Midvale School for the Gifted, in a famous ""Far Side"" cartoon",4,PULL
+5,0,1,4,1,"Classic TV squad featuring B.A., Faceman, Hannibal and Murdock",5,ATEAM
+7,0,2,4,2,"MA or MS, but not BA or BS",5,STATE
+8,0,3,4,3,"Like the letter J, alphabetically",5,TENTH
+9,0,4,3,4,"Butt, to Brits",4,ARSE
+1,0,0,0,4,Food you might cook al dente,5,PASTA
+2,1,0,1,4,Downright,5,UTTER
+3,2,0,2,4,What the Tower of Pisa does,5,LEANS
+4,3,0,3,4,Milky coffee order,5,LATTE
+6,4,1,4,3,"""I've seen better""",3,MEH

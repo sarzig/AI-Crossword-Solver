@@ -1,0 +1,141 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,1,0,4,0,Visitor center handouts,4,MAPS
+5,7,0,11,0,Crew supervisor on a merchant ship,5,BOSUN
+10,14,0,20,0,QB Patrick who was 2018's N.F.L. M.V.P.,7,MAHOMES
+17,0,1,4,1,"Like a pub crawler's breath, perhaps",5,BEERY
+18,6,1,12,1,*Embarrassing pants mishap?,7,SEATRIP
+20,14,1,20,1,Set apart,7,ISOLATE
+21,0,2,4,2,"Relative of ""ciao""",5,ADIOS
+22,6,2,12,2,"""I never met a ___ I didn't like"": Garfield",7,LASAGNA
+23,14,2,20,2,Like some tans,7,SPRAYON
+24,0,3,7,3,*Shipper of British toilets?,8,LOOMOVER
+26,9,3,12,3,Something you might use just for the halibut?,4,REEL
+27,14,3,16,3,"___ Plaines, Ill.",3,DES
+28,18,3,20,3,Hill worker,3,ANT
+29,0,4,6,4,Modern-day groundskeeper?,7,KCUPPOD
+30,8,4,10,4,"Wanda Sykes, Regina Hall and Amy Schumer, for the 2022 Oscars",3,MCS
+31,13,4,17,4,Divides into sectors,5,ZONES
+33,3,5,5,5,"5-Down, in Spanish",3,OSO
+34,7,5,9,5,"""I'm not impressed""",3,MEH
+35,11,5,13,5,Some sci-fi effects,3,CGI
+37,15,5,20,5,"Fast line at the airport, informally",6,TSAPRE
+41,0,6,3,6,Small figures?,4,BODS
+44,5,6,13,6,*Big fight for a Disney heroine from Polynesia?,9,MOANABOUT
+47,15,6,20,6,Some track-and-field races,6,RELAYS
+48,0,7,4,7,"""They tell me …""",5,IHEAR
+50,6,7,12,7,Impulsive sorts?,7,NEURONS
+51,14,7,20,7,Spanish gentlemen,7,SENORES
+52,0,8,6,8,Standing at the ready,7,ONALERT
+54,9,8,11,8,"Affectionate attention, for short",3,TLC
+55,13,8,18,8,Neither blows it nor crushes it,6,DOESOK
+56,0,9,8,9,"Grabs lunch, say",9,GETSABITE
+59,10,9,14,9,Word with cane or cone,5,SUGAR
+61,16,9,20,9,"As a friend, in French",5,ENAMI
+64,0,10,2,10,"""That hits the spot!""",3,AAH
+65,5,10,15,10,Voyage by rocket … or a feature of the answers to the 12 starred clues?,11,SPACETRAVEL
+68,18,10,20,10,U-Haul offering,3,VAN
+69,0,11,4,11,One rounded up in a roundup,5,STEER
+72,6,11,10,11,A car that won't start is a common one in horror films,5,TROPE
+73,12,11,20,11,Ties again,9,REFASTENS
+76,2,12,7,12,Pulitzer-winning novelist Lurie,6,ALISON
+78,9,12,11,12,Extreme vexation,3,IRE
+80,14,12,20,12,Alliance,7,ENTENTE
+81,0,13,6,13,Symptom of burnout,7,FATIGUE
+83,8,13,14,13,Take up a notch,7,ELEVATE
+86,16,13,20,13,Singer Abdul,5,PAULA
+87,0,14,5,14,Keg attachment,6,ALETAP
+88,7,14,15,14,*Shortage of slime?,9,GOODEARTH
+90,17,14,20,14,Appear,4,SEEM
+91,0,15,5,15,"""Is that a challenge?!""",6,DAREME
+92,7,15,9,15,Part of E.S.L.: Abbr.,3,ENG
+93,11,15,13,15,Voice of dissent,3,NAY
+94,15,15,17,15,Scratch (out),3,EKE
+96,3,16,7,16,Film brand,5,SARAN
+98,10,16,12,16,Seoul singers?,3,BTS
+99,14,16,20,16,Component of some high-tech dog collars,7,RFIDTAG
+103,0,17,2,17,Kind of card sold in many international airports,3,SIM
+106,4,17,6,17,"Metric for a Met, for short",3,RBI
+107,8,17,11,17,Diane Sawyer's real first name,4,LILA
+109,13,17,20,17,*Rest spot for a tabby?,8,CATCHAIR
+110,0,18,6,18,Angry and impatient,7,INAMOOD
+112,8,18,14,18,"Parent who's fluent in emojis and modern slang, maybe",7,COOLMOM
+114,16,18,20,18,"""Your ___ ran over my dogma"" (classic dad joke)",5,KARMA
+115,0,19,6,19,Sovereign's singular,7,ROYALWE
+116,8,19,14,19,*Brew that's both bitter and fruity?,7,DUALIPA
+117,16,19,20,19,Tiny arachnids,5,MITES
+118,0,20,6,20,Cries feebly,7,SNIVELS
+119,9,20,13,20,Do some barbering on,5,STYLE
+120,16,20,19,20,Language of the Emerald Isle,4,ERSE
+1,1,0,1,4,French wine region,5,MEDOC
+2,2,0,2,4,Series of trade discounts?,5,AEIOU
+3,3,0,3,9,Portmanteau invitations,10,PROMPOSALS
+4,4,0,4,5,"Website overseers, in brief",6,SYSOPS
+5,7,0,7,3,Image on a postcard from Yellowstone,4,BEAR
+6,8,0,8,2,Western Hemisphere treaty grp.,3,OAS
+7,9,0,9,8,"*Painting of potatoes, e.g.?",9,STARCHART
+8,10,0,10,4,Exhorts,5,URGES
+9,11,0,11,3,___-Down (what this is),4,NINE
+10,14,0,14,4,Botch,5,MISDO
+11,15,0,15,8,*Main course featuring Egyptian snake meat?,9,ASPENTREE
+12,16,0,16,9,Street smarts,10,HORSESENSE
+13,17,0,17,2,Portuguese greeting,3,OLA
+14,18,0,18,3,"""S.N.L."" alumna Rudolph",4,MAYA
+15,19,0,19,3,Boarding school where tailcoats are part of the dress code,4,ETON
+16,20,0,20,3,On its way,4,SENT
+17,0,1,0,4,Show some reluctance,4,BALK
+18,6,1,6,4,"Item tossed into a fire at the end of ""Citizen Kane""",4,SLED
+19,12,1,12,3,Buddy,3,PAL
+25,5,3,5,6,"""Va-va-___!""",4,VOOM
+30,8,4,8,7,Set of options,4,MENU
+31,13,4,13,6,"Acne spot, informally",3,ZIT
+32,17,4,17,9,Brawl site in old westerns,6,SALOON
+34,7,5,7,7,West of Hollywood,3,MAE
+35,11,5,11,10,Agree,6,CONCUR
+36,12,5,12,7,"___ Goose, cousin of Donald Duck",3,GUS
+38,18,5,18,14,"*Iditarod, for one?",10,PARKAVENUE
+39,19,5,19,7,Bourbon alternative,3,RYE
+40,20,5,20,7,The start of something?,3,ESS
+41,0,6,0,11,Byproduct of composting,6,BIOGAS
+42,1,6,1,11,"""Wow, super!""",6,OHNEAT
+43,2,6,2,15,*Staging of a narc sting?,10,DEATHEATER
+45,6,6,6,13,How a parent serving as the tooth fairy might walk,8,ONTIPTOE
+46,10,6,10,14,Supported,9,BOLSTERED
+49,4,7,4,9,"Stephen of ""The Crying Game""",3,REA
+51,14,7,14,14,Anguish following a dance marathon,8,SOREFEET
+53,5,8,5,10,N.F.L. positions that sound like a fast-food chain,3,RBS
+55,13,8,13,11,"""I'm sorry, ___, I'm afraid I can't do that"" (line from HAL in ""2001"")",4,DAVE
+57,7,9,7,12,Mountain lake,4,TARN
+58,8,9,8,11,Green prefix,3,ECO
+60,12,9,12,11,Fish with a long snout,3,GAR
+62,19,9,19,14,Layer beneath the earth's crust,6,MANTLE
+63,20,9,20,14,Something made off the cuff?,6,INSEAM
+66,9,10,9,15,Closing words,6,EPILOG
+67,15,10,15,12,Office PC setup,3,LAN
+70,3,11,3,16,One-percenters,6,ELITES
+71,4,11,4,20,Frustrating process,10,RIGAMAROLE
+74,16,11,16,13,Noted speedway sponsor,3,STP
+75,17,11,17,20,What a beehive is made of,10,TEASEDHAIR
+77,5,12,5,20,*Terrific messenger at Hogwarts?,9,SUPERBOWL
+79,11,12,11,20,*Friend in a competition?,9,EVENTALLY
+81,0,13,0,15,"Furbys or fidget spinners, e.g.",3,FAD
+82,1,13,1,15,In the manner of,3,ALA
+83,8,13,8,15,Many millennia,3,EON
+84,12,13,12,16,Small batteries,4,AAAS
+85,13,13,13,15,"""Oh, the thinks you can think up if only you ___!"": Dr. Seuss",3,TRY
+88,7,14,7,16,"Lead-in to X, Y or Z",3,GEN
+89,15,14,15,17,Substance,4,HEFT
+95,16,15,16,20,Sign unlikely to have been written by the person it is attached to,6,KICKME
+97,6,16,6,20,Hill workers,5,AIDES
+98,10,16,10,20,Swell,5,BLOAT
+99,14,16,14,19,Hindu embodiment of virtue,4,RAMA
+100,18,16,18,20,"Stolen treats in ""Alice's Adventures in Wonderland""",5,TARTS
+101,19,16,19,20,Mann of music,5,AIMEE
+102,20,16,20,19,Mardi ___,4,GRAS
+103,0,17,0,20,Knights and noblemen,4,SIRS
+104,1,17,1,20,Privy to,4,INON
+105,2,17,2,20,Request for permission,4,MAYI
+107,8,17,8,19,"TV screen option, for short",3,LCD
+108,9,17,9,20,Chits,4,IOUS
+109,13,17,13,20,Manage,4,COPE
+111,3,18,3,20,"Dallas hoopster, for short",3,MAV
+113,12,18,12,20,Lotta money,3,MIL

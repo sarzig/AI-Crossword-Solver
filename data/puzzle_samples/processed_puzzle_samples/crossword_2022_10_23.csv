@@ -1,0 +1,151 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,3,0,Shops,4,ANTI
+5,5,0,9,0,Peddling,5,QUEST
+10,11,0,14,0,Collectibles,4,ORES
+14,16,0,20,0,A kitchen might have a good one,5,AROMA
+19,0,1,3,1,"Instrument for Arachne, in mythology",4,LOOM
+20,5,1,9,1,Natural instincts,5,URGES
+21,11,1,14,1,"Word on the street, perhaps?",4,TAXI
+22,16,1,20,1,"Like Superman, but not Spider-Man",5,CAPED
+23,0,2,3,2,Symbol of bravery,4,LION
+24,5,2,9,2,Nephew of Abel,5,ENOCH
+25,11,2,14,2,One-eyed war god,4,ODIN
+26,16,2,20,2,African animal that may be spotted or striped,5,HYENA
+27,0,3,6,3,Armed force at sea?,7,OCTOPUS
+29,8,3,11,3,"""Person of the Year"" magazine",4,TIME
+31,13,3,16,3,Big froyo franchiser,4,TCBY
+33,18,3,20,3,"When said three times, ""Get off my case!""",3,NAG
+34,0,4,5,4,"White terrier, informally",6,WESTIE
+35,7,4,10,4,Historic,4,MIRA
+36,12,4,15,4,Hockey,4,CLEO
+37,17,4,20,4,Upset,4,NICE
+38,3,5,5,5,___ Toy Barn (where Emperor Zurg chases Buzz Lightyear),3,ALS
+39,7,5,10,5,"""I,"" in the ""Iliad""",4,IOTA
+40,12,5,15,5,You'll have to pull some strings to play this,4,HARP
+41,17,5,20,5,Low-scoring Yahtzee category,4,ONES
+42,0,6,4,6,Lower back bones,5,SACRA
+45,6,6,9,6,Downsides,4,CONS
+46,11,6,14,6,"How many U.N. members have names starting with ""W""",4,NONE
+47,16,6,18,6,Lionel Messi's homeland: Abbr.,3,ARG
+48,0,7,4,7,Standoffish,5,ALOOF
+49,6,7,8,7,Whiz,3,ACE
+50,10,7,13,7,Promotional overkill,4,HYPE
+51,15,7,20,7,Capital on the Arabian Peninsula,6,MUSCAT
+54,0,8,3,8,Waste,4,GARB
+55,5,8,8,8,Disposal,4,AGED
+56,10,8,13,8,Locations,4,UMPS
+57,15,8,20,8,Things believers believe,6,CREEDS
+58,0,9,3,9,"The ""A"" in A.D.",4,ANNO
+59,5,9,7,9,Racket,3,DIN
+60,9,9,12,9,"Children's book series akin to ""Where's Waldo?""",4,ISPY
+61,14,9,16,9,Word with nursing or training,3,BRA
+62,18,9,20,9,N.I.H. standard,3,RDA
+63,1,10,3,10,Read,3,BET
+64,5,10,7,10,Here,3,WEE
+65,9,10,11,10,To,3,NTH
+66,13,10,15,10,Understand,3,ELI
+67,17,10,19,10,23 answers in today's puzzle that don't seem to match their clues,3,NES
+68,0,11,2,11,"The ""P"" of E.P.S. ratio, on Wall Street",3,PER
+69,4,11,6,11,"Adverb repeated in the ""Star Wars"" prologue",3,FAR
+70,8,11,11,11,"Calvin and Hobbes, e.g.",4,PALS
+71,13,11,15,11,"Head, in slang",3,NOB
+72,17,11,20,11,Onetime radio host Don,4,IMUS
+74,0,12,5,12,"""Mad"" figure of fiction",6,HATTER
+76,7,12,10,12,Dazzling,4,KALE
+77,12,12,15,12,Pattern,4,IDOS
+78,17,12,20,12,Generator,4,COPE
+79,0,13,5,13,Like some care services,6,INHOME
+80,7,13,10,13,Purplish blue,4,IRIS
+81,12,13,14,13,"1998 film ""Waking ___ Devine""",3,NED
+82,16,13,20,13,Al ___ (pasta specification),5,DENTE
+83,2,14,4,14,"Initialism aptly found in ""timetable""",3,ETA
+84,6,14,9,14,Thief's haul,4,TAKE
+85,11,14,14,14,"Xmas, for Justin Trudeau",4,BDAY
+86,16,14,20,14,Synthetic fiber,5,RAYON
+87,0,15,3,15,Tiptop,4,ACME
+89,5,15,8,15,City east of Phoenix,4,MESA
+90,10,15,13,15,D-worthy,4,POOR
+91,15,15,17,15,Sweetie pie,3,HON
+92,0,16,3,16,Classes,4,DRAM
+93,5,16,8,16,For,4,ALES
+94,10,16,13,16,Actors,4,SONS
+95,15,16,20,16,Get off berth control?,6,UNDOCK
+99,0,17,2,17,"Tarnish, e.g.",3,MAR
+100,4,17,7,17,Crossed out,4,EXED
+101,9,17,12,17,"Apt rhyme for ""pyre""",4,FIRE
+102,14,17,20,17,Revitalize,7,FRESHEN
+103,0,18,4,18,"Finalized, as a contract",5,INKED
+105,6,18,9,18,Safe harbor,4,COVE
+107,11,18,15,18,"""Let me repeat …""",5,ISAID
+109,17,18,20,18,Put cargo on,4,LADE
+110,0,19,4,19,"She might cry ""Uncle!""",5,NIECE
+111,6,19,9,19,"Last ""O"" in YOLO",4,ONCE
+112,11,19,15,19,Rough rug fiber,5,SISAL
+113,17,19,20,19,"Unwritten, say",4,ORAL
+114,0,20,4,20,Didn't make public for a while,5,SATON
+115,6,20,9,20,Home,4,MART
+116,11,20,15,20,Decorating,5,HASTE
+117,17,20,20,20,Guru,4,WART
+1,0,0,0,4,"""I'll ___ it""",5,ALLOW
+2,1,0,1,4,"""Hold the rocks,"" at a bar",5,NOICE
+3,2,0,2,4,Blows one's horn,5,TOOTS
+4,3,0,3,10,Captcha confirmation,11,IMNOTAROBOT
+5,5,0,5,5,"Adds to a playlist, e.g.",6,QUEUES
+6,6,0,6,3,Sights in a funeral home,4,URNS
+7,7,0,7,2,"""I"", in the ""Aeneid""",3,EGO
+8,8,0,8,8,Partitioned,9,SECTIONED
+9,9,0,9,6,Product launches made during sporting events?,7,TSHIRTS
+10,11,0,11,3,Chiwere-speaking tribe,4,OTOE
+11,12,0,12,2,"""Stellar!""",3,RAD
+12,13,0,13,8,They can help you get out of jams,9,EXITLANES
+13,14,0,14,6,Real,7,SINCERE
+14,16,0,16,3,"Having overexercised, maybe",4,ACHY
+15,17,0,17,2,___ gun (alien zapper),3,RAY
+16,18,0,18,14,When the lighting of the Olympic cauldron happens,15,OPENINGCEREMONY
+17,19,0,19,5,"Wolf, to a shepherd",6,MENACE
+18,20,0,20,5,"""A penny saved is a penny earned"" and others",6,ADAGES
+28,4,3,4,7,Rice dish,5,PILAF
+30,10,3,10,5,Sound of shear terror?,3,MAA
+32,15,3,15,5,"Go lightly, with ""along""",3,BOP
+35,7,4,7,10,Epoch when the Mediterranean Sea nearly dried up,7,MIOCENE
+36,12,4,12,9,Like difficult water for boating,6,CHOPPY
+37,17,4,17,8,Like Thor,5,NORSE
+42,0,6,0,9,It's a long story,4,SAGA
+43,1,6,1,13,Fourth man to walk on the moon,8,ALANBEAN
+44,2,6,2,20,"Gain exclusive control, business-wise",15,CORNERTHEMARKET
+45,6,6,6,11,More wary,6,CAGIER
+46,11,6,11,11,Female nature deities,6,NYMPHS
+47,16,6,16,9,A charismatic person has one,4,AURA
+50,10,7,10,13,Gets a move on,7,HUSTLES
+51,15,7,15,12,Some BBQ-flavored fast-food sandwiches,6,MCRIBS
+52,19,7,19,14,Totals,8,ADDSUPTO
+53,20,7,20,9,Letters near a conveyor belt,3,TSA
+55,5,8,5,13,Online pop-up generator,6,ADWARE
+60,9,9,9,14,How perjurers might be caught,6,INALIE
+61,14,9,14,14,___ Mary,6,BLOODY
+66,13,10,13,16,Makes beloved,7,ENDEARS
+67,17,10,17,20,How Usher wants to take it in a 1998 #1 hit,11,NICEANDSLOW
+68,0,11,0,13,"The 76ers, on scoreboards",3,PHI
+69,4,11,4,14,Disaster response org.,4,FEMA
+70,8,11,8,16,Arctic coats,6,PARKAS
+73,20,11,20,14,In the public eye,4,SEEN
+75,3,12,3,16,Headset?,5,TOTEM
+76,7,12,7,20,Popular Korean minivan,9,KIASEDONA
+77,12,12,12,20,Country with more than 100 active volcanoes,9,INDONESIA
+82,16,13,16,17,Device providing oversight?,5,DRONE
+84,6,14,6,20,"Verizon, for one",7,TELECOM
+85,11,14,11,20,Hardly genteel,7,BOORISH
+87,0,15,0,20,Website overseers,6,ADMINS
+88,1,15,1,20,Brain cases,6,CRANIA
+89,5,15,5,17,"1600 for the SAT, informally",3,MAX
+90,10,15,10,17,"No. listed on the inside of car doors, often",3,PSI
+91,15,15,15,20,Get over it!,6,HURDLE
+96,18,16,18,20,"Actress Catherine who starred as Kevin's mom in ""Home Alone""",5,OHARA
+97,19,16,19,20,"""Red"" or ""white"" wood",5,CEDAR
+98,20,16,20,20,"Prepared to pray, say",5,KNELT
+100,4,17,4,20,Idyllic spot,4,EDEN
+101,9,17,9,20,Stocking stuffers,4,FEET
+102,14,17,14,20,Italian automaker,4,FIAT
+104,3,18,3,20,___ mode (fuel-saving feature in newer cars),3,ECO
+106,8,18,8,20,"Tape player of a sort, in brief",3,VCR
+108,13,18,13,20,Dunderhead,3,ASS

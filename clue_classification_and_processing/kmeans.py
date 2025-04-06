@@ -1,3 +1,4 @@
+import string
 import time
 import pandas as pd
 import numpy as np
@@ -22,7 +23,11 @@ nltk.download('averaged_perceptron_tagger')
 nltk.download('wordnet')
 
 # Load my dataset
+<<<<<<< Updated upstream:clue_classification_and_processing/kmeans.py
 clues = pd.read_csv(r"data/nytcrosswords.csv", encoding='latin1')
+=======
+clues = pd.read_csv(r"data\nytcrosswords.csv", encoding='latin1')
+>>>>>>> Stashed changes:xword/kmeans.py
 
 # Function to classify crossword answers
 def classify_language(answer):
@@ -44,6 +49,7 @@ def classify_language(answer):
     # Otherwise, classify as Foreign
     return "Foreign"
 
+
 # Define primary cluster categories
 def assign_primary_cluster(clue):
     if re.search(r"-above|-down", clue, re.IGNORECASE):
@@ -57,13 +63,6 @@ def assign_primary_cluster(clue):
     return "Other"  # Default category for unspecified cases
 
 
-# Percentage of words (excluding the first) that are uppercase
-def uppercase_percentage(clue):
-    words = clue.split()
-    if len(words) <= 1:
-        return 0
-    uppercase_words = [word for word in words[1:] if word.isupper()]
-    return len(uppercase_words) / (len(words) - 1) if (len(words) - 1) > 0 else 0
 
 
 def analyze_pos_distribution(clue):

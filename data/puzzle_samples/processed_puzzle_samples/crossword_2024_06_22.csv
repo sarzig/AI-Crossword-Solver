@@ -1,0 +1,69 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,8,0,Fermented mixture in Japanese cooking,9,MISOPASTE
+10,10,0,14,0,"Locale named in the Beach Boys' ""Kokomo""",5,ARUBA
+15,0,1,8,1,Some theatrical transitions,9,ENTRACTES
+16,10,1,14,1,Refused to release,5,SATON
+17,0,2,8,2,Stovetop convenience,9,SPOONREST
+18,10,2,14,2,Emmy winner Uzo,5,ADUBA
+19,0,3,2,3,Mo. in which the U.S. Constitution was signed,3,SEP
+20,4,3,14,3,Worsening situation from which there is no escape,11,DEATHSPIRAL
+22,0,4,4,4,10th in a series,5,KAPPA
+24,6,4,9,4,Run into,4,MEET
+25,11,4,14,4,"""___ the Next One,"" Grammy-winning Jay-Z song of 2009",4,ONTO
+26,0,5,3,5,Slurped treat,4,ICEE
+27,5,5,10,5,"Go window shopping, perhaps",6,PEERIN
+29,12,5,14,5,"A migraine sufferer might take one, for short",3,EEG
+30,0,6,7,6,Small-game hunters,8,TERRIERS
+32,9,6,14,6,Dreaded time for many,6,MONDAY
+34,3,7,6,7,An eternity,4,EONS
+35,8,7,11,7,___Plus (pharmacy brand),4,ATRA
+36,0,8,5,8,Cop,6,FESSUP
+39,7,8,14,8,"Raises, as a sensitive subject",8,BROACHES
+43,0,9,2,9,"Arundhati ___, Booker Prize-winning author",3,ROY
+44,4,9,9,9,"One in the last line of defense, typically",6,SAFETY
+46,11,9,14,9,Completely take advantage of,4,HOSE
+47,0,10,3,10,"___ urbis conditae, date of the founding of Rome",4,ANNO
+49,5,10,8,10,"""It was a lover and his ___"" (beginning of a song in ""As You Like It"")",4,LASS
+50,10,10,14,10,Just must,5,GOTTA
+51,0,11,10,11,Temporary water provider,11,PLANTSITTER
+54,12,11,14,11,"Vin Diesel's role in the ""Fast & Furious"" movies",3,DOM
+55,0,12,4,12,Proverbial payee,5,PIPER
+56,6,12,14,12,Casino where Siegfried and Roy made their Las Vegas debut,9,TROPICANA
+58,0,13,4,13,Follow,5,ENSUE
+59,6,13,14,13,"""Some friendly advice ...""",9,HERESATIP
+60,0,14,4,14,Slips through the cracks,5,SEEPS
+61,6,14,14,14,Plants used in early genetics experiments,9,SWEETPEAS
+1,0,0,0,6,Set for a campsite,7,MESSKIT
+2,1,0,1,6,One way to be left,7,INPEACE
+3,2,0,2,6,"Bung, e.g.",7,STOPPER
+4,3,0,3,2,What the Royal Crown of Spain is plated with,3,ORO
+5,4,0,4,4,It's black and white (or sometimes red),5,PANDA
+6,5,0,5,3,"Historically, it corresponded with how much a farmer could plow in one day",4,ACRE
+7,6,0,6,7,Alternatives to irons,8,STEAMERS
+8,7,0,7,6,"Guinea pigs, e.g.",7,TESTEES
+9,8,0,8,5,Book with the story of Purim,6,ESTHER
+10,10,0,10,3,"""Now!""",4,ASAP
+11,11,0,11,4,It's tuned for tunes,5,RADIO
+12,12,0,12,6,"Went from 0 to 180, say",7,UTURNED
+13,13,0,13,6,Noncarbonated drink with bubbles,7,BOBATEA
+14,14,0,14,6,Illuminating example,7,ANALOGY
+21,9,3,9,9,Handheld object used to release excess energy,7,STIMTOY
+23,3,4,3,8,French family members,5,PERES
+27,5,5,5,11,Trading card enthusiasts?,7,PENPALS
+28,10,5,10,8,"""A Doll's House"" protagonist",4,NORA
+31,4,6,4,9,Cash substitutes,4,IOUS
+33,11,6,11,10,___ cheese,5,NACHO
+35,8,7,8,14,Creative outlet?,8,ARTSTORE
+36,0,8,0,14,Ballet exercises done at a barre,7,FRAPPES
+37,1,8,1,14,Celebrity gossip site,7,EONLINE
+38,2,8,2,14,Think piece?,7,SYNAPSE
+39,7,8,7,14,Cover with scattered objects,7,BESTREW
+40,12,8,12,14,Much-anticipated outing,7,HOTDATE
+41,13,8,13,14,First country to hold elections using internet voting,7,ESTONIA
+42,14,8,14,14,Nautical navigation aids,7,SEAMAPS
+45,6,9,6,14,All ___ (phrase in some nondenominational church names),6,FAITHS
+48,3,10,3,14,Better,5,ONEUP
+50,10,10,10,14,Mill fill,5,GRIST
+52,4,11,4,14,Cuban instrument that ironically has six strings,4,TRES
+53,9,11,9,14,Sport that allows some corps-à-corps (body-to-body) contact,4,EPEE
+57,11,12,11,14,"Complete, with ""off""",3,CAP

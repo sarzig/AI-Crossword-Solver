@@ -1,0 +1,11 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,4,0,"Owner of a shop called The Bun Also Rises, most likely",5,BAKER
+6,0,1,4,1,Kind of oil served with bread,5,OLIVE
+7,0,2,4,2,Throw in the ___,5,TOWEL
+8,0,3,4,3,"""Fine"" dishware for a dinner party",5,CHINA
+9,0,4,4,4,Very quick,5,HASTY
+1,0,0,0,4,"Bungle, as plastic surgery",5,BOTCH
+2,1,0,1,4,"___ State, nickname for Hawaii",5,ALOHA
+3,2,0,2,4,Fuzzy fruits or flightless birds,5,KIWIS
+4,3,0,3,4,"4 x 400-meter race, e.g.",5,EVENT
+5,4,0,4,4,"4 x 400-meter race, e.g.",5,RELAY

@@ -1,0 +1,11 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,1,0,4,0,"""Dude! Come on!""",4,BRUH
+5,0,1,4,1,"San Antonio attraction to ""remember""",5,ALAMO
+6,0,2,4,2,Recurring Stallone role,5,RAMBO
+7,0,3,4,3,Stream,5,CREEK
+8,0,4,4,4,Hudson after whom the Hudson River is named,5,HENRY
+1,1,0,1,4,"Loudly play, as a speaker",5,BLARE
+2,2,0,2,4,Dish that might come with a spoon and chopsticks,5,RAMEN
+3,3,0,3,4,"Raw ___, color in the Crayola Hall of Fame",5,UMBER
+4,4,0,4,4,"Something ""played"" to avoid class",5,HOOKY
+5,0,1,0,4,Eyebrow shape,4,ARCH

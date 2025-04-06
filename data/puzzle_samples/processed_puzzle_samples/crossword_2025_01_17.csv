@@ -1,0 +1,73 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,4,0,Introductory course,5,SALAD
+6,6,0,8,0,Exchange letters,3,IPO
+9,11,0,14,0,"Venue for the sale of the town of Buford, Wyo., in 2012 (price: $900,000)",4,EBAY
+13,0,1,9,1,What you might get after being taken for a ride,10,UBERRATING
+16,11,1,14,1,Hint,4,NOTE
+17,0,2,9,2,"Jörmungandr, in Norse mythology",10,SEAMONSTER
+18,11,2,14,2,___ option,4,CALL
+19,0,3,2,3,Narrow passage: Abbr.,3,STR
+20,4,3,7,3,"Affixes, in a way",4,PINS
+21,9,3,14,3,Unprincipled,6,AMORAL
+23,3,4,6,4,Midrange performer,4,ALTO
+24,8,4,13,4,Shattering results,6,SHARDS
+25,0,5,12,5,So-so at best,13,NOGREATSHAKES
+29,0,6,4,6,Buff marsh resident,5,EGRET
+30,6,6,10,6,Budget alternative,5,ALAMO
+31,12,6,14,6,"Saucer contents, in brief",3,ETS
+34,0,7,3,7,Industrial Revolution and others,4,ERAS
+35,5,7,9,7,First Pixar film with a female protagonist,5,BRAVE
+36,11,7,14,7,Fulminate,4,RAIL
+37,0,8,2,8,Cubby hole?,3,DEN
+38,4,8,8,8,Playwright/screenwriter Douglas Carter ___,5,BEANE
+39,10,8,14,8,First capital of Alaska,5,SITKA
+40,2,9,14,9,One method of payment,13,DIRECTDEPOSIT
+43,1,10,6,10,Pickle,6,SCRAPE
+44,8,10,11,10,Actress Melissa Joan ___,4,HART
+45,0,11,5,11,Sauce made of seeds,6,TAHINI
+46,7,11,10,11,Company behind Sonic the Hedgehog,4,SEGA
+47,12,11,14,11,Blubber,3,SOB
+50,0,12,3,12,2011 hit by Jay-Z and Kanye West that samples a 1966 soul performance,4,OTIS
+51,5,12,14,12,Very,10,NOTALITTLE
+54,0,13,3,13,Bit of a subway station wall,4,TILE
+55,5,13,14,13,"""That'll do""",10,GOODENOUGH
+56,0,14,3,14,"Split things, sometimes",4,ENDS
+57,6,14,8,14,"Some printer purchases, for short",3,HPS
+58,10,14,14,14,Ping maker,5,SONAR
+1,0,0,0,3,Work (out),4,SUSS
+2,1,0,1,3,Provide crooked support for,4,ABET
+3,2,0,2,3,"Shakespearean counterpart to Logan on ""Succession""",4,LEAR
+4,3,0,3,2,Ready to fight,3,ARM
+5,4,0,4,6,Bead,7,DROPLET
+6,6,0,6,10,"""Take your time!""",11,ITSNOTARACE
+7,7,0,7,3,"Worst possible circumstances, with ""the""",4,PITS
+8,8,0,8,2,"Horizontal line, in Chinese writing",3,ONE
+9,11,0,11,5,"""More!""",6,ENCORE
+10,12,0,12,9,Positions of governance,10,BOARDSEATS
+11,13,0,13,4,It shows the lay of the land,5,ATLAS
+12,14,0,14,3,Big whoop,4,YELL
+14,5,1,5,5,Borg who co-founded the Institute for Women in Technology,5,ANITA
+15,9,1,9,7,"Kenneth who wrote ""The Wind in the Willows""",7,GRAHAME
+22,10,3,10,6,Speedy shark,4,MAKO
+23,3,4,3,7,Father of Phobos and Deimos,4,ARES
+24,8,4,8,14,Features of some monks and punks,11,SHAVEDHEADS
+25,0,5,0,8,It's a must,4,NEED
+26,1,5,1,8,Fantasy creature,4,OGRE
+27,2,5,2,14,Relative minor?,10,GRANDCHILD
+28,7,5,7,9,Way of looking at things,5,SLANT
+32,13,6,13,9,___ bar,4,TIKI
+33,14,6,14,9,Louver,4,SLAT
+35,5,7,5,13,Alarm sound option on a smartphone,7,BEEPING
+36,11,7,11,10,Hoot,4,RIOT
+38,4,8,4,11,Milling byproduct,4,BRAN
+39,10,8,10,14,Unfortunate twists,7,SPRAINS
+41,3,9,3,14,Blooms for van Gogh,6,IRISES
+42,9,9,9,13,Quarter back?,5,EAGLE
+43,1,10,1,14,Smooth kind of finish,5,SATIN
+45,0,11,0,14,Schlep,4,TOTE
+46,7,11,7,14,Point on a bus route,4,STOP
+47,12,11,12,14,Floor,4,STUN
+48,13,11,13,14,"___ Tokarczuk, winner of the 2018 Nobel Prize in Literature",4,OLGA
+49,14,11,14,14,Big name in paint,4,BEHR
+52,6,12,6,14,"""How gorgeous!""",3,OOH
+53,11,12,11,14,Adverb much used by Goldilocks,3,TOO

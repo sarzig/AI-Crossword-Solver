@@ -1,0 +1,11 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,4,0,What a bolt icon indicates on a phone camera,5,FLASH
+6,0,1,4,1,Able to move easily and gracefully,5,LITHE
+7,0,2,4,2,See eye to eye,5,AGREE
+8,0,3,4,3,Big unit of cheese,5,WHEEL
+9,0,4,4,4,Exercise that you might try to get in daily,5,STEPS
+1,0,0,0,4,Imperfections,5,FLAWS
+2,1,0,1,4,Subject of a revolutionary 1905 paper from Albert Einstein,5,LIGHT
+3,2,0,2,4,"""... sitting in ___, K-I-S-S-I-N-G""",5,ATREE
+4,3,0,3,4,Mindless followers,5,SHEEP
+5,4,0,4,4,Tough shoes to run in,5,HEELS

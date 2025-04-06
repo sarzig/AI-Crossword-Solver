@@ -1,0 +1,79 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,3,0,"Florida panther, e.g.",4,PUMA
+5,5,0,9,0,"""Inside with Jen ___"" (MSNBC show)",5,PSAKI
+10,11,0,14,0,"The Crimson Tide, to fans",4,BAMA
+14,0,1,3,1,Noted whale watcher of literature,4,AHAB
+15,5,1,9,1,Enter a username and password,5,LOGIN
+16,11,1,14,1,Wide-screen theater option,4,IMAX
+17,0,2,9,2,*Equipment for zooming,10,CAMERALENS
+19,11,2,14,2,"The last ""O"" of YOLO",4,ONCE
+20,0,3,2,3,"""Woman in a ___"" (Degas painting)",3,TUB
+21,4,3,7,3,"With 24-Across, some summer coffee orders",4,ICED
+22,9,3,12,3,Conditional word in coding,4,ELSE
+24,1,4,6,4,See 21-Across,6,LATTES
+26,8,4,10,4,Kind of connector for a VCR cable,3,RCA
+27,12,4,14,4,"Fill-in teacher, informally",3,SUB
+30,3,5,5,5,"Vegetable whose name means ""to eat"" in some West African languages",3,YAM
+31,7,5,14,5,"*Subject of a ""Caution"" sign on a park bench",8,WETPAINT
+33,1,6,3,6,Egyptian viper,3,ASP
+35,5,6,8,6,Vibe,4,AURA
+37,10,6,14,6,Major muddle,5,SNAFU
+38,1,7,13,7,*Shocking thing found on a farm,13,ELECTRICFENCE
+41,0,8,4,8,"The Swinging ___, robe-wearing mascot for the Padres",5,FRIAR
+42,6,8,9,8,O'Rourke of Texas politics,4,BETO
+43,11,8,13,8,"Drug whose name can be found in ""spells danger""",3,LSD
+44,0,9,7,9,*Challenge for an under-achiever?,8,LIMBOBAR
+46,9,9,11,9,"Issa of ""American Fiction""",3,RAE
+48,0,10,2,10,"""Of course!""",3,YES
+49,4,10,6,10,"Get 21 in blackjack, say",3,WIN
+50,8,10,13,10,Emphasize,6,STRESS
+53,2,11,5,11,Small dent,4,DING
+55,7,11,10,11,Dressy attire,4,SUIT
+56,12,11,14,11,Accessory for dressy attire,3,TIE
+58,0,12,3,12,Lots and lots,4,ATON
+60,5,12,14,12,*Where to look for fingerprints,10,CRIMESCENE
+63,0,13,3,13,Fuzzy fruit,4,KIWI
+64,5,13,9,13,Set one's sights on,5,AIMAT
+65,11,13,14,13,"The gemstone Olympic Australis, for one",4,OPAL
+66,0,14,3,14,"With 67- and 68-Across, MC Hammer lyric that applies to each of the answers to the starred clues",4,CANT
+67,5,14,9,14,See 66-Across,5,TOUCH
+68,11,14,14,14,See 66-Across,4,THIS
+1,0,0,0,3,Diplomat's success,4,PACT
+2,1,0,1,4,Rental for a D.I.Y. mover,5,UHAUL
+3,2,0,2,4,Black ___ (snake),5,MAMBA
+4,3,0,3,2,"Tallest president in U.S. history, familiarly",3,ABE
+5,5,0,5,7,Something a kids' menu might double as,8,PLACEMAT
+6,6,0,6,4,Boot bottoms,5,SOLES
+7,7,0,7,3,"Developed, in a way",4,AGED
+8,8,0,8,2,Family,3,KIN
+9,9,0,9,5,"Cricket, e.g.",6,INSECT
+10,11,0,11,3,Book jacket profiles,4,BIOS
+11,12,0,12,8,"The main characters in ""The Bourne Identity"" and ""Memento,"" notably",9,AMNESIACS
+12,13,0,13,2,Computer debut of 1984,3,MAC
+13,14,0,14,2,Rail-splitter's tool,3,AXE
+18,4,2,4,5,"""Lovely"" lady in a Beatles hit",4,RITA
+23,10,3,10,7,Expire,5,LAPSE
+25,3,4,3,9,Like about 4% of human blood,6,TYPEAB
+26,8,4,8,8,"Blink or jump, say",5,REACT
+28,13,4,13,8,Hungry,5,UNFED
+29,14,4,14,6,A/C meas.,3,BTU
+31,7,5,7,9,More sardonic,5,WRIER
+32,11,5,11,10,Founder of the American Shakers,6,ANNLEE
+33,1,6,1,10,Nest for a raptor,5,AERIE
+34,2,6,2,14,Gets thinner,9,SLIMSDOWN
+36,6,6,6,10,___ Outfitters (clothing chain),5,URBAN
+39,4,7,4,11,Feature of the Rolex logo,5,CROWN
+40,9,7,9,14,Like zirconium on the periodic table,8,FORTIETH
+41,0,8,0,10,"""A ___ Went By"" (classic children's book)",3,FLY
+45,5,9,5,14,"1-Across, for one",6,BIGCAT
+47,10,9,10,12,"Ceramics and sculpture, for two",4,ARTS
+50,8,10,8,14,"""Poison"" shrub",5,SUMAC
+51,12,10,12,14,N.B.A. star Curry,5,STEPH
+52,13,10,13,14,Where Moses received the Ten Commandments,5,SINAI
+54,3,11,3,14,Still competing,4,INIT
+55,7,11,7,14,"Actor Liu of ""Barbie""",4,SIMU
+57,14,11,14,14,"Ursula's slithery pets in ""The Little Mermaid""",4,EELS
+58,0,12,0,14,Dog show org.,3,AKC
+59,1,12,1,14,La hermana de mamá,3,TIA
+61,6,12,6,14,"2016 Olympics host, informally",3,RIO
+62,11,12,11,14,Collapsible camping convenience,3,COT

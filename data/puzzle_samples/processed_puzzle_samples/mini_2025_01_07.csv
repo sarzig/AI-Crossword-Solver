@@ -1,0 +1,11 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,4,0,"Man in Business Suit Levitating, for one",5,EMOJI
+6,0,1,4,1,Took a nap,5,DOZED
+7,0,2,4,2,Flying solo,5,ALONE
+8,0,3,4,3,"Graphic novel style for ""One Piece,"" the best-selling of its kind",5,MANGA
+9,1,4,4,4,Genuine,4,REAL
+1,0,0,0,3,"Dutch cheese that's ""made backward,"" per a joke",4,EDAM
+2,1,0,1,4,Grinding tooth,5,MOLAR
+3,2,0,2,4,Gas made of three oxygen atoms,5,OZONE
+4,3,0,3,4,Game that might end if you accidentally bump the table,5,JENGA
+5,4,0,4,4,Like the best-case scenario,5,IDEAL

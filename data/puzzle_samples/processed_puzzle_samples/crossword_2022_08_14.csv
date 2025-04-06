@@ -1,0 +1,141 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,2,0,Hotel chain operated by Hilton,3,TRU
+4,4,0,6,0,Banned insecticide,3,DDT
+7,9,0,13,0,Big voices with big egos,5,DIVAS
+12,16,0,20,0,Some users of Cyrillic script,5,SLAVS
+17,0,1,7,1,"Antique furniture expert, perhaps",8,RESTORER
+20,9,1,14,1,Like bills in arrears,6,UNPAID
+22,16,1,20,1,Freak out,5,PANIC
+23,0,2,7,2,100%,8,ABSOLUTE
+24,9,2,20,2,Sight at a checkout counter,12,CASHREGISTER
+26,0,3,9,3,Golfer who won the 1998 Masters (Italy),10,MARKOMEARA
+28,12,3,16,3,"Attach, as a patch",5,SEWON
+29,18,3,20,3,"""Baa, baa"" ma",3,EWE
+30,3,4,5,4,"""Rosy-fingered"" Greek goddess",3,EOS
+31,7,4,11,4,Snitch out,5,RATON
+34,13,4,16,4,Zip,4,NADA
+35,18,4,20,4,World's end?,3,DEE
+36,0,5,2,5,Grp. led by Mahmoud Abbas beginning in 2004,3,PLO
+39,4,5,8,5,"Apples and pears, botanically",5,POMES
+41,10,5,20,5,Seethe (Norway),11,DOASLOWBURN
+44,0,6,3,6,Queen Latifah's given first name,4,DANA
+46,5,6,7,6,Playwright ___-Manuel Miranda,3,LIN
+47,9,6,12,6,Benefit,4,BOON
+48,14,6,19,6,Pipsqueaks,6,TWERPS
+49,0,7,13,7,Give up all at once (Ecuador),14,QUITCOLDTURKEY
+53,15,7,17,7,Org. with a Summer League,3,NBA
+54,1,8,4,8,Churn,4,ROIL
+55,6,8,9,8,Response from a therapist,4,ISEE
+56,12,8,14,8,"Were, for one?",3,WAS
+58,17,8,19,8,"""If we don't end ___, ___ will end us"": H. G. Wells",3,WAR
+61,0,9,6,9,Calculus expert?,7,DENTIST
+63,8,9,11,9,"""Inventing ___"" (2022 Netflix hit)",4,ANNA
+66,13,9,20,9,Die-hard,8,LOYALFAN
+70,0,10,2,10,Gate in digital logic,3,AND
+71,4,10,16,10,Major player in U.S. economic policy (Egypt),13,CHAIROFTHEFED
+74,18,10,20,10,Retired jersey number for the 76ers' Moses Malone,3,TWO
+75,0,11,7,11,"Post-it notes, e.g.",8,STICKONS
+77,9,11,12,11,Cousin of a plum,4,SLOE
+78,14,11,20,11,It's good for three points,7,TRIDENT
+80,1,12,3,12,Where you might get into hot water,3,SPA
+81,6,12,8,12,___ Hortons (Canadian chain),3,TIM
+83,11,12,14,12,Statistician Silver,4,NATE
+85,16,12,19,12,Land with an accent over its first letter,4,EIRE
+86,3,13,5,13,Big inits. in TVs,3,RCA
+89,7,13,20,13,Boarding group? (Switzerland),14,TIMBERINDUSTRY
+94,1,14,6,14,Causes for pauses,6,COLONS
+97,8,14,11,14,God: Lat.,4,DEUS
+98,13,14,15,14,"Stephen of ""V for Vendetta""",3,REA
+99,17,14,20,14,Except for,4,SAVE
+100,0,15,10,15,Activity for Santa (Rwanda),11,MAKINGALIST
+102,12,15,16,15,Scouts B.S.A. members since 2019,5,GIRLS
+104,18,15,20,15,"Marks, as a ballot",3,XES
+105,0,16,2,16,"""OK, you get it,"" for short",3,ETC
+106,4,16,7,16,De ___ (freshly),4,NOVO
+107,9,16,13,16,"Used room service, e.g.",5,ATEIN
+109,15,16,17,16,Hamm of women's soccer fame,3,MIA
+111,0,17,2,17,Nickname that's three consecutive letters of the alphabet,3,STU
+112,4,17,8,17,Torus-shaped gasket,5,ORING
+114,11,17,20,17,One who walks to work? (Qatar),10,DOGHANDLER
+119,0,18,11,18,What this puzzle's circled letters are with respect to the surrounding shaded squares?,12,CAPITALGAINS
+123,13,18,20,18,Quite eccentric,8,OUTTHERE
+124,0,19,4,19,Noted underground adventurer,5,ALICE
+125,6,19,11,19,Sad ass,6,EEYORE
+126,13,19,20,19,Burger topping that jacks up the cholesterol,8,FRIEDEGG
+127,0,20,4,20,Rich sources,5,LODES
+128,7,20,11,20,Kidney-related,5,RENAL
+129,14,20,16,20,Asphalt component,3,TAR
+130,18,20,20,20,Daily ___ (news blog),3,KOS
+1,0,0,0,3,Disneyland ride,4,TRAM
+2,1,0,1,3,McEntire of country music,4,REBA
+3,2,0,2,3,Old map inits.,4,USSR
+4,4,0,4,5,Certain coding snippet,6,DOLOOP
+5,5,0,5,7,Special collection of musical hits?,8,DRUMSOLO
+6,6,0,6,3,"""Je te plumerai la ___"" (line from ""Alouette"")",4,TETE
+7,9,0,9,4,Old gold coin,5,DUCAT
+8,10,0,10,2,___ spot,3,INA
+9,11,0,11,2,"Seconds, in brief",3,VPS
+10,12,0,12,3,Open-mouthed responses,4,AAHS
+11,13,0,13,5,"Temptresses in the ""Odyssey""",6,SIRENS
+12,16,0,16,7,Create an elaborate series of deceptions,8,SPINAWEB
+13,17,0,17,2,Part of L.V.,3,LAS
+14,18,0,18,6,"Got in the game, perhaps",7,ANTEDUP
+15,19,0,19,6,Watch parties?,7,VIEWERS
+16,20,0,20,5,Focus for 15-Down,6,SCREEN
+18,3,1,3,4,It's a drag,4,TOKE
+19,7,1,7,8,Seats,8,REARENDS
+21,14,1,14,6,Big name in power tools,6,DEWALT
+25,15,2,15,7,Fail,6,GODOWN
+27,8,3,8,5,"Monitors at school, for short",3,RAS
+32,10,4,10,7,___-Eaters,4,ODOR
+33,11,4,11,7,Kindle competitor,4,NOOK
+36,0,5,0,7,"""ASAP!""",3,PDQ
+37,1,5,1,12,"Sondheim and Bernstein's collaborator on ""West Side Story""",8,LAURENTS
+38,2,5,2,12,Pungent party bowlful,8,ONIONDIP
+40,6,5,6,12,Ultra-aggressive,8,MILITANT
+42,12,5,12,8,Freshly,4,ANEW
+43,17,5,17,9,Quite a fight,5,BRAWL
+45,3,6,3,9,Fighting,4,ATIT
+47,9,6,9,11,"""___ días!""",6,BUENOS
+50,4,7,4,11,Instantly get along well,5,CLICK
+51,8,7,8,10,Rush,4,TEAR
+52,13,7,13,10,Home of the David Geffen School of Drama,4,YALE
+57,14,8,14,15,Laundry product,8,SOFTENER
+59,18,8,18,15,Like some 401(k) contributions,8,AFTERTAX
+60,19,8,19,15,It's touchy to hit,8,RAWNERVE
+61,0,9,0,11,"""___ Rheingold""",3,DAS
+62,5,9,5,11,"""The Chi"" channel, familiarly",3,SHO
+64,10,9,10,11,It has a devoted following on Sundays,3,NFL
+65,11,9,11,14,"Expiates, with ""for""",6,ATONES
+67,15,9,15,11,"""___ out!""",3,YER
+68,16,9,16,13,Formal farewell,5,ADIEU
+69,20,9,20,11,Modifier in digital logic,3,NOT
+72,7,10,7,13,"""Oh, really?""",4,ISIT
+73,12,10,12,13,Catch a few waves?,4,HEAR
+76,3,11,3,15,Lloyd of women's soccer fame,5,CARLI
+79,17,11,17,14,Talk smack about,4,DISS
+82,8,12,8,15,Skirt style,4,MIDI
+84,13,12,13,19,Getting bored with,8,TIRINGOF
+87,4,13,4,20,Suggests,8,CONNOTES
+88,5,13,5,18,Kind of cat or rabbit,6,ANGORA
+90,9,13,9,16,Flat top?,4,MESA
+91,10,13,10,16,Target of a joke,4,BUTT
+92,15,13,15,20,Region of Croatia associated with a canine breed,8,DALMATIA
+93,20,13,20,15,"""Did you ring?""",3,YES
+94,1,14,1,20,Hybrid farm animal,7,CATTALO
+95,2,14,2,20,Site acquired by Match.com in 2011,7,OKCUPID
+96,6,14,6,19,London's ___ Row,6,SAVILE
+100,0,15,0,20,Liquor from Mexico,6,MESCAL
+101,7,15,7,20,Like em dashes vis-à-vis en dashes,6,LONGER
+102,12,15,12,17,Benitez of TV news,3,GIO
+103,16,15,16,20,Fuse by heating below the melting point,6,SINTER
+108,11,16,11,20,Bomb produced in the 1950s,5,EDSEL
+110,17,16,17,19,"Ritalin target, for short",4,ADHD
+113,8,17,8,20,"Marvin who sang ""Sexual Healing""",4,GAYE
+115,14,17,14,20,Offended,4,HURT
+116,18,17,18,20,Food that's a national emblem of Wales,4,LEEK
+117,19,17,19,20,"""Thus ...""",4,ERGO
+118,20,17,20,20,"Standard operating procedures, for short",4,REGS
+120,3,18,3,20,Clinch,3,ICE
+121,9,18,9,20,Plasma particle,3,ION
+122,10,18,10,20,"Ambrose Burnside was its first president, for short",3,NRA

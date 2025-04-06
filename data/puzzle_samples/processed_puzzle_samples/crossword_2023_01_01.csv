@@ -1,0 +1,141 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,3,0,"Image on the flag of Oakland, Calif., appropriately",4,TREE
+5,5,0,9,0,Country whose capital is an anagram of its former capital,5,JAPAN
+10,11,0,15,0,"Sends 10 texts in a row to, say",5,SPAMS
+15,17,0,20,0,Stage partitions?,4,ACTS
+19,0,1,3,1,Achings,4,YENS
+20,5,1,9,1,Basic Mediterranean sauce,5,AIOLI
+21,11,1,15,1,Eagles' home,5,AERIE
+22,17,1,20,1,Pork cut,4,LOIN
+23,0,2,15,2,"Stick of butter, geometrically",16,RECTANGULARPRISM
+26,17,2,20,2,Sesame Street resident who refers to himself in the third person,4,ELMO
+27,0,3,4,3,Attentive,5,ALERT
+28,7,3,10,3,"Change of scenery, in real estate lingo",4,RELO
+29,14,3,20,3,Less involved,7,SIMPLER
+31,2,4,20,4,Seminal 1980 hit by Joy Division,19,LOVEWILLTEARUSAPART
+37,0,5,3,5,Attire for some queens,4,DRAG
+39,5,5,8,5,"Subtle flavor, to a wine taster",4,NOTE
+40,11,5,14,5,Accomplishes,4,DOES
+41,16,5,18,5,Barbecue discard,3,COB
+42,0,6,3,6,White House staffer,4,AIDE
+43,5,6,7,6,What a V-sign might indicate,3,TWO
+44,9,6,15,6,"Try to hit, as a piñata",7,SWINGAT
+47,18,6,20,6,"___-Locka, Fla.",3,OPA
+50,0,7,13,7,"Colorado, Idaho and Wyoming, among others",14,MOUNTAINSTATES
+53,15,7,20,7,"Lap, maybe",6,OUTRUN
+56,0,8,2,8,"Visitors from afar, in brief",3,ETS
+57,4,8,6,8,"Hurry, quaintly",3,HIE
+58,8,8,10,8,A matter of course?,3,PAR
+59,14,8,20,8,Works in a gallery,7,FINEART
+60,3,9,5,9,___ Aviv,3,TEL
+61,7,9,20,9,Hit 1998 Eddie Murphy comedy based on books by Hugh Lofting,14,DOCTORDOLITTLE
+65,0,10,4,10,"""An empty set exists,"" e.g.",5,AXIOM
+68,6,10,9,10,Stole,4,TOOK
+69,11,10,14,10,It lacks value,4,ZERO
+70,16,10,20,10,Leafy salad green,5,CRESS
+71,0,11,13,11,Recommit to one's fitness … or what 23-Across depicts literally,14,GETBACKINSHAPE
+74,15,11,17,11,State south of Mumbai,3,GOA
+75,0,12,6,12,Perception,7,INSIGHT
+76,10,12,12,12,Goof,3,ERR
+77,14,12,16,12,"South, in much of South America",3,SUR
+78,18,12,20,12,Light touch,3,PAT
+81,0,13,5,13,Nickname that's an anagram of ONLINE,6,LONNIE
+82,7,13,20,13,What characters in musicals often do … or what 31-Across depicts literally,14,BREAKOUTINSONG
+87,0,14,2,14,"""Discreet Music"" musician Brian",3,ENO
+88,5,14,11,14,Cars with clutches,7,MANUALS
+90,13,14,15,14,Photographer Goldin,3,NAN
+91,17,14,20,14,Prosecco cousin,4,ASTI
+92,2,15,4,15,Big shots they are not,3,BBS
+95,6,15,9,15,Secular,4,LAIC
+96,12,15,15,15,It's just under a foot,4,SOLE
+97,17,15,20,15,Explorer Ericson,4,LEIF
+98,0,16,18,16,Useful people to know … or what 50-Across depicts literally,19,FRIENDSINHIGHPLACES
+104,0,17,6,17,What an economy seat is usually short on,7,LEGROOM
+105,10,17,13,17,"""Oh, why not?!""",4,SURE
+106,16,17,20,17,Kuwaiti currency,5,DINAR
+109,0,18,3,18,Beseech,4,URGE
+110,5,18,20,18,Screen feature that facilitates multitasking … or what 61-Across depicts literally,16,PICTUREINPICTURE
+116,0,19,3,19,Food that's easy to get hooked on?,4,BAIT
+117,5,19,9,19,Group character,5,ETHOS
+118,11,19,15,19,Mocking smile,5,SNEER
+119,17,19,20,19,"The ""garden"" in Bosch's ""The Garden of Earthly Delights""",4,EDEN
+120,0,20,3,20,Old video game console inits.,4,SNES
+121,5,20,9,20,Excel,5,SHINE
+122,11,20,15,20,Swamp plant,5,SEDGE
+123,17,20,20,20,"Lamb, for one",4,MEAT
+1,0,0,0,3,Banks on TV,4,TYRA
+2,1,0,1,3,Lively dance,4,REEL
+3,2,0,2,8,Moon of Saturn found to have a potentially habitable ocean,9,ENCELADUS
+4,3,0,3,7,Component of some hormone therapy,8,ESTROGEN
+5,5,0,5,2,National Blood Donor Mo.,3,JAN
+6,6,0,6,2,Big inits. in insurance,3,AIG
+7,7,0,7,7,Work enthusiastically and energetically,8,POURITON
+8,8,0,8,5,Genetic variant,6,ALLELE
+9,9,0,9,4,Singer Horan of the boy band One Direction,5,NIALL
+10,11,0,11,2,Part of a woodpecker's diet,3,SAP
+11,12,0,12,2,/,3,PER
+12,13,0,13,2,Perfume line by pop star Grande,3,ARI
+13,14,0,14,6,Beauty pageant since 1952,7,MISSUSA
+14,15,0,15,4,Precursors to finals,5,SEMIS
+15,17,0,17,5,Mideast city with an eponymous pepper,6,ALEPPO
+16,18,0,18,10,"Share a byline, maybe",11,COLLABORATE
+17,19,0,19,4,Part of a stove,5,TIMER
+18,20,0,20,4,[That is SO funny!],5,SNORT
+24,4,2,4,4,"Off-road option, for short",3,ATV
+25,10,2,10,4,Spoil,3,ROT
+30,16,3,16,5,___ Pro (tech product),3,MAC
+32,5,4,5,9,Require,6,ENTAIL
+33,6,4,6,8,"""Holy moly!""",5,WOWIE
+34,11,4,11,7,Button added to Twitter in 2022,4,EDIT
+35,12,4,12,7,Primo,4,AONE
+36,13,4,13,7,Govt. agency rules,4,REGS
+37,0,5,0,8,Title for food writer Mary Berry,4,DAME
+38,1,5,1,8,Hilarious sort,4,RIOT
+44,9,6,9,11,Library section,6,STACKS
+45,10,6,10,9,"Imperfection, metaphorically",4,WART
+46,15,6,15,9,Labor,4,TOIL
+48,19,6,19,10,Makes certain knitting stitches,5,PURLS
+49,20,6,20,10,Before: Sp.,5,ANTES
+51,4,7,4,13,Group of gift-givers,7,THEMAGI
+52,8,7,8,11,"Cuddle amorously, in a way",5,SPOON
+54,16,7,16,13,Magical creature associated with rainbows,7,UNICORN
+55,17,7,17,11,Tri- one more time?,5,TETRA
+59,14,8,14,10,Rock's ___ Fighters,3,FOO
+60,3,9,3,13,Soccer star ___ Heath,5,TOBIN
+61,7,9,7,11,Enthusiastic affirmative,3,DOI
+62,11,9,11,14,Region encompassing most of the Arkansas/Missouri border,6,OZARKS
+63,12,9,12,13,"Copy, in brief",5,REPRO
+64,13,9,13,11,"Rap mogul, familiarly",3,DRE
+65,0,10,0,14,Quick and nimble,5,AGILE
+66,1,10,1,14,Noble gas used in some lasers,5,XENON
+67,2,10,2,20,"""All good""",11,ITSNOBIGGIE
+68,6,10,6,12,B'way purchase,3,TKT
+72,5,11,5,14,"STEM subject that rhymes with ""stem""",4,CHEM
+73,10,11,10,14,Recover,4,HEAL
+74,15,11,15,16,___ pig,6,GUINEA
+77,14,12,14,16,Buy time,5,STALL
+78,18,12,18,20,Barely sits still?,9,POSESNUDE
+79,19,12,19,15,No pro,4,ANTI
+80,20,12,20,15,"""Weekend, here I come!""",4,TGIF
+82,7,13,7,16,___ mitzvah (Jewish ceremony for multiple people),4,BNAI
+83,8,13,8,16,"Flatten, say",4,RUIN
+84,9,13,9,16,A pop,4,EACH
+85,13,13,13,20,"Having an intact tamper seal, say",8,UNOPENED
+86,17,13,17,20,One might move fast in stores,8,SALEITEM
+89,6,14,6,20,Loser to Herbert Hoover in 1928,7,ALSMITH
+93,3,15,3,20,Parts of some military uniforms,6,BERETS
+94,4,15,4,17,___-Caps (candy),3,SNO
+96,12,15,12,20,Holy place,6,SHRINE
+98,0,16,0,20,Goofs,5,FLUBS
+99,1,16,1,20,Aired anew,5,RERAN
+100,5,16,5,20,Uses performance-enhancing drugs,5,DOPES
+101,10,16,10,18,Egypt neighbor: Abbr.,3,ISR
+102,11,16,11,20,"Say ""…, say,"" say",5,GUESS
+103,16,16,16,18,Agcy. that advises against eating raw cookie dough,3,CDC
+107,19,17,19,20,___ man (frequent subject in The Onion),4,AREA
+108,20,17,20,20,Monopoly payment,4,RENT
+111,7,18,7,20,Home of more than one M.L.B. team,3,CHI
+112,8,18,8,20,Whole lot,3,TON
+113,9,18,9,20,Bring into play,3,USE
+114,14,18,14,20,Cribbage marker,3,PEG
+115,15,18,15,20,Anger,3,IRE

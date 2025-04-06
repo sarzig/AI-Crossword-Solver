@@ -1,0 +1,15 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,3,0,6,0,Computing platform?,4,DESK
+5,2,1,6,1,Campanelle is a bell-shaped variety of this,5,PASTA
+6,1,2,6,2,"Daly of ""Today""",6,CARSON
+7,0,3,6,3,Kickstarter supporters,7,BACKERS
+8,0,4,6,4,Landlocked neighbor of Georgia and Azerbaijan,7,ARMENIA
+9,0,5,6,5,Sneaks a peek,7,GLANCES
+10,0,6,5,6,Had a feeling about,6,SENSED
+1,3,0,3,6,Grows dim,7,DARKENS
+2,4,0,4,6,Magazine whose 50th anniversary issue featured Naomi Campbell on the cover,7,ESSENCE
+3,5,0,5,6,"Legendary, as one's past",7,STORIED
+4,6,0,6,5,"State school whose students chant ""Rock Chalk, Jayhawk!""",6,KANSAS
+5,2,1,2,6,Pellet-chomping arcade character,6,PACMAN
+6,1,2,1,6,"Eric ___, author of ""The Very Hungry Caterpillar""",5,CARLE
+7,0,3,0,6,Items strapped to a golf cart,4,BAGS

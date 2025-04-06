@@ -1,0 +1,11 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,1,0,4,0,___ notification (alert on a phone screen),4,PUSH
+5,0,1,4,1,Stocking stuffer?,5,SANTA
+6,0,2,4,2,"Hunter with a famous ""belt""",5,ORION
+7,0,3,4,3,"Gas used to infuse some beer and coffee, for short",5,NITRO
+8,1,4,4,4,18-wheeler,4,SEMI
+1,1,0,1,4,Home of the Notre-Dame cathedral,5,PARIS
+2,2,0,2,4,Join forces,5,UNITE
+3,3,0,3,4,Tempest,5,STORM
+4,4,0,4,4,"World capital whose name means ""between two rivers"" in Vietnamese",5,HANOI
+5,0,1,0,3,"Child with a Roman numeral after his name, maybe",3,SON

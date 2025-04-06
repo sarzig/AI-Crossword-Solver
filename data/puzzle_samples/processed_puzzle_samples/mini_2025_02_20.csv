@@ -1,0 +1,12 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,3,0,5,0,Sound of hard impact,3,BAM
+4,0,1,5,1,"""Hoo-wee!""",6,OHBABY
+7,0,2,5,2,"With 8-Across, kind of bus associated with London",6,DOUBLE
+8,0,3,5,3,See 7-Across,6,DECKER
+9,3,4,5,4,"Sponsored posts in one's newsfeed, e.g.",3,ADS
+1,3,0,3,4,"Dessert described as ""half-bread, half-cake""",5,BABKA
+2,4,0,4,4,Having a full range of physical or mental abilities,5,ABLED
+3,5,0,5,4,Mike who played Austin Powers,5,MYERS
+4,0,1,0,3,Quirky,3,ODD
+5,1,1,1,3,Garden tool used for weeding,3,HOE
+6,2,1,2,3,"Tampa Bay football player, for short",3,BUC

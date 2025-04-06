@@ -1,0 +1,73 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,14,0,Famous palindrome starter,15,AMANAPLANACANAL
+16,0,1,14,1,"""Is there more?""",15,CARETOELABORATE
+17,0,2,14,2,It can be infectious after Thanksgiving,15,CHRISTMASSPIRIT
+18,0,3,3,3,Coloring sometimes confused with dun,4,ROAN
+19,6,3,8,3,"Female rapper with the 2008 hit ""Paper Planes""",3,MIA
+20,11,3,14,3,Makes a move,4,ACTS
+21,0,4,2,4,"Lead-in to day, way or more",3,ANY
+22,4,4,7,4,"Love interest of Peter in the ""Spider-Man"" universe",4,GWEN
+24,9,4,11,4,Informal preposition,3,TIL
+26,3,5,5,5,Fish with a shy-sounding name,3,KOI
+27,8,5,10,5,It's the word,3,MUM
+28,12,5,14,5,___-Cat,3,SNO
+31,0,6,14,6,One of 12 for Katharine Hepburn,15,OSCARNOMINATION
+37,0,7,14,7,Dish that's different from its cousins by the inclusion of potatoes,15,SPANISHOMELETTE
+38,0,8,14,8,Catchers of waves,15,SATELLITEDISHES
+39,0,9,2,9,Vein output,3,ORE
+40,4,9,6,9,Constellation with the star Regulus,3,LEO
+41,9,9,11,9,Informal hookups,3,IVS
+42,3,10,5,10,Half a candy bar?,3,KAT
+43,7,10,10,10,Reasonable,4,SANE
+45,12,10,14,10,Initials for a 20th-century president (and his wife),3,LBJ
+48,0,11,3,11,Avian symbol of good fortune in Celtic culture,4,WREN
+51,6,11,8,11,Throne,3,CAN
+52,11,11,14,11,Uncover,4,BARE
+53,0,12,14,12,Hit 1976 album whose title track won the Grammy for Record of the Year,15,HOTELCALIFORNIA
+58,0,13,14,13,"Yogi Berra or Joe DiMaggio, e.g.",15,ITALIANAMERICAN
+59,0,14,14,14,"Sent out feelers, so to speak",15,TESTEDTHEWATERS
+1,0,0,0,4,"City that's the ""heart of Africa's art scene,"" per National Geographic",5,ACCRA
+2,1,0,1,4,Capital and second-largest city of Minorca,5,MAHON
+3,2,0,2,4,Range,5,ARRAY
+4,3,0,3,3,How to turn down a Hamburger,4,NEIN
+5,4,0,4,2,They share keys with 2's,3,ATS
+6,5,0,5,2,Nursery purchase,3,POT
+7,6,0,6,4,"""I can handle this!""",5,LEMME
+8,7,0,7,4,"___ LeRoy Locke, ""Father of the Harlem Renaissance""",5,ALAIN
+9,8,0,8,3,Org. with a climate research program,4,NASA
+10,9,0,9,2,"Required safety feature on cars, in brief",3,ABS
+11,10,0,10,2,"13-Down, e.g.",3,COP
+12,11,0,11,4,It preceded Calibri as Microsoft's default font,5,ARIAL
+13,12,0,12,3,Kilo finder,4,NARC
+14,13,0,13,3,Plugging away,4,ATIT
+15,14,0,14,3,Some do-overs,4,LETS
+22,4,4,4,10,Chest-beating sort,7,GORILLA
+23,5,4,5,10,"Kate who  won an Academy Award for ""The Reader""",7,WINSLET
+24,9,4,9,10,On the right radio frequency,7,TUNEDIN
+25,10,4,10,10,Cry after a close shave,7,IMALIVE
+26,3,5,3,8,Memorable title role of a 1941 film,4,KANE
+27,8,5,8,8,Handy person?,4,MIME
+28,12,5,12,8,"Dark Lord of the ___ (""Star Wars"" title)",4,SITH
+29,13,5,13,8,Pay attention to,4,NOTE
+30,14,5,14,8,Stack of Monopoly bills,4,ONES
+31,0,6,0,9,Scapola o femore,4,OSSO
+32,1,6,1,9,Go a couple of rounds,4,SPAR
+33,2,6,2,9,"___ Tiernan, author of the ""Immortal Beloved"" trilogy",4,CATE
+34,6,6,6,9,Largest tributary of the Mississippi,4,OHIO
+35,7,6,7,8,Wisecrack,3,MOT
+36,11,6,11,9,Novelist Gerritsen,4,TESS
+42,3,10,3,14,"Showed respect or submission, in a way",5,KNELT
+43,7,10,7,14,"Arabic for ""prayer""",5,SALAH
+44,8,10,8,14,Netflix category,5,ANIME
+45,12,10,12,14,Long weapon,5,LANCE
+46,13,10,13,14,Pipe material,5,BRIAR
+47,14,10,14,14,Jimmy Carter was the first president regularly seen in these,5,JEANS
+48,0,11,0,14,Slightest amount,4,WHIT
+49,1,11,1,14,___ learning,4,ROTE
+50,2,11,2,14,"Some travelers' concerns, in brief",4,ETAS
+51,6,11,6,14,Lingo,4,CANT
+52,11,11,11,14,Person partial to humour?,4,BRIT
+54,4,12,4,14,Golfer's concern,3,LIE
+55,5,12,5,14,Scoundrel,3,CAD
+56,9,12,9,14,Handful,3,FEW
+57,10,12,10,14,___ pro nobis,3,ORA

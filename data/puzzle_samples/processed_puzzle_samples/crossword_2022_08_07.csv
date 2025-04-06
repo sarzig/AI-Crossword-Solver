@@ -1,0 +1,141 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,5,0,Homes that may have butlers,6,MANORS
+7,8,0,12,0,Singer Dylan of the Wallflowers,5,JAKOB
+12,15,0,20,0,Supporting beams,6,JOISTS
+18,0,1,5,1,Bear or boar,6,ANIMAL
+19,7,1,13,1,"Bees, e.g.",7,SOCIALS
+21,15,1,20,1,Gleaming,6,AGLARE
+22,0,2,5,2,"The ""C"" of AMC Theatres",6,CINEMA
+23,7,2,13,2,"The whole package, colloquially",7,ALLTHAT
+24,15,2,20,2,Sevastopol is its largest city,6,CRIMEA
+25,0,3,8,3,Not true?,9,ATANANGLE
+27,11,3,20,3,"Visitor to a website, in analytics lingo",10,UNIQUEUSER
+29,0,4,2,4,"""Time ___ …""",3,WAS
+30,5,4,10,4,Concedes,6,GRANTS
+33,12,4,15,4,"Santa ___, Calif.",4,CRUZ
+34,17,4,20,4,"m, to Einstein",4,MASS
+35,2,5,4,5,B.C. neighbor: Abbr.,3,IDA
+38,6,5,11,5,Think creatively,6,IDEATE
+40,13,5,16,5,XL or 11C,4,SIZE
+42,0,6,7,6,Beer named for a founding father,8,SAMADAMS
+45,9,6,12,6,"W-2, for one",4,FORM
+47,14,6,19,6,"W.W. I helmet, informally",6,TINHAT
+51,0,7,5,7,2004 Will Smith sci-fi film,6,IROBOT
+52,9,7,13,7,D.S.T. starting time ... or a hint to 42-Across,5,TWOAM
+54,16,7,20,7,Weightlessness ... or a hint to 118-Across,5,ZEROG
+56,0,8,2,8,"___ Compton, first woman to cover the White House for a TV network",3,ANN
+57,4,8,7,8,Rating unit,4,STAR
+60,9,8,13,8,Libya's Gulf of ___,5,SIDRA
+61,15,8,20,8,Reporter's credit,6,BYLINE
+62,0,9,3,9,TV tavern,4,MOES
+64,5,9,8,9,Mimic,4,APER
+66,10,9,13,9,"""Royal"" bird",4,TERN
+67,15,9,20,9,In,6,AMIDST
+68,3,10,9,10,Top credit rating ... or a hint to 25-Across,7,TRIPLEA
+71,11,10,17,10,23rd in a series ... or a hint to 27-Across,7,DOUBLEU
+73,0,11,5,11,Trust in,6,RELYON
+76,7,11,10,11,Fails to be,4,ISNT
+78,12,11,15,11,Keen,4,WAIL
+79,17,11,20,11,Google ___,4,MAPS
+83,0,12,5,12,Holds in high regard,6,EXALTS
+84,7,12,11,12,Old lab burners,5,ETNAS
+86,13,12,16,12,Water bird with a haunting call,4,LOON
+88,18,12,20,12,Bit of HI gear?,3,LEI
+89,0,13,4,13,Cops ... or a hint to 115-Across,5,FIVEO
+90,7,13,11,13,Club for farm kids ... or a hint to 97-Across,5,FOURH
+91,15,13,20,13,Pouch on a string,6,TEABAG
+93,1,14,6,14,Game with L- and T-shaped pieces,6,TETRIS
+96,8,14,11,14,Locale for a West Coast wine tour,4,NAPA
+97,13,14,20,14,Secretive,8,HUSHHUSH
+99,4,15,7,15,R&R settings,4,SPAS
+101,9,15,14,15,Crystal-clear,6,LIMPID
+103,16,15,18,15,"""O, ___ fortune's fool!"": Romeo",3,IAM
+104,0,16,3,16,"Singer King with the 2014 hit ""Ex's & Oh's""",4,ELLE
+108,5,16,8,16,Body feature of a mammoth,4,HUMP
+110,10,16,15,16,Holy ___,6,TERROR
+112,18,16,20,16,It might be taken to the airport,3,CAB
+115,0,17,9,17,Spelling aid?,10,VOODOODOLL
+118,12,17,20,17,Baseball announcer's call on a home run,9,OINOINONE
+121,0,18,5,18,Nigerian city of 3.5+ million,6,IBADAN
+122,7,18,13,18,Set on the ground,7,LAYDOWN
+125,15,18,20,18,"""Jeopardy!"" fodder",6,TRIVIA
+126,0,19,5,19,This evenin',6,TONITE
+127,7,19,13,19,Video call glitch,7,TIMELAG
+128,15,19,20,19,"""I kid you not!""",6,HONEST
+129,0,20,5,20,Rate,6,ASSESS
+130,8,20,12,20,Like the Xbox One X vis-à-vis the Xbox One,5,NEWER
+131,15,20,20,20,Makes some Z's,6,SNORES
+1,0,0,0,4,Colorful parrot,5,MACAW
+2,1,0,1,4,Santa ___,5,ANITA
+3,2,0,2,9,Jazz singer born Eunice Kathleen Waymon,10,NINASIMONE
+4,3,0,3,3,Warning sign,4,OMEN
+5,4,0,4,3,"Commercial follower of ""-o-""",4,RAMA
+6,5,0,5,4,"A-game or b-ball, e.g.",5,SLANG
+7,8,0,8,5,"The ""you"" of the song lyric ""I'm begging of you, please don't take my man""",6,JOLENE
+8,9,0,9,2,"Part of the knee, for short",3,ACL
+9,10,0,10,2,D.I.Y. buy,3,KIT
+10,11,0,11,3,"""Magnum, P.I."" setting",4,OAHU
+11,12,0,12,4,Sauvignon ___,5,BLANC
+12,15,0,15,6,Where one might turn on the jets,7,JACUZZI
+13,16,0,16,3,D&D monster,4,OGRE
+14,17,0,17,4,Pelvis bone,5,ILIUM
+15,18,0,18,4,"Gregor ___, Kafka protagonist",5,SAMSA
+16,19,0,19,4,Some genealogical work,5,TREES
+17,20,0,20,4,Pioneering mail-order company,5,SEARS
+19,7,1,7,6,Introductory courses,6,SALADS
+20,13,1,13,5,Mixes together,5,STIRS
+26,6,3,6,6,Not looking good,4,GRIM
+28,14,3,14,6,Ctrl+Q,4,QUIT
+31,9,4,9,8,First couple of the early 1910s,5,TAFTS
+32,10,4,10,9,"""Shut your trap!""",6,STOWIT
+36,3,5,3,7,"Apply with a Q-tip, say",3,DAB
+37,4,5,4,8,Kerfuffles,4,ADOS
+39,11,5,11,10,Wore down,6,ERODED
+41,16,5,16,10,"RNA polymerase, e.g.",6,ENZYME
+42,0,6,0,9,"Thailand, once",4,SIAM
+43,1,6,1,9,River through Tuscany,4,ARNO
+44,5,6,5,12,Reaches,7,ATTAINS
+46,12,6,12,11,Bone filler,6,MARROW
+48,17,6,17,11,#2 on a table,6,HELIUM
+49,18,6,18,9,Bone-dry,4,ARID
+50,19,6,19,9,A great deal,4,TONS
+53,13,7,13,12,How-to go-to,6,MANUAL
+55,20,7,20,9,Obtain,3,GET
+58,6,8,6,10,YouTube or Gmail,3,APP
+59,7,8,7,13,"""Phew!"" feeling",6,RELIEF
+61,15,8,15,14,They're filled with X's,7,BALLOTS
+63,3,9,3,14,Engraving instrument,6,STYLET
+65,8,9,8,14,Lean against,6,RESTON
+69,4,10,4,15,Whirlybird whirlers,6,ROTORS
+70,9,10,9,15,Like some plants and physicals,6,ANNUAL
+72,14,10,14,12,"Personal story, informally",3,BIO
+73,0,11,0,13,"One calling a ""T""",3,REF
+74,1,11,1,14,Turnoff,4,EXIT
+75,2,11,2,14,Wash up,4,LAVE
+77,10,11,10,16,Certain fossil preserve,6,TARPIT
+80,18,11,18,20,The art of music?,10,ALBUMCOVER
+81,19,11,19,14,Vegetables that make a fitting addition to alphabet soup?,4,PEAS
+82,20,11,20,14,"[Oh, well]",4,SIGH
+85,11,12,11,16,"""Tsk, tsk!""",5,SHAME
+87,16,12,16,15,Classic soda brand,4,NEHI
+92,17,13,17,15,"""Oh, I see!""",3,AHA
+94,5,14,5,20,Small-screen entertainers?,7,IPHONES
+95,6,14,6,17,Ibn ___ (former Mideast king),4,SAUD
+97,13,14,13,19,Responsibility of a personnel director,6,HIRING
+98,14,14,14,17,Japanese noodle,4,UDON
+100,7,15,7,19,Young salmon,5,SMOLT
+102,12,15,12,20,Like hawks,6,PROWAR
+104,0,16,0,20,Hit 1979 musical in which a character's mistress is one of the main roles,5,EVITA
+105,1,16,1,20,University of New Mexico team,5,LOBOS
+106,2,16,2,20,Bank deals,5,LOANS
+107,3,16,3,20,"___ Vedder, lead singer of Pearl Jam",5,EDDIE
+109,8,16,8,20,Garden-variety,5,PLAIN
+111,15,16,15,20,Some I.R.A.s,5,ROTHS
+113,19,16,19,20,Licoricelike flavor,5,ANISE
+114,20,16,20,20,Rap producers make them,5,BEATS
+116,4,17,4,20,"The ""O's"" of Cheerios",4,OATS
+117,9,17,9,20,"Old ___, Conn.",4,LYME
+119,16,17,16,20,Spinach is rich in it,4,IRON
+120,17,17,17,20,El ___,4,NINO
+123,10,18,10,20,Drop o' the mornin',3,DEW
+124,11,18,11,20,Cheer to a matador,3,OLE

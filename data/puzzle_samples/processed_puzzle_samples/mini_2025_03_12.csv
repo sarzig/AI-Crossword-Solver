@@ -1,0 +1,11 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,1,0,3,0,"Drops on a putting green, say",3,DEW
+4,0,1,4,1,Change that a Spaniard or German might request?,5,EUROS
+6,0,2,4,2,"Beat handily, in slang",5,SPANK
+7,0,3,4,3,"Annoying, as a younger sibling",5,PESKY
+8,1,4,3,4,Blue expanse,3,SEA
+1,1,0,1,4,Pulls a fast one on,5,DUPES
+2,2,0,2,4,"Clear, as a blackboard",5,ERASE
+3,3,0,3,4,"Speaker of the line ""You know, no other factory in the world mixes its chocolate by waterfall""",5,WONKA
+4,0,1,0,3,"Paranormal gift, for short",3,ESP
+5,4,1,4,3,Blue expanse,3,SKY

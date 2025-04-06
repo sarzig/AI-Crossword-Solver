@@ -1,0 +1,77 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,3,0,Unwanted piece of mail,4,BILL
+5,6,0,9,0,Took to court,4,SUED
+9,11,0,14,0,Blog addition,4,POST
+13,0,1,4,1,Written legal argument,5,BRIEF
+15,6,1,9,1,"Red carpet hairstyle, often",4,UPDO
+16,11,1,14,1,Sephora rival,4,ULTA
+17,0,2,4,2,Only U.N. member whose name starts with Q,5,QATAR
+18,6,2,14,2,Places that are off-limits,9,NOGOAREAS
+20,3,3,14,3,Path of advancement for a lawyer,12,PARTNERTRACK
+22,0,4,2,4,High-pitched bark,3,ARF
+25,4,4,6,4,"Since, informally",3,CUZ
+26,10,4,14,4,Sending a chill up one's spine,5,EERIE
+27,0,5,9,5,Position for Steph Curry or Caitlin Clark,10,POINTGUARD
+32,11,5,14,5,Like Easter eggs or purple hair,4,DYED
+33,0,6,4,6,Speaking platforms,5,PODIA
+34,7,6,10,6,"Antidrug cop, informally",4,NARC
+36,1,7,13,7,Go along with prevailing wisdom,13,FOLLOWTHEHERD
+42,4,8,7,8,Athletic gear that comes in pairs,4,SKIS
+43,10,8,14,8,"""Too rich for my blood""",5,IMOUT
+45,0,9,3,9,Pride parade inits.,4,LGBT
+49,5,9,14,9,Manual for consistency in writing,10,STYLEGUIDE
+52,0,10,4,10,Helpful,5,OFUSE
+54,8,10,10,10,Composer ___-Manuel Miranda,3,LIN
+55,12,10,14,10,Was first to play a card,3,LED
+56,0,11,11,11,"Do one's job to the point of exhaustion ... or a hint to the ends of 20-, 27-, 36- and 49-Across",12,WORKLIKEADOG
+61,0,12,8,12,"""Biscuit"" for cookie or ""chips"" for fries",9,BRITICISM
+62,10,12,14,12,"Novices, informally",5,NEWBS
+66,0,13,3,13,Frozen treats,4,ICES
+67,5,13,8,13,Utah winter resort,4,ALTA
+68,10,13,14,13,"""Laters!""",5,SEEYA
+69,0,14,3,14,"Host's place, usually, on a late-night talk show",4,DESK
+70,5,14,8,14,Expresses silent agreement,4,NODS
+71,11,14,14,14,Not discard,4,KEEP
+1,0,0,0,2,"Roasting event, for short",3,BBQ
+2,1,0,1,2,Reflective Glass on the radio,3,IRA
+3,2,0,2,2,"Hoppin', in slang",3,LIT
+4,3,0,3,3,Hop,4,LEAP
+5,6,0,6,5,"Chinese general who wrote ""The Art of War""",6,SUNTZU
+6,7,0,7,3,"""Once ___ a time …""",4,UPON
+7,8,0,8,3,Rim,4,EDGE
+8,9,0,9,3,"""Let's Make a Deal"" option",4,DOOR
+9,11,0,11,5,Made contented sounds like a cat,6,PURRED
+10,12,0,12,5,"Kevin of ""Shark Tank,"" also known as ""Mr. Wonderful""",6,OLEARY
+11,13,0,13,5,Tween sister of Barbie,6,STACIE
+12,14,0,14,5,Assigned a job,6,TASKED
+14,4,1,4,8,Geometric figures whose subparts mimic the full shape,8,FRACTALS
+19,10,2,10,4,Had a meal,3,ATE
+21,5,3,5,5,"Toupee, in slang",3,RUG
+22,0,4,0,6,Roblox or TikTok,3,APP
+23,1,4,1,7,"T-top, for one",4,ROOF
+24,2,4,2,7,Stereotypical canine name,4,FIDO
+28,3,5,3,7,Zero,3,NIL
+29,7,5,7,9,Impatient,5,ANTSY
+30,8,5,8,7,"When doubled, gung-ho",3,RAH
+31,9,5,9,7,Hip-hop's Dr. ___,3,DRE
+35,10,6,10,13,Hair knots with a French name,8,CHIGNONS
+37,5,7,5,9,Gives a thumbs up,3,OKS
+38,6,7,6,9,Clever humor,3,WIT
+39,11,7,11,9,"Large bird that lays green eggs, which are incubated by the male",3,EMU
+40,12,7,12,10,Stir up,4,ROIL
+41,13,7,13,10,"""Bruh""",4,DUDE
+44,14,8,14,10,___ Talks,3,TED
+45,0,9,0,14,Likely winner of a construction contract,6,LOWBID
+46,1,9,1,14,Sensation of acceleration,6,GFORCE
+47,2,9,2,14,"Represses, as a bad memory",6,BURIES
+48,3,9,3,14,"""Bad you!""",6,TSKTSK
+50,8,9,8,14,Pack animals that can spit up to 10 feet when irritated,6,LLAMAS
+51,9,9,9,11,Festival at the end of Ramadan,3,EID
+53,4,10,4,12,Retired QB Manning,3,ELI
+57,5,11,5,14,Volunteer's words,4,ICAN
+58,6,11,6,14,Unit of smuggled drugs,4,KILO
+59,7,11,7,14,Abbr. before a year on a cornerstone,4,ESTD
+60,11,11,11,14,Eccentric expert,4,GEEK
+63,12,12,12,14,Itsy-bitsy,3,WEE
+64,13,12,13,14,"""Ta-ta""",3,BYE
+65,14,12,14,14,Drain the energy from,3,SAP

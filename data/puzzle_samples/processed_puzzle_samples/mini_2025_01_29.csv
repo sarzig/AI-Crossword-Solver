@@ -1,0 +1,11 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,2,0,4,0,"Type of bulb in many Christmas lights, for short",3,LED
+4,0,1,4,1,"Diminish, as confidence",5,ERODE
+6,0,2,4,2,"With 7-Across, sawing a person in half, e.g.",5,MAGIC
+7,0,3,4,3,See 6-Across,5,TRICK
+8,0,4,4,4,Breakaway religious groups,5,SECTS
+1,2,0,2,4,Sudoku solver's asset,5,LOGIC
+2,3,0,3,4,Official decree,5,EDICT
+3,4,0,4,4,Illusionists might cut them in half,5,DECKS
+4,0,1,0,4,CPR pros,4,EMTS
+5,1,1,1,4,Like finding a four-leaf clover,4,RARE

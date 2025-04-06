@@ -1,0 +1,69 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,3,0,Lead-in to fish,4,CRAW
+5,5,0,9,0,"Doing long-distance, say",5,APART
+10,11,0,14,0,Flaps,4,ADOS
+14,0,1,3,1,Best Actor winner Malek,4,RAMI
+15,5,1,9,1,Curved blade,5,SABER
+16,11,1,14,1,Partly: Prefix,4,DEMI
+17,0,2,3,2,Noodle in miso broth,4,UDON
+18,5,2,14,2,Smug affirmative,10,IDIDINDEED
+20,0,3,7,3,"Memorable chase scene vehicle in ""Indiana Jones and the Temple of Doom""",8,MINECART
+22,9,3,14,3,"""I love mankind … it's ___ I can't stand"": Linus from ""Peanuts""",6,PEOPLE
+23,0,4,6,4,"Quarters, e.g.",7,BARGAME
+24,8,4,14,4,Like some families,7,BLENDED
+25,0,5,4,5,Knot,5,SNARL
+26,7,5,10,5,"The world's largest one, produced by the coco de mer, weighs up to 55 pounds",4,SEED
+27,12,5,14,5,First woman to land a triple axel in major competition,3,ITO
+28,3,6,9,6,Lets breathe,7,AERATES
+31,11,6,14,6,Concerning,4,ASTO
+32,0,7,14,7,Figure of speech?,15,SOAPBOXPREACHER
+36,0,8,3,8,Qualified,4,ABLE
+37,5,8,11,8,Feature of many haute couture dresses,7,BIASCUT
+38,0,9,2,9,Picked-up item,3,TAB
+39,4,9,7,9,Window shade,4,TINT
+40,10,9,14,9,"Removes out of respect, perhaps",5,DOFFS
+44,0,10,6,10,"Like an anecdote, one hopes",7,AMUSING
+46,8,10,14,10,Immoderate amount,7,SURFEIT
+48,0,11,5,11,His #12 is retired for the Jets,6,NAMATH
+49,7,11,14,11,"""Never in a million years!""",8,OHHELLNO
+50,0,12,9,12,Backpedaling qualifier,10,INAGOODWAY
+52,11,12,14,12,Massachusetts college specializing in engineering,4,OLIN
+53,0,13,3,13,Title in court,4,SIRE
+54,5,13,9,13,Measure of regret?,5,OUNCE
+55,11,13,14,13,D.C.'s lack in Congress,4,VOTE
+56,0,14,3,14,"""Welcome"" sights",4,MATS
+57,5,14,9,14,Newspaper assignments,5,DESKS
+58,11,14,14,14,Much of a flock,4,EWES
+1,0,0,0,5,Things to brush off,6,CRUMBS
+2,1,0,1,5,Trigonometry unit,6,RADIAN
+3,2,0,2,5,"___ St. Brown, N.F.L. star nicknamed ""Sun God""",6,AMONRA
+4,3,0,3,8,"Muscat, for one",9,WINEGRAPE
+5,5,0,5,4,"2007 Alicia Keys release featuring the #1 hit ""No One""",5,ASIAM
+6,6,0,6,4,God father?,5,PADRE
+7,7,0,7,3,Not much at all,4,ABIT
+8,8,0,8,2,Like male summer tanagers,3,RED
+9,9,0,9,8,Ingredient in a Long Island iced tea,9,TRIPLESEC
+10,11,0,11,4,Extension : Chrome :: ___ : Firefox,5,ADDON
+11,12,0,12,7,Chicago specialty,8,DEEPDISH
+12,13,0,13,7,Litmus test of a chef's basic culinary skills,8,OMELETTE
+13,14,0,14,7,"Way to an alley, perhaps",8,SIDEDOOR
+19,10,2,10,5,___-blind admission,4,NEED
+21,4,3,4,7,"Actor McLaughlin of ""Stranger Things""",5,CALEB
+24,8,4,8,8,They might be pint-size,5,BEERS
+26,7,5,7,9,"Green party figure, for short?",5,STPAT
+29,5,6,5,14,Legendary figure whose first name sounds like something he's known for doing,9,ROBINHOOD
+30,6,6,6,10,Getting rid of,5,AXING
+31,11,6,11,14,"Cooking for one's partner, say",9,ACTOFLOVE
+32,0,7,0,14,"Theme in ""Rosemary's Baby""",8,SATANISM
+33,1,7,1,14,Craze of late-2000s politics,8,OBAMANIA
+34,2,7,2,14,Picture on a sleeve,8,ALBUMART
+35,10,7,10,11,Lorde of feminist literature,5,AUDRE
+39,4,9,4,12,Eponym of a popular vodka brand,4,TITO
+41,12,9,12,14,Chap,6,FELLOW
+42,13,9,13,14,"Like the universe, according to Aristotle",6,FINITE
+43,14,9,14,14,They're the pits,6,STONES
+45,3,10,3,14,Wise ones,5,SAGES
+46,8,10,8,14,Part of many a beachside restaurant's name,5,SHACK
+47,9,10,9,14,"""Is the pope Catholic?!""",5,UHYES
+49,7,11,7,14,Has,4,OWNS
+51,6,12,6,14,Directly,3,DUE

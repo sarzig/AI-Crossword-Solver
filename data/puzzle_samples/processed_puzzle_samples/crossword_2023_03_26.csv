@@ -1,0 +1,141 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,6,0,"Businesses that might offer ""pawdicures""",7,DOGSPAS
+8,8,0,12,0,Subject in sexology,5,GSPOT
+13,14,0,20,0,"Feeling of auditory bliss, in a modern coinage",7,EARGASM
+20,0,1,6,1,Stacked haphazardly,7,INAPILE
+21,8,1,12,1,Some religious artwork,5,ICONS
+22,14,1,20,1,Band stan,7,GROUPIE
+23,0,2,12,2,Preparing to put earrings in an ogre?,13,PIERCINGSHREK
+25,14,2,20,2,Understood,7,GRASPED
+26,0,3,4,3,"Treat, as wood",5,STAIN
+27,6,3,9,3,Revealer of the Wizard of Oz,4,TOTO
+28,13,3,16,3,Hostile parties,4,FOES
+29,3,4,7,4,Nickname for Luigi,5,GIGIO
+31,9,4,20,4,"The Macy's in New York's Herald Square, and others?",12,ORIGINSTORES
+39,0,5,2,5,Harbor boat,3,TUG
+42,4,5,6,5,Downside,3,CON
+43,8,5,13,5,"Had trouble with, as an icy road",6,SLIDON
+44,15,5,20,5,Defeat decisively,6,THRASH
+45,0,6,3,6,Home to five U.S. national parks,4,UTAH
+47,5,6,8,6,Instruction in a meringue recipe,4,BEAT
+49,10,6,14,6,"E.M.T.'s apparatus, informally",5,DEFIB
+51,16,6,20,6,Org. that facilitates adoptions,5,ASPCA
+52,0,7,16,7,Pentad for a poetry performance?,17,FIVEPILLARSOFSLAM
+56,18,7,20,7,Outdo,3,TOP
+57,0,8,4,8,Infection fighter,5,TCELL
+58,6,8,9,8,In ___ (as found),4,SITU
+59,13,8,15,8,"What ""O"" might stand for",3,HUG
+60,17,8,20,8,"""What's ___ …""",4,MORE
+61,1,9,5,9,TV spy drama of the early 2000s,5,ALIAS
+63,7,9,11,9,"Watch all at once, say",5,BINGE
+66,14,9,20,9,Supreme Court surname,7,ROBERTS
+68,3,10,17,10,Shopping for some cereal?,15,PICKINGONESBRAN
+72,0,11,6,11,Deep-fried appetizer often served with chutney,7,PAPADAM
+75,9,11,13,11,Big fuss,5,STINK
+76,15,11,19,11,One side of a battery,5,ANODE
+79,0,12,3,12,"""Good heavens!""",4,EGAD
+80,5,12,7,12,"The ""L"" of L.V.",3,LAS
+82,11,12,14,12,Vegan alternative to gelatin,4,AGAR
+84,16,12,20,12,"Literary character described as ""a stout little fellow with red cheeks""",5,FRODO
+86,0,13,2,13,"What ""X"" might stand for",3,TEN
+87,4,13,20,13,Prize in a chowder cook-off?,17,CERTIFICATEOFCLAM
+92,0,14,4,14,Gen Zer who might be into faux freckles and anime,5,EGIRL
+94,6,14,10,14,Start of many a Father's Day card,5,TODAD
+95,12,14,15,14,Campy stuff?,4,GEAR
+96,17,14,20,14,___ mater,4,ALMA
+97,0,15,5,15,Was completely depleted,6,RANOUT
+99,7,15,12,15,"Smartphone, e.g.",6,DEVICE
+101,14,15,16,15,"""Well, ___-di-dah!""",3,LAH
+103,18,15,20,15,"You might need just the ""last four"" of it: Abbr.",3,SSN
+104,0,16,11,16,Old-timey wizard who needs to learn some manners?,12,SPITTINGMAGE
+106,13,16,17,16,Fly,5,PILOT
+108,4,17,7,17,Be overly sweet,4,CLOY
+109,11,17,14,17,"""No chickening out!""",4,DOIT
+111,16,17,20,17,Faith founded in Persia,5,BAHAI
+115,0,18,6,18,"""Black"" or ""Pink"" animal",7,PANTHER
+119,8,18,20,18,"Band with the 1997 hit ""Semi-Charmed Life"" … or a phonetic hint to this puzzle's theme",13,THIRDEYEBLIND
+123,0,19,6,19,They might wipe the slate clean,7,ERASERS
+124,8,19,12,19,Spine-tingling,5,EERIE
+125,14,19,20,19,"Klingon speaker, say",7,TREKKIE
+126,0,20,6,20,Deadlock,7,IMPASSE
+127,8,20,12,20,C-suite members,5,EXECS
+128,14,20,20,20,"Pots and pans, e.g.",7,VESSELS
+1,0,0,0,3,Ballroom dance moves,4,DIPS
+2,1,0,1,3,"""Will do!""",4,ONIT
+3,2,0,2,3,Greek earth goddess,4,GAEA
+4,3,0,3,4,Lavender unit,5,SPRIG
+5,4,0,4,5,"Walk in the park … or sit in a park, maybe",6,PICNIC
+6,5,0,5,2,Actor Mahershala,3,ALI
+7,6,0,6,8,Lookouts,9,SENTINELS
+8,8,0,8,3,General idea,4,GIST
+9,9,0,9,5,Classy establishment?,6,SCHOOL
+10,10,0,10,2,___ favor,3,POR
+11,11,0,11,2,United,3,ONE
+12,12,0,12,2,"""You should know better!""",3,TSK
+13,14,0,14,4,Encourage,5,EGGON
+14,15,0,15,5,Stop the progress of,6,ARREST
+15,16,0,16,7,Entree that might be prepared with a brown sugar glaze,8,ROASTHAM
+16,17,0,17,2,"""Gloomy"" guy",3,GUS
+17,18,0,18,2,What some people use to solve a New York Times crossword,3,APP
+18,19,0,19,2,"German ""you""",3,SIE
+19,20,0,20,2,Rx request,3,MED
+24,7,2,7,4,Slimy stuff,3,GOO
+28,13,3,13,8,"Lacquer, e.g.",6,FINISH
+30,5,4,5,7,Home to wild Bactrian camels,4,GOBI
+32,10,4,10,7,Clears (of),4,RIDS
+33,11,4,11,7,Lead-in to -logue,4,IDEO
+34,12,4,12,7,N.F.L. quarterback Jared,4,GOFF
+35,17,4,17,6,"Surgery sites, in brief",3,ORS
+36,18,4,18,9,Toronto N.B.A. player,6,RAPTOR
+37,19,4,19,9,Usher,6,ESCORT
+38,20,4,20,9,"Tot's geometry lesson, perhaps",6,SHAPES
+39,0,5,0,8,Clump of hair,4,TUFT
+40,1,5,1,9,City at the foot of the Adirondacks,5,UTICA
+41,2,5,2,9,What may bring a meeting to order,5,GAVEL
+43,8,5,8,10,Cholesterol-lowering drug,6,STATIN
+46,3,6,3,12,Landing site,7,HELIPAD
+48,7,6,7,10,"Cover, of a sort",5,ALIBI
+50,14,6,14,10,Words for a cover,5,BLURB
+53,4,7,4,11,Like many a lumberjack's shirt,5,PLAID
+54,9,7,9,11,Certain footholds,5,RUNGS
+55,15,7,15,11,Ancient marketplace,5,AGORA
+60,17,8,17,14,"Spanish resort island, to locals",7,MENORCA
+62,5,9,5,13,"""Do""-to-""do"" delivery",5,SCALE
+64,10,9,10,11,Understood,3,GOT
+65,11,9,11,13,Pioneering computer,5,ENIAC
+67,16,9,16,13,National park in the Canadian Rockies,5,BANFF
+69,6,10,6,14,Former retail giant,5,KMART
+70,12,10,12,15,Captivate,6,ENGAGE
+71,13,10,13,14,Cousin of a stingray,5,SKATE
+72,0,11,0,16,"Dwindles, with ""out""",6,PETERS
+73,1,11,1,16,It's 2.3 years for the average heterosexual American couple,6,AGEGAP
+74,2,11,2,16,Something made in a press,6,PANINI
+77,18,11,18,15,Things a plangonologist collects,5,DOLLS
+78,19,11,19,15,Some semihard cheeses,5,EDAMS
+81,7,12,7,17,Stubbornly old-fashioned,6,STODGY
+83,14,12,14,20,"""The museum of social decay,"" per Gary Oldman",9,REALITYTV
+85,20,12,20,15,"The so-called ""Pearl of Arabia""",4,OMAN
+87,4,13,4,20,Strapless accessories,8,CLUTCHES
+88,8,13,8,16,"As above, in citations",4,IDEM
+89,9,13,9,16,___ bean,4,FAVA
+90,10,13,10,16,"""Groovy!""",4,IDIG
+91,15,13,15,16,Like some tradition,4,ORAL
+93,3,14,3,16,Spoil,3,ROT
+98,5,15,5,20,Some bathroom contractors,6,TILERS
+100,11,15,11,20,Comedy's ___ the Entertainer,6,CEDRIC
+102,16,15,16,20,"Cartoon character who said ""Van Gogh would've sold more than one painting if he'd put tigers in them""",6,HOBBES
+105,6,16,6,20,Like the goddess Hel,5,NORSE
+106,13,16,13,18,"March 14 dessert, appropriately",3,PIE
+107,17,16,17,20,"""The birds and the bees"" and others",5,TALKS
+110,12,17,12,20,Pope writings,4,ODES
+112,18,17,18,20,Sharp increase,4,HIKE
+113,19,17,19,20,"Kapoor of ""Slumdog Millionaire""",4,ANIL
+114,20,17,20,20,"Two weeks after calends, approximately",4,IDES
+115,0,18,0,20,Rock & Roll Hall of Fame architect,3,PEI
+116,1,18,1,20,River offshoot,3,ARM
+117,2,18,2,20,Power ___,3,NAP
+118,3,18,3,20,Wand-waving org.,3,TSA
+119,8,18,8,20,Merch table offering,3,TEE
+120,9,18,9,20,Spell of bad luck?,3,HEX
+121,10,18,10,20,Seething state,3,IRE
+122,15,18,15,20,"Before, in poetry",3,ERE

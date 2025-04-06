@@ -1,0 +1,141 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,3,0,Gumshoes,4,TECS
+5,5,0,10,0,"___ Hall, ""Days of Our Lives"" actress",6,DEIDRE
+11,12,0,16,0,D.C. lobbying group with a Star of David in its logo,5,AIPAC
+16,18,0,20,0,Back,3,AGO
+19,0,1,3,1,Italian menu word,4,ALLA
+20,5,1,10,1,Gave out,6,ISSUED
+21,12,1,16,1,Handy,5,UTILE
+22,18,1,20,1,Cut back a lot?,3,MOW
+23,0,2,16,2,Fresh pair of loafers?,17,BEAVISANDBUTTHEAD
+26,18,2,20,2,Actor McShane,3,IAN
+27,0,3,8,3,Engraves with a machine,9,LASERCUTS
+28,11,3,13,3,Plant also called herb-of-grace,3,RUE
+29,16,3,20,3,Apollo 11's lunar lander,5,EAGLE
+31,0,4,4,4,Follow,5,ENSUE
+32,9,4,15,4,"Wilford who co-starred in 1985's ""Cocoon""",7,BRIMLEY
+36,17,4,20,4,Blanc's opposite,4,NOIR
+37,0,5,3,5,"""___ life?""",4,HOWS
+38,5,5,20,5,Forerunners of flip-flops?,16,CAMPAIGNPROMISES
+43,0,6,2,6,Singer Rita,3,ORA
+44,4,6,10,6,Many non-scholarship athletes,7,WALKONS
+45,13,6,17,6,Protein-rich fluid,5,SERUM
+46,0,7,12,7,Slip before putting on a boot?,13,PARKINGTICKET
+50,15,7,20,7,Backup groups,6,BTEAMS
+54,3,8,7,8,They're found in pods,5,ORCAS
+55,11,8,16,8,Lose fizz,6,GOFLAT
+58,18,8,20,8,Home of the Sheikh Zayed Grand Mosque: Abbr.,3,UAE
+59,0,9,5,9,Opposite of a no-no?,6,AYEAYE
+62,8,9,14,9,Company that manufactures Silly Putty,7,CRAYOLA
+65,17,9,20,9,Colorful breakfast bowlful,4,TRIX
+66,0,10,3,10,Peddle,4,SELL
+67,5,10,15,10,Noted name in clogs?,11,LIQUIDPLUMR
+71,17,10,20,10,Navigation app,4,WAZE
+72,0,11,3,11,"Movement whose name may derive from the French for ""hobbyhorse""",4,DADA
+73,6,11,12,11,They quiet one's footsteps,7,CARPETS
+74,15,11,20,11,Came (from),6,HAILED
+76,0,12,2,12,"It's mined, all mined!",3,ORE
+77,4,12,9,12,Ladybug or firefly,6,BEETLE
+79,13,12,17,12,Starting point for many soul singers,5,CHOIR
+81,0,13,5,13,"The ""I"" of 11-Across",6,ISRAEL
+83,8,13,20,13,Collectors of moccasins?,13,SNAKEHANDLERS
+90,3,14,7,14,Number of swans a-swimming,5,SEVEN
+93,10,14,16,14,Star in Scorpius,7,ANTARES
+94,18,14,20,14,Bon ___,3,MOT
+95,0,15,15,15,Custom-fitted pumps?,16,ARTIFICIALHEARTS
+100,17,15,20,15,Ship pole,4,SPAR
+101,0,16,3,16,"Plot driver in ""Romeo and Juliet""",4,FEUD
+102,5,16,11,16,"""I can ... almost ... reach it""",7,SOCLOSE
+103,16,16,20,16,Bit of grass,5,BLADE
+104,0,17,4,17,Metro costs,5,FARES
+106,7,17,9,17,What a doll!,3,KEN
+107,12,17,20,17,Dying stars,9,REDGIANTS
+111,0,18,2,18,Elev.,3,ALT
+112,4,18,20,18,1970s-era sneakers?,17,WATERGATEBURGLARS
+117,0,19,2,19,"Green, say",3,ILL
+118,4,19,8,19,Distant,5,APART
+119,10,19,15,19,"""You're welcome,"" in Spanish",6,DENADA
+120,17,19,20,19,Comic strip canine,4,ODIE
+121,0,20,2,20,Ingredient in a Waldorf cocktail,3,RYE
+122,4,20,8,20,"""Gnarly!""",5,GROSS
+123,10,20,15,20,"So-called ""dog daisies""",6,OXEYES
+124,17,20,20,20,The stuff of legends?,4,MAPS
+1,0,0,0,7,Make the rounds at a restaurant,8,TABLEHOP
+2,1,0,1,7,"___ Fagan, Billie Holiday's birth name",8,ELEANORA
+3,2,0,2,7,Conflict associated with Marxism,8,CLASSWAR
+4,3,0,3,5,Plea to a superhero,6,SAVEUS
+5,5,0,5,3,Part of a spine,4,DISC
+6,6,0,6,3,Genesis brother,4,ESAU
+7,7,0,7,3,"""Who ___?""",4,ISNT
+8,8,0,8,3,"Razzie Award winners, typically",4,DUDS
+9,9,0,9,2,Jewish title,3,REB
+10,10,0,10,2,URL ending,3,EDU
+11,12,0,12,5,Fall,6,AUTUMN
+12,13,0,13,6,"""That makes things a little better""",7,ITHELPS
+13,14,0,14,2,Word before hole or crust,3,PIE
+14,15,0,15,2,"Org. with a ""Top 100 Most Banned and Challenged Books"" list",3,ALA
+15,16,0,16,3,Give up,4,CEDE
+16,18,0,18,5,Chums,6,AMIGOS
+17,19,0,19,5,Networker?,6,GOALIE
+18,20,0,20,5,Titleholders,6,OWNERS
+24,4,2,4,4,Spleen,3,IRE
+25,11,2,11,5,H.S. math topic,4,TRIG
+30,17,3,17,7,Comic book : manga :: film : ___,5,ANIME
+32,9,4,9,7,Judge's seat,4,BANC
+33,10,4,10,7,Put on the line,4,RISK
+34,14,4,14,6,Afore,3,ERE
+35,15,4,15,8,"___ Linda, Calif.",5,YORBA
+38,5,5,5,10,Scrap,6,CANCEL
+39,6,5,6,8,Simple pond organism,4,ALGA
+40,7,5,7,8,Nasdaq and N.Y.S.E.: Abbr.,4,MKTS
+41,8,5,8,7,Polynesian staple,3,POI
+42,16,5,16,8,Taker of a dog DNA test,4,MUTT
+44,4,6,4,9,Sinewy,4,WIRY
+47,3,7,3,11,Certain tree-hugger,5,KOALA
+48,11,7,11,11,Land of Ozymandias,5,EGYPT
+49,12,7,12,11,Fixing things,5,TOOLS
+51,18,7,18,11,Acoustic,5,AURAL
+52,19,7,19,11,Johnnycake grain,5,MAIZE
+53,20,7,20,11,"Health class topic, in brief",5,SEXED
+56,13,8,13,10,Winter bug,3,FLU
+57,14,8,14,10,Flight,3,LAM
+59,0,9,0,13,"""Me too""",5,ASDOI
+60,1,9,1,13,They're sometimes in Roman numerals,5,YEARS
+61,2,9,2,13,"One saying ""Back in my day ...""",5,ELDER
+62,8,9,8,13,Result of a perm,5,CURLS
+63,9,9,9,13,Mature,5,RIPEN
+64,10,9,10,11,Beverage suffix,3,ADE
+65,17,9,17,13,"Show off a new dress, say",5,TWIRL
+68,6,10,6,12,Clinch,3,ICE
+69,7,10,7,12,Chewable stimulant,3,QAT
+70,15,10,15,15,Some French wines,6,RHONES
+75,16,11,16,14,Supports,4,AIDS
+77,4,12,4,15,Grouse,4,BEEF
+78,5,12,5,16,"Star of the 1965 comedy ""Harum Scarum""",5,ELVIS
+79,13,12,13,15,More than singe,4,CHAR
+80,14,12,14,15,Stag,4,HART
+82,3,13,3,17,Digression,5,ASIDE
+84,10,13,10,16,Sighs of relief,4,AAHS
+85,11,13,11,16,Kind of a jerk?,4,KNEE
+86,12,13,12,15,Greek vowel,3,ETA
+87,18,13,18,20,"Savory pastry whose name comes from the Spanish for ""breaded""",8,EMPANADA
+88,19,13,19,20,Occasion for playing I Spy,8,ROADTRIP
+89,20,13,20,20,Underlines,8,STRESSES
+91,6,14,6,16,Prefix with tourism,3,ECO
+92,7,14,7,20,Low whinnies,7,NICKERS
+95,0,15,0,20,Family ___,6,AFFAIR
+96,1,15,1,20,"""Are you pulling my leg?""",6,REALLY
+97,2,15,2,20,Chocolate-and-pecan confection,6,TURTLE
+98,8,15,8,20,Tips off,6,ALERTS
+99,9,15,9,18,Jacket specification,4,LONG
+100,17,15,17,20,Zig and zag,6,SLALOM
+103,16,16,16,18,Momentous,3,BIG
+105,4,17,4,20,Conference booty,4,SWAG
+107,12,17,12,20,Artist Magritte,4,RENE
+108,13,17,13,20,Site with a Daily Deals option,4,EBAY
+109,14,17,14,20,"""My man!""",4,DUDE
+110,15,17,15,20,Mardi ___,4,GRAS
+113,5,18,5,20,When fools rush in?: Abbr.,3,APR
+114,6,18,6,20,Fields medalist Terence,3,TAO
+115,10,18,10,20,Hubbub,3,ADO
+116,11,18,11,20,Cowboy nickname,3,TEX

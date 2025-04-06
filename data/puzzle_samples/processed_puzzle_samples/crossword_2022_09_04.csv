@@ -1,0 +1,145 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,5,0,Exfoliants,6,SCRUBS
+7,7,0,9,0,Foofaraw,3,ADO
+10,12,0,15,0,Cookout chuckouts,4,COBS
+14,17,0,20,0,Thickener used in desserts,4,AGAR
+18,0,1,5,1,"Like favorite radio stations, perhaps",6,PRESET
+19,7,1,10,1,Calico calls,4,MEWS
+21,12,1,15,1,Memo starter,4,INRE
+22,17,1,20,1,N.F.L. Hall-of-Famer Yale ___,4,LARY
+23,0,2,5,2,Backpacker's snack,6,OATBAR
+24,7,2,10,2,Big huff?,4,PANT
+25,12,2,20,2,Have an outsize presence,9,LOOMLARGE
+27,0,3,2,3,"""I didn't need to know that!""",3,TMI
+28,4,3,6,3,What a net might attach to,3,RIM
+30,8,3,10,3,Flying Cloud of old autodom,3,REO
+31,12,3,16,3,Jazz clarinetist Shaw,5,ARTIE
+32,18,3,20,3,Soaring shot,3,LOB
+33,0,4,6,4,Some Six Nations members,7,SENECAS
+35,8,4,14,4,*Mount Everest scaler,7,EDMUNDH
+37,16,4,20,4,Hogs,5,SWINE
+39,1,5,4,5,*Went out of control,4,RANR
+40,6,5,8,5,A.M.A. members: Abbr.,3,DRS
+42,10,5,15,5,Marketing experiment comparing two variants,6,ABTEST
+44,17,5,20,5,Some red marks,4,ACNE
+45,3,6,9,6,Big lugs,7,GALOOTS
+48,11,6,13,6,"Say ""Whomever did this …,"" say",3,ERR
+49,15,6,20,6,"Alice who wrote ""The Color Purple""",6,WALKER
+51,0,7,2,7,Org. with a sizable registry,3,AKC
+54,4,7,7,7,"Yellow jacket, for one",4,WASP
+55,9,7,12,7,Syrup brand since 1902,4,KARO
+57,14,7,18,7,Word before Roger or Rancher,5,JOLLY
+58,0,8,5,8,To a profound degree,6,DEEPLY
+60,7,8,11,8,"*""Cinderella"" meanie",5,EVILS
+62,13,8,17,8,Field trip conveyances,5,BUSES
+63,0,9,4,9,"Middle van Pelt child in ""Peanuts""",5,LINUS
+64,6,9,10,9,"Use Tinder, say",5,SWIPE
+65,12,9,20,9,Airs,9,TELECASTS
+69,0,10,3,10,Big exporter of pistachios,4,IRAN
+70,5,10,9,10,Features of some bygone muscle cars,5,TTOPS
+71,11,10,15,10,"Give an elbow bump to, say",5,GREET
+72,17,10,20,10,Free of fizz,4,FLAT
+73,0,11,8,11,*Lateral-breaking pitches,9,BACKDOORS
+75,10,11,14,11,Skulk,5,CREEP
+76,16,11,20,11,Maker of the world's first quartz watch,5,SEIKO
+77,3,12,7,12,Javanese dyeing technique,5,BATIK
+78,9,12,13,12,Potala Palace city,5,LHASA
+79,15,12,20,12,One of seven represented in the Pleiades,6,SISTER
+80,2,13,6,13,*Glide down from above,5,PARAC
+81,8,13,11,13,Sleigh driver's need,4,REIN
+82,13,13,16,13,Sound of an ungraceful landing,4,THUD
+84,18,13,20,13,___ card,3,SIM
+85,0,14,5,14,Fashion house whose logo is two interlocking C's,6,CHANEL
+87,7,14,9,14,Like the Carolina Reaper pepper,3,HOT
+88,11,14,17,14,Visionary,7,DREAMER
+91,0,15,3,15,Title for Baltimore,4,LORD
+92,5,15,10,15,Crow language family,6,SIOUAN
+95,12,15,14,15,Sounds of hesitation,3,ERS
+96,16,15,19,15,da-DUM,4,IAMB
+99,0,16,4,16,On pins and needles,5,ANTSY
+101,6,16,12,16,Homebrewer's sugar,7,MALTOSE
+103,14,16,20,16,Cartoonish villains,7,NASTIES
+106,0,17,2,17,"""Little ol' me?""",3,MOI
+107,4,17,8,17,"Woodard of ""Clemency""",5,ALFRE
+109,10,17,12,17,Article in Aachen,3,EIN
+110,14,17,16,17,"""Where ignorance is bliss, ___ folly to be wise"": Thomas Gray",3,TIS
+111,18,17,20,17,"""Eh … I'll pass""",3,NAH
+112,0,18,8,18,It's a banger in Germany,9,BRATWURST
+114,10,18,13,18,"*Portrayer of Scrooge in 1951's ""A Christmas Carol""",4,ALAS
+116,15,18,20,18,Surgical seam,6,SUTURE
+118,0,19,3,19,"Unagi and anago, for two",4,EELS
+119,5,19,8,19,What parallel lines never do,4,MEET
+120,10,19,13,19,It beats scissors,4,ROCK
+121,15,19,20,19,Passionate,6,HEATED
+122,0,20,3,20,"Secretary, e.g.",4,DESK
+123,5,20,8,20,___ Noël,4,PERE
+124,11,20,13,20,Place to wallow,3,STY
+125,15,20,20,20,Butterfly garden bloomers,6,ASTERS
+1,0,0,0,4,Places,5,SPOTS
+2,1,0,1,5,"""Mad Money"" host Jim",6,CRAMER
+3,2,0,2,5,Eye part with rods and cones,6,RETINA
+4,3,0,3,2,Kind of port,3,USB
+5,4,0,4,9,Boot camp exercises performed on all fours,10,BEARCRAWLS
+6,5,0,5,4,Narrow groove,5,STRIA
+7,7,0,7,2,One for the roadie,3,AMP
+8,8,0,8,6,Most beloved,7,DEAREST
+9,9,0,9,4,"Dominated, informally",5,OWNED
+10,12,0,12,7,Pico de gallo herb,8,CILANTRO
+11,13,0,13,6,Not yet in stock,7,ONORDER
+12,14,0,14,5,Soup bases,6,BROTHS
+13,15,0,15,3,Highway heavyweight,4,SEMI
+14,17,0,17,2,___ mode,3,ALA
+15,18,0,18,7,Like toum or agliata sauce,8,GARLICKY
+16,19,0,19,6,Forest between Champagne and Lorraine,7,ARGONNE
+17,20,0,20,6,Cousin of kvass,7,RYEBEER
+20,10,1,10,5,Plant pore,5,STOMA
+26,16,2,16,4,"""___ Miz""",3,LES
+29,6,3,6,7,Early computer acronym,5,MSDOS
+34,3,4,3,6,O.E.D. part: Abbr.,3,ENG
+36,11,4,11,8,Some rideshares,5,UBERS
+38,17,4,17,12,They may be hidden behind paintings,9,WALLSAFES
+41,7,5,7,12,"Knot-tying and lashing, to a sailor",8,ROPEWORK
+43,15,5,15,10,Like some short tennis matches,6,TWOSET
+46,5,6,5,8,"Install, as sod",3,LAY
+47,9,6,9,10,Record player annoyances,5,SKIPS
+50,16,6,16,9,Actor Guinness,4,ALEC
+51,0,7,0,11,Improvised comment,5,ADLIB
+52,1,7,1,11,"""Colette"" actress Knightley",5,KEIRA
+53,2,7,2,11,"Comedian Wyatt of ""Problem Areas""",5,CENAC
+56,10,7,10,9,"Porter, for one",3,ALE
+57,14,7,14,11,Derby cocktail,5,JULEP
+59,3,8,3,16,"Bad Brains and Bikini Kill, for two",9,PUNKBANDS
+61,8,8,8,11,Muckety-mucks,4,VIPS
+62,13,8,13,15,Colorful bird named for its diet,8,BEEEATER
+64,6,9,6,13,Not easily moved,5,STOIC
+65,12,9,12,12,Ocho menos cinco,4,TRES
+66,18,9,18,13,"Buttonholes, basically",5,SLITS
+67,19,9,19,13,Actor/activist George,5,TAKEI
+68,20,9,20,13,Seattle's W.N.B.A. team,5,STORM
+70,5,10,5,15,Absolutely wrecks,6,TOTALS
+71,11,10,11,14,K,5,GRAND
+74,4,11,4,14,"Reason to do a ""stupid human trick""",4,DARE
+75,10,11,10,13,X,3,CHI
+76,16,11,16,20,Tangential topics,10,SIDEISSUES
+78,9,12,9,16,Allow to access,5,LETAT
+79,15,12,15,14,"""I am,"" in Latin",3,SUM
+80,2,13,2,20,Incomplete dentures,8,PARTIALS
+81,8,13,8,20,Ball game that all players might lose,8,ROULETTE
+83,14,13,14,17,Lacks,5,HASNT
+85,0,14,0,20,Place to wear muck boots,7,CLAMBED
+86,1,14,1,20,One roasted or toasted,7,HONOREE
+87,7,14,7,20,More raspy,7,HOARSER
+89,12,14,12,20,"Dramatize, as a historical event",7,REENACT
+90,17,14,17,16,"Teller, maybe",3,RAT
+93,6,15,6,20,"""That time is fine for me""",6,IMFREE
+94,10,15,10,19,Lack of musicality,5,NOEAR
+97,18,15,18,20,Teeny-tiny,6,MINUTE
+98,19,15,19,20,Word after ring or water,6,BEARER
+100,4,16,4,18,Side-to-side movement,3,YAW
+102,11,16,11,20,Pastoral skyline features,5,SILOS
+104,15,16,15,20,"Tyler of ""Whose Line Is It Anyway?""",5,AISHA
+105,20,16,20,20,Places for hoses and hoes,5,SHEDS
+108,5,17,5,20,Oatmeal glob,4,LUMP
+113,3,18,3,20,Judgy sound,3,TSK
+115,13,18,13,20,"Jupiter's realm, in myth",3,SKY
+117,17,18,17,20,"Pic on a pec, say",3,TAT

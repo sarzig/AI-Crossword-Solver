@@ -1,0 +1,11 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,1,0,3,0,Bengal or lion,3,CAT
+4,0,1,4,1,"Patrick Mahomes, for his entire N.F.L. career",5,CHIEF
+6,0,2,4,2,"Kendrick ___, Super Bowl LIX halftime act",5,LAMAR
+7,0,3,4,3,Opposing side,5,ENEMY
+8,1,4,3,4,"Super Bowl scores, for short",3,TDS
+1,1,0,1,4,"""E-A-G-L-E-S, Eagles!,"" for one",5,CHANT
+2,2,0,2,4,"Targeted, as a football throw",5,AIMED
+3,3,0,3,4,Play groups?,5,TEAMS
+4,0,1,0,3,"The Browns, on N.F.L. scoreboards",3,CLE
+5,4,1,4,3,Cook in the pan,3,FRY

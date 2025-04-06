@@ -1,0 +1,73 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,4,0,Out of whack,5,ASKEW
+6,6,0,9,0,Rock group behind 2024's Power Up Tour,4,ACDC
+10,11,0,14,0,What a bodybuilder builds during a bulk cycle,4,MASS
+14,0,1,9,1,Sudden weather phenomenon,10,FLASHFLOOD
+16,11,1,14,1,Closing on Sundays?,4,AMEN
+17,0,2,9,2,Cocktail that's called a French 75 if you use Champagne instead of soda water,10,TOMCOLLINS
+18,11,2,14,2,Mulligan,4,REDO
+19,0,3,2,3,Eponymous tourist destination in Belgium,3,SPA
+20,4,3,8,3,Basis of some admissions,5,GUILT
+21,10,3,14,3,"Strength, poetically",5,SINEW
+22,3,4,6,4,Area between the ribs and the round,4,LOIN
+23,8,4,14,4,Heaps of dressing?,7,LAUNDRY
+25,0,5,5,5,Responded identically to,6,ECHOED
+28,7,5,11,5,On the ___,5,FENCE
+29,0,6,4,6,Early synthesizers,5,MOOGS
+30,6,6,14,6,Ringing nuisance,9,PRANKCALL
+34,0,7,4,7,"Like a face telling a spooky campfire story, maybe",5,UPLIT
+35,6,7,8,7,Give juice to,3,REV
+36,10,7,14,7,"""Ditto""",5,SODOI
+37,0,8,8,8,Words before someone finally snaps?,9,SAYCHEESE
+39,10,8,14,8,Bridge support,5,TRUSS
+40,3,9,7,9,"Stool at a counter, e.g.",5,PERCH
+41,9,9,14,9,"Woody's crush in ""Toy Story""",6,BOPEEP
+42,0,10,6,10,Member of a warrior class,7,SAMURAI
+45,8,10,11,10,"Small stretches, perhaps",4,FIBS
+46,0,11,4,11,Cherish,5,PRIZE
+47,6,11,10,11,"Much-sought-after commodity in ""Dune""",5,SPICE
+49,12,11,14,11,Singer Rita,3,ORA
+52,0,12,3,12,Ice skating move,4,LUTZ
+53,5,12,14,12,Postgame photo op between two opposing players,10,JERSEYSWAP
+55,0,13,3,13,"First person to die, according to the Bible",4,ABEL
+56,5,13,14,13,They're part of the story,10,PLOTPOINTS
+57,0,14,3,14,"Set back to zero, in a way",4,TARE
+58,5,14,8,14,Press rooms?,4,GYMS
+59,10,14,14,14,"Wipe from one's visual memory, so to speak",5,UNSEE
+1,0,0,0,3,"Common nap times, in brief",4,AFTS
+2,1,0,1,3,Subpar dining hall food,4,SLOP
+3,2,0,2,3,Hindu god of love,4,KAMA
+4,3,0,3,2,F1 neighbor,3,ESC
+5,4,0,4,11,Challenge to an intruder,12,WHOGOESTHERE
+6,6,0,6,4,Like a fearless bettor at a casino,5,ALLIN
+7,7,0,7,3,Spring,4,COIL
+8,8,0,8,8,Command to stay,9,DONTLEAVE
+9,9,0,9,2,"Items harmed when they're scratched, but not when they're burned",3,CDS
+10,11,0,11,10,Group whose band is the oldest professional music ensemble in the U.S.,11,MARINECORPS
+11,12,0,12,4,Change,5,AMEND
+12,13,0,13,4,Meal before the 15th of Nisan,5,SEDER
+13,14,0,14,4,"White out, say",5,SNOWY
+15,5,1,5,5,Not set in stone,5,FLUID
+21,10,3,10,14,"""That's rather unfortunate,"" dismissively",12,SUCKSTOBEYOU
+22,3,4,3,14,Exercise in deduction,11,LOGICPUZZLE
+24,9,4,9,6,___ Taylor (fashion chain),3,ANN
+25,0,5,0,8,"Australia declared ""war"" on them in 1932, in an attempt to stop them from destroying crops",4,EMUS
+26,1,5,1,8,"Where Lola was a showgirl, in song",4,COPA
+27,2,5,2,8,"Deified, say",4,HOLY
+28,7,5,7,9,"Farm-to-table, say",5,FRESH
+30,6,6,6,14,"""Couldn't have said it better myself""",9,PRECISELY
+31,12,6,12,9,For two musicians,4,ADUE
+32,13,6,13,9,Ditch,4,LOSE
+33,14,6,14,9,Aristotle purportedly spoke with one,4,LISP
+38,5,8,5,10,Word often after a president's name,3,ERA
+41,9,9,9,13,Curling target,5,BICEP
+42,0,10,0,14,Bad sound to hear by a kitchen counter,5,SPLAT
+43,1,10,1,14,Dutch constituent in the Caribbean,5,ARUBA
+44,2,10,2,14,Bishop's headwear,5,MITER
+45,8,10,8,14,Hitmakers?,5,FISTS
+48,7,11,7,14,Simple question on a high schooler's hand-drawn poster,4,PROM
+49,12,11,12,14,Dominates,4,OWNS
+50,13,11,13,14,"Power or frequency, essentially",4,RATE
+51,14,11,14,14,Church part,4,APSE
+53,5,12,5,14,PNG alternative,3,JPG
+54,11,12,11,14,"Motif in 1995's ""Se7en""",3,SIN

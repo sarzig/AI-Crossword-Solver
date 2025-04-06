@@ -1,0 +1,11 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,2,0,4,0,Fair ___ (copyright principle),3,USE
+4,0,1,4,1,¢¢¢,5,CENTS
+6,0,2,4,2,Misbehave,5,ACTUP
+7,0,3,4,3,A little suspicious,5,SHADY
+8,0,4,2,4,Ball ___ (poor passer),3,HOG
+1,2,0,2,4,No longer identify on social media,5,UNTAG
+2,3,0,3,3,Hot guy,4,STUD
+3,4,0,4,3,Sports award like Best Upset or Best Team,4,ESPY
+4,0,1,0,4,$$$,4,CASH
+5,1,1,1,4,Something a bat listens for while flying,4,ECHO

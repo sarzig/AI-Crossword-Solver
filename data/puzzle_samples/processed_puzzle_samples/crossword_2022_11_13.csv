@@ -1,0 +1,137 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,5,0,"Sell, as bicycles?",6,PEDDLE
+7,8,0,13,0,Coups in journalism,6,SCOOPS
+13,15,0,20,0,What might prompt a run for congress?,6,LIBIDO
+19,0,1,5,1,Arctic jacket,6,ANORAK
+20,7,1,13,1,Hairspray brand since the 1950s,7,AQUANET
+21,15,1,20,1,Big name in pain relief,6,ANACIN
+22,0,2,5,2,"Band whose final album, ""Synchronicity,"" was their most popular, with ""The""",6,POLICE
+23,7,2,13,2,More in need of practice,7,RUSTIER
+24,15,2,20,2,24 horas from now,6,MANANA
+25,0,3,4,3,Big name in pain relief,5,ALEVE
+26,6,3,13,3,Disembark,8,GOASHORE
+27,15,3,20,3,Used an unspoken language,6,SIGNED
+28,0,4,4,4,One not getting in too deep,5,WADER
+29,6,4,8,4,Chinese zodiac animal,3,RAT
+30,11,4,14,4,Tiny amount of time: Abbr.,4,NSEC
+32,16,4,20,4,Hella,5,LOTSA
+33,3,5,10,5,Game typically played in the dark,8,LASERTAG
+37,13,5,20,5,Become established,8,TAKEROOT
+39,0,6,2,6,Calf site,3,LEG
+42,4,6,6,6,Common concert merch,3,TEE
+43,8,6,12,6,Pronoun for Frenchwomen,5,ELLES
+46,14,6,16,6,Like diamonds,3,RED
+47,18,6,20,6,"It shares a key with ""!""",3,ONE
+48,0,7,6,7,It might be stuck on the chopping block,7,AXEHEAD
+50,8,7,13,7,"Rise, as a steed might",6,REARUP
+52,15,7,17,7,Politico Cheney,3,LIZ
+54,0,8,4,8,Color wheel options,5,TONES
+55,9,8,14,8,Old yellers?,6,CRIERS
+57,16,8,20,8,Animal with a prominent proboscis,5,TAPIR
+61,0,9,3,9,"Trifling, informally",4,ITTY
+62,5,9,15,9,"Lab-engineered fare, facetiously … or a hint to the six crossings of shaded squares",11,FRANKENFOOD
+67,17,9,20,9,Totenberg of NPR,4,NINA
+68,0,10,3,10,"""___ at 11"" (local news promo)",4,FILM
+69,5,10,8,10,Prefix with biology,4,AERO
+70,12,10,15,10,"Thing moving through a tube, maybe",4,OVUM
+71,17,10,20,10,Qom home,4,IRAN
+72,0,11,3,11,Lenovo competitor,4,ACER
+73,5,11,15,11,Bountiful harvests for farmers … or another hint to the crossings of shaded squares,11,BUMPERCROPS
+77,17,11,20,11,Grub,4,EATS
+78,0,12,4,12,What gorillas have that giraffes lack?,5,HARDG
+80,6,12,11,12,Spot for a tattoo,6,PARLOR
+81,16,12,20,12,Prefix with biology,5,ASTRO
+82,3,13,5,13,Peter Pan alternative,3,JIF
+84,7,13,12,13,Achieved a flight training milestone,6,SOLOED
+86,14,13,20,13,Hiking group?,7,NFLTEAM
+88,0,14,2,14,"Email symbols, informally",3,ATS
+91,4,14,6,14,Target of an annual shot,3,FLU
+93,8,14,12,14,Worker who makes a ton of dough,5,BAKER
+94,14,14,16,14,Terse affirmation,3,IAM
+95,18,14,20,14,"Producers of multiple outs, for short",3,DPS
+96,0,15,7,15,Like a very heavy sleeper,8,COMATOSE
+99,10,15,17,15,Precisely,8,SMACKDAB
+102,0,16,4,16,"It's ""rarely pure and never simple,"" per Oscar Wilde",5,TRUTH
+103,6,16,9,16,Bit of hairstyling,4,CURL
+106,12,16,14,16,"Mop's partner, in a brand name",3,GLO
+107,16,16,20,16,Measures up to,5,MEETS
+111,0,17,5,17,Tight (with),6,INGOOD
+113,7,17,14,17,Pipes up,8,CHIMESIN
+116,16,17,20,17,Pinkerton who founded the Pinkerton detective agency,5,ALLAN
+117,0,18,5,18,Unpredictable change,6,VAGARY
+118,7,18,13,18,Is delighted by the invitation,7,LOVESTO
+119,15,18,20,18,"""Brille Brille Petite ___"" (children's song abroad)",6,ETOILE
+120,0,19,5,19,Mesopotamian metropolis,6,EDESSA
+121,7,19,13,19,Thinks up,7,IDEATES
+122,15,19,20,19,Experience sharer,6,MENTOR
+123,0,20,5,20,Got in order,6,SORTED
+124,7,20,12,20,Fast-sounding freshwater fish,6,DARTER
+125,15,20,20,20,Eye-grabbing email subject line,6,URGENT
+1,0,0,0,4,Tree of the custard apple family,5,PAPAW
+2,1,0,1,4,"""The ___ Holmes Mysteries"" (young adult series)",5,ENOLA
+3,2,0,2,4,Gave (out),5,DOLED
+4,3,0,3,5,Claptrap,6,DRIVEL
+5,4,0,4,8,Makes some deep cuts in,9,LACERATES
+6,5,0,5,2,Barely squeeze (by),3,EKE
+7,8,0,8,7,Unlawful occupant,8,SQUATTER
+8,9,0,9,3,Swear word,4,CUSS
+9,10,0,10,3,Swear word,4,OATH
+10,11,0,11,4,Garnish for a Gibson cocktail,5,ONION
+11,12,0,12,4,"Jurors, to a defendant",5,PEERS
+12,13,0,13,5,"Word with food, clothes or entertainment",6,STREET
+13,15,0,15,3,Quick escapes,4,LAMS
+14,16,0,16,8,Cry of perfection from a carpenter?,9,INAILEDIT
+15,17,0,17,5,City NW of Bar Harbor,6,BANGOR
+16,18,0,18,6,"Retort to ""No, you're not able""",7,ICANTOO
+17,19,0,19,6,Has for supper,7,DINESON
+18,20,0,20,6,Seeing someone socially,7,ONADATE
+20,7,1,7,5,"Loud, as a crowd",5,AROAR
+26,6,3,6,7,"""For ___, all nature is too little"": Seneca",5,GREED
+31,14,4,14,6,Tesla but not Edison,3,CAR
+34,5,5,5,7,Vast quantity,3,SEA
+35,9,5,9,9,Smart ___,5,ALECK
+36,10,5,10,9,Bad look,5,GLARE
+38,15,5,15,7,Kenan's comedy partner,3,KEL
+39,0,6,0,12,Queen commemorated on the Hollywood Walk of Fame,7,LATIFAH
+40,1,6,1,12,Objects from faraway lands,7,EXOTICA
+41,2,6,2,12,Not so harsh,7,GENTLER
+44,11,6,11,9,Land of leprechauns,4,ERIN
+45,12,6,12,11,"Seek, as punitive payment",6,SUEFOR
+49,3,7,3,13,"1993 R&B hit with the lyric ""Keep playin' that song all night""",7,HEYMRDJ
+51,13,7,13,11,Seat of Utah County,5,PROVO
+53,17,7,17,13,Most off-the-wall,7,ZANIEST
+56,14,8,14,11,Alphabet ___,4,SOUP
+58,18,8,18,14,"Illegal, as a download",7,PIRATED
+59,19,8,19,14,Ensnared,7,INATRAP
+60,20,8,20,14,Return payments?,7,RANSOMS
+62,5,9,5,11,Totally terrif,3,FAB
+63,6,9,6,12,Go back for more,4,REUP
+64,7,9,7,13,"""Knives Out"" actress Ana de ___",5,ARMAS
+65,8,9,8,14,"""Happy to!""",6,NOPROB
+66,15,9,15,11,"Contacts via Instagram, informally",3,DMS
+74,9,11,9,14,Singer/songwriter ___ Mai,4,ELLA
+75,10,11,10,15,They start in the corners,5,ROOKS
+76,11,11,11,15,Bygone magazine for rock music enthusiasts,5,CREEM
+79,4,12,4,20,Beast with a mouth best left unexamined,9,GIFTHORSE
+81,16,12,16,20,Where you went,9,ALMAMATER
+83,5,13,5,15,Longtime Progressive spokeswoman,3,FLO
+85,12,13,12,20,Vehicle that might have parachute brakes,8,DRAGSTER
+86,14,13,14,17,"Brand name-checked in Paul Simon's ""Kodachrome""",5,NIKON
+87,15,13,15,15,It's hot right now,3,FAD
+88,0,14,0,20,"Some skin care ingredients, informally",7,ACTIVES
+89,1,14,1,20,Relative of a waterspout,7,TORNADO
+90,2,14,2,20,More cocksure,7,SMUGGER
+92,6,14,6,16,Sch. for which John Wayne played tackle,3,USC
+97,3,15,3,20,Wedding proposal?,6,ATOAST
+98,7,15,7,20,"So-called ""father of geometry""",6,EUCLID
+100,13,15,13,19,Honors in the ad biz,5,CLIOS
+101,17,15,17,20,Fit in,6,BELONG
+104,8,16,8,20,"""The Mary Tyler Moore Show"" spinoff",5,RHODA
+105,9,16,9,20,Unpopular food that's rich in minerals,5,LIVER
+108,18,16,18,20,A-listers,5,ELITE
+109,19,16,19,20,Claw,5,TALON
+110,20,16,20,20,Hägar the Horrible's hound,5,SNERT
+112,5,17,5,20,Twosome,4,DYAD
+114,10,17,10,20,"105-Down, e.g.",4,MEAT
+115,11,17,11,20,Spanish dirección,4,ESTE
+119,15,18,15,20,Source of big green eggs,3,EMU

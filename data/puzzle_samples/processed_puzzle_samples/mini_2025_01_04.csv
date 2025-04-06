@@ -1,0 +1,17 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,2,0,4,0,Baby polar bear,3,CUB
+4,1,1,5,1,"Arctic ___, big-eared critters in white winter coats",5,HARES
+6,0,2,6,2,Material for Frosty's pipe,7,CORNCOB
+8,0,3,2,3,"""I'm fr-fr-freezing!""",3,BRR
+9,4,3,6,3,Poem of high praise,3,ODE
+10,0,4,6,4,"Frosty, e.g.",7,SNOWMAN
+12,1,5,5,5,Pigs' digs,5,STIES
+13,2,6,4,6,Someone who might give bro hugs?,3,SIS
+1,2,0,2,6,Noses for many a 10-Across (but not Frosty's!),7,CARROTS
+2,3,0,3,2,Caterer's coffee dispenser,3,URN
+3,4,0,4,6,Turns into,7,BECOMES
+4,1,1,1,5,Don't confuse them with antlers,5,HORNS
+5,5,1,5,5,"CRUSH, SPRITE, SQUIRT and STARRY, in a Connections category",5,SODAS
+6,0,2,0,4,Network that's aired the Grammy Awards since 1973,3,CBS
+7,6,2,6,4,___ & Jerry's,3,BEN
+11,3,4,3,6,GameCube successor,3,WII

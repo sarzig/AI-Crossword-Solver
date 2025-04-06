@@ -1,0 +1,141 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,7,0,"""It's not that simple""",8,YESANDNO
+9,9,0,13,0,Kind of passage,5,NASAL
+14,15,0,19,0,When Juliet drinks the potion,5,ACTIV
+19,0,1,7,1,Race held annually in early March,8,IDITAROD
+20,9,1,13,1,"Computer expert, for short",5,ITPRO
+21,15,1,20,1,Reading can be found on it,6,THAMES
+23,0,2,13,2,"Bigamy, legally speakin'?",14,PARTNERINCRIME
+25,15,2,20,2,[I forgot the words ...],6,LALALA
+26,1,3,3,3,Eau so big?,3,MER
+27,7,3,11,3,"Stellar, as a pitching outing",5,NOHIT
+28,13,3,20,3,"Pirate fodder, once",8,BLANKCDS
+30,3,4,6,4,Right hand,4,AIDE
+34,8,4,11,4,"Joel's smuggling partner on HBO's ""The Last of Us""",4,TESS
+35,14,4,20,4,Creative types,7,ARTISTS
+36,0,5,10,5,Where copy editors are workin'?,11,CHECKINDESK
+40,12,5,17,5,"Beefeater, e.g.",6,DRYGIN
+42,0,6,8,6,Certain legal guardian,9,FOSTERDAD
+43,11,6,13,6,Shade,3,HUE
+44,15,6,20,6,"Pitch tents, say",6,ENCAMP
+48,0,7,2,7,Auction unit,3,LOT
+49,4,7,7,7,Loads,4,ATON
+50,9,7,14,7,Heading on a balance sheet,6,ASSETS
+53,16,7,20,7,Classic Hasbro toy that debuted in 1964,5,GIJOE
+54,0,8,3,8,Lenovo competitor,4,ACER
+56,6,8,15,8,"""Enjoyin' your meal?"" or ""I'll be servin' you today""?",10,WAITINLINE
+59,17,8,20,8,Super Bowl LVI winners,4,RAMS
+60,0,9,5,9,One can be empty or veiled,6,THREAT
+63,7,9,10,9,Spirit,4,SOUL
+64,13,9,20,9,"Brussels administrative official, informally",8,EUROCRAT
+66,3,10,6,10,"Oxford, e.g.",4,SHOE
+68,8,10,12,10,"""___ is like a cat: It only comes to you if you ignore it"": Gillian Flynn",5,SLEEP
+71,14,10,17,10,France before it was France,4,GAUL
+72,0,11,7,11,"Animal that resembles a raccoon more than a bear, despite its name",8,REDPANDA
+76,10,11,13,11,Opposite of da,4,NYET
+78,15,11,20,11,Spell out in Spanish?,6,SIESTA
+82,0,12,3,12,Crumbly cake topping,4,OREO
+83,5,12,14,12,Reaction to the climax of a heartbreakin' movie?,10,ENDINTEARS
+87,17,12,20,12,"Equipment used to make ""pizza slices"" or ""French fries""",4,SKIS
+88,0,13,4,13,Church chorus,5,AMENS
+90,6,13,11,13,Styled like Jimi Hendrix at Woodstock,6,AFROED
+91,13,13,16,13,Sch. near the Getty Center,4,UCLA
+94,18,13,20,13,Cooper's raw material,3,OAK
+95,0,14,5,14,"OutKast, e.g.",6,RAPDUO
+97,7,14,9,14,Gnaw (at),3,EAT
+98,12,14,20,14,"First-time offense, so to speak",9,STRIKEONE
+100,3,15,8,15,Concave bodily features,6,INNIES
+102,10,15,20,15,Statute regulatin' surrogacy?,11,MOTHERINLAW
+104,0,16,6,16,Big ___,7,SPENDER
+107,9,16,12,16,2022 horror sci-fi film co-starring Daniel Kaluuya,4,NOPE
+108,14,16,17,16,Item on a wish list,4,WANT
+109,0,17,7,17,Japanese fried pork cutlet,8,TONKATSU
+111,9,17,13,17,"World capital closest to ""Null Island"" (0°N, 0°E)",5,ACCRA
+113,17,17,19,17,"Before, poetically",3,ERE
+116,0,18,5,18,Cause of warming tropical seas,6,ELNINO
+117,7,18,20,18,Financin' Broadway shows?,14,BACKINBUSINESS
+123,0,19,5,19,Seize an opportunity,6,POUNCE
+124,7,19,11,19,"""Snowy"" bird",5,EGRET
+125,13,19,20,19,All shook up,8,INASTATE
+126,1,20,5,20,Stood (with),5,SIDED
+127,7,20,11,20,Hiding spot for a 124-Across,5,REEDS
+128,13,20,20,20,Fully,8,TOTHEMAX
+1,0,0,0,2,Sharp bark,3,YIP
+2,1,0,1,3,Product typically wrapped in paraffin wax,4,EDAM
+3,2,0,2,3,Father,4,SIRE
+4,3,0,3,6,Draw,7,ATTRACT
+5,4,0,4,2,Grams in the U.K.?,3,NAN
+6,5,0,5,2,"Beats Electronics co-founder, familiarly",3,DRE
+7,6,0,6,2,Winter Olympics powerhouse: Abbr.,3,NOR
+8,7,0,7,3,Wednesday eponym,4,ODIN
+9,9,0,9,5,Specialty segments,6,NICHES
+10,10,0,10,5,Liable to be lost,6,ATRISK
+11,11,0,11,4,"Emits sparks, as a campfire",5,SPITS
+12,12,0,12,2,"Stick for a snowman, say",3,ARM
+13,13,0,13,3,Auto racing champion Sébastien,4,LOEB
+14,15,0,15,6,Yet to be apprehended,7,ATLARGE
+15,16,0,16,7,Some protest activity,8,CHANTING
+16,17,0,17,12,Bubbles featurin' comic book dialogue?,13,TALKINCIRCLES
+17,18,0,18,4,Products with screens … or a homophone of a type of big screen,5,IMACS
+18,19,0,19,4,South African grassland,5,VELDT
+22,20,1,20,4,Mouthing off,4,SASS
+24,8,2,8,6,"""Gotcha""",5,NOTED
+29,14,3,14,5,Not of the cloth,3,LAY
+31,4,4,4,7,Big-box store with a labyrinthine layout,4,IKEA
+32,5,4,5,7,Blackmail ammunition,4,DIRT
+33,6,4,6,8,Furnish with an income,5,ENDOW
+36,0,5,0,9,B equivalent,5,CFLAT
+37,1,5,1,9,Booze,5,HOOCH
+38,2,5,2,9,Acid-alcohol compound,5,ESTER
+39,7,5,7,9,Entertainers Carvey and Delany,5,DANAS
+40,12,5,12,8,Fencing face-off,4,DUEL
+41,13,5,13,9,"Fix, as a bow",5,RETIE
+43,11,6,11,8,Sister channel of QVC,3,HSN
+45,18,6,18,9,Cracked open,4,AJAR
+46,19,6,19,9,N.Y.C. gallery,4,MOMA
+47,20,6,20,9,Irritating sort,4,PEST
+50,9,7,9,10,"___ Gawande, best-selling author of ""Being Mortal""",4,ATUL
+51,10,7,10,13,"What's found at the end of ""Citizen Kane""?",7,SILENTE
+52,14,7,14,10,Comfy,4,SNUG
+55,3,8,3,20,One tendin' to reply quickly?,13,RESPONDINKIND
+57,8,8,8,10,Android competitor,3,IOS
+58,15,8,15,11,"Georgian and Edwardian, for two",4,ERAS
+61,4,9,4,11,Comprehensive report?,3,AHA
+62,5,9,5,12,Shade,4,TONE
+65,16,9,16,11,French agreement,3,OUI
+67,6,10,6,13,"""The Simpsons"" teacher Krabappel",4,EDNA
+69,11,10,11,13,Regarded suspiciously,4,EYED
+70,12,10,12,12,Cause of insomnia in a fairy tale,3,PEA
+72,0,11,0,14,Surf sound,4,ROAR
+73,1,11,1,14,Grammy-nominated sister of Aretha,4,ERMA
+74,2,11,2,14,Yawning,4,DEEP
+75,7,11,7,15,Something a P.S.A. lacks,5,ADFEE
+77,13,11,13,15,"""Preach!""",5,TRUTH
+79,18,11,18,15,Vans Old ___ (classic sneaker),5,SKOOL
+80,19,11,19,15,"Heroine of Disney's ""The Princess and the Frog""",5,TIANA
+81,20,11,20,15,"Hastily hung, maybe",5,ASKEW
+84,8,12,8,15,401(k) alternatives,4,IRAS
+85,9,12,9,14,"Word with ""at home"" or ""at all""",3,NOT
+86,14,12,14,16,Mess (up),5,SCREW
+89,4,13,4,20,Annual indie festival,8,SUNDANCE
+92,15,13,15,16,Bread an Italian grandmother might have made?,4,LIRA
+93,16,13,16,16,Similar (to),4,AKIN
+96,5,14,5,20,"Like all animals in the genus Equus, uniquely",7,ONETOED
+98,12,14,12,18,Sailor's rear,5,STERN
+99,17,14,17,20,Diplomatic agreement,7,ENTENTE
+101,6,15,6,17,Form-al org.?,3,IRS
+102,10,15,10,20,Ribbed,6,MOCKED
+103,11,15,11,20,"Some cross-references in a research paper, informally",6,OPCITS
+104,0,16,0,19,"""___ it up!""",4,STEP
+105,1,16,1,20,Preppy tops,5,POLOS
+106,2,16,2,20,Listless feeling,5,ENNUI
+107,9,16,9,20,Pearl button coating,5,NACRE
+110,7,17,7,20,"Very, informally",4,UBER
+112,13,17,13,20,Marginally,4,ABIT
+114,18,17,18,20,Set of sheets?,4,REAM
+115,19,17,19,20,"""Dónde ___ …?""",4,ESTA
+118,8,18,8,20,Carbon dating determination,3,AGE
+119,14,18,14,20,"Game with ""+2"" and ""+4"" cards",3,UNO
+120,15,18,15,20,"Held session, as a council",3,SAT
+121,16,18,16,20,"""More or less""",3,ISH
+122,20,18,20,20,"""Relations""",3,SEX

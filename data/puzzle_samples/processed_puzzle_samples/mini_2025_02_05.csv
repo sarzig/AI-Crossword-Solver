@@ -1,0 +1,11 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,1,0,4,0,Facebook's parent company,4,META
+5,0,1,4,1,Full-length skirts ... and a morning hour read backward,5,MAXIS
+6,0,2,4,2,Written with pen,5,ININK
+7,0,3,3,3,N.B.A. team that nearly renamed itself the Swamp Dragons in the 1990s,4,NETS
+8,0,4,2,4,"""___ a Wonderful Life""",3,ITS
+1,1,0,1,4,French modernist painter … and a morning hour read backward,5,MANET
+2,2,0,2,4,What lighted signs mark in theaters,5,EXITS
+3,3,0,3,3,Altoids containers,4,TINS
+4,4,0,4,2,Pose a question,3,ASK
+5,0,1,0,4,Short skirt,4,MINI

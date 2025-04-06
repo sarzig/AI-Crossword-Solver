@@ -1,0 +1,77 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,5,0,"Eat dirt, say",6,BITEIT
+7,7,0,9,0,Info at JFK or LAX,3,ETA
+10,11,0,14,0,One image on a Monopoly board,4,JAIL
+14,0,1,5,1,Longtime Ford S.U.V.,6,BRONCO
+15,7,1,9,1,Bring trouble to,3,VEX
+16,11,1,14,1,Knight of film,4,JEDI
+17,0,2,9,2,Charlie horse,10,CLYDESDALE
+19,11,2,14,2,"""To suffer ___ which Hope thinks infinite"": Shelley",4,WOES
+20,3,3,8,3,Fictional thief Lupin,6,ARSENE
+21,10,3,14,3,Papa bear,5,PANDA
+22,1,4,6,4,Body with many pages,6,SENATE
+24,8,4,11,4,"Awesome, in 1990s slang",4,PHAT
+26,0,5,5,5,Sierra Leone,6,SERGIO
+27,7,5,14,5,Tango number,8,THIRTEEN
+31,0,6,4,6,Twin actress Mary-Kate or Ashley,5,OLSEN
+32,6,6,10,6,Harbor markers,5,BUOYS
+33,12,6,14,6,Longtime wire service inits.,3,UPI
+34,0,7,3,7,Haunted house feeling,4,FEAR
+35,5,7,9,7,"Italian for ""baked""",5,COTTA
+36,11,7,14,7,"Mystery writer, in brief?",4,ANON
+37,0,8,2,8,Danger in a Wile E. Coyote cartoon,3,TNT
+38,4,8,8,8,"Point at, in a way",5,NODTO
+39,10,8,14,8,Pizzeria purchase,5,SLICE
+40,0,9,7,9,Golf course,8,GAZPACHO
+42,9,9,14,9,Whiskey soda,6,WELCHS
+43,3,10,6,10,"Yours, in French",4,ATOI
+44,8,10,13,10,Dave or Ray of the Kinks,6,DAVIES
+45,0,11,4,11,Quebec city,5,QUITO
+48,6,11,11,11,Cut some slack?,6,TAUTEN
+50,0,12,3,12,Strong push,4,URGE
+51,5,12,14,12,Alpha male (double),10,ARTHURASHE
+55,0,13,3,13,"Stands at first, say",4,ISON
+56,5,13,7,13,"Vivacious, theatrical and passionate type, it's said",3,LEO
+57,9,13,14,13,Info in a job posting,6,SALARY
+58,0,14,3,14,Casting director's offering,4,PART
+59,5,14,7,14,Candy in plastic dispensers,3,PEZ
+60,9,14,14,14,"""Maybe. Give me time to think""",6,ILLSEE
+1,0,0,0,2,"""Fleabag"" airer",3,BBC
+2,1,0,1,2,"Off-line, to those online",3,IRL
+3,2,0,2,2,Plaything,3,TOY
+4,3,0,3,7,Put at risk,8,ENDANGER
+5,4,0,4,6,Cold-weather driving hazard,7,ICERAIN
+6,5,0,5,5,Lob in the direction of,6,TOSSTO
+7,7,0,7,3,Film writer/director Goldberg,4,EVAN
+8,8,0,8,8,Kind of lens for long-distance shots,9,TELEPHOTO
+9,9,0,9,2,Bit of medieval weaponry,3,AXE
+10,11,0,11,5,"Three-time N.F.L. Defensive Player of the Year (2012, 2014 and 2015)",6,JJWATT
+11,12,0,12,3,"Long, long time",4,AEON
+12,13,0,13,3,Pointed the finger at,4,IDED
+13,14,0,14,3,TV journalist Ling,4,LISA
+18,6,2,6,4,Poor mark,3,DEE
+21,10,3,10,6,Links figures,4,PARS
+22,1,4,1,9,Singer Gomez,6,SELENA
+23,2,4,2,9,Fake,6,ERSATZ
+25,9,4,9,7,Casual greeting,4,HIYA
+26,0,5,0,9,Leader of Germany?,5,SOFTG
+27,7,5,7,9,"Entire, in Italian",5,TUTTO
+28,12,5,12,10,"___ Kennedy Shriver, founder of the Special Olympics",6,EUNICE
+29,13,5,13,10,Time periods,6,EPOCHS
+30,14,5,14,9,To the ___ (with style),5,NINES
+32,6,6,6,14,Notable site of enlightenment,9,BODHITREE
+35,5,7,5,10,Pixar film set in the fictional town of Santa Cecilia,4,COCO
+36,11,7,11,14,At the end of the day,8,ALLINALL
+38,4,8,4,11,Grp. whose alphabet is used eight times in this puzzle,4,NATO
+39,10,8,10,14,More than a few,7,SEVERAL
+41,3,9,3,14,"One of 3,000+ annually for IBM",6,PATENT
+42,9,9,9,14,1960s dance craze,6,WATUSI
+44,8,10,8,12,"""Obviously!""",3,DUH
+45,0,11,0,14,Groucho Marx specialty,4,QUIP
+46,1,11,1,14,___ Major,4,URSA
+47,2,11,2,14,Composer Stravinsky,4,IGOR
+49,7,11,7,14,The whole shebang,4,ATOZ
+51,5,12,5,14,Challenge for a skier,3,ALP
+52,12,12,12,14,One of the founding airlines of Star Alliance,3,SAS
+53,13,12,13,14,"Realm of Charlemagne, for short",3,HRE
+54,14,12,14,14,Fashion designer's asset,3,EYE

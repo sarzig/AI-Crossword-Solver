@@ -1,0 +1,141 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,4,0,Turn off,5,REPEL
+6,6,0,9,0,Make a trade,4,SWAP
+10,12,0,14,0,"Emulate Rockin' Robin, in a 1958 hit",3,BOP
+13,16,0,20,0,Poke,5,JABAT
+18,0,1,4,1,"""Go me!""",5,IRULE
+19,6,1,9,1,"Somewhat, musically",4,POCO
+20,11,1,14,1,Hemingway's home for over 20 years,4,CUBA
+21,16,1,20,1,Skate park trick,5,OLLIE
+22,0,2,14,2,One in charge of Brownies and cookies? / Easy to understand,15,GIRLSCOUTLEADER
+25,16,2,20,2,Put away for now,5,STORE
+26,0,3,3,3,Drink with a domed lid,4,ICEE
+27,5,3,8,3,More than just compact,4,MINI
+28,10,3,14,3,"""Consequently …""",5,ANDSO
+29,16,3,19,3,Feature of an ungulate,4,HOOF
+30,0,4,2,4,Dance move used to teach children how to limit spreading germs while sneezing,3,DAB
+31,4,4,20,4,Post-dryer chore / Splendid,17,FOLDINGTHELAUNDRY
+35,2,5,6,5,Game stoppers,5,RAINS
+37,9,5,12,5,"Shawkat of ""Arrested Development""",4,ALIA
+38,14,5,16,5,It's a stretch,3,ERA
+39,18,5,20,5,Steamed Chinese bun,3,BAO
+40,1,6,4,6,Apt name for a horticulturist?,4,LEIF
+41,7,6,10,6,"Wispy, as hair",4,FINE
+43,13,6,15,6,Buzzer,3,BEE
+44,17,6,20,6,"Ring or belt, essentially",4,BAND
+45,0,7,13,7,One whom the bride and groom didn't invite / Steal a meal,14,WEDDINGCRASHER
+50,15,7,20,7,Now,6,ATONCE
+52,0,8,3,8,Traveled on horseback,4,RODE
+53,5,8,9,8,"Predators whose genus name translates to ""of the kingdom of the dead""",5,ORCAS
+54,11,8,14,8,Moonfish,4,OPAH
+56,16,8,20,8,"Speaker of the catchphrase ""Did I do that?"" on 1990s TV",5,URKEL
+57,0,9,6,9,Inoffensive,7,ANODYNE
+59,10,9,17,9,Deep cut?,8,CREVASSE
+61,0,10,2,10,Brit's clothespin,3,PEG
+62,4,10,16,10,"Utopia / Occasionally, poetically",13,HEAVENONEARTH
+66,18,10,20,10,"With 72-Across, post-sledding mugful",3,HOT
+69,3,11,10,11,Settles the score,8,GETSEVEN
+70,14,11,20,11,Potential result of a strike,7,PAYHIKE
+72,0,12,4,12,See 66-Across,5,COCOA
+75,6,12,9,12,Green isle,4,ERIN
+76,11,12,15,12,Plus,5,ASSET
+79,17,12,20,12,Akbar's tomb locale,4,AGRA
+80,0,13,5,13,Despises,6,ABHORS
+82,7,13,20,13,German deli meat / Discussion,14,BLACKFORESTHAM
+85,0,14,3,14,One might be raised on a farm,4,BARN
+86,5,14,7,14,"""Washboard"" features",3,ABS
+88,10,14,13,14,"M.L.B. player with over 600 career home runs, to fans",4,AROD
+89,16,14,19,14,Mushy ___ (British side dish),4,PEAS
+90,0,15,2,15,"Poehler of ""Inside Out""",3,AMY
+91,4,15,6,15,Palm product,3,OIL
+92,8,15,11,15,Mexican capital,4,PESO
+94,14,15,18,15,Some steel beams,5,IBARS
+96,0,16,16,16,They might result in booby prizes / Physical discomforts,17,LASTPLACEFINISHES
+101,18,16,20,16,"""Sportsman of the Century,"" per Sports Illustrated",3,ALI
+104,1,17,4,17,"Stop running, in a way",4,CLOT
+105,6,17,10,17,Words with motion or stone,5,SETIN
+106,12,17,15,17,___-do-well,4,NEER
+107,17,17,20,17,"""Don't Matter"" singer, 2007",4,AKON
+108,0,18,4,18,Arduous journeys,5,TREKS
+109,6,18,20,18,Issue featuring celebrity issues / Repeatedly,15,TABLOIDMAGAZINE
+112,0,19,4,19,"""Bloody"" English monarch",5,MARYI
+113,6,19,9,19,"""Gotcha""",4,ISEE
+114,11,19,14,19,"John known as the ""Father of the National Parks""",4,MUIR
+115,16,19,20,19,More adorable,5,CUTER
+116,0,20,4,20,Fightin' words,5,ITSON
+117,6,20,8,20,2012 Seth MacFarlane film with a 2015 sequel,3,TED
+118,11,20,14,20,Vocal nudge,4,PSST
+119,16,20,20,20,Notification,5,ALERT
+1,0,0,0,4,Unyielding,5,RIGID
+2,1,0,1,4,Feminist writer Jong,5,ERICA
+3,2,0,2,10,Westminster competitor,11,PUREBREDDOG
+4,3,0,3,3,Popular French periodical,4,ELLE
+5,4,0,4,2,Article in a French periodical,3,LES
+6,6,0,6,5,Stolen goods,6,SPOILS
+7,7,0,7,4,Like yarn and old film,5,WOUND
+8,8,0,8,4,"Intermission follower, often",5,ACTII
+9,9,0,9,2,"Party person, informally",3,POL
+10,12,0,12,5,Siddhartha Gautama by another name,6,BUDDHA
+11,13,0,13,4,Like Nero Wolfe,5,OBESE
+12,14,0,14,6,One getting out early,7,PAROLEE
+13,16,0,16,5,California's ___ Tree National Park,6,JOSHUA
+14,17,0,17,4,Brown of the Food Network,5,ALTON
+15,18,0,18,8,Donation center,9,BLOODBANK
+16,19,0,19,8,Paris-based carrier,9,AIRFRANCE
+17,20,0,20,2,Tiny prop,3,TEE
+20,11,1,11,5,"""Pleeease?""",5,CANTI
+23,5,2,5,5,Impatient contraction,4,CMON
+24,10,2,10,7,"National birds of Germany, Egypt and Mexico",6,EAGLES
+31,4,4,4,7,Stereotypical name for a female poodle,4,FIFI
+32,9,4,9,8,Grannies,5,NANAS
+33,15,4,15,7,Calculus calculation,4,AREA
+34,20,4,20,8,It might end on a high note,5,YODEL
+36,3,5,3,9,Lent a hand,5,AIDED
+40,1,6,1,10,Sierra ___,5,LEONE
+41,7,6,7,8,"TV monitor, in brief?",3,FCC
+42,8,6,8,8,"Glass of ""This American Life""",3,IRA
+43,13,6,13,10,Praise for a diva,5,BRAVA
+44,17,6,17,9,Tedious sort,4,BORE
+45,0,7,0,10,"Lettuce, in many a low-carb recipe",4,WRAP
+46,5,7,5,11,Big jazz combo,5,NONET
+47,6,7,6,12,It smooths the way,6,GREASE
+48,11,7,11,10,Part of a goat or Africa,4,HORN
+49,12,7,12,10,Weapon with a spring,4,EPEE
+51,16,7,16,11,"Behind, in slang",5,TUSHY
+55,14,8,14,13,"Lee who wrote ""Go Set a Watchman""",6,HARPER
+58,4,9,4,13,"""Am I understood?""",5,YHEAR
+59,10,9,10,11,Grift,3,CON
+60,15,9,15,13,Assert,5,STATE
+63,7,10,7,14,What gerunds are formed from,5,VERBS
+64,8,10,8,13,Not just bad,4,EVIL
+65,9,10,9,13,"""99 Luftballons"" singer",4,NENA
+66,18,10,18,20,Three sheets to the wind,11,HIGHASAKITE
+67,19,10,19,14,Gumbo vegetables,5,OKRAS
+68,20,10,20,13,"""Go, ___!""",4,TEAM
+69,3,11,3,14,Continue,4,GOON
+71,17,11,17,15,Modern lead-in to -ade,5,HATER
+72,0,12,0,16,Coup group,5,CABAL
+73,1,12,1,20,Many a 21st-century liberal,9,OBAMACRAT
+74,2,12,2,20,"PT Cruisers, e.g.",9,CHRYSLERS
+76,11,12,11,16,Ohio site of the first Quaker Oats factory,5,AKRON
+77,12,12,12,14,NorCal hub,3,SFO
+78,13,12,13,14,Grassy surface,3,SOD
+81,5,13,5,16,"Go with the wind, in a way",4,SAIL
+83,10,13,10,18,Where you hope to get a good deal,6,CASINO
+84,16,13,16,16,Spots to relax,4,SPAS
+87,6,14,6,20,"""Fiddlesticks!""",7,BLASTIT
+91,4,15,4,20,"Clicks ""I agree,"" maybe",6,OPTSIN
+92,8,15,8,20,Where to let a sleeping dog lie,6,PETBED
+93,9,15,9,19,Do some taxing work online?,5,EFILE
+94,14,15,14,20,Start of many a T-shirt slogan,6,IHEART
+95,15,15,15,18,Most of it is found underwater,4,BERG
+97,3,16,3,20,Home of the world's busiest train station (3.5 million daily commuters),5,TOKYO
+98,7,16,7,20,Come to an end,5,CEASE
+99,12,16,12,20,River through Pakistan,5,INDUS
+100,13,16,13,20,Many interstate vehicles,5,SEMIS
+102,19,16,19,20,No party person,5,LONER
+103,20,16,20,20,Like noble gases,5,INERT
+107,17,17,17,20,Blue: Sp.,4,AZUL
+108,0,18,0,20,"""Am I oversharing?""",3,TMI
+110,11,18,11,20,Childish nuisance,3,IMP
+111,16,18,16,20,"Major health legislation of 2010, in brief",3,ACA

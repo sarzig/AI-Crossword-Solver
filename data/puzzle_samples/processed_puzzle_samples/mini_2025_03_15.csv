@@ -1,0 +1,15 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,3,0,6,0,"Hamburger meat, typically",4,BEEF
+5,2,1,6,1,Unit in photography ... or what a photograph might go in,5,FRAME
+6,1,2,6,2,Pens a letter to,6,WRITES
+7,0,3,6,3,Table manners?,7,WAITERS
+8,0,4,5,4,"Famed short story writer behind ""The Gift of the Magi""",6,OHENRY
+9,0,5,4,5,"""Time is ___""",5,MONEY
+10,0,6,3,6,Model in an anatomy classroom,4,BODY
+1,3,0,3,6,"Spears who sang ""Womanizer""",7,BRITNEY
+2,4,0,4,5,Restaurant,6,EATERY
+3,5,0,5,4,Gritty material on a nail file,5,EMERY
+4,6,0,6,3,"Admit the truth, with ""up""",4,FESS
+5,2,1,2,6,Someone added on Facebook,6,FRIEND
+6,1,2,1,6,"""Whoopee!""",5,WAHOO
+7,0,3,0,6,Gestation station,4,WOMB

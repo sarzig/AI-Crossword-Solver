@@ -1,0 +1,11 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,3,0,"2019 flop whose Variety review began ""Nine may not be enough lives for some of the stars to live down their involvement in this …""",4,CATS
+5,0,1,4,1,Hawaiian greeting,5,ALOHA
+7,0,2,4,2,Wrinkle-removing treatment,5,BOTOX
+8,0,3,4,3,Entanglement,5,SNARL
+9,1,4,4,4,Pure joy,4,GLEE
+1,0,0,0,3,They're hard to hail in the rain,4,CABS
+2,1,0,1,4,"""___ came a spider / Who sat down beside her …""",5,ALONG
+3,2,0,2,4,Sum,5,TOTAL
+4,3,0,3,4,Place for beachcombing,5,SHORE
+6,4,1,4,4,Rod with wheels,4,AXLE

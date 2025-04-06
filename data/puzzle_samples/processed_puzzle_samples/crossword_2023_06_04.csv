@@ -1,0 +1,134 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,3,0,8,0,"___'s number, cognitive limit to how many relationships a person can maintain",6,DUNBAR
+7,10,0,16,0,Buy-lines?,7,SLOGANS
+14,2,1,8,1,Bit of bedroom furniture,7,ARMOIRE
+15,10,1,17,1,Onetime set of 13,8,COLONIES
+17,1,2,8,2,Intermittently,8,ONANDOFF
+18,10,2,18,2,They're right on an election map … or a description of 17-Across?,9,REDSTATES
+20,0,3,5,3,Taunting response to a challenger,6,WHOYOU
+21,8,3,13,3,"""Indeed""",6,ITISSO
+23,16,3,19,3,What's the deal?,4,SALE
+25,0,4,2,4,Implement used with a Venetian fórcola,3,OAR
+26,5,4,7,4,Start of some California city names,3,LOS
+29,9,4,11,4,Core group,3,ABS
+30,13,4,19,4,Reference for exploring America,7,USATLAS
+33,0,5,10,5,Screwdriver component … or a description of 37-Across?,11,ORANGEJUICE
+37,12,5,19,5,Olympics no-nos,8,STEROIDS
+38,0,6,4,6,Actor/activist George,5,TAKEI
+39,6,6,9,6,Prefix with -pod,4,OCTO
+40,11,6,15,6,Earthy pigment,5,OCHER
+41,17,6,19,6,"""The One,"" in a sci-fi film series",3,NEO
+42,3,7,5,7,"English meaning of the Portuguese ""e""",3,AND
+44,7,7,12,7,Private plane producer,6,CESSNA
+46,14,7,16,7,Part of the Statue of Liberty that's about four feet long,3,TOE
+48,1,8,8,8,Negative space?,8,DARKROOM
+51,10,8,18,8,"Marley in ""Marley & Me,"" e.g. … or a description of 48-Across?",9,YELLOWLAB
+55,0,9,2,9,"""Help!""",3,SOS
+56,4,9,7,9,Actress Teri,4,GARR
+57,9,9,13,9,"With 58-Across, what's represented by this puzzle's colored ""stripes""",5,PRIDE
+58,16,9,19,9,See 57-Across,4,FLAG
+60,0,10,2,10,Dressing room assessment,3,FIT
+61,4,10,6,10,Have,3,OWN
+62,8,10,11,10,"Something that can be ""dead"" that was never alive",4,MAIL
+63,13,10,15,10,Competitor of The Vitamin Shoppe,3,GNC
+66,17,10,19,10,"Before, once",3,ERE
+67,0,11,3,11,Gender-neutral possessive pronoun,4,ONES
+69,6,11,10,11,City between Gainesville and Orlando,5,OCALA
+71,12,11,15,11,Tarot card figure classically depicted in ragged clothing,4,FOOL
+72,17,11,19,11,Clickable address,3,URL
+73,1,12,9,12,Bureaucracy surrounding environmental regulations … or a description of 76-Across?,9,GREENTAPE
+76,11,12,18,12,Device with a pair of spools,8,CASSETTE
+78,3,13,5,13,A year in Portugal,3,ANO
+79,7,13,12,13,Slow-moving creatures,6,SLOTHS
+81,14,13,16,13,Time in history,3,ERA
+82,0,14,2,14,Title TV character whose name is an acronym,3,ALF
+85,4,14,8,14,Strike,5,SMITE
+87,10,14,13,14,"I, in the Greek alphabet",4,IOTA
+89,15,14,19,14,"I, in the NATO alphabet",5,INDIA
+93,0,15,7,15,Double-breasted outerwear,8,PEACOATS
+95,9,15,19,15,N.H.L. team from Ohio … or a description of 93-Across?,11,BLUEJACKETS
+97,0,16,6,16,D.M.V. issuances,7,IDCARDS
+98,8,16,10,16,"T.S.A.-offered program, familiarly",3,PRE
+99,12,16,14,16,Lil ___ X,3,NAS
+100,17,16,19,16,Like a glib answer,3,PAT
+101,0,17,3,17,Subject line abbr.,4,ATTN
+102,6,17,11,17,Relaxed,6,ATEASE
+105,14,17,19,17,2014 boxing documentary,6,IAMALI
+108,1,18,9,18,Bygone medical device used in electrotherapy … or a description of 111-Across?,9,VIOLETRAY
+111,11,18,18,18,"""The Martian Chronicles"" author",8,BRADBURY
+114,2,19,9,19,"Film battle sequence, e.g.",8,SETPIECE
+115,11,19,17,19,Unfaithful sort?,7,ATHEIST
+116,3,20,9,20,"Spayed, say",7,DESEXED
+117,11,20,16,20,R.S.V.P. tally,6,YESSES
+1,3,0,3,3,Heavy cart pulled by a carriage,4,DRAY
+2,4,0,4,3,"""Sorry … I don't think so""",4,UMNO
+3,5,0,5,5,Small bump,6,NODULE
+4,6,0,6,2,Book jacket bit,3,BIO
+5,7,0,7,2,Woof,3,ARF
+6,8,0,8,3,"Get a better rate, for short",4,REFI
+7,10,0,10,5,Copy writer,6,SCRIBE
+8,11,0,11,4,Silty soil,5,LOESS
+9,12,0,12,3,Sharon who has a Pulitzer Prize for poetry,4,OLDS
+10,13,0,13,6,Take a bad turn,7,GOSOUTH
+11,14,0,14,2,Tiny pest,3,ANT
+12,15,0,15,2,"Actress Long of ""Boyz N the Hood""",3,NIA
+13,16,0,16,5,Gets started on,6,SETSTO
+14,2,1,2,6,Parka relative,6,ANORAK
+16,17,1,17,6,Tightly enclose,6,SEALIN
+17,1,2,1,6,"Catherine of ""Schitt's Creek""",5,OHARA
+19,18,2,18,6,Glam rock band with six #1 hits in England in the 1970s,5,SLADE
+20,0,3,0,6,"""Yay!,"" in internet-speak",4,WOOT
+22,9,3,9,7,Food truck offerings,5,TACOS
+24,19,3,19,6,Canadian gas brand,4,ESSO
+27,6,4,6,6,"___ de Dios (""God's eye"")",3,OJO
+28,7,4,7,9,Relief,6,SUCCOR
+31,14,4,14,8,Deal with,5,SEETO
+32,15,4,15,8,One of four on most keyboards,5,ARROW
+34,3,5,3,8,By,4,NEAR
+35,4,5,4,10,Ornamental tree with fan-shaped leaves,6,GINKGO
+36,8,5,8,8,Agenda bit,4,ITEM
+37,12,5,12,9,Burn,5,SCALD
+40,11,6,11,10,Titus in the WWE Hall of Fame,5,ONEIL
+43,5,7,5,10,Outcome with no winner,4,DRAW
+45,10,7,10,11,Aleppo's land,5,SYRIA
+47,16,7,16,9,Folklore creature,3,ELF
+48,1,8,1,12,"""What are you ___?!""",5,DOING
+49,2,8,2,12,Fall bloom,5,ASTER
+50,6,8,6,12,"""… maybe that's a bad idea, though""",5,ORNOT
+52,13,8,13,12,Tiny building blocks,5,LEGOS
+53,17,8,17,12,Language from which Alaska gets its name,5,ALEUT
+54,18,8,18,12,Support for a dancer,5,BARRE
+55,0,9,0,11,Bay Area airport code,3,SFO
+57,9,9,9,13,Kind of diet that eschews processed foods,5,PALEO
+59,19,9,19,11,Work well (with),3,GEL
+62,8,10,8,14,"12th-most-common street name, per the U.S. Census Bureau",5,MAPLE
+64,14,10,14,13,What a face emoji often lacks,4,NOSE
+65,15,10,15,15,Dungeons & Dragons figure,6,CLERIC
+68,3,11,3,13,Multitude,3,SEA
+70,7,11,7,15,Play lists?,5,CASTS
+71,12,11,12,16,"Make more secure, in a way",6,FASTEN
+74,4,12,4,16,Belgian painter James,5,ENSOR
+75,5,12,5,16,Circumforaneous sort,5,NOMAD
+76,11,12,11,15,"French pet name that means ""cabbage""",4,CHOU
+77,16,12,16,15,Word with gas or think,4,TANK
+80,10,13,10,17,"Dominoes, e.g.",5,TILES
+82,0,14,0,17,Samoan capital,4,APIA
+83,1,14,1,18,Part of a modern entertainment system,5,LEDTV
+84,2,14,2,19,"""Actually …""",6,FACTIS
+86,6,14,6,20,Cry before overtime,7,ITSATIE
+88,13,14,13,16,Palindromic Steely Dan album title,3,AJA
+90,17,14,17,19,Deviate (from),6,DEPART
+91,18,14,18,18,Major wine-producing country,5,ITALY
+92,19,14,19,17,Province in 91-Down,4,ASTI
+94,3,15,3,20,Did some paddling,6,CANOED
+95,9,15,9,20,Behaved like an ass,6,BRAYED
+96,14,15,14,20,Theatrical lines that break the fourth wall,6,ASIDES
+98,8,16,8,20,"""Ciao!""",5,PEACE
+103,7,17,7,20,"Triceratops contemporary, informally",4,TREX
+104,11,17,11,20,Consumer-to-consumer marketplace,4,EBAY
+106,15,17,15,20,"""Irish Rose"" lover",4,ABIE
+107,16,17,16,20,Dishevel,4,MUSS
+109,4,18,4,20,Letters by some bars,3,LTE
+110,5,18,5,20,"""Twist and Shout"" and ""Yesterday,"" for the Beatles",3,EPS
+112,12,18,12,20,GPS suggestion: Abbr.,3,RTE
+113,13,18,13,20,Satisfied sounds,3,AHS

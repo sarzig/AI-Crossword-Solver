@@ -1,0 +1,80 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,4,0,Home of Spaceship Earth,5,EPCOT
+6,6,0,8,0,Kimono sash,3,OBI
+9,10,0,14,0,To date,5,SOFAR
+14,0,1,4,1,"Author Novik of the ""Scholomance"" trilogy",5,NAOMI
+15,6,1,8,1,Kiddie,3,TOT
+16,10,1,14,1,Cherish,5,ADORE
+17,0,2,8,2,Direction toward the very top of the world,9,TRUENORTH
+19,10,2,14,2,Testify (for),5,VOUCH
+20,0,3,3,3,"""Game of Thrones"" actress Diana",4,RIGG
+21,5,3,10,3,Appropriate for all gamers,6,RATEDE
+23,12,3,14,3,"West Coast team, on scoreboards",3,LAA
+24,0,4,5,4,Characteristic of a fork in the road,6,YSHAPE
+26,7,4,10,4,Margarine,4,OLEO
+27,12,4,14,4,Minnesotan trio?,3,ENS
+28,2,5,4,5,"Armenia, e.g., until 1991: Abbr.",3,SSR
+29,6,5,13,5,"Snack whose name translates as ""breaded""",8,EMPANADA
+31,0,6,2,6,"""Star Wars"" heroine",3,REY
+33,4,6,7,6,Shape of the Stade de France,4,OVAL
+35,9,6,11,6,Ctrl-Alt-___,3,DEL
+36,0,7,7,7,Break a sweat,8,PERSPIRE
+38,9,7,14,7,"Gemma's role in ""Crazy Rich Asians""",6,ASTRID
+42,0,8,5,8,"Like fake nails, typically",6,GLUEON
+43,7,8,14,8,One of a wide pair for snow sports,8,SKIBOARD
+45,3,9,5,9,"Setting for Cape Cod at Christmas, in brief",3,EST
+46,7,9,10,9,Tegan's pop music bandmate,4,SARA
+47,12,9,14,9,"""___ Him Back!"" (Olivia Rodrigo hit)",3,GET
+48,1,10,8,10,Zoom past,8,STREAKBY
+51,10,10,12,10,Farm share inits.,3,CSA
+53,0,11,2,11,Class for a pre-med student,3,BIO
+54,4,11,7,11,Ending with new or teen,4,AGER
+55,9,11,14,11,Chore-doing robot brand,6,ROOMBA
+58,0,12,2,12,___ up (get hyped),3,AMP
+59,4,12,9,12,Professor's goal,6,TENURE
+61,11,12,14,12,Goes a-courting?,4,SUES
+62,0,13,4,13,"""Same here""",5,DITTO
+64,6,13,14,13,"Merchandise with logos for ""Baienglaca"" or ""Guddi,"" e.g.",9,KNOCKOFFS
+66,0,14,4,14,Justice Kagan,5,ELENA
+67,6,14,8,14,Environmentally friendly prefix,3,ECO
+68,10,14,14,14,"""Priscilla"" director Coppola",5,SOFIA
+69,0,15,4,15,"""Ladies and ___ …""",5,GENTS
+70,6,15,8,15,Org. for care in the U.K.,3,NHS
+71,10,15,14,15,Togetherness,5,UNITY
+1,0,0,0,4,Ledger item,5,ENTRY
+2,1,0,1,4,2024 Olympics host,5,PARIS
+3,2,0,2,8,*Remedy for a cold,9,COUGHSYRU
+4,3,0,3,5,"Some sorority members, informally",6,OMEGAS
+5,4,0,4,2,"""Cat on a Hot ___ Roof""",3,TIN
+6,6,0,6,3,"___ vez (again, in Spanish)",4,OTRA
+7,7,0,7,15,Event that might feature unlimited mimosas … or a literal description of the answers to the starred clues,16,BOTTOMLESSBRUNCH
+8,8,0,8,5,What might be necessary after a crash,6,ITHELP
+9,10,0,10,11,*Help avoid disaster,12,SAVEONESBACO
+10,11,0,11,2,Prefix with -meter,3,ODO
+11,12,0,12,5,"Received a card, say",6,FOULED
+12,13,0,13,5,Major or minor part of a tarot deck,6,ARCANA
+13,14,0,14,4,*Go over again,5,REHAS
+18,5,2,5,4,Mined find,3,ORE
+22,9,3,9,9,Bad thing on a live broadcast,7,DEADAIR
+25,4,4,4,15,*Raise one's glass,12,PROPOSEATOAS
+29,6,5,6,7,Kernel locale,3,EAR
+30,11,5,11,8,Vocal range for Amy Winehouse,4,ALTO
+31,0,6,0,8,"World of Warcraft or Rune, in brief",3,RPG
+32,1,6,1,8,"Flotsam or Jetsam, in ""The Little Mermaid""",3,EEL
+34,5,6,5,12,"Retro, maybe",7,VINTAGE
+37,3,7,3,10,Person using a crystal ball,4,SEER
+39,12,7,12,15,*Little scamp,9,RAGAMUFFI
+40,13,7,13,9,Anger,3,IRE
+41,14,7,14,9,Toxic insecticide,3,DDT
+44,8,8,8,10,"""Eloise"" author Thompson",3,KAY
+48,1,10,1,15,"Light as a feather, e.g.",6,SIMILE
+49,2,10,2,15,Biggest hits,6,TOPTEN
+50,6,10,6,15,Popular logic puzzle,6,KENKEN
+52,11,10,11,15,"""You're already leaving?""",6,SOSOON
+53,0,11,0,15,*No-goodnik,5,BADEG
+55,9,11,9,13,Video camera button,3,REC
+56,13,11,13,15,Suit,5,BEFIT
+57,14,11,14,15,"Analyze, as 18-Down",5,ASSAY
+60,8,12,8,15,Large Aussie animals,4,ROOS
+63,3,13,3,15,Explosive material,3,TNT
+65,10,13,10,15,"N.C.A.A. Wildcats, in brief",3,KSU

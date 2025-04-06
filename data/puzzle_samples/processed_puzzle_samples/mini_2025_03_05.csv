@@ -1,0 +1,11 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,4,0,"Moon stage, like 8-Across or 2-Down",5,PHASE
+6,0,1,4,1,Comedic actor ___ Baron Cohen,5,SACHA
+7,0,2,4,2,Change,5,ALTER
+8,1,3,4,3,See 1-Across,4,FULL
+9,2,4,4,4,Paper towel layer,3,PLY
+1,0,0,0,2,"Educational TV spot, for short",3,PSA
+2,1,0,1,3,See 1-Across,4,HALF
+3,2,0,2,4,Misbehave … or malfunction,5,ACTUP
+4,3,0,3,4,Beachcomber's keepsake,5,SHELL
+5,4,0,4,4,How nervous travelers arrive at the airport,5,EARLY

@@ -1,0 +1,141 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,3,0,Host of the 1952 Winter Olympics,4,OSLO
+5,5,0,9,0,Not suited (for),5,UNFIT
+10,11,0,14,0,Beatles song with an exclamation mark in its title,4,HELP
+14,16,0,20,0,Wild thing,5,BEAST
+19,0,1,3,1,"Demeter's mother, in myth",4,RHEA
+20,5,1,9,1,Singer/songwriter Jones,5,NORAH
+21,11,1,14,1,"Abbr. on a ""works cited"" list",4,ETAL
+22,16,1,20,1,"Kemper of ""The Office""",5,ELLIE
+23,0,2,9,2,Direct path,10,BOTTOMLINE
+25,11,2,14,2,"Lot of land, say",4,ACRE
+26,16,2,20,2,Director Frank,5,CAPRA
+27,0,3,2,3,Sea plea,3,SOS
+28,4,3,7,3,Dole (out),4,METE
+29,9,3,20,3,"""Sheesh!""",12,OLDERBROTHER
+32,2,4,7,4,Like some cheese ... or some movies,6,GRATED
+34,9,4,13,4,Toothsome,5,TASTY
+35,15,4,20,4,"""Anything you suggest is fine""",6,IMEASY
+36,0,5,4,5,Rathskeller decoration,5,STEIN
+38,7,5,12,5,Anthropologist's adjective,6,ETHNIC
+40,14,5,17,5,Small bits of dough,4,ONES
+41,0,6,11,6,Color of the Owl and Pussy-cat's boat,12,PUTTINGGREEN
+44,13,6,16,6,Connecting words in logic,4,ANDS
+45,18,6,20,6,Baby's cry,3,WAH
+48,0,7,3,7,"___ Mysteries (children's series starting with ""The Absent Author"")",4,ATOZ
+49,5,7,9,7,Champing at the bit,5,EAGER
+50,12,7,15,7,Biologist E. O. Wilson's focus,4,ANTS
+51,17,7,20,7,"""Alas!""",4,AHME
+52,0,8,2,8,Wimple wearer,3,NUN
+53,4,8,8,8,"With 54-Across, commonly believed misconception",5,FALSE
+54,10,8,14,8,See 53-Across,5,TRUTH
+56,16,8,20,8,Panache,5,FLAIR
+57,2,9,6,9,Go for a spin,5,WHIRL
+59,9,9,14,9,Symbol of Middle America,6,PEORIA
+60,16,9,20,9,Emotionally disinvest oneself,5,LETGO
+61,0,10,4,10,___ long-horned beetle,5,ASIAN
+63,6,10,14,10,Something avoided during awkward situations,9,INCONTACT
+66,16,10,20,10,Firing offense?,5,ARSON
+67,0,11,4,11,Isolated hill,5,BUTTE
+68,6,11,11,11,"They're shared between partners, one hopes",6,VALUES
+69,14,11,18,11,Extremely mean,5,NASTY
+71,0,12,4,12,Theater employee,5,USHER
+72,6,12,10,12,Into pieces,5,APART
+73,12,12,16,12,Fictional Mr. or real Dr.,5,SPOCK
+75,18,12,20,12,Popular flooring wood,3,OAK
+78,0,13,3,13,"""Ready for ___ ...?""",4,THIS
+79,5,13,8,13,Once more,4,ANEW
+80,11,13,15,13,Fair part,5,BOOTH
+81,17,13,20,13,Cocktail made with ginger beer,4,MULE
+82,0,14,2,14,Command to a dog,3,SIT
+83,4,14,7,14,Gets busy,4,ACTS
+84,9,14,20,14,Fish with a prehensile tail,12,CHARLEYHORSE
+87,3,15,6,15,Symbols of wave functions,4,PSIS
+88,8,15,13,15,One of the Furies of Greek myth,6,ALECTO
+89,16,15,20,15,"""Them's fightin' words!""",5,ITSON
+90,0,16,5,16,Quickly,6,ATARUN
+93,7,16,11,16,"Suggest, with ""of""",5,SMACK
+94,13,16,18,16,Excoriate,6,SCATHE
+97,0,17,11,17,"""Oh, that's so nice of you to say!""",12,GIVINGTHANKS
+99,13,17,16,17,Disney+ competitor,4,HULU
+100,18,17,20,17,Fool,3,CON
+103,0,18,4,18,Revise,5,AMEND
+104,6,18,9,18,Chill,4,HANG
+105,11,18,20,18,Mad Hatter's social event,10,THIRDPARTY
+108,0,19,4,19,9 a.m. service,5,TERCE
+109,6,19,9,19,"Command-Z, on a Mac",4,UNDO
+110,11,19,15,19,Falcon's home,5,AERIE
+111,17,19,20,19,Harness part,4,REIN
+112,0,20,4,20,Fragrant compound,5,ESTER
+113,6,20,9,20,Space heater?,4,STAR
+114,11,20,15,20,"Back, in a way",5,BETON
+115,17,20,20,20,Online crafts market,4,ETSY
+1,0,0,0,3,"Suns, e.g.",4,ORBS
+2,1,0,1,3,"""Scram!""",4,SHOO
+3,2,0,2,14,"""Enough dillydallying!""",15,LETSGETONWITHIT
+4,3,0,3,2,Kind of milk,3,OAT
+5,5,0,5,4,Like some expectations,5,UNMET
+6,6,0,6,4,"Nick of ""48 Hrs.""",5,NOLTE
+7,7,0,7,8,The yolk's on them,9,FRIEDEGGS
+8,8,0,8,2,"___ Malcolm, Jeff Goldblum's role in ""Jurassic Park""",3,IAN
+9,9,0,9,7,Alternative to this and that,8,THEOTHER
+10,11,0,11,6,Enters,7,HEADSIN
+11,12,0,12,5,"""And so on and so forth""",6,ETCETC
+12,13,0,13,4,Big Bird?,5,LARRY
+13,14,0,14,3,Ordinary citizen,4,PLEB
+14,16,0,16,6,Looks good on,7,BECOMES
+15,17,0,17,5,Overjoys,6,ELATES
+16,18,0,18,4,A as in Agamemnon,5,ALPHA
+17,19,0,19,4,Fathers,5,SIRES
+18,20,0,20,4,Lachrymose,5,TEARY
+24,4,2,4,6,Resident of a Mideast sultanate,5,OMANI
+30,10,3,10,6,Thin thoroughfare,4,LANE
+31,15,3,15,7,Melon parts,5,RINDS
+33,3,4,3,7,Brand that comes in short sleeves,4,RITZ
+36,0,5,0,8,Go across,4,SPAN
+37,1,5,1,8,Nobelist Desmond,4,TUTU
+39,8,5,8,8,Syntactician's drawing,4,TREE
+40,14,5,14,14,Transitioning phrase,10,ONTHATNOTE
+42,5,6,5,9,Approach,4,NEAR
+43,6,6,6,15,Flits here and there,10,GALLIVANTS
+44,13,6,13,10,Shenanigan,5,ANTIC
+45,18,6,18,20,Question to someone who looks impossibly young,15,WHATSYOURSECRET
+46,19,6,19,10,Broseph,5,AMIGO
+47,20,6,20,10,"Animal aptly found in ""feather one's nest""",5,HERON
+50,12,7,12,10,Vibe,4,AURA
+51,17,7,17,11,Give a heads-up,5,ALERT
+53,4,8,4,12,The ___ things in life,5,FINER
+54,10,8,10,12,Principle,5,TENET
+55,11,8,11,11,Doesn't keep,4,ROTS
+56,16,8,16,12,Chemist's container,5,FLASK
+58,3,9,3,13,Is really down on,5,HATES
+59,9,9,9,12,Really come down,4,POUR
+61,0,10,0,14,Neighbors,5,ABUTS
+62,1,10,1,14,Food often served with gari (pickled ginger),5,SUSHI
+64,7,10,7,14,Backs of necks,5,NAPES
+65,8,10,8,13,Frustrating device in an arcade,4,CLAW
+70,15,11,15,14,Hurting,4,ACHY
+73,12,12,12,15,Kind,4,SORT
+74,13,12,13,20,Dressage for a horseback rider?,9,POLOSHIRT
+76,19,12,19,15,Plus,4,ALSO
+77,20,12,20,15,"Perceptive, as an eye",4,KEEN
+79,5,13,5,17,Getting top marks on,5,ACING
+80,11,13,11,20,Betray,8,BACKSTAB
+81,17,13,17,16,Wool-gatherer?,4,MOTH
+83,4,14,4,20,Into pieces,7,ASUNDER
+84,9,14,9,20,Cacophony,7,CLANGOR
+85,10,14,10,17,Mild expletive,4,HECK
+86,16,14,16,18,"Ask for money, informally",5,HITUP
+87,3,15,3,20,Pioneer of the Minneapolis sound,6,PRINCE
+88,8,15,8,20,"Poet Gorman who wrote ""The Hill We Climb""",6,AMANDA
+90,0,16,0,20,Banded rock,5,AGATE
+91,1,16,1,20,Keeps a watch on?,5,TIMES
+92,2,16,2,20,Stave off,5,AVERT
+93,7,16,7,20,Quaint contraction,5,SHANT
+95,14,16,14,20,Unusual object,5,CURIO
+96,15,16,15,20,"Last name of the Boxcar Children, in children's literature",5,ALDEN
+98,6,17,6,20,Consequently,4,THUS
+101,19,17,19,20,Big name in elevators,4,OTIS
+102,20,17,20,20,Manhattan address abbr.,4,NYNY
+106,12,18,12,20,Part of a giggle,3,HEE
+107,17,18,17,20,"""Sweet Dreams (___ Made of This)"" (Eurythmics hit)",3,ARE

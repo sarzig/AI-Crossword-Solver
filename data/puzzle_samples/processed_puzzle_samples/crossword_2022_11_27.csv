@@ -1,0 +1,143 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,1,0,3,0,Gambling spot?,3,PIP
+4,5,0,8,0,Chap,4,GENT
+8,11,0,15,0,Addis ___,5,ABABA
+13,18,0,20,0,Pro response,3,YEA
+16,0,1,3,1,Bit of chicanery,4,JAPE
+17,5,1,8,1,___ water (healthful drink),4,ALOE
+18,11,1,15,1,Totally uncool,5,NOTOK
+19,17,1,20,1,Rock's Jethro ___,4,TULL
+20,0,2,8,2,"""You're gonna love this, I promise!""",9,ITLLBEFUN
+22,10,2,20,2,Urban area typically with the tallest buildings,11,INNERCIRCLE
+24,0,3,5,3,Rocky road topping?,6,GRAVEL
+25,7,3,10,3,Length for a pregnancy,4,TERM
+27,12,3,14,3,Moneymaking venture,3,GIG
+28,16,3,20,3,LeBron James became one in 2018,5,LAKER
+29,0,4,4,4,That's the spirit!,5,GENIE
+30,6,4,13,4,Highway network that famously has sections without a speed limit,8,AUTOBAHN
+32,15,4,20,4,Service recipient,6,CLIENT
+33,0,5,3,5,An ocean,4,LOTS
+34,5,5,7,5,"Device dusted off to watch old home movies, maybe",3,VCR
+35,9,5,12,5,Flat-topped French hat,4,KEPI
+36,14,5,18,5,Ante alternative,5,BLIND
+37,0,6,2,6,Musician Brian,3,ENO
+38,4,6,12,6,Public court proceeding,9,OPENHEART
+40,14,6,17,6,Many a bad Yelp review,4,RANT
+41,3,7,6,7,Luxuriate (in),4,BASK
+42,8,7,11,7,They're not sciences,4,ARTS
+43,13,7,15,7,"___ Cannon, creator of the ""Pitch Perfect"" film series",3,KAY
+44,17,7,20,7,Fish sticks?,4,RODS
+48,1,8,4,8,Strength of character,4,GRIT
+50,6,8,8,8,"""Me!""",3,IAM
+52,12,8,20,8,Compliment to a French chef,9,CESTSIBON
+54,0,9,7,9,Crackerjack,8,WHIZBANG
+56,9,9,13,9,Slack-jawed,5,AGAPE
+59,15,9,20,9,Automotive successor of the Bel Air,6,IMPALA
+60,0,10,2,10,"Proudly embody, informally",3,REP
+61,4,10,16,10,What you're on when you're making progress,13,RIGHTTRIANGLE
+64,18,10,20,10,"Product sold on a rack, informally",3,MAG
+65,0,11,5,11,"""Them's fightin' words!""",6,ITSWAR
+67,7,11,11,11,Set one's sights,5,AIMED
+68,13,11,20,11,Welcome center handouts,8,AREAMAPS
+70,0,12,8,12,"Free of flaws, as a reputation",9,STAINLESS
+72,12,12,14,12,DiFranco of folk,3,ANI
+73,16,12,19,12,Sewer in American history,4,ROSS
+74,0,13,3,13,Hamlet's cousin,4,TOWN
+75,5,13,7,13,Music genre prefix,3,ALT
+76,9,13,12,13,Ideal engine sound,4,PURR
+79,14,13,17,13,Duel personalities?,4,FOES
+81,3,14,6,14,Like some memes,4,DANK
+83,8,14,16,14,Major concern for a meteorologist,9,SUPERSTAR
+85,18,14,20,14,"The Bruins, on scoreboards",3,BOS
+88,2,15,6,15,Contents of a household box,5,FUSES
+89,8,15,11,15,"Pasta whose name means ""barley"" in Italian",4,ORZO
+90,13,15,15,15,Startled scream,3,EEK
+91,17,15,20,15,Weight,4,HEFT
+92,0,16,5,16,Goes from one thing to another,6,MORPHS
+94,7,16,14,16,Purchase option for a dedicated fan,8,PREORDER
+96,16,16,20,16,Like dumbbells,5,DENSE
+97,0,17,4,17,Like Roma tomatoes,5,OVATE
+98,6,17,8,17,Something that may be sold by the yard,3,ALE
+99,10,17,13,17,"The Nature Conservancy and World Wildlife Fund, e.g., in brief",4,NGOS
+100,15,17,20,17,"Hate, hate, hate",6,LOATHE
+101,0,18,10,18,Certain juicing need,11,LEMONSQUARE
+104,12,18,20,18,Residential construction project,9,PAVEDROAD
+106,0,19,3,19,"Deep shot, in hoops",4,TREY
+107,5,19,9,19,Weird,5,OUTRE
+108,12,19,15,19,"Brother of Logan Roy on ""Succession""",4,EWAN
+109,17,19,20,19,Has a meal,4,SUPS
+110,0,20,2,20,Urban grid: Abbr.,3,STS
+111,5,20,9,20,Tennis champ ___ Osaka,5,NAOMI
+112,12,20,15,20,Figs. first issued in 1936,4,SSNS
+113,17,20,19,20,Summer on the Riviera,3,ETE
+1,1,0,1,6,Subscription platform for online content creators,7,PATREON
+2,2,0,2,6,"""That is my intention""",7,IPLANTO
+3,3,0,3,5,Where the ilium and ischium are,6,PELVIS
+4,5,0,5,3,Inhabitant of Ireland or Scotland,4,GAEL
+5,6,0,6,2,Holiday helper,3,ELF
+6,7,0,7,6,Sign that you can't go back now?,7,NOUTURN
+7,8,0,8,4,Philosophical pillar,5,TENET
+8,11,0,11,2,"___ Arbor, Mich.",3,ANN
+9,12,0,12,6,Deep inhalation to get high,7,BONGHIT
+10,13,0,13,4,"Ordered delivery, perhaps",5,ATEIN
+11,14,0,14,3,"Hive mind of ""Star Trek: TNG,"" with ""the""",4,BORG
+12,15,0,15,2,National Dog Show org.,3,AKC
+13,18,0,18,5,"___ someone's yum (criticized a person's tastes, slangily)",6,YUCKED
+14,19,0,19,4,Discovery astronaut Ochoa,5,ELLEN
+15,20,0,20,4,With it,5,ALERT
+16,0,1,0,6,Shake a little,6,JIGGLE
+19,17,1,17,9,Amtrak booking,9,TRAINTRIP
+21,4,2,4,4,Worker with wax,3,BEE
+22,10,2,10,7,"""Oof, what a day!""",6,IMBEAT
+23,16,2,16,6,"Run-D.M.C.'s ""You Be ___""",5,ILLIN
+26,9,3,9,7,Longtime co-host of the annual Macy's Thanksgiving Day Parade,5,ROKER
+30,6,4,6,10,Good Texas hold 'em hand,7,ACEKING
+31,11,4,11,7,Auto loan figs.,4,APRS
+32,15,4,15,11,Bit of roofing in Spanish-style architecture,8,CLAYTILE
+34,5,5,5,7,"Biden and Harris, notably, in brief",3,VPS
+36,14,5,14,8,Underwire undergarments,4,BRAS
+38,4,6,4,12,"Muffin makeup, maybe",7,OATBRAN
+39,8,6,8,8,Over-emoter,3,HAM
+41,3,7,3,9,"Trade, informally",3,BIZ
+43,13,7,13,12,Star N.F.L. wide receiver Allen,6,KEENAN
+45,18,7,18,12,First family from Illinois,6,OBAMAS
+46,19,7,19,12,Exercise in a swimming pool,6,DOLAPS
+47,20,7,20,11,Grabs,5,SNAGS
+48,1,8,1,13,"""___ Life"" (1981 Rick James single)",6,GHETTO
+49,2,8,2,13,Tool for cutting wood along the grain,6,RIPSAW
+51,7,8,7,13,Scandalized,6,AGHAST
+52,12,8,12,10,Pro who gets many return customers?,3,CPA
+53,16,8,16,14,Bad makeup artist,7,SMEARER
+54,0,9,0,13,Spot for a band,5,WRIST
+55,5,9,5,16,High ways,8,AIRLANES
+56,9,9,9,11,"Early stop at a casino, maybe",3,ATM
+57,10,9,10,11,Univ. senior's hurdle,3,GRE
+58,11,9,11,11,Funding,3,AID
+62,8,10,8,12,"""___ but a scratch"": oft-quoted Monty Python line",3,TIS
+63,14,10,14,16,Con artist,7,GRIFTER
+66,3,11,3,19,"Chattering plastic teeth, for one",9,WINDUPTOY
+69,17,11,17,13,Rapper ___ Def,3,MOS
+71,6,12,6,15,Group with lodges,4,ELKS
+72,12,12,12,14,Part of E.T.A.: Abbr.,3,ARR
+76,9,13,9,16,100%,4,PURE
+77,10,13,10,18,"Allow for more high-density housing and mixed-use development, in urban planning lingo",6,UPZONE
+78,11,13,11,17,"Company shake-up, for short",5,REORG
+80,15,13,15,15,Symbol of sturdiness,3,OAK
+82,4,14,4,18,Pallid,5,ASHEN
+83,8,14,8,20,Problem for a pitcher,7,SOREARM
+84,13,14,13,20,They have their ups and downs,7,SEESAWS
+85,18,14,18,20,"With 86-Down, very upset ... like the answers to five of this puzzle's clues?",7,BENTOUT
+86,19,14,19,20,See 85-Down,7,OFSHAPE
+87,20,14,20,19,Grand mounts,6,STEEDS
+88,2,15,2,20,They go around at museums,6,FRAMES
+91,17,15,17,20,Coffin carrier,6,HEARSE
+92,0,16,0,20,Drops down?,5,MOLTS
+93,1,16,1,20,In no way hidden,5,OVERT
+94,7,16,7,20,It has only one-sixth of the mass of Earth's moon,5,PLUTO
+95,12,16,12,20,Goobers,5,DOPES
+96,16,16,16,18,Pentagon inits.,3,DOD
+98,6,17,6,20,Cousin of turquoise,4,AQUA
+100,15,17,15,20,Part of the eye that focuses light onto the retina,4,LENS
+102,5,18,5,20,Momma's boy,3,SON
+103,9,18,9,20,Big name in outdoor gear,3,REI
+105,14,18,14,20,Jones of CNN,3,VAN

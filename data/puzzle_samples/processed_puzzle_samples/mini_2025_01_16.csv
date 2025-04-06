@@ -1,0 +1,11 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,1,0,4,0,"Square on a wall calendar, or a fun thing you might put on the calendar",4,DATE
+5,0,1,4,1,Social ___,5,MEDIA
+6,0,2,4,2,Tiny things studied by chemists,5,ATOMS
+7,0,3,4,3,Only one of the Seven Dwarfs without a beard,5,DOPEY
+8,0,4,4,4,"Over the top, in slang",5,EXTRA
+1,1,0,1,4,Period of abstaining from unhealthy substances,5,DETOX
+2,2,0,2,4,Take in as one's own,5,ADOPT
+3,3,0,3,4,Function in a Clock app,5,TIMER
+4,4,0,4,4,Class you might take to boost your G.P.A.,5,EASYA
+5,0,1,0,4,Like a bed with the covers tucked neatly in place,4,MADE

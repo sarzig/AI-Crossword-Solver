@@ -1,0 +1,73 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,3,0,Birthplace of the Ironman World Championship,4,OAHU
+5,5,0,8,0,Slays,4,OFFS
+9,10,0,14,0,Give a talking-to,5,SCOLD
+14,0,1,3,1,"Where popovers ""pop""",4,OVEN
+15,5,1,8,1,Bottom of some prep school uniforms,4,KILT
+16,10,1,14,1,"World capital nicknamed the ""Soaring Dragon""",5,HANOI
+17,0,2,8,2,Frosh,9,FIRSTYEAR
+19,10,2,14,2,Cuban dance,5,RUMBA
+20,2,3,13,3,*Jesus,12,SEAOFGALILEE
+22,3,4,5,4,___ Dhabi,3,ABU
+23,8,4,11,4,Like a Senate vote that requires the vice president,4,TIED
+24,0,5,14,5,*Dorothy Gale,15,YELLOWBRICKROAD
+32,0,6,2,6,"""Rules ___ rules""",3,ARE
+33,4,6,7,6,"Rihanna, to fans",4,RIRI
+34,11,6,14,6,Prefix with present,4,OMNI
+35,0,7,3,7,Jay relative,4,CROW
+37,5,7,9,7,Church centers,5,NAVES
+40,11,7,14,7,Bupkis,4,NADA
+41,0,8,3,8,Refine,4,HONE
+42,7,8,10,8,"Impersonates, maybe",4,APES
+44,12,8,14,8,Part of a pecking order?,3,HEN
+45,0,9,14,9,*Neil Armstrong,15,TRANQUILITYBASE
+50,3,10,6,10,Chance to go,4,TURN
+51,9,10,11,10,Genre for Reel Big Fish,3,SKA
+52,1,11,12,11,"Memorable ad-lib in ""Midnight Cowboy"" … or what the starred clues would say about their answers",12,IMWALKINHERE
+57,0,12,4,12,Bygone carrier whose first hub was in Pittsburgh,5,USAIR
+58,6,12,14,12,"Flattening, informally",9,SMOOSHING
+61,0,13,4,13,Elegant shorebird,5,STILT
+62,6,13,9,13,"___ Linda, recurring ""Saturday Night Live"" character played by Kristen Wiig",4,AUNT
+63,11,13,14,13,[waggles hand back and forth],4,ORSO
+64,0,14,4,14,Chemical attractions,5,BONDS
+65,6,14,9,14,Tax whizzes,4,CPAS
+66,11,14,14,14,Bog buildup,4,PEAT
+1,0,0,0,2,"""That's rough""",3,OOF
+2,1,0,1,2,Bird: Prefix,3,AVI
+3,2,0,2,3,Women's health care brand,4,HERS
+4,3,0,3,5,"Open, as a letter",6,UNSEAL
+5,5,0,5,7,"""Fine, I give""",8,OKYOUWIN
+6,6,0,6,3,Feudal land,4,FIEF
+7,7,0,7,3,Identify as a potential problem,4,FLAG
+8,8,0,8,5,Low-altitude clouds,6,STRATI
+9,10,0,10,5,Bloodcurdling sound,6,SHRIEK
+10,11,0,11,7,"Emotionally volatile situation, metaphorically",8,CAULDRON
+11,12,0,12,3,"""My treat""",4,ONME
+12,13,0,13,3,Brain section,4,LOBE
+13,14,0,14,2,"Lunes, martes o miércoles",3,DIA
+18,4,2,4,6,Small drum,5,TABOR
+21,9,3,9,5,Driver's need: Abbr.,3,LIC
+24,0,5,0,9,"The reality show ""Below Deck"" is set on one",5,YACHT
+25,1,5,1,9,Reason for elimination at a spelling bee,5,ERROR
+26,2,5,2,9,Singer Lewis,5,LEONA
+27,6,5,6,7,Garment that can be backless,3,BRA
+28,7,5,7,9,Competitor,5,RIVAL
+29,12,5,12,9,Poker variety in which each player is dealt four cards,5,OMAHA
+30,13,5,13,9,Where spectacled bears live,5,ANDES
+31,14,5,14,9,"Songwriter Warren with an Oscar, Emmy and Grammy",5,DIANE
+36,3,7,3,14,"Let loose, say",8,WENTWILD
+38,8,7,8,9,What may be left of center?,3,EPI
+39,9,7,9,14,Old-fashioned basketball attempts,8,SETSHOTS
+43,10,8,10,12,Comedian Wanda,5,SYKES
+46,4,9,4,14,There are eight in a peck,6,QUARTS
+47,5,9,5,11,"Standard info on a takeout menu, nowadays",3,URL
+48,6,9,6,14,An octopus uses it for defense,6,INKSAC
+49,11,9,11,14,"Participate in a crawl, perhaps",6,BARHOP
+52,1,11,1,14,"""That ___ say ...""",4,ISTO
+53,2,11,2,14,Primary,4,MAIN
+54,7,11,7,14,"""You woke me""",4,IMUP
+55,8,11,8,14,Prefix with -gon,4,NONA
+56,12,11,12,14,Cork's country,4,EIRE
+57,0,12,0,14,PC hookup spot,3,USB
+59,13,12,13,14,Org. employing cryptographers,3,NSA
+60,14,12,14,14,Tricked,3,GOT

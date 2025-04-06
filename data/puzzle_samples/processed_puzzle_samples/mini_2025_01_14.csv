@@ -1,0 +1,11 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,4,0,"""Vertically challenged""",5,SHORT
+6,0,1,4,1,"""I am ___, hear me roar!""",5,WOMAN
+7,0,2,4,2,Vote into office,5,ELECT
+8,0,3,3,3,Like a bold haircut or piercing,4,EDGY
+9,0,4,2,4,Org. that might make you take your laptop out of your suitcase,3,TSA
+1,0,0,0,4,Partner of 1-Across,5,SWEET
+2,1,0,1,4,"Half nelson and cobra clutch, in wrestling",5,HOLDS
+3,2,0,2,4,Lowest-ranking member of the wolfpack,5,OMEGA
+4,3,0,3,3,Risqué,4,RACY
+5,4,0,4,2,Explosive that was originally used as a yellow dye,3,TNT

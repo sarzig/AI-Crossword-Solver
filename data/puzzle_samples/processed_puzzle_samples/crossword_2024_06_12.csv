@@ -1,0 +1,80 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,6,0,Pop corn?,7,DADJOKE
+8,8,0,10,0,Home planet of a classic TV alien,3,ORK
+11,12,0,15,0,"___ Ren of ""Star Wars: The Last Jedi""",4,KYLO
+15,0,1,6,1,Brainstormer's graphic,7,IDEAMAP
+16,8,1,10,1,"Stooge with the catchphrase ""Oh, a wise guy, eh?""",3,MOE
+17,12,1,15,1,Lighting tubeful,4,NEON
+18,0,2,6,2,Cranky,7,PEEVISH
+19,8,2,15,2,Balderdash,8,NONSENSE
+21,2,3,15,3,Pop quizzes?,14,PATERNITYTESTS
+23,0,4,2,4,"""Yesterday, I ___ a clock.  It was very time-consuming!"" (example of a 1-Across)",3,ATE
+25,5,4,7,4,Set upon en masse,3,MOB
+26,9,4,15,4,Edge of a path,7,WAYSIDE
+27,0,5,4,5,"Planning to, informally",5,GONNA
+30,6,5,9,5,The U.S. is its southernmost member,4,NATO
+32,13,5,15,5,"Appreciated, as a joke",3,GOT
+33,0,6,5,6,"Nonfiction films with an editorial viewpoint, in a New York Times series",6,OPDOCS
+35,8,6,14,6,Attending to pressing matters?,7,IRONING
+39,3,7,12,7,Pop song?,10,THISOLDMAN
+42,1,8,7,8,Minor bump against another car,7,LOVETAP
+44,10,8,15,8,Long Islander of literature,6,GATSBY
+48,0,9,2,9,Old French coin,3,SOU
+49,6,9,9,9,Small scratch,4,NICK
+52,11,9,15,9,"""___ et Blanche"" (Man Ray's study in contrast)",5,NOIRE
+53,0,10,6,10,Misbehaves,7,ACTSBAD
+57,8,10,10,10,LX ÷ XX,3,III
+59,13,10,15,10,"There and back, perhaps",3,LAP
+60,0,11,13,11,Pop wisdom?,14,FATHERLYADVICE
+64,0,12,7,12,How contest winners might be chosen,8,ATRANDOM
+65,9,12,15,12,Opening,7,VACANCY
+68,0,13,3,13,More than theoretical,4,REAL
+69,5,13,7,13,"""I won't list them all"": Abbr.",3,ETC
+70,9,13,15,13,Obstacle to change,7,INERTIA
+71,0,14,3,14,Poem about pastoral life,4,IDYL
+72,5,14,7,14,"Major employer in Maryland whose employee count is classified, for short",3,NSA
+73,9,14,15,14,Pop art?,7,DADAISM
+1,0,0,0,2,Crudité go-with,3,DIP
+2,1,0,1,2,Drink suffix,3,ADE
+3,2,0,2,6,One side of a pool,7,DEEPEND
+4,3,0,3,3,Island on which the Dutch introduced coffee in the 1600s,4,JAVA
+5,4,0,4,3,Elide,4,OMIT
+6,5,0,5,4,Casey of radio countdowns,5,KASEM
+7,6,0,6,5,"""Sleepless in Seattle"" director",6,EPHRON
+8,8,0,8,3,All: Prefix,4,OMNI
+9,9,0,9,7,"Demos for democracy, e.g.",8,ROOTWORD
+10,10,0,10,4,Distance running powerhouse,5,KENYA
+11,12,0,12,4,They're often held in the fetal position,5,KNEES
+12,13,0,13,6,Symbol on the Nikkei 225,7,YENSIGN
+13,14,0,14,6,Subject of a worried pet owner's posting,7,LOSTDOG
+14,15,0,15,5,Quick tennis outing,6,ONESET
+20,11,2,11,4,Pen,3,STY
+22,7,3,7,5,Jazz grp.,3,NBA
+23,0,4,0,6,Opposite of hence,3,AGO
+24,1,4,1,6,Garnish (with),3,TOP
+28,3,5,3,8,Rule for a screen-free household,4,NOTV
+29,4,5,4,8,Back issue,4,ACHE
+31,8,5,8,7,"Up to, informally",3,TIL
+34,5,6,5,8,"Mind a baby, maybe",3,SIT
+36,10,6,10,8,[!!!],3,OMG
+37,11,6,11,9,Tandoor-baked bread,4,NAAN
+38,12,6,12,9,A fan of,4,INTO
+40,6,7,6,14,Some improvised ball fields,8,SANDLOTS
+41,7,7,7,9,Big name in nail polish,3,OPI
+42,1,8,1,14,Found,7,LOCATED
+43,2,8,2,14,Spot for a pile of finished work,7,OUTTRAY
+45,13,8,13,14,"One of two in ""business suits""",7,SILENTI
+46,14,8,14,10,One might be unfastened to feed a baby,3,BRA
+47,15,8,15,10,Informal agreement,3,YEP
+48,0,9,0,14,Wild trip?,6,SAFARI
+50,8,9,8,11,"Snoopy group, for short",3,CIA
+51,9,9,9,14,"Children's TV, informally",6,KIDVID
+54,3,10,3,14,Certainly will,5,SHALL
+55,4,10,4,12,Newspaper editor Bradlee,3,BEN
+56,5,10,5,14,Elizabeth with millions of made-up customers,5,ARDEN
+58,10,10,10,14,Divorcée in 1990s New York tabloids,5,IVANA
+61,7,11,7,14,"Place for swimming lessons, in brief",4,YMCA
+62,11,11,11,14,On the rocks,4,ICED
+63,12,11,12,14,Supermodel Delevingne,4,CARA
+66,14,12,14,14,Prefix with gender,3,CIS
+67,15,12,15,14,Thanksgiving serving,3,YAM

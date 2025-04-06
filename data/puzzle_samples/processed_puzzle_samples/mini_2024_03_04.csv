@@ -1,0 +1,11 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,2,0,4,0,"With 4-Across, what the pirate said on his 80th birthday, in a dad joke",3,AYE
+4,0,1,4,1,See 1-Across,5,MATEY
+6,0,2,4,2,Walk at a relaxed pace,5,AMBLE
+7,0,3,4,3,Vaults,5,LEAPS
+8,0,4,2,4,Explosive stuff,3,TNT
+1,2,0,2,4,Series of pitches,5,ATBAT
+2,3,0,3,3,Site with restaurant reviews,4,YELP
+3,4,0,4,3,"Rhyming word in ""___ on the prize""",4,EYES
+4,0,1,0,4,What gives amber ale its sweet flavor,4,MALT
+5,1,1,1,4,"""You said it!""",4,AMEN

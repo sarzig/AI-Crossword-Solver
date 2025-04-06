@@ -1,0 +1,134 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,4,0,Tot's rocker,5,HORSY
+6,6,0,11,0,Gets lost,6,SCRAMS
+12,15,0,19,0,"Squeeze, as a mop",5,WRING
+17,0,1,4,1,Die down,5,ABATE
+18,6,1,12,1,Eventual outlet for Lake Victoria,7,THENILE
+20,14,1,19,1,"Joan of Arc, for one",6,MARTYR
+21,0,2,12,2,Geometrophiles …,13,LOVETRIANGLES
+23,14,2,19,2,A little off?,6,ONSALE
+24,0,3,3,3,Abound (with),4,TEEM
+25,5,3,7,3,Member of a colony,3,ANT
+26,9,3,15,3,Rapture,7,ELATION
+28,17,3,19,3,Put down in writing,3,LOG
+29,3,4,6,4,Sad ___,4,SACK
+31,8,4,19,4,Imagophiles …,12,PRIZEDRAWING
+33,0,5,2,5,"Old ""The beer of quality"" sloganeer, in brief",3,PBR
+36,4,5,8,5,Actress Witherspoon,5,REESE
+38,11,5,13,5,"""You wanted to see me?""",3,YES
+39,15,5,18,5,Cabaret accessories,4,BOAS
+40,0,6,4,6,Something you sleep through,5,DREAM
+42,6,6,10,6,"Sunny-side-up ""suns""",5,YOLKS
+45,14,6,17,6,In stitches,4,SEWN
+46,0,7,15,7,Gastrophiles …,16,FANCYRESTAURANTS
+51,17,7,19,7,"""The Eagle ___ landed""",3,HAS
+54,0,8,5,8,Close out,6,SETTLE
+55,9,8,14,8,Ready for a drive,6,TEEDUP
+56,16,8,19,8,"Rightmost menu heading, often",4,HELP
+57,3,9,8,9,Long campaigns,6,SIEGES
+61,10,9,13,9,Org. that partners with Lyft and Uber to promote safe ridesharing,4,MADD
+62,15,9,19,9,"""Ish""",5,SORTA
+63,0,10,19,10,Dextropodophiles …,20,GETOFFONTHERIGHTFOOT
+68,0,11,4,11,Come after,5,ENSUE
+69,6,11,9,11,Nugget from a noggin,4,IDEA
+70,11,11,16,11,Sinister smiles,6,SNEERS
+71,0,12,3,12,Novosibirsk negative,4,NYET
+72,5,12,10,12,Come out of la-la land with a jolt,6,SNAPTO
+74,14,12,19,12,"To whom it is said ""You have a grand gift for silence …. It makes you quite invaluable as a companion""",6,WATSON
+78,0,13,2,13,Small parlor piece?,3,TAT
+79,4,13,19,13,Autotumulophiles …,16,DIGTHEIROWNGRAVE
+83,2,14,5,14,Bird feeder fat,4,SUET
+85,9,14,13,14,Symbol of laziness,5,SLOTH
+86,15,14,19,14,High winds,5,GALES
+87,1,15,4,15,Actress Rowlands,4,GENA
+88,6,15,8,15,PC component,3,CPU
+91,11,15,15,15,Even slightly,5,ATALL
+93,17,15,19,15,"""Inside the N.B.A."" channel",3,TNT
+94,0,16,11,16,Aurophiles …,12,GOFORTHEGOLD
+98,13,16,16,16,The ___ that bind,4,TIES
+100,0,17,2,17,Certain fluency-building subj.,3,ESL
+101,4,17,10,17,Game with cestas and a pelota,7,JAIALAI
+102,12,17,14,17,"___ Rule, true-crime writer",3,ANN
+103,16,17,19,17,Periphery,4,EDGE
+107,0,18,5,18,Tap,6,SPIGOT
+109,7,18,19,18,Chronomechanophiles …,13,LIKECLOCKWORK
+112,0,19,5,19,Feel like [grrrr],6,SEETHE
+113,7,19,13,19,Take care of business,7,SEETOIT
+114,15,19,19,19,Goosebump-inducing,5,EERIE
+115,0,20,4,20,"Actress Kaitlin of ""It's Always Sunny in Philadelphia""",5,OLSON
+116,8,20,13,20,Schnozzes,6,SNOOTS
+117,15,20,19,20,Palatial,5,GRAND
+1,0,0,0,3,"""Go no further!""",4,HALT
+2,1,0,1,3,High wind,4,OBOE
+3,2,0,2,3,Go on and on (about),4,RAVE
+4,3,0,3,4,Parts of flutes and flowers,5,STEMS
+5,4,0,4,2,Still,3,YET
+6,6,0,6,7,It's a bad look,8,STINKEYE
+7,7,0,7,3,Palaver,4,CHAT
+8,8,0,8,2,"Kylo ___ of ""Star Wars""",3,REN
+9,9,0,9,4,Red state?,5,ANGER
+10,10,0,10,4,___ Vanilli (1980s-'90s R&B duo),5,MILLI
+11,11,0,11,5,Sordid,6,SLEAZY
+12,15,0,15,7,Poseurs,8,WANNABES
+13,16,0,16,2,"Monopoly properties that don't get hotels, for short",3,RRS
+14,17,0,17,10,"Sandwich that may include salami, prosciutto and soppressata",11,ITALIANHERO
+15,18,0,18,5,Stockings,6,NYLONS
+16,19,0,19,4,Basketball coach Popovich,5,GREGG
+19,12,1,12,5,Lauder of beauty products,5,ESTEE
+20,14,1,14,4,"Secure, as a skiff",4,MOOR
+22,5,2,5,5,Zoom,4,RACE
+27,13,3,13,5,"Passports, e.g., in brief",3,IDS
+30,4,4,4,11,Private affairs?,8,ARMYLIFE
+31,8,4,8,7,"Pummel, as with snowballs",4,PELT
+32,16,4,16,6,"""That was unexpected!""",3,WOW
+33,0,5,0,8,Things Acrobat Reader reads,4,PDFS
+34,1,5,1,8,Hill by a loch,4,BRAE
+35,2,5,2,8,"""Seasons of Love"" musical",4,RENT
+37,7,5,7,7,...---...,3,SOS
+41,3,6,3,12,"Seeks attention, in a way",7,ACTSOUT
+43,9,6,9,8,"""Krazy ___""",3,KAT
+44,10,6,10,10,Sarcastic response to a complaint,5,SUEME
+45,14,6,14,8,Longtime NASCAR sponsor,3,STP
+47,5,7,5,10,Habitat threatened by bleaching,4,REEF
+48,11,7,11,11,Brings up,5,REARS
+49,12,7,12,11,Extra something,5,ADDIN
+50,13,7,13,11,What might accompany a wink,5,NUDGE
+52,18,7,18,10,Choral voice,4,ALTO
+53,19,7,19,10,Minor disagreement,4,SPAT
+56,16,8,16,14,"New York university that hosted presidential debates in 2008, 2012 and 2016",7,HOFSTRA
+58,6,9,6,13,Word repeated in a classic Energizer slogan,5,GOING
+59,7,9,7,13,Finish by,5,ENDAT
+60,8,9,8,13,"The N.B.A.'s Curry, to fans",5,STEPH
+62,15,9,15,16,Fall behind the pack,8,STRAGGLE
+63,0,10,0,13,Bloke,4,GENT
+64,1,10,1,13,Singer born Eithne Pádraigín Ní Bhraonáin,4,ENYA
+65,2,10,2,20,Sub-Saharan pests,11,TSETSEFLIES
+66,9,10,9,14,Can't tolerate,5,HATES
+67,14,10,14,13,Axed,4,HEWN
+72,5,12,5,14,Obedience school command,3,SIT
+73,10,12,10,14,Cooking staple,3,OIL
+75,17,12,17,15,Cooking staple,4,SALT
+76,18,12,18,15,Cooking place,4,OVEN
+77,19,12,19,15,Fit snugly,4,NEST
+79,4,13,4,20,Announcement of a split decision?,8,DEARJOHN
+80,11,13,11,16,Word with trip or test,4,ROAD
+81,12,13,12,15,Baseball Hall-of-Famer Mel,3,OTT
+82,13,13,13,20,Shelves for knickknacks,8,WHATNOTS
+84,3,14,3,16,Card game shout,3,UNO
+87,1,15,1,20,Preacher's preaching,6,GOSPEL
+88,6,15,6,17,X,3,CHI
+89,7,15,7,19,Rings,5,PEALS
+90,8,15,8,20,"2005 Scott Westerfeld sci-fi novel with the sequel ""Pretties""",6,UGLIES
+92,14,15,14,18,"""The Mod Squad"" role",4,LINC
+94,0,16,0,20,Painter's primer,5,GESSO
+95,5,16,5,19,Home to many Constables and Sargents,4,TATE
+96,9,16,9,20,Like some whiskey barrels,5,OAKEN
+97,10,16,10,20,Not be straight with,5,LIETO
+99,16,16,16,20,Ninja Turtles' abode,5,SEWER
+102,12,17,12,20,Came down,4,ALIT
+104,17,17,17,20,"TV girl with the catchphrase ""Swiper, no swiping!""",4,DORA
+105,18,17,18,20,Emulate the Cheshire cat,4,GRIN
+106,19,17,19,20,Stretched (out),4,EKED
+108,3,18,3,20,Classic muscle car,3,GTO
+110,11,18,11,20,"Co.'s second-in-command, usually",3,COO
+111,15,18,15,20,Gunpowder holder,3,KEG

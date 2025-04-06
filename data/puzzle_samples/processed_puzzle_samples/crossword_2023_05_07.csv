@@ -1,0 +1,141 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,6,0,Large dog breed,7,MASTIFF
+8,8,0,12,0,U.K. movie award,5,BAFTA
+13,16,0,20,0,Card table declaration,5,IPASS
+18,0,1,6,1,Unit equivalent to 4.184 joules,7,CALORIE
+19,8,1,12,1,Awards for ad campaigns,5,CLIOS
+20,14,1,20,1,Thawing,7,DETENTE
+22,0,2,12,2,Thought experiment that asks whether an object remains the same object if its parts are replaced one by one,13,SHIPOFTHESEUS
+24,14,2,20,2,Person living between Liberia and Ghana,7,IVORIAN
+25,2,3,7,3,Participate in a pledge drive,6,DONATE
+26,9,3,12,3,The false killer whale resembles it,4,ORCA
+27,14,3,16,3,Italian nickname,3,SAL
+28,18,3,20,3,"Canada's House of Commons has 338 of them, in brief",3,MPS
+29,0,4,4,4,"""Nothing but net!""",5,SWISH
+31,6,4,8,4,Place to run some tests,3,LAB
+33,10,4,20,4,Acorn-loving duo,11,CHIPANDDALE
+36,0,5,2,5,Hither and ___,3,YON
+37,4,5,10,5,Run into the ground,7,OVERUSE
+40,12,5,14,5,Actress Ullmann,3,LIV
+41,16,5,19,5,Home of Grace Hopper College,4,YALE
+42,0,6,5,6,"The artist François Boucher said that it was ""too green and badly lit""",6,NATURE
+44,8,6,11,6,___ Redivivus (first-century myth about an emperor's reappearance),4,NERO
+46,13,6,17,6,Use crayons,5,COLOR
+48,0,7,9,7,Restaurant pick-up option?,10,CHOPSTICKS
+51,11,7,20,7,Hong Kong action hero who frequently collaborated with John Woo,10,CHOWYUNFAT
+56,3,8,7,8,Oily sauce,5,PESTO
+57,9,8,12,8,___ funny,4,HAHA
+59,14,8,16,8,Family nickname,3,SIS
+60,18,8,20,8,"""The way I see it ...,"" via texts",3,IMO
+61,0,9,4,9,Métro area?,5,PARIS
+64,6,9,8,9,Comedian Margaret,3,CHO
+66,10,9,13,9,"Hebrew for ""head""",4,ROSH
+68,15,9,20,9,Chef/food writer Samin ___,6,NOSRAT
+70,0,10,3,10,Brinks,4,EVES
+71,5,10,15,10,Ostentatious behavior,11,SHOWBOATING
+74,17,10,20,10,Selection of appetizers in Greek and Turkish restaurants,4,MEZE
+75,0,11,5,11,Prestige,6,CACHET
+77,7,11,10,11,"""Buona ___"" (Italian greeting)",4,SERA
+78,12,11,14,11,"Human, e.g.",3,APE
+79,16,11,20,11,Augurs,5,BODES
+80,0,12,2,12,Drummer's setup,3,KIT
+81,4,12,6,12,Jersey call,3,MOO
+83,8,12,11,12,Singer Amos,4,TORI
+85,13,12,17,12,Award-winning sci-fi author Bacigalupi,5,PAOLO
+87,0,13,9,13,Dramatic action-movie effect,10,SLOWMOTION
+90,11,13,20,13,Pail for feeding pigs,10,SLOPBUCKET
+95,3,14,7,14,Invited over,5,HADIN
+96,9,14,12,14,___ Pet,4,CHIA
+98,15,14,20,14,"Available for rental, to Brits",6,ONHIRE
+99,1,15,4,15,Stylish,4,CHIC
+101,6,15,8,15,Mo. for Canadian Thanksgiving,3,OCT
+103,10,15,16,15,Alertly responsive (to),7,ATTUNED
+106,18,15,20,15,Accomplished,3,DID
+107,0,16,10,16,"Loafers, e.g.",11,SLIPONSHOES
+110,12,16,14,16,One-pip card,3,ACE
+111,16,16,20,16,County between London and the North Sea,5,ESSEX
+113,0,17,2,17,Movement for a finger or a tail,3,WAG
+114,4,17,6,17,"King, in Portuguese",3,REI
+115,8,17,11,17,Flour variety with a palindromic name,4,ATTA
+117,13,17,18,17,Bone at the base of the spine,6,SACRUM
+119,0,18,6,18,Emily Dickinson's hometown,7,AMHERST
+121,8,18,20,18,Thought experiment that asks whether an object remains the same object if its parts are replaced one by one,13,SHIPOFTHESEUS
+125,0,19,6,19,Legally void status,7,NULLITY
+126,8,19,12,19,City that hosts an annual Pirate Festival,5,TAMPA
+127,14,19,20,19,"First president of the Ninety-Nines, an organization for female pilots",7,EARHART
+128,0,20,4,20,Secretly surveil,5,SPYON
+129,8,20,12,20,Go quietly,5,SNEAK
+130,14,20,20,20,"""Obviously not, ya goof!""",7,NOSILLY
+1,0,0,0,2,Rap battle participants,3,MCS
+2,1,0,1,2,"""That feels good!""",3,AAH
+3,2,0,2,7,"Donned, as a silky dress",8,SLIDINTO
+4,3,0,3,4,"Literary theme, from the Greek",5,TOPOS
+5,4,0,4,9,"Steam trains, in the 19th century",10,IRONHORSES
+6,5,0,5,3,World Cup org.,4,FIFA
+7,6,0,6,5,In fine ___,6,FETTLE
+8,8,0,8,2,Abbr. in ancient dates,3,BCE
+9,9,0,9,3,"""I forgot to mention ...""",4,ALSO
+10,10,0,10,6,More intense,7,FIERCER
+11,11,0,11,4,Have an emotional impact on,5,TOUCH
+12,12,0,12,5,Attack,6,ASSAIL
+13,16,0,16,9,Gloater's words,10,ITOLDYOUSO
+14,17,0,17,2,Part of b.p.s.,3,PER
+15,18,0,18,5,Member of a kingdom that spans the globe,6,ANIMAL
+16,19,0,19,5,Object for binding contracts,6,STAPLE
+17,20,0,20,4,Meaning,5,SENSE
+20,14,1,14,8,Denies knowing anything about,8,DISAVOWS
+21,15,1,15,4,"___ Rachel Wood of ""Kajillionaire""",4,EVAN
+23,7,2,7,5,Learn through the grapevine,4,HEAR
+29,0,4,0,7,Harmonize,4,SYNC
+30,1,4,1,7,"""That's wild!,"" in a modern spelling",4,WOAH
+32,8,4,8,7,Twin bed?,4,BUNK
+34,13,4,13,7,"Salsa variety, casually",4,PICO
+35,17,4,17,7,"""Rats!""",4,DARN
+38,5,5,5,8,November honorees,4,VETS
+39,9,5,9,8,"Meeting, informally",4,SESH
+43,3,6,3,11,Hoity-toity,6,UPPISH
+45,11,6,11,10,Astronaut Ellen of shuttle missions,5,OCHOA
+47,15,6,15,10,Prevaricating,5,LYING
+49,6,7,6,10,Between-the-shoulder-blades annoyance,4,ITCH
+50,7,7,7,11,Some Pacific salmon,5,COHOS
+52,12,7,12,11,"""___ luego""",5,HASTA
+53,18,7,18,11,Like ceramics,5,FIRED
+54,19,7,19,11,Blow away,5,AMAZE
+55,20,7,20,11,Reusable shopping bags,5,TOTES
+58,10,8,10,12,Like a bellowing crowd,5,AROAR
+61,0,9,0,13,Demure kisses,5,PECKS
+62,1,9,1,13,Come in handy,5,AVAIL
+63,2,9,2,13,Half of a leaf,5,RECTO
+65,8,9,8,13,Have because of,5,OWETO
+67,13,9,13,13,Mudhole wallower,5,HIPPO
+69,17,9,17,14,Less-than-demure kiss,6,SMOOCH
+71,5,10,5,14,"Came to attention, say",5,STOOD
+72,9,10,9,14,"Bucking beast, informally",5,BRONC
+73,14,10,14,13,___ tide,4,NEAP
+76,4,11,4,20,"Portrayer of Princess Diana on ""The Crown""",10,EMMACORRIN
+79,16,11,16,20,Ones making mistakes,10,BLUNDERERS
+82,6,12,6,19,Idleness,8,OTIOSITY
+84,11,12,11,15,"""Oh, really?""",4,ISIT
+86,15,12,15,15,"Instrument in Joan Tower's ""Island Prelude""",4,OBOE
+88,3,13,3,16,"Produce speedily, with ""out""",4,WHIP
+89,7,13,7,16,Move slowly,4,INCH
+91,12,13,12,16,"___ Mangeshkar, Indian singer known as the ""Queen of Melody""",4,LATA
+92,18,13,18,20,Fast-food offering that may come with a toy,8,KIDSMEAL
+93,19,13,19,16,Lake that's home to South Bass Island,4,ERIE
+94,20,13,20,16,"""Ideas worth spreading"" spinoff",4,TEDX
+97,10,14,10,20,Can spare a few moments,7,HASTIME
+99,1,15,1,20,Thwart the interrogators,6,CLAMUP
+100,2,15,2,20,Good way to be regarded,6,HIGHLY
+102,8,15,8,20,Makes crispy,6,TOASTS
+104,13,15,13,18,Bay Area sch.,4,UCSF
+105,14,15,14,20,Tidy up,6,NEATEN
+107,0,16,0,20,Septet in a Christmas carol,5,SWANS
+108,5,16,5,19,Digs in a forest,4,NEST
+109,9,16,9,20,Patriot Allen,5,ETHAN
+112,17,16,17,20,Food served with gari and wasabi,5,SUSHI
+116,11,17,11,20,"Dad, in Korean",4,APPA
+118,15,17,15,20,"Rosalind of ""Star Trek: Deep Space Nine""",4,CHAO
+120,3,18,3,20,Scrabble rating system,3,ELO
+122,12,18,12,20,Durable wood,3,OAK
+123,19,18,19,20,"Link, of a sort",3,URL
+124,20,18,20,20,Challenge for a cleaner,3,STY

@@ -1,0 +1,141 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,3,0,Poses,4,ASKS
+5,6,0,9,0,___ palm (tropical tree),4,COCO
+9,11,0,14,0,Drive (around),4,TOOL
+13,16,0,20,0,Composer Bernstein who was unrelated to Leonard,5,ELMER
+18,0,1,4,1,Doohickey,5,THING
+20,6,1,9,1,Home to the Dole Plantation,4,OAHU
+21,11,1,14,1,Industry show,4,EXPO
+22,16,1,20,1,Late singer Judd,5,NAOMI
+23,0,2,4,2,"Contest with lots of ""tied"" scores",5,RODEO
+24,6,2,9,2,In a fight,4,ATIT
+25,11,2,14,2,Body part that humans have that other primates don't,4,CHIN
+26,16,2,20,2,"Term to drop in a serious relationship, informally",5,LBOMB
+27,0,3,14,3,Argument extender [ref. 18-Across],15,ANDANOTHERTHING
+30,16,3,20,3,Tiny amounts,5,IOTAS
+31,0,4,5,4,Terse denial,6,IDIDNT
+32,8,4,10,4,What seat selection on an airplane often comes with,3,FEE
+33,12,4,17,4,Eerily familiar feeling,6,DEJAVU
+35,0,5,2,5,Scottish refusal,3,NAE
+36,4,5,8,5,Focused on the bull's-eye,5,AIMED
+39,10,5,12,5,State fiction as fact,3,LIE
+41,14,5,20,5,Supervise,7,OVERSEE
+45,5,6,11,6,Slowly makes its way through,7,OSMOSES
+47,13,6,20,6,Fun functions,8,SHINDIGS
+48,0,7,9,7,"With 87-Across, ""I've been around the block a few times"" [ref. 23-Across]",10,THISISNTMY
+53,11,7,15,7,Yoga pose,5,ASANA
+55,17,7,20,7,Covering,4,ATOP
+56,0,8,5,8,Rock's C.J. or Dee Dee,6,RAMONE
+57,9,8,13,8,Currency of Qatar,5,RIYAL
+59,15,8,17,8,Package in Santa's sleigh,3,TOY
+61,0,9,4,9,"18+, say",5,ADULT
+62,6,9,10,9,Danger,5,PERIL
+65,12,9,16,9,Sun block,5,VISOR
+67,18,9,20,9,Molecular messenger,3,RNA
+70,0,10,20,10,Classic Yogi Berra quote [ref. 33-Across],21,ITSDEJAVUALLOVERAGAIN
+74,0,11,2,11,Whole bunch,3,LOT
+75,4,11,8,11,Fiber made from cellulose,5,RAYON
+76,10,11,14,11,Chemical ingredient in flubber,5,BORAX
+77,16,11,20,11,Did some secretarial work,5,TYPED
+78,3,12,5,12,The last thing a Mississippi cheerleader wants?,3,ANI
+79,7,12,11,12,Land divided at the 38th parallel,5,KOREA
+81,15,12,20,12,"Former name for the N.B.A.'s Thunder, informally",6,SONICS
+82,0,13,3,13,Crib sheet user,4,BABY
+85,5,13,9,13,Team building,5,ARENA
+87,11,13,20,13,See 48-Across,10,FIRSTRODEO
+91,0,14,7,14,"Consolidated for easier reading, as a Twitter thread",8,UNROLLED
+93,9,14,15,14,Composer Luigi who pioneered noise music,7,RUSSOLO
+95,0,15,6,15,Like some arts,7,MARTIAL
+96,8,15,10,15,Be an agent for,3,REP
+97,12,15,16,15,Broadway composer Jule,5,STYNE
+99,18,15,20,15,"Crop that might be insect-resistant, in brief",3,GMO
+102,3,16,8,16,Sleep inducer,6,OPIATE
+104,10,16,12,16,___ particle,3,TAU
+106,15,16,20,16,Came next,6,ENSUED
+108,0,17,4,17,Algonquian people,5,MIAMI
+111,6,17,20,17,Debut album by Britney Spears [ref. 82-Across],15,BABYONEMORETIME
+115,0,18,4,18,Beginning,5,ONSET
+116,6,18,9,18,French pronoun,4,ELLE
+117,11,18,14,18,"Word implied in ""I haven't the foggiest""",4,IDEA
+118,16,18,20,18,Crenshaw or casaba,5,MELON
+119,0,19,4,19,"""That makes two of us""",5,DITTO
+120,6,19,9,19,One with a nose for gnus?,4,LION
+121,11,19,14,19,A pan might come with just one,4,STAR
+122,16,19,20,19,Elusive giants,5,YETIS
+123,0,20,4,20,Tread + riser,5,STAIR
+124,6,20,9,20,Becomes less taut,4,SAGS
+125,11,20,14,20,Seemingly forever,4,EONS
+126,17,20,20,20,Instrument for Orpheus,4,LYRE
+1,0,0,0,5,Transport in a Billy Strayhorn standard,6,ATRAIN
+2,1,0,1,5,Showrunner Rhimes,6,SHONDA
+3,2,0,2,5,___ pool,6,KIDDIE
+4,3,0,3,4,Sam with 82 P.G.A. Tour wins,5,SNEAD
+5,6,0,6,3,Lay it on thick,4,COAT
+6,7,0,7,3,Pledge,4,OATH
+7,8,0,8,7,Political unit of ancient Hawaii,8,CHIEFDOM
+8,9,0,9,4,Highly unconventional,5,OUTRE
+9,11,0,11,3,Sector for many start-ups,4,TECH
+10,12,0,12,5,Durable leather,6,OXHIDE
+11,13,0,13,4,Give a take,5,OPINE
+12,14,0,14,7,Doughnut similar to an éclair,8,LONGJOHN
+13,16,0,16,6,Spice up,7,ENLIVEN
+14,17,0,17,8,Canadian observance also called Fête du Travail,9,LABOURDAY
+15,18,0,18,3,Not worth arguing about,4,MOOT
+16,19,0,19,3,Goldman who crusaded for birth control access,4,EMMA
+17,20,0,20,3,Barbecue order,4,RIBS
+19,4,1,4,5,"""Never ___ Give You Up"" (Rick Astley song)",5,GONNA
+28,5,3,5,8,Useless,6,OTIOSE
+29,10,3,10,6,Prefix with medicine,4,TELE
+34,15,4,15,10,One whose work goes over your head,7,AVIATOR
+37,6,5,6,7,Web portal with a Bing search bar,3,MSN
+38,7,5,7,7,Ambulance pro,3,EMT
+40,11,5,11,8,Monocle-dropping exclamation,4,ISAY
+42,18,5,18,7,Be on the bottom?,3,SIT
+43,19,5,19,7,"""___-Tripping"" (Nikki Giovanni poem)",3,EGO
+44,20,5,20,7,Sixth of five?,3,ESP
+46,9,6,9,10,Home country of the poet Adonis,5,SYRIA
+47,13,6,13,11,Mouth-watering?,6,SALIVA
+48,0,7,0,11,Park way,5,TRAIL
+49,1,7,1,11,Was given no other option,5,HADTO
+50,2,7,2,11,"""There's no other option""",5,IMUST
+51,3,7,3,10,Persuaded,4,SOLD
+52,4,7,4,12,"Starting position, maybe",6,INTERN
+54,12,7,12,11,Relish,5,SAVOR
+58,10,8,10,12,"""Goodness me!""",5,ILLBE
+60,16,8,16,13,Sojourner Truth or Frances Harper,6,ORATOR
+62,6,9,6,11,It's illegal for employers to prohibit workers from discussing this,3,PAY
+63,7,9,7,14,Called to mind,6,EVOKED
+64,8,9,8,13,Talk at length,5,RUNON
+66,14,9,14,11,"""On the Basis of ___"" (2018 legal drama)",3,SEX
+67,18,9,18,13,Swift,5,RAPID
+68,19,9,19,13,"Goddaughter, often",5,NIECE
+69,20,9,20,13,"""It therefore follows that …""",5,ANDSO
+71,5,10,5,16,Sport played on a fronton,7,JAIALAI
+72,11,10,11,14,Lazes around,5,LOAFS
+73,17,10,17,13,Doc who performs Pap smears,4,GYNO
+78,3,12,3,20,Black Lives Matter co-founder,9,AYOTOMETI
+80,9,12,9,15,"Valuable to collectors, say",4,RARE
+81,15,12,15,17,High-minded sort?,6,STONER
+82,0,13,0,15,"Depress, with ""out""",3,BUM
+83,1,13,1,15,Santa ___ winds,3,ANA
+84,2,13,2,15,Comment with a shiver,3,BRR
+86,6,13,6,20,"Marks down, maybe",8,RELABELS
+88,12,13,12,20,Gave officially,8,ISSUEDTO
+89,13,13,13,15,Deteriorate,3,ROT
+90,14,13,14,15,Guileful,3,SLY
+92,4,14,4,20,Cholesterol-lowering drug,7,LIPITOR
+94,10,14,10,17,___ and including,4,UPTO
+96,8,15,8,20,"Share on Tumblr, say",6,REBLOG
+98,16,15,16,19,"""You can learn from anyone — even your ___"": Ovid",5,ENEMY
+99,18,15,18,20,"""Yep, you got me""",6,GUILTY
+100,19,15,19,20,Story of one's life,6,MEMOIR
+101,20,15,20,20,Danish city where Hans Christian Andersen was born,6,ODENSE
+103,7,16,7,20,___ al Ghul (on-and-off lover of Batman),5,TALIA
+105,11,16,11,20,Fennel-like flavoring,5,ANISE
+107,17,16,17,20,Material for some drums,5,STEEL
+108,0,17,0,20,Online forum V.I.P.s,4,MODS
+109,1,17,1,20,Still having a shot at winning,4,INIT
+110,2,17,2,20,"""The Thin Man"" dog",4,ASTA
+112,9,17,9,20,Itches,4,YENS
+113,13,17,13,20,Far from friendly,4,MEAN
+114,14,17,14,20,Rest on one's ___,4,OARS

@@ -1,0 +1,11 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,4,0,Hybrid utensil popularized by Kentucky Fried Chicken in the 1970s,5,SPORK
+6,0,1,4,1,Cassowary's claw,5,TALON
+7,0,2,4,2,"Genre with a ""subs vs. dubs"" debate (subtitles vs. dubbed dialogue)",5,ANIME
+8,0,3,4,3,Opponent,5,RIVAL
+9,0,4,4,4,Feature of a scratch-and-sniff sticker,5,SCENT
+1,0,0,0,4,There are seven in the Big Dipper,5,STARS
+2,1,0,1,4,Freak out,5,PANIC
+3,2,0,2,4,"Sliced, black pizza topping",5,OLIVE
+4,3,0,3,4,Times New ___ (typeface),5,ROMAN
+5,4,0,4,4,"Prepared to propose, perhaps",5,KNELT

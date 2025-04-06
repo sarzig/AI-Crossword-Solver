@@ -1,0 +1,11 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,1,0,3,0,Fawn's mother,3,DOE
+4,0,1,4,1,"Like the kereru pigeons of New Zealand, which fall out of trees after eating fermented fruit",5,DRUNK
+6,0,2,4,2,Starbucks size,5,VENTI
+7,0,3,4,3,Went go-go-go,5,RACED
+8,1,4,3,4,"Sea, in French",3,MER
+1,1,0,1,4,Aspiration,5,DREAM
+2,2,0,2,4,One of 20 in a 6-Across,5,OUNCE
+3,3,0,3,4,Join a contest,5,ENTER
+4,0,1,0,3,"Save for later viewing, for short",3,DVR
+5,4,1,4,3,Baby goat,3,KID

@@ -1,0 +1,141 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,5,0,Texas terminus of I-35,6,LAREDO
+7,7,0,13,0,Place for a plug,7,ADSPACE
+14,15,0,20,0,Sport coached by Ted Lasso,6,SOCCER
+20,0,1,5,1,Relative of a June bug,6,SCARAB
+21,7,1,13,1,Animal farm facility,7,FEEDLOT
+22,15,1,20,1,Shining intensely,6,AGLARE
+23,0,2,13,2,Zone out?,14,DEPARTMENTALLY
+25,15,2,20,2,"Milton who designed the ""I ♥ NY"" logo",6,GLASER
+26,3,3,8,3,Off,6,SCREWY
+27,11,3,14,3,A handful,4,SOME
+29,16,3,20,3,Channel for watching N.C.A.A. games,5,ESPNU
+30,0,4,2,4,Aid for a novice guitarist,3,TAB
+33,4,4,7,4,"Fool, from the Yiddish",4,YUTZ
+34,9,4,20,4,Beginner's edition?,12,INTROVERSION
+37,0,5,3,5,"Home of Bahla Fort, a UNESCO World Heritage Site",4,OMAN
+39,5,5,7,5,German article,3,DAS
+40,9,5,15,5,Certain vaccine target,7,MEASLES
+41,17,5,20,5,Big mouths,4,MAWS
+42,0,6,5,6,Fairy lookalike,6,SPRITE
+44,8,6,11,6,God who lent his name to a weekday,4,THOR
+45,13,6,18,6,"Bruce Wayne in the Batman comics, e.g.",6,ORPHAN
+47,0,7,10,7,Seat at the dining table?,11,SUPPOSITION
+50,12,7,14,7,"Meds often come in them, for short",3,MGS
+51,16,7,20,7,Identifying statement,5,ITSME
+54,0,8,4,8,Real name that becomes a fake one by changing its first letter,5,ELIAS
+55,6,8,8,8,Tranquil state of mind,3,ZEN
+56,11,8,13,8,"Character at the center of ""Dunkirk""?",3,KAY
+57,15,8,20,8,Without holding back,6,FREELY
+58,0,9,7,9,"Kicked out of school, say",8,SENTHOME
+60,9,9,12,9,Atop,4,UPON
+62,14,9,20,9,"Beverage that can be served hinata-kan (""sun-bathed"")",7,HOTSAKE
+63,5,10,15,10,Beauty that runs in the family?,11,KINESTHETIC
+66,0,11,6,11,Family member,7,MOBSTER
+71,8,11,11,11,Brazilian currency,4,REAL
+72,13,11,20,11,"Price of ignorance, so to speak",8,IDIOTTAX
+78,0,12,5,12,Like much baby food,6,PUREED
+79,7,12,9,12,U.S. agcy. originally set up to fund war expenses,3,IRS
+80,12,12,14,12,Words of praise,3,ODE
+81,16,12,20,12,"""Psycho"" mother",5,NORMA
+82,0,13,4,13,Search blindly (for),5,GROPE
+83,6,13,8,13,"Some significant others, for short",3,BFS
+84,10,13,20,13,Boys' club?,11,MALEFACTION
+87,2,14,7,14,Shape of a certain bean,6,KIDNEY
+89,9,14,12,14,Expose,4,BARE
+90,15,14,20,14,Bounded,6,LEAPED
+91,0,15,3,15,Result of some bargaining,4,PLEA
+93,5,15,11,15,Words to a pet at the door,7,INOROUT
+95,13,15,15,15,Dollop,3,GOB
+97,17,15,20,15,Greasy garage job,4,LUBE
+98,0,16,11,16,Swindle by instant messaging?,12,CONTEXTUALLY
+100,13,16,16,16,Reproductive cell,4,OVUM
+102,18,16,20,16,Something to aim for on a golf course,3,PAR
+103,0,17,4,17,"Irish name meaning ""lover of hounds""",5,CONOR
+104,6,17,9,17,"Toronado or Cutlass, informally",4,OLDS
+105,12,17,17,17,"Pointed at, say",6,BLAMED
+107,0,18,5,18,"Tone deafness, medically",6,ASONIA
+109,7,18,20,18,Use a family crypt?,14,INTERRELATIONS
+115,0,19,5,19,Like Halley's comet every 75 or so years,6,RESEEN
+116,7,19,13,19,Not tell a soul,7,KEEPMUM
+117,15,19,20,19,House floor manager?,6,ROOMBA
+118,0,20,5,20,Formal,6,DRESSY
+119,7,20,13,20,"Adventure-seeking travelers, in old usage",7,ERRANTS
+120,15,20,20,20,Polynesian language,6,TONGAN
+1,0,0,0,2,"Supposed influence on Pink Floyd's ""The Piper at the Gates of Dawn""",3,LSD
+2,1,0,1,2,One in the hand?,3,ACE
+3,2,0,2,2,Knock,3,RAP
+4,3,0,3,3,The ___ Tour (2023 Taylor Swift concert series that broke Ticketmaster),4,ERAS
+5,4,0,4,4,"""Pride and Prejudice"" surname",5,DARCY
+6,5,0,5,7,Becomes unduly prominent,8,OBTRUDES
+7,7,0,7,5,Forty winks,6,AFEWZS
+8,8,0,8,3,"When said three times, mantra for some accused",4,DENY
+9,9,0,9,2,Completed collection,3,SET
+10,10,0,10,2,"Conspicuous kissing, e.g., for short",3,PDA
+11,11,0,11,6,Like some casts,7,ALLSTAR
+12,12,0,12,5,"Orange and peach, for example",6,COLORS
+13,13,0,13,8,Word has it!,9,ETYMOLOGY
+14,15,0,15,2,Droop,3,SAG
+15,16,0,16,4,One giving creepy looks,5,OGLER
+16,17,0,17,9,Yearbook signers,10,CLASSMATES
+17,18,0,18,9,World's largest inland body of water,10,CASPIANSEA
+18,19,0,19,5,"Thus far, poetically",6,ERENOW
+19,20,0,20,5,You might see them now and again,6,RERUNS
+24,6,2,6,5,Fortune 500 company whose logo is a blue infinity symbol,4,META
+28,14,3,14,7,Wisconsin politico Tony,5,EVERS
+30,0,4,0,9,Cornhole attempts,6,TOSSES
+31,1,4,1,9,Lab vial,6,AMPULE
+32,2,4,2,9,"Long, narrow piece of jewelry",6,BARPIN
+34,9,4,9,7,"""If u ask me ...""",4,IMHO
+35,10,4,10,7,He can be found above it,4,NEON
+36,15,4,15,6,Particularly: Abbr.,3,ESP
+38,3,5,3,9,Pester with little bites,5,NIPAT
+43,4,6,4,9,"""Rubbish!""",4,TOSH
+44,8,6,8,8,Food container,3,TIN
+46,16,6,16,9,Jazz great Al,4,HIRT
+48,6,7,6,11,Third-largest city of Turkey,5,IZMIR
+49,7,7,7,10,It comes after nine but not after ten,4,TEEN
+50,12,7,12,10,Flowing tresses,4,MANE
+52,19,7,19,9,Subject of D.C.'s Stone of Hope memorial,3,MLK
+53,20,7,20,9,Word before tooth or candy,3,EYE
+56,11,8,11,11,Chancellor who oversaw Germany's reunification,4,KOHL
+57,15,8,15,11,Centers of attention,4,FOCI
+59,5,9,5,12,Gave a thumbs-up,4,OKED
+60,9,9,9,12,Exploits,4,USES
+61,10,9,10,11,"Organizer of a school field day, for short",3,PTA
+62,14,9,14,13,"Extra-crisp, informally",5,HIDEF
+64,8,10,8,13,Goofs up,4,ERRS
+65,13,10,13,13,Sea change?,4,TIDE
+66,0,11,0,13,Dealership stat,3,MPG
+67,1,11,1,13,"The ""Noster"" in ""Pater Noster""",3,OUR
+68,2,11,2,20,"Rhinoplasty target, maybe",10,BROKENNOSE
+69,3,11,3,20,Some vintage photo tints,10,SEPIATONES
+70,4,11,4,14,"Got started, with ""off""",4,TEED
+73,16,11,16,14,At some point,4,ONCE
+74,17,11,17,15,Come to,5,TOTAL
+75,18,11,18,16,Cause to stumble,6,TRIPUP
+76,19,11,19,16,It divides and multiplies,6,AMOEBA
+77,20,11,20,16,"Friend of Buffy on ""Buffy the Vampire Slayer""",6,XANDER
+79,7,12,7,20,"""So to speak""",9,IFYOULIKE
+80,12,12,12,14,Shout heard in the Plaza México,3,OLE
+83,6,13,6,17,___ box (lunch option),5,BENTO
+84,10,13,10,16,Long-handled hammer,4,MAUL
+85,11,13,11,16,Affectedly creative,4,ARTY
+86,15,13,15,20,"Pink Floyd's light-refracting prism, for one iconic example",8,ALBUMART
+88,5,14,5,16,Cancel,3,NIX
+89,9,14,9,20,Reinforce,7,BOLSTER
+91,0,15,0,20,Predecessor of a USB drive,6,PCCARD
+92,1,15,1,20,Like a screw after being turned counterclockwise,6,LOOSER
+94,8,15,8,20,"Gilda of the original ""S.N.L."" cast",6,RADNER
+95,13,15,13,20,Clay figures in Jewish lore,6,GOLEMS
+96,14,15,14,18,Like the Toyota logo,4,OVAL
+99,4,16,4,20,People of western New York,5,ERIES
+101,16,16,16,20,"""Same""",5,METOO
+105,12,17,12,20,More than just a sec?,4,BRUT
+106,17,17,17,20,"One-named singer with the 1961 #1 hit ""Runaround Sue""",4,DION
+108,5,18,5,20,"Word with where and how, but not usually why",3,ANY
+110,10,18,10,20,Org. established by 111-Down,3,EPA
+111,11,18,11,20,Prez who established the 110-Down,3,RMN
+112,18,18,18,20,Initial shock?,3,OMG
+113,19,18,19,20,"Suns setting, for short",3,NBA
+114,20,18,20,20,Japanese honorific,3,SAN

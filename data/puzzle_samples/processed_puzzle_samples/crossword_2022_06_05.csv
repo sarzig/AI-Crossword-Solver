@@ -1,0 +1,141 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,3,0,Precursor to a circuit breaker,4,FUSE
+5,5,0,9,0,____ bar,5,SPACE
+10,11,0,14,0,Pointed remark,4,BARB
+14,16,0,20,0,Common spa descriptor,5,OASIS
+19,0,1,3,1,"""Hello there, sailor!""",4,AHOY
+20,5,1,9,1,Gourmet mushroom with poisonous lookalikes,5,MOREL
+21,11,1,14,1,Somewhat,4,ABIT
+22,16,1,20,1,Core workout challenge,5,PLANK
+23,0,2,20,2,"Looks up from reading ""Frankenstein""?",21,COMESOUTOFONESSHELLEY
+27,0,3,7,3,Moody North Yorkshire setting,8,THEMOORS
+28,9,3,13,3,Handy,5,UTILE
+29,15,3,20,3,Restless,6,UNEASY
+30,2,4,5,4,Split hairs?,4,PART
+31,8,4,11,4,"Words exchanged during an ""altar""-cation",4,IDOS
+32,14,4,18,4,Revise,5,AMEND
+33,0,5,16,5,"Reads ""Catch-22,"" ""Closing Time"" and ""Something Happened"" — and doesn't stop there?",17,GOESTHROUGHHELLER
+39,18,5,20,5,Atmospheric driving hazard,3,FOG
+42,0,6,4,6,Came to,5,AWOKE
+43,6,6,9,6,Assistant,4,AIDE
+44,12,6,14,6,The joy of text?,3,LOL
+45,16,6,20,6,Expression of a grump,5,SCOWL
+47,0,7,2,7,Cheeky remarks … or something near the cheek,3,LIP
+48,4,7,7,7,Kendrick Lamar's 2017 Best Rap Album Grammy winner,4,DAMN
+50,10,7,14,7,"""Aquaman"" actor Jason",5,MOMOA
+52,17,7,20,7,English indie pop singer Parks,4,ARLO
+53,0,8,3,8,Sleek reef swimmers,4,EELS
+55,5,8,20,8,"Borrows ""The Color Purple"" from the library instead of ""The Flowers""?",16,TAKESALONGWALKER
+60,1,9,5,9,1960s activist Bobby,5,SEALE
+62,7,9,11,9,Word with play or fight,5,SWORD
+63,13,9,16,9,Belgrade resident,4,SERB
+64,18,9,20,9,See 36-Down,3,STY
+65,3,10,6,10,First in a line of 13 popes,4,LEOI
+67,8,10,12,10,Strands,5,WISPS
+69,14,10,17,10,Lifewater and Elixir brand,4,SOBE
+71,0,11,2,11,"""Wow!""",3,OOH
+74,4,11,7,11,Fashion guru Tim,4,GUNN
+76,9,11,13,11,"""____ the spirit!""",5,THATS
+78,15,11,19,11,D.E.A. target,5,NARCO
+81,0,12,15,12,"Listens to ""Tom Jones"" on audiobook?",16,PLAYSTHEFIELDING
+85,17,12,20,12,Matterhorn range,4,ALPS
+87,0,13,3,13,Wheely good invention?,4,TIRE
+88,6,13,10,13,Off,5,AMISS
+89,13,13,16,13,____ tube,4,BOOB
+91,18,13,20,13,H,3,ETA
+92,0,14,4,14,Conclude by,5,ENDAT
+94,6,14,8,14,Dawson in the Pro Football Hall of Fame,3,LEN
+95,11,14,14,14,"""Chat another time!"" in an I.M.",4,TTYL
+97,16,14,20,14,Bolt in a sprint,5,USAIN
+99,0,15,2,15,Director Guillermo ____ Toro,3,DEL
+100,4,15,20,15,"Reads ""Lady Chatterley's Lover"" so many times its spine splits?",17,BREAKSTHELAWRENCE
+105,2,16,6,16,Cryptids on snowy mountains,5,YETIS
+107,9,16,12,16,Mars bar with shortbread and chocolate,4,TWIX
+108,15,16,18,16,[sigh],4,ALAS
+109,0,17,5,17,"Pilot green-lighter, in brief",6,TVEXEC
+111,7,17,11,17,"""Ask away!""",5,SHOOT
+113,13,17,20,17,Iconic scarecrow topper,8,STRAWHAT
+117,0,18,20,18,"Donates some copies of ""King Lear"" to the Renaissance Festival?",21,GIVESAFAIRSHAKESPEARE
+120,0,19,4,19,Still,5,INERT
+121,6,19,9,19,Curling locale,4,RINK
+122,11,19,15,19,"Musical with the song ""Another Suitcase in Another Hall""",5,EVITA
+123,17,19,20,19,"____ Rachel Wood of ""Westworld""",4,EVAN
+124,0,20,4,20,"Castles, essentially",5,FORTS
+125,6,20,9,20,Chances,4,ODDS
+126,11,20,15,20,Not let lapse,5,RENEW
+127,17,20,20,20,It can be outstanding,4,DEBT
+1,0,0,0,3,"""Octopuses can use tools,"" e.g.",4,FACT
+2,1,0,1,3,"""This is not good!""",4,UHOH
+3,2,0,2,9,Words said while shaking one's head in disgust,10,SOMEPEOPLE
+4,3,0,3,6,One might be found next to a neck pillow in an airport shop,7,EYEMASK
+5,5,0,5,5,Suave,6,SMOOTH
+6,6,0,6,3,Decant,4,POUR
+7,7,0,7,3,Painting and filmmaking,4,ARTS
+8,8,0,8,2,Person in a head set?,3,CEO
+9,9,0,9,6,Keebler cookie with shortbread and chocolate,7,ELFUDGE
+10,11,0,11,5,Send away,6,BANISH
+11,12,0,12,3,"Biblical analogue of Aron in ""East of Eden""",4,ABEL
+12,13,0,13,3,High-____ (kind of jeans or apartment building),4,RISE
+13,14,0,14,2,"South Korean ""Princes of Pop""",3,BTS
+14,16,0,16,6,Jimmies and corkscrews,7,OPENERS
+15,17,0,17,4,"Debbie of ""Fame"" and ""Grey's Anatomy""",5,ALLEN
+16,18,0,18,9,Things often next to napkins in place settings,10,SALADFORKS
+17,19,0,19,3,Spanish Agnes,4,INES
+18,20,0,20,3,Absolut alternative,4,SKYY
+24,4,2,4,7,Put in order,6,SORTED
+25,10,2,10,5,Text-writer's segue,4,OTOH
+26,15,2,15,5,Philosopher David,4,HUME
+31,8,4,8,6,Alternative to a diaphragm,3,IUD
+32,14,4,14,10,Like games marked 1->99,7,ALLAGES
+33,0,5,0,8,Strong wind,4,GALE
+34,1,5,1,9,Pains for preschoolers,5,OWIES
+35,6,5,6,8,Chivalrous avatar of Vishnu,4,RAMA
+36,7,5,7,9,Sounds from a 64-Across,5,OINKS
+37,12,5,12,8,"Saint associated with a ""fire""",4,ELMO
+38,13,5,13,9,Birds on Canadian dollars,5,LOONS
+40,19,5,19,9,Big-eyed hatchling,5,OWLET
+41,20,5,20,9,1989 film for which Denzel Washington won Best Supporting Actor,5,GLORY
+46,17,6,17,8,"Follower of ""So"" or ""lo""",3,CAL
+49,5,7,5,12,Patronized a restaurant,6,ATEOUT
+50,10,7,10,13,Homes for cattails and bulrushes,7,MARSHES
+51,11,7,11,12,Childhood friend,6,OLDPAL
+54,3,8,3,10,Blueberry-picking girl of children's literature,3,SAL
+56,8,8,8,10,"""Yuck!""",3,EWW
+57,9,8,9,13,"""You're right about that!""",6,SOITIS
+58,15,8,15,13,"""You're not right about that!""",6,WRONGO
+59,16,8,16,11,"""Chiquitita"" singing group",4,ABBA
+61,4,9,4,12,"Endurance, so to speak",4,LEGS
+66,6,10,6,16,Scarfs down,7,INHALES
+68,12,10,12,12,Norm: Abbr.,3,STD
+70,17,10,17,12,Geological span,3,ERA
+71,0,11,0,15,Chose,5,OPTED
+72,1,11,1,15,QB's protection,5,OLINE
+73,2,11,2,20,Very rarely,10,HARDLYEVER
+75,7,11,7,15,Ancient home of a mythical lion,5,NEMEA
+77,13,11,13,15,Delphic prophet,5,SIBYL
+79,18,11,18,20,Barbershop specialty,10,CLEANSHAVE
+80,19,11,19,15,Fiber-____,5,OPTIC
+82,3,12,3,14,"""I'm in favor""",3,YEA
+83,8,12,8,15,Rat,4,FINK
+84,14,12,14,15,The Big Easy,4,NOLA
+86,20,12,20,15,Sound,4,SANE
+90,16,13,16,18,Fabric made from jute,6,BURLAP
+93,4,14,4,20,Med. exams with intradermal injections,7,TBTESTS
+95,11,14,11,20,O'er yon,7,THITHER
+96,12,14,12,16,"""The Muppets"" villain Richman",3,TEX
+98,17,14,17,20,Macroalgae,7,SEAWEED
+101,5,15,5,18,Costa ____,4,RICA
+102,9,15,9,20,Baby birds?,6,STORKS
+103,10,15,10,18,Deuces,4,TWOS
+104,15,15,15,20,Cold War pact city,6,WARSAW
+106,3,16,3,20,"Use, as influence",5,EXERT
+109,0,17,0,20,"""Here I come, weekend!""",4,TGIF
+110,1,17,1,20,In ____ veritas,4,VINO
+111,7,17,7,20,Reported,4,SAID
+112,8,17,8,20,Back,4,HIND
+113,13,17,13,20,"Abrade, in a way",4,SKIN
+114,14,17,14,20,Head: Fr.,4,TETE
+115,19,17,19,20,Horse with endurance,4,ARAB
+116,20,17,20,20,Billowy dress style,4,TENT
+118,6,18,6,20,To's counterpart,3,FRO
+119,12,18,12,20,"Broadway, for one: Abbr.",3,AVE

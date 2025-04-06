@@ -1,0 +1,18 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,3,0,"Comfy slip-on shoes, for short",4,MOCS
+5,0,1,4,1,Convincing evidence,5,PROOF
+7,0,2,6,2,Why you might breathe into a paper bag or drink water upside down,7,HICCUPS
+10,1,3,6,3,Start arguing,6,GOATIT
+11,0,4,6,4,"Mark left by trunks, perhaps",7,TANLINE
+12,0,5,2,5,Bird of Australia,3,EMU
+13,4,5,6,5,"Bruce who starred in ""Enter the Dragon""",3,LEE
+14,0,6,2,6,"Small issue to ""pick""",3,NIT
+15,4,6,6,6,"Clairvoyant's gift, for short",3,ESP
+1,0,0,0,2,Speed limit abbr.,3,MPH
+2,1,0,1,6,Art form with folding,7,ORIGAMI
+3,2,0,2,6,"""___ milk is a natural laxative. That's something Gilligan never told us"" (""Cast Away"" line)",7,COCONUT
+4,3,0,3,4,"Where L.A. and San Diego are, casually",5,SOCAL
+6,4,1,4,6,Utterly hopeless,6,FUTILE
+8,5,2,5,6,Trees with needles,5,PINES
+9,6,2,6,6,Like a big roller coaster drop,5,STEEP
+11,0,4,0,6,"Number of ""things I hate about you,"" in a rom-com title",3,TEN

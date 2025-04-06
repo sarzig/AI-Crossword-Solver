@@ -1,0 +1,72 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,2,0,Path of a cornhole shot,3,ARC
+4,4,0,8,0,Take influence from,5,OWETO
+9,10,0,13,0,"Secretly includes, in a way",4,BCCS
+13,0,1,2,1,Campy accessory,3,BOA
+14,4,1,8,1,___ spray (pharmacy purchase),5,NASAL
+15,10,1,13,1,"""My bad!""",4,OOPS
+16,0,2,13,2,Kinda comedic and saucy?,14,BURLESQUEESQUE
+19,0,3,5,3,Number one Hun,6,ATTILA
+20,8,3,10,3,"Didn't play, say",3,SAT
+21,3,4,7,4,"Extremely damaged, in military lingo",5,FUBAR
+24,9,4,13,4,Kingdom east of Fiji,5,TONGA
+28,2,5,13,5,Kinda religious institution?,12,SEMISEMINARY
+30,1,6,4,6,Hiker's snack,4,GORP
+31,6,6,9,6,Not slack,4,TAUT
+32,11,6,13,6,"""Miny"" follower",3,MOE
+33,0,7,3,7,Stops up,4,DAMS
+34,5,7,8,7,Emotionally distant,4,COLD
+35,10,7,13,7,Tibetan bovines,4,YAKS
+36,0,8,2,8,Emissions-monitoring org.,3,EPA
+37,4,8,7,8,Ending with Apple or Obama,4,CARE
+38,9,8,12,8,Understands,4,GETS
+39,0,9,11,9,Kinda squishy and sting-y?,12,JELLYFISHISH
+42,0,10,4,10,"The first ""A"" in A.A.P.I. Heritage Month",5,ASIAN
+43,6,10,10,10,Arcade game pioneer,5,ATARI
+44,3,11,5,11,"""Get a room!"" elicitor, in brief",3,PDA
+46,8,11,13,11,Winding ski race,6,SLALOM
+50,0,12,13,12,Kinda hunchbacked figure?,14,QUASIQUASIMODO
+55,0,13,3,13,Hay unit,4,BALE
+56,5,13,9,13,"Rich ___ Pennybags, a.k.a. Mr. Monopoly",5,UNCLE
+57,11,13,13,13,Bog,3,FEN
+58,0,14,3,14,Tournament ranking,4,SEED
+59,5,14,9,14,Partner of pains,5,ACHES
+60,11,14,13,14,Finger wagger's syllable,3,TSK
+1,0,0,0,3,"First pop band to perform on ""Saturday Night Live""",4,ABBA
+2,1,0,1,3,Lopsided contest,4,ROUT
+3,2,0,2,3,Checkout icon,4,CART
+4,4,0,4,6,Common sugar serving,7,ONELUMP
+5,5,0,5,5,Pungent sushi condiment,6,WASABI
+6,6,0,6,2,Lawyer's title: Abbr.,3,ESQ
+7,7,0,7,2,Sigma follower,3,TAU
+8,8,0,8,3,Estadio cheers,4,OLES
+9,10,0,10,5,"Kind of accent heard in ""Pahk yah cah in Hahvahd Yahd""",6,BOSTON
+10,11,0,11,2,___ au vin,3,COQ
+11,12,0,12,2,PC core,3,CPU
+12,13,0,13,2,Opposite of NNW,3,SSE
+17,3,2,3,7,They're in it for the long haul,6,LIFERS
+18,9,2,9,6,Wipe out spectacularly,5,EATIT
+22,6,4,6,10,Queens neighborhood that's home to the Steinway & Sons piano company,7,ASTORIA
+23,7,4,7,10,Most authentic,7,REALEST
+25,11,4,11,9,"Football's ""Broadway Joe""",6,NAMATH
+26,12,4,12,8,"Understands, informally",5,GROKS
+27,13,4,13,7,Passing votes,4,AYES
+28,2,5,2,10,Mogadishu resident,6,SOMALI
+29,8,5,8,7,"""Slung"" stuff",3,MUD
+30,1,6,1,10,Stares slack-jawed,5,GAPES
+33,0,7,0,10,___ vu,4,DEJA
+34,5,7,5,9,Half-___ (coffee order),3,CAF
+35,10,7,10,12,"Rebuttal to ""No, you're not!""",6,YESIAM
+37,4,8,4,12,Singer Lauper,5,CYNDI
+38,9,8,9,14,Playful term for one's female friends,7,GIRLIES
+40,3,9,3,14,Expired,6,LAPSED
+41,8,9,8,14,Inconvenience,6,HASSLE
+45,5,11,5,14,Color similar to cyan,4,AQUA
+47,11,11,11,14,Spacious converted apartment,4,LOFT
+48,12,11,12,14,Praiseful works,4,ODES
+49,13,11,13,14,One vowing to get in a habit?,4,MONK
+50,0,12,0,14,"Play callers, for short",3,QBS
+51,1,12,1,14,Dubai's land: Abbr.,3,UAE
+52,2,12,2,14,Summer ___ (Samuel Adams offering),3,ALE
+53,6,12,6,14,Chapel Hill sch.,3,UNC
+54,7,12,7,14,"""Dagnabbit!,"" in Düsseldorf",3,ACH

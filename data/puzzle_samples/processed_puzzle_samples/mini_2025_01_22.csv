@@ -1,0 +1,11 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,4,0,Material made by melting sand,5,GLASS
+6,0,1,4,1,It's to your left when facing the sunrise,5,NORTH
+7,0,2,4,2,One in a cast,5,ACTOR
+8,0,3,4,3,"Say ""This isn't fair!,"" say",5,WHINE
+9,1,4,4,4,Look for,4,SEEK
+1,0,0,0,3,Chew like a beaver,4,GNAW
+2,1,0,1,4,Scottish bodies of water,5,LOCHS
+3,2,0,2,4,"""The Sopranos"" restaurateur",5,ARTIE
+4,3,0,3,4,Object slid across a curling rink,5,STONE
+5,4,0,4,4,"He tells Donkey ""Ogres are like onions""",5,SHREK

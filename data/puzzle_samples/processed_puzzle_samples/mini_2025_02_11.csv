@@ -1,0 +1,11 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,4,0,Yoga discipline with a name from Sanskrit,5,HATHA
+6,0,1,4,1,___ run (testing-out stage),5,TRIAL
+7,0,2,4,2,___ run (jog in the woods),5,TRAIL
+8,0,3,4,3,"Deflect an attack, in fencing",5,PARRY
+9,1,4,3,4,"""Woo-hoo!""",3,YAY
+1,0,0,0,3,Internet address starter,4,HTTP
+2,1,0,1,4,Matrixlike grid,5,ARRAY
+3,2,0,2,4,Headwear for a princess,5,TIARA
+4,3,0,3,4,Like Chewbacca and Mr. Snuffleupagus,5,HAIRY
+5,4,0,4,3,Supporter of L.G.B.T.Q. rights,4,ALLY

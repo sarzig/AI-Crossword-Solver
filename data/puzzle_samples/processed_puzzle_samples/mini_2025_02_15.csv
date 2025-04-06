@@ -1,0 +1,15 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,3,0,6,0,Governing body of world soccer,4,FIFA
+5,2,1,6,1,"""___ is a world within itself, with a language we all understand"" (Stevie Wonder lyric)",5,MUSIC
+6,1,2,6,2,Opposite of rough,6,GENTLE
+7,0,3,6,3,"Pictures that employ the ""flip camera"" button",7,SELFIES
+8,0,4,5,4,Away from the ocean,6,INLAND
+9,0,5,4,5,Earthenware pot,5,CROCK
+10,0,6,3,6,Clark ___ a.k.a. Superman,4,KENT
+1,3,0,3,6,Cool bit of trivia,7,FUNFACT
+2,4,0,4,5,Admission of ineptitude,6,ISTINK
+3,5,0,5,4,"Smoothed, as fingernails",5,FILED
+4,6,0,6,3,"AAAA, in a deck",4,ACES
+5,2,1,2,6,Pittsburgh's Carnegie ___ University,6,MELLON
+6,1,2,1,6,Rom-com or thriller,5,GENRE
+7,0,3,0,6,"""Totally awesome!""",4,SICK

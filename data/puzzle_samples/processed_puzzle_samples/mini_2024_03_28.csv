@@ -1,0 +1,11 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,1,0,4,0,Microsoft search engine,4,BING
+5,0,1,4,1,Intentional mislead,5,DECOY
+6,0,2,4,2,Feature on an iPhone's Clock app,5,ALARM
+7,0,3,4,3,"Altoids, e.g.",5,MINTS
+8,0,4,3,4,Comic actor Rogen,4,SETH
+1,1,0,1,4,Not fully represent,5,BELIE
+2,2,0,2,4,"""Sorry, that's out of the question""",5,ICANT
+3,3,0,3,4,"N, as in navigation",5,NORTH
+4,4,0,4,3,Businesses that employ personal trainers,4,GYMS
+5,0,1,0,4,Hydroelectric projects,4,DAMS

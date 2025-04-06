@@ -1,0 +1,77 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,2,0,First U.S. prez to be born outside the original 13 Colonies,3,ABE
+4,4,0,7,0,Airport transports,4,VANS
+8,10,0,14,0,"The film ""Airplane!,"" e.g.",5,FARCE
+13,0,1,2,1,Cry in a horror film,3,RUN
+14,4,1,8,1,"Challenge for an interpreter, perhaps",5,IDIOM
+16,10,1,14,1,Result of a leadoff walk,5,ONEON
+17,0,2,2,2,"""Sic vita ___"" (""Such is life"")",3,EST
+18,4,2,14,2,Mercenary,11,SOLDIERTUNE
+20,0,3,4,3,"DEF, on a phone",5,THREE
+22,8,3,13,3,Bemoan,6,LAMENT
+23,0,4,9,4,Groundbreaking medical procedure first accomplished in 1967,10,HEANSPLANT
+27,11,4,14,4,Region bordering India and China in Risk,4,SIAM
+29,0,5,3,5,Nestlé Purina PetCare brand,4,ALPO
+30,5,5,8,5,Level,4,RAZE
+31,10,5,14,5,Only about 10% of Americans have one,5,OUTIE
+32,3,6,7,6,Tiny bit,5,SPECK
+34,9,6,14,6,Shakers in the woods,6,ASPENS
+35,0,7,2,7,Suffix with social,3,IST
+38,4,7,10,7,Focus of a product development test,7,USEARCH
+40,12,7,14,7,Govt. agency for retirees,3,SSA
+41,0,8,5,8,They might sound the alarm,6,THEFTS
+43,7,8,11,8,In-the-works software versions,5,BETAS
+45,0,9,4,9,Score endings,5,CODAS
+46,6,9,9,9,El ___,4,PASO
+47,11,9,14,9,Caresses,4,PATS
+51,0,10,3,10,"""Brooklyn Nine-Nine"" police captain",4,HOLT
+52,5,10,14,10,Has a clouded mind,10,CANTRAIGHT
+54,1,11,6,11,Append,6,TACKON
+56,10,11,14,11,"Turn left or right, say",5,STEER
+57,0,12,10,12,Uncertainties of life ... or a feature of four answers in this puzzle?,11,UPSANDDOWNS
+61,12,12,14,12,Supermodel Carangi,3,GIA
+62,0,13,4,13,Personal style,5,TASTE
+63,6,13,10,13,Throat lozenge additive,5,ANISE
+64,12,13,14,13,"This is ""plagiarism or revolution,"" per Gauguin",3,ART
+65,0,14,4,14,Emerged,5,AROSE
+66,7,14,10,14,"Walks, for one",4,STAT
+67,12,14,14,14,"Anti-vaping ad, e.g.",3,PSA
+1,0,0,0,5,"Singer with the 1972 album ""Young, Gifted and Black,"" informally",6,ARETHA
+2,1,0,1,5,Quantity on a farm,6,BUSHEL
+3,2,0,2,5,Catch,6,ENTRAP
+4,4,0,4,4,Clamps in a shop,5,VISES
+5,5,0,5,2,Big fuss,3,ADO
+6,6,0,6,2,Zip,3,NIL
+7,7,0,7,2,Cover some ground?,3,SOD
+8,10,0,10,3,"1040, e.g.",4,FORM
+9,11,0,11,6,Pays for a hand,7,ANTESUP
+10,12,0,12,7,"Connects with an ex, e.g.",8,REUNITES
+11,13,0,13,7,Holds within,8,CONTAINS
+12,14,0,14,2,Suffix with methyl,3,ENE
+15,8,1,8,5,"Children's author who wrote ""And the only reason for being a bee that I know of is making honey""",5,MILNE
+19,9,2,9,4,Work on a sub?,3,EAT
+21,3,3,3,6,Grandson of Eve,4,ENOS
+24,5,4,5,8,"Newspapers, collectively",5,PRESS
+25,6,4,6,7,Delicate fabric,4,LACE
+26,7,4,7,10,Fictional prison guarded by Dementors,7,AZKABAN
+28,14,4,14,7,Canyonlands National Park feature,4,MESA
+31,10,5,10,8,Division of the Dept. of Labor,4,OSHA
+33,4,6,4,9,Plunks (down),4,PUTS
+34,9,6,9,10,"Pidgeon, Hawke or Crowe",5,ACTOR
+35,0,7,0,10,Rash reaction?,4,ITCH
+36,1,7,1,14,"Play a bogey-free round, maybe",8,SHOOTPAR
+37,2,7,2,14,"TV character who said ""Doing the right thing is never the wrong thing""",8,TEDLASSO
+39,8,7,8,10,Chillax,4,REST
+42,3,8,3,14,Deep-pocketed types,7,FATCATS
+44,11,8,11,11,Stick at a roast,4,SPIT
+46,6,9,6,13,Zoo Atlanta's Lun Lun or Yang Yang,5,PANDA
+48,12,9,12,14,Separation in some relationships?,6,AGEGAP
+49,13,9,13,14,"Possible answer to ""Whose?""",6,THEIRS
+50,14,9,14,14,Rock layers,6,STRATA
+52,5,10,5,12,Cousin of a haddock,3,COD
+53,10,10,10,14,One can be fixed or liquid,5,ASSET
+55,4,11,4,14,Base for a proposal?,4,KNEE
+57,0,12,0,14,Hagen in the American Theater Hall of Fame,3,UTA
+58,7,12,7,14,Switch positions,3,ONS
+59,8,12,8,14,Cleverness,3,WIT
+60,9,12,9,14,U.S. org. that operates a cryptology museum in Maryland,3,NSA

@@ -1,0 +1,11 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,3,0,Soft rock,4,TALC
+5,0,1,4,1,First-string squad,5,ATEAM
+7,0,2,4,2,Soft rock?,5,MAGMA
+8,0,3,4,3,"Tissue layers, e.g.",5,PLIES
+9,0,4,4,4,"Fiona Apple and Tracy Chapman, vocally",5,ALTOS
+1,0,0,0,4,"Florida's so-called ""Cigar City""",5,TAMPA
+2,1,0,1,4,To any degree,5,ATALL
+3,2,0,2,4,"Not sketchy, colloquially",5,LEGIT
+4,3,0,3,4,Brief role in a movie,5,CAMEO
+6,4,1,4,4,Midnight ___ (Christmas service),4,MASS

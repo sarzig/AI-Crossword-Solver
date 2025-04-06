@@ -1,0 +1,11 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,4,0,Like a dry-cleaned shirt or fresh sheets,5,CRISP
+6,0,1,4,1,Weapon used on horseback,5,LANCE
+7,0,2,4,2,"One of a potential 13 for ""Emilia Pérez,"" as announced last week",5,OSCAR
+8,0,3,4,3,Movie double's responsibility,5,STUNT
+9,0,4,4,4,"The ""blue marble""",5,EARTH
+1,0,0,0,4,In the ballpark,5,CLOSE
+2,1,0,1,4,"Someone who might smoke ganja as a sacrament, informally",5,RASTA
+3,2,0,2,4,"Run up, as debt",5,INCUR
+4,3,0,3,4,Meager,5,SCANT
+5,4,0,4,4,Capital of Western Australia,5,PERTH

@@ -1,0 +1,17 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,2,0,5,0,Fill-in teachers,4,SUBS
+5,1,1,6,1,"Pad thai ingredient, often",6,SHRIMP
+7,0,2,6,2,Person who helps in buying a home,7,REALTOR
+8,0,3,2,3,"""That's gross!""",3,EWW
+9,4,3,6,3,___-Magnon man,3,CRO
+10,0,4,6,4,Paid back through an app,7,VENMOED
+12,1,5,6,5,"""I would be ___ if I didn't mention ...""",6,REMISS
+13,1,6,4,6,Connery who played Bond,4,SEAN
+1,2,0,2,6,Indigenous group once led by Tecumseh,7,SHAWNEE
+2,3,0,3,2,Safari destination?,3,URL
+3,4,0,4,6,Most-valued cryptocurrency,7,BITCOIN
+4,5,0,5,5,Snacks made on sticks,6,SMORES
+5,1,1,1,6,Channels that stink,6,SEWERS
+6,6,1,6,5,Eggs on,5,PRODS
+7,0,2,0,4,"Excite, with ""up""",3,REV
+11,3,4,3,6,"Combat sport, for short",3,MMA

@@ -1,0 +1,77 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,3,0,Radio knob,4,DIAL
+5,5,0,9,0,Soccer star Lionel,5,MESSI
+10,11,0,14,0,"""What time?""",4,WHEN
+14,0,1,3,1,Until,4,UPTO
+15,5,1,9,1,"For a specific purpose, as a committee",5,ADHOC
+16,11,1,14,1,Granola grains,4,OATS
+17,0,2,9,2,"*King or queen, but not prince",10,CHESSPIECE
+19,11,2,14,2,What's black and white and wet all over?,4,ORCA
+20,0,3,4,3,Asian peninsula,5,KOREA
+21,6,3,8,3,Scolding syllable,3,TSK
+22,10,3,12,3,Opposite of subtract,3,ADD
+23,0,4,5,4,Words following brother or up,6,INARMS
+25,9,4,14,4,Show of appreciation for great service,6,BIGTIP
+28,0,5,2,5,Hot off the presses,3,NEW
+29,4,5,6,5,Mineral suffix,3,ITE
+31,8,5,14,5,Buckle up for this one!,7,CARRIDE
+32,3,6,9,6,Get high on acid,7,TRIPOUT
+34,11,6,14,6,Latin love,4,AMOR
+35,2,7,12,7,*Artfully arranged meats,11,CHARCUTERIE
+37,0,8,3,8,Biblical pronoun,4,THOU
+39,5,8,11,8,Some work site supervisors,7,FOREMEN
+40,0,9,6,9,"Around 37 million people shop at it every day, roughly equivalent to the population of Canada",7,WALMART
+42,8,9,10,9,Toyota's ___4,3,RAV
+43,12,9,14,9,Yank,3,TUG
+46,0,10,5,10,Seasoning blend from Maryland,6,OLDBAY
+47,9,10,14,10,Cancel out,6,NEGATE
+49,2,11,4,11,Boy band with members such as J-Hope and Jungkook,3,BTS
+50,6,11,8,11,"Youngest woman to serve in the U.S. Congress, familiarly",3,AOC
+53,10,11,14,11,Juliet's love,5,ROMEO
+54,0,12,3,12,Surrounding glow,4,AURA
+56,5,12,14,12,"Helping to manage a nonprofit, say ... or where to find the answers to the starred clues?",10,ONTHEBOARD
+58,0,13,3,13,"""Now, wait ___!""",4,ASEC
+59,5,13,9,13,"Paved part of a backyard, perhaps",5,PATIO
+60,11,13,14,13,"""So they flew through a flaw in the ___"": Ogden Nash line",4,FLUE
+61,0,14,3,14,Skater Tony who is also 56-Across?,4,HAWK
+62,5,14,9,14,M.I.T.'s ___ School of Management,5,SLOAN
+63,11,14,14,14,Own (up),4,FESS
+1,0,0,0,5,"Make a quick visit, as to a shop",6,DUCKIN
+2,1,0,1,5,Apple device since 2007,6,IPHONE
+3,2,0,2,5,Consumed uncooked,6,ATERAW
+4,3,0,3,4,"What two fingers in the shape of an ""L"" can mean",5,LOSER
+5,5,0,5,2,Cartographer's creation,3,MAP
+6,6,0,6,3,Revise,4,EDIT
+7,7,0,7,3,"""___ the Man"" (2006 rom-com)",4,SHES
+8,8,0,8,3,Laundry loss,4,SOCK
+9,9,0,9,2,Rapper ___ Spice,3,ICE
+10,11,0,11,8,*Texture in a cross section of timber,9,WOODGRAIN
+11,12,0,12,7,Difficult experience,8,HARDTIME
+12,13,0,13,2,And so on: Abbr.,3,ETC
+13,14,0,14,2,Government org. that runs an annual Codebreaker Challenge,3,NSA
+18,4,2,4,7,"Actress Wiley of ""Orange Is the New Black""",6,SAMIRA
+22,10,3,10,5,Flat tire's need,3,AIR
+24,5,4,5,10,Dish made in a wok,7,STIRFRY
+25,9,4,9,10,"Patrick ___, villainous protagonist of ""American Psycho""",7,BATEMAN
+26,13,4,13,6,Wedding words,3,IDO
+27,14,4,14,6,"The ""p"" of m.p.g.",3,PER
+30,6,5,6,9,Disney World theme park,5,EPCOT
+31,8,5,8,9,More adorable,5,CUTER
+32,3,6,3,14,*Cousin of a pushpin,9,THUMBTACK
+33,7,6,7,8,Sharer's word,3,OUR
+35,2,7,2,14,Alternative to iced coffee,8,COLDBREW
+36,10,7,10,12,Electronic echo effect,6,REVERB
+37,0,8,0,10,A couple,3,TWO
+38,1,8,1,10,"""I'm sorry, Dave"" speaker of sci-fi",3,HAL
+41,4,9,4,11,Some small batteries,3,AAS
+43,12,9,12,14,Mexican dish wrapped in a cornhusk,6,TAMALE
+44,13,9,13,14,"One of two for a female kangaroo, surprisingly",6,UTERUS
+45,14,9,14,14,Crystal-lined stones,6,GEODES
+48,11,10,11,14,Rant and rave,5,GOOFF
+50,6,11,6,14,Fastidious to a fault,4,ANAL
+51,7,11,7,14,Director Preminger,4,OTTO
+52,8,11,8,14,"""Pet"" that's watered",4,CHIA
+54,0,12,0,14,Satisfied sigh,3,AAH
+55,1,12,1,14,"Subject of ""This Land Is Your Land,"" for short",3,USA
+56,5,12,5,14,Photo ___ (P.R. events),3,OPS
+57,9,12,9,14,Immeasurably long time,3,EON

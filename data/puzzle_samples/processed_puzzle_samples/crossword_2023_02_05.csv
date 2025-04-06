@@ -1,0 +1,139 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,7,0,"King, queen, etc.",8,CHESSSET
+9,10,0,13,0,Overly impulsive,4,RASH
+13,17,0,20,0,Something in a cocoon,4,SILK
+17,0,1,8,1,It may produce both a cringe and a laugh,9,DARKHUMOR
+19,10,1,14,1,Acclaimed rock-and-roll biopic of 2022,5,ELVIS
+21,16,1,20,1,Emerald or aquamarine,5,BERYL
+22,0,2,14,2,"""That cult's initiation ceremony is brutal!"" [1983]",15,THEIRRITESTOUGH
+24,16,2,20,2,Creator of the games Xybots and Klax,5,ATARI
+25,3,3,5,3,"Bit of memory, for short",3,MEG
+26,7,3,11,3,It's quite the stretch,5,EPOCH
+27,13,3,20,3,"Not stay outside, informally",8,HEADONIN
+29,1,4,6,4,Spurred into action,6,GOADED
+32,9,4,20,4,Bronzed New York basketball player from Bangkok [1997],12,THAITANKNICK
+34,0,5,3,5,Junk,4,TOSS
+35,6,5,9,5,Prominent features of Sphynx cats,4,EARS
+38,12,5,16,5,Treaty that was dissolved in 2020,5,NAFTA
+39,0,6,8,6,Neighbor of a return key,9,BACKSLASH
+42,10,6,13,6,Places,4,LOCI
+44,15,6,19,6,"___ Stavro Blofeld, enemy of 007",5,ERNST
+48,0,7,2,7,Therein lies the rubbed,3,SPA
+49,4,7,14,7,"Why the Devil was forced to pay ""The Greatest"" [1969]",11,HELLOWEDALI
+52,16,7,20,7,Parks at a pier,5,MOORS
+54,0,8,5,8,Anise-flavored liqueur,6,PERNOD
+56,8,8,12,8,Passes (out),5,METES
+57,14,8,20,8,"Not play by oneself, perhaps",7,DOADUET
+59,2,9,4,9,"""Remarkable!""",3,WOW
+60,6,9,10,9,"Bucatini, ziti and rigatoni, e.g.",5,TUBES
+62,13,9,15,9,High point of a trip to Europe?,3,ALP
+63,17,9,20,9,Total breeze,4,SNAP
+64,1,10,3,10,Do some making up,3,FIB
+65,5,10,15,10,Cry after remembering to meet at noon [1984],11,AHMIDDAYYES
+68,17,10,19,10,Somewhat off,3,ODD
+69,0,11,3,11,"English football powerhouse, to fans",4,MANU
+70,5,11,7,11,Time out in pre-K?,3,NAP
+71,10,11,14,11,Change for the better,5,AMEND
+72,16,11,18,11,"Belly, cutesily",3,TUM
+73,0,12,6,12,"""You didn't fool me!""",7,IKNEWIT
+75,8,12,12,12,One way to cross a lake,5,CANOE
+77,15,12,20,12,One in the oil business?,6,ARTIST
+80,0,13,4,13,Actress Davis,5,GEENA
+81,6,13,16,13,"""You there, hoarding the Quattro razor! Scram!"" [2002]",11,SCHICKHOGGO
+85,18,13,20,13,Losing line in tic-tac-toe,3,XOO
+86,1,14,5,14,Wryly comical,5,DROLL
+88,7,14,10,14,"Word with pie, pot or port",4,HOLE
+89,12,14,20,14,Subject of SETI space scans,9,ALIENLIFE
+91,4,15,8,15,Partner of Clark in American history,5,LEWIS
+93,11,15,14,15,"Stefani who sang the 1996 hit ""Don't Speak""",4,GWEN
+94,17,15,20,15,Six-foot runners?,4,ANTS
+95,0,16,11,16,How one cannibal felt after devouring the other [2000],12,GLADHEATEHER
+101,14,16,19,16,"Like ""threads,"" for clothing",6,SLANGY
+104,0,17,7,17,"Latest releases, of sorts",8,NEWMUSIC
+105,9,17,13,17,Neighbor of an Emirati,5,OMANI
+108,15,17,17,17,"Anxiety condition, for short",3,OCD
+109,0,18,4,18,I.T. bigwig,5,ADMIN
+110,6,18,20,18,Some optical illusions created with one's fingers [1999],15,THUMBMADETRICKS
+116,0,19,4,19,Rival of a 'Vette,5,STANG
+117,6,19,10,19,"""Socrate"" composer",5,SATIE
+118,12,19,20,19,"Auditing a class, maybe",9,SITTINGIN
+119,0,20,3,20,Part of H.K.,4,HONG
+120,7,20,10,20,"Miffed, with ""off""",4,TEED
+121,13,20,20,20,Compliment to Daisy during a game of fetch,8,GOODGIRL
+1,0,0,0,2,Summer hrs. in Dallas,3,CDT
+2,1,0,1,2,"""Nice joke!""",3,HAH
+3,2,0,2,2,"Previously, poetically",3,ERE
+4,3,0,3,6,Bit of apparel that covers the face,7,SKIMASK
+5,4,0,4,4,Turn into confetti,5,SHRED
+6,5,0,5,4,Big change in price or power,5,SURGE
+7,6,0,6,2,Classic record label,3,EMI
+8,7,0,7,3,Lug around,4,TOTE
+9,10,0,10,4,[Yuck!],5,RETCH
+10,11,0,11,4,"Greeting that means, literally, ""love""",5,ALOHA
+11,12,0,12,2,"Crime show spinoff, to fans",3,SVU
+12,13,0,13,7,"Skedaddle, with ""it""",8,HIGHTAIL
+13,17,0,17,4,"___ Hall, home of the N.C.A.A.'s Pirates",5,SETON
+14,18,0,18,4,Many a Zoroastrian,5,IRANI
+15,19,0,19,4,Line at a karaoke bar,5,LYRIC
+16,20,0,20,4,"""Hogan's Heroes"" colonel",5,KLINK
+18,8,1,8,3,"Ambassador, in brief",3,REP
+20,14,1,14,5,Pile of papers,5,SHEAF
+21,16,1,16,8,Cosmic comeuppance,8,BADKARMA
+23,9,2,9,5,Big drinkers,4,SOTS
+28,15,3,15,6,Pay (up),4,ANTE
+29,1,4,1,8,Freak,5,GOAPE
+30,2,4,2,14,What you get upon reading aloud the answers to the seven italicized clues,11,OSCARWINNER
+31,6,4,6,7,"""Works for me!""",4,DEAL
+33,12,4,12,8,Historic builders of rope bridges,5,INCAS
+34,0,5,0,8,Recipe qty.,4,TBSP
+36,7,5,7,7,Syst. of unspoken words,3,ASL
+37,8,5,8,10,Diamond shapes,6,RHOMBI
+40,4,6,4,9,Make an appearance,4,SHOW
+41,5,6,5,8,"Many a watch display, for short",3,LED
+42,10,6,10,14,1983 #1 hit for David Bowie,9,LETSDANCE
+43,11,6,11,8,Work of appreciation,3,ODE
+45,17,6,17,12,"Dozes after a dose, say",7,NODSOUT
+46,18,6,18,16,"Category for which every 30-Down in this puzzle was recognized, aptly",11,SOUNDMIXING
+47,19,6,19,10,Its loss can cause baldness,5,TREAD
+50,9,7,9,10,Ganja,4,WEED
+51,14,7,14,11,Didn't go anywhere,5,IDLED
+53,20,7,20,9,Filling station brand,3,STP
+55,3,8,3,14,"""Not good, amigo""",7,NOBUENO
+58,15,8,15,10,"Missions, in brief",3,OPS
+60,6,9,6,13,"""___ OK!""",5,THATS
+61,7,9,7,11,One who makes calls,3,UMP
+62,13,9,13,11,Writer Rand,3,AYN
+64,1,10,1,14,"Like the death of 19-Across, some claim",5,FAKED
+65,5,10,5,12,Grammy-winning DiFranco,3,ANI
+66,11,10,11,13,Out of control,4,AMOK
+67,12,10,12,15,Cowboy's cry of excitement,6,YEEHAW
+69,0,11,0,13,Aerial threat during the Cold War,3,MIG
+72,16,11,16,14,Classic Disney film that opens at Flynn's arcade,4,TRON
+74,4,12,4,19,"On display, as a painting",8,WALLHUNG
+75,8,12,8,16,Tapped,5,CHOSE
+76,9,12,9,14,Feel bad,3,AIL
+77,15,12,15,14,Travel through time?,3,AGE
+78,19,12,19,16,Easily persuaded sort,5,SOFTY
+79,20,12,20,15,Things pandas have 20 of,4,TOES
+82,7,13,7,20,Chew the fat,8,CHITCHAT
+83,13,13,13,15,Jubilant cheer,3,OLE
+84,14,13,14,16,"Options for ""bee's knees"" cocktails",4,GINS
+87,5,14,5,17,Alternative to Levi's,4,LEES
+90,17,14,17,20,"End of a flight, in two senses",7,LANDING
+92,6,15,6,19,"Serves, with ""on""",5,WAITS
+93,11,15,11,18,Nickname for mom's mom,4,GRAM
+95,0,16,0,20,Grind,5,GNASH
+96,1,16,1,20,Brought about,5,LEDTO
+97,2,16,2,20,"""Well, shucks!""",5,AWMAN
+98,3,16,3,20,"Contacting on Twitter, for short",5,DMING
+99,9,16,9,20,Compadre,5,HOMIE
+100,10,16,10,20,Journalist in a field,5,EMBED
+102,15,16,15,20,Ball game?,5,LOTTO
+103,16,16,16,20,Like the smell of burnt rubber,5,ACRID
+106,12,17,12,19,"Rapper behind the ""King's Disease"" trilogy",3,NAS
+107,13,17,13,20,"""Copy,"" to a cat",4,IDIG
+111,8,18,8,20,Great Basin people,3,UTE
+112,14,18,14,20,D.D.E.'s W.W. II battleground,3,ETO
+113,18,18,18,20,"Sci-fi film staple, for short",3,CGI
+114,19,18,19,20,White wine aperitif,3,KIR
+115,20,18,20,20,"Show with a ""What's Up With That?"" segment, for short",3,SNL

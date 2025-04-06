@@ -1,0 +1,11 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,4,0,Food that many an N.Y.C. tourist grabs for breakfast,5,BAGEL
+6,0,1,4,1,Got out of bed,5,AROSE
+7,0,2,4,2,Adjective paired with 3-Down in a simile,5,LOOSE
+8,0,3,3,3,Effortlessness,4,EASE
+9,1,4,3,4,Tyrannosaurus ___,3,REX
+1,0,0,0,3,"Makeshift seat in a barnyard, maybe",4,BALE
+2,1,0,1,4,"Very loud, like a stadium crowd",5,AROAR
+3,2,0,2,4,Bird whose name rhymes with 7-Across,5,GOOSE
+4,3,0,3,4,"Fictional Vermont college on HBO Max's ""The Sex Lives of College Girls""",5,ESSEX
+5,4,0,4,2,Author Harper,3,LEE

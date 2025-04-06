@@ -1,0 +1,11 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,1,0,4,0,Animal attractions,4,ZOOS
+5,1,1,4,1,"""Keep it down!""",4,HUSH
+6,0,2,4,2,"Language in which you might wish someone ""Goedemorgen""",5,DUTCH
+7,0,3,3,3,Opinion columnist Klein,4,EZRA
+8,0,4,3,4,Norse god with a hammer,4,THOR
+1,1,0,1,4,"Give a little extra flair, with ""up""",5,ZHUZH
+2,2,0,2,4,Closing part of a song,5,OUTRO
+3,3,0,3,4,Statue seen in Hollywood,5,OSCAR
+4,4,0,4,2,"""Keep it down!""",3,SHH
+6,0,2,0,4,Police dept. title,3,DET

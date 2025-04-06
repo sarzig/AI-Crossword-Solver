@@ -1,0 +1,17 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,3,0,"Algebra, calculus, etc.",4,MATH
+5,0,1,5,1,College reunion attendees,6,ALUMNI
+8,0,2,5,2,"Broadway's ""The Book of ____""",6,MORMON
+9,0,3,2,3,Author Patchett,3,ANN
+10,4,3,6,3,Nickname for a longtime Supreme Court justice,3,RBG
+12,1,4,6,4,Heat on low,6,SIMMER
+14,1,5,6,5,Drug such as morphine or codeine,6,OPIATE
+15,3,6,6,6,Feature of a leopard or lobster,4,CLAW
+1,0,0,0,3,"Word belted out by Freddie Mercury in the first verse of ""Bohemian Rhapsody""",4,MAMA
+2,1,0,1,5,"Pete ___, All-Star slugger for the New York Mets",6,ALONSO
+3,2,0,2,5,Rounded root vegetable,6,TURNIP
+4,3,0,3,2,"""Let me think ...""",3,HMM
+6,4,1,4,6,Standard,6,NORMAL
+7,5,1,5,6,"Still being tested, as an app",6,INBETA
+11,6,3,6,6,Got bigger,4,GREW
+13,3,4,3,6,Piece of podcasting equipment,3,MIC
