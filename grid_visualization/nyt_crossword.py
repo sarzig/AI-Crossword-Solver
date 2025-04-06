@@ -1,0 +1,635 @@
+import pygame
+import sys
+import csv
+import os
+
+# Initialize pygame
+pygame.init()
+
+# Constants
+CELL_SIZE = 50
+GRID_WIDTH = 15
+GRID_HEIGHT = 15
+MARGIN = 1
+WINDOW_WIDTH = GRID_WIDTH * (CELL_SIZE + MARGIN) + MARGIN
+WINDOW_HEIGHT = GRID_HEIGHT * (CELL_SIZE + MARGIN) + MARGIN + 180  # Extra space for word entry and filename
+WHITE = (255, 255, 255)
+BLACK = (0, 0, 0)
+GRAY = (200, 200, 200)
+LIGHT_BLUE = (173, 216, 230)
+LIGHT_GRAY = (230, 230, 230)
+GREEN = (150, 240, 150)
+RED = (255, 100, 100)
+YELLOW = (255, 255, 150)
+
+# Set up the display
+screen = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
+pygame.display.set_caption("NYT-Style Crossword Grid")
+
+# Fonts
+number_font = pygame.font.SysFont('Arial', 12)
+letter_font = pygame.font.SysFont('Arial', 24, bold=True)
+instruction_font = pygame.font.SysFont('Arial', 16)
+input_font = pygame.font.SysFont('Arial', 18)
+
+# NYT-style grid with black cells (0) and white cells (1)
+# Based on the image provided
+grid = [
+    [1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1],
+    [1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1],
+    [1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1],
+    [1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1],
+    [0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0],
+    [1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1],
+    [1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1],
+    [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+    [1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1],
+    [1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0],
+    [0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0],
+    [1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1],
+    [1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1],
+    [1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1],
+    [0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0]
+]
+
+# Dictionary for clue numbers (based on the image)
+clue_numbers = {
+    (0, 0): 1, (0, 1): 2, (0, 2): 3, (0, 3): 4,
+    (0, 5): 6, (0, 6): 7, (0, 7): 8, (0, 8): 9, (0, 9): 10,
+    (0, 11): 11, (0, 12): 12, (0, 13): 13, (0, 14): 14,
+    (1, 0): 14, (1, 5): 15,
+    (2, 0): 17, (2, 5): 18, (2, 11): 19,
+    (3, 0): 20, (3, 4): 21, (3, 10): 22,
+    (4, 1): 23, (4, 9): 24,
+    (5, 0): 25, (5, 6): 26, (5, 7): 27, (5, 8): 28, (5, 10): 29,
+    (6, 0): 30, (6, 1): 31, (6, 5): 32, (6, 9): 33, (6, 13): 34, (6, 14): 35,
+    (7, 0): 36, (7, 4): 37, (7, 10): 38,
+    (8, 0): 39, (8, 4): 40, (8, 9): 42, (8, 11): 43,
+    (9, 0): 44, (9, 3): 45, (9, 7): 46, (9, 11): 47,
+    (10, 3): 48,
+    (11, 0): 49, (11, 1): 50, (11, 2): 51, (11, 4): 52, (11, 10): 53, (11, 11): 54, (11, 12): 55, (11, 13): 56,
+    (12, 0): 57, (12, 4): 58, (12, 10): 59,
+    (13, 0): 60, (13, 5): 61, (13, 6): 62, (13, 8): 63, (13, 9): 64,
+    (14, 0): 65, (14, 7): 66, (14, 11): 67, (14, 14): 68
+}
+
+# Reverse dictionary to find position by clue number
+position_by_clue = {num: pos for pos, num in clue_numbers.items()}
+
+# Dictionary to store letters entered by the user
+letters = {}
+
+# Current selected cell
+selected_cell = None
+current_input = ""
+
+# Word entry fields
+word_number_input = ""
+word_direction_input = ""
+word_text_input = ""
+active_input_field = None
+word_entry_success = None
+word_entry_message = ""
+
+# Filename field for saving
+filename_input = "crossword.csv"
+conflict_cells = []  # For highlighting conflict cells
+
+# Generate across and down word positions
+def find_word_positions():
+    across_words = {}
+    down_words = {}
+    
+    # Find across words
+    for row in range(GRID_HEIGHT):
+        col = 0
+        while col < GRID_WIDTH:
+            if grid[row][col] == 1:  # White cell
+                start_col = col
+                # Check if this cell has a clue number
+                clue_num = None
+                for pos, num in clue_numbers.items():
+                    if pos == (row, col):
+                        clue_num = num
+                        break
+                
+                # Find end of the word
+                word_length = 0
+                while col < GRID_WIDTH and grid[row][col] == 1:
+                    word_length += 1
+                    col += 1
+                
+                # Only add if the word is at least 2 cells long and has a clue number
+                if word_length >= 2 and clue_num is not None:
+                    across_words[clue_num] = [(row, start_col + i) for i in range(word_length)]
+            else:
+                col += 1
+    
+    # Find down words
+    for col in range(GRID_WIDTH):
+        row = 0
+        while row < GRID_HEIGHT:
+            if grid[row][col] == 1:  # White cell
+                start_row = row
+                # Check if this cell has a clue number
+                clue_num = None
+                for pos, num in clue_numbers.items():
+                    if pos == (row, col):
+                        clue_num = num
+                        break
+                
+                # Find end of the word
+                word_length = 0
+                while row < GRID_HEIGHT and grid[row][col] == 1:
+                    word_length += 1
+                    row += 1
+                
+                # Only add if the word is at least 2 cells long and has a clue number
+                if word_length >= 2 and clue_num is not None:
+                    down_words[clue_num] = [(start_row + i, col) for i in range(word_length)]
+            else:
+                row += 1
+    
+    return across_words, down_words
+
+# Get the across and down word positions
+across_words, down_words = find_word_positions()
+
+def save_grid_to_csv(filename="crossword.csv"):
+    """Save the grid with clue numbers and letters to a CSV file."""
+    # Make sure filename ends with .csv
+    if not filename.lower().endswith('.csv'):
+        filename += '.csv'
+    
+    try:
+        with open(filename, 'w', newline='') as csvfile:
+            writer = csv.writer(csvfile)
+            
+            # Create a grid with clue numbers and letters
+            filled_grid = []
+            for row in range(GRID_HEIGHT):
+                row_data = []
+                for col in range(GRID_WIDTH):
+                    if grid[row][col] == 0:  # Black cell
+                        row_data.append('#')
+                    elif (row, col) in letters:  # Cell with letter
+                        # Include clue number if exists
+                        if (row, col) in clue_numbers:
+                            row_data.append(f"{clue_numbers[(row, col)]}:{letters[(row, col)]}")
+                        else:
+                            row_data.append(letters[(row, col)])
+                    elif (row, col) in clue_numbers:  # Cell with only clue number
+                        row_data.append(f"{clue_numbers[(row, col)]}:")
+                    else:  # Empty white cell
+                        row_data.append('')
+                filled_grid.append(row_data)
+                
+            # Write the grid to CSV
+            writer.writerows(filled_grid)
+        
+        print(f"Grid saved to {filename}")
+        return True, f"Grid saved to {filename}"
+    except Exception as e:
+        print(f"Error saving grid: {e}")
+        return False, f"Error saving grid: {e}"
+
+def place_word(number, direction, word):
+    """Place a word at the specified position and direction."""
+    global word_entry_success, word_entry_message, conflict_cells
+    
+    # Clear previous conflicts
+    conflict_cells = []
+    
+    # Convert inputs to the right types
+    try:
+        number = int(number)
+    except ValueError:
+        word_entry_success = False
+        word_entry_message = f"Invalid number: {number}"
+        return False
+    
+    direction = direction.lower().strip()
+    if direction not in ["across", "down"]:
+        word_entry_success = False
+        word_entry_message = f"Direction must be 'across' or 'down'"
+        return False
+    
+    word = word.upper().strip()
+    if not word.isalpha():
+        word_entry_success = False
+        word_entry_message = f"Word must contain only letters"
+        return False
+    
+    # Get word positions
+    word_positions = across_words.get(number) if direction == "across" else down_words.get(number)
+    
+    if not word_positions:
+        word_entry_success = False
+        word_entry_message = f"No {direction} word found for number {number}"
+        return False
+    
+    # Check word length
+    if len(word) != len(word_positions):
+        word_entry_success = False
+        word_entry_message = f"Word length ({len(word)}) doesn't match expected length ({len(word_positions)})"
+        return False
+    
+    # Check for conflicts with existing letters
+    conflicts = []
+    for i, pos in enumerate(word_positions):
+        if pos in letters and letters[pos] != word[i]:
+            conflicts.append((pos, letters[pos], word[i]))
+    
+    if conflicts:
+        conflict_cells = [pos for pos, _, _ in conflicts]
+        conflict_details = ", ".join([f"At {pos}: '{existing}' vs '{new}'" for pos, existing, new in conflicts])
+        word_entry_success = False
+        word_entry_message = f"Word conflicts with existing letters: {conflict_details}"
+        return False
+    
+    # Place the word
+    for i, letter in enumerate(word):
+        letters[word_positions[i]] = letter
+    
+    word_entry_success = True
+    word_entry_message = f"Successfully placed '{word}' at {number} {direction}"
+    return True
+
+def draw_grid():
+    """Draw the crossword grid on the screen."""
+    # Fill background
+    screen.fill(GRAY)
+    
+    # Draw the grid
+    for row in range(GRID_HEIGHT):
+        for col in range(GRID_WIDTH):
+            x = col * (CELL_SIZE + MARGIN) + MARGIN
+            y = row * (CELL_SIZE + MARGIN) + MARGIN
+            
+            # Determine cell color
+            if grid[row][col] == 0:
+                color = BLACK  # Black cell (fixed)
+            elif (row, col) in conflict_cells:
+                color = RED  # Highlight conflict cells
+            elif selected_cell == (row, col):
+                color = LIGHT_BLUE  # Highlight selected cell
+            elif (row, col) in clue_numbers:
+                color = LIGHT_GRAY  # Light gray for cells with numbers
+            else:
+                color = WHITE  # Normal white cell
+                
+            # Draw the cell
+            pygame.draw.rect(screen, color, [x, y, CELL_SIZE, CELL_SIZE])
+            
+            if grid[row][col] == 1:  # Only for white cells
+                # Add clue number if it exists
+                if (row, col) in clue_numbers:
+                    number_text = number_font.render(str(clue_numbers[(row, col)]), True, BLACK)
+                    screen.blit(number_text, (x + 2, y + 2))
+                
+                # Add letter if it exists
+                if (row, col) in letters:
+                    letter_text = letter_font.render(letters[(row, col)], True, BLACK)
+                    text_rect = letter_text.get_rect(center=(x + CELL_SIZE // 2, y + CELL_SIZE // 2 + 3))
+                    screen.blit(letter_text, text_rect)
+    
+    # Draw word entry UI
+    y_offset = GRID_HEIGHT * (CELL_SIZE + MARGIN) + 10
+    
+    # Title
+    title_text = instruction_font.render("Word Placement", True, BLACK)
+    screen.blit(title_text, (10, y_offset))
+    y_offset += 25
+    
+    # Number field
+    number_label = input_font.render("Number:", True, BLACK)
+    screen.blit(number_label, (10, y_offset))
+    
+    number_rect = pygame.Rect(100, y_offset, 80, 24)
+    pygame.draw.rect(screen, WHITE, number_rect)
+    pygame.draw.rect(screen, BLACK if active_input_field == "number" else GRAY, number_rect, 2)
+    number_text = input_font.render(word_number_input, True, BLACK)
+    screen.blit(number_text, (number_rect.x + 5, number_rect.y + 2))
+    
+    # Direction field
+    direction_label = input_font.render("Direction:", True, BLACK)
+    screen.blit(direction_label, (200, y_offset))
+    
+    direction_rect = pygame.Rect(290, y_offset, 100, 24)
+    pygame.draw.rect(screen, WHITE, direction_rect)
+    pygame.draw.rect(screen, BLACK if active_input_field == "direction" else GRAY, direction_rect, 2)
+    direction_text = input_font.render(word_direction_input, True, BLACK)
+    screen.blit(direction_text, (direction_rect.x + 5, direction_rect.y + 2))
+    y_offset += 35
+    
+    # Word field
+    word_label = input_font.render("Word:", True, BLACK)
+    screen.blit(word_label, (10, y_offset))
+    
+    word_rect = pygame.Rect(100, y_offset, 290, 24)
+    pygame.draw.rect(screen, WHITE, word_rect)
+    pygame.draw.rect(screen, BLACK if active_input_field == "word" else GRAY, word_rect, 2)
+    word_text = input_font.render(word_text_input, True, BLACK)
+    screen.blit(word_text, (word_rect.x + 5, word_rect.y + 2))
+    
+    # Place Word button
+    button_rect = pygame.Rect(400, y_offset, 100, 24)
+    pygame.draw.rect(screen, GREEN, button_rect)
+    pygame.draw.rect(screen, BLACK, button_rect, 2)
+    button_text = input_font.render("Place Word", True, BLACK)
+    screen.blit(button_text, (button_rect.x + 10, button_rect.y + 2))
+    y_offset += 35
+    
+    # Filename field
+    filename_label = input_font.render("Save as:", True, BLACK)
+    screen.blit(filename_label, (10, y_offset))
+    
+    filename_rect = pygame.Rect(100, y_offset, 290, 24)
+    pygame.draw.rect(screen, WHITE, filename_rect)
+    pygame.draw.rect(screen, BLACK if active_input_field == "filename" else GRAY, filename_rect, 2)
+    filename_text = input_font.render(filename_input, True, BLACK)
+    screen.blit(filename_text, (filename_rect.x + 5, filename_rect.y + 2))
+    
+    # Save button
+    save_button_rect = pygame.Rect(400, y_offset, 100, 24)
+    pygame.draw.rect(screen, YELLOW, save_button_rect)
+    pygame.draw.rect(screen, BLACK, save_button_rect, 2)
+    save_button_text = input_font.render("Save Grid", True, BLACK)
+    screen.blit(save_button_text, (save_button_rect.x + 10, save_button_rect.y + 2))
+    y_offset += 35
+    
+    # Status message
+    if word_entry_success is not None:
+        status_color = GREEN if word_entry_success else RED
+        status_text = input_font.render(word_entry_message, True, status_color)
+        screen.blit(status_text, (10, y_offset))
+    
+    # Draw instructions
+    instructions = [
+        "Click on grid to enter individual letters, or use the form below to place entire words",
+        "Error will show if word conflicts with existing letters (cells will highlight in red)",
+        "Customize filename and press Save Grid to save, or press Q to quit"
+    ]
+    
+    y_offset = WINDOW_HEIGHT - 60
+    for instruction in instructions:
+        text = instruction_font.render(instruction, True, BLACK)
+        screen.blit(text, (10, y_offset))
+        y_offset += 20
+    
+    # Show current input if a cell is selected
+    if selected_cell and current_input:
+        # Create a small background for the current input
+        input_text = letter_font.render(current_input.upper(), True, BLACK)
+        input_rect = input_text.get_rect()
+        input_rect.center = (WINDOW_WIDTH // 2, GRID_HEIGHT * (CELL_SIZE + MARGIN) + 30)
+        pygame.draw.rect(screen, WHITE, input_rect.inflate(20, 10))
+        pygame.draw.rect(screen, BLACK, input_rect.inflate(20, 10), 1)
+        screen.blit(input_text, input_rect)
+
+# Main game loop
+running = True
+save_requested = False
+
+print("Enhanced NYT-Style Crossword Grid")
+print("--------------------------------")
+print("Click on white cells to enter individual letters")
+print("Or use the form to place entire words by number and direction")
+print("Enter custom filename and press 'Save Grid' to save as CSV")
+print("Press Q to quit")
+
+while running:
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            running = False
+        
+        # Mouse click to select a cell or UI element
+        elif event.type == pygame.MOUSEBUTTONDOWN:
+            pos = pygame.mouse.get_pos()
+            
+            # Check if click is in the grid area
+            if pos[1] < GRID_HEIGHT * (CELL_SIZE + MARGIN):
+                col = pos[0] // (CELL_SIZE + MARGIN)
+                row = pos[1] // (CELL_SIZE + MARGIN)
+                
+                # Only allow selecting white cells
+                if 0 <= row < GRID_HEIGHT and 0 <= col < GRID_WIDTH and grid[row][col] == 1:
+                    selected_cell = (row, col)
+                    current_input = letters.get(selected_cell, "")
+                    active_input_field = None
+                else:
+                    selected_cell = None
+                    current_input = ""
+            else:
+                # Check if click is in any of the input fields
+                y_offset = GRID_HEIGHT * (CELL_SIZE + MARGIN) + 35
+                
+                # Number field
+                number_rect = pygame.Rect(100, y_offset, 80, 24)
+                if number_rect.collidepoint(pos):
+                    active_input_field = "number"
+                    selected_cell = None
+                    current_input = ""
+                
+                # Direction field
+                direction_rect = pygame.Rect(290, y_offset, 100, 24)
+                if direction_rect.collidepoint(pos):
+                    active_input_field = "direction"
+                    selected_cell = None
+                    current_input = ""
+                
+                # Word field
+                y_offset += 35
+                word_rect = pygame.Rect(100, y_offset, 290, 24)
+                if word_rect.collidepoint(pos):
+                    active_input_field = "word"
+                    selected_cell = None
+                    current_input = ""
+                
+                # Place Word button
+                place_button_rect = pygame.Rect(400, y_offset, 100, 24)
+                if place_button_rect.collidepoint(pos):
+                    # Try to place the word
+                    place_word(word_number_input, word_direction_input, word_text_input)
+                    
+                    # Clear input fields if successful
+                    if word_entry_success:
+                        word_number_input = ""
+                        word_direction_input = ""
+                        word_text_input = ""
+                        active_input_field = None
+                
+                # Filename field
+                y_offset += 35
+                filename_rect = pygame.Rect(100, y_offset, 290, 24)
+                if filename_rect.collidepoint(pos):
+                    active_input_field = "filename"
+                    selected_cell = None
+                    current_input = ""
+                
+                # Save button
+                save_button_rect = pygame.Rect(400, y_offset, 100, 24)
+                if save_button_rect.collidepoint(pos):
+                    success, message = save_grid_to_csv(filename_input)
+                    word_entry_success = success
+                    word_entry_message = message
+                    save_requested = True
+        
+        # Keyboard events
+        elif event.type == pygame.KEYDOWN:
+            # Handle input for grid cell
+            if selected_cell:
+                if event.key == pygame.K_RETURN:  # Confirm input with Enter
+                    if current_input:
+                        letters[selected_cell] = current_input.upper()
+                    else:
+                        # Remove the letter if input is empty
+                        if selected_cell in letters:
+                            del letters[selected_cell]
+                    
+                    # Move to the next cell (right or down)
+                    row, col = selected_cell
+                    # Try moving right first
+                    if col + 1 < GRID_WIDTH and grid[row][col + 1] == 1:
+                        selected_cell = (row, col + 1)
+                    # If can't move right, try moving down
+                    elif row + 1 < GRID_HEIGHT and grid[row + 1][col] == 1:
+                        selected_cell = (row + 1, col)
+                    
+                    current_input = letters.get(selected_cell, "")
+                        
+                elif event.key == pygame.K_BACKSPACE:  # Backspace to clear and go back
+                    if current_input:
+                        current_input = ""
+                    else:
+                        # Move to previous cell if empty
+                        row, col = selected_cell
+                        if col - 1 >= 0 and grid[row][col - 1] == 1:
+                            selected_cell = (row, col - 1)
+                            current_input = letters.get(selected_cell, "")
+                
+                elif event.key == pygame.K_DELETE:  # Delete to clear
+                    current_input = ""
+                    if selected_cell in letters:
+                        del letters[selected_cell]
+                
+                elif event.key == pygame.K_RIGHT:  # Navigate right
+                    row, col = selected_cell
+                    while col + 1 < GRID_WIDTH:
+                        col += 1
+                        if grid[row][col] == 1:
+                            selected_cell = (row, col)
+                            current_input = letters.get(selected_cell, "")
+                            break
+                
+                elif event.key == pygame.K_LEFT:  # Navigate left
+                    row, col = selected_cell
+                    while col - 1 >= 0:
+                        col -= 1
+                        if grid[row][col] == 1:
+                            selected_cell = (row, col)
+                            current_input = letters.get(selected_cell, "")
+                            break
+                
+                elif event.key == pygame.K_DOWN:  # Navigate down
+                    row, col = selected_cell
+                    while row + 1 < GRID_HEIGHT:
+                        row += 1
+                        if grid[row][col] == 1:
+                            selected_cell = (row, col)
+                            current_input = letters.get(selected_cell, "")
+                            break
+                
+                elif event.key == pygame.K_UP:  # Navigate up
+                    row, col = selected_cell
+                    while row - 1 >= 0:
+                        row -= 1
+                        if grid[row][col] == 1:
+                            selected_cell = (row, col)
+                            current_input = letters.get(selected_cell, "")
+                            break
+                
+                # Letters A-Z or a-z
+                elif event.unicode.isalpha():
+                    current_input = event.unicode
+            
+            # Handle input for form fields
+            elif active_input_field:
+                if event.key == pygame.K_RETURN:  # Enter key submits
+                    if active_input_field == "number":
+                        active_input_field = "direction"
+                    elif active_input_field == "direction":
+                        active_input_field = "word"
+                    elif active_input_field == "word":
+                        # Try to place the word
+                        place_word(word_number_input, word_direction_input, word_text_input)
+                        
+                        # Clear input fields if successful
+                        if word_entry_success:
+                            word_number_input = ""
+                            word_direction_input = ""
+                            word_text_input = ""
+                            active_input_field = None
+                    elif active_input_field == "filename":
+                        # Save with the current filename
+                        success, message = save_grid_to_csv(filename_input)
+                        word_entry_success = success
+                        word_entry_message = message
+                        save_requested = True
+                
+                elif event.key == pygame.K_TAB:  # Tab key moves between fields
+                    if active_input_field == "number":
+                        active_input_field = "direction"
+                    elif active_input_field == "direction":
+                        active_input_field = "word"
+                    elif active_input_field == "word":
+                        active_input_field = "filename"
+                    elif active_input_field == "filename":
+                        active_input_field = "number"
+                
+                elif event.key == pygame.K_BACKSPACE:  # Backspace to delete
+                    if active_input_field == "number":
+                        word_number_input = word_number_input[:-1]
+                    elif active_input_field == "direction":
+                        word_direction_input = word_direction_input[:-1]
+                    elif active_input_field == "word":
+                        word_text_input = word_text_input[:-1]
+                    elif active_input_field == "filename":
+                        filename_input = filename_input[:-1]
+                
+                elif event.key == pygame.K_ESCAPE:  # Escape to cancel
+                    active_input_field = None
+                
+                else:  # Add character to the input
+                    if active_input_field == "number":
+                        if event.unicode.isdigit():
+                            word_number_input += event.unicode
+                    elif active_input_field == "direction":
+                        if event.unicode.isalpha():
+                            word_direction_input += event.unicode
+                    elif active_input_field == "word":
+                        if event.unicode.isalpha():
+                            word_text_input += event.unicode
+                    elif active_input_field == "filename":
+                        # Allow more characters for filename
+                        if event.unicode.isalnum() or event.unicode in "._-":
+                            filename_input += event.unicode
+            
+            # Global key commands
+            if event.key == pygame.K_s and pygame.key.get_mods() & pygame.KMOD_CTRL:  # Ctrl+S to save
+                success, message = save_grid_to_csv(filename_input)
+                word_entry_success = success
+                word_entry_message = message
+                save_requested = True
+            elif event.key == pygame.K_q:  # Quit when 'Q' is pressed
+                running = False
+    
+    draw_grid()
+    pygame.display.flip()
+
+# Save the grid when exiting if not already saved
+if not save_requested:
+    save_grid_to_csv(filename_input)
+
+pygame.quit()
+sys.exit()
