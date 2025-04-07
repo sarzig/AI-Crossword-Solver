@@ -93,6 +93,7 @@ def rank_candidates_batch(clue_answer_pairs, tokenizer, model, device="cuda", ba
                 raise e
             else:
                 raise e
+    return scores
 
 
 
