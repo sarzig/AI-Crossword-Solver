@@ -1,0 +1,753 @@
+{
+  "C:\\Users\\Sheryl\\Desktop\\CS6400\\ai_crossword_solver/data/puzzle_samples/processed_puzzle_samples\\mini_2024_03_02.csv": {
+    "status": "timeout",
+    "domain_lengths": {
+      "1-Across": 10,
+      "5-Across": 1,
+      "8-Across": 6,
+      "9-Across": 100,
+      "10-Across": 1,
+      "12-Across": 138,
+      "14-Across": 58,
+      "15-Across": 36,
+      "1-Down": 1,
+      "2-Down": 17464,
+      "3-Down": 17464,
+      "4-Down": 1,
+      "6-Down": 1925,
+      "7-Down": 1,
+      "11-Down": 251,
+      "13-Down": 1
+    },
+    "timestamp": "2025-04-06T05:06:45.415902"
+  },
+  "C:\\Users\\Sheryl\\Desktop\\CS6400\\ai_crossword_solver/data/puzzle_samples/processed_puzzle_samples\\mini_2024_03_05.csv": {
+    "status": "timeout",
+    "domain_lengths": {
+      "1-Across": 77,
+      "5-Across": 1,
+      "6-Across": 9,
+      "7-Across": 11,
+      "8-Across": 43,
+      "1-Down": 172,
+      "2-Down": 1,
+      "3-Down": 1,
+      "4-Down": 217,
+      "5-Down": 305
+    },
+    "timestamp": "2025-04-06T05:11:49.968727"
+  },
+  "C:\\Users\\Sheryl\\Desktop\\CS6400\\ai_crossword_solver/data/puzzle_samples/processed_puzzle_samples\\mini_2024_03_06.csv": {
+    "status": "timeout",
+    "domain_lengths": {
+      "1-Across": 259,
+      "5-Across": 1,
+      "6-Across": 567,
+      "8-Across": 1,
+      "9-Across": 329,
+      "1-Down": 182,
+      "2-Down": 2,
+      "3-Down": 188,
+      "4-Down": 1,
+      "7-Down": 159
+    },
+    "timestamp": "2025-04-06T05:16:52.454688"
+  },
+  "C:\\Users\\Sheryl\\Desktop\\CS6400\\ai_crossword_solver/data/puzzle_samples/processed_puzzle_samples\\mini_2024_03_07.csv": {
+    "status": "timeout",
+    "domain_lengths": {
+      "1-Across": 1295,
+      "4-Across": 1,
+      "6-Across": 1,
+      "7-Across": 1266,
+      "8-Across": 1295,
+      "1-Down": 99,
+      "2-Down": 8,
+      "3-Down": 89,
+      "4-Down": 1,
+      "5-Down": 10
+    },
+    "timestamp": "2025-04-06T05:21:54.948467"
+  },
+  "C:\\Users\\Sheryl\\Desktop\\CS6400\\ai_crossword_solver/data/puzzle_samples/processed_puzzle_samples\\mini_2024_03_20.csv": {
+    "status": "timeout",
+    "domain_lengths": {
+      "1-Across": 867,
+      "5-Across": 119,
+      "6-Across": 1,
+      "8-Across": 194,
+      "9-Across": 194,
+      "1-Down": 70,
+      "2-Down": 1,
+      "3-Down": 295,
+      "4-Down": 826,
+      "7-Down": 92
+    },
+    "timestamp": "2025-04-06T05:27:30.064069"
+  },
+  "C:\\Users\\Sheryl\\Desktop\\CS6400\\ai_crossword_solver/data/puzzle_samples/processed_puzzle_samples\\mini_2024_03_26.csv": {
+    "status": "timeout",
+    "domain_lengths": {
+      "1-Across": 242,
+      "5-Across": 766,
+      "6-Across": 303,
+      "7-Across": 1,
+      "8-Across": 81,
+      "1-Down": 235,
+      "2-Down": 1,
+      "3-Down": 273,
+      "4-Down": 1295,
+      "5-Down": 329
+    },
+    "timestamp": "2025-04-06T05:33:12.829626"
+  },
+  "C:\\Users\\Sheryl\\Desktop\\CS6400\\ai_crossword_solver/data/puzzle_samples/processed_puzzle_samples\\mini_2025_01_01.csv": {
+    "status": "timeout",
+    "domain_lengths": {
+      "1-Across": 404,
+      "6-Across": 1391,
+      "7-Across": 1,
+      "8-Across": 1391,
+      "9-Across": 1,
+      "1-Down": 44,
+      "2-Down": 9,
+      "3-Down": 57,
+      "4-Down": 97,
+      "5-Down": 1
+    },
+    "timestamp": "2025-04-06T05:39:09.027684"
+  },
+  "C:\\Users\\Sheryl\\Desktop\\CS6400\\ai_crossword_solver/data/puzzle_samples/processed_puzzle_samples\\mini_2025_01_03.csv": {
+    "status": "timeout",
+    "domain_lengths": {
+      "1-Across": 233,
+      "5-Across": 1,
+      "7-Across": 1751,
+      "8-Across": 1,
+      "9-Across": 488,
+      "1-Down": 154,
+      "2-Down": 1,
+      "3-Down": 57,
+      "4-Down": 26,
+      "6-Down": 52
+    },
+    "timestamp": "2025-04-06T05:44:11.528646"
+  },
+  "C:\\Users\\Sheryl\\Desktop\\CS6400\\ai_crossword_solver/data/puzzle_samples/processed_puzzle_samples\\mini_2025_01_05.csv": {
+    "status": "timeout",
+    "domain_lengths": {
+      "1-Across": 24,
+      "5-Across": 146,
+      "6-Across": 431,
+      "7-Across": 23,
+      "8-Across": 1,
+      "1-Down": 1309,
+      "2-Down": 1391,
+      "3-Down": 1,
+      "4-Down": 1,
+      "5-Down": 681
+    },
+    "timestamp": "2025-04-06T05:49:16.622497"
+  },
+  "C:\\Users\\Sheryl\\Desktop\\CS6400\\ai_crossword_solver/data/puzzle_samples/processed_puzzle_samples\\mini_2025_01_06.csv": {
+    "status": "timeout",
+    "domain_lengths": {
+      "1-Across": 156,
+      "5-Across": 982,
+      "6-Across": 701,
+      "7-Across": 381,
+      "8-Across": 201,
+      "1-Down": 9972,
+      "2-Down": 9972,
+      "3-Down": 9972,
+      "4-Down": 1,
+      "5-Down": 1295
+    },
+    "timestamp": "2025-04-06T05:54:19.197698"
+  },
+  "C:\\Users\\Sheryl\\Desktop\\CS6400\\ai_crossword_solver/data/puzzle_samples/processed_puzzle_samples\\mini_2025_01_10.csv": {
+    "status": "timeout",
+    "domain_lengths": {
+      "1-Across": 1,
+      "6-Across": 666,
+      "7-Across": 786,
+      "8-Across": 435,
+      "9-Across": 1266,
+      "1-Down": 1,
+      "2-Down": 580,
+      "3-Down": 209,
+      "4-Down": 435,
+      "5-Down": 272
+    },
+    "timestamp": "2025-04-06T06:04:40.104753"
+  },
+  "C:\\Users\\Sheryl\\Desktop\\CS6400\\ai_crossword_solver/data/puzzle_samples/processed_puzzle_samples\\mini_2025_01_14.csv": {
+    "status": "timeout",
+    "domain_lengths": {
+      "1-Across": 50,
+      "6-Across": 88,
+      "7-Across": 58,
+      "8-Across": 46,
+      "9-Across": 1,
+      "1-Down": 722,
+      "2-Down": 1,
+      "3-Down": 982,
+      "4-Down": 4995,
+      "5-Down": 1
+    },
+    "timestamp": "2025-04-06T06:11:49.152819"
+  },
+  "C:\\Users\\Sheryl\\Desktop\\CS6400\\ai_crossword_solver/data/puzzle_samples/processed_puzzle_samples\\mini_2025_01_15.csv": {
+    "status": "timeout",
+    "domain_lengths": {
+      "1-Across": 9972,
+      "6-Across": 9972,
+      "7-Across": 9972,
+      "8-Across": 4995,
+      "9-Across": 1295,
+      "1-Down": 4995,
+      "2-Down": 9972,
+      "3-Down": 9972,
+      "4-Down": 9972,
+      "5-Down": 1295
+    },
+    "timestamp": "2025-04-06T06:16:51.784048"
+  },
+  "C:\\Users\\Sheryl\\Desktop\\CS6400\\ai_crossword_solver/data/puzzle_samples/processed_puzzle_samples\\mini_2025_01_16.csv": {
+    "status": "timeout",
+    "domain_lengths": {
+      "1-Across": 41,
+      "5-Across": 103,
+      "6-Across": 1,
+      "7-Across": 254,
+      "8-Across": 2,
+      "1-Down": 1,
+      "2-Down": 766,
+      "3-Down": 393,
+      "4-Down": 1,
+      "5-Down": 961
+    },
+    "timestamp": "2025-04-06T06:21:54.314663"
+  },
+  "C:\\Users\\Sheryl\\Desktop\\CS6400\\ai_crossword_solver/data/puzzle_samples/processed_puzzle_samples\\mini_2025_01_17.csv": {
+    "status": "timeout",
+    "domain_lengths": {
+      "1-Across": 60,
+      "6-Across": 93,
+      "7-Across": 72,
+      "8-Across": 97,
+      "9-Across": 101,
+      "1-Down": 9972,
+      "2-Down": 1,
+      "3-Down": 1,
+      "4-Down": 9972,
+      "5-Down": 9972
+    },
+    "timestamp": "2025-04-06T06:26:57.423256"
+  },
+  "C:\\Users\\Sheryl\\Desktop\\CS6400\\ai_crossword_solver/data/puzzle_samples/processed_puzzle_samples\\mini_2025_01_19.csv": {
+    "status": "timeout",
+    "domain_lengths": {
+      "1-Across": 1295,
+      "4-Across": 9972,
+      "7-Across": 9972,
+      "8-Across": 1,
+      "9-Across": 4995,
+      "1-Down": 1295,
+      "2-Down": 930,
+      "3-Down": 516,
+      "5-Down": 391,
+      "6-Down": 391
+    },
+    "timestamp": "2025-04-06T06:32:02.725459"
+  },
+  "C:\\Users\\Sheryl\\Desktop\\CS6400\\ai_crossword_solver/data/puzzle_samples/processed_puzzle_samples\\mini_2025_01_21.csv": {
+    "status": "timeout",
+    "domain_lengths": {
+      "1-Across": 181,
+      "5-Across": 567,
+      "7-Across": 1335,
+      "8-Across": 539,
+      "9-Across": 285,
+      "1-Down": 4995,
+      "2-Down": 9972,
+      "3-Down": 9972,
+      "4-Down": 1,
+      "6-Down": 4995
+    },
+    "timestamp": "2025-04-06T06:41:30.323147"
+  },
+  "C:\\Users\\Sheryl\\Desktop\\CS6400\\ai_crossword_solver/data/puzzle_samples/processed_puzzle_samples\\mini_2025_01_22.csv": {
+    "status": "timeout",
+    "domain_lengths": {
+      "1-Across": 34,
+      "6-Across": 66,
+      "7-Across": 12,
+      "8-Across": 84,
+      "9-Across": 19,
+      "1-Down": 4995,
+      "2-Down": 1,
+      "3-Down": 9972,
+      "4-Down": 9972,
+      "5-Down": 1
+    },
+    "timestamp": "2025-04-06T06:46:33.642497"
+  },
+  "C:\\Users\\Sheryl\\Desktop\\CS6400\\ai_crossword_solver/data/puzzle_samples/processed_puzzle_samples\\mini_2025_01_26.csv": {
+    "status": "timeout",
+    "domain_lengths": {
+      "1-Across": 197,
+      "5-Across": 1127,
+      "7-Across": 1,
+      "8-Across": 569,
+      "9-Across": 681,
+      "1-Down": 295,
+      "2-Down": 981,
+      "3-Down": 957,
+      "4-Down": 1,
+      "6-Down": 217
+    },
+    "timestamp": "2025-04-06T06:55:44.763128"
+  },
+  "C:\\Users\\Sheryl\\Desktop\\CS6400\\ai_crossword_solver/data/puzzle_samples/processed_puzzle_samples\\mini_2025_01_27.csv": {
+    "status": "timeout",
+    "domain_lengths": {
+      "1-Across": 1391,
+      "6-Across": 722,
+      "7-Across": 1,
+      "8-Across": 1309,
+      "9-Across": 1295,
+      "1-Down": 383,
+      "2-Down": 826,
+      "3-Down": 752,
+      "4-Down": 635,
+      "5-Down": 1
+    },
+    "timestamp": "2025-04-06T07:00:47.316991"
+  },
+  "C:\\Users\\Sheryl\\Desktop\\CS6400\\ai_crossword_solver/data/puzzle_samples/processed_puzzle_samples\\mini_2025_01_28.csv": {
+    "status": "timeout",
+    "domain_lengths": {
+      "1-Across": 42,
+      "6-Across": 124,
+      "7-Across": 39,
+      "8-Across": 49,
+      "9-Across": 38,
+      "1-Down": 9972,
+      "2-Down": 9972,
+      "3-Down": 9972,
+      "4-Down": 1,
+      "5-Down": 1
+    },
+    "timestamp": "2025-04-06T07:05:49.885552"
+  },
+  "C:\\Users\\Sheryl\\Desktop\\CS6400\\ai_crossword_solver/data/puzzle_samples/processed_puzzle_samples\\mini_2025_01_29.csv": {
+    "status": "timeout",
+    "domain_lengths": {
+      "1-Across": 81,
+      "4-Across": 45,
+      "6-Across": 21,
+      "7-Across": 29,
+      "8-Across": 1,
+      "1-Down": 180,
+      "2-Down": 722,
+      "3-Down": 1,
+      "4-Down": 1,
+      "5-Down": 681
+    },
+    "timestamp": "2025-04-06T07:10:52.413545"
+  },
+  "C:\\Users\\Sheryl\\Desktop\\CS6400\\ai_crossword_solver/data/puzzle_samples/processed_puzzle_samples\\mini_2025_01_31.csv": {
+    "status": "timeout",
+    "domain_lengths": {
+      "1-Across": 23,
+      "6-Across": 198,
+      "7-Across": 17,
+      "8-Across": 15,
+      "9-Across": 66,
+      "1-Down": 9972,
+      "2-Down": 1,
+      "3-Down": 9972,
+      "4-Down": 9972,
+      "5-Down": 1
+    },
+    "timestamp": "2025-04-06T07:16:00.146442"
+  },
+  "C:\\Users\\Sheryl\\Desktop\\CS6400\\ai_crossword_solver/data/puzzle_samples/processed_puzzle_samples\\mini_2025_02_02.csv": {
+    "status": "timeout",
+    "domain_lengths": {
+      "1-Across": 7,
+      "5-Across": 79,
+      "7-Across": 5,
+      "8-Across": 269,
+      "9-Across": 10,
+      "1-Down": 4995,
+      "2-Down": 1,
+      "3-Down": 9972,
+      "4-Down": 1,
+      "6-Down": 4995
+    },
+    "timestamp": "2025-04-06T07:21:05.179433"
+  },
+  "C:\\Users\\Sheryl\\Desktop\\CS6400\\ai_crossword_solver/data/puzzle_samples/processed_puzzle_samples\\mini_2025_02_04.csv": {
+    "status": "timeout",
+    "domain_lengths": {
+      "1-Across": 1295,
+      "4-Across": 9972,
+      "6-Across": 9972,
+      "7-Across": 1,
+      "8-Across": 4995,
+      "1-Down": 569,
+      "2-Down": 1335,
+      "3-Down": 1295,
+      "4-Down": 391,
+      "5-Down": 205
+    },
+    "timestamp": "2025-04-06T07:30:25.741850"
+  },
+  "C:\\Users\\Sheryl\\Desktop\\CS6400\\ai_crossword_solver/data/puzzle_samples/processed_puzzle_samples\\mini_2025_02_06.csv": {
+    "status": "timeout",
+    "domain_lengths": {
+      "1-Across": 365,
+      "5-Across": 539,
+      "6-Across": 1,
+      "7-Across": 1,
+      "8-Across": 1295,
+      "1-Down": 67,
+      "2-Down": 30,
+      "3-Down": 1,
+      "4-Down": 64,
+      "5-Down": 20
+    },
+    "timestamp": "2025-04-06T07:35:30.682050"
+  },
+  "C:\\Users\\Sheryl\\Desktop\\CS6400\\ai_crossword_solver/data/puzzle_samples/processed_puzzle_samples\\mini_2025_02_07.csv": {
+    "status": "timeout",
+    "domain_lengths": {
+      "1-Across": 9972,
+      "6-Across": 9972,
+      "7-Across": 9972,
+      "8-Across": 9972,
+      "9-Across": 1,
+      "1-Down": 174,
+      "2-Down": 1391,
+      "3-Down": 714,
+      "4-Down": 1391,
+      "5-Down": 32
+    },
+    "timestamp": "2025-04-06T07:40:33.283079"
+  },
+  "C:\\Users\\Sheryl\\Desktop\\CS6400\\ai_crossword_solver/data/puzzle_samples/processed_puzzle_samples\\mini_2025_02_10.csv": {
+    "status": "timeout",
+    "domain_lengths": {
+      "1-Across": 345,
+      "6-Across": 1,
+      "7-Across": 404,
+      "8-Across": 4995,
+      "9-Across": 1295,
+      "1-Down": 1751,
+      "2-Down": 866,
+      "3-Down": 785,
+      "4-Down": 961,
+      "5-Down": 1
+    },
+    "timestamp": "2025-04-06T07:45:41.809439"
+  },
+  "C:\\Users\\Sheryl\\Desktop\\CS6400\\ai_crossword_solver/data/puzzle_samples/processed_puzzle_samples\\mini_2025_02_11.csv": {
+    "status": "timeout",
+    "domain_lengths": {
+      "1-Across": 1,
+      "6-Across": 666,
+      "7-Across": 666,
+      "8-Across": 580,
+      "9-Across": 1,
+      "1-Down": 1,
+      "2-Down": 48,
+      "3-Down": 75,
+      "4-Down": 64,
+      "5-Down": 305
+    },
+    "timestamp": "2025-04-06T07:50:44.099900"
+  },
+  "C:\\Users\\Sheryl\\Desktop\\CS6400\\ai_crossword_solver/data/puzzle_samples/processed_puzzle_samples\\mini_2025_02_12.csv": {
+    "status": "timeout",
+    "domain_lengths": {
+      "1-Across": 421,
+      "6-Across": 170,
+      "7-Across": 1127,
+      "8-Across": 1,
+      "9-Across": 516,
+      "1-Down": 516,
+      "2-Down": 237,
+      "3-Down": 567,
+      "4-Down": 1,
+      "5-Down": 539
+    },
+    "timestamp": "2025-04-06T07:55:46.460236"
+  },
+  "C:\\Users\\Sheryl\\Desktop\\CS6400\\ai_crossword_solver/data/puzzle_samples/processed_puzzle_samples\\mini_2025_02_14.csv": {
+    "status": "timeout",
+    "domain_lengths": {
+      "1-Across": 9972,
+      "6-Across": 1,
+      "7-Across": 9972,
+      "8-Across": 9972,
+      "9-Across": 1,
+      "1-Down": 198,
+      "2-Down": 36,
+      "3-Down": 63,
+      "4-Down": 50,
+      "5-Down": 961
+    },
+    "timestamp": "2025-04-06T08:00:52.954069"
+  },
+  "C:\\Users\\Sheryl\\Desktop\\CS6400\\ai_crossword_solver/data/puzzle_samples/processed_puzzle_samples\\mini_2025_02_15.csv": {
+    "status": "timeout",
+    "domain_lengths": {
+      "1-Across": 1,
+      "5-Across": 1,
+      "6-Across": 10,
+      "7-Across": 1,
+      "8-Across": 26,
+      "9-Across": 91,
+      "10-Across": 446,
+      "1-Down": 1,
+      "2-Down": 1,
+      "3-Down": 1,
+      "4-Down": 1,
+      "5-Down": 1270,
+      "6-Down": 1195,
+      "7-Down": 488
+    },
+    "timestamp": "2025-04-06T08:05:55.288225"
+  },
+  "C:\\Users\\Sheryl\\Desktop\\CS6400\\ai_crossword_solver/data/puzzle_samples/processed_puzzle_samples\\mini_2025_02_17.csv": {
+    "status": "timeout",
+    "domain_lengths": {
+      "1-Across": 982,
+      "6-Across": 1,
+      "7-Across": 1391,
+      "8-Across": 512,
+      "9-Across": 1295,
+      "1-Down": 600,
+      "2-Down": 39,
+      "3-Down": 389,
+      "4-Down": 1751,
+      "5-Down": 1
+    },
+    "timestamp": "2025-04-06T08:11:00.109272"
+  },
+  "C:\\Users\\Sheryl\\Desktop\\CS6400\\ai_crossword_solver/data/puzzle_samples/processed_puzzle_samples\\mini_2025_02_18.csv": {
+    "status": "timeout",
+    "domain_lengths": {
+      "1-Across": 127,
+      "5-Across": 20,
+      "6-Across": 111,
+      "7-Across": 1,
+      "8-Across": 70,
+      "1-Down": 289,
+      "2-Down": 1,
+      "3-Down": 1,
+      "4-Down": 1295,
+      "5-Down": 391
+    },
+    "timestamp": "2025-04-06T08:16:02.475586"
+  },
+  "C:\\Users\\Sheryl\\Desktop\\CS6400\\ai_crossword_solver/data/puzzle_samples/processed_puzzle_samples\\mini_2025_02_19.csv": {
+    "status": "timeout",
+    "domain_lengths": {
+      "1-Across": 1,
+      "4-Across": 1,
+      "6-Across": 512,
+      "7-Across": 722,
+      "8-Across": 1295,
+      "1-Down": 47,
+      "2-Down": 70,
+      "3-Down": 51,
+      "4-Down": 100,
+      "5-Down": 1
+    },
+    "timestamp": "2025-04-06T08:21:05.095144"
+  },
+  "C:\\Users\\Sheryl\\Desktop\\CS6400\\ai_crossword_solver/data/puzzle_samples/processed_puzzle_samples\\mini_2025_02_23.csv": {
+    "status": "timeout",
+    "domain_lengths": {
+      "1-Across": 503,
+      "5-Across": 609,
+      "7-Across": 971,
+      "9-Across": 1,
+      "10-Across": 1195,
+      "1-Down": 316,
+      "2-Down": 567,
+      "3-Down": 1,
+      "4-Down": 1127,
+      "6-Down": 365,
+      "8-Down": 57
+    },
+    "timestamp": "2025-04-06T08:26:12.251896"
+  },
+  "C:\\Users\\Sheryl\\Desktop\\CS6400\\ai_crossword_solver/data/puzzle_samples/processed_puzzle_samples\\mini_2025_02_24.csv": {
+    "status": "timeout",
+    "domain_lengths": {
+      "1-Across": 55,
+      "4-Across": 1,
+      "7-Across": 34,
+      "8-Across": 82,
+      "9-Across": 197,
+      "1-Down": 1,
+      "2-Down": 586,
+      "3-Down": 1314,
+      "5-Down": 488,
+      "6-Down": 1
+    },
+    "timestamp": "2025-04-06T08:31:14.596993"
+  },
+  "C:\\Users\\Sheryl\\Desktop\\CS6400\\ai_crossword_solver/data/puzzle_samples/processed_puzzle_samples\\mini_2025_02_25.csv": {
+    "status": "timeout",
+    "domain_lengths": {
+      "1-Across": 981,
+      "6-Across": 1,
+      "7-Across": 303,
+      "8-Across": 1,
+      "9-Across": 145,
+      "1-Down": 39,
+      "2-Down": 96,
+      "3-Down": 1,
+      "4-Down": 21,
+      "5-Down": 71
+    },
+    "timestamp": "2025-04-06T08:36:17.053829"
+  },
+  "C:\\Users\\Sheryl\\Desktop\\CS6400\\ai_crossword_solver/data/puzzle_samples/processed_puzzle_samples\\mini_2025_02_26.csv": {
+    "status": "timeout",
+    "domain_lengths": {
+      "1-Across": 1195,
+      "6-Across": 151,
+      "7-Across": 1751,
+      "8-Across": 1,
+      "9-Across": 67,
+      "1-Down": 259,
+      "2-Down": 1,
+      "3-Down": 539,
+      "4-Down": 1335,
+      "5-Down": 197
+    },
+    "timestamp": "2025-04-06T08:41:19.432937"
+  },
+  "C:\\Users\\Sheryl\\Desktop\\CS6400\\ai_crossword_solver/data/puzzle_samples/processed_puzzle_samples\\mini_2025_02_28.csv": {
+    "status": "timeout",
+    "domain_lengths": {
+      "1-Across": 1,
+      "5-Across": 9972,
+      "6-Across": 9972,
+      "7-Across": 4995,
+      "8-Across": 1295,
+      "1-Down": 580,
+      "2-Down": 178,
+      "3-Down": 488,
+      "4-Down": 100,
+      "5-Down": 4995
+    },
+    "timestamp": "2025-04-06T08:46:24.144623"
+  },
+  "C:\\Users\\Sheryl\\Desktop\\CS6400\\ai_crossword_solver/data/puzzle_samples/processed_puzzle_samples\\mini_2025_03_03.csv": {
+    "status": "timeout",
+    "domain_lengths": {
+      "1-Across": 27,
+      "5-Across": 99,
+      "6-Across": 10,
+      "7-Across": 17,
+      "8-Across": 600,
+      "1-Down": 1,
+      "2-Down": 9972,
+      "3-Down": 9972,
+      "4-Down": 1,
+      "5-Down": 4995
+    },
+    "timestamp": "2025-04-06T08:51:28.939131"
+  },
+  "C:\\Users\\Sheryl\\Desktop\\CS6400\\ai_crossword_solver/data/puzzle_samples/processed_puzzle_samples\\mini_2025_03_05.csv": {
+    "status": "timeout",
+    "domain_lengths": {
+      "1-Across": 50,
+      "6-Across": 1,
+      "7-Across": 39,
+      "8-Across": 520,
+      "9-Across": 69,
+      "1-Down": 1,
+      "2-Down": 961,
+      "3-Down": 1,
+      "4-Down": 534,
+      "5-Down": 1751
+    },
+    "timestamp": "2025-04-06T08:56:33.538618"
+  },
+  "C:\\Users\\Sheryl\\Desktop\\CS6400\\ai_crossword_solver/data/puzzle_samples/processed_puzzle_samples\\mini_2025_03_10.csv": {
+    "status": "timeout",
+    "domain_lengths": {
+      "1-Across": 26,
+      "5-Across": 22,
+      "6-Across": 54,
+      "8-Across": 42,
+      "9-Across": 3,
+      "1-Down": 1295,
+      "2-Down": 1,
+      "3-Down": 9972,
+      "4-Down": 1,
+      "7-Down": 1295
+    },
+    "timestamp": "2025-04-06T09:01:50.234890"
+  },
+  "C:\\Users\\Sheryl\\Desktop\\CS6400\\ai_crossword_solver/data/puzzle_samples/processed_puzzle_samples\\mini_2025_03_14.csv": {
+    "status": "timeout",
+    "domain_lengths": {
+      "1-Across": 64,
+      "4-Across": 1391,
+      "6-Across": 722,
+      "7-Across": 1,
+      "8-Across": 1295,
+      "1-Down": 930,
+      "2-Down": 681,
+      "3-Down": 1,
+      "4-Down": 365,
+      "5-Down": 74
+    },
+    "timestamp": "2025-04-06T09:07:00.350909"
+  },
+  "C:\\Users\\Sheryl\\Desktop\\CS6400\\ai_crossword_solver/data/puzzle_samples/processed_puzzle_samples\\mini_2025_03_15.csv": {
+    "status": "timeout",
+    "domain_lengths": {
+      "1-Across": 332,
+      "5-Across": 785,
+      "6-Across": 1,
+      "7-Across": 1,
+      "8-Across": 1,
+      "9-Across": 1335,
+      "10-Across": 281,
+      "1-Down": 1,
+      "2-Down": 13,
+      "3-Down": 15,
+      "4-Down": 48,
+      "5-Down": 15,
+      "6-Down": 1,
+      "7-Down": 29
+    },
+    "timestamp": "2025-04-06T09:12:02.876986"
+  },
+  "C:\\Users\\Sheryl\\Desktop\\CS6400\\ai_crossword_solver/data/puzzle_samples/processed_puzzle_samples\\mini_2025_03_18.csv": {
+    "status": "timeout",
+    "domain_lengths": {
+      "1-Across": 1,
+      "5-Across": 981,
+      "6-Across": 393,
+      "7-Across": 635,
+      "8-Across": 752,
+      "1-Down": 712,
+      "2-Down": 1,
+      "3-Down": 270,
+      "4-Down": 307,
+      "5-Down": 4995
+    },
+    "timestamp": "2025-04-06T09:17:05.271602"
+  }
+}

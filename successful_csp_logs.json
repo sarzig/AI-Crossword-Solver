@@ -1,0 +1,1234 @@
+{
+  "C:\\Users\\Sheryl\\Desktop\\CS6400\\ai_crossword_solver/data/puzzle_samples/processed_puzzle_samples\\mini_2024_03_08.csv": {
+    "status": "success",
+    "num_solutions": 1,
+    "duration_sec": 0.005950212478637695,
+    "domain_lengths": {
+      "1-Across": 1,
+      "5-Across": 1,
+      "7-Across": 1,
+      "8-Across": 1,
+      "9-Across": 1,
+      "10-Across": 1,
+      "1-Down": 1,
+      "2-Down": 1,
+      "3-Down": 1,
+      "4-Down": 1,
+      "6-Down": 1
+    },
+    "timestamp": "2025-04-06T05:21:57.357715",
+    "solutions": [
+      {
+        "1-Across": "STOW",
+        "5-Across": "POLES",
+        "7-Across": "ADDLE",
+        "8-Across": "MAPLE",
+        "9-Across": "SYRUP",
+        "10-Across": "SOPS",
+        "1-Down": "SPAMS",
+        "2-Down": "TODAYS",
+        "3-Down": "OLDPRO",
+        "4-Down": "WELLUP",
+        "6-Down": "SEEPS"
+      }
+    ]
+  },
+  "C:\\Users\\Sheryl\\Desktop\\CS6400\\ai_crossword_solver/data/puzzle_samples/processed_puzzle_samples\\mini_2024_03_09.csv": {
+    "status": "success",
+    "num_solutions": 1,
+    "duration_sec": 1.5517170429229736,
+    "domain_lengths": {
+      "1-Across": 786,
+      "6-Across": 1,
+      "9-Across": 1,
+      "10-Across": 37,
+      "11-Across": 1,
+      "14-Across": 1,
+      "15-Across": 1,
+      "1-Down": 1,
+      "2-Down": 16,
+      "3-Down": 10,
+      "4-Down": 1,
+      "5-Down": 2,
+      "7-Down": 1,
+      "8-Down": 1,
+      "11-Down": 1,
+      "12-Down": 1,
+      "13-Down": 1
+    },
+    "timestamp": "2025-04-06T05:22:01.394566",
+    "solutions": [
+      {
+        "6-Across": "DAYCARE",
+        "9-Across": "SWEETON",
+        "11-Across": "WIZARDS",
+        "14-Across": "OPENAI",
+        "15-Across": "WADDLE",
+        "1-Down": "ADS",
+        "7-Down": "ROADIE",
+        "8-Down": "ENDS",
+        "11-Down": "WOW",
+        "12-Down": "IPA",
+        "13-Down": "ZED",
+        "4-Down": "iceland",
+        "5-Down": "lateral",
+        "3-Down": "rye",
+        "2-Down": "paw",
+        "10-Across": "lead",
+        "1-Across": "april"
+      }
+    ]
+  },
+  "C:\\Users\\Sheryl\\Desktop\\CS6400\\ai_crossword_solver/data/puzzle_samples/processed_puzzle_samples\\mini_2024_03_13.csv": {
+    "status": "success",
+    "num_solutions": 1,
+    "duration_sec": 0.011143922805786133,
+    "domain_lengths": {
+      "1-Across": 1,
+      "5-Across": 3,
+      "6-Across": 1,
+      "7-Across": 1,
+      "8-Across": 1,
+      "1-Down": 1,
+      "2-Down": 1,
+      "3-Down": 21,
+      "4-Down": 1,
+      "6-Down": 1
+    },
+    "timestamp": "2025-04-06T05:22:13.814217",
+    "solutions": [
+      {
+        "1-Across": "ZOOS",
+        "8-Across": "THOR",
+        "1-Down": "ZHUZH",
+        "2-Down": "OUTRO",
+        "4-Down": "SHH",
+        "6-Down": "DET",
+        "6-Across": "dutch",
+        "7-Across": "ezra",
+        "5-Across": "hush",
+        "3-Down": "oscar"
+      }
+    ]
+  },
+  "C:\\Users\\Sheryl\\Desktop\\CS6400\\ai_crossword_solver/data/puzzle_samples/processed_puzzle_samples\\mini_2024_03_14.csv": {
+    "status": "success",
+    "num_solutions": 1,
+    "duration_sec": 0.6105010509490967,
+    "domain_lengths": {
+      "1-Across": 1266,
+      "6-Across": 254,
+      "7-Across": 1,
+      "8-Across": 1,
+      "9-Across": 1,
+      "1-Down": 1,
+      "2-Down": 6,
+      "3-Down": 10,
+      "4-Down": 6,
+      "5-Down": 1
+    },
+    "timestamp": "2025-04-06T05:22:17.056178",
+    "solutions": [
+      {
+        "7-Across": "INBOX",
+        "8-Across": "TERRA",
+        "9-Across": "SLAYS",
+        "1-Down": "SNITS",
+        "5-Down": "texas",
+        "2-Down": "panel",
+        "4-Down": "ivory",
+        "3-Down": "libra",
+        "6-Across": "naive",
+        "1-Across": "split"
+      }
+    ]
+  },
+  "C:\\Users\\Sheryl\\Desktop\\CS6400\\ai_crossword_solver/data/puzzle_samples/processed_puzzle_samples\\mini_2024_03_15.csv": {
+    "status": "success",
+    "num_solutions": 1,
+    "duration_sec": 0.03145790100097656,
+    "domain_lengths": {
+      "1-Across": 10,
+      "4-Across": 1,
+      "5-Across": 1,
+      "7-Across": 1,
+      "8-Across": 5,
+      "1-Down": 40,
+      "2-Down": 1,
+      "3-Down": 1,
+      "5-Down": 1,
+      "6-Down": 62
+    },
+    "timestamp": "2025-04-06T05:22:19.613889",
+    "solutions": [
+      {
+        "4-Across": "APR",
+        "5-Across": "BYFAR",
+        "2-Down": "UPFOR",
+        "3-Down": "GRABS",
+        "5-Down": "BBC",
+        "7-Across": "booby",
+        "8-Across": "curse",
+        "1-Across": "bug",
+        "1-Down": "bayou",
+        "6-Down": "rye"
+      }
+    ]
+  },
+  "C:\\Users\\Sheryl\\Desktop\\CS6400\\ai_crossword_solver/data/puzzle_samples/processed_puzzle_samples\\mini_2024_03_18.csv": {
+    "status": "success",
+    "num_solutions": 1,
+    "duration_sec": 0.08553290367126465,
+    "domain_lengths": {
+      "1-Across": 1,
+      "6-Across": 4,
+      "7-Across": 5,
+      "8-Across": 3,
+      "9-Across": 1,
+      "1-Down": 1,
+      "2-Down": 722,
+      "3-Down": 1,
+      "4-Down": 174,
+      "5-Down": 1
+    },
+    "timestamp": "2025-04-06T05:22:24.931022",
+    "solutions": [
+      {
+        "9-Across": "STEPS",
+        "1-Down": "FLAWS",
+        "3-Down": "ATREE",
+        "5-Down": "HEELS",
+        "1-Across": "flash",
+        "8-Across": "wheel",
+        "6-Across": "lithe",
+        "7-Across": "agree",
+        "4-Down": "sheep",
+        "2-Down": "light"
+      }
+    ]
+  },
+  "C:\\Users\\Sheryl\\Desktop\\CS6400\\ai_crossword_solver/data/puzzle_samples/processed_puzzle_samples\\mini_2024_03_23.csv": {
+    "status": "success",
+    "num_solutions": 1,
+    "duration_sec": 5.14627480506897,
+    "domain_lengths": {
+      "1-Across": 258,
+      "4-Across": 1,
+      "6-Across": 1032,
+      "8-Across": 1,
+      "9-Across": 1,
+      "10-Across": 635,
+      "11-Across": 1,
+      "1-Down": 2,
+      "2-Down": 1,
+      "3-Down": 1,
+      "4-Down": 2,
+      "5-Down": 5,
+      "6-Down": 14,
+      "7-Down": 3
+    },
+    "timestamp": "2025-04-06T05:27:40.593649",
+    "solutions": [
+      {
+        "4-Across": "CODED",
+        "8-Across": "EMERSON",
+        "9-Across": "NUTELLA",
+        "11-Across": "APS",
+        "2-Down": "ADCREEP",
+        "3-Down": "measles",
+        "1-Down": "rosetta",
+        "4-Down": "camus",
+        "7-Down": "ana",
+        "5-Down": "droll",
+        "6-Down": "men",
+        "1-Across": "ram",
+        "10-Across": "steel",
+        "6-Across": "mascara"
+      }
+    ]
+  },
+  "C:\\Users\\Sheryl\\Desktop\\CS6400\\ai_crossword_solver/data/puzzle_samples/processed_puzzle_samples\\mini_2024_03_30.csv": {
+    "status": "success",
+    "num_solutions": 1,
+    "duration_sec": 0.011981725692749023,
+    "domain_lengths": {
+      "1-Across": 1,
+      "5-Across": 2,
+      "7-Across": 1,
+      "8-Across": 1,
+      "9-Across": 1,
+      "10-Across": 1,
+      "12-Across": 1,
+      "13-Across": 8,
+      "1-Down": 2,
+      "2-Down": 1,
+      "3-Down": 1,
+      "4-Down": 1,
+      "5-Down": 1,
+      "6-Down": 1,
+      "7-Down": 4,
+      "11-Down": 1
+    },
+    "timestamp": "2025-04-06T05:34:06.486741",
+    "solutions": [
+      {
+        "1-Across": "SUBS",
+        "8-Across": "EWW",
+        "9-Across": "CRO",
+        "10-Across": "VENMOED",
+        "2-Down": "URL",
+        "3-Down": "BITCOIN",
+        "4-Down": "SMORES",
+        "5-Down": "SEWERS",
+        "6-Down": "PRODS",
+        "11-Down": "MMA",
+        "7-Across": "realtor",
+        "12-Across": "remiss",
+        "1-Down": "shawnee",
+        "5-Across": "shrimp",
+        "7-Down": "rev",
+        "13-Across": "sean"
+      }
+    ]
+  },
+  "C:\\Users\\Sheryl\\Desktop\\CS6400\\ai_crossword_solver/data/puzzle_samples/processed_puzzle_samples\\mini_2025_01_13.csv": {
+    "status": "success",
+    "num_solutions": 1,
+    "duration_sec": 7.321415185928345,
+    "domain_lengths": {
+      "1-Across": 1,
+      "5-Across": 295,
+      "7-Across": 1,
+      "8-Across": 1,
+      "9-Across": 516,
+      "1-Down": 9,
+      "2-Down": 1,
+      "3-Down": 8,
+      "4-Down": 1,
+      "6-Down": 65
+    },
+    "timestamp": "2025-04-06T06:06:46.391620",
+    "solutions": [
+      {
+        "1-Across": "MEME",
+        "7-Across": "SONIA",
+        "8-Across": "SKITS",
+        "4-Down": "EDITS",
+        "2-Down": "evoke",
+        "3-Down": "mania",
+        "1-Down": "messy",
+        "6-Down": "east",
+        "5-Across": "evade",
+        "9-Across": "yeast"
+      }
+    ]
+  },
+  "C:\\Users\\Sheryl\\Desktop\\CS6400\\ai_crossword_solver/data/puzzle_samples/processed_puzzle_samples\\mini_2025_01_18.csv": {
+    "status": "success",
+    "num_solutions": 1,
+    "duration_sec": 0.131544828414917,
+    "domain_lengths": {
+      "1-Across": 1,
+      "6-Across": 106,
+      "8-Across": 1,
+      "10-Across": 159,
+      "11-Across": 1,
+      "12-Across": 1,
+      "14-Across": 1,
+      "15-Across": 586,
+      "1-Down": 4,
+      "2-Down": 1,
+      "3-Down": 3,
+      "4-Down": 1,
+      "5-Down": 2,
+      "7-Down": 3,
+      "9-Down": 1,
+      "13-Down": 1
+    },
+    "timestamp": "2025-04-06T06:27:00.220529",
+    "solutions": [
+      {
+        "1-Across": "TYPED",
+        "8-Across": "ALIASES",
+        "11-Across": "IGO",
+        "12-Across": "SEACRAB",
+        "14-Across": "STEELE",
+        "2-Down": "YALIES",
+        "4-Down": "EPA",
+        "13-Down": "CEL",
+        "9-Down": "sober",
+        "5-Down": "desired",
+        "3-Down": "primate",
+        "7-Down": "regale",
+        "1-Down": "thats",
+        "6-Across": "harper",
+        "10-Across": "tim",
+        "15-Across": "elder"
+      }
+    ]
+  },
+  "C:\\Users\\Sheryl\\Desktop\\CS6400\\ai_crossword_solver/data/puzzle_samples/processed_puzzle_samples\\mini_2025_02_01.csv": {
+    "status": "success",
+    "num_solutions": 1,
+    "duration_sec": 0.015000581741333008,
+    "domain_lengths": {
+      "1-Across": 16,
+      "5-Across": 1,
+      "6-Across": 1,
+      "7-Across": 1,
+      "8-Across": 1,
+      "9-Across": 1,
+      "10-Across": 4,
+      "1-Down": 1,
+      "2-Down": 2,
+      "3-Down": 2,
+      "4-Down": 1,
+      "5-Down": 1,
+      "6-Down": 1,
+      "7-Down": 1
+    },
+    "timestamp": "2025-04-06T07:16:02.655460",
+    "solutions": [
+      {
+        "5-Across": "PASTA",
+        "6-Across": "CARSON",
+        "7-Across": "BACKERS",
+        "8-Across": "ARMENIA",
+        "9-Across": "GLANCES",
+        "1-Down": "DARKENS",
+        "4-Down": "KANSAS",
+        "5-Down": "PACMAN",
+        "6-Down": "CARLE",
+        "7-Down": "BAGS",
+        "2-Down": "essence",
+        "3-Down": "storied",
+        "10-Across": "sensed",
+        "1-Across": "desk"
+      }
+    ]
+  },
+  "C:\\Users\\Sheryl\\Desktop\\CS6400\\ai_crossword_solver/data/puzzle_samples/processed_puzzle_samples\\mini_2025_02_05.csv": {
+    "status": "success",
+    "num_solutions": 1,
+    "duration_sec": 0.007227659225463867,
+    "domain_lengths": {
+      "1-Across": 2,
+      "5-Across": 1,
+      "6-Across": 1,
+      "7-Across": 1,
+      "8-Across": 1,
+      "1-Down": 1,
+      "2-Down": 1,
+      "3-Down": 1,
+      "4-Down": 1,
+      "5-Down": 1
+    },
+    "timestamp": "2025-04-06T07:30:28.200352",
+    "solutions": [
+      {
+        "5-Across": "MAXIS",
+        "6-Across": "ININK",
+        "7-Across": "NETS",
+        "8-Across": "ITS",
+        "1-Down": "MANET",
+        "2-Down": "EXITS",
+        "3-Down": "TINS",
+        "5-Down": "MINI",
+        "4-Down": "ask",
+        "1-Across": "meta"
+      }
+    ]
+  },
+  "C:\\Users\\Sheryl\\Desktop\\CS6400\\ai_crossword_solver/data/puzzle_samples/processed_puzzle_samples\\mini_2025_02_08.csv": {
+    "status": "success",
+    "num_solutions": 1,
+    "duration_sec": 0.3861246109008789,
+    "domain_lengths": {
+      "1-Across": 10,
+      "5-Across": 110,
+      "6-Across": 11,
+      "8-Across": 1,
+      "9-Across": 1,
+      "10-Across": 29,
+      "11-Across": 1,
+      "1-Down": 1,
+      "2-Down": 423,
+      "3-Down": 84,
+      "4-Down": 1,
+      "5-Down": 2,
+      "6-Down": 1,
+      "7-Down": 11
+    },
+    "timestamp": "2025-04-06T07:40:36.830307",
+    "solutions": [
+      {
+        "8-Across": "HOTPINK",
+        "9-Across": "INTENTS",
+        "11-Across": "PROS",
+        "1-Down": "HARPERS",
+        "4-Down": "DORKS",
+        "6-Down": "CHIMP",
+        "5-Down": "tattoo",
+        "1-Across": "head",
+        "6-Across": "charger",
+        "7-Down": "honor",
+        "10-Across": "moore",
+        "3-Down": "agent",
+        "5-Across": "tango",
+        "2-Down": "engine"
+      }
+    ]
+  },
+  "C:\\Users\\Sheryl\\Desktop\\CS6400\\ai_crossword_solver/data/puzzle_samples/processed_puzzle_samples\\mini_2025_02_16.csv": {
+    "status": "success",
+    "num_solutions": 1,
+    "duration_sec": 0.04232215881347656,
+    "domain_lengths": {
+      "1-Across": 4,
+      "6-Across": 1,
+      "7-Across": 3,
+      "8-Across": 1,
+      "9-Across": 5,
+      "1-Down": 1,
+      "2-Down": 1,
+      "3-Down": 69,
+      "4-Down": 1,
+      "5-Down": 93
+    },
+    "timestamp": "2025-04-06T08:05:57.771102",
+    "solutions": [
+      {
+        "6-Across": "ACHOO",
+        "8-Across": "TURKS",
+        "1-Down": "WAFTS",
+        "2-Down": "ACLUE",
+        "4-Down": "COOKS",
+        "7-Across": "floor",
+        "1-Across": "watch",
+        "9-Across": "sense",
+        "3-Down": "thorn",
+        "5-Down": "horse"
+      }
+    ]
+  },
+  "C:\\Users\\Sheryl\\Desktop\\CS6400\\ai_crossword_solver/data/puzzle_samples/processed_puzzle_samples\\mini_2025_03_01.csv": {
+    "status": "success",
+    "num_solutions": 1,
+    "duration_sec": 0.015578746795654297,
+    "domain_lengths": {
+      "1-Across": 33,
+      "6-Across": 3,
+      "7-Across": 1,
+      "9-Across": 2,
+      "10-Across": 1,
+      "11-Across": 7,
+      "12-Across": 1,
+      "1-Down": 1,
+      "2-Down": 10,
+      "3-Down": 1,
+      "4-Down": 2,
+      "5-Down": 1,
+      "7-Down": 2,
+      "8-Down": 4
+    },
+    "timestamp": "2025-04-06T08:46:26.643579",
+    "solutions": [
+      {
+        "7-Across": "CANDLES",
+        "10-Across": "NOTABIT",
+        "12-Across": "SELLS",
+        "1-Down": "SLALOMS",
+        "3-Down": "ODDBALL",
+        "5-Down": "ENEMIES",
+        "9-Across": "alabama",
+        "4-Down": "relabel",
+        "7-Down": "can",
+        "6-Across": "laden",
+        "8-Down": "sat",
+        "11-Across": "melee",
+        "2-Down": "manatee",
+        "1-Across": "smore"
+      }
+    ]
+  },
+  "C:\\Users\\Sheryl\\Desktop\\CS6400\\ai_crossword_solver/data/puzzle_samples/processed_puzzle_samples\\mini_2025_03_04.csv": {
+    "status": "success",
+    "num_solutions": 1,
+    "duration_sec": 0.010845422744750977,
+    "domain_lengths": {
+      "1-Across": 1,
+      "5-Across": 1,
+      "6-Across": 1,
+      "7-Across": 14,
+      "8-Across": 1,
+      "1-Down": 1,
+      "2-Down": 1,
+      "3-Down": 1,
+      "4-Down": 1,
+      "5-Down": 2
+    },
+    "timestamp": "2025-04-06T08:51:31.264475",
+    "solutions": [
+      {
+        "1-Across": "BCCS",
+        "5-Across": "YOUOK",
+        "6-Across": "OATLY",
+        "8-Across": "ISPY",
+        "1-Down": "BOARS",
+        "3-Down": "COLBY",
+        "4-Down": "SKY",
+        "2-Down": "cutup",
+        "5-Down": "yogi",
+        "7-Across": "grub"
+      }
+    ]
+  },
+  "C:\\Users\\Sheryl\\Desktop\\CS6400\\ai_crossword_solver/data/puzzle_samples/processed_puzzle_samples\\mini_2025_03_06.csv": {
+    "status": "success",
+    "num_solutions": 1,
+    "duration_sec": 0.005959033966064453,
+    "domain_lengths": {
+      "1-Across": 1,
+      "4-Across": 1,
+      "5-Across": 1,
+      "6-Across": 1,
+      "7-Across": 1,
+      "1-Down": 1,
+      "2-Down": 1,
+      "3-Down": 1,
+      "4-Down": 1,
+      "5-Down": 1
+    },
+    "timestamp": "2025-04-06T08:56:35.739479",
+    "solutions": [
+      {
+        "1-Across": "ZAP",
+        "4-Across": "ZINE",
+        "5-Across": "ZELDA",
+        "6-Across": "ORCS",
+        "7-Across": "OOH",
+        "1-Down": "ZILCH",
+        "2-Down": "ANDS",
+        "3-Down": "PEA",
+        "4-Down": "ZERO",
+        "5-Down": "ZOO"
+      }
+    ]
+  },
+  "C:\\Users\\Sheryl\\Desktop\\CS6400\\ai_crossword_solver/data/puzzle_samples/processed_puzzle_samples\\mini_2025_03_07.csv": {
+    "status": "success",
+    "num_solutions": 1,
+    "duration_sec": 0.015292644500732422,
+    "domain_lengths": {
+      "1-Across": 1,
+      "5-Across": 1,
+      "7-Across": 4,
+      "8-Across": 3,
+      "9-Across": 1,
+      "1-Down": 63,
+      "2-Down": 1,
+      "3-Down": 1,
+      "4-Down": 6,
+      "6-Down": 1
+    },
+    "timestamp": "2025-04-06T08:56:38.069505",
+    "solutions": [
+      {
+        "1-Across": "HUGS",
+        "5-Across": "AHOLD",
+        "9-Across": "OPS",
+        "2-Down": "UHUH",
+        "3-Down": "GOPRO",
+        "6-Down": "DEES",
+        "8-Across": "three",
+        "7-Across": "rupee",
+        "4-Down": "sleep",
+        "1-Down": "hart"
+      }
+    ]
+  },
+  "C:\\Users\\Sheryl\\Desktop\\CS6400\\ai_crossword_solver/data/puzzle_samples/processed_puzzle_samples\\mini_2025_03_13.csv": {
+    "status": "success",
+    "num_solutions": 1,
+    "duration_sec": 0.006098508834838867,
+    "domain_lengths": {
+      "1-Across": 1,
+      "5-Across": 1,
+      "6-Across": 1,
+      "7-Across": 1,
+      "8-Across": 1,
+      "1-Down": 1,
+      "2-Down": 1,
+      "3-Down": 1,
+      "4-Down": 1,
+      "6-Down": 1
+    },
+    "timestamp": "2025-04-06T09:01:57.994395",
+    "solutions": [
+      {
+        "1-Across": "ATAD",
+        "5-Across": "META",
+        "6-Across": "UPSET",
+        "7-Across": "PULSE",
+        "8-Across": "SPATS",
+        "1-Down": "AMPUP",
+        "2-Down": "TESLA",
+        "3-Down": "ATEST",
+        "4-Down": "DATES",
+        "6-Down": "UPS"
+      }
+    ]
+  },
+  "C:\\Users\\Sheryl\\Desktop\\CS6400\\ai_crossword_solver/data/puzzle_samples/processed_puzzle_samples\\mini_2024_03_12.csv": {
+    "status": "success",
+    "num_solutions": 7,
+    "duration_sec": 3.634049892425537,
+    "domain_lengths": {
+      "1-Across": 33,
+      "4-Across": 1,
+      "6-Across": 1,
+      "7-Across": 981,
+      "8-Across": 68,
+      "1-Down": 1,
+      "2-Down": 11,
+      "3-Down": 1,
+      "4-Down": 55,
+      "5-Down": 5
+    },
+    "timestamp": "2025-04-06T05:22:11.310051",
+    "solutions": [
+      {
+        "4-Across": "CENTS",
+        "6-Across": "ACTUP",
+        "1-Down": "UNTAG",
+        "3-Down": "espy",
+        "5-Down": "eche",
+        "2-Down": "stud",
+        "1-Across": "use",
+        "4-Down": "cass",
+        "8-Across": "seg",
+        "7-Across": "shady"
+      }
+    ]
+  },
+  "C:\\Users\\Sheryl\\Desktop\\CS6400\\ai_crossword_solver/data/puzzle_samples/processed_puzzle_samples\\mini_2024_03_17.csv": {
+    "status": "success",
+    "num_solutions": 2,
+    "duration_sec": 0.18726348876953125,
+    "domain_lengths": {
+      "1-Across": 2,
+      "6-Across": 6,
+      "7-Across": 1,
+      "8-Across": 6,
+      "9-Across": 2,
+      "1-Down": 1,
+      "2-Down": 1,
+      "3-Down": 766,
+      "4-Down": 1,
+      "5-Down": 106
+    },
+    "timestamp": "2025-04-06T05:22:22.354654",
+    "solutions": [
+      {
+        "7-Across": "RHODE",
+        "1-Down": "QTR",
+        "2-Down": "UHHUH",
+        "4-Down": "FEDEX",
+        "1-Across": "quaff",
+        "9-Across": "hex",
+        "6-Across": "three",
+        "8-Across": "use",
+        "5-Down": "fee",
+        "3-Down": "arose"
+      }
+    ]
+  },
+  "C:\\Users\\Sheryl\\Desktop\\CS6400\\ai_crossword_solver/data/puzzle_samples/processed_puzzle_samples\\mini_2024_03_19.csv": {
+    "status": "success",
+    "num_solutions": 3,
+    "duration_sec": 0.13161849975585938,
+    "domain_lengths": {
+      "1-Across": 1,
+      "5-Across": 1,
+      "6-Across": 5,
+      "8-Across": 1,
+      "9-Across": 49,
+      "1-Down": 1,
+      "2-Down": 79,
+      "3-Down": 1,
+      "4-Down": 1,
+      "7-Down": 217
+    },
+    "timestamp": "2025-04-06T05:22:27.606811",
+    "solutions": [
+      {
+        "5-Across": "MEME",
+        "8-Across": "TODO",
+        "1-Down": "UMM",
+        "3-Down": "AMTOO",
+        "4-Down": "HEADS",
+        "1-Across": "utah",
+        "6-Across": "metad",
+        "9-Across": "host",
+        "2-Down": "teeth",
+        "7-Down": "dot"
+      }
+    ]
+  },
+  "C:\\Users\\Sheryl\\Desktop\\CS6400\\ai_crossword_solver/data/puzzle_samples/processed_puzzle_samples\\mini_2024_03_24.csv": {
+    "status": "success",
+    "num_solutions": 5,
+    "duration_sec": 18.727468013763428,
+    "domain_lengths": {
+      "1-Across": 1,
+      "5-Across": 23,
+      "7-Across": 14,
+      "8-Across": 1,
+      "9-Across": 26,
+      "10-Across": 3,
+      "1-Down": 40,
+      "2-Down": 1,
+      "3-Down": 48,
+      "4-Down": 1,
+      "6-Down": 766
+    },
+    "timestamp": "2025-04-06T05:28:01.859519",
+    "solutions": [
+      {
+        "1-Across": "ESPN",
+        "8-Across": "ECKO",
+        "2-Down": "STPETE",
+        "4-Down": "NICKED",
+        "10-Across": "eddo",
+        "7-Across": "spica",
+        "5-Across": "strip",
+        "9-Across": "teel",
+        "1-Down": "ess",
+        "3-Down": "priced",
+        "6-Down": "paolo"
+      }
+    ]
+  },
+  "C:\\Users\\Sheryl\\Desktop\\CS6400\\ai_crossword_solver/data/puzzle_samples/processed_puzzle_samples\\mini_2024_03_25.csv": {
+    "status": "success",
+    "num_solutions": 4,
+    "duration_sec": 5.874392509460449,
+    "domain_lengths": {
+      "1-Across": 981,
+      "6-Across": 1,
+      "7-Across": 1,
+      "8-Across": 1,
+      "9-Across": 52,
+      "1-Down": 3,
+      "2-Down": 15,
+      "3-Down": 1,
+      "4-Down": 10,
+      "5-Down": 9
+    },
+    "timestamp": "2025-04-06T05:28:10.351824",
+    "solutions": [
+      {
+        "6-Across": "AEIOU",
+        "7-Across": "CARDS",
+        "8-Across": "TREES",
+        "3-Down": "AIRES",
+        "1-Down": "cacti",
+        "5-Down": "russ",
+        "4-Down": "rode",
+        "2-Down": "heart",
+        "9-Across": "its",
+        "1-Across": "charr"
+      }
+    ]
+  },
+  "C:\\Users\\Sheryl\\Desktop\\CS6400\\ai_crossword_solver/data/puzzle_samples/processed_puzzle_samples\\mini_2024_03_28.csv": {
+    "status": "success",
+    "num_solutions": 2,
+    "duration_sec": 2.40272855758667,
+    "domain_lengths": {
+      "1-Across": 17,
+      "5-Across": 5,
+      "6-Across": 1,
+      "7-Across": 1,
+      "8-Across": 10,
+      "1-Down": 930,
+      "2-Down": 1,
+      "3-Down": 539,
+      "4-Down": 1,
+      "5-Down": 1
+    },
+    "timestamp": "2025-04-06T05:33:17.820527",
+    "solutions": [
+      {
+        "7-Across": "MINTS",
+        "2-Down": "ICANT",
+        "4-Down": "GYMS",
+        "5-Down": "DAMS",
+        "6-Across": "alarm",
+        "5-Across": "decay",
+        "8-Across": "seth",
+        "1-Across": "bigg",
+        "3-Down": "garth",
+        "1-Down": "belie"
+      }
+    ]
+  },
+  "C:\\Users\\Sheryl\\Desktop\\CS6400\\ai_crossword_solver/data/puzzle_samples/processed_puzzle_samples\\mini_2025_01_04.csv": {
+    "status": "success",
+    "num_solutions": 4,
+    "duration_sec": 0.026811599731445312,
+    "domain_lengths": {
+      "1-Across": 47,
+      "4-Across": 1,
+      "6-Across": 2,
+      "8-Across": 1,
+      "9-Across": 19,
+      "10-Across": 1,
+      "12-Across": 1,
+      "13-Across": 14,
+      "1-Down": 1,
+      "2-Down": 57,
+      "3-Down": 19,
+      "4-Down": 1,
+      "5-Down": 1,
+      "6-Down": 1,
+      "7-Down": 91,
+      "11-Down": 1
+    },
+    "timestamp": "2025-04-06T05:44:14.185012",
+    "solutions": [
+      {
+        "4-Across": "HARES",
+        "8-Across": "BRR",
+        "10-Across": "SNOWMAN",
+        "12-Across": "STIES",
+        "1-Down": "CARROTS",
+        "4-Down": "HORNS",
+        "5-Down": "SODAS",
+        "6-Down": "CBS",
+        "11-Down": "WII",
+        "6-Across": "corncob",
+        "13-Across": "sis",
+        "3-Down": "becomes",
+        "9-Across": "ode",
+        "1-Across": "cab",
+        "2-Down": "arn",
+        "7-Down": "ben"
+      }
+    ]
+  },
+  "C:\\Users\\Sheryl\\Desktop\\CS6400\\ai_crossword_solver/data/puzzle_samples/processed_puzzle_samples\\mini_2025_01_08.csv": {
+    "status": "success",
+    "num_solutions": 3,
+    "duration_sec": 0.09358358383178711,
+    "domain_lengths": {
+      "1-Across": 5,
+      "5-Across": 1,
+      "7-Across": 4,
+      "8-Across": 1,
+      "9-Across": 3,
+      "1-Down": 1,
+      "2-Down": 234,
+      "3-Down": 1,
+      "4-Down": 1,
+      "6-Down": 1
+    },
+    "timestamp": "2025-04-06T05:55:49.909639",
+    "solutions": [
+      {
+        "5-Across": "ATEAM",
+        "1-Down": "PASTA",
+        "3-Down": "LEANS",
+        "4-Down": "LATTE",
+        "6-Down": "MEH",
+        "8-Across": "tenth",
+        "9-Across": "arse",
+        "7-Across": "state",
+        "1-Across": "pall",
+        "2-Down": "atter"
+      }
+    ]
+  },
+  "C:\\Users\\Sheryl\\Desktop\\CS6400\\ai_crossword_solver/data/puzzle_samples/processed_puzzle_samples\\mini_2025_01_09.csv": {
+    "status": "success",
+    "num_solutions": 4,
+    "duration_sec": 225.07187128067017,
+    "domain_lengths": {
+      "1-Across": 87,
+      "5-Across": 1335,
+      "6-Across": 1127,
+      "7-Across": 1,
+      "8-Across": 1,
+      "1-Down": 431,
+      "2-Down": 49,
+      "3-Down": 1,
+      "4-Down": 17,
+      "5-Down": 17
+    },
+    "timestamp": "2025-04-06T05:59:37.568417",
+    "solutions": [
+      {
+        "7-Across": "DEETS",
+        "8-Across": "ARESO",
+        "3-Down": "FEATS",
+        "4-Down": "torso",
+        "5-Down": "rada",
+        "2-Down": "albee",
+        "1-Across": "daft",
+        "1-Down": "domer",
+        "6-Across": "ambar",
+        "5-Across": "roleo"
+      }
+    ]
+  },
+  "C:\\Users\\Sheryl\\Desktop\\CS6400\\ai_crossword_solver/data/puzzle_samples/processed_puzzle_samples\\mini_2025_01_11.csv": {
+    "status": "success",
+    "num_solutions": 4,
+    "duration_sec": 0.04815077781677246,
+    "domain_lengths": {
+      "1-Across": 6,
+      "5-Across": 1,
+      "7-Across": 1,
+      "8-Across": 1,
+      "9-Across": 11,
+      "10-Across": 1,
+      "12-Across": 44,
+      "13-Across": 1,
+      "1-Down": 1,
+      "2-Down": 1,
+      "3-Down": 1,
+      "4-Down": 1,
+      "5-Down": 1,
+      "6-Down": 11,
+      "7-Down": 1,
+      "11-Down": 6
+    },
+    "timestamp": "2025-04-06T06:04:42.806997",
+    "solutions": [
+      {
+        "5-Across": "LILIES",
+        "7-Across": "YOGAMAT",
+        "8-Across": "OCD",
+        "10-Across": "WHATTHE",
+        "13-Across": "AIDS",
+        "1-Down": "BIGDATA",
+        "2-Down": "OLA",
+        "4-Down": "TEACHES",
+        "5-Down": "LOCHS",
+        "7-Down": "YOW",
+        "3-Down": "limited",
+        "1-Across": "bolt",
+        "11-Down": "tri",
+        "6-Down": "steel",
+        "9-Across": "ice",
+        "12-Across": "streel"
+      }
+    ]
+  },
+  "C:\\Users\\Sheryl\\Desktop\\CS6400\\ai_crossword_solver/data/puzzle_samples/processed_puzzle_samples\\mini_2025_01_12.csv": {
+    "status": "success",
+    "num_solutions": 4,
+    "duration_sec": 111.09872484207153,
+    "domain_lengths": {
+      "1-Across": 1,
+      "5-Across": 1,
+      "7-Across": 1,
+      "8-Across": 1266,
+      "9-Across": 4995,
+      "1-Down": 1,
+      "2-Down": 15,
+      "3-Down": 5,
+      "4-Down": 30,
+      "6-Down": 8
+    },
+    "timestamp": "2025-04-06T06:06:36.541216",
+    "solutions": [
+      {
+        "1-Across": "CATS",
+        "5-Across": "ALOHA",
+        "7-Across": "BOTOX",
+        "1-Down": "CABS",
+        "3-Down": "total",
+        "6-Down": "axle",
+        "2-Down": "aloma",
+        "4-Down": "shole",
+        "8-Across": "small",
+        "9-Across": "alee"
+      }
+    ]
+  },
+  "C:\\Users\\Sheryl\\Desktop\\CS6400\\ai_crossword_solver/data/puzzle_samples/processed_puzzle_samples\\mini_2025_02_09.csv": {
+    "status": "success",
+    "num_solutions": 8,
+    "duration_sec": 0.22896432876586914,
+    "domain_lengths": {
+      "1-Across": 20,
+      "4-Across": 5,
+      "6-Across": 1,
+      "7-Across": 4,
+      "8-Across": 1,
+      "1-Down": 95,
+      "2-Down": 1,
+      "3-Down": 1,
+      "4-Down": 1,
+      "5-Down": 57
+    },
+    "timestamp": "2025-04-06T07:40:39.423709",
+    "solutions": [
+      {
+        "6-Across": "LAMAR",
+        "8-Across": "TDS",
+        "2-Down": "AIMED",
+        "3-Down": "TEAMS",
+        "4-Down": "CLE",
+        "7-Across": "enema",
+        "4-Across": "chief",
+        "1-Across": "sat",
+        "5-Down": "fra",
+        "1-Down": "shant"
+      }
+    ]
+  },
+  "C:\\Users\\Sheryl\\Desktop\\CS6400\\ai_crossword_solver/data/puzzle_samples/processed_puzzle_samples\\mini_2025_02_20.csv": {
+    "status": "success",
+    "num_solutions": 6,
+    "duration_sec": 0.06515192985534668,
+    "domain_lengths": {
+      "1-Across": 1,
+      "4-Across": 1,
+      "7-Across": 3,
+      "8-Across": 41,
+      "9-Across": 1,
+      "1-Down": 1,
+      "2-Down": 1,
+      "3-Down": 1,
+      "4-Down": 53,
+      "5-Down": 55,
+      "6-Down": 1
+    },
+    "timestamp": "2025-04-06T08:21:07.509861",
+    "solutions": [
+      {
+        "1-Across": "BAM",
+        "4-Across": "OHBABY",
+        "9-Across": "ADS",
+        "1-Down": "BABKA",
+        "2-Down": "ABLED",
+        "3-Down": "MYERS",
+        "6-Down": "BUC",
+        "7-Across": "double",
+        "8-Across": "decker",
+        "4-Down": "odd",
+        "5-Down": "hoe"
+      }
+    ]
+  },
+  "C:\\Users\\Sheryl\\Desktop\\CS6400\\ai_crossword_solver/data/puzzle_samples/processed_puzzle_samples\\mini_2025_02_21.csv": {
+    "status": "success",
+    "num_solutions": 2,
+    "duration_sec": 0.06402850151062012,
+    "domain_lengths": {
+      "1-Across": 1,
+      "6-Across": 1,
+      "7-Across": 4,
+      "8-Across": 4,
+      "9-Across": 6,
+      "1-Down": 1,
+      "2-Down": 56,
+      "3-Down": 1,
+      "4-Down": 51,
+      "5-Down": 1
+    },
+    "timestamp": "2025-04-06T08:21:09.921133",
+    "solutions": [
+      {
+        "1-Across": "STEPS",
+        "6-Across": "LUMON",
+        "1-Down": "SLAMS",
+        "3-Down": "EMOJI",
+        "5-Down": "SNL",
+        "7-Across": "atoll",
+        "8-Across": "mojo",
+        "9-Across": "sri",
+        "4-Down": "polo",
+        "2-Down": "tutor"
+      }
+    ]
+  },
+  "C:\\Users\\Sheryl\\Desktop\\CS6400\\ai_crossword_solver/data/puzzle_samples/processed_puzzle_samples\\mini_2025_02_27.csv": {
+    "status": "success",
+    "num_solutions": 3,
+    "duration_sec": 0.003980875015258789,
+    "domain_lengths": {
+      "1-Across": 2,
+      "4-Across": 1,
+      "6-Across": 1,
+      "7-Across": 21,
+      "8-Across": 1,
+      "1-Down": 1,
+      "2-Down": 1,
+      "3-Down": 1,
+      "4-Down": 6,
+      "5-Down": 1
+    },
+    "timestamp": "2025-04-06T08:41:21.787095",
+    "solutions": [
+      {
+        "4-Across": "MEMOS",
+        "6-Across": "UHOHS",
+        "8-Across": "MGM",
+        "1-Down": "HEHIM",
+        "3-Down": "HOHUM",
+        "5-Down": "SSS",
+        "2-Down": "among",
+        "1-Across": "hah",
+        "4-Down": "mus",
+        "7-Across": "sinus"
+      }
+    ]
+  },
+  "C:\\Users\\Sheryl\\Desktop\\CS6400\\ai_crossword_solver/data/puzzle_samples/processed_puzzle_samples\\mini_2025_03_08.csv": {
+    "status": "success",
+    "num_solutions": 2,
+    "duration_sec": 2.959904670715332,
+    "domain_lengths": {
+      "1-Across": 1,
+      "6-Across": 1,
+      "8-Across": 1,
+      "9-Across": 2,
+      "10-Across": 16,
+      "11-Across": 1,
+      "13-Across": 3,
+      "14-Across": 1,
+      "1-Down": 1,
+      "2-Down": 1,
+      "3-Down": 1,
+      "4-Down": 1,
+      "5-Down": 1,
+      "6-Down": 4995,
+      "7-Down": 4995,
+      "12-Down": 70
+    },
+    "timestamp": "2025-04-06T08:56:43.457394",
+    "solutions": [
+      {
+        "1-Across": "SWAPS",
+        "14-Across": "SYS",
+        "1-Down": "STONES",
+        "2-Down": "WALNUTS",
+        "3-Down": "ATL",
+        "4-Down": "PIETINS",
+        "5-Down": "SOGOOD",
+        "6-Across": "station",
+        "8-Across": "college",
+        "11-Across": "reunion",
+        "9-Across": "ann",
+        "13-Across": "stand",
+        "10-Across": "too",
+        "12-Down": "nay",
+        "6-Down": "scar",
+        "7-Down": "neon"
+      }
+    ]
+  }
+}
