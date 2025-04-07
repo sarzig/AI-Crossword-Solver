@@ -1,8 +1,18 @@
+from multiprocessing import Process, Queue
+import multiprocessing
+import os
+import re
+import time
 import pandas as pd
 from tqdm import tqdm
 from clue_classification_and_processing.helpers import get_project_root
-from letter_pattern_matching import find_words_by_pattern
+from clue_solving.letter_pattern_matching import find_words_by_pattern
 from puzzle_objects.crossword_and_clue import Crossword
+
+multiprocessing.set_start_method("spawn", force=True)
+
+import nltk
+nltk.download('words')
 
 def is_valid(assignment, constraints):
     
@@ -19,19 +29,19 @@ def is_valid(assignment, constraints):
 
     return True
 
-# def compute_letter_frequencies(words):
-#     letter_counts = Counter()
-#     total = 0
-#     for word in words:
-#         for ch in word.lower():
-#             if ch.isalpha():
-#                 letter_counts[ch] += 1
-#                 total += 1
-#     freq = {ch: round((count / total) * 100, 2) for ch, count in letter_counts.items()}
-#     return freq
+def compute_letter_frequencies(words):
+    letter_counts = Counter()
+    total = 0
+    for word in words:
+        for ch in word.lower():
+            if ch.isalpha():
+                letter_counts[ch] += 1
+                total += 1
+    freq = {ch: round((count / total) * 100, 2) for ch, count in letter_counts.items()}
+    return freq
 
-# def word_score(word, freq_table):
-#     return sum(freq_table.get(ch.lower(), 0) for ch in word)
+def word_score(word, freq_table):
+    return sum(freq_table.get(ch.lower(), 0) for ch in word)
 
 
 # def solve_csp(variables, domains, constraints, assignment={}):
@@ -53,9 +63,54 @@ def is_valid(assignment, constraints):
 # Partial CSP
 ###
 
-def solve_all_max_partial_csp(variables, domains, constraints, assignment=None):
-    from collections import defaultdict
 
+# def solve_all_max_partial_csp(variables, domains, constraints, assignment=None):
+#     from collections import defaultdict
+
+#     if assignment is None:
+#         assignment = {}
+
+#     var_constraints = defaultdict(list)
+#     for v1, v2, i1, i2 in constraints:
+#         var_constraints[v1].append((v1, v2, i1, i2))
+#         var_constraints[v2].append((v2, v1, i2, i1))
+
+#     sorted_vars = sorted(
+#         [v for v in variables if domains[v] and v not in assignment],
+#         key=lambda v: -len(var_constraints[v])
+#     )
+
+#     all_solutions = []
+#     max_len = [len(assignment)]
+
+#     def backtrack(current_assignment, remaining_vars):
+#         if not is_valid(current_assignment, constraints):
+#             return
+
+#         current_len = len(current_assignment)
+#         if current_len > max_len[0]:
+#             max_len[0] = current_len
+#             all_solutions.clear()
+#             all_solutions.append(current_assignment.copy())
+#         elif current_len == max_len[0]:
+#             all_solutions.append(current_assignment.copy())
+
+#         if not remaining_vars:
+#             return
+
+#         next_var = min(remaining_vars, key=lambda v: len(domains[v]))
+#         # for value in domains[next_var]:
+#         for value in tqdm(domains[next_var], desc=f"Trying {next_var}", leave=False):
+#             current_assignment[next_var] = value
+#             backtrack(current_assignment, [v for v in remaining_vars if v != next_var])
+#             del current_assignment[next_var]
+
+#     # remaining_vars = [v for v in variables if domains[v] and v not in assignment]
+#     backtrack(assignment.copy(), sorted_vars)
+#     return all_solutions
+
+# With letter frequency
+def solve_all_max_partial_csp(variables, domains, constraints, assignment=None, freq_table=None, tqdm_enabled=True):
     if assignment is None:
         assignment = {}
 
@@ -88,62 +143,81 @@ def solve_all_max_partial_csp(variables, domains, constraints, assignment=None):
             return
 
         next_var = min(remaining_vars, key=lambda v: len(domains[v]))
-        # for value in domains[next_var]:
-        for value in tqdm(domains[next_var], desc=f"Trying {next_var}", leave=False):
+        candidates = domains[next_var]
+        if freq_table:
+            candidates = sorted(candidates, key=lambda w: -word_score(w, freq_table))
+
+        # for value in tqdm(candidates, desc=f"Trying {next_var}", leave=False):
+        #     current_assignment[next_var] = value
+        #     backtrack(current_assignment, [v for v in remaining_vars if v != next_var])
+        #     del current_assignment[next_var]
+
+        iterator = tqdm(candidates, desc=f"Trying {next_var}", leave=False) if tqdm_enabled else candidates
+
+        for value in iterator:
             current_assignment[next_var] = value
             backtrack(current_assignment, [v for v in remaining_vars if v != next_var])
             del current_assignment[next_var]
 
-    # remaining_vars = [v for v in variables if domains[v] and v not in assignment]
     backtrack(assignment.copy(), sorted_vars)
     return all_solutions
 
-# def solve_all_max_partial_csp(variables, domains, constraints, assignment=None, freq_table=None):
-#     if assignment is None:
-#         assignment = {}
 
-#     var_constraints = defaultdict(list)
+# def find_all_valid_full_extensions(base_assignment, variables, domains, constraints, verbose=False):
+#     from collections import defaultdict
+
+#     results = []
+
+#     # Build constraint lookup
+#     constraint_map = defaultdict(list)
 #     for v1, v2, i1, i2 in constraints:
-#         var_constraints[v1].append((v1, v2, i1, i2))
-#         var_constraints[v2].append((v2, v1, i2, i1))
+#         constraint_map[v1].append((v1, v2, i1, i2))
+#         constraint_map[v2].append((v2, v1, i2, i1))
 
-#     sorted_vars = sorted([v for v in variables if domains[v] and v not in assignment],
-#                          key=lambda v: -len(var_constraints[v]))
+#     def is_partial_valid(assign):
+#         for v1 in assign:
+#             for (a, b, i, j) in constraint_map[v1]:
+#                 if b in assign:
+#                     if assign[a][i].lower() != assign[b][j].lower():
+#                         if verbose:
+#                             print(f"Constraint fail: {a}[{i}]={assign[a][i]} != {b}[{j}]={assign[b][j]}")
+#                         return False
+#         return True
 
-#     all_solutions = []
-#     max_len = [len(assignment)]
-
-#     def backtrack(current_assignment, remaining_vars):
-#         if not is_valid(current_assignment, constraints):
+#     def backtrack(curr_assign):
+#         if not is_partial_valid(curr_assign):
+#             if verbose:
+#                 print(f"Pruned: {curr_assign}")
 #             return
-#         current_len = len(current_assignment)
-#         if current_len > max_len[0]:
-#             max_len[0] = current_len
-#             all_solutions.clear()
-#             all_solutions.append(current_assignment.copy())
-#         elif current_len == max_len[0]:
-#             all_solutions.append(current_assignment.copy())
-#         if not remaining_vars:
+
+#         if len(curr_assign) == len(variables):
+#             if verbose:
+#                 print(f"✅ Found full valid extension: {curr_assign}")
+#             results.append(curr_assign.copy())
 #             return
-#         next_var = min(remaining_vars, key=lambda v: len(domains[v]))
-#         candidates = domains[next_var]
-#         if freq_table:
-#             candidates = sorted(candidates, key=lambda w: -word_score(w, freq_table))
-#         for value in candidates:
-#             current_assignment[next_var] = value
-#             backtrack(current_assignment, [v for v in remaining_vars if v != next_var])
-#             del current_assignment[next_var]
 
-#     backtrack(assignment.copy(), sorted_vars)
-#     return all_solutions
+#         unassigned = [v for v in variables if v not in curr_assign and domains[v]]
+#         if not unassigned:
+#             return
+
+#         next_var = min(unassigned, key=lambda v: len(domains[v]))
+#         for value in domains[next_var]:
+#             curr_assign[next_var] = value
+#             if verbose:
+#                 print(f"Trying {next_var} = {value}")
+#             backtrack(curr_assign)
+#             del curr_assign[next_var]
+
+#     backtrack(base_assignment.copy())
+#     return results
 
 
-def find_all_valid_full_extensions(base_assignment, variables, domains, constraints, verbose=False):
+
+def find_all_valid_full_extensions(base_assignment, variables, domains, constraints, verbose=False, freq_table=None):
     from collections import defaultdict
+    from tqdm import tqdm
 
     results = []
-
-    # Build constraint lookup
     constraint_map = defaultdict(list)
     for v1, v2, i1, i2 in constraints:
         constraint_map[v1].append((v1, v2, i1, i2))
@@ -158,6 +232,9 @@ def find_all_valid_full_extensions(base_assignment, variables, domains, constrai
                             print(f"Constraint fail: {a}[{i}]={assign[a][i]} != {b}[{j}]={assign[b][j]}")
                         return False
         return True
+
+    def word_score(word, freq_table):
+        return sum(freq_table.get(ch.lower(), 0) for ch in word)
 
     def backtrack(curr_assign):
         if not is_partial_valid(curr_assign):
@@ -176,53 +253,74 @@ def find_all_valid_full_extensions(base_assignment, variables, domains, constrai
             return
 
         next_var = min(unassigned, key=lambda v: len(domains[v]))
-        for value in domains[next_var]:
+        candidates = domains[next_var]
+        if freq_table:
+            candidates = sorted(candidates, key=lambda w: -word_score(w, freq_table))
+
+        for value in tqdm(candidates, desc=f"Extending {next_var}", leave=False) if verbose else candidates:
             curr_assign[next_var] = value
-            if verbose:
-                print(f"Trying {next_var} = {value}")
             backtrack(curr_assign)
             del curr_assign[next_var]
 
     backtrack(base_assignment.copy())
     return results
 
+# Solve CSP
+def solve_in_two_phases(variables, domains, constraints, domain_threshold=100, verbose=True, freq_table=None, assignment=None):
+    from tqdm import tqdm
 
+    # 1. Split variables
+    small_domain_vars = [v for v in variables if len(domains[v]) <= domain_threshold]
+    large_domain_vars = [v for v in variables if len(domains[v]) > domain_threshold]
 
-# def find_all_valid_full_extensions(base_assignment, variables, domains, constraints, verbose=False, freq_table=None):
-#     results = []
-#     constraint_map = defaultdict(list)
-#     for v1, v2, i1, i2 in constraints:
-#         constraint_map[v1].append((v1, v2, i1, i2))
-#         constraint_map[v2].append((v2, v1, i2, i1))
+    if verbose:
+        print(f"Running CSP on {len(small_domain_vars)} small-domain variables first...")
+        for v in large_domain_vars:
+            print(f"⏭️ Deferring {v} (domain size = {len(domains[v])})")
 
-#     def is_partial_valid(assign):
-#         for v1 in assign:
-#             for (a, b, i, j) in constraint_map[v1]:
-#                 if b in assign and assign[a][i].lower() != assign[b][j].lower():
-#                     return False
-#         return True
+    # Filter constraints that only involve small domain vars
+    filtered_constraints = [c for c in constraints if c[0] in small_domain_vars and c[1] in small_domain_vars]
 
-#     def backtrack(curr_assign):
-#         if not is_partial_valid(curr_assign):
-#             return
-#         if len(curr_assign) == len(variables):
-#             results.append(curr_assign.copy())
-#             return
-#         unassigned = [v for v in variables if v not in curr_assign and domains[v]]
-#         if not unassigned:
-#             return
-#         next_var = min(unassigned, key=lambda v: len(domains[v]))
-#         candidates = domains[next_var]
-#         if freq_table:
-#             candidates = sorted(candidates, key=lambda w: -word_score(w, freq_table))
-#         for value in candidates:
-#             curr_assign[next_var] = value
-#             backtrack(curr_assign)
-#             del curr_assign[next_var]
+    # 2. Solve CSP on small domain variables
+    base_solutions = solve_all_max_partial_csp(small_domain_vars, domains, filtered_constraints, freq_table=freq_table, assignment=assignment, tqdm_enabled=True)
 
-#     backtrack(base_assignment.copy())
-#     return results
+    if not base_solutions:
+        print("❌ No base partial solutions found.")
+        return []
 
+    all_extensions = []
+    for i, base in enumerate(base_solutions):
+        if verbose:
+            print(f"🧹 Max partial {i+1} from Phase 1:")
+            for k in sorted(base):
+                print(f"  {k}: {base[k]}")
+
+        if len(base) == len(variables):
+            print("✅ Partial is already complete! No need to extend.")
+            all_extensions.append(base)
+            continue
+
+        print(f"🔁 Extending base partial {i+1}...")
+        extensions = find_all_valid_full_extensions(base, variables, domains, constraints, verbose=False, freq_table=freq_table)
+
+        if not extensions:
+            print("❌ No valid extensions found from this base.")
+        else:
+            print(f"✅ Found {len(extensions)} valid full extensions from this base.")
+            all_extensions.extend(extensions)
+
+        # Auto-place if only one solution
+    if len(all_extensions) == 1:
+        print("🔧 Placing words from the unique solution into the crossword...")
+        solution = all_extensions[0]
+        for var, word in solution.items():
+            try:
+                cw.place_word(word, var)
+                print(f"  ✅ Placed {word} in {var}")
+            except Exception as e:
+                print(f"  ❌ Could not place {word} in {var}: {e}")
+
+    return all_extensions
 
 #########################################################################################
 # Generate variables, domains, constraints 
@@ -441,120 +539,3 @@ else:
     else:
         print("✅ Base is already a full valid solution — no need to extend.")
 
-#########################################################################################
-# Placing answers that are not in the word list (for testing)
-# #########################################################################################
-import nltk
-from nltk.corpus import words
-
-def auto_place_non_dict_words(cw, verbose=True):
-    # Make sure NLTK corpus is ready
-    nltk.download("words", quiet=True)
-    word_list = set(w.lower() for w in words.words())
-
-    # Get the answer column name
-    answer_col_name = None
-    for col in cw.clue_df.columns:
-        if "answer" in col.lower():
-            answer_col_name = col
-            break
-
-    if not answer_col_name:
-        print("No answer column found in clue_df.")
-        return
-
-    non_dict_words = []
-
-    for _, row in cw.clue_df.iterrows():
-        var = row["number_direction"]
-        answer = str(row.get(answer_col_name, "")).strip().lower()
-
-        if not answer:
-            continue
-
-        if answer not in word_list:
-            try:
-                cw.place_word(answer, var)
-                non_dict_words.append((var, answer))
-                if verbose:
-                    print(f"✅ Placed non-dictionary word: cw.place_word('{answer}', '{var}')")
-            except Exception as e:
-                print(f" Could not place '{answer}' at '{var}': {e}")
-
-    if not non_dict_words:
-        print("✅ No non-dictionary answers found.")
-    else:
-        print(f"\n Placed {len(non_dict_words)} non-dictionary words:")
-        for var, word in non_dict_words:
-            print(f'cw.place_word("{word}", "{var}")')
-
-#########################################################################################
-# Auto Testing -  With words that don't exist in the dictionary already placed
-#########################################################################################
-
-
-# mini_loc = f"{get_project_root()}/data/puzzle_samples/mini_03262025.xlsx"
-# cw = load_crossword_from_file_with_answers(mini_loc)
-
-# # Automatically detect and place non-dictionary words
-# auto_place_non_dict_words(cw)
-
-# # Optional: visually verify
-# cw.detailed_print()
-
-# variables, domains, constraints = generate_variables_domains_constraints_from_crossword(cw)
-
-
-# filled = get_filled_words(cw)
-
-# partial_solutions = solve_all_max_partial_csp(variables, domains, constraints, assignment=filled)
-
-# print(f"partial solutions: {partial_solutions}")
-    
-#########################################################################################
-# Testing - clueset 2
-#########################################################################################
-
-
-mini_loc = f"{get_project_root()}/data/puzzle_samples/processed_puzzle_samples/mini_2024_03_17.csv"
-
-cw = load_crossword_from_file_with_answers(mini_loc)
-
-# Automatically detect and place non-dictionary words
-auto_place_non_dict_words(cw)
-
-# Optional: visually verify
-cw.detailed_print()
-
-variables, domains, constraints = generate_variables_domains_constraints_from_crossword(cw)
-
-
-filled = get_filled_words(cw)
-
-partial_solutions = solve_all_max_partial_csp(variables, domains, constraints, assignment=filled)
-
-print(f"partial solutions: {partial_solutions}")
-
-#########################################################################################
-# Testing - clueset 2
-#########################################################################################
-
-
-mini_loc = f"{get_project_root()}/data/puzzle_samples/processed_puzzle_samples/mini_2024_03_02.csv"
-
-cw = load_crossword_from_file_with_answers(mini_loc)
-
-# Automatically detect and place non-dictionary words
-auto_place_non_dict_words(cw)
-
-# Optional: visually verify
-cw.detailed_print()
-
-variables, domains, constraints = generate_variables_domains_constraints_from_crossword(cw)
-
-
-filled = get_filled_words(cw)
-
-partial_solutions = solve_all_max_partial_csp(variables, domains, constraints, assignment=filled)
-
-print(f"partial solutions: {partial_solutions}")
