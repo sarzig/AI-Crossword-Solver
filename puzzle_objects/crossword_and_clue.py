@@ -5,6 +5,10 @@ from nltk.corpus import words
 from clue_classification_and_processing.helpers import conditional_raise, print_if, get_project_root, \
     get_clues_dataframe
 from web.nyt_html_to_standard_csv import get_random_clue_df
+import sys
+import os
+
+from clue_classification_and_processing.helpers import conditional_raise, print_if, get_project_root
 
 
 # xxx sheryl replace with actual function call. Right now leaving as global
