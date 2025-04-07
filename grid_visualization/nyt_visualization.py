@@ -34,7 +34,7 @@ def launch_crossword_visualizer(crossword=None):
     SCREEN_HEIGHT = 720
 
     # Build the grid: 1 for white cells ("[ ]"), 0 for black cells ("[■]")
-    grid = [[1 if cell == "[ ]" else 0 for cell in row] for row in crossword.grid]
+    grid = [[1 if cell != "■" else 0 for cell in row] for row in crossword.grid]
 
     CELL_SIZE = 50
     GRID_HEIGHT = len(crossword.grid)
