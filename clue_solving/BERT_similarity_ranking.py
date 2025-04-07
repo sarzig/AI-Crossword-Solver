@@ -46,7 +46,7 @@ def rank_candidates(clue, candidates, tokenizer, model, top_k=None, device="cuda
     return [ans for ans, _ in ranked[:top_k]] if top_k else [ans for ans, _ in ranked]
 
 
-def rank_csp_solutions(cw, solutions, tokenizer, model):
+def rank_csp_solutions(cw, solutions, tokenizer, model, device):
     """
     Given a Crossword object and multiple full CSP solutions,
     return them ranked by summed BERT-based relevance to clues.
@@ -94,7 +94,6 @@ def rank_candidates_batch(clue_answer_pairs, tokenizer, model, device="cuda", ba
             else:
                 raise e
     return scores
-
 
 
 def generate_variables_domains_constraints_from_crossword_ranked(cw, tokenizer, model, top_k=5, device="cuda"):
@@ -151,11 +150,11 @@ def generate_variables_domains_constraints_from_crossword_ranked(cw, tokenizer, 
             pattern = ""
             for (r, c) in positions:
                 cell = grid[r][c]
-                if cell.startswith("[") and cell.endswith("]") and len(cell) == 3:
-                    ch = cell[1]
-                    pattern += ch if ch != " " else "."
+                if isinstance(cell, str) and cell.strip() and len(cell.strip()) == 1 and cell.strip().isalpha():
+                    pattern += cell.strip().lower()
                 else:
                     pattern += "."
+
 
             raw_domains[var] = find_words_by_pattern(pattern)
             print(f"🔍 {var} → pattern '{pattern}' → {len(raw_domains[var])} matches")
@@ -188,9 +187,8 @@ def generate_variables_domains_constraints_from_crossword_ranked(cw, tokenizer, 
                         continue
                     other_cell = grid[r][c]
                     if cell := grid[r][c]:
-                        if cell.startswith("[") and cell.endswith("]") and cell[1] != " ":
-                            if word[i].lower() != cell[1].lower():
-                                print(f"❌ Filtering out '{word}' for {var} at position ({r},{c}) due to letter '{word[i]}' ≠ '{cell[1]}'")
+                        if isinstance(cell, str) and cell.strip() and len(cell.strip()) == 1 and cell.strip().isalpha():
+                            if word[i].lower() != cell.strip().lower():
                                 valid = False
                                 break
                 if not valid:
@@ -280,136 +278,136 @@ def print_clues_and_answers(cw):
         answer = row.get(answer_col, "").strip().lower()
         print(f"  {var}: {clue} → {answer}")
 
-if __name__ == "__main__":
+# if __name__ == "__main__":
 
-    print(torch.cuda.is_available())
-    print(torch.cuda.get_device_name(0) if torch.cuda.is_available() else "No GPU")
+#     print(torch.cuda.is_available())
+#     print(torch.cuda.get_device_name(0) if torch.cuda.is_available() else "No GPU")
 
-    # Detect device
-    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-    print(f"Using device: {device}")
+#     # Detect device
+#     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+#     print(f"Using device: {device}")
 
-    # Load tokenizer and model once, move model to device
-    tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
-    model = BertForSequenceClassification.from_pretrained("textattack/bert-base-uncased-SST-2").to(device)
+#     # Load tokenizer and model once, move model to device
+#     tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
+#     model = BertForSequenceClassification.from_pretrained("textattack/bert-base-uncased-SST-2").to(device)
 
-    from transformers import RobertaTokenizer, RobertaForSequenceClassification
+#     from transformers import RobertaTokenizer, RobertaForSequenceClassification
 
-    # tokenizer = RobertaTokenizer.from_pretrained("ynie/roberta-base-snli_mnli_fever_anli_R1_R2_R3-nli")
-    # model = RobertaForSequenceClassification.from_pretrained("ynie/roberta-base-snli_mnli_fever_anli_R1_R2_R3-nli").to(device)
+#     # tokenizer = RobertaTokenizer.from_pretrained("ynie/roberta-base-snli_mnli_fever_anli_R1_R2_R3-nli")
+#     # model = RobertaForSequenceClassification.from_pretrained("ynie/roberta-base-snli_mnli_fever_anli_R1_R2_R3-nli").to(device)
 
 
 
-    model.eval()
+#     model.eval()
 
-    mini_loc = f"{get_project_root()}/data/puzzle_samples/processed_puzzle_samples/mini_2024_03_02.csv"
+#     mini_loc = f"{get_project_root()}/data/puzzle_samples/processed_puzzle_samples/mini_2024_03_02.csv"
 
-    cw = load_crossword_from_file_with_answers(mini_loc)
+#     cw = load_crossword_from_file_with_answers(mini_loc)
 
-    # Automatically detect and place non-dictionary words
-    auto_place_non_dict_words(cw)
+#     # Automatically detect and place non-dictionary words
+#     auto_place_non_dict_words(cw)
 
-    # cw.place_word()
-    print_clues_and_answers(cw)
-    # 📋 Clues and Answers:
-    #   1-Across: Algebra, calculus, etc. → math
-    #   5-Across: College reunion attendees → alumni
-    #   8-Across: Broadway's "The Book of ____" → mormon
-    #   9-Across: Author Patchett → ann
-    #   10-Across: Nickname for a longtime Supreme Court justice → rbg
-    #   12-Across: Heat on low → simmer
-    #   14-Across: Drug such as morphine or codeine → opiate
-    #   15-Across: Feature of a leopard or lobster → claw
-    #   1-Down: Word belted out by Freddie Mercury in the first verse of "Bohemian Rhapsody" → mama
-    #   2-Down: Pete ___, All-Star slugger for the New York Mets → alonso
-    #   3-Down: Rounded root vegetable → turnip
-    #   4-Down: "Let me think ..." → hmm
-    #   6-Down: Standard → normal
-    #   7-Down: Still being tested, as an app → inbeta
-    #   11-Down: Got bigger → grew
-    #   13-Down: Piece of podcasting equipment → mic
+#     # cw.place_word()
+#     print_clues_and_answers(cw)
+#     # 📋 Clues and Answers:
+#     #   1-Across: Algebra, calculus, etc. → math
+#     #   5-Across: College reunion attendees → alumni
+#     #   8-Across: Broadway's "The Book of ____" → mormon
+#     #   9-Across: Author Patchett → ann
+#     #   10-Across: Nickname for a longtime Supreme Court justice → rbg
+#     #   12-Across: Heat on low → simmer
+#     #   14-Across: Drug such as morphine or codeine → opiate
+#     #   15-Across: Feature of a leopard or lobster → claw
+#     #   1-Down: Word belted out by Freddie Mercury in the first verse of "Bohemian Rhapsody" → mama
+#     #   2-Down: Pete ___, All-Star slugger for the New York Mets → alonso
+#     #   3-Down: Rounded root vegetable → turnip
+#     #   4-Down: "Let me think ..." → hmm
+#     #   6-Down: Standard → normal
+#     #   7-Down: Still being tested, as an app → inbeta
+#     #   11-Down: Got bigger → grew
+#     #   13-Down: Piece of podcasting equipment → mic
 
-    clue_answer_map = {
-        # "1-Across": "math",
-        "5-Across": "alumni",
-        "8-Across": "mormon",
-        # "9-Across": "ann",
-        # "10-Across": "rbg",
-        "12-Across": "simmer",
-        "14-Across": "opiate",
-        "15-Across": "claw",
-        "1-Down": "mama",
-        # "2-Down": "alonso",
-        # "3-Down": "turnip",
-        # "4-Down": "hmm",
-        # "6-Down": "normal",
-        # "7-Down": "inbeta",
-        "11-Down": "grew",
-        "13-Down": "mic"
-    }
+#     clue_answer_map = {
+#         # "1-Across": "math",
+#         "5-Across": "alumni",
+#         "8-Across": "mormon",
+#         # "9-Across": "ann",
+#         # "10-Across": "rbg",
+#         "12-Across": "simmer",
+#         "14-Across": "opiate",
+#         "15-Across": "claw",
+#         "1-Down": "mama",
+#         # "2-Down": "alonso",
+#         # "3-Down": "turnip",
+#         # "4-Down": "hmm",
+#         # "6-Down": "normal",
+#         # "7-Down": "inbeta",
+#         "11-Down": "grew",
+#         "13-Down": "mic"
+#     }
 
-    auto_place_clues(cw, clue_answer_map)
+#     auto_place_clues(cw, clue_answer_map)
 
-    # Optional: visually verify
-    cw.detailed_print()
+#     # Optional: visually verify
+#     cw.detailed_print()
 
-    filled = get_filled_words(cw)
-    print(f"filled words: {filled}")
+#     filled = get_filled_words(cw)
+#     print(f"filled words: {filled}")
 
-    print("🟢 ABOUT TO CALL DOMAIN GENERATION...")
-    variables, domains, constraints = variables, domains, constraints = generate_variables_domains_constraints_from_crossword_ranked(
-        cw, tokenizer=tokenizer, model=model, top_k=100, device=device
-    )
-    print("✅ DOMAIN GENERATION DONE.")
+#     print("🟢 ABOUT TO CALL DOMAIN GENERATION...")
+#     variables, domains, constraints = variables, domains, constraints = generate_variables_domains_constraints_from_crossword_ranked(
+#         cw, tokenizer=tokenizer, model=model, top_k=100, device=device
+#     )
+#     print("✅ DOMAIN GENERATION DONE.")
 
-    for var, domain in domains.items():
+#     for var, domain in domains.items():
 
-        if var not in filled:
-            print(f"\n{var} has {len(domain)} options → {domain}...\n")
+#         if var not in filled:
+#             print(f"\n{var} has {len(domain)} options → {domain}...\n")
 
-    true_answers = get_true_answers(cw)
-    # # Normalize true answers for comparison
-    true_cleaned = {k: v.strip().lower() for k, v in true_answers.items()}
-    missing = []
+#     true_answers = get_true_answers(cw)
+#     # # Normalize true answers for comparison
+#     true_cleaned = {k: v.strip().lower() for k, v in true_answers.items()}
+#     missing = []
 
-    for var, true_ans in true_cleaned.items():
-        domain = domains.get(var, [])
-        if true_ans.strip().lower() not in [d.strip().lower() for d in domain]:
-            missing.append((var, true_ans, domain))
+#     for var, true_ans in true_cleaned.items():
+#         domain = domains.get(var, [])
+#         if true_ans.strip().lower() not in [d.strip().lower() for d in domain]:
+#             missing.append((var, true_ans, domain))
 
-    if missing:
-        print("⚠️ True answers not found in domain after BERT ranking:")
-        for var, true_ans, domain in missing:
-            print(f"  {var}: {true_ans} ❌ not in domain of size {len(domain)}")
-    else:
-        print("✅ All true answers are in the CSP domains!")
-        solutions = solve_in_two_phases(
-        variables,
-        domains,
-        constraints,
-        domain_threshold=100,
-        verbose=True,
-        # freq_table=freq_table,
-        assignment=filled 
-    )
+#     if missing:
+#         print("⚠️ True answers not found in domain after BERT ranking:")
+#         for var, true_ans, domain in missing:
+#             print(f"  {var}: {true_ans} ❌ not in domain of size {len(domain)}")
+#     else:
+#         print("✅ All true answers are in the CSP domains!")
+#         solutions = solve_in_two_phases(
+#         variables,
+#         domains,
+#         constraints,
+#         domain_threshold=100,
+#         verbose=True,
+#         # freq_table=freq_table,
+#         assignment=filled 
+#     )
 
-        if solutions:
-            print(f"🎯 {len(solutions)} solution(s) returned. Reranking to find the best one...")
+#         if solutions:
+#             print(f"🎯 {len(solutions)} solution(s) returned. Reranking to find the best one...")
 
-            # Use BERT-based scoring to pick the best overall fit
-            ranked = rank_csp_solutions(cw, solutions, tokenizer, model)
+#             # Use BERT-based scoring to pick the best overall fit
+#             ranked = rank_csp_solutions(cw, solutions, tokenizer, model)
 
-            print(f"ranked: {ranked}")
-            solution, total_score = ranked[0]
+#             print(f"ranked: {ranked}")
+#             solution, total_score = ranked[0]
 
-            print(f"🏆 Best CSP solution selected with total relevance score: {total_score:.4f}")
+#             print(f"🏆 Best CSP solution selected with total relevance score: {total_score:.4f}")
 
-            for var, word in solution.items():
-                try:
-                    cw.place_word(word, var)
-                except Exception as e:
-                    print(f"⚠️ Could not place {var}: {word} → {e}")
+#             for var, word in solution.items():
+#                 try:
+#                     cw.place_word(word, var)
+#                 except Exception as e:
+#                     print(f"⚠️ Could not place {var}: {word} → {e}")
 
-        cw.detailed_print()
+#         cw.detailed_print()
 
 

@@ -401,6 +401,32 @@ def generate_variables_domains_constraints_from_file(crossword_file):
     cw = Crossword(clue_df=df)
     return generate_variables_domains_constraints_from_crossword(cw)
 
+# def get_filled_words(cw):
+#     filled = {}
+#     for _, row in cw.clue_df.iterrows():
+#         var = row["number_direction"]
+#         word = []
+
+#         start_row, start_col = row["start_row"], row["start_col"]
+#         end_row, end_col = row["end_row"], row["end_col"]
+
+#         if start_row == end_row:  # Across
+#             for c in range(start_col, end_col + 1):
+#                 cell = cw.grid[start_row][c]
+#                 word.append(cell[1] if cell != "[ ]" else ".")
+#         elif start_col == end_col:  # Down
+#             for r in range(start_row, end_row + 1):
+#                 cell = cw.grid[r][start_col]
+#                 word.append(cell[1] if cell != "[ ]" else ".")
+#         else:
+#             continue
+
+#         filled_word = "".join(word)
+#         if "." not in filled_word:
+#             filled[var] = filled_word
+
+#     return filled
+
 def get_filled_words(cw):
     filled = {}
     for _, row in cw.clue_df.iterrows():
@@ -413,11 +439,18 @@ def get_filled_words(cw):
         if start_row == end_row:  # Across
             for c in range(start_col, end_col + 1):
                 cell = cw.grid[start_row][c]
-                word.append(cell[1] if cell != "[ ]" else ".")
+                if isinstance(cell, str) and cell.strip() and len(cell.strip()) == 1 and cell.strip().isalpha():
+                    word.append(cell.strip())
+                else:
+                    word.append(".")
         elif start_col == end_col:  # Down
             for r in range(start_row, end_row + 1):
                 cell = cw.grid[r][start_col]
-                word.append(cell[1] if cell != "[ ]" else ".")
+                if isinstance(cell, str) and cell.strip() and len(cell.strip()) == 1 and cell.strip().isalpha():
+                    word.append(cell.strip())
+                else:
+                    word.append(".")
+
         else:
             continue
 
@@ -426,6 +459,7 @@ def get_filled_words(cw):
             filled[var] = filled_word
 
     return filled
+
 
 def load_crossword_from_file(file_name):
 
@@ -470,72 +504,72 @@ def load_crossword_from_file_with_answers(file_name):
 #############################################################
 # Load cross word file
 #############################################################
-mini_loc = f"{get_project_root()}/data/puzzle_samples/mini_03262025.xlsx"
+# mini_loc = f"{get_project_root()}/data/puzzle_samples/mini_03262025.xlsx"
 
-cw = load_crossword_from_file(mini_loc)
+# cw = load_crossword_from_file(mini_loc)
 
-# Non existing words
-cw.place_word("irl", "4-Across")
-cw.place_word("paris", "5-Across")
-cw.place_word("arroz", "2-Down")
-cw.place_word("pbj", "5-Down")
+# # Non existing words
+# cw.place_word("irl", "4-Across")
+# cw.place_word("paris", "5-Across")
+# cw.place_word("arroz", "2-Down")
+# cw.place_word("pbj", "5-Down")
 
-# # Regular words
-# cw.place_word("tab", "1-Across")
-# cw.place_word("broth", "7-Across")
-# cw.place_word("jazzy", "8-Across")
-# cw.place_word("blitz", "3-Down")
-# cw.place_word("shy", "6-Down")
+# # # Regular words
+# # cw.place_word("tab", "1-Across")
+# # cw.place_word("broth", "7-Across")
+# # cw.place_word("jazzy", "8-Across")
+# # cw.place_word("blitz", "3-Down")
+# # cw.place_word("shy", "6-Down")
 
-cw.detailed_print()
-
-
-variables, domains, constraints = generate_variables_domains_constraints_from_crossword(cw)
-
-print(f"variables: {variables}")
-print(f"domains: {domains}")
-print(f"constraints: {constraints}")
-
-filled = get_filled_words(cw)
-
-# from nltk.corpus import words  # assuming you've already downloaded `words`
-# word_list = set(word.lower() for word in words.words())
-# # Compute letter frequencies from the domain words only
-# all_domain_words = [word for domain in domains.values() for word in domain]
-# freq_table = compute_letter_frequencies(all_domain_words)
-
-# # Proceed to solve CSP
-# # partial_solutions = solve_all_max_partial_csp(variables, domains, constraints, assignment=filled, freq_table=freq_table)
-
-partial_solutions = solve_all_max_partial_csp(variables, domains, constraints, assignment=filled)
-
-print(f"partial solutions: {partial_solutions}")
+# cw.detailed_print()
 
 
-for var, domain in domains.items():
-    if var not in filled:
-        print(f"{var} has {len(domain)} options → {domain}...")
+# variables, domains, constraints = generate_variables_domains_constraints_from_crossword(cw)
 
-# Get filled entries
-filled = get_filled_words(cw)
+# print(f"variables: {variables}")
+# print(f"domains: {domains}")
+# print(f"constraints: {constraints}")
 
-base_solutions = solve_all_max_partial_csp(variables, domains, constraints)
+# filled = get_filled_words(cw)
 
-if not base_solutions:
-    print("No base partials found.")
-else:
-    base = base_solutions[0]  # choose first max-length base
-    print("🧩 Base max-length partial 1:")
-    for k in sorted(base):
-        print(f"  {k}: {base[k]}")
+# # from nltk.corpus import words  # assuming you've already downloaded `words`
+# # word_list = set(word.lower() for word in words.words())
+# # # Compute letter frequencies from the domain words only
+# # all_domain_words = [word for domain in domains.values() for word in domain]
+# # freq_table = compute_letter_frequencies(all_domain_words)
 
-    if len(base) < len(variables):
-        extensions = find_all_valid_full_extensions(base, variables, domains, constraints, verbose=True)
-        print(f"\n🔍 Valid extensions from this base (found {len(extensions)}):")
-        for i, ext in enumerate(extensions, 1):
-            print(f"  ➕ Extension {i}:")
-            for k in sorted(ext):
-                print(f"    {k}: {ext[k]}")
-    else:
-        print("✅ Base is already a full valid solution — no need to extend.")
+# # # Proceed to solve CSP
+# # # partial_solutions = solve_all_max_partial_csp(variables, domains, constraints, assignment=filled, freq_table=freq_table)
+
+# partial_solutions = solve_all_max_partial_csp(variables, domains, constraints, assignment=filled)
+
+# print(f"partial solutions: {partial_solutions}")
+
+
+# for var, domain in domains.items():
+#     if var not in filled:
+#         print(f"{var} has {len(domain)} options → {domain}...")
+
+# # Get filled entries
+# filled = get_filled_words(cw)
+
+# base_solutions = solve_all_max_partial_csp(variables, domains, constraints)
+
+# if not base_solutions:
+#     print("No base partials found.")
+# else:
+#     base = base_solutions[0]  # choose first max-length base
+#     print("🧩 Base max-length partial 1:")
+#     for k in sorted(base):
+#         print(f"  {k}: {base[k]}")
+
+#     if len(base) < len(variables):
+#         extensions = find_all_valid_full_extensions(base, variables, domains, constraints, verbose=True)
+#         print(f"\n🔍 Valid extensions from this base (found {len(extensions)}):")
+#         for i, ext in enumerate(extensions, 1):
+#             print(f"  ➕ Extension {i}:")
+#             for k in sorted(ext):
+#                 print(f"    {k}: {ext[k]}")
+#     else:
+#         print("✅ Base is already a full valid solution — no need to extend.")
 
