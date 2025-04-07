@@ -541,13 +541,15 @@ class Crossword:
         elif return_type == "add to subset list":
             self.subset_dict[grid_location] = Crossword(self.clue_df[self.clue_df["number_direction"].isin(intersections.keys())].copy())
 
-
+'''
 df = get_random_clue_df(return_type="random regular")
 my_crossword = Crossword(clue_df=df)
 my_crossword.detailed_print()
 my_crossword.place_helper_answers(fill_oov=True)
 my_crossword.detailed_print()
+'''
 
+lg_loc = f"{get_project_root()}/data/puzzle_samples/processed_puzzle_samples/crossword_2024_06_12.csv"
 
 '''
 lg_loc = f"{get_project_root()}/data/puzzle_samples/processed_puzzle_samples/crossword_2024_06_12.csv"
