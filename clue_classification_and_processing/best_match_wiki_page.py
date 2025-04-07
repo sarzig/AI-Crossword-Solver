@@ -53,7 +53,7 @@ def get_filename_wikipedia_dump():
     return filename
 
 
-def preprocess_wikipedia_page_name(title, remove_underscore=True, down_case=True, human_name_optimize=False):
+def preprocess_wikipedia_page_name(title, remove_underscore=True, down_case=True, human_name_optimize=False, remove_punctuation=False):
     """
     Helper to call during get_all_wikipedia_pages.
 
@@ -81,6 +81,11 @@ def preprocess_wikipedia_page_name(title, remove_underscore=True, down_case=True
     # replace with spaces
     if remove_underscore:
         title = title.replace("_", " ")
+
+    # remove punctuation
+    if remove_punctuation:
+        title = title.translate(str.maketrans(string.punctuation, " " * len(string.punctuation)))
+        title = title.replace("  ", " ")
 
     # If down_case, then do that
     if down_case:
@@ -195,6 +200,7 @@ def make_wikipedia_lookup_dataframe():
         "no_underscore_downcase_tokens": [title.split() for title in no_underscore_downcase],
         "human_name_optimize": no_underscore_downcase_human_name_optimize,
         "human_name_optimize_tokens": [title.split() for title in no_underscore_downcase_human_name_optimize],
+
     })
 
     print("make_wikipedia_lookup_dataframe completed.")
@@ -418,3 +424,31 @@ clues.to_excel("Wikipedia named entity search2.xlsx")
 '''
 
 lookup_df = make_wikipedia_lookup_dataframe()
+
+original_wikipedia_title_list = get_all_wikipedia_pages_of_interest()
+tokens_list = []
+
+for each in original_wikipedia_title_list:
+    tokens_list.append(preprocess_wikipedia_page_name(each, remove_punctuation=True).strip().split(" "))
+
+
+from collections import defaultdict
+
+all_tokens_dict = defaultdict(list)
+
+for i in range(len(original_wikipedia_title_list)):
+    for token in tokens_list[i]:
+        all_tokens_dict[token].append(original_wikipedia_title_list[i])
+
+import pickle
+
+# Save
+with open('all_tokens_dict.pkl', 'wb') as f:
+    pickle.dump(all_tokens_dict, f, protocol=pickle.HIGHEST_PROTOCOL)
+
+# Load
+with open('all_tokens_dict.pkl', 'rb') as f:
+    all_tokens_dict_res = pickle.load(f)
+
+for word in ["jennifer", "aniston"]:
+    print(all_tokens_dict_res[word])
