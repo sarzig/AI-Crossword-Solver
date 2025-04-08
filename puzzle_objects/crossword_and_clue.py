@@ -656,6 +656,7 @@ intersection_dict = my_crossword.subset_crossword("1-Across", 1, threshold=2/3, 
 #    print(f"{key}: {intersection_dict[key]}")
 '''
 
+
 def get_random_clue_df(puzzle_type="any", return_filename=False, force_previous=True):
     """
     Loads a random clue DataFrame from processed_puzzle_samples.
@@ -734,6 +735,7 @@ def get_saved_or_new_crossword(force_new=False):
     crossword.detailed_print()
 
     return crossword, filename
+
 
 def delete_last_loaded_crossword_on_exit():
     last_file = os.path.join(get_project_root(), "last_loaded_crossword.txt")
