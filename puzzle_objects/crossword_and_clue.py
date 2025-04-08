@@ -3,7 +3,7 @@ import numpy as np
 import pandas as pd
 from nltk.corpus import words
 from clue_classification_and_processing.helpers import conditional_raise, print_if, get_project_root, \
-    get_clues_dataframe
+    get_clues_dataframe, get_vocab
 from web.nyt_html_to_standard_csv import get_random_clue_df
 import sys
 import os
@@ -14,11 +14,7 @@ from clue_classification_and_processing.helpers import get_project_root
 
 
 # xxx sheryl replace with actual function call. Right now leaving as global
-nltk_vocab = [x.lower() for x in words.words()]
-big_clue_df = get_clues_dataframe()
-crossword_vocab = set(big_clue_df["Word"].dropna().astype(str).str.lower())
-VOCAB = set(nltk_vocab).union(crossword_vocab)
-
+VOCAB = get_vocab()
 
 def validate_clue_df(path_to_file=None, df=None, raise_error=True):
     """

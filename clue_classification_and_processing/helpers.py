@@ -51,7 +51,20 @@ def conditional_raise(error, raise_bool):
 
 
 def get_vocab():
-
+    """
+    Fetch vocab from the combined_vocab.txt file.
+    :return: set of the vocab
+    """
+    try:
+        location = os.path.join(get_project_root(), "data", "combined_vocab.txt")
+        print(f"Fetching combined vocab (nltk words, NYT data) from {location}")
+        with open(location, "r", encoding="utf-8") as f:
+            return set(line.strip() for line in f if line.strip())
+    except Exception as e:
+        location = os.path.join(get_project_root(), "combined_vocab.txt")
+        print(f"Fetching combined vocab (nltk words, NYT data) from {location}")
+        with open(location, "r", encoding="utf-8") as f:
+            return set(line.strip() for line in f if line.strip())
 
 
 def get_project_root():
