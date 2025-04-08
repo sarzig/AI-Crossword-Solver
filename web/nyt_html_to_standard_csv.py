@@ -259,7 +259,7 @@ def get_random_clue_df_from_html(folder=r"data/puzzle_samples/raw_html/", return
         return result_dict
 
 
-def get_random_clue_df(folder=r"data/puzzle_samples/processed_puzzle_samples/", return_type="Random regular"):
+def get_random_clue_df_from_csv(folder=r"data/puzzle_samples/processed_puzzle_samples/", return_type="Random regular"):
     """
     Get a parsed clue_df from a puzzle CSV file in the given folder.
 
@@ -323,7 +323,7 @@ def process_all_raw_html_to_csv(overwrite=False):
     :return: True if no errors arise
     """
     print("Getting all dataframe from raw html files")
-    all_clue_dfs = get_random_clue_df(return_type="all")
+    all_clue_dfs = get_random_clue_df_from_html(return_type="all")
 
     save_folder = fr"{get_project_root()}/data/puzzle_samples/processed_puzzle_samples"
 

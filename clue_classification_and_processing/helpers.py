@@ -3,7 +3,8 @@ import re
 import string
 
 import pandas as pd
-
+import random
+import hashlib
 """
 This is the generic helpers file. 
 
@@ -57,15 +58,23 @@ def get_vocab():
     """
     try:
         location = os.path.join(get_project_root(), "data", "combined_vocab.txt")
-        print(f"Fetching combined vocab (nltk words, NYT data) from {location}")
         with open(location, "r", encoding="utf-8") as f:
+            print(f"Fetching combined vocab (nltk words, NYT data) from {location}")
             return set(line.strip() for line in f if line.strip())
     except Exception as e:
         location = os.path.join(get_project_root(), "combined_vocab.txt")
-        print(f"Fetching combined vocab (nltk words, NYT data) from {location}")
         with open(location, "r", encoding="utf-8") as f:
+            print(f"Fetching combined vocab (nltk words, NYT data) from {location}")
             return set(line.strip() for line in f if line.strip())
 
+
+def stable_hash(obj):
+    """
+    Stable hash will return the same random value every single time.
+    :param obj: object
+    :return: hashed integer
+    """
+    return int(hashlib.md5(str(obj).encode()).hexdigest(), 16)
 
 def get_project_root():
     """

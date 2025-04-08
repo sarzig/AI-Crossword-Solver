@@ -1,10 +1,9 @@
 import random
 import numpy as np
 import pandas as pd
-from nltk.corpus import words
 from clue_classification_and_processing.helpers import conditional_raise, print_if, get_project_root, \
     get_clues_dataframe, get_vocab
-from web.nyt_html_to_standard_csv import get_random_clue_df
+from web.nyt_html_to_standard_csv import get_random_clue_df_from_csv
 import sys
 import os
 import atexit
@@ -13,8 +12,9 @@ from clue_classification_and_processing.helpers import conditional_raise, print_
 from clue_classification_and_processing.helpers import get_project_root
 
 
-# xxx sheryl replace with actual function call. Right now leaving as global
+# This is used in place_helper_answers
 VOCAB = get_vocab()
+
 
 def validate_clue_df(path_to_file=None, df=None, raise_error=True):
     """
@@ -226,7 +226,7 @@ class Crossword:
 
         return coordinates
 
-    def place_helper_answers(self, fill_oov=True, fill_percent=None):
+    def place_helper_answers(self, fill_oov=True, fill_percent=None, random_seed=None):
         """
         This method is to aid in troubleshooting.
 
@@ -263,13 +263,21 @@ class Crossword:
                     self.place_word(word=answer,
                                     grid_location=grid_loc)
 
-        all_indices = list(self.clue_df.index)
-
         if fill_percent is not None:
             # If the percent_complete is not none, keep filling random words until
             # percent complete is equal to or higher than fill_percent
-            while self.calculate_completion_percentage_by_char() < fill_percent:
-                index = random.choice(all_indices)
+
+            all_indices = list(self.clue_df.index)
+
+            # Create a deterministic shuffled order
+            seed_value = random_seed if random_seed is not None else 0
+            rng = random.Random(seed_value)
+            shuffled_indices = all_indices[:]
+            rng.shuffle(shuffled_indices)
+
+            for index in shuffled_indices:
+                if self.calculate_completion_percentage_by_char() >= fill_percent:
+                    break
                 row = self.clue_df.loc[index]
                 answer = row.get("answer (optional column, for checking only)")
                 number_direction = row["number_direction"]
@@ -344,37 +352,115 @@ class Crossword:
     def calculate_completion_percentage_by_char(self):
         # Percent completion (based on how many [ ] vs non-[X] cells)
         empties = (self.grid == " ").sum()
-        percent_complete = ((self.number_fillable_spaces - empties) / self.number_fillable_spaces * 100)
+        percent_complete = ((self.number_fillable_spaces - empties) / self.number_fillable_spaces )
 
         return percent_complete
 
-    def count_number_correct_words(self):
+    def count_percentage_correct_words(self, blanks_count_as_complete=True):
         """
-        If self.clue_df has answers column AND it is filled, then count how many words
-        are correctly filled out in self.grid. A word is considered correct if it contains
-        no blanks in the numpy array, and if, when concatenated from (start_col, start_row) to
-        (end_col, end_row), it is correct.
+        Calculate the percentage of fully correct words in the grid.
 
-        :return:
+        A word is correct if:
+            - All letters are filled and match the expected answer exactly
+
+        Args:
+            blanks_count_as_complete (bool):
+                - True: ignore words with blanks in the total count (only evaluate filled words)
+                - False: words with blanks are counted as incorrect
+
+        Returns:
+            float: Percentage of correct words (0.0 to 1.0)
         """
         optional_col = "answer (optional column, for checking only)"
         if optional_col not in self.clue_df.columns or self.clue_df[optional_col].isna().all():
             print("No filled answer column found — skipping correct word count.")
             return None
 
-    def count_number_correct_letters(self):
-        """
-        If self.clue_df has answers column AND it is filled, then count how many LETTERS
-        are correctly filled out in self.grid.
+        total_words = 0
+        correct_words = 0
 
-        :return:
+        for _, row in self.clue_df.iterrows():
+            answer = str(row[optional_col]).upper()
+            coords = row["coordinate_set"]
+
+            word_in_grid = ""
+            contains_blank = False
+
+            for col, row_ in coords:
+                char = self.grid[row_][col]
+                if char == " ":
+                    contains_blank = True
+                word_in_grid += char
+
+            # When blanks count as complete, skip words that are not fully filled
+            if blanks_count_as_complete and contains_blank:
+                continue
+
+            total_words += 1
+
+            if not contains_blank and word_in_grid == answer:
+                correct_words += 1
+            elif blanks_count_as_complete and word_in_grid == answer:
+                correct_words += 1
+            # else: it's incorrect or blank (if blanks_count_as_complete=False, blanks are treated as wrong)
+
+        percent = correct_words / total_words if total_words > 0 else 0
+        return percent
+
+    def count_percentage_correct_letters(self, blanks_count_as_complete=True):
+        """
+        Calculate the percentage of correct letters in the grid.
+
+        A letter is correct if it matches the expected letter in the answer at that position.
+
+        If the puzzle is 50% complete and all answers are correct:
+            count_percentage_correct_letters(blanks_count_as_complete=True) --> returns 100%
+            count_percentage_correct_letters(blanks_count_as_complete=False) --> returns 50%
+
+        Args:
+            blanks_count_as_complete (bool):
+                - True: blanks are ignored in the percentage (i.e., only count filled-in cells).
+                - False: blanks count as incorrect (i.e., you must fill every square to get 100%).
+
+        Returns:
+            float: Percentage of correct letters (0.0 to 1.0)
         """
         optional_col = "answer (optional column, for checking only)"
         if optional_col not in self.clue_df.columns or self.clue_df[optional_col].isna().all():
             print("No filled answer column found — skipping correct letter count.")
             return None
 
-        ### xxx tbd to do
+        total_checked = 0
+        correct_letters = 0
+        seen_coords = set()  # to avoid double-counting overlaps
+
+        for _, row in self.clue_df.iterrows():
+            answer = str(row[optional_col]).upper()
+            coords = row["coordinate_set"]
+
+            for i, (col, row_) in enumerate(coords):
+                if i >= len(answer):
+                    break
+
+                coord = (row_, col)
+                if coord in seen_coords:
+                    continue
+                seen_coords.add(coord)
+
+                grid_char = self.grid[row_][col]
+
+                # Count every expected letter
+                total_checked += 1
+
+                # Evaluate correctness based on flag
+                if grid_char == answer[i]:
+                    correct_letters += 1
+                elif blanks_count_as_complete and grid_char == " ":
+                    correct_letters += 1  # treat blank as "neutral" or "not wrong" if flag is set
+
+        percent = correct_letters / total_checked if total_checked > 0 else 0
+        return percent
+
 
     def place_word(self, word, grid_location,
                    allow_overwriting=True,
@@ -541,16 +627,17 @@ class Crossword:
             self.subset_dict[grid_location] = Crossword(self.clue_df[self.clue_df["number_direction"].isin(intersections.keys())].copy())
 
 '''
-df = get_random_clue_df(return_type="random regular")
+df = get_random_clue_df_from_csv(return_type="random regular")
 my_crossword = Crossword(clue_df=df)
 my_crossword.detailed_print()
-my_crossword.place_helper_answers(fill_oov=True)
+my_crossword.place_helper_answers(fill_oov=True, fill_percent=.65, random_seed=23)
 my_crossword.detailed_print()
-'''
+print(my_crossword.count_percentage_correct_words(blanks_count_as_complete =True))
+print(my_crossword.count_percentage_correct_words(blanks_count_as_complete=False))
+print(my_crossword.count_percentage_correct_letters(blanks_count_as_complete =True))
+print(my_crossword.count_percentage_correct_letters(blanks_count_as_complete=False))
+my_crossword.place_word("xxxxxxx", "7-Across", allow_overwriting=True, raise_errors=False)
 
-lg_loc = f"{get_project_root()}/data/puzzle_samples/processed_puzzle_samples/crossword_2024_06_12.csv"
-
-'''
 lg_loc = f"{get_project_root()}/data/puzzle_samples/processed_puzzle_samples/crossword_2024_06_12.csv"
 med_loc = f"{get_project_root()}/data/puzzle_samples/wednesday_03262025.xlsx"
 mini_loc = f"{get_project_root()}/data/puzzle_samples/mini_03262025.xlsx"
