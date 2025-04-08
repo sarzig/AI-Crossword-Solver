@@ -105,11 +105,9 @@ clues["percentage words (other than first word) that are upper-case"] = clues["C
 clues["number non a-z or 1-9 characters in clue"] = clues["Clue"].apply(lambda x: sum(not re.match(r"[A-Za-z0-9]", c) for c in x) / len(x) if len(x) > 0 else 0)
 clues["contains e.g."] = clues["Clue"].str.contains(r"\be\.g\.", case=False, na=False)
 clues["contains etc."] = clues["Clue"].str.contains(r"\betc\.", case=False, na=False)
-quoted_clues = clues[
-    clues["Word"].apply(
-        lambda x: isinstance(x, str) and x.count('"') == 2 and x.startswith('"') and x.endswith('"')
-    )
-]
+clues["quoted clues"] = clues["Clue"].apply(
+    lambda x: isinstance(x, str) and x.count('"') == 2 and x.startswith('"') and x.endswith('"')
+)
 
 def is_roman_only(word):
     if type(word) ==str:
@@ -153,7 +151,7 @@ clues["is analogy"] = clues["Clue"].str.contains(r"::", na=False)
 # Flag clues that mention any of the keywords
 clues["MentionsGeo"] = clues["Clue"].str.contains(pattern, flags=re.IGNORECASE, regex=True)
 
-clues[clues["quoted_clues"] == True].to_csv("subset_quoted_clues.csv", index=False)
+clues[clues["quoted clues"] == True].to_csv("subset_quoted_clues.csv", index=False)
 
 
 # Apply POS analysis to each clue

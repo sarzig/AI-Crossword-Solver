@@ -17,6 +17,7 @@ big_clue_df = get_clues_dataframe()
 crossword_vocab = set(big_clue_df["Word"].dropna().astype(str).str.lower())
 VOCAB = set(nltk_vocab).union(crossword_vocab)
 
+
 def validate_clue_df(path_to_file=None, df=None, raise_error=True):
     """
     Given either a path to csv or a dataframe, validate if the data is

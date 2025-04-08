@@ -50,6 +50,10 @@ def conditional_raise(error, raise_bool):
         raise error
 
 
+def get_vocab():
+
+
+
 def get_project_root():
     """
     Uses OS lib to search for cwd, and then walks back to project root.
