@@ -108,9 +108,11 @@ class CrosswordVisualizer:
 
                 # Determine cell color
                 if self.grid[row][col] == 0:
-                    color = self.BLACK  # Black squares
+                    color = self.BLACK
+                elif (row, col) in self.clue_numbers:
+                    color = self.LIGHT_GRAY
                 else:
-                    color = self.WHITE  # All non-black squares are white
+                    color = self.WHITE
 
                 # Draw cell rectangle
                 pygame.draw.rect(self.screen, color, [x, y, self.CELL_SIZE, self.CELL_SIZE])
