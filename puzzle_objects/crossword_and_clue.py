@@ -7,8 +7,10 @@ from clue_classification_and_processing.helpers import conditional_raise, print_
 from web.nyt_html_to_standard_csv import get_random_clue_df
 import sys
 import os
+import atexit
 
 from clue_classification_and_processing.helpers import conditional_raise, print_if, get_project_root
+from clue_classification_and_processing.helpers import get_project_root
 
 
 # xxx sheryl replace with actual function call. Right now leaving as global
@@ -570,3 +572,90 @@ intersection_dict = my_crossword.subset_crossword("1-Across", 1, threshold=2/3, 
 #for key in intersection_dict.keys():
 #    print(f"{key}: {intersection_dict[key]}")
 '''
+
+def get_random_clue_df(puzzle_type="any", return_filename=False, force_previous=True):
+    """
+    Loads a random clue DataFrame from processed_puzzle_samples.
+
+    Args:
+        puzzle_type: "mini" (default), "standard", or "any"
+            - "mini": allows puzzles up to 9x9
+            - "standard": allows puzzles up to 15x15
+            - "any": allows all puzzle sizes
+        return_filename: if True, returns a tuple (df, filename)
+        force_previous: if True, will reuse last_loaded_crossword.txt if it exists
+
+    Returns:
+        df, filename (if return_filename=True)
+        or
+        df (if return_filename=False)
+    """
+    root = get_project_root()
+    sample_dir = os.path.join(root, "data", "puzzle_samples", "processed_puzzle_samples")
+    last_used_file = os.path.join(root, "last_loaded_crossword.txt")
+
+    # Set max size filter
+    if puzzle_type == "mini":
+        max_size = 10
+    elif puzzle_type == "standard":
+        max_size = 16
+    elif puzzle_type == "any":
+        max_size = float("inf")
+    else:
+        raise ValueError("Invalid puzzle_type. Use 'mini', 'standard', or 'any'.")
+
+    # Use previous file if available
+    if force_previous and os.path.exists(last_used_file):
+        with open(last_used_file, "r") as f:
+            chosen_file = f.read().strip()
+        full_path = os.path.join(sample_dir, chosen_file)
+        if os.path.exists(full_path):
+            df = pd.read_csv(full_path)
+            print(f"[INFO] Reusing previously loaded crossword file: {chosen_file}")
+            return (df, chosen_file) if return_filename else df
+
+    # Pick new file
+    csv_files = [f for f in os.listdir(sample_dir) if f.endswith(".csv")]
+    random.shuffle(csv_files)
+
+    for chosen_file in csv_files:
+        df = pd.read_csv(os.path.join(sample_dir, chosen_file))
+        if df["end_row"].max() < max_size and df["end_col"].max() < max_size:
+            with open(last_used_file, "w") as f:
+                f.write(chosen_file)
+            print(f"[INFO] Selected and saved crossword file: {chosen_file}")
+            return (df, chosen_file) if return_filename else df
+
+    raise ValueError(f"No suitable crossword found for puzzle_type: {puzzle_type}")
+
+def get_saved_or_new_crossword(force_new=False):
+
+    """
+    Main function to retrieve a crossword.
+
+    - If force_new=True, selects and caches a new crossword puzzle CSV.
+    - If force_new=False, reuses the one stored in 'last_loaded_crossword.txt'.
+
+    Returns:
+        crossword: Crossword object built from the selected puzzle
+        filename: Filename of the CSV loaded
+    """
+     
+    
+    df, filename = get_random_clue_df(return_filename=True, force_previous=not force_new)
+    
+    crossword = Crossword(clue_df=df, table_name=filename)
+    
+    # ✅ Automatically print the crossword grid
+    print(f"\n[INFO] Loaded clue file: {filename}")
+    crossword.detailed_print()
+
+    return crossword, filename
+
+def delete_last_loaded_crossword_on_exit():
+    last_file = os.path.join(get_project_root(), "last_loaded_crossword.txt")
+    if os.path.exists(last_file):
+        os.remove(last_file)
+        print("[INFO] Deleted last_loaded_crossword.txt on program exit.")
+
+atexit.register(delete_last_loaded_crossword_on_exit)

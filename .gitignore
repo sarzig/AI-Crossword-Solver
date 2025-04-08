@@ -1,3 +1,17 @@
 data/wiki/enwiki-latest-all-titles-in-ns0
+
+
+# Ignore VSCode settings
+.vscode/
+
+# Ignore compiled Python files and caches
+__pycache__/
+*.pyc
+
+# Ignore large Google N-Gram CSV
+data/googlebooks-eng-us-all-5gram-20090715-0.csv
+
+
+clue_solving/n_gram_common_phrases.py
 all_tokens_dict.pkl
 
