@@ -16,18 +16,14 @@ from sklearn.cluster import KMeans
 from nltk.corpus import words
 from wordsegment import load, segment  # Library for word segmentation
 
+from clue_classification_and_processing.clue_features import uppercase_percentage
 
 # Download necessary resources
 nltk.download('punkt')
 nltk.download('averaged_perceptron_tagger')
 nltk.download('wordnet')
 
-# Load my dataset
-<<<<<<< Updated upstream:clue_classification_and_processing/kmeans.py
-clues = pd.read_csv(r"data/nytcrosswords.csv", encoding='latin1')
-=======
 clues = pd.read_csv(r"data\nytcrosswords.csv", encoding='latin1')
->>>>>>> Stashed changes:xword/kmeans.py
 
 # Function to classify crossword answers
 def classify_language(answer):
@@ -109,6 +105,53 @@ clues["percentage words (other than first word) that are upper-case"] = clues["C
 clues["number non a-z or 1-9 characters in clue"] = clues["Clue"].apply(lambda x: sum(not re.match(r"[A-Za-z0-9]", c) for c in x) / len(x) if len(x) > 0 else 0)
 clues["contains e.g."] = clues["Clue"].str.contains(r"\be\.g\.", case=False, na=False)
 clues["contains etc."] = clues["Clue"].str.contains(r"\betc\.", case=False, na=False)
+clues["quoted clues"] = clues["Clue"].apply(
+    lambda x: isinstance(x, str) and x.count('"') == 2 and x.startswith('"') and x.endswith('"')
+)
+
+def is_roman_only(word):
+    if type(word) ==str:
+        return bool(re.fullmatch(r"[IVXLCDM]+", word.upper()))
+    else:
+        return ""
+# Apply the function to create a new column
+clues["OnlyRoman"] = clues["Word"].apply(is_roman_only)
+
+
+# Need to add:
+# Analogy : contains : twice and :: once
+# Answer is shortening: includes "for short", "Abbr", in brief,  org., "text", network
+
+vocab = [x.upper() for x in words.words()]
+vocab_with_s = [f"{x}S" for x in vocab if not x.endswith("S")]
+vocab = vocab + vocab_with_s
+clues["in vocab"] = clues["Word"].isin(vocab)
+
+# drop dupes
+clues = clues.drop_duplicates(subset=["Word", "Clue"], keep="first").reset_index(drop=True)
+subset_clues = clues.head(100000)
+df_shuffled = subset_clues.sample(frac=1, random_state=42).reset_index(drop=True)
+df_shuffled = df_shuffled.head(10000)
+
+keywords = [
+    "France", "French", "Paris",
+    "Spain", "Spanish",
+    "Mexico", "Tijuana", "Oaxaca", "Jalisco",
+    "Rome", "Italian", "Italy"
+]
+
+clues["Word"] = clues["Word"].apply(lambda x: x if isinstance(x, str) else "")
+
+
+# Create a regex pattern like: r"\b(france|french|paris|...)\b"
+pattern = r"\b(" + "|".join(keywords) + r")\b"
+
+clues["is analogy"] = clues["Clue"].str.contains(r"::", na=False)
+
+# Flag clues that mention any of the keywords
+clues["MentionsGeo"] = clues["Clue"].str.contains(pattern, flags=re.IGNORECASE, regex=True)
+
+clues[clues["quoted clues"] == True].to_csv("subset_quoted_clues.csv", index=False)
 
 
 # Apply POS analysis to each clue

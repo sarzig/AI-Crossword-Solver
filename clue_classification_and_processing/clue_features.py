@@ -66,7 +66,7 @@ def is_first_word_proper_noun(clue):
 
     # If the first word is recognized
     pos_tagged_words = pos_tag(tokenized_clue)
-    print(pos_tagged_words)
+    #print(pos_tagged_words)
 
     # If the POS tag is Pronoun, plural pronoun, foreign word, or personal pronoun (Supposed to capture "I")
     # then return True. Otherwise, False!
@@ -97,7 +97,7 @@ def uppercase_percentage(clue):
             # If the word is the first word, we need to inspect part of speech to know if it's
             # a proper noun, or if it's just beginning-of-sentence-capitalization
             if i == 0:
-                print("i == 0 and stripped_word[0].isupper():")
+                #print("i == 0 and stripped_word[0].isupper():")
                 if stripped_word[0].isupper():
                     if is_first_word_proper_noun(clue):
                         upper_count += 1

@@ -202,7 +202,7 @@ def puzzle_html_to_df(filename):
     return clue_df
 
 
-def get_random_clue_df(folder=r"data/puzzle_samples/raw_html/", return_type="All"):
+def get_random_clue_df_from_html(folder=r"data/puzzle_samples/raw_html/", return_type="Random regular"):
     """
     Get a parsed clue_df from a puzzle HTML file in the given folder.
 
@@ -245,7 +245,7 @@ def get_random_clue_df(folder=r"data/puzzle_samples/raw_html/", return_type="All
     if "random" in return_type:
         selected = random.choice(filtered)
         full_path = os.path.join(get_project_root(), folder, selected)
-        result_dict[selected[:-5]] = puzzle_html_to_df(full_path)
+        return puzzle_html_to_df(full_path)
 
     # Return all as list of DataFrames
     if "all" in return_type:
@@ -256,7 +256,64 @@ def get_random_clue_df(folder=r"data/puzzle_samples/raw_html/", return_type="All
             df = puzzle_html_to_df(full_path)
             result_dict[file[:-5]] = df
 
-    return result_dict
+        return result_dict
+
+
+def get_random_clue_df_from_csv(folder=r"data/puzzle_samples/processed_puzzle_samples/", return_type="Random regular"):
+    """
+    Get a parsed clue_df from a puzzle CSV file in the given folder.
+
+    genai.
+
+    :param folder: Directory where HTML files are stored
+    :param return_type: "All", "All regular", "All minis", "Random regular", or "Random mini"
+    :return: clue_df parsed from a puzzle or list of clue_dfs
+    """
+
+    # If folder is the default, then create full path
+    if folder == r"data/puzzle_samples/processed_puzzle_samples/":
+        folder = os.path.join(get_project_root(), folder)
+
+    # Normalize return type
+    return_type = return_type.lower()
+
+    # Get list of all csv files in given folder
+    all_files = [f for f in os.listdir(folder) if f.endswith('.csv')]
+    if not all_files:
+        raise FileNotFoundError(f"No csv files found in {folder}")
+
+    # Apply filtering if needed
+    filtered = []
+    if "mini" in return_type:
+        filtered = [f for f in all_files if "mini" in f.lower()]
+
+    elif "regular" in return_type:
+        filtered = [f for f in all_files if "mini" not in f.lower()]
+
+    elif return_type == "all":
+        filtered = all_files
+
+    else:
+        raise ValueError(f"Invalid return_type: '{return_type}'.")
+
+    # Random single puzzle as df
+    if "random" in return_type:
+        selected = random.choice(filtered)
+        full_path = os.path.join(get_project_root(), folder, selected)
+        df = pd.read_csv(full_path)
+
+        return df
+
+    result_dict = {}
+    # Return all as list of DataFrames
+    if "all" in return_type:
+        result_dict = {}
+        for file in filtered:
+            full_path = os.path.join(get_project_root(), folder, file)
+            df = pd.read_csv(full_path)
+            result_dict[file[:-4]] = df
+
+        return result_dict
 
 
 def process_all_raw_html_to_csv(overwrite=False):
@@ -266,7 +323,7 @@ def process_all_raw_html_to_csv(overwrite=False):
     :return: True if no errors arise
     """
     print("Getting all dataframe from raw html files")
-    all_clue_dfs = get_random_clue_df(return_type="all")
+    all_clue_dfs = get_random_clue_df_from_html(return_type="all")
 
     save_folder = fr"{get_project_root()}/data/puzzle_samples/processed_puzzle_samples"
 

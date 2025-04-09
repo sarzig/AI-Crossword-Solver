@@ -1,11 +1,19 @@
+import random
 import numpy as np
 import pandas as pd
+from clue_classification_and_processing.helpers import conditional_raise, print_if, get_project_root, \
+    get_clues_dataframe, get_vocab
+from web.nyt_html_to_standard_csv import get_random_clue_df_from_csv
 import sys
 import os
-
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+import atexit
 
 from clue_classification_and_processing.helpers import conditional_raise, print_if, get_project_root
+from clue_classification_and_processing.helpers import get_project_root
+
+
+# This is used in place_helper_answers
+VOCAB = get_vocab()
 
 
 def validate_clue_df(path_to_file=None, df=None, raise_error=True):
@@ -50,6 +58,11 @@ def validate_clue_df(path_to_file=None, df=None, raise_error=True):
             else:
                 conditional_raise(ValueError("File must be a .csv or .xlsx"), raise_error)
                 return "validate_clue_df issue: File must be a .csv or .xlsx"
+
+    # If df is provided but not a DataFrame, raise TypeError
+    if not isinstance(df, pd.DataFrame):
+        conditional_raise(TypeError("Provided df is not a pandas DataFrame."), raise_error)
+        return "validate_clue_df issue: df is not a pandas DataFrame."
 
     # Raise error for missing columns
     required_columns = ["number", "start_col", "start_row", "end_col", "end_row", "clue"]
@@ -101,7 +114,6 @@ def validate_clue_df(path_to_file=None, df=None, raise_error=True):
     # If we've reached this point with no errors, it's validated
     return True
 
-
 class Crossword:
     def __init__(self, clue_df, table_name=None):
 
@@ -123,7 +135,12 @@ class Crossword:
 
         # Count number of clues and number of white spaces - useful for calculations
         self.number_clues = len(self.clue_df)
-        self.number_fillable_spaces = np.sum(self.grid != "[■]")
+        self.number_fillable_spaces = np.sum(self.grid != "■")
+
+        # If solving using subsets, this tracks the subsets.
+        # subset list is a dict of Crossword objects where the key is something like "5-Across"
+        # or "42-Down"
+        self.subset_dict = {}
 
     @staticmethod
     def get_direction(clue_entry):
@@ -163,7 +180,7 @@ class Crossword:
         # If there's a column called 'answer (optional column, for checking only)',
         # then check if there are any mismatch between that column's word length and "length".
         # If so, raise error with details about mismatch.
-        # If not, delete optional column.
+
         optional_col = "answer (optional column, for checking only)"
         if optional_col in self.clue_df.columns:
             if self.clue_df[optional_col].notna().any():
@@ -173,7 +190,7 @@ class Crossword:
                 if not mismatched.empty:
                     details = mismatched[["number", optional_col, "length"]].to_dict(orient="records")
                     raise ValueError(f"Answer length mismatch detected in optional column: {details}")
-            self.clue_df.drop(columns=[optional_col], inplace=True)
+            #self.clue_df.drop(columns=[optional_col], inplace=True) # don't want to do this anymore!
 
     def enrich_clue_df(self):
         # For each entry in self.clue_df, if start_col == end_col then set
@@ -187,9 +204,97 @@ class Crossword:
         self.optional_check_length()
         self.optional_check_answer_length()
 
+        # Add coordinate set - allows for faster sub-setting
+        self.clue_df["coordinate_set"] = self.clue_df.apply(
+            lambda row: self.get_coordinate_set(
+                start_col=row["start_col"],
+                start_row=row["start_row"],
+                end_col=row["end_col"],
+                end_row=row["end_row"]
+            ),
+            axis=1
+        )
+
+    def get_coordinate_set(self, start_col, start_row, end_col, end_row):
+        iterate_row = end_row > start_row
+
+        # For "Down" clues, iterate the row downwards
+        if iterate_row:
+            coordinates = [(start_col, y) for y in range(start_row, end_row + 1)]
+        else:
+            coordinates = [(x, start_row) for x in range(start_col, end_col + 1)]
+
+        return coordinates
+
+    def place_helper_answers(self, fill_oov=True, fill_percent=None, random_seed=None):
+        """
+        This method is to aid in troubleshooting.
+
+        It places clues on an empty grid.
+
+        It can do the following:
+            * Place random clues up to n percentage of the board
+            * Fill all OOV clues in
+
+        If fill_oov is True AND fill_percent/fill_number is non-None, it will first
+        place all OOVs and THEN if the percent filled is less than fill_percent,
+        it will randomly place more.
+
+        :return: nothing, just updates puzzle
+        """
+
+        # make sure there's nothing in puzzle
+        if self.calculate_completion_percentage_by_char() > 0:
+            print("place_helper_clues is meant for an empty crossword.")
+            return
+
+        # make sure there's an answers column in self.clue_df
+        if "answer (optional column, for checking only)" not in self.clue_df.columns:
+            print("no answer column - can't place helper starter words.")
+
+        # Fill out of vocabulary words
+        if fill_oov:
+            for index, row in self.clue_df.iterrows():
+                answer = row["answer (optional column, for checking only)"]
+
+                # Fill in all words in the vocab
+                if answer.lower() not in VOCAB:
+                    grid_loc = row["number_direction"]
+                    self.place_word(word=answer,
+                                    grid_location=grid_loc)
+
+        if fill_percent is not None:
+            # If the percent_complete is not none, keep filling random words until
+            # percent complete is equal to or higher than fill_percent
+
+            all_indices = list(self.clue_df.index)
+
+            # Create a deterministic shuffled order
+            seed_value = random_seed if random_seed is not None else 0
+            rng = random.Random(seed_value)
+            shuffled_indices = all_indices[:]
+            rng.shuffle(shuffled_indices)
+
+            for index in shuffled_indices:
+                if self.calculate_completion_percentage_by_char() >= fill_percent:
+                    break
+                row = self.clue_df.loc[index]
+                answer = row.get("answer (optional column, for checking only)")
+                number_direction = row["number_direction"]
+
+                self.place_word(answer, number_direction,
+                                allow_overwriting=True,
+                                flag_errors=False)
+
+    def add_coordinate_set(self):
+        """
+        Go through dataframe
+        :return:
+        """
+
     def generate_grid(self):
-        # Create a blank crossword grid filled with "[X]"
-        grid = np.full((self.grid_height, self.grid_width), "[■]", dtype=object)
+        # Create a blank crossword grid filled with "■"
+        grid = np.full((self.grid_height, self.grid_width), "■", dtype=object)
 
         # Based on contents of the clue_df, remove the [X]s:
         for _, clue in self.clue_df.iterrows():
@@ -201,10 +306,10 @@ class Crossword:
             # Determine direction
             if start_row == end_row:  # Across
                 for c in range(start_col, end_col + 1):
-                    grid[start_row][c] = "[ ]"
+                    grid[start_row][c] = " "
             elif start_col == end_col:  # Down
                 for r in range(start_row, end_row + 1):
-                    grid[r][start_col] = "[ ]"
+                    grid[r][start_col] = " "
             else:
                 raise ValueError(f"Invalid clue direction (not across or down): {clue.to_dict()}")
 
@@ -220,7 +325,7 @@ class Crossword:
         lines.append(horizontal_border)
         lines.append(empty_line)  # bordered blank line after top border
         for row in self.grid:
-            line = "|   " + "".join(cell for cell in row) + "   |"
+            line = "|   " + "".join(f"[{cell}]" for cell in row) + "   |"
             lines.append(line)
         lines.append(empty_line)  # bordered blank line before bottom border
         lines.append(horizontal_border)
@@ -246,36 +351,116 @@ class Crossword:
 
     def calculate_completion_percentage_by_char(self):
         # Percent completion (based on how many [ ] vs non-[X] cells)
-        empties = (self.grid == "[ ]").sum()
-        percent_complete = ((self.number_fillable_spaces - empties) / self.number_fillable_spaces * 100)
+        empties = (self.grid == " ").sum()
+        percent_complete = ((self.number_fillable_spaces - empties) / self.number_fillable_spaces )
 
         return percent_complete
 
-    def count_number_correct_words(self):
+    def count_percentage_correct_words(self, blanks_count_as_complete=True):
         """
-        If self.clue_df has answers column AND it is filled, then count how many words
-        are correctly filled out in self.grid. A word is considered correct if it contains
-        no blanks in the numpy array, and if, when concatenated from (start_col, start_row) to
-        (end_col, end_row), it is correct.
+        Calculate the percentage of fully correct words in the grid.
 
-        :return:
+        A word is correct if:
+            - All letters are filled and match the expected answer exactly
+
+        Args:
+            blanks_count_as_complete (bool):
+                - True: ignore words with blanks in the total count (only evaluate filled words)
+                - False: words with blanks are counted as incorrect
+
+        Returns:
+            float: Percentage of correct words (0.0 to 1.0)
         """
         optional_col = "answer (optional column, for checking only)"
         if optional_col not in self.clue_df.columns or self.clue_df[optional_col].isna().all():
             print("No filled answer column found — skipping correct word count.")
             return None
 
-    def count_number_correct_letters(self):
-        """
-        If self.clue_df has answers column AND it is filled, then count how many LETTERS
-        are correctly filled out in self.grid.
+        total_words = 0
+        correct_words = 0
 
-        :return:
+        for _, row in self.clue_df.iterrows():
+            answer = str(row[optional_col]).upper()
+            coords = row["coordinate_set"]
+
+            word_in_grid = ""
+            contains_blank = False
+
+            for col, row_ in coords:
+                char = self.grid[row_][col]
+                if char == " ":
+                    contains_blank = True
+                word_in_grid += char
+
+            # When blanks count as complete, skip words that are not fully filled
+            if blanks_count_as_complete and contains_blank:
+                continue
+
+            total_words += 1
+
+            if not contains_blank and word_in_grid == answer:
+                correct_words += 1
+            elif blanks_count_as_complete and word_in_grid == answer:
+                correct_words += 1
+            # else: it's incorrect or blank (if blanks_count_as_complete=False, blanks are treated as wrong)
+
+        percent = correct_words / total_words if total_words > 0 else 0
+        return percent
+
+    def count_percentage_correct_letters(self, blanks_count_as_complete=True):
+        """
+        Calculate the percentage of correct letters in the grid.
+
+        A letter is correct if it matches the expected letter in the answer at that position.
+
+        If the puzzle is 50% complete and all answers are correct:
+            count_percentage_correct_letters(blanks_count_as_complete=True) --> returns 100%
+            count_percentage_correct_letters(blanks_count_as_complete=False) --> returns 50%
+
+        Args:
+            blanks_count_as_complete (bool):
+                - True: blanks are ignored in the percentage (i.e., only count filled-in cells).
+                - False: blanks count as incorrect (i.e., you must fill every square to get 100%).
+
+        Returns:
+            float: Percentage of correct letters (0.0 to 1.0)
         """
         optional_col = "answer (optional column, for checking only)"
         if optional_col not in self.clue_df.columns or self.clue_df[optional_col].isna().all():
             print("No filled answer column found — skipping correct letter count.")
             return None
+
+        total_checked = 0
+        correct_letters = 0
+        seen_coords = set()  # to avoid double-counting overlaps
+
+        for _, row in self.clue_df.iterrows():
+            answer = str(row[optional_col]).upper()
+            coords = row["coordinate_set"]
+
+            for i, (col, row_) in enumerate(coords):
+                if i >= len(answer):
+                    break
+
+                coord = (row_, col)
+                if coord in seen_coords:
+                    continue
+                seen_coords.add(coord)
+
+                grid_char = self.grid[row_][col]
+
+                # Count every expected letter
+                total_checked += 1
+
+                # Evaluate correctness based on flag
+                if grid_char == answer[i]:
+                    correct_letters += 1
+                elif blanks_count_as_complete and grid_char == " ":
+                    correct_letters += 1  # treat blank as "neutral" or "not wrong" if flag is set
+
+        percent = correct_letters / total_checked if total_checked > 0 else 0
+        return percent
+
 
     def place_word(self, word, grid_location,
                    allow_overwriting=True,
@@ -348,10 +533,10 @@ class Crossword:
         start_col = clue["start_col"]
 
         for i, char in enumerate(word):
-            target = f"[{char}]"
+            target = f"{char}"
             if "Across" in grid_location:
                 current = self.grid[start_row][start_col + i]
-                if current != "[ ]" and current != target:
+                if current != " " and current != target:
                     if not allow_overwriting:
                         raise ValueError(f"Cannot overwrite non-empty cell at ({start_row}, {start_col + i})")
                     if flag_overwriting:
@@ -360,7 +545,7 @@ class Crossword:
 
             elif "Down" in grid_location:
                 current = self.grid[start_row + i][start_col]
-                if current != "[ ]" and current != target:
+                if current != " " and current != target:
                     if not allow_overwriting:
                         raise ValueError(f"Cannot overwrite non-empty cell at ({start_row + i}, {start_col})")
                     if flag_overwriting:
@@ -370,12 +555,192 @@ class Crossword:
             else:
                 raise ValueError(f"Unsupported direction in location: {grid_location}")
 
+    def subset_crossword(self, grid_location, branching_factor=1, threshold=0.25, return_type="add"):
+        """
+        Create a subset of the crossword that includes all clues that intersect
+        with the given clue (via a shared coordinate). If branching_factor is 1, it
+        will get all words that intersect with the original word.
 
-lg_loc = f"{get_project_root()}/data/puzzle_samples/processed_puzzle_samples/crossword_2022_06_12.csv"
+        If branching_factor is 2, it will get all words that intersect with the
+        result of branching factor of 1.
+
+        Once the branches have been set, there is a threshhold for which other
+        clues are included in the subset. If a clue is a 100% subset of clues
+        previously covered, it will always be subsetted. Otherwise, clues are
+        added to the subset based on threshold - a 4-letter clue with 2 letters
+        overlapping with subsetted clues will be included for a threshold of 0.5 or
+        above.
+
+        :param branching_factor: How many degres away from first word should be subsetted
+        :param threshold: percent threshold after which secondary clues should be considered part of subset
+        as well
+        :param grid_location: location like "21-Across"
+        :returns: nothing, but adds to self.subset_dict with the grid_location as key
+        """
+
+        if grid_location not in self.clue_df["number_direction"].values:
+            raise ValueError(f"Clue {grid_location} not found in the clue dataframe.")
+
+        # Get the coordinate set of the target clue - this is initial set of coordinates
+        next_pass_coordinates = self.clue_df.set_index("number_direction").at[grid_location, "coordinate_set"]
+
+        # Get the subset of the clue_df for which one or more coordinates is in initial_word_coordinates
+        intersections = {grid_location: "original word"}
+        for i in range(branching_factor + 1):
+            if len(intersections) == len(self.clue_df):
+                break
+
+            coordinates_to_match = list(set(next_pass_coordinates))
+            next_pass_coordinates = []
+
+            # Iterate across dataframe (yes, it's inefficient, but these are 100 rows only)
+            for idx, row in self.clue_df.iterrows():
+
+                # If the word is already captured in intersections, skip
+                if row["number_direction"] in intersections.keys():
+                    continue
+
+                # Final pass: apply threshold rule
+                if i == branching_factor:
+                    overlap = set(row["coordinate_set"]) & set(coordinates_to_match)
+                    percent_overlap = len(overlap) / len(row["coordinate_set"])
+
+                    if percent_overlap >= threshold or set(row["coordinate_set"]).issubset(coordinates_to_match):
+                        intersections[row["number_direction"]] = f"{i} pass match: {round(percent_overlap * 100)}%"
+                        next_pass_coordinates += row["coordinate_set"]
+                        continue
+
+                # Earlier passes: any coordinate match is enough
+                else:
+                    if any(coord in coordinates_to_match for coord in row["coordinate_set"]):
+                        intersections[row["number_direction"]] = f"{i} pass intersection"
+                        next_pass_coordinates += row["coordinate_set"]
+                        continue
+
+        if return_type == "dict":
+            return intersections
+        elif return_type == "df":
+            return self.clue_df[self.clue_df["number_direction"].isin(intersections.keys())].copy()
+        elif return_type == "crossword":
+            return Crossword(self.clue_df[self.clue_df["number_direction"].isin(intersections.keys())].copy())
+        elif return_type == "add to subset list":
+            self.subset_dict[grid_location] = Crossword(self.clue_df[self.clue_df["number_direction"].isin(intersections.keys())].copy())
+
+'''
+df = get_random_clue_df_from_csv(return_type="random regular")
+my_crossword = Crossword(clue_df=df)
+my_crossword.detailed_print()
+my_crossword.place_helper_answers(fill_oov=True, fill_percent=.65, random_seed=23)
+my_crossword.detailed_print()
+print(my_crossword.count_percentage_correct_words(blanks_count_as_complete =True))
+print(my_crossword.count_percentage_correct_words(blanks_count_as_complete=False))
+print(my_crossword.count_percentage_correct_letters(blanks_count_as_complete =True))
+print(my_crossword.count_percentage_correct_letters(blanks_count_as_complete=False))
+my_crossword.place_word("xxxxxxx", "7-Across", allow_overwriting=True, raise_errors=False)
+
+lg_loc = f"{get_project_root()}/data/puzzle_samples/processed_puzzle_samples/crossword_2024_06_12.csv"
 med_loc = f"{get_project_root()}/data/puzzle_samples/wednesday_03262025.xlsx"
 mini_loc = f"{get_project_root()}/data/puzzle_samples/mini_03262025.xlsx"
 
 df = pd.read_csv(lg_loc)
 my_crossword = Crossword(clue_df=df)
 my_crossword.detailed_print()
-result = my_crossword.place_word("hello", "5-across")
+#result = my_crossword.place_word("hello", "5-across")
+
+intersection_dict = my_crossword.subset_crossword("1-Across", 1, threshold=2/3, return_type="add to subset list")
+#full_subset = pd.concat([subset, additional])
+#subset_crossword = Crossword(subset)
+#subset_crossword.detailed_print()
+
+#for key in intersection_dict.keys():
+#    print(f"{key}: {intersection_dict[key]}")
+'''
+
+
+def get_random_clue_df(puzzle_type="any", return_filename=False, force_previous=True):
+    """
+    Loads a random clue DataFrame from processed_puzzle_samples.
+
+    Args:
+        puzzle_type: "mini" (default), "standard", or "any"
+            - "mini": allows puzzles up to 9x9
+            - "standard": allows puzzles up to 15x15
+            - "any": allows all puzzle sizes
+        return_filename: if True, returns a tuple (df, filename)
+        force_previous: if True, will reuse last_loaded_crossword.txt if it exists
+
+    Returns:
+        df, filename (if return_filename=True)
+        or
+        df (if return_filename=False)
+    """
+    root = get_project_root()
+    sample_dir = os.path.join(root, "data", "puzzle_samples", "processed_puzzle_samples")
+    last_used_file = os.path.join(root, "last_loaded_crossword.txt")
+
+    # Set max size filter
+    if puzzle_type == "mini":
+        max_size = 10
+    elif puzzle_type == "standard":
+        max_size = 16
+    elif puzzle_type == "any":
+        max_size = float("inf")
+    else:
+        raise ValueError("Invalid puzzle_type. Use 'mini', 'standard', or 'any'.")
+
+    # Use previous file if available
+    if force_previous and os.path.exists(last_used_file):
+        with open(last_used_file, "r") as f:
+            chosen_file = f.read().strip()
+        full_path = os.path.join(sample_dir, chosen_file)
+        if os.path.exists(full_path):
+            df = pd.read_csv(full_path)
+            print(f"[INFO] Reusing previously loaded crossword file: {chosen_file}")
+            return (df, chosen_file) if return_filename else df
+
+    # Pick new file
+    csv_files = [f for f in os.listdir(sample_dir) if f.endswith(".csv")]
+    random.shuffle(csv_files)
+
+    for chosen_file in csv_files:
+        df = pd.read_csv(os.path.join(sample_dir, chosen_file))
+        if df["end_row"].max() < max_size and df["end_col"].max() < max_size:
+            with open(last_used_file, "w") as f:
+                f.write(chosen_file)
+            print(f"[INFO] Selected and saved crossword file: {chosen_file}")
+            return (df, chosen_file) if return_filename else df
+
+    raise ValueError(f"No suitable crossword found for puzzle_type: {puzzle_type}")
+
+def get_saved_or_new_crossword(force_new=False):
+
+    """
+    Main function to retrieve a crossword.
+
+    - If force_new=True, selects and caches a new crossword puzzle CSV.
+    - If force_new=False, reuses the one stored in 'last_loaded_crossword.txt'.
+
+    Returns:
+        crossword: Crossword object built from the selected puzzle
+        filename: Filename of the CSV loaded
+    """
+     
+    
+    df, filename = get_random_clue_df(return_filename=True, force_previous=not force_new)
+    
+    crossword = Crossword(clue_df=df, table_name=filename)
+    
+    # ✅ Automatically print the crossword grid
+    print(f"\n[INFO] Loaded clue file: {filename}")
+    crossword.detailed_print()
+
+    return crossword, filename
+
+
+def delete_last_loaded_crossword_on_exit():
+    last_file = os.path.join(get_project_root(), "last_loaded_crossword.txt")
+    if os.path.exists(last_file):
+        os.remove(last_file)
+        print("[INFO] Deleted last_loaded_crossword.txt on program exit.")
+
+atexit.register(delete_last_loaded_crossword_on_exit)
