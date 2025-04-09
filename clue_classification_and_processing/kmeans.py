@@ -89,6 +89,13 @@ clues["quoted clues"] = clues["Clue"].apply(
     lambda x: isinstance(x, str) and x.count('"') == 2 and x.startswith('"') and x.endswith('"')
 )
 clues["contains dir."] = clues["Clue"].str.contains(r"\bdir\.", case=False, na=False)
+clues["contains bible clue"] = clues["Clue"].str.contains(
+    r"\bbible\b|\bbiblical\b|\bjesus\b|old testament|new testament",
+    case=False,
+    na=False
+)
+clues["contains ,maybe"] = clues["Clue"].str.contains(r", maybe", case=False, na=False)
+clues["contains word before"] = clues["Clue"].str.contains(r"word before", case=False, na=False)
 
 def is_roman_only(word):
     if type(word) ==str:
@@ -262,7 +269,9 @@ def is_geography_clue_spacy(clue_text):
 clues["georgrophy entity"] = clues[clues["Clue"].apply(is_geography_clue_spacy)]
 
 clues["is_first_name"] = clues["Word"].str.lower().isin(name.lower() for name in name_set)
-clues[clues["contains dir."] == True].to_csv("direction_clues.csv", index=False)
+
+
+clues[clues["contains word before"] == True].to_csv("word before clues.csv", index=False)
 
 
 # Apply POS analysis to each clue
@@ -276,7 +285,7 @@ print(f"Time is {time2} seconds.")
 
 # Merge POS data with original DataFrame
 clues = pd.concat([clues, pos_data], axis=1).fillna(0)
-'''
+
 
 # Drop non-feature columns
 features = clues.drop(columns=["Clue", "Date", "Word", "Primary Cluster", "Cluster"])
@@ -308,3 +317,5 @@ filtered_clues = pd.concat([
 
 # Export to CSV
 clues.to_csv("all_clue_clusters.csv", index=False)
+
+'''

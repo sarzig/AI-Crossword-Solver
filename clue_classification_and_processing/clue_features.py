@@ -161,6 +161,14 @@ def add_features(clues_df):
     clues_df["contains in short"] = clues_df["Clue"].str.contains(r"\bin short\b", case=False, na=False)
     clues_df["contains briefly"] = clues_df["Clue"].str.contains(r"\bbriefly\b", case=False, na=False)
     clues_df["contains dir."] = clues_df["Clue"].str.contains(" dir.", case=False, na=False)
+    clues_df["contains dir."] = clues_df["Clue"].str.contains(r"\bdir\.", case=False, na=False)
+    clues_df["contains bible clue"] = clues_df["Clue"].str.contains(
+        r"\bbible\b|\bbiblical\b|\bjesus\b|old testament|new testament",
+        case=False,
+        na=False
+    )
+    clues_df["contains ,maybe"] = clues_df["Clue"].str.contains(r", maybe", case=False, na=False)
+    clues_df["contains word before"] = clues_df["Clue"].str.contains(r"word before", case=False, na=False)
 
     # More involved features
     clues_df = add_profession(clues_df)
