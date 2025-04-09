@@ -1,310 +1,464 @@
-import csv
+import requests
+import time
+import random
 import re
-import os.path
-from difflib import get_close_matches
+from urllib.parse import urlencode
 
-class CrosswordSolver:
-    def __init__(self, csv_file):
-        """
-        Initialize the CrosswordSolver with a CSV file containing crossword clues and answers.
-        
-        Args:
-            csv_file (str): Path to the CSV file with columns: Date, Word, Clue, Detected_Language
-        """
-        self.clue_to_word = {}
-        self.word_to_clue = {}
-        self.all_clues = []  # Store all clues for better searching
-        self.languages = set()
-        
-        if not os.path.exists(csv_file):
-            print(f"Error: File '{csv_file}' not found.")
-            return
-            
-        try:
-            with open(csv_file, 'r', encoding='utf-8') as file:
-                reader = csv.DictReader(file)
-                for row in reader:
-                    clue = row['Clue'].strip()
-                    word = row['Word'].strip().upper()
-                    language = row['Detected_Language'].strip()
-                    
-                    # Store in our dictionaries - no normalization to preserve exact format
-                    self.clue_to_word[clue] = word
-                    self.word_to_clue[word] = clue
-                    self.all_clues.append((clue, word))
-                    self.languages.add(language)
-            
-            # Print first 5 clues for debugging
-            print(f"Loaded {len(self.clue_to_word)} clues from {csv_file}")
-            print(f"Languages detected: {', '.join(sorted(self.languages))}")
-            print("\nSample clues (first 5):")
-            for i, (clue, word) in enumerate(list(self.clue_to_word.items())[:5], 1):
-                print(f"{i}. '{clue}' -> {word}")
-            
-        except Exception as e:
-            print(f"Error loading CSV file: {e}")
+######################################################################################################
+# True Bidirectional Foreign Language Translation for Crosswords
+######################################################################################################
 
-    def find_exact_match(self, clue):
-        """
-        Find an exact match for the given clue.
-        
-        Args:
-            clue (str): The clue to search for
-            
-        Returns:
-            str or None: The matching word, or None if not found
-        """
-        # Show what we're searching for
-        print(f"\nSearching for exact match: '{clue}'")
-        
-        # Try exact match first
-        if clue in self.clue_to_word:
-            return self.clue_to_word[clue]
-        
-        # Debug: print some clues from the dictionary to see why it's not matching
-        print("No exact match found. Here are some clues from the database:")
-        clue_list = list(self.clue_to_word.keys())
-        for i, db_clue in enumerate(clue_list[:5], 1):
-            print(f"{i}. '{db_clue}'")
-            
-        # Check if there's a close match (might be whitespace or quotes issue)
-        for db_clue in self.clue_to_word:
-            # Compare with special characters and whitespace removed
-            db_norm = re.sub(r'[^\w\s]', '', db_clue).lower().strip()
-            input_norm = re.sub(r'[^\w\s]', '', clue).lower().strip()
-            
-            if db_norm == input_norm:
-                print(f"Found close match: '{db_clue}'")
-                return self.clue_to_word[db_clue]
-                
-        return None
+def extract_translation_request(input_text):
+    """
+    Parse complex input strings with various patterns to extract:
+    - what needs to be translated
+    - source language
+    - target language
     
-    def find_partial_matches(self, clue, max_results=5):
-        """
-        Find clues that partially match the given clue.
+    Supports true bidirectional translation between any language pair.
+    
+    Returns: (word_to_translate, source_lang, target_lang)
+    """
+    # Convert language names to language codes
+    language_map = {
+        'italian': 'it',
+        'spanish': 'es',
+        'french': 'fr',
+        'german': 'de',
+        'english': 'en',
+        'italiano': 'it',
+        'español': 'es',
+        'espanol': 'es',
+        'français': 'fr',
+        'francais': 'fr',
+        'deutsch': 'de',
+        'inglés': 'en',
+        'ingles': 'en'
+    }
+    
+    # Define multiple patterns to match different types of clues
+    
+    # Pattern 1: "X, in Language" or "X in Language"
+    pattern1 = r'([^,]+)(?:,)?\s+in\s+([A-Za-z]+)'
+    
+    # Pattern 2: "Language for X" or "Language word for X"
+    pattern2 = r'([A-Za-z]+)(?:\s+word)?\s+for\s+(.+)'
+    
+    # Pattern 3: "X in Language" with various prepositions
+    pattern3 = r'(.+)\s+(?:in|en|auf|in|a)\s+([A-Za-z]+)'
+    
+    # Pattern 4: "How to say X in Language"
+    pattern4 = r'(?:how\s+to\s+say|como\s+se\s+dice)\s+(.+)\s+(?:in|en)\s+([A-Za-z]+)'
+    
+    # Pattern 5: "Translate X from LangA to LangB"
+    pattern5 = r'(?:translate|traducir)\s+(.+)\s+from\s+([A-Za-z]+)\s+to\s+([A-Za-z]+)'
+    
+    # Pattern 6: "X from LangA to LangB"
+    pattern6 = r'(.+)\s+from\s+([A-Za-z]+)\s+to\s+([A-Za-z]+)'
+    
+    # Pattern 7: "LangA X in LangB"
+    pattern7 = r'([A-Za-z]+)\s+(.+)\s+in\s+([A-Za-z]+)'
+    
+    # Try pattern 5 (has explicit source and target)
+    match = re.search(pattern5, input_text, re.IGNORECASE)
+    if match:
+        word = match.group(1).strip()
+        source_language = match.group(2).strip().lower()
+        target_language = match.group(3).strip().lower()
+        source_lang = language_map.get(source_language)
+        target_lang = language_map.get(target_language)
+        if source_lang and target_lang:
+            return (word, source_lang, target_lang)
+    
+    # Try pattern 6 (has explicit source and target)
+    match = re.search(pattern6, input_text, re.IGNORECASE)
+    if match:
+        word = match.group(1).strip()
+        source_language = match.group(2).strip().lower()
+        target_language = match.group(3).strip().lower()
+        source_lang = language_map.get(source_language)
+        target_lang = language_map.get(target_language)
+        if source_lang and target_lang:
+            return (word, source_lang, target_lang)
+    
+    # Try pattern 7 (has explicit source and target)
+    match = re.search(pattern7, input_text, re.IGNORECASE)
+    if match:
+        source_language = match.group(1).strip().lower()
+        word = match.group(2).strip()
+        target_language = match.group(3).strip().lower()
+        source_lang = language_map.get(source_language)
+        target_lang = language_map.get(target_language)
+        if source_lang and target_lang:
+            return (word, source_lang, target_lang)
+    
+    # Try pattern 1
+    match = re.search(pattern1, input_text, re.IGNORECASE)
+    if match:
+        word = match.group(1).strip()
+        language = match.group(2).strip().lower()
+        target_lang = language_map.get(language)
         
-        Args:
-            clue (str): The clue to search for
-            max_results (int): Maximum number of results to return
-            
-        Returns:
-            list: List of (word, clue) tuples for partial matches
-        """
-        print(f"\nSearching for partial matches for: '{clue}'")
-        matches = []
-        
-        # Extract important terms from the clue
-        search_terms = []
-        
-        # Handle quotes in clues - they're often important parts
-        quoted_phrases = re.findall(r'"([^"]*)"', clue)
-        search_terms.extend(quoted_phrases)
-        
-        # Look for language indicators (e.g., "in Spanish", "in French")
-        language_match = re.search(r'in (\w+)', clue)
-        if language_match:
-            search_terms.append(language_match.group(0))  # Add the "in X" phrase
-        
-        # Extract keywords (words longer than 3 letters)
-        keywords = [word for word in re.findall(r'\b\w+\b', clue) if len(word) > 3]
-        search_terms.extend(keywords)
-        
-        # Remove duplicates
-        search_terms = list(set(search_terms))
-        
-        print(f"Search terms extracted: {search_terms}")
-        
-        # Search for each term in the clues
-        for db_clue, word in self.all_clues:
-            score = 0
-            matches_found = []
-            
-            # Check if search terms appear in the database clue
-            for term in search_terms:
-                if term.lower() in db_clue.lower():
-                    score += 1
-                    matches_found.append(term)
-            
-            # If we have a good match (at least one term appears)
-            if score > 0:
-                matches.append((word, db_clue, score, matches_found))
-        
-        # Sort by score (descending) and return top matches
-        matches.sort(key=lambda x: x[2], reverse=True)
-        
-        # Debug: print what we found
-        if matches:
-            print(f"Found {len(matches)} partial matches. Top matches:")
-            for i, (word, db_clue, score, terms) in enumerate(matches[:3], 1):
-                print(f"{i}. '{db_clue}' (Score: {score}, Matched terms: {terms})")
+        # Important: If target is English, we know the source is NOT English
+        if target_lang == 'en':
+            # Try to identify the specific non-English language
+            source_lang = detect_language(word, exclude_english=True)
         else:
-            print("No partial matches found.")
+            # For other target languages, detect normally
+            source_lang = detect_language(word)
             
-            # Let's do a broader search to help debug
-            print("\nBroadening search... Looking for any clues containing key words:")
-            for term in search_terms:
-                if len(term) > 3:  # Only check substantial terms
-                    found = False
-                    for db_clue, word in self.all_clues:
-                        if term.lower() in db_clue.lower():
-                            print(f"Found '{term}' in: '{db_clue}' -> {word}")
-                            found = True
-                            break
-                    if not found:
-                        print(f"No clues contain the term '{term}'")
-        
-        return [(word, clue) for word, clue, _, _ in matches[:max_results]]
+        return (word, source_lang, target_lang)
     
-    def find_by_pattern(self, pattern_input):
-        """
-        Find words or clues matching a pattern.
+    # Try pattern 2
+    match = re.search(pattern2, input_text, re.IGNORECASE)
+    if match:
+        language = match.group(1).strip().lower()
+        word = match.group(2).strip()
+        target_lang = language_map.get(language)
         
-        This can handle:
-        1. Word patterns like "A__E" or "A**E" where _ or * is any letter
-        2. Full clue text (will search for the clue)
-        
-        Args:
-            pattern_input (str): Pattern to search for
-            
-        Returns:
-            list: List of (word, clue) tuples matching the pattern
-        """
-        print(f"\nPattern search input: '{pattern_input}'")
-        matches = []
-        
-        # If input contains quotes or comma or parentheses, it's probably a clue not a pattern
-        if '"' in pattern_input or ',' in pattern_input or '(' in pattern_input:
-            print("Input appears to be a clue rather than a word pattern.")
-            # Search as a clue instead
-            exact_match = self.find_exact_match(pattern_input)
-            if exact_match:
-                matches.append((exact_match, pattern_input))
-            else:
-                matches = self.find_partial_matches(pattern_input)
-            return matches
-            
-        # Check if input looks like a word pattern (contains * or _)
-        if '_' in pattern_input or '*' in pattern_input:
-            # Convert * to _ for internal consistency
-            pattern = pattern_input.replace('*', '_').upper()
-            
-            # Create regex pattern for matching
-            regex_pattern = '^' + pattern.replace('_', '.') + '$'
-            print(f"Using regex pattern: {regex_pattern}")
-            
-            # Search for matching words
-            for word, clue in self.word_to_clue.items():
-                if re.match(regex_pattern, word):
-                    matches.append((word, clue))
-                    
-            print(f"Found {len(matches)} matches for pattern {pattern}")
+        # Important: If target is non-English, source is likely English
+        if target_lang and target_lang != 'en':
+            source_lang = 'en'
         else:
-            # Treat as a clue search
-            exact_match = self.find_exact_match(pattern_input)
-            if exact_match:
-                matches.append((exact_match, pattern_input))
-            else:
-                # Try partial match
-                matches = self.find_partial_matches(pattern_input)
-                
-        return matches
-
-    def search_by_answer(self, answer):
-        """
-        Find clues for a specific answer word.
-        
-        Args:
-            answer (str): The answer word to look up
+            # Otherwise detect normally
+            source_lang = detect_language(word)
             
-        Returns:
-            list: List of clues for this answer
-        """
-        answer = answer.upper().strip()
-        matches = []
-        
-        for word, clue in self.word_to_clue.items():
-            if word == answer:
-                matches.append(clue)
-                
-        return matches
-
-def main():
-    # Use the exact file path provided by the user
-    import os
-    # Direct path to the CSV file
-    csv_file ='foreign_language_clues_with_language.csv'
+        return (word, source_lang, target_lang)
     
-    print(f"Looking for CSV file at: {csv_file}")
-    
-    # Check if file exists before initializing
-    #if not os.path.exists(csv_file):
-       ## print(f"ERROR: CSV file not found at {csv_file}")
-        #print("Please make sure the file is in the correct location and named correctly.")
-        #print("Current working directory is:", current_dir)
-        #print("\nAvailable files in current directory:")
-        #for file in os.listdir(current_dir):
-            #print(f"- {file}")
-       # return
+    # Try pattern 3
+    match = re.search(pattern3, input_text, re.IGNORECASE)
+    if match:
+        word = match.group(1).strip()
+        language = match.group(2).strip().lower()
+        target_lang = language_map.get(language)
         
-    # Initialize the solver with the CSV file
-    solver = CrosswordSolver(csv_file)
-    
-    while True:
-        print("\nCrossword Puzzle Solver")
-        print("=" * 25)
-        print("1. Search by clue")
-        print("2. Search by word pattern (use _ or * for unknown letters)")
-        print("3. Search by answer word")
-        print("4. Exit")
-        
-        choice = input("\nEnter your choice (1-4): ").strip()
-        
-        if choice == '1':
-            clue = input("Enter the clue: ").strip()
-            
-            # Try exact match first
-            exact_match = solver.find_exact_match(clue)
-            if exact_match:
-                print(f"\nExact match found: {exact_match}")
-            else:
-                print("\nNo exact match found. Searching for partial matches...")
-                partial_matches = solver.find_partial_matches(clue)
-                
-                if partial_matches:
-                    print("\nPossible matches:")
-                    for i, (word, matched_clue) in enumerate(partial_matches, 1):
-                        print(f"{i}. {word} - {matched_clue}")
-                else:
-                    print("No matches found.")
-                    
-        elif choice == '2':
-            pattern = input("Enter word pattern (use _ or * for unknown letters) or a clue: ").strip()
-            matches = solver.find_by_pattern(pattern)
-            
-            if matches:
-                print(f"\nFound {len(matches)} matches:")
-                for i, (word, clue) in enumerate(matches, 1):
-                    print(f"{i}. {word} - {clue}")
-            else:
-                print("\nNo matches found for that pattern or clue.")
-        
-        elif choice == '3':
-            answer = input("Enter the answer word: ").strip()
-            clues = solver.search_by_answer(answer)
-            
-            if clues:
-                print(f"\nFound {len(clues)} clues for '{answer}':")
-                for i, clue in enumerate(clues, 1):
-                    print(f"{i}. {clue}")
-            else:
-                print(f"\nNo clues found for '{answer}'.")
-                
-        elif choice == '4':
-            print("Thank you for using the Crossword Puzzle Solver!")
-            break
-            
+        # Important: If target is English, we know the source is NOT English
+        if target_lang == 'en':
+            # Try to identify the specific non-English language
+            source_lang = detect_language(word, exclude_english=True)
         else:
-            print("Invalid choice. Please try again.")
+            # For other target languages, detect normally
+            source_lang = detect_language(word)
+            
+        return (word, source_lang, target_lang)
+    
+    # Try pattern 4
+    match = re.search(pattern4, input_text, re.IGNORECASE)
+    if match:
+        word = match.group(1).strip()
+        language = match.group(2).strip().lower()
+        target_lang = language_map.get(language)
+        
+        # Important: For "how to say" format, source is usually the language of the user
+        # For English UI, assume English source unless obviously in another language
+        source_lang = detect_language(word)
+        
+        return (word, source_lang, target_lang)
+    
+    # If no pattern matches or language not recognized
+    return None
+
+def detect_language(text, exclude_english=False):
+    """
+    Enhanced language detection based on character patterns, letter frequencies,
+    and language-specific features without relying on word dictionaries.
+    
+    Args:
+        text: Text to analyze
+        exclude_english: If True, won't return English as the detected language
+        
+    Returns: 
+        Most likely language code
+    """
+    # Clean and prepare the text
+    text = text.lower().strip()
+    
+    # Language-specific character sets (strongest indicators)
+    spanish_chars = ['ñ', 'á', 'é', 'í', 'ó', 'ú', '¿', '¡']
+    french_chars = ['é', 'è', 'ê', 'à', 'â', 'ç', 'ô', 'ù', 'û', 'ï', 'œ']
+    german_chars = ['ä', 'ö', 'ü', 'ß']
+    italian_chars = ['à', 'è', 'ì', 'ò', 'ù']
+    
+    # Check for language-specific characters first (strongest indicator)
+    for char in spanish_chars:
+        if char in text:
+            return 'es'
+    for char in german_chars:
+        if char in text:
+            return 'de'
+    for char in french_chars:
+        if char in text:
+            return 'fr'
+    for char in italian_chars:
+        if char in text:
+            return 'it'
+    
+    # If we have "X in English" format, we need more advanced detection since X is non-English
+    if exclude_english:
+        # Analyze letter distribution and patterns for language detection
+        
+        # 1. Character frequency analysis
+        letter_count = {}
+        for char in text:
+            if char.isalpha():
+                letter_count[char] = letter_count.get(char, 0) + 1
+        
+        # Skip if the word is too short to analyze
+        if len(text) >= 3:
+            # Spanish language character patterns
+            if ('ll' in text or 'rr' in text or 'ch' in text or text.endswith(('dad', 'ción', 'ar', 'er', 'ir'))):
+                return 'es'
+            
+            # French language character patterns
+            if (text.endswith(('eau', 'eux', 'oir', 'er', 'ez', 'ent')) or 
+                'ou' in text or 'eu' in text or 'oi' in text or 'ph' in text):
+                return 'fr'
+            
+            # Italian language character patterns
+            if (text.endswith(('ino', 'one', 'are', 'ere', 'ire', 'zione')) or 
+                'zz' in text or 'cch' in text or 'gli' in text or 'sc' in text):
+                return 'it'
+            
+            # German language character patterns
+            if (text.endswith(('ung', 'heit', 'keit', 'lich', 'ig', 'isch')) or 
+                'sch' in text or 'tsch' in text or 'ck' in text or 'tz' in text):
+                return 'de'
+        
+        # 2. Check consonant-vowel ratio (German has more consonants than Latin languages)
+        vowels = sum(1 for c in text if c in 'aeiou')
+        consonants = sum(1 for c in text if c.isalpha() and c not in 'aeiou')
+        
+        if len(text) >= 4:
+            if consonants / (vowels + 0.001) > 2.0:  # High consonant ratio suggests German
+                return 'de'
+            
+            # French often has more vowels
+            if vowels / (len(text) + 0.001) > 0.55:
+                return 'fr'
+        
+        # 3. Letter combinations and patterns
+        # Spanish 
+        if 'que' in text or 'qui' in text or text.endswith('o') or text.endswith('a'):
+            return 'es'
+        # French 
+        if 'eau' in text or 'aux' in text or 'eux' in text or text.endswith('e'):
+            return 'fr'
+        # Italian
+        if 'cce' in text or 'cci' in text or 'zza' in text or text.endswith('i'):
+            return 'it'
+        # German
+        if 'cht' in text or 'tsch' in text or text.endswith('en'):
+            return 'de'
+            
+        # Default for non-English detection (based on common language for crossword clues)
+        if exclude_english:
+            # Try to detect based on spelling patterns
+            if any(text.endswith(s) for s in ('er', 'ez', 'eau', 'eux', 'ain', 'oir', 'eur')):
+                return 'fr'  # French endings
+            if any(text.endswith(s) for s in ('o', 'a', 'os', 'as', 'ar', 'ión')):
+                return 'es'  # Spanish endings
+            if any(text.endswith(s) for s in ('o', 'a', 'i', 'e', 'ino', 'one')):
+                return 'it'  # Italian endings
+            if any(text.endswith(s) for s in ('en', 'er', 'ung', 'heit', 'keit')):
+                return 'de'  # German endings
+                
+            # If still undetermined, make an educated guess based on letter combinations
+            if 'ch' in text or 'j' in text:
+                return 'fr'  # French has many words with 'ch' and uses 'j'
+                
+            # Default to French as a common language for crossword clues
+            return 'fr'
+    
+    # If no strong indicators and we don't need to exclude English, default to English
+    return 'en'
+
+# Removed levenshtein_distance function as it's no longer needed
+
+def translate_word(word: str, source_lang: str, target_lang: str) -> str:
+    """
+    Direct translation of a word from source language to target language.
+    
+    Args:
+        word: The word to translate
+        source_lang: Language code (en, es, fr, it, de)
+        target_lang: Language code (en, es, fr, it, de)
+        
+    Returns:
+        Translated word
+    """
+    # If source and target are the same, no translation needed
+    if source_lang == target_lang:
+        return word
+    
+    # Try Google Translate (most reliable for direct translations)
+    try:
+        translation = google_translate_unofficial(word, source_lang, target_lang)
+        if translation and translation.lower() != word.lower():
+            print(f"Google translation: '{word}' → '{translation}'")
+            return translation
+    except Exception as e:
+        print(f"Google Translate error: {str(e)}")
+    
+    # Fallback to MyMemory
+    try:
+        translation = mymemory_translate(word, source_lang, target_lang)
+        if translation and translation.lower() != word.lower():
+            print(f"MyMemory translation: '{word}' → '{translation}'")
+            return translation
+    except Exception as e:
+        print(f"MyMemory API error: {str(e)}")
+    
+    # If all fails, return the original word
+    print(f"Warning: Could not translate '{word}', returning original word")
+    return word
+
+def google_translate_unofficial(text: str, source_lang: str, target_lang: str) -> str:
+    """
+    Use the unofficial Google Translate API.
+    """
+    base_url = "https://translate.googleapis.com/translate_a/single"
+    
+    # Parameters for the request
+    params = {
+        "client": "gtx",
+        "sl": source_lang,
+        "tl": target_lang,
+        "dt": "t",
+        "q": text
+    }
+    
+    # Add a small delay to prevent rate limiting
+    time.sleep(random.uniform(0.2, 0.5))
+    
+    url = f"{base_url}?{urlencode(params)}"
+    
+    try:
+        response = requests.get(url)
+        if response.status_code == 200:
+            data = response.json()
+            translation = data[0][0][0] if data and len(data) > 0 and len(data[0]) > 0 else ""
+            return translation
+        else:
+            print(f"Google Translate error: {response.status_code}")
+            return ""
+    except Exception as e:
+        print(f"Google Translate error: {str(e)}")
+        return ""
+
+def mymemory_translate(text: str, source_lang: str, target_lang: str) -> str:
+    """
+    Use the MyMemory Translation API (free for limited usage).
+    """
+    # Combine language codes as required by the API
+    lang_pair = f"{source_lang}|{target_lang}"
+    
+    url = "https://api.mymemory.translated.net/get"
+    
+    params = {
+        "q": text,
+        "langpair": lang_pair
+    }
+    
+    # Add delay to prevent rate limiting
+    time.sleep(random.uniform(0.2, 0.5))
+    
+    try:
+        response = requests.get(url, params=params)
+        if response.status_code == 200:
+            data = response.json()
+            translation = data.get("responseData", {}).get("translatedText", "")
+            
+            # Clean up the translation
+            translation = translation.replace("&#39;", "'")
+            
+            return translation
+        else:
+            print(f"MyMemory API error: {response.status_code}")
+            return ""
+    except Exception as e:
+        print(f"MyMemory API error: {str(e)}")
+        return ""
+
+def get_language_name(lang_code):
+    """Convert language code to full language name"""
+    language_names = {
+        'en': 'English',
+        'es': 'Spanish',
+        'fr': 'French',
+        'it': 'Italian',
+        'de': 'German'
+    }
+    return language_names.get(lang_code, lang_code)
+
+######################################################################################################
+# Main function
+######################################################################################################
 
 if __name__ == "__main__":
-    main()
+    print("===== Foreign Language Crossword Clue Processor =====")
+    print("Available languages: English, Spanish, French, Italian, German")
+    print("Examples of input:")
+    print("- \"Eight, in Italian\"")
+    print("- \"Spanish for dog\"")
+    print("- \"How to say hello in French\"")
+    print("- \"German word for house\"")
+    print("- \"Translate hola from Spanish to English\"")
+    print("- \"Bonjour from French to English\"")
+    print("- \"Spanish gato in English\"")
+    print("Or you can enter a word and select languages manually.")
+    
+    while True:
+        clue_input = input("\nEnter clue (or 'exit' to quit): ")
+        if clue_input.lower() == 'exit':
+            break
+        
+        # Try to parse the input format first
+        parsed_result = extract_translation_request(clue_input)
+        
+        if parsed_result:
+            word, source_lang, target_lang = parsed_result
+            source_name = get_language_name(source_lang)
+            target_name = get_language_name(target_lang)
+            print(f"\nDetected request to translate '{word}' from {source_name} to {target_name}")
+        else:
+            # If parsing fails, ask for manual input
+            word = clue_input
+            print("\nCouldn't detect language pattern. Please specify languages manually:")
+            
+            languages = {
+                "1": "en", "2": "es", "3": "fr", "4": "it", "5": "de"
+            }
+            
+            print("Source language:")
+            print("1. English  2. Spanish  3. French  4. Italian  5. German")
+            source_choice = input("Choose source language (1-5): ")
+            source_lang = languages.get(source_choice, "en")
+            
+            print("\nTarget language:")
+            print("1. English  2. Spanish  3. French  4. Italian  5. German")
+            target_choice = input("Choose target language (1-5): ")
+            target_lang = languages.get(target_choice, "es")
+            
+            source_name = get_language_name(source_lang)
+            target_name = get_language_name(target_lang)
+        
+        # Perform translation
+        print(f"\nTranslating: '{word}' from {source_name} to {target_name}")
+        translated_answer = translate_word(word, source_lang, target_lang)
+        
+        print(f"\nTranslation: '{translated_answer}'")
+        
+        # Ask if the user wants to swap translation direction
+        swap_option = input("\nWant to translate in the reverse direction? (y/n): ").lower()
+        if swap_option == 'y':
+            # Swap source and target languages
+            print(f"\nTranslating: '{translated_answer}' from {target_name} to {source_name}")
+            reverse_translation = translate_word(translated_answer, target_lang, source_lang)
+            print(f"\nReverse translation: '{reverse_translation}'")
+        
+        # Continue or exit
+        continue_option = input("\nTranslate another phrase? (y/n): ").lower()
+        if continue_option != 'y':
+            break
+    
+    print("\nThank you for using the Foreign Language Clue Processor!")
