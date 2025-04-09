@@ -292,6 +292,8 @@ class Crossword:
         # Also set clue length
         self.clue_df["number_direction"] = self.clue_df.apply(self.get_direction, axis=1)
         self.clue_df["length"] = self.clue_df.apply(self.get_length, axis=1)
+        self.clue_df["answer_certainty"] = ""  # a value like "guaranteed", "answer guaranteed in list", "answer likely in list"
+        self.clue_df["answer_list"] = self.clue_df.apply(lambda _: [], axis=1)
 
         # If optional column is included, use it to check lengths and then delete that optional column
         self.optional_check_length()
@@ -777,7 +779,7 @@ class Crossword:
                     "crossword": temp_subset,
                     "number_directions_which_yield_subset": [number_direction],  # start list with current clue
                     "number_directions_fully_contained_in_subset": set(nd_set),
-                    "intersectingSubsets_numberWords": []
+                    "intersectingSubsetIds_numberWordsIntersecting": []
                 }
             else:
                 # Find existing subset that matches and add this direction to its list
@@ -785,7 +787,7 @@ class Crossword:
                     existing_nd_set = frozenset(data["crossword"].clue_df["number_direction"].tolist())
                     if existing_nd_set == nd_set:
                         data["number_directions_which_yield_subset"].append(number_direction)
-                        data["intersectingSubsets_numberWords"]: []
+                        data["intersectingSubsetIds_numberWordsIntersecting"]: []
                         if number_direction in existing_nd_set:
                             data["number_directions_fully_contained_in_subset"].add(number_direction)
                         break
@@ -808,8 +810,8 @@ class Crossword:
                     continue
                 # Case - intersection is higher than 0 -> add clue_set2's id and the number of words to intersecting_subsets
                 if intersection_size > 0:
-                    subsets[id1]["intersectingSubsets_numberWords"].append((id2, len(intersection_of_clues)))
-            subsets[id1]["intersectingSubsets_numberWords"].sort(key=lambda x: x[1])
+                    subsets[id1]["intersectingSubsetIds_numberWordsIntersecting"].append((id2, len(intersection_of_clues)))
+            subsets[id1]["intersectingSubsetIds_numberWordsIntersecting"].sort(key=lambda x: x[1])
 
         return subsets, subset_lookup
 
