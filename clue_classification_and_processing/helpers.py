@@ -1,10 +1,10 @@
 import os
 import re
 import string
-
 import pandas as pd
 import random
 import hashlib
+
 """
 This is the generic helpers file. 
 
@@ -51,6 +51,57 @@ def conditional_raise(error, raise_bool):
         raise error
 
 
+def get_clues_by_class(clue_class="all", classification_type="manual_only", prediction_threshold=0.8):
+    """
+    This queries two datasets:
+      * nyt_crosswords.csv
+      *
+
+    :param: clue_class = if all, gives all clue types
+    :param: classification_type= "manual_only", "predicted_only", "all"
+    :return:
+    """
+
+    loc = ""
+
+    # If only looking for manually classed clues, look in
+    # the manually classified clues.xlsx
+    if classification_type == "manual_only":
+        text = "manual"
+        loc = os.path.join(get_project_root(),
+                           "data",
+                           "manually classified clues.xlsx")
+
+    # If looking for only predicted, then just use the full_clue set and assign predictions
+    # Only get clues that have prediction threshold over 0.8
+    if classification_type == "predicted_only":
+        text = "ML"
+        loc = os.path.join(get_project_root(),
+                           "data",
+                           "nytcrosswords_predicted_classes.xlsx")
+
+    # read the dataframe from the location
+    df = pd.read_excel(loc)
+    class_series = (df["Class"]).dropna()
+    class_series = class_series[class_series.apply(lambda x: isinstance(x, str))]
+    classes = sorted(set(class_series))
+    print(f"Pulling {text} classified clues from {loc}.")
+    print(f"All classes present in data are: {classes}")
+
+    # If class is not all, then subset to that class
+    if clue_class != "all":
+        df = df[df["Class"] == clue_class]
+        print(f"Returning clues of class: {clue_class}")
+    else:
+        print("Returning clues of all classes")
+
+    # Get only columns of interest
+    columns_of_interest = ["Clue", "Word", "Class", "Confidence"]
+    available_columns = [col for col in columns_of_interest if col in df.columns]
+    df = df[available_columns].copy()
+    return df
+
+
 def get_vocab():
     """
     Fetch vocab from the combined_vocab.txt file.
@@ -76,6 +127,7 @@ def stable_hash(obj):
     """
     return int(hashlib.md5(str(obj).encode()).hexdigest(), 16)
 
+
 def get_project_root():
     """
     Uses OS lib to search for cwd, and then walks back to project root.
@@ -93,6 +145,11 @@ def get_project_root():
         project_root = os.sep.join(path_parts[:index + 1])
 
     return project_root
+
+
+
+def get_processed_puzzle_sample_root():
+    return os.path.join(get_project_root(), "data", "puzzle_samples", "processed_puzzle_samples")
 
 
 def get_clues_dataframe(clues_path=None):
@@ -179,3 +236,5 @@ def process_text_into_clue_answer(input_text):
     new_text = re.sub(whitespace_regex, "", new_text).lower()
 
     return new_text
+
+#def_clues = get_clues_by_class("Straight definition", "manual_only")
