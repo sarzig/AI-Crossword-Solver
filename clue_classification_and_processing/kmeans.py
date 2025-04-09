@@ -151,7 +151,137 @@ clues["is analogy"] = clues["Clue"].str.contains(r"::", na=False)
 # Flag clues that mention any of the keywords
 clues["MentionsGeo"] = clues["Clue"].str.contains(pattern, flags=re.IGNORECASE, regex=True)
 
-clues[clues["quoted clues"] == True].to_csv("subset_quoted_clues.csv", index=False)
+prominent_professions = [
+    "author",
+    "poet",
+    "composer",
+    "singer",
+    "actor",
+    "actress",
+    "philanthropist",
+    "ceo",
+    "president",
+    "mayor",
+    "governor",
+    "director",
+    "producer",
+    "dancer",
+    "painter",
+    "sculptor",
+    "novelist",
+    "editor",
+    "journalist",
+    "reporter",
+    "host",
+    "chef",
+    "baker",
+    "coach",
+    "pilot",
+    "surgeon",
+    "doctor",
+    "nurse",
+    "scientist",
+    "inventor",
+    "engineer",
+    "lawyer",
+    "judge",
+    "rabbi",
+    "priest",
+    "monk",
+    "nun",
+    "minister",
+    "dean",
+    "professor",
+    "teacher",
+    "student",
+    "scholar",
+    "critic",
+    "curator",
+    "violinist",
+    "pianist",
+    "guitarist",
+    "drummer",
+    "comedian",
+    "clown",
+    "magician",
+    "bartender",
+    "barista",
+    "waiter",
+    "waitress",
+    "butler",
+    "maid",
+    "detective",
+    "police",
+    "officer",
+    "firefighter",
+    "soldier",
+    "spy",
+    "agent",
+    "model",
+    "designer",
+    "tailor",
+    "writer",
+    "illustrator",
+    "animator",
+    "cartoonist",
+    "blogger",
+    "vlogger",
+    "influencer",
+    "athlete",
+    "racer",
+    "skater",
+    "golfer",
+    "boxer",
+    "umpire",
+    "referee",    "actor", "actress", "author", "poet", "novelist", "writer",
+    "composer", "musician", "singer", "rapper", "pianist", "violinist",
+    "artist", "painter", "sculptor", "director", "producer", "filmmaker",
+    "comedian", "magician", "host", "broadcaster", "journalist", "editor",
+    "blogger", "influencer", "chef", "designer", "model", "photographer",
+    "philanthropist", "entrepreneur", "inventor", "engineer", "scientist",
+    "astronaut", "explorer", "philosopher", "historian", "scholar", "professor",
+    "teacher", "critic", "coach", "athlete", "boxer", "golfer", "racer",
+    "skater", "runner", "cyclist", "swimmer", "surfer",
+    "president", "prime minister", "governor", "mayor", "senator", "ambassador",
+    "general", "admiral", "officer", "judge", "justice", "lawyer", "diplomat",
+    "czar", "tsar", "monarch", "king", "queen", "emperor", "empress",
+    "rabbi", "priest", "pastor", "imam", "monk", "nun", "bishop", "cardinal", "pope",
+    "anchor",
+    "newsman",
+    "newscaster",
+    "announcer",
+    "emcee",
+    "hostess",
+    "broadcaster",
+    "strategist",
+    "consultant",
+    "accountant",
+    "economist",
+    "banker",
+    "trader",
+    "broker",
+    "entrepreneur"
+]
+
+pattern = r"\b(" + "|".join(prominent_professions) + r")\b"
+clues["MentionsProfession"] = clues["Clue"].str.contains(pattern, flags=re.IGNORECASE, regex=True)
+
+
+import spacy
+import names
+name_set = set(names.get_first_name(gender=None) for _ in range(10000))  # random sample
+
+
+# Load English NER model (only load once)
+nlp = spacy.load("en_core_web_sm")
+
+def is_geography_clue_spacy(clue_text):
+    doc = nlp(clue_text)
+    return any(ent.label_ in {"GPE", "LOC"} for ent in doc.ents)
+clues["georgrophy entity"] = clues[clues["Clue"].apply(is_geography_clue_spacy)]
+
+clues["is_first_name"] = clues["Word"].str.lower().isin(name.lower() for name in name_set)
+clues[clues["MentionsProfession"] == True].to_csv("profession_clues.csv", index=False)
 
 
 # Apply POS analysis to each clue

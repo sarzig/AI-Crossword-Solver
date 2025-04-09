@@ -114,6 +114,15 @@ def validate_clue_df(path_to_file=None, df=None, raise_error=True):
     # If we've reached this point with no errors, it's validated
     return True
 
+
+def get_mismatch_percentage(crossword1, crossword2):
+    """
+    Given 2 crosswords which , this function looks at
+    :param crossword1:
+    :param crossword2:
+    :return:
+    """
+
 class Crossword:
     def __init__(self, clue_df, table_name=None):
 
