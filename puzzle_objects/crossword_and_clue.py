@@ -117,11 +117,45 @@ def validate_clue_df(path_to_file=None, df=None, raise_error=True):
 
 def get_mismatch_percentage(crossword1, crossword2):
     """
-    Given 2 crosswords which , this function looks at
-    :param crossword1:
-    :param crossword2:
-    :return:
+    Given 2 crosswords which , this function returns the percentage of cells which
+    are filled in both crossword1 and crossword2, and which do not agree
+
+    gen ai
+
+    :param crossword1: first crossword object
+    :param crossword2: second crossword object
+    :return: percentage of mismatch. 0 for no conflicting overlap, 1 for 100% conflicting
     """
+    grid1 = crossword1.grid
+    grid2 = crossword2.grid
+
+    # Sanity check: grid sizes must match
+    if grid1.shape != grid2.shape:
+        raise ValueError("Grids must be the same size to compare mismatch percentage.")
+
+    total_overlap = 0
+    mismatch_count = 0
+
+    for row in range(grid1.shape[0]):
+        for col in range(grid1.shape[1]):
+            char1 = grid1[row, col]
+            char2 = grid2[row, col]
+
+            # Skip black squares
+            if char1 == "■" or char2 == "■":
+                continue
+
+            # Only consider overlapping filled-in cells
+            if char1 != " " and char2 != " ":
+                total_overlap += 1
+                if char1 != char2:
+                    mismatch_count += 1
+
+    if total_overlap == 0:
+        return 0.0
+
+    return mismatch_count / total_overlap
+
 
 class Crossword:
     def __init__(self, clue_df, table_name=None):
@@ -564,8 +598,11 @@ class Crossword:
             else:
                 raise ValueError(f"Unsupported direction in location: {grid_location}")
 
-    def subset_crossword(self, grid_location, branching_factor=1, threshold=0.25, return_type="add"):
+    def subset_crossword(self, grid_location, branching_factor=1, threshold=0.25, return_type="crossword"):
         """
+
+        Note: currently can only subset an EMPTY dataframe
+
         Create a subset of the crossword that includes all clues that intersect
         with the given clue (via a shared coordinate). If branching_factor is 1, it
         will get all words that intersect with the original word.
@@ -626,18 +663,117 @@ class Crossword:
                         next_pass_coordinates += row["coordinate_set"]
                         continue
 
+        keep_nds = set(intersections.keys())
+
+        # Step 2: Create a new crossword with full_df, but we will black out the entire grid first
+        full_df = self.clue_df.copy()
+        new_crossword = Crossword(full_df.copy(), table_name=f"Subset of {grid_location}")
+
+        # Step 3: Black out the entire grid
+        new_crossword.grid[:, :] = "■"
+
+        # Step 4: Determine which coordinates to un-blacken based on kept clues
+        keep_df = full_df[full_df["number_direction"].isin(keep_nds)].copy()
+        for coords in keep_df["coordinate_set"]:
+            for col, row in coords:
+                new_crossword.grid[row, col] = " "
+
+        # Step 5: Update clue_df to only include subsetted clues
+        new_crossword.clue_df = keep_df
+
+        # Step 6: Return the appropriate output
         if return_type == "dict":
             return intersections
         elif return_type == "df":
-            return self.clue_df[self.clue_df["number_direction"].isin(intersections.keys())].copy()
+            return new_crossword.clue_df
         elif return_type == "crossword":
-            return Crossword(self.clue_df[self.clue_df["number_direction"].isin(intersections.keys())].copy())
+            return new_crossword
         elif return_type == "add to subset list":
-            self.subset_dict[grid_location] = Crossword(self.clue_df[self.clue_df["number_direction"].isin(intersections.keys())].copy())
+            self.subset_dict[grid_location] = new_crossword
+
+    def create_minimum_subset_cover(self, branching_factor=2, threshold=0.25, verbose=False):
+        """
+        Greedily select the minimal number of subset crosswords needed to cover the full puzzle.
+        Currently only works for an EMPTY crossword.
+
+        made with genai
+
+        Args:
+            branching_factor (int): branching depth for subset discovery (default 2)
+            threshold (float): threshold for clue inclusion (default 0.25)
+            verbose (bool): if True, prints progress
+
+        Returns:
+            List[Crossword]: minimal set of subsets covering the entire board
+        """
+        # 1. Get all coordinates that need to be covered
+        all_coords = set()
+        clue_to_coords = {}
+
+        for _, row in self.clue_df.iterrows():
+            coords = set(row["coordinate_set"])
+            all_coords.update(coords)
+            clue_to_coords[row["number_direction"]] = coords
+
+        uncovered_coords = set(all_coords)
+        used_clues = set()
+        subset_crosswords = []
+
+        while uncovered_coords:
+            best_clue = None
+            best_coverage_coords = set()
+
+            for clue in clue_to_coords:
+                if clue in used_clues:
+                    continue
+
+                # Generate a candidate subset
+                subset = self.subset_crossword(
+                    grid_location=clue,
+                    branching_factor=branching_factor,
+                    threshold=threshold,
+                    return_type="crossword"
+                )
+
+                # Collect covered coordinates in that subset
+                covered = set()
+                for _, row in subset.clue_df.iterrows():
+                    covered.update(row["coordinate_set"])
+
+                new_coverage = covered & uncovered_coords
+
+                if len(new_coverage) > len(best_coverage_coords):
+                    best_clue = clue
+                    best_coverage_coords = new_coverage
+
+            if not best_clue:
+                raise RuntimeError("Failed to find a clue that improves coverage.")
+
+            # Use the best subset and update state
+            final_subset = self.subset_crossword(
+                grid_location=best_clue,
+                branching_factor=branching_factor,
+                threshold=threshold,
+                return_type="crossword"
+            )
+
+            subset_crosswords.append(final_subset)
+            used_clues.add(best_clue)
+            uncovered_coords -= best_coverage_coords
+
+            if verbose:
+                print(f"[INFO] Using '{best_clue}', covered {len(best_coverage_coords)} new cells, "
+                      f"{len(uncovered_coords)} remaining.")
+
+        return subset_crosswords
 
 '''
 df = get_random_clue_df_from_csv(return_type="random regular")
 my_crossword = Crossword(clue_df=df)
+my_crossword2 = Crossword(clue_df=df)
+my_crossword.place_word("help","1-Across")
+my_crossword2.place_word("heck","1-Across")
+
 my_crossword.detailed_print()
 my_crossword.place_helper_answers(fill_oov=True, fill_percent=.65, random_seed=23)
 my_crossword.detailed_print()

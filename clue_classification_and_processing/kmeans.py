@@ -25,26 +25,6 @@ nltk.download('wordnet')
 
 clues = pd.read_csv(r"data\nytcrosswords.csv", encoding='latin1')
 
-# Function to classify crossword answers
-def classify_language(answer):
-    # Attempt to segment words (e.g., ITSATRAP -> ["its", "a", "trap"])
-    segmented_words = segment(answer.lower())  # Converts to lowercase before segmentation
-
-    # If all words are capitalized (suggesting a proper noun), classify as Proper Noun
-    if answer.isupper() and len(segmented_words) > 1:
-        return "Proper Noun"
-
-    # If all segmented words are in the English dictionary, classify as English
-    if all(word in english_vocab for word in segmented_words):
-        return "English"
-
-    # If some words are in English and others are not, classify as Mixed
-    if any(word in english_vocab for word in segmented_words):
-        return "Mixed (English & Foreign)"
-
-    # Otherwise, classify as Foreign
-    return "Foreign"
-
 
 # Define primary cluster categories
 def assign_primary_cluster(clue):
@@ -102,12 +82,13 @@ clues["is ellipsis in clue"] = clues["Clue"].str.contains(r"\.\.\.", case=False,
 clues["avg word length"] = clues["Clue"].apply(lambda x: sum(len(word) for word in x.split()) / len(x.split()) if x.split() else 0)
 clues["number commas in clue"] = clues["Clue"].apply(lambda x: x.count(","))
 clues["percentage words (other than first word) that are upper-case"] = clues["Clue"].apply(uppercase_percentage)
-clues["number non a-z or 1-9 characters in clue"] = clues["Clue"].apply(lambda x: sum(not re.match(r"[A-Za-z0-9]", c) for c in x) / len(x) if len(x) > 0 else 0)
+clues["number non a-z or 1-9 characters in clue"] = clues["Clue"].apply(lambda x: sum(not re.match(r"[A-Za-z0-9 ]", c) for c in x) / len(x) if len(x) > 0 else 0)
 clues["contains e.g."] = clues["Clue"].str.contains(r"\be\.g\.", case=False, na=False)
 clues["contains etc."] = clues["Clue"].str.contains(r"\betc\.", case=False, na=False)
 clues["quoted clues"] = clues["Clue"].apply(
     lambda x: isinstance(x, str) and x.count('"') == 2 and x.startswith('"') and x.endswith('"')
 )
+clues["contains dir."] = clues["Clue"].str.contains(r"\bdir\.", case=False, na=False)
 
 def is_roman_only(word):
     if type(word) ==str:
@@ -281,7 +262,7 @@ def is_geography_clue_spacy(clue_text):
 clues["georgrophy entity"] = clues[clues["Clue"].apply(is_geography_clue_spacy)]
 
 clues["is_first_name"] = clues["Word"].str.lower().isin(name.lower() for name in name_set)
-clues[clues["MentionsProfession"] == True].to_csv("profession_clues.csv", index=False)
+clues[clues["contains dir."] == True].to_csv("direction_clues.csv", index=False)
 
 
 # Apply POS analysis to each clue
