@@ -22,6 +22,7 @@ def get_crossword_from_csv(puzzle_name):
     loc = os.path.join(get_processed_puzzle_sample_root(), puzzle_name)
     return Crossword(pd.read_csv(loc))
 
+
 def validate_clue_df(path_to_file=None, df=None, raise_error=True):
     """
     Given either a path to csv or a dataframe, validate if the data is
@@ -748,34 +749,69 @@ class Crossword:
         :return: dictionary of subsets where key is the number-direction that
         lead to the creation of that subset
         """
-        subset_dict = {}
 
-        number_directions = self.clue_df["number_direction"].to_list()
+        subset_id = -1
+        unique_subset_keys = set()  # each element is a frozenset of number_directions
+        subsets = {}  # keys are the subset id, like 0, and value is dictionary with crossword, number_directions_which_yield_subset
+        subset_lookup = {}  # Keys are like 1-Across and value is the subset id that is created for subset_crossword(grid_location="1-Across"
 
-        for number_direction in number_directions:
-            # Subset the crossword based on that grid location like "1-Across"
-            subset_dict[number_direction] = \
-                {"subset": self.subset_crossword(grid_location=number_direction,
-                                                 branching_factor=branching_factor,
-                                                 overlap_threshold=overlap_threshold,
-                                                 return_type="crossword"),
-                 "overlap_subsets": []}
+        all_number_directions = self.clue_df["number_direction"].tolist()
 
-        # For each subset, find the words which overlap
-        for number_direction1 in number_directions:
-            for number_direction2 in number_directions:
-                # If number_directions are distinct
-                if number_direction1 != number_direction2:
+        for number_direction in all_number_directions:
+            # Build a subset crossword for this direction
+            temp_subset = self.subset_crossword(
+                grid_location=number_direction,
+                branching_factor=branching_factor,
+                overlap_threshold=overlap_threshold,
+                return_type="crossword"
+            )
 
-                    # Find the number_directions for which these two overlap
-                    overlaps = get_word_overlap_list(subset_dict[number_direction1]["subset"],
-                                                     subset_dict[number_direction2]["subset"])
+            # Create a hashable key based on number_directions in the subset
+            nd_set = frozenset(temp_subset.clue_df["number_direction"].tolist())
 
-                    # If there is any overlap at all, add number_direction 2 to the subset_dict
-                    if len(overlaps) > 0:
-                        subset_dict[number_direction1]["overlap_subsets"].append((number_direction2, [overlaps]))
+            # Add to subsets if it's a new one
+            if nd_set not in unique_subset_keys:
+                subset_id += 1
+                unique_subset_keys.add(nd_set)
+                subsets[subset_id] = {
+                    "crossword": temp_subset,
+                    "number_directions_which_yield_subset": [number_direction],  # start list with current clue
+                    "number_directions_fully_contained_in_subset": set(nd_set),
+                    "intersectingSubsets_numberWords": []
+                }
+            else:
+                # Find existing subset that matches and add this direction to its list
+                for sid, data in subsets.items():
+                    existing_nd_set = frozenset(data["crossword"].clue_df["number_direction"].tolist())
+                    if existing_nd_set == nd_set:
+                        data["number_directions_which_yield_subset"].append(number_direction)
+                        data["intersectingSubsets_numberWords"]: []
+                        if number_direction in existing_nd_set:
+                            data["number_directions_fully_contained_in_subset"].add(number_direction)
+                        break
+            subsets[subset_id]["number_clues"] = len(subsets[subset_id]["number_directions_fully_contained_in_subset"])
+            subset_lookup[number_direction] = subset_id
 
-        return subset_dict
+        for id1 in subsets.keys():
+            for id2 in subsets.keys():
+                # skip if they're the same
+                if id1 == id2:
+                    continue
+                clue_set1 = subsets[id1]["number_directions_fully_contained_in_subset"]
+                clue_set2 = subsets[id2]["number_directions_fully_contained_in_subset"]
+                intersection_of_clues = clue_set1.intersection(clue_set2)
+                intersection_size = len(intersection_of_clues)
+
+                # Case - intersection is same length as size of clue set 1 (means clue set 1 is contained within clueset2)
+                if intersection_size == len(clue_set1):
+                    # print(f"{id1} and {id2} intersection is equal length to {id1}. inspect")
+                    continue
+                # Case - intersection is higher than 0 -> add clue_set2's id and the number of words to intersecting_subsets
+                if intersection_size > 0:
+                    subsets[id1]["intersectingSubsets_numberWords"].append((id2, len(intersection_of_clues)))
+            subsets[id1]["intersectingSubsets_numberWords"].sort(key=lambda x: x[1])
+
+        return subsets, subset_lookup
 
     def create_minimum_subset_cover(self, branching_factor=2, overlap_threshold=0.25, verbose=False):
         """
@@ -853,41 +889,14 @@ class Crossword:
 
         return subset_crosswords
 
-x=get_crossword_from_csv("crossword_2025_01_20.csv")
-subset_dict = x.get_all_subset_dict()
-'''
-df = get_random_clue_df_from_csv(return_type="random regular")
-my_crossword = Crossword(clue_df=df)
-my_crossword2 = Crossword(clue_df=df)
-my_crossword.place_word("help","1-Across")
-my_crossword2.place_word("heck","1-Across")
-
-my_crossword.detailed_print()
-my_crossword.place_helper_answers(fill_oov=True, fill_percent=.65, random_seed=23)
-my_crossword.detailed_print()
-print(my_crossword.count_percentage_correct_words(blanks_count_as_complete =True))
-print(my_crossword.count_percentage_correct_words(blanks_count_as_complete=False))
-print(my_crossword.count_percentage_correct_letters(blanks_count_as_complete =True))
-print(my_crossword.count_percentage_correct_letters(blanks_count_as_complete=False))
-my_crossword.place_word("xxxxxxx", "7-Across", allow_overwriting=True, raise_errors=False)
-
-lg_loc = f"{get_project_root()}/data/puzzle_samples/processed_puzzle_samples/crossword_2024_06_12.csv"
-med_loc = f"{get_project_root()}/data/puzzle_samples/wednesday_03262025.xlsx"
-mini_loc = f"{get_project_root()}/data/puzzle_samples/mini_03262025.xlsx"
-
-df = pd.read_csv(lg_loc)
-my_crossword = Crossword(clue_df=df)
-my_crossword.detailed_print()
-#result = my_crossword.place_word("hello", "5-across")
-
-intersection_dict = my_crossword.subset_crossword("1-Across", 1, overlap_threshold=2/3, return_type="add to subset list")
-#full_subset = pd.concat([subset, additional])
-#subset_crossword = Crossword(subset)
-#subset_crossword.detailed_print()
-
-#for key in intersection_dict.keys():
-#    print(f"{key}: {intersection_dict[key]}")
-'''
+# Sheryl - try this
+crossword = get_crossword_from_csv("crossword_2025_01_20.csv")
+subsets, subset_lookup_dict = crossword.get_all_subset_dict(overlap_threshold=1)
+for id in subsets.keys():
+    print("__________________________________________________________")
+    print(f"id={id}")
+    subsets[id]["crossword"].detailed_print()
+    print(f'number clues={subsets[id]["number_clues"]}')
 
 
 def get_random_clue_df(puzzle_type="any", return_filename=False, force_previous=True):
@@ -977,3 +986,7 @@ def delete_last_loaded_crossword_on_exit():
 
 
 atexit.register(delete_last_loaded_crossword_on_exit)
+
+
+
+
