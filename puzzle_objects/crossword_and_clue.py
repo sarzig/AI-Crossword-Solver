@@ -891,6 +891,7 @@ class Crossword:
 
         return subset_crosswords
 
+'''
 # Sheryl - try this
 crossword = get_crossword_from_csv("crossword_2025_01_20.csv")
 subsets, subset_lookup_dict = crossword.get_all_subset_dict(overlap_threshold=1)
@@ -899,6 +900,7 @@ for id in subsets.keys():
     print(f"id={id}")
     subsets[id]["crossword"].detailed_print()
     print(f'number clues={subsets[id]["number_clues"]}')
+'''
 
 
 def get_random_clue_df(puzzle_type="any", return_filename=False, force_previous=True):

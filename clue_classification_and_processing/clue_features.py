@@ -170,6 +170,8 @@ def add_features(clues_df):
     clues_df["_f_is ellipsis in clue"] = clues_df["Clue"].str.contains(r"...", case=False, na=False)
     clues_df["_f_number commas in clue"] = clues_df["Clue"].apply(lambda x: x.count(","))
     clues_df["_f_number non a-z or 1-9 characters in clue"] = clues_df["Clue"].apply(lambda x: sum(not re.match(r"[A-Za-z0-9]", c) for c in x) / len(x) if len(x) > 0 else 0)
+
+    # Contains some words which are short-cuts to figuring out the class
     clues_df["_f_contains e.g."] = clues_df["Clue"].str.contains(r"\be\.g\.", case=False, na=False)
     clues_df["_f_contains etc."] = clues_df["Clue"].str.contains(r"\betc\.", case=False, na=False)
     clues_df["_f_contains in short"] = clues_df["Clue"].str.contains(r"\bin short\b", case=False, na=False)
@@ -178,7 +180,7 @@ def add_features(clues_df):
     clues_df["_f_contains briefly"] = clues_df["Clue"].str.contains(r"\bbriefly\b", case=False, na=False)
     clues_df["_f_contains dir."] = clues_df["Clue"].str.contains(" dir.", case=False, na=False)
     clues_df["_f_contains exclamation"] = clues_df["Clue"].str.contains('!"', case=False, na=False)
-    clues_df["_f_starts with kind of"] = clues_df["Clue"].str.startswidth('kind of', case=False, na=False)
+    clues_df["_f_starts with kind of"] = clues_df["Clue"].str.lower().str.startswith('kind of')
     clues_df["_f_contains it may be"] = clues_df["Clue"].str.contains('it may be', case=False, na=False)
     clues_df["_f_contains dir."] = clues_df["Clue"].str.contains(r"\bdir\.", case=False, na=False)
     clues_df["_f_contains bible clue"] = clues_df["Clue"].str.contains(
@@ -186,15 +188,17 @@ def add_features(clues_df):
         case=False,
         na=False
     )
-    clues_df["_f_contains ,maybe or ,perhaps"] = clues_df["Clue"].str.contains(r", (maybe|perhaps)", case=False, na=False)
+    clues_df["_f_contains ,maybe or ,perhaps"] = clues_df["Clue"].str.contains(r", (?:maybe|perhaps)", case=False, na=False)
     clues_df["_f_contains word before"] = clues_df["Clue"].str.contains(r"word before", case=False, na=False)
 
     # Need to add xxx tbd
     # Clue starts with "country where", "country that", "country that's", "country w", "city", "river to" , "river that", "river whose", "river of", river near", "river in", "river f"
     # river at,
-    # More involved features
+
+    # Add more involved features
     clues_df = add_profession(clues_df)
 
+    # This is required for success of random forest - all columns must be converted to numeric
     for col in clues_df.columns:
         if col.startswith("_f_"):
             clues_df[col] = pd.to_numeric(clues_df[col], errors="coerce")

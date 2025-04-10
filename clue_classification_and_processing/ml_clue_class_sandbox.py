@@ -11,72 +11,7 @@ import joblib
 from clue_classification_and_processing.clue_features import add_features, move_feature_columns_to_right_of_df, \
     select_numeric_features
 from clue_classification_and_processing.helpers import get_clues_by_class, get_project_root, get_clues_dataframe
-
-'''
-def select_numeric_features(clues):
-    """
-    Cute little helper function to select the numeric features in clues_df. 
-    
-    :param clues: the input dataframe, typically the manually classified clues df
-                  with enriched columns (with features).
-    :return: the subset of clues that is non-numeric
-    """
-    return clues[[col for col in clues.columns if col not in ["Clue", "Word"]]]
-
-
-def drop_clue_and_word(df):
-    return df.drop(columns=["Clue", "Word"])
-
-
-def create_pipeline():
-    """
-    This function loads the manually classified clues, calculates tf-idf-based features,
-    and creates an ML pipeline.
-
-    :return: pipeline, clues
-    """
-    # Load the Excel file
-    manually_classed_clues = get_clues_by_class(classification_type="manual_only")
-
-    # Filter rows where "Class" is numeric, None, not a string, or less than length 3
-    exclude_rows = (
-            manually_classed_clues["Class"].isna() |
-            manually_classed_clues["Class"].apply(lambda x: isinstance(x, (int, float))) |
-            manually_classed_clues["Class"].apply(lambda x: isinstance(x, str) and len(x.strip()) < 3)
-    )
-
-    clues = manually_classed_clues[~exclude_rows]
-    # add features
-    clues = add_features(clues)
-
-    X = clues.drop(columns=["Class"])
-
-    text_features = ["Clue"]
-
-    numeric_features = [col for col in X.columns if col not in text_features and col != "Word"]
-
-    # Assume all columns are numeric (boolean, int, float)
-
-
-    # Apply a TfidfVectorizer to "Clue" column - assesses how the frequency of words predict class inclusion
-    # Additionally, convert numeric features to a usable
-
-    preprocessor = ColumnTransformer([
-        ("tfidf_clue", TfidfVectorizer(analyzer='word', ngram_range=(1, 2), max_features=1000), "Clue"),
-        ("numeric_features", FunctionTransformer(lambda x: x[numeric_features], validate=False), numeric_features)
-    ])
-
-    # Build the pipeline
-    pipeline = Pipeline([
-        ("features", preprocessor),
-        ("classifier",
-         RandomForestClassifier(n_estimators=100,
-                                random_state=42,  # the answer to life, the universe, and everything
-                                class_weight="balanced"))  # balanced ensures low frequency classes not lost
-    ])
-
-    return pipeline, clues
-'''
+from sklearn.base import clone
 
 
 def drop_clue_and_word(df):
@@ -102,13 +37,16 @@ def create_pipeline():
     )
 
     clues = manually_classed_clues[~exclude_rows]
+
     # add features
     clues = add_features(clues)
 
+    # Define features and labels
     X = clues.drop(columns=["Class", "Word"])
+    y = clues["Class"]
 
     text_features = ["Clue"]
-    numeric_features = [col for col in X.columns if col not in text_features and col != "Word"]
+    # numeric_features = [col for col in X.columns if col not in text_features and col != "Word"]
 
     preprocessor = ColumnTransformer([
         ("tfidf_clue", TfidfVectorizer(analyzer='word', ngram_range=(1, 2), max_features=1000), "Clue"),
@@ -124,20 +62,29 @@ def create_pipeline():
     print("Sample rows:")
     print(clues[[col for col in clues.columns if col.startswith("_f_")]].head())
 
-    pipeline = Pipeline([
+    base_pipeline = Pipeline([
         ("features", preprocessor),
         ("classifier", RandomForestClassifier(n_estimators=100, random_state=42, class_weight="balanced"))
     ])
 
-    return pipeline, clues
+    # Fit the pipeline
+    fitted_pipeline = base_pipeline
+    fitted_pipeline.fit(X, y)
+
+    # Create a second unfitted copy
+    unfitted_pipeline = clone(base_pipeline)
+
+    return {"fitted_pipeline": fitted_pipeline,
+            "unfitted_pipeline": unfitted_pipeline,
+            "clues": clues}
 
 
-def save_pipeline(pipeline):
+def save_pipeline(fitted_pipeline):
     """
-    Given a pipeline, save it to "clue_classification_ml_pipeline.joblib"
+    Given a fitted_pipeline, save it to "clue_classification_ml_pipeline.joblib"
     file within the project data folder.
 
-    :param pipeline: pipeline to save, trained on manually classified clues
+    :param fitted_pipeline: fitted_pipeline to save, trained on manually classified clues
     :return: nothing
     """
 
@@ -160,7 +107,7 @@ def save_pipeline(pipeline):
         os.rename(save_location, old_location)
 
     # Save it and check path exists
-    joblib.dump(pipeline, save_location)
+    joblib.dump(fitted_pipeline, save_location)
 
     # If save_location path exists, delete OLD path
     if os.path.exists(save_location):
@@ -177,11 +124,14 @@ def get_clue_classification_ml_pipeline():
     """
     Retrieves the default clue classification pipeline saved at
     project_root/data/clue_classification_ml_pipeline.joblib
-    :return:
+
+    :return: pipeline object
     """
+
     # Pipeline path
     loc = os.path.join(get_project_root(),
                        "data",
+                       "clue_classification_ml_pipeline",
                        "clue_classification_ml_pipeline.joblib")
 
     # load and return
@@ -189,19 +139,20 @@ def get_clue_classification_ml_pipeline():
     return pipeline
 
 
-def assess_pipeline_performance(clues, pipeline=None):
+def assess_pipeline_performance(clues, unfitted_pipeline: Pipeline = None):
     """
     Given a pipeline and a clues dataFrame containing a column called Class (note
     this should be manually classified class), this tests the pipeline on the actual
-    vs. predicted values
-    :param pipeline: trained pipeline
+    vs. predicted values.
+
+    :param unfitted_pipeline:
     :param clues: clues dataFrame with column "Class"
     :return:
     """
 
     # If the pipeline is None, just use the default one
-    if pipeline is None:
-        pipeline = get_clue_classification_ml_pipeline()
+    if unfitted_pipeline is None:
+        unfitted_pipeline = get_clue_classification_ml_pipeline()["unfitted_pipeline"]
 
     # Target
     y = clues["Class"]
@@ -211,10 +162,10 @@ def assess_pipeline_performance(clues, pipeline=None):
 
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.5, random_state=42)
 
-    pipeline.fit(X_train, y_train)
+    unfitted_pipeline.fit(X_train, y_train)
 
     # Evaluate
-    y_prediction = pipeline.predict(X_test)
+    y_prediction = unfitted_pipeline.predict(X_test)
 
     # make the report (zero_division stops the error for low-frequency classes)
     classification_success_report = classification_report(y_test, y_prediction, zero_division=0)
@@ -223,28 +174,131 @@ def assess_pipeline_performance(clues, pipeline=None):
     return classification_success_report
 
 
-my_pipeline, my_clues = create_pipeline()
-save_pipeline(my_pipeline)
-report = assess_pipeline_performance(clues=my_clues, pipeline=my_pipeline)
+def add_top_class_predictions(df, pipeline, top_n=10):
+    """
+    GenAI created function to return a probability list instead of a single class
 
-manually_classed_clues = get_clues_by_class(classification_type="manual_only")
-manually_classed_clues = add_features(manually_classed_clues)
+    :param df: dataframe with add_features already done, and a column named "Clue"
+    :param pipeline: a FITTED pipeline
+    :param top_n: The number of class matches which should be returned
+    :return: the dataframe with the top classes added, and feature columns moved to the right
+    """
 
-# Step 3: Predict
-predictions = my_pipeline.predict(manually_classed_clues)
+    # Get class probabilities
+    probabilities = pipeline.predict_proba(df)
+    class_labels = pipeline.classes_
 
-# Step 4: Add predictions to DataFrame
-manually_classed_clues = manually_classed_clues.copy()
-manually_classed_clues["Predicted_Class"] = predictions  # Initialize with None
-manually_classed_clues = move_feature_columns_to_right_of_df(manually_classed_clues)
+    # Zip class labels with probabilities for each row, sort by prob desc, and convert np.float64 to float
+    predictions = []
+    for row in probabilities:
+        label_prob_pairs = list(zip(class_labels, row))
+        sorted_pairs = sorted(label_prob_pairs, key=lambda x: x[1], reverse=True)
+        top_n_pairs = sorted_pairs[:top_n]
+        top_n_pairs_as_floats = [(label, float(prob)) for label, prob in top_n_pairs]
 
+        filtered_pairs = [(label, float(prob)) for label, prob in top_n_pairs if prob >= 0.01]
+        predictions.append(filtered_pairs)
+
+    df = df.copy()
+    df["Top_Predicted_Classes"] = predictions
+    df = move_feature_columns_to_right_of_df(df)  # Clean up the columns
+
+    return df
+
+
+def predict_single_clue_from_default_pipeline(clue_text, pipeline=None, top_n=10):
+    """
+    Simply is a wrapper for predict_clues_df_from_default_pipeline that does
+    clue classification on a single text input. Pipeline should be passed as an argument,
+    otherwise the pipeline will be manually loaded every invocation of this function.
+
+    :param clue_text: text to classify
+    :param pipeline: pipeline to pass. If none, a pipeline will be loaded
+    :return: the classification dictionary of probabilities
+    """
+
+    # Create a mini, 1-row dataframe to pass
+    mini_df = pd.DataFrame({"Clue": [clue_text]})
+
+    classification_df = predict_clues_df_from_default_pipeline(clues_df=mini_df,
+                                                               pipeline=pipeline,
+                                                               keep_features=False,
+                                                               top_n=top_n)
+
+    class_predictions = classification_df.loc[0, "Top_Predicted_Classes"]
+
+    return class_predictions
+
+
+def predict_clues_df_from_default_pipeline(clues_df, keep_features=False, pipeline=None, top_n=10):
+    """
+    Given the default saved fitted pipeline, take the clues_df from the input (which
+    will be modified to only contain "Clue" and "Word"), apply clues feature addition,
+    and then return a dataframe with those predictions added.
+
+    :return:
+    """
+
+    # Ensure required column is present
+    if "Clue" not in clues_df.columns:
+        raise ValueError("Input DataFrame must contain a 'Clue' column.")
+
+    # Save original DataFrame
+    original_df = clues_df.copy()
+
+    # Remove extraneous columns in clues_df
+    base_cols = ["Clue", "Word"]
+    minimal_df = clues_df[[col for col in base_cols if col in clues_df.columns]].copy()
+
+    # Fetch the saved pipeline
+    pipeline = get_clue_classification_ml_pipeline()
+
+    # Inspect the classifications of manually_classed_clues
+    minimal_df = add_features(minimal_df)  # Add the features
+    minimal_df = add_top_class_predictions(minimal_df, pipeline, top_n=top_n)
+
+    # Combine back with original
+    combined_df = original_df.copy()
+    combined_df["Top_Predicted_Classes"] = minimal_df["Top_Predicted_Classes"]
+
+    if keep_features is True:
+        combined_df = pd.concat([combined_df, minimal_df[[col for col in minimal_df.columns if col.startswith("_f_")]]], axis=1)
+        combined_df = move_feature_columns_to_right_of_df(combined_df)
+    else:
+        # Drop all feature columns starting with "_f_"
+        combined_df = combined_df[[col for col in combined_df.columns if not col.startswith("_f_")]]
+
+    return combined_df
+
+
+'''
+# Create the pipeline - only needs to be done once per update to manual classifications
+# OR to changes to add_features
+
+pipeline_result = create_pipeline()
+fitted_pipeline = pipeline_result["fitted_pipeline"]
+unfitted_pipeline = pipeline_result["unfitted_pipeline"]
+my_clues = pipeline_result["clues"]
+
+# Save the fitted version of the pipeline
+save_pipeline(fitted_pipeline)
+
+# Make a report
+report = assess_pipeline_performance(clues=my_clues, unfitted_pipeline=unfitted_pipeline)
+
+# Get the saved pipeline
+my_pipeline = get_clue_classification_ml_pipeline()
+'''
+
+
+# Inspect the classifications of manually_classed_clues
+manually_classed_clues = get_clues_by_class(classification_type="manual_only")  # Get the clues set
+manually_classed_clues_predicted = predict_clues_df_from_default_pipeline(clues_df=manually_classed_clues,
+                                                                keep_features=False,
+                                                                top_n=3)
+
+# Apply this to the actual full dataset!!
 all_clues = get_clues_dataframe(delete_dupes=True)
-all_clues = add_features(all_clues)
-
-# Step 3: Predict
-predictions = my_pipeline.predict(all_clues)
-
-# Step 4: Add predictions to DataFrame
-all_clues = all_clues.copy()
-all_clues["Predicted_Class"] = predictions  # Initialize with None
-all_clues = move_feature_columns_to_right_of_df(all_clues)
+all_clues_predicted = predict_clues_df_from_default_pipeline(clues_df=all_clues,
+                                                keep_features=False,
+                                                    top_n=3)

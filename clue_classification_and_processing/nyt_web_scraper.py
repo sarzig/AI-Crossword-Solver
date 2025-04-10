@@ -6,9 +6,11 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-
 from clue_classification_and_processing.helpers import get_project_root
 
+"""
+This file contains functions which support 
+"""
 
 def get_day_of_week(date_obj):
     return calendar.day_name[date_obj.weekday()].lower()
@@ -76,5 +78,5 @@ def download_and_reveal_puzzle(date_str):
     finally:
         driver.quit()
 
-
-download_and_reveal_puzzle("2025-02-04")
+# example usage:
+# download_and_reveal_puzzle("2025-02-04")

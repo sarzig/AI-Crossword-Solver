@@ -11,7 +11,6 @@ Generally functions will be put here if they work well, do not have a better "ho
 elsewhere, and are polished.
 
 Summary of functions-----------------------------------------------
--------------------------------------------------------------------
 General helpers:
 * print_if(statement, print_bool)
 * conditional_raise(error, raise_bool)
