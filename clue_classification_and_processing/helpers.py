@@ -2,7 +2,6 @@ import os
 import re
 import string
 import pandas as pd
-import random
 import hashlib
 
 """
@@ -51,15 +50,44 @@ def conditional_raise(error, raise_bool):
         raise error
 
 
+def cool_error(error):
+    """
+    Print a very large error to hopefully convince the user to notice urgent
+    action should be taken.
+    :return: nothing
+    """
+
+    error_text = \
+        """
+    +-------------------------------------------------+
+    |     .d88b.  888d888 888d888  .d88b.  888d888    |
+    |    d8P  Y8b 888P"   888P"   d88""88b 888P"      |
+    |    88888888 888     888     888  888 888        |
+    |    Y8b.     888     888     Y88..88P 888        |
+    |     "Y8888  888     888      "Y88P"  888        |
+    +-------------------------------------------------+    
+     """
+
+    print(error_text)
+    raise error
+
+
 def get_clues_by_class(clue_class="all", classification_type="manual_only", prediction_threshold=0.8):
     """
     This queries two datasets:
       * nyt_crosswords.csv
-      *
+      * Sarah's manually classified clues
+
+    If classification_type is manual_only, then clues of the given clue class (or ALL classes with manual
+    classes) will be returned in a df.
+
+    If classification type is predicted_only, then the full kaggle dataset will be queried, with the
+    predictions applied by my ML model. Beware, these are frequently incorrect, especially in pretty critical
+    categories like "straight definition".
 
     :param: clue_class = if all, gives all clue types
     :param: classification_type= "manual_only", "predicted_only", "all"
-    :return:
+    :return: df with columns ["Clue", "Word", "Class"]. Approximately 5k manually classed rows and 700k ML classed rows
     """
 
     loc = ""
@@ -85,20 +113,25 @@ def get_clues_by_class(clue_class="all", classification_type="manual_only", pred
     class_series = (df["Class"]).dropna()
     class_series = class_series[class_series.apply(lambda x: isinstance(x, str))]
     classes = sorted(set(class_series))
-    print(f"Pulling {text} classified clues from {loc}.")
-    print(f"All classes present in data are: {classes}")
+    print(f"\nPulling {text} classified clues from\n{loc}.")
 
     # If class is not all, then subset to that class
     if clue_class != "all":
         df = df[df["Class"] == clue_class]
         print(f"Returning clues of class: {clue_class}")
     else:
-        print("Returning clues of all classes")
+        print("Returning clues of all classes.\n")
 
     # Get only columns of interest
     columns_of_interest = ["Clue", "Word", "Class", "Confidence"]
     available_columns = [col for col in columns_of_interest if col in df.columns]
     df = df[available_columns].copy()
+
+    # Make sure all columns in df are strings
+    for col in df.columns:
+        if col != "Confidence":
+            df[col] = df[col].astype(str)
+
     return df
 
 
@@ -122,6 +155,7 @@ def get_vocab():
 def stable_hash(obj):
     """
     Stable hash will return the same random value every single time.
+
     :param obj: object
     :return: hashed integer
     """
@@ -132,7 +166,7 @@ def get_project_root():
     """
     Uses OS lib to search for cwd, and then walks back to project root.
 
-    :return:
+    :return: os.path object
     """
     # get cwd and split into constituent parts
     cwd = os.getcwd()
@@ -144,15 +178,26 @@ def get_project_root():
         index = path_parts.index("ai_crossword_solver")
         project_root = os.sep.join(path_parts[:index + 1])
 
+    # If ai_crossword_solver isn't anywhere in the path, then flag
+    else:
+        error_text = "To our TA: Please note the parent project directory expects to be named 'ai_crossword_solver'"
+        cool_error(FileNotFoundError(error_text))
+
     return project_root
 
 
-
 def get_processed_puzzle_sample_root():
-    return os.path.join(get_project_root(), "data", "puzzle_samples", "processed_puzzle_samples")
+    """
+    Quick helper to get the path to processed_puzzle_samples.
+    :return: an os.path object
+    """
+    return os.path.join(get_project_root(),
+                        "data",
+                        "puzzle_samples",
+                        "processed_puzzle_samples")
 
 
-def get_clues_dataframe(clues_path=None):
+def get_clues_dataframe(clues_path=None, delete_dupes=False):
     """
     Uses OS lib to search for cwd, and then walks back to project root.
 
@@ -173,11 +218,58 @@ def get_clues_dataframe(clues_path=None):
             root = os.sep.join(path_parts[:index + 1])
 
         # Load dataset
-        clues_path = os.path.join(root, r"data//nytcrosswords.csv")
+        clues_path = os.path.join(root, r"data", "nytcrosswords.csv")
 
     # Return the dataframe from that csv
     clues_df = pd.read_csv(clues_path, encoding='latin1')
+    if delete_dupes:
+        clues_df = clues_df.drop_duplicates(["Word", "Clue"])
     return clues_df
+
+
+def get_100_most_common_clues_and_answers():
+    """
+    Every savvy cross-worder knows that "Actress Thurman" resolves a pesky puzzle triplet,
+    that Jai Alai is a beautifully voweled Basque sport, and that Tae Kwon Do is a
+    respected martial art.
+
+    This function returns the 100 most common clues and answers, which we assume
+    a person solving the crossword would know by good-old-fashioned rote memorization.
+
+    # Ai assisted
+
+    :return: dataframe with columns Clue, Word, count, and is_unique_clue
+    """
+    clues_df = get_clues_dataframe()
+
+    # Top 200 most common Clue–Word pairs
+    common_pairs = (
+        clues_df.groupby(["Clue", "Word"])
+        .size()
+        .reset_index(name="count")
+        .sort_values("count", ascending=False)
+        .head(200)
+    )
+
+    # All unique (Clue, Word) pairs in top clues
+    filtered_clues_df = (
+        clues_df[clues_df["Clue"].isin(common_pairs["Clue"])]
+        .drop_duplicates(subset=["Clue", "Word"])
+    )
+
+    # Clues that only appear once among top pairs
+    unique_clues_set = (
+        filtered_clues_df["Clue"]
+        .value_counts()
+        .loc[lambda x: x == 1]
+        .index
+    )
+
+    # Mark each Clue–Word pair in top 200 as unique or not
+    common_pairs["is_unique_clue"] = common_pairs["Clue"].isin(unique_clues_set)
+    common_pairs = common_pairs[common_pairs["is_unique_clue"] == True]  # only subset the clues we care about
+
+    return common_pairs
 
 
 def preprocess_lower_remove_punct_strip_whitespace(input_text):
@@ -236,5 +328,3 @@ def process_text_into_clue_answer(input_text):
     new_text = re.sub(whitespace_regex, "", new_text).lower()
 
     return new_text
-
-#def_clues = get_clues_by_class("Straight definition", "manual_only")
