@@ -1,0 +1,386 @@
+Date,Word,Clue,Primary Cluster,Cluster,ends in question,number words,length of clue,no alphabet characters,is quote,contains underscore,contains asterisk,contains done,number of non-consecutive periods in clue,is ellipsis in clue,avg word length,number commas in clue,percentage words (other than first word) that are upper-case,number non a-z or 1-9 characters in clue,contains e.g.,contains etc.,quoted clues,contains dir.,"contains ,maybe",contains word before
+10/26/2021,BOBA,Word before tea or Fett,Other,,False,5,23,4,False,False,False,False,0,False,3.8,0,0.4,0.0,False,False,False,False,False,True
+10/21/2021,LIL,"Word before Kim, Wayne and Baby",Other,,False,6,31,6,False,False,False,False,0,False,4.333333333333333,1,0.6666666666666666,0.03225806451612903,False,False,False,False,False,True
+10/21/2021,PALE,"Word before ""Blue Eyes"" or ""Blue Dot"" in titles",Other,,False,9,47,12,False,False,False,False,0,False,4.333333333333333,0,0.5555555555555556,0.0851063829787234,False,False,False,False,False,True
+9/22/2021,SIDE,Word before dish or effect,Other,,False,5,26,4,False,False,False,False,0,False,4.4,0,0.2,0.0,False,False,False,False,False,True
+9/20/2021,TURN,"Word before ""the tables"" or ""the tide""",Other,,False,7,38,10,False,False,False,False,0,False,4.571428571428571,0,0.14285714285714285,0.10526315789473684,False,False,False,False,False,True
+9/5/2021,ARENA,Word before rock or football,Other,,False,5,28,4,False,False,False,False,0,False,4.8,0,0.2,0.0,False,False,False,False,False,True
+8/30/2021,BODY,Word before language or temperature,Other,,False,5,35,4,False,False,False,False,0,False,6.2,0,0.2,0.0,False,False,False,False,False,True
+8/15/2021,ICE,Word before cap or pop,Other,,False,5,22,4,False,False,False,False,0,False,3.6,0,0.2,0.0,False,False,False,False,False,True
+7/27/2021,DAY,Word before trader or tripper,Other,,False,5,29,4,False,False,False,False,0,False,5.0,0,0.2,0.0,False,False,False,False,False,True
+7/7/2021,INNER,Word before tube or circle,Other,,False,5,26,4,False,False,False,False,0,False,4.4,0,0.2,0.0,False,False,False,False,False,True
+7/6/2021,ONE,"Word before ""More Night,"" ""More Try"" and ""More Chance"" in Billboard hits",Other,,False,12,72,18,False,False,False,False,0,False,5.083333333333333,1,0.6666666666666666,0.09722222222222222,False,False,False,False,False,True
+6/22/2021,RAP,Word before sheet or battle,Other,,False,5,27,4,False,False,False,False,0,False,4.6,0,0.2,0.0,False,False,False,False,False,True
+6/21/2021,ILL,"Word before ""bite"" or ""go""",Other,,False,5,26,8,False,False,False,False,0,False,4.4,0,0.2,0.15384615384615385,False,False,False,False,False,True
+6/10/2021,JET,Word before black or Blue,Other,,False,5,25,4,False,False,False,False,0,False,4.2,0,0.4,0.0,False,False,False,False,False,True
+5/18/2021,PANTY,Word before line or hose,Other,,False,5,24,4,False,False,False,False,0,False,4.0,0,0.2,0.0,False,False,False,False,False,True
+5/13/2021,ONLY,Word before child or human,Other,,False,5,26,4,False,False,False,False,0,False,4.4,0,0.2,0.0,False,False,False,False,False,True
+5/3/2021,SOY,Word before sauce or milk,Other,,False,5,25,4,False,False,False,False,0,False,4.2,0,0.2,0.0,False,False,False,False,False,True
+4/30/2021,END,"Redundant word before ""result""",Other,,False,4,30,5,False,False,False,False,0,False,6.75,0,0.0,0.06666666666666667,False,False,False,False,False,True
+4/18/2021,SEE,Word before an explanation,Other,,False,4,26,3,False,False,False,False,0,False,5.75,0,0.25,0.0,False,False,False,False,False,True
+4/18/2021,LET,Word before ride or slide,Other,,False,5,25,4,False,False,False,False,0,False,4.2,0,0.2,0.0,False,False,False,False,False,True
+3/25/2021,PET,Word before food or theory,Other,,False,5,26,4,False,False,False,False,0,False,4.4,0,0.2,0.0,False,False,False,False,False,True
+3/13/2021,THE,"When italicized, word before something exemplary",Other,,False,6,48,6,False,False,False,False,0,False,7.166666666666667,1,0.0,0.020833333333333332,False,False,False,False,False,True
+3/1/2021,SNAIL,Word before shell or mail,Other,,False,5,25,4,False,False,False,False,0,False,4.2,0,0.2,0.0,False,False,False,False,False,True
+2/14/2021,MANO,"Word before and after ""a""",Other,,False,5,25,6,False,False,False,False,0,False,4.2,0,0.2,0.08,False,False,False,False,False,True
+1/17/2021,GRAB,Word before bag or bar,Other,,False,5,22,4,False,False,False,False,0,False,3.6,0,0.2,0.0,False,False,False,False,False,True
+1/16/2021,ARM,Word before or after strong,Other,,False,5,27,4,False,False,False,False,0,False,4.6,0,0.2,0.0,False,False,False,False,False,True
+12/17/2020,IDLE,Word before rich or talk,Other,,False,5,24,4,False,False,False,False,0,False,4.0,0,0.2,0.0,False,False,False,False,False,True
+12/3/2020,MEAN,"Word before ""Streets"" and ""Girls"" in film titles",Other,,False,8,48,11,False,False,False,False,0,False,5.125,0,0.375,0.08333333333333333,False,False,False,False,False,True
+11/30/2020,SOLAR,Word before system or power,Other,,False,5,27,4,False,False,False,False,0,False,4.6,0,0.2,0.0,False,False,False,False,False,True
+11/24/2020,BABY,Word before boom or blues,Other,,False,5,25,4,False,False,False,False,0,False,4.2,0,0.2,0.0,False,False,False,False,False,True
+11/18/2020,EYE,Word before dropper or popper,Other,,False,5,29,4,False,False,False,False,0,False,5.0,0,0.2,0.0,False,False,False,False,False,True
+11/9/2020,STRIP,Word before mall or poker,Other,,False,5,25,4,False,False,False,False,0,False,4.2,0,0.2,0.0,False,False,False,False,False,True
+10/27/2020,ONLY,Word before child or human,Other,,False,5,26,4,False,False,False,False,0,False,4.4,0,0.2,0.0,False,False,False,False,False,True
+10/16/2020,SPOT,Word before check ... or a pattern alternative to a check,Other,,False,11,57,13,False,False,False,False,0,True,4.2727272727272725,0,0.09090909090909091,0.05263157894736842,False,False,False,False,False,True
+9/27/2020,UPPER,Word before hand or jaw,Other,,False,5,23,4,False,False,False,False,0,False,3.8,0,0.2,0.0,False,False,False,False,False,True
+8/26/2020,CORE,Word before curriculum or meltdown,Other,,False,5,34,4,False,False,False,False,0,False,6.0,0,0.2,0.0,False,False,False,False,False,True
+8/17/2020,SELF,Word before taught or effacing,Other,,False,5,30,4,False,False,False,False,0,False,5.2,0,0.2,0.0,False,False,False,False,False,True
+8/14/2020,SEA,Word before god or devil,Other,,False,5,24,4,False,False,False,False,0,False,4.0,0,0.2,0.0,False,False,False,False,False,True
+7/27/2020,WIND,Word before chill or chimes,Other,,False,5,27,4,False,False,False,False,0,False,4.6,0,0.2,0.0,False,False,False,False,False,True
+7/26/2020,INSIDE,Word before job or joke,Other,,False,5,23,4,False,False,False,False,0,False,3.8,0,0.2,0.0,False,False,False,False,False,True
+7/13/2020,GEE,Word before whiz,Other,,False,3,16,2,False,False,False,False,0,False,4.666666666666667,0,0.3333333333333333,0.0,False,False,False,False,False,True
+7/11/2020,GIRL,Word before talk or power,Other,,False,5,25,4,False,False,False,False,0,False,4.2,0,0.2,0.0,False,False,False,False,False,True
+7/5/2020,STOP,Word before or after short,Other,,False,5,26,4,False,False,False,False,0,False,4.4,0,0.2,0.0,False,False,False,False,False,True
+6/24/2020,RAT,Word before or after pack,Other,,False,5,25,4,False,False,False,False,0,False,4.2,0,0.2,0.0,False,False,False,False,False,True
+6/13/2020,ICE,Word before pick or pack,Other,,False,5,24,4,False,False,False,False,0,False,4.0,0,0.2,0.0,False,False,False,False,False,True
+6/12/2020,ALAS,Word before some sad words,Other,,False,5,26,4,False,False,False,False,0,False,4.4,0,0.2,0.0,False,False,False,False,False,True
+5/26/2020,FOR,"Word before good, sale or sure",Other,,False,6,30,6,False,False,False,False,0,False,4.166666666666667,1,0.16666666666666666,0.03333333333333333,False,False,False,False,False,True
+5/18/2020,SEA,"Word before lion, level or legs",Other,,False,6,31,6,False,False,False,False,0,False,4.333333333333333,1,0.16666666666666666,0.03225806451612903,False,False,False,False,False,True
+5/9/2020,ART,Word before glass or house,Other,,False,5,26,4,False,False,False,False,0,False,4.4,0,0.2,0.0,False,False,False,False,False,True
+5/8/2020,EPIC,Word before tale or fail,Other,,False,5,24,4,False,False,False,False,0,False,4.0,0,0.2,0.0,False,False,False,False,False,True
+5/3/2020,LONG,Word before or after run,Other,,False,5,24,4,False,False,False,False,0,False,4.0,0,0.2,0.0,False,False,False,False,False,True
+4/23/2020,SESAME,Word before Street or oil,Other,,False,5,25,4,False,False,False,False,0,False,4.2,0,0.4,0.0,False,False,False,False,False,True
+4/21/2020,MAD,Word before dog or dash,Other,,False,5,23,4,False,False,False,False,0,False,3.8,0,0.2,0.0,False,False,False,False,False,True
+3/29/2020,FLIP,Word before phone or book,Other,,False,5,25,4,False,False,False,False,0,False,4.2,0,0.2,0.0,False,False,False,False,False,True
+3/18/2020,SOLAR,Word before system or panel,Other,,False,5,27,4,False,False,False,False,0,False,4.6,0,0.2,0.0,False,False,False,False,False,True
+3/11/2020,INNER,Word before peace or child,Other,,False,5,26,4,False,False,False,False,0,False,4.4,0,0.2,0.0,False,False,False,False,False,True
+2/16/2020,INDEX,Word before card or fund,Other,,False,5,24,4,False,False,False,False,0,False,4.0,0,0.2,0.0,False,False,False,False,False,True
+1/12/2020,SNOW,Word before cap or shoe,Other,,False,5,23,4,False,False,False,False,0,False,3.8,0,0.2,0.0,False,False,False,False,False,True
+12/29/2019,MEAN,Word before streak or business,Other,,False,5,30,4,False,False,False,False,0,False,5.2,0,0.2,0.0,False,False,False,False,False,True
+12/19/2019,TIN,"Word before Pan, Man or can",Other,,False,6,27,6,False,False,False,False,0,False,3.6666666666666665,1,0.5,0.037037037037037035,False,False,False,False,False,True
+12/18/2019,TACO,Word before sauce or truck,Other,,False,5,26,4,False,False,False,False,0,False,4.4,0,0.2,0.0,False,False,False,False,False,True
+12/18/2019,SOY,Word before sauce or milk,Other,,False,5,25,4,False,False,False,False,0,False,4.2,0,0.2,0.0,False,False,False,False,False,True
+12/15/2019,LET,Word before rip or slip,Other,,False,5,23,4,False,False,False,False,0,False,3.8,0,0.2,0.0,False,False,False,False,False,True
+12/13/2019,MANO,"Word before and after ""a""",Other,,False,5,25,6,False,False,False,False,0,False,4.2,0,0.2,0.08,False,False,False,False,False,True
+11/26/2019,CROP,Word before top or circle,Other,,False,5,25,4,False,False,False,False,0,False,4.2,0,0.2,0.0,False,False,False,False,False,True
+11/6/2019,PILOT,Word before light or study,Other,,False,5,26,4,False,False,False,False,0,False,4.4,0,0.2,0.0,False,False,False,False,False,True
+11/5/2019,ROYAL,Word before we or flush,Other,,False,5,23,4,False,False,False,False,0,False,3.8,0,0.2,0.0,False,False,False,False,False,True
+11/3/2019,BANANA,Word before bread or boat,Other,,False,5,25,4,False,False,False,False,0,False,4.2,0,0.2,0.0,False,False,False,False,False,True
+10/16/2019,CREAM,Word before sauce or soda,Other,,False,5,25,4,False,False,False,False,0,False,4.2,0,0.2,0.0,False,False,False,False,False,True
+10/13/2019,HIT,"Word before ""home"" or ""the road""",Other,,False,6,32,9,False,False,False,False,0,False,4.5,0,0.16666666666666666,0.125,False,False,False,False,False,True
+10/1/2019,POR,"Word before ""favor"" or ""ejemplo""",Other,,False,5,32,8,False,False,False,False,0,False,5.6,0,0.2,0.125,False,False,False,False,False,True
+9/4/2019,GRAB,Word before bag or bar,Other,,False,5,22,4,False,False,False,False,0,False,3.6,0,0.2,0.0,False,False,False,False,False,True
+8/6/2019,VIS,"Word before and after ""a""",Other,,False,5,25,6,False,False,False,False,0,False,4.2,0,0.2,0.08,False,False,False,False,False,True
+7/15/2019,STREET,Word before map or smarts,Other,,False,5,25,4,False,False,False,False,0,False,4.2,0,0.2,0.0,False,False,False,False,False,True
+6/30/2019,SCATTER,Word before shot or plot,Other,,False,5,24,4,False,False,False,False,0,False,4.0,0,0.2,0.0,False,False,False,False,False,True
+6/21/2019,HOPE,Word before and after against,Other,,False,5,29,4,False,False,False,False,0,False,5.0,0,0.2,0.0,False,False,False,False,False,True
+6/16/2019,DARK,Word before web or chocolate,Other,,False,5,28,4,False,False,False,False,0,False,4.8,0,0.2,0.0,False,False,False,False,False,True
+6/9/2019,MIC,Word before check or drop,Other,,False,5,25,4,False,False,False,False,0,False,4.2,0,0.2,0.0,False,False,False,False,False,True
+6/3/2019,ONE,"Word before ""blastoff""",Other,,False,3,22,4,False,False,False,False,0,False,6.666666666666667,0,0.3333333333333333,0.09090909090909091,False,False,False,False,False,True
+6/1/2019,OSCAR,Word before bait or buzz,Other,,False,5,24,4,False,False,False,False,0,False,4.0,0,0.2,0.0,False,False,False,False,False,True
+5/21/2019,DROP,"Word before ""a hint,"" ""a line"" or ""the ball""",Other,,False,9,44,15,False,False,False,False,0,False,4.0,1,0.1111111111111111,0.1590909090909091,False,False,False,False,False,True
+5/12/2019,MINE,"Word before and after ""all""",Other,,False,5,27,6,False,False,False,False,0,False,4.6,0,0.2,0.07407407407407407,False,False,False,False,False,True
+5/7/2019,LOWER,"Word before ""the bar"" or ""the boom""",Other,,False,7,35,10,False,False,False,False,0,False,4.142857142857143,0,0.14285714285714285,0.11428571428571428,False,False,False,False,False,True
+4/23/2019,TOOTH,Word before fairy or decay,Other,,False,5,26,4,False,False,False,False,0,False,4.4,0,0.2,0.0,False,False,False,False,False,True
+4/17/2019,SIR,"Word before and after yes, in the military",Other,,False,8,42,8,False,False,False,False,0,False,4.375,1,0.125,0.023809523809523808,False,False,False,False,False,True
+4/11/2019,BYE,A word before you go,Other,,False,5,20,4,False,False,False,False,0,False,3.2,0,0.0,0.0,False,False,False,False,False,True
+3/1/2019,FAR,Word before right or sight,Other,,False,5,26,4,False,False,False,False,0,False,4.4,0,0.2,0.0,False,False,False,False,False,True
+1/21/2019,ITS,"Word before ""a bird,"" ""a plane"" and ""Superman!""",Other,,False,8,47,15,False,False,False,False,0,False,5.0,1,0.25,0.1702127659574468,False,False,False,False,False,True
+1/9/2019,WITHIN,Word before reach or reason,Other,,False,5,27,4,False,False,False,False,0,False,4.6,0,0.2,0.0,False,False,False,False,False,True
+12/9/2018,NEVER,"Word before and after ""say""",Other,,False,5,27,6,False,False,False,False,0,False,4.6,0,0.2,0.07407407407407407,False,False,False,False,False,True
+12/4/2018,SEX,Word before sells or cells,Other,,False,5,26,4,False,False,False,False,0,False,4.4,0,0.2,0.0,False,False,False,False,False,True
+11/23/2018,CENT,Word before sign or after red,Other,,False,6,29,5,False,False,False,False,0,False,4.0,0,0.16666666666666666,0.0,False,False,False,False,False,True
+11/19/2018,HOLY,Word before Ghost or Grail,Other,,False,5,26,4,False,False,False,False,0,False,4.4,0,0.6,0.0,False,False,False,False,False,True
+10/30/2018,SOCIAL,Word before status or studies,Other,,False,5,29,4,False,False,False,False,0,False,5.0,0,0.2,0.0,False,False,False,False,False,True
+10/26/2018,UGH,"Word before ""I hate that!""",Other,,False,5,26,7,False,False,False,False,0,False,4.4,0,0.4,0.11538461538461539,False,False,False,False,False,True
+9/29/2018,DAY,"Word before or after ""one""",Other,,False,5,26,6,False,False,False,False,0,False,4.4,0,0.2,0.07692307692307693,False,False,False,False,False,True
+9/2/2018,ALL,Word before right or rise,Other,,False,5,25,4,False,False,False,False,0,False,4.2,0,0.2,0.0,False,False,False,False,False,True
+8/29/2018,ROYAL,Word before flush or pain,Other,,False,5,25,4,False,False,False,False,0,False,4.2,0,0.2,0.0,False,False,False,False,False,True
+8/7/2018,RAPID,Word before fire or transit,Other,,False,5,27,4,False,False,False,False,0,False,4.6,0,0.2,0.0,False,False,False,False,False,True
+7/31/2018,ETON,"Word before collar, jacket or College",Other,,False,6,37,6,False,False,False,False,0,False,5.333333333333333,1,0.3333333333333333,0.02702702702702703,False,False,False,False,False,True
+7/3/2018,SORRY,"Word before and after ""not""",Other,,False,5,27,6,False,False,False,False,0,False,4.6,0,0.2,0.07407407407407407,False,False,False,False,False,True
+5/12/2018,ALL,"Word before and after ""in""",Other,,False,5,26,6,False,False,False,False,0,False,4.4,0,0.2,0.07692307692307693,False,False,False,False,False,True
+5/1/2018,DODGE,Word before City or after Fort on Midwest maps,Other,,False,9,46,8,False,False,False,False,0,False,4.222222222222222,0,0.4444444444444444,0.0,False,False,False,False,False,True
+4/29/2018,OMELET,Word before pan or after Spanish,Other,,False,6,32,5,False,False,False,False,0,False,4.5,0,0.3333333333333333,0.0,False,False,False,False,False,True
+4/19/2018,HERES,"Word before ""Johnny"" or ""Lucy""",Other,,False,5,30,8,False,False,False,False,0,False,5.2,0,0.6,0.13333333333333333,False,False,False,False,False,True
+3/25/2018,SIR,"Word before and after ""no""",Other,,False,5,26,6,False,False,False,False,0,False,4.4,0,0.2,0.07692307692307693,False,False,False,False,False,True
+2/25/2018,BIG,Word before data or deal,Other,,False,5,24,4,False,False,False,False,0,False,4.0,0,0.2,0.0,False,False,False,False,False,True
+2/25/2018,USE,"Word before ""before""",Other,,False,3,20,4,False,False,False,False,0,False,6.0,0,0.3333333333333333,0.1,False,False,False,False,False,True
+2/22/2018,TOO,Word before little and late,Other,,False,5,27,4,False,False,False,False,0,False,4.6,0,0.2,0.0,False,False,False,False,False,True
+1/16/2018,BASE,Word before metal or instinct,Other,,False,5,29,4,False,False,False,False,0,False,5.0,0,0.2,0.0,False,False,False,False,False,True
+1/14/2018,NANNY,Word before goat or state,Other,,False,5,25,4,False,False,False,False,0,False,4.2,0,0.2,0.0,False,False,False,False,False,True
+12/7/2017,HIGHER,Word before calling or learning,Other,,False,5,31,4,False,False,False,False,0,False,5.4,0,0.2,0.0,False,False,False,False,False,True
+12/3/2017,ANY,Word before questions or advice,Other,,False,5,31,4,False,False,False,False,0,False,5.4,0,0.2,0.0,False,False,False,False,False,True
+9/7/2017,UNTIL,"Word before ""Yesterday"" in a Tony Bennett hit and ""Tomorrow"" in a Sammy Kaye hit",Other,,False,15,80,18,False,False,False,False,0,False,4.4,0,0.4666666666666667,0.05,False,False,False,False,False,True
+9/5/2017,YOURE,"Word before ""wrong"" or ""welcome""",Other,,False,5,32,8,False,False,False,False,0,False,5.6,0,0.2,0.125,False,False,False,False,False,True
+8/29/2017,LAB,Word before coat or rat,Other,,False,5,23,4,False,False,False,False,0,False,3.8,0,0.2,0.0,False,False,False,False,False,True
+7/22/2017,LIGHT,Word before or after green,Other,,False,5,26,4,False,False,False,False,0,False,4.4,0,0.2,0.0,False,False,False,False,False,True
+7/16/2017,VIET,Word before Cong or Minh,Other,,False,5,24,4,False,False,False,False,0,False,4.0,0,0.6,0.0,False,False,False,False,False,True
+6/29/2017,MIDDLE,Word before school or class,Other,,False,5,27,4,False,False,False,False,0,False,4.6,0,0.2,0.0,False,False,False,False,False,True
+6/14/2017,WOMANS,Word before Day or World on magazine racks,Other,,False,8,42,7,False,False,False,False,0,False,4.375,0,0.375,0.0,False,False,False,False,False,True
+6/8/2017,FAST,"Word before food, paradoxically?",Other,,True,4,32,5,False,False,False,False,0,False,7.25,1,0.25,0.0625,False,False,False,False,False,True
+5/31/2017,TAIL,Word before (or synonymous with) end,Other,,False,6,36,7,False,False,False,False,0,False,5.166666666666667,0,0.16666666666666666,0.05555555555555555,False,False,False,False,False,True
+5/8/2017,ASK,"Word before ""and ye shall receive""",Other,,False,6,34,7,False,False,False,False,0,False,4.833333333333333,0,0.16666666666666666,0.058823529411764705,False,False,False,False,False,True
+5/7/2017,PAT,"Word before or after ""down""",Other,,False,5,27,6,False,False,False,False,0,False,4.6,0,0.2,0.07407407407407407,False,False,False,False,False,True
+4/30/2017,SEA,Word before green or after deep blue,Other,,False,7,36,6,False,False,False,False,0,False,4.285714285714286,0,0.14285714285714285,0.0,False,False,False,False,False,True
+2/26/2017,MAMA,"Word before ""Ooh, didn't mean to make you cry"" in Queen's ""Bohemian Rhapsody""",Other,,False,13,77,19,False,False,False,False,0,False,5.0,1,0.38461538461538464,0.09090909090909091,False,False,False,False,False,True
+2/19/2017,DOING,Word before or after nothing,Other,,False,5,28,4,False,False,False,False,0,False,4.8,0,0.2,0.0,False,False,False,False,False,True
+2/7/2017,LIAR,"Repeated word before ""pants on fire""",Other,,False,6,36,7,False,False,False,False,0,False,5.166666666666667,0,0.0,0.05555555555555555,False,False,False,False,False,True
+1/31/2017,OPEN,"Word before air, fire or water",Other,,False,6,30,6,False,False,False,False,0,False,4.166666666666667,1,0.16666666666666666,0.03333333333333333,False,False,False,False,False,True
+1/19/2017,POPE,Word before or after Alexander,Other,,False,5,30,4,False,False,False,False,0,False,5.2,0,0.4,0.0,False,False,False,False,False,True
+1/13/2017,POLICE,Word before or after state,Other,,False,5,26,4,False,False,False,False,0,False,4.4,0,0.2,0.0,False,False,False,False,False,True
+1/9/2017,NASAL,Word before congestion or spray,Other,,False,5,31,4,False,False,False,False,0,False,5.4,0,0.2,0.0,False,False,False,False,False,True
+1/9/2017,NEE,Word before a maiden name,Other,,False,5,25,4,False,False,False,False,0,False,4.2,0,0.2,0.0,False,False,False,False,False,True
+12/16/2016,LONG,Word before ball or shot,Other,,False,5,24,4,False,False,False,False,0,False,4.0,0,0.2,0.0,False,False,False,False,False,True
+12/4/2016,SIR,"Word before and after ""yes,"" in the Army",Other,,False,8,40,10,False,False,False,False,0,False,4.125,1,0.25,0.075,False,False,False,False,False,True
+11/22/2016,BOYS,"Word before and after ""will be""",Other,,False,6,31,7,False,False,False,False,0,False,4.333333333333333,0,0.16666666666666666,0.06451612903225806,False,False,False,False,False,True
+11/9/2016,GYPSY,Word before moth or cab,Other,,False,5,23,4,False,False,False,False,0,False,3.8,0,0.2,0.0,False,False,False,False,False,True
+10/27/2016,ONE,"Word before ""Happy New Year!""",Other,,False,5,29,7,False,False,False,False,0,False,5.0,0,0.8,0.10344827586206896,False,False,False,False,False,True
+10/21/2016,SAY,"Word before or after ""what""",Other,,False,5,27,6,False,False,False,False,0,False,4.6,0,0.2,0.07407407407407407,False,False,False,False,False,True
+10/19/2016,FIST,Word before bump or pump,Other,,False,5,24,4,False,False,False,False,0,False,4.0,0,0.2,0.0,False,False,False,False,False,True
+10/2/2016,AIR,Word before strike or ball,Other,,False,5,26,4,False,False,False,False,0,False,4.4,0,0.2,0.0,False,False,False,False,False,True
+8/15/2016,MAIDEN,Word before name or voyage,Other,,False,5,26,4,False,False,False,False,0,False,4.4,0,0.2,0.0,False,False,False,False,False,True
+7/18/2016,DUE,Word before north or after payment,Other,,False,6,34,5,False,False,False,False,0,False,4.833333333333333,0,0.16666666666666666,0.0,False,False,False,False,False,True
+6/23/2016,ONLY,"Word before ""Sixteen,"" ""Time"" and ""You"" in top 10 hit songs",Other,,False,11,59,19,False,False,False,False,0,False,4.454545454545454,1,0.36363636363636365,0.11864406779661017,False,False,False,False,False,True
+5/3/2016,REAR,Word before window or end,Other,,False,5,25,4,False,False,False,False,0,False,4.2,0,0.2,0.0,False,False,False,False,False,True
+4/27/2016,AIR,Word before gun or guitar,Other,,False,5,25,4,False,False,False,False,0,False,4.2,0,0.2,0.0,False,False,False,False,False,True
+4/26/2016,FLU,Word before shot or season,Other,,False,5,26,4,False,False,False,False,0,False,4.4,0,0.2,0.0,False,False,False,False,False,True
+3/7/2016,NATURAL,Word before gas or disaster,Other,,False,5,27,4,False,False,False,False,0,False,4.6,0,0.2,0.0,False,False,False,False,False,True
+2/4/2016,AIR,Word before China or India,Other,,False,5,26,4,False,False,False,False,0,False,4.4,0,0.6,0.0,False,False,False,False,False,True
+12/2/2015,LET,Word before fly or rip,Other,,False,5,22,4,False,False,False,False,0,False,3.6,0,0.2,0.0,False,False,False,False,False,True
+12/1/2015,BOYS,"Word before and after ""will be""",Other,,False,6,31,7,False,False,False,False,0,False,4.333333333333333,0,0.16666666666666666,0.06451612903225806,False,False,False,False,False,True
+11/2/2015,UNDER,"Word before ""the gun"" or ""the circumstances""",Other,,False,7,44,10,False,False,False,False,0,False,5.428571428571429,0,0.14285714285714285,0.09090909090909091,False,False,False,False,False,True
+10/22/2015,GEE,"Word before ""I dunno""",Other,,False,4,21,5,False,False,False,False,0,False,4.5,0,0.5,0.09523809523809523,False,False,False,False,False,True
+9/30/2015,PIT,Word before boss or bull,Other,,False,5,24,4,False,False,False,False,0,False,4.0,0,0.2,0.0,False,False,False,False,False,True
+9/28/2015,LORD,"Word before ""have mercy!""",Other,,False,4,25,6,False,False,False,False,0,False,5.5,0,0.25,0.12,False,False,False,False,False,True
+9/23/2015,SINCE,Word before a year on a storefront,Other,,False,7,34,6,False,False,False,False,0,False,4.0,0,0.14285714285714285,0.0,False,False,False,False,False,True
+9/23/2015,ACID,Word before test or trip,Other,,False,5,24,4,False,False,False,False,0,False,4.0,0,0.2,0.0,False,False,False,False,False,True
+9/14/2015,NEE,Word before a maiden name,Other,,False,5,25,4,False,False,False,False,0,False,4.2,0,0.2,0.0,False,False,False,False,False,True
+9/5/2015,ONE,"Word before and after ""to,"" ""on"" or ""for""",Other,,False,8,41,14,False,False,False,False,0,False,4.25,1,0.125,0.17073170731707318,False,False,False,False,False,True
+9/1/2015,ONLY,"Title word before ""You,"" ""U"" or ""Yesterday"" in hit songs",Other,,False,10,56,16,False,False,False,False,0,False,4.7,1,0.4,0.125,False,False,False,False,False,True
+8/31/2015,DUE,Word before north or process,Other,,False,5,28,4,False,False,False,False,0,False,4.8,0,0.2,0.0,False,False,False,False,False,True
+8/4/2015,CASH,Word before cow or crop,Other,,False,5,23,4,False,False,False,False,0,False,3.8,0,0.2,0.0,False,False,False,False,False,True
+7/20/2015,UPPER,Word before house or hand,Other,,False,5,25,4,False,False,False,False,0,False,4.2,0,0.2,0.0,False,False,False,False,False,True
+5/21/2015,ERIN,"Word before ""go"" in a seasonal phrase",Other,,False,7,37,8,False,False,False,False,0,False,4.428571428571429,0,0.14285714285714285,0.05405405405405406,False,False,False,False,False,True
+5/12/2015,SWAN,Word before dive or song,Other,,False,5,24,4,False,False,False,False,0,False,4.0,0,0.2,0.0,False,False,False,False,False,True
+2/23/2015,ROMANCE,Word before novel or language,Other,,False,5,29,4,False,False,False,False,0,False,5.0,0,0.2,0.0,False,False,False,False,False,True
+2/15/2015,GEE,"Word before ""I didn't know that!""",Other,,False,6,33,9,False,False,False,False,0,False,4.666666666666667,0,0.3333333333333333,0.12121212121212122,False,False,False,False,False,True
+1/20/2015,PAJAMA,Word before top or party,Other,,False,5,24,4,False,False,False,False,0,False,4.0,0,0.2,0.0,False,False,False,False,False,True
+1/14/2015,SEA,Word before chest or change,Other,,False,5,27,4,False,False,False,False,0,False,4.6,0,0.2,0.0,False,False,False,False,False,True
+1/5/2015,INNER,Word before planet or peace,Other,,False,5,27,4,False,False,False,False,0,False,4.6,0,0.2,0.0,False,False,False,False,False,True
+12/10/2014,BIG,Word before Mac or cheese,Other,,False,5,25,4,False,False,False,False,0,False,4.2,0,0.4,0.0,False,False,False,False,False,True
+12/9/2014,BLUE,Word before cheese or chip,Other,,False,5,26,4,False,False,False,False,0,False,4.4,0,0.2,0.0,False,False,False,False,False,True
+11/27/2014,SODA,Word before bread or water,Other,,False,5,26,4,False,False,False,False,0,False,4.4,0,0.2,0.0,False,False,False,False,False,True
+11/17/2014,YEA,"Word before ""verily"" in the Bible",Other,,False,6,33,7,False,False,False,False,0,False,4.666666666666667,0,0.3333333333333333,0.06060606060606061,False,False,False,False,False,True
+11/16/2014,SODA,Word before or after lime,Other,,False,5,25,4,False,False,False,False,0,False,4.2,0,0.2,0.0,False,False,False,False,False,True
+11/4/2014,VOCAL,Word before range or cord,Other,,False,5,25,4,False,False,False,False,0,False,4.2,0,0.2,0.0,False,False,False,False,False,True
+10/30/2014,ASK,Word before an advice columnist's name,Other,,False,6,38,6,False,False,False,False,0,False,5.5,0,0.16666666666666666,0.02631578947368421,False,False,False,False,False,True
+10/21/2014,REST,Word before home and room,Other,,False,5,25,4,False,False,False,False,0,False,4.2,0,0.2,0.0,False,False,False,False,False,True
+9/17/2014,SHEET,Word before cake or music,Other,,False,5,25,4,False,False,False,False,0,False,4.2,0,0.2,0.0,False,False,False,False,False,True
+9/11/2014,RED,Word before Sox or Wings,Other,,False,5,24,4,False,False,False,False,0,False,4.0,0,0.6,0.0,False,False,False,False,False,True
+7/23/2014,TEA,Word before set or service,Other,,False,5,26,4,False,False,False,False,0,False,4.4,0,0.2,0.0,False,False,False,False,False,True
+5/25/2014,PAT,"Word before or after ""down""",Other,,False,5,27,6,False,False,False,False,0,False,4.6,0,0.2,0.07407407407407407,False,False,False,False,False,True
+3/24/2014,HEDGE,"Word before ""fund"" or ""one's bets""",Other,,False,6,34,10,False,False,False,False,0,False,4.833333333333333,0,0.16666666666666666,0.14705882352941177,False,False,False,False,False,True
+3/8/2014,BEET,Word before red,Other,,False,3,15,2,False,False,False,False,0,False,4.333333333333333,0,0.3333333333333333,0.0,False,False,False,False,False,True
+11/27/2013,DUAL,Word before income or exhaust,Other,,False,5,29,4,False,False,False,False,0,False,5.0,0,0.2,0.0,False,False,False,False,False,True
+11/7/2013,NOR,"Word before rain, heat and gloom",Other,,False,6,32,6,False,False,False,False,0,False,4.5,1,0.16666666666666666,0.03125,False,False,False,False,False,True
+9/11/2013,LAP,Word before dog or dance,Other,,False,5,24,4,False,False,False,False,0,False,4.0,0,0.2,0.0,False,False,False,False,False,True
+8/13/2013,EXACT,Word before change or revenge,Other,,False,5,29,4,False,False,False,False,0,False,5.0,0,0.2,0.0,False,False,False,False,False,True
+8/7/2013,CUE,Word before card or stick,Other,,False,5,25,4,False,False,False,False,0,False,4.2,0,0.2,0.0,False,False,False,False,False,True
+7/3/2013,ONLY,Word before a sale price,Other,,False,5,24,4,False,False,False,False,0,False,4.0,0,0.2,0.0,False,False,False,False,False,True
+6/30/2013,NYET,"Word before and after ""Tovarich"" in a ""Doctor Zhivago"" number",Other,,False,10,61,13,False,False,False,False,0,False,5.2,0,0.4,0.06557377049180328,False,False,False,False,False,True
+6/6/2013,NOR,"Word before ""happiness,"" ""majesty"" and ""fame"" at the start of a Shelley poem",Other,,False,13,76,19,False,False,False,False,0,False,4.923076923076923,1,0.15384615384615385,0.09210526315789473,False,False,False,False,False,True
+6/4/2013,OOH,"Word before ""That's gotta hurt!""",Other,,False,5,32,8,False,False,False,False,0,False,5.6,0,0.4,0.125,False,False,False,False,False,True
+5/28/2013,ERGO,"Word before ""sum""",Other,,False,3,17,4,False,False,False,False,0,False,5.0,0,0.3333333333333333,0.11764705882352941,False,False,False,False,False,True
+5/5/2013,ASHES,"Word before and after ""to,"" in a religious phrase",Other,,False,9,49,11,False,False,False,False,0,False,4.555555555555555,1,0.1111111111111111,0.061224489795918366,False,False,False,False,False,True
+4/28/2013,SKI,Word before pole or jump,Other,,False,5,24,4,False,False,False,False,0,False,4.0,0,0.2,0.0,False,False,False,False,False,True
+4/24/2013,HANG,Word before tight or loose,Other,,False,5,26,4,False,False,False,False,0,False,4.4,0,0.2,0.0,False,False,False,False,False,True
+2/4/2013,SLEEP,"Hamlet's word before ""perchance to dream""",Other,,False,6,41,8,False,False,False,False,0,False,6.0,0,0.16666666666666666,0.07317073170731707,False,False,False,False,False,True
+1/24/2013,YOU,"Word before and after ""yeah""",Other,,False,5,28,6,False,False,False,False,0,False,4.8,0,0.2,0.07142857142857142,False,False,False,False,False,True
+9/30/2012,TAG,Word before sale or after sales,Other,,False,6,31,5,False,False,False,False,0,False,4.333333333333333,0,0.16666666666666666,0.0,False,False,False,False,False,True
+9/30/2012,MODEL,Word before A or T,Other,,False,5,18,4,False,False,False,False,0,False,2.8,0,0.6,0.0,False,False,False,False,False,True
+9/9/2012,BOYS,"Word before and after ""will be""",Other,,False,6,31,7,False,False,False,False,0,False,4.333333333333333,0,0.16666666666666666,0.06451612903225806,False,False,False,False,False,True
+8/22/2012,DIRT,Word before poor or cheap,Other,,False,5,25,4,False,False,False,False,0,False,4.2,0,0.2,0.0,False,False,False,False,False,True
+8/20/2012,LAZY,Word before Susan or Sunday,Other,,False,5,27,4,False,False,False,False,0,False,4.6,0,0.6,0.0,False,False,False,False,False,True
+7/24/2012,OVEN,Word before rack or mitt,Other,,False,5,24,4,False,False,False,False,0,False,4.0,0,0.2,0.0,False,False,False,False,False,True
+7/11/2012,FISCAL,Word before year or conservative,Other,,False,5,32,4,False,False,False,False,0,False,5.6,0,0.2,0.0,False,False,False,False,False,True
+7/8/2012,LET,Word before rip or slip,Other,,False,5,23,4,False,False,False,False,0,False,3.8,0,0.2,0.0,False,False,False,False,False,True
+7/3/2012,ONE,"Word before ""Liftoff!""",Other,,False,3,22,5,False,False,False,False,0,False,6.666666666666667,0,0.6666666666666666,0.13636363636363635,False,False,False,False,False,True
+5/4/2012,MEASURE,"Word before and after ""for""",Other,,False,5,27,6,False,False,False,False,0,False,4.6,0,0.2,0.07407407407407407,False,False,False,False,False,True
+5/3/2012,MANO,"Word before and after ""a""",Other,,False,5,25,6,False,False,False,False,0,False,4.2,0,0.2,0.08,False,False,False,False,False,True
+2/20/2012,DONT,Word before know and care,Other,,False,5,25,4,False,False,False,False,0,False,4.2,0,0.2,0.0,False,False,False,False,False,True
+1/26/2012,SUCH,"Word before or after ""as""",Other,,False,5,25,6,False,False,False,False,0,False,4.2,0,0.2,0.08,False,False,False,False,False,True
+1/10/2012,KNEE,Word before deep or high,Other,,False,5,24,4,False,False,False,False,0,False,4.0,0,0.2,0.0,False,False,False,False,False,True
+11/6/2011,BANANA,Word before republic or seat,Other,,False,5,28,4,False,False,False,False,0,False,4.8,0,0.2,0.0,False,False,False,False,False,True
+10/18/2011,BABY,"Word before ""Boy,"" ""Love"" and ""Come Back"" in titles to #1 songs",Other,,False,12,63,20,False,False,False,False,0,False,4.333333333333333,1,0.4166666666666667,0.12698412698412698,False,False,False,False,False,True
+9/14/2011,ROYAL,Word before pain or treatment,Other,,False,5,29,4,False,False,False,False,0,False,5.0,0,0.2,0.0,False,False,False,False,False,True
+8/2/2011,POETIC,Word before license or justice,Other,,False,5,30,4,False,False,False,False,0,False,5.2,0,0.2,0.0,False,False,False,False,False,True
+6/13/2011,WARP,Word before speed or after time,Other,,False,6,31,5,False,False,False,False,0,False,4.333333333333333,0,0.16666666666666666,0.0,False,False,False,False,False,True
+3/21/2011,NEE,Word before a maiden name in wedding announcements,Other,,False,8,50,7,False,False,False,False,0,False,5.375,0,0.125,0.0,False,False,False,False,False,True
+12/12/2010,THERES,"Word before ""a will"" and ""a way""",Other,,False,7,32,10,False,False,False,False,0,False,3.7142857142857144,0,0.14285714285714285,0.125,False,False,False,False,False,True
+11/16/2010,INNER,Word before self or strength,Other,,False,5,28,4,False,False,False,False,0,False,4.8,0,0.2,0.0,False,False,False,False,False,True
+11/1/2010,HAUTE,French word before cuisine or couture,Other,,False,6,37,5,False,False,False,False,0,False,5.333333333333333,0,0.0,0.0,False,False,False,False,False,True
+9/9/2010,SIR,"Word before and after ""yes""",Other,,False,5,27,6,False,False,False,False,0,False,4.6,0,0.2,0.07407407407407407,False,False,False,False,False,True
+8/24/2010,PAJAMA,Word before bottom or party,Other,,False,5,27,4,False,False,False,False,0,False,4.6,0,0.2,0.0,False,False,False,False,False,True
+8/18/2010,EGO,Word before booster or tripper,Other,,False,5,30,4,False,False,False,False,0,False,5.2,0,0.2,0.0,False,False,False,False,False,True
+7/21/2010,MEASURE,"Word before and after ""for""",Other,,False,5,27,6,False,False,False,False,0,False,4.6,0,0.2,0.07407407407407407,False,False,False,False,False,True
+7/7/2010,GUILTY,Word before a sentence,Other,,False,4,22,3,False,False,False,False,0,False,4.75,0,0.25,0.0,False,False,False,False,False,True
+6/8/2010,STOP,"Word before ""You're killing me!""",Other,,False,5,32,8,False,False,False,False,0,False,5.6,0,0.4,0.125,False,False,False,False,False,True
+3/10/2010,CASH,Word before cow or crop,Other,,False,5,23,4,False,False,False,False,0,False,3.8,0,0.2,0.0,False,False,False,False,False,True
+11/4/2009,HATE,Word before mail or crime,Other,,False,5,25,4,False,False,False,False,0,False,4.2,0,0.2,0.0,False,False,False,False,False,True
+10/24/2009,WILT,Word before thou,Other,,False,3,16,2,False,False,False,False,0,False,4.666666666666667,0,0.3333333333333333,0.0,False,False,False,False,False,True
+7/28/2009,RAP,Word before sheet or music,Other,,False,5,26,4,False,False,False,False,0,False,4.4,0,0.2,0.0,False,False,False,False,False,True
+6/13/2009,SUCH,"Word before and after ""and""",Other,,False,5,27,6,False,False,False,False,0,False,4.6,0,0.2,0.07407407407407407,False,False,False,False,False,True
+5/31/2009,VIS,"French word before and after ""a""",Other,,False,6,32,7,False,False,False,False,0,False,4.5,0,0.0,0.0625,False,False,False,False,False,True
+5/12/2009,INNER,Word before city or tube,Other,,False,5,24,4,False,False,False,False,0,False,4.0,0,0.2,0.0,False,False,False,False,False,True
+4/2/2009,TIN,Word before ear or horn,Other,,False,5,23,4,False,False,False,False,0,False,3.8,0,0.2,0.0,False,False,False,False,False,True
+3/18/2009,INNER,Word before city or child,Other,,False,5,25,4,False,False,False,False,0,False,4.2,0,0.2,0.0,False,False,False,False,False,True
+3/10/2009,GUTEN,"Word before ""Morgen"" or ""Tag""",Other,,False,5,29,8,False,False,False,False,0,False,5.0,0,0.6,0.13793103448275862,False,False,False,False,False,True
+3/8/2009,ROSE,Word before or after tea,Other,,False,5,24,4,False,False,False,False,0,False,4.0,0,0.2,0.0,False,False,False,False,False,True
+2/9/2009,AIR,Word before Jordan or Canada,Other,,False,5,28,4,False,False,False,False,0,False,4.8,0,0.6,0.0,False,False,False,False,False,True
+2/3/2009,NOR,"Word before ""rain,"" ""heat"" and ""gloom of night"" in a postal creed",Other,,False,12,65,18,False,False,False,False,0,False,4.5,1,0.08333333333333333,0.1076923076923077,False,False,False,False,False,True
+1/15/2009,BRER,Word before Rabbit or Fox,Other,,False,5,25,4,False,False,False,False,0,False,4.2,0,0.6,0.0,False,False,False,False,False,True
+1/6/2009,LAKE,Word before Charles or George,Other,,False,5,29,4,False,False,False,False,0,False,5.0,0,0.6,0.0,False,False,False,False,False,True
+11/25/2008,OLE,Word before Miss or Opry,Other,,False,5,24,4,False,False,False,False,0,False,4.0,0,0.6,0.0,False,False,False,False,False,True
+10/15/2008,BABY,"Word before the starts of 16-, 36- and 58-Across and 10-, 14- and 33-Down",Self-Referential,,False,14,73,33,False,False,False,False,0,False,4.285714285714286,2,0.07142857142857142,0.1095890410958904,False,False,False,False,False,True
+9/30/2008,POWER,Word before tie or lunch,Other,,False,5,24,4,False,False,False,False,0,False,4.0,0,0.2,0.0,False,False,False,False,False,True
+8/4/2008,MOOD,Word before ring or swing,Other,,False,5,25,4,False,False,False,False,0,False,4.2,0,0.2,0.0,False,False,False,False,False,True
+7/9/2008,BOYS,"Word before and after ""will be""",Other,,False,6,31,7,False,False,False,False,0,False,4.333333333333333,0,0.16666666666666666,0.06451612903225806,False,False,False,False,False,True
+6/27/2008,ROMEO,Radio code word before 43-Down,Self-Referential,,False,5,30,7,False,False,False,False,0,False,5.2,0,0.0,0.03333333333333333,False,False,False,False,False,True
+6/25/2008,ONLY,Word before a discounted price,Other,,False,5,30,4,False,False,False,False,0,False,5.2,0,0.2,0.0,False,False,False,False,False,True
+6/22/2008,ENTRE,French word before deux or nous,Other,,False,6,31,5,False,False,False,False,0,False,4.333333333333333,0,0.0,0.0,False,False,False,False,False,True
+6/10/2008,KING,Word before snake or crab,Other,,False,5,25,4,False,False,False,False,0,False,4.2,0,0.2,0.0,False,False,False,False,False,True
+6/8/2008,SIR,"Word before and after ""yes""",Other,,False,5,27,6,False,False,False,False,0,False,4.6,0,0.2,0.07407407407407407,False,False,False,False,False,True
+5/27/2008,USER,Word before fee or group,Other,,False,5,24,4,False,False,False,False,0,False,4.0,0,0.2,0.0,False,False,False,False,False,True
+5/20/2008,WORLD,Word before class or war,Other,,False,5,24,4,False,False,False,False,0,False,4.0,0,0.2,0.0,False,False,False,False,False,True
+4/15/2008,URBAN,Word before blight or sprawl,Other,,False,5,28,4,False,False,False,False,0,False,4.8,0,0.2,0.0,False,False,False,False,False,True
+4/6/2008,HOLD,"Word before or after ""on""",Other,,False,5,25,6,False,False,False,False,0,False,4.2,0,0.2,0.08,False,False,False,False,False,True
+3/26/2008,DUMB,Word before luck or cluck,Other,,False,5,25,4,False,False,False,False,0,False,4.2,0,0.2,0.0,False,False,False,False,False,True
+3/24/2008,PEER,Word before group or pressure,Other,,False,5,29,4,False,False,False,False,0,False,5.0,0,0.2,0.0,False,False,False,False,False,True
+2/3/2008,DAY,"Word before and after ""after""",Other,,False,5,29,6,False,False,False,False,0,False,5.0,0,0.2,0.06896551724137931,False,False,False,False,False,True
+1/13/2008,MANO,"Word before and after ""a""",Other,,False,5,25,6,False,False,False,False,0,False,4.2,0,0.2,0.08,False,False,False,False,False,True
+11/25/2007,ARM,Word before lock and load,Other,,False,5,25,4,False,False,False,False,0,False,4.2,0,0.2,0.0,False,False,False,False,False,True
+10/28/2007,ECOLE,Word before primaire or secondaire,Other,,False,5,34,4,False,False,False,False,0,False,6.0,0,0.2,0.0,False,False,False,False,False,True
+10/21/2007,AGE,Word before or after old,Other,,False,5,24,4,False,False,False,False,0,False,4.0,0,0.2,0.0,False,False,False,False,False,True
+9/14/2007,ALL,"Word before and after ""in""",Other,,False,5,26,6,False,False,False,False,0,False,4.4,0,0.2,0.07692307692307693,False,False,False,False,False,True
+9/10/2007,ONE,"Word before ""ignition ... liftoff!""",Other,,False,5,35,10,False,False,False,False,0,True,6.2,0,0.2,0.17142857142857143,False,False,False,False,False,True
+8/30/2007,VEAL,Word before Oscar or Orloff,Other,,False,5,27,4,False,False,False,False,0,False,4.6,0,0.6,0.0,False,False,False,False,False,True
+8/29/2007,INNER,Word before tube or self,Other,,False,5,24,4,False,False,False,False,0,False,4.0,0,0.2,0.0,False,False,False,False,False,True
+8/17/2007,HOPE,"Word before and after ""against""",Other,,False,5,31,6,False,False,False,False,0,False,5.4,0,0.2,0.06451612903225806,False,False,False,False,False,True
+8/5/2007,ICE,Word before maker or breaker,Other,,False,5,28,4,False,False,False,False,0,False,4.8,0,0.0,0.0,False,False,False,False,False,True
+8/3/2007,SHE,Word before some animal names,Other,,False,5,29,4,False,False,False,False,0,False,5.0,0,0.2,0.0,False,False,False,False,False,True
+7/17/2007,CAR,Word before pool or park,Other,,False,5,24,4,False,False,False,False,0,False,4.0,0,0.2,0.0,False,False,False,False,False,True
+7/7/2007,ALSO,Dictionary word before a variant spelling,Other,,False,6,41,5,False,False,False,False,0,False,6.0,0,0.16666666666666666,0.0,False,False,False,False,False,True
+3/27/2007,DEAL,"TV word before and after ""or no""",Other,,False,7,32,8,False,False,False,False,0,False,3.7142857142857144,0,0.0,0.0625,False,False,False,False,False,True
+3/11/2007,MAPLE,Word before or after sugar,Other,,False,5,26,4,False,False,False,False,0,False,4.4,0,0.2,0.0,False,False,False,False,False,True
+12/11/2006,VIS,"French word before and after ""a""",Other,,False,6,32,7,False,False,False,False,0,False,4.5,0,0.0,0.0625,False,False,False,False,False,True
+11/19/2006,ALL,"Word before, after &mdash; or both before and after &mdash; ""in""",Other,,False,11,64,17,False,False,False,False,0,False,4.909090909090909,1,0.09090909090909091,0.109375,False,False,False,False,False,True
+10/23/2006,INNER,Word before tube or circle,Other,,False,5,26,4,False,False,False,False,0,False,4.4,0,0.2,0.0,False,False,False,False,False,True
+10/7/2006,DOING,Word before or after nothing,Other,,False,5,28,4,False,False,False,False,0,False,4.8,0,0.2,0.0,False,False,False,False,False,True
+8/17/2006,IPSO,"Archie Bunker's word before ""fatso""",Other,,False,5,35,7,False,False,False,False,0,False,6.2,0,0.4,0.08571428571428572,False,False,False,False,False,True
+7/16/2006,HOPE,"Word before and after ""against""",Other,,False,5,31,6,False,False,False,False,0,False,5.4,0,0.2,0.06451612903225806,False,False,False,False,False,True
+5/17/2006,EASY,Word before come and go,Other,,False,5,23,4,False,False,False,False,0,False,3.8,0,0.2,0.0,False,False,False,False,False,True
+4/5/2006,BOYS,"Word before and after ""will be""",Other,,False,6,31,7,False,False,False,False,0,False,4.333333333333333,0,0.16666666666666666,0.06451612903225806,False,False,False,False,False,True
+3/13/2006,NEVER,Word before and after say,Other,,False,5,25,4,False,False,False,False,0,False,4.2,0,0.2,0.0,False,False,False,False,False,True
+3/12/2006,YES,"Word before ""dear"" or ""sir""",Other,,False,5,27,8,False,False,False,False,0,False,4.6,0,0.2,0.14814814814814814,False,False,False,False,False,True
+10/31/2005,PER,Word before capita or annum,Other,,False,5,27,4,False,False,False,False,0,False,4.6,0,0.2,0.0,False,False,False,False,False,True
+10/13/2005,POLO,Word before field or shirt,Other,,False,5,26,4,False,False,False,False,0,False,4.4,0,0.2,0.0,False,False,False,False,False,True
+8/18/2005,MANO,"Word before and after ""a""",Other,,False,5,25,6,False,False,False,False,0,False,4.2,0,0.2,0.08,False,False,False,False,False,True
+8/8/2005,BELLY,Word before dance or laugh,Other,,False,5,26,4,False,False,False,False,0,False,4.4,0,0.2,0.0,False,False,False,False,False,True
+6/26/2005,ONE,"Word before and after ""by,"" ""on,"" or ""to""",Other,,False,8,41,15,False,False,False,False,0,False,4.25,2,0.125,0.1951219512195122,False,False,False,False,False,True
+10/13/2004,TETE,"Word before and after ""a""",Other,,False,5,25,6,False,False,False,False,0,False,4.2,0,0.2,0.08,False,False,False,False,False,True
+8/15/2004,NEE,Word before an old name,Other,,False,5,23,4,False,False,False,False,0,False,3.8,0,0.2,0.0,False,False,False,False,False,True
+8/2/2004,SIERRA,Word before Nevada or Leone,Other,,False,5,27,4,False,False,False,False,0,False,4.6,0,0.6,0.0,False,False,False,False,False,True
+8/1/2004,ASIT,"Word before ""were""",Other,,False,3,18,4,False,False,False,False,0,False,5.333333333333333,0,0.3333333333333333,0.1111111111111111,False,False,False,False,False,True
+5/14/2004,CHEESE,Last word before someone is shot,Other,,False,6,32,5,False,False,False,False,0,False,4.5,0,0.0,0.0,False,False,False,False,False,True
+11/9/2003,DUTCH,Word before oven or cupboard,Other,,False,5,28,4,False,False,False,False,0,False,4.8,0,0.2,0.0,False,False,False,False,False,True
+10/18/2003,DUTY,Word before free or bound,Other,,False,5,25,4,False,False,False,False,0,False,4.2,0,0.2,0.0,False,False,False,False,False,True
+9/10/2003,WAR,Word before cry or baby,Other,,False,5,23,4,False,False,False,False,0,False,3.8,0,0.2,0.0,False,False,False,False,False,True
+8/11/2003,INNER,Word before circle or tube,Other,,False,5,26,4,False,False,False,False,0,False,4.4,0,0.2,0.0,False,False,False,False,False,True
+6/28/2003,SUCH,"Word before and after ""and""",Other,,False,5,27,6,False,False,False,False,0,False,4.6,0,0.2,0.07407407407407407,False,False,False,False,False,True
+4/23/2003,CREME,"Word before and after ""de la""",Other,,False,6,29,7,False,False,False,False,0,False,4.0,0,0.16666666666666666,0.06896551724137931,False,False,False,False,False,True
+2/17/2003,NOUN,"Word before a verb, maybe",Other,,False,5,25,5,False,False,False,False,0,False,4.2,1,0.2,0.04,False,False,False,False,True,True
+1/26/2003,MAN,"Word before and after ""oh""",Other,,False,5,26,6,False,False,False,False,0,False,4.4,0,0.2,0.07692307692307693,False,False,False,False,False,True
+12/16/2002,SET,"Word before ""Go!""",Other,,False,3,17,5,False,False,False,False,0,False,5.0,0,0.6666666666666666,0.17647058823529413,False,False,False,False,False,True
+11/25/2002,SEE,"Word before ""I told you so!""",Other,,False,6,28,8,False,False,False,False,0,False,3.8333333333333335,0,0.3333333333333333,0.10714285714285714,False,False,False,False,False,True
+10/26/2002,BOYS,"Word before and after ""will be""",Other,,False,6,31,7,False,False,False,False,0,False,4.333333333333333,0,0.16666666666666666,0.06451612903225806,False,False,False,False,False,True
+8/4/2002,END,"Word before and after ""over""",Other,,False,5,28,6,False,False,False,False,0,False,4.8,0,0.2,0.07142857142857142,False,False,False,False,False,True
+7/20/2002,SEE,Word before an explanation,Other,,False,4,26,3,False,False,False,False,0,False,5.75,0,0.25,0.0,False,False,False,False,False,True
+7/4/2002,SMILE,Word before a snap,Other,,False,4,18,3,False,False,False,False,0,False,3.75,0,0.25,0.0,False,False,False,False,False,True
+6/23/2002,PAR,"Word before three, four or five, but not one",Other,,False,9,44,10,False,False,False,False,0,False,4.0,2,0.1111111111111111,0.045454545454545456,False,False,False,False,False,True
+6/10/2002,READY,"Word before ""set, go!""",Other,,False,4,22,7,False,False,False,False,0,False,4.75,1,0.25,0.18181818181818182,False,False,False,False,False,True
+4/30/2002,ALLS,Word before fair or well,Other,,False,5,24,4,False,False,False,False,0,False,4.0,0,0.2,0.0,False,False,False,False,False,True
+4/12/2002,REMIT,Word before an amount on a bill,Other,,False,7,31,6,False,False,False,False,0,False,3.5714285714285716,0,0.14285714285714285,0.0,False,False,False,False,False,True
+3/27/2002,NOTE,Word before a colon,Other,,False,4,19,3,False,False,False,False,0,False,4.0,0,0.25,0.0,False,False,False,False,False,True
+3/13/2002,MESS,Word before call or hall,Other,,False,5,24,4,False,False,False,False,0,False,4.0,0,0.2,0.0,False,False,False,False,False,True
+1/10/2002,ERE,Word before long or now,Other,,False,5,23,4,False,False,False,False,0,False,3.8,0,0.2,0.0,False,False,False,False,False,True
+12/3/2001,BUYER,"Word before ""beware!""",Other,,False,3,21,5,False,False,False,False,0,False,6.333333333333333,0,0.3333333333333333,0.14285714285714285,False,False,False,False,False,True
+11/28/2001,ONLY,Word before a discounted price,Other,,False,5,30,4,False,False,False,False,0,False,5.2,0,0.2,0.0,False,False,False,False,False,True
+11/14/2001,OUR,Word before Father or Lady,Other,,False,5,26,4,False,False,False,False,0,False,4.4,0,0.6,0.0,False,False,False,False,False,True
+11/6/2001,FAN,Word before mail or tail,Other,,False,5,24,4,False,False,False,False,0,False,4.0,0,0.2,0.0,False,False,False,False,False,True
+10/21/2001,THEE,"Word before ""sweet land of liberty""",Other,,False,6,35,7,False,False,False,False,0,False,5.0,0,0.16666666666666666,0.05714285714285714,False,False,False,False,False,True
+9/30/2001,WITHIN,Word before reason or reach,Other,,False,5,27,4,False,False,False,False,0,False,4.6,0,0.2,0.0,False,False,False,False,False,True
+8/9/2001,OLD,Word before school or master,Other,,False,5,28,4,False,False,False,False,0,False,4.8,0,0.2,0.0,False,False,False,False,False,True
+6/16/2001,GEE,"Word before ""I don't know""",Other,,False,5,26,7,False,False,False,False,0,False,4.4,0,0.4,0.11538461538461539,False,False,False,False,False,True
+5/16/2001,YEA,Biblical word before verily,Other,,False,4,27,3,False,False,False,False,0,False,6.0,0,0.25,0.0,False,False,False,False,False,True
+4/25/2001,SUI,Word before juris or generis,Other,,False,5,28,4,False,False,False,False,0,False,4.8,0,0.2,0.0,False,False,False,False,False,True
+2/4/2001,PER,Word before second or hour,Other,,False,5,26,4,False,False,False,False,0,False,4.4,0,0.2,0.0,False,False,False,False,False,True
+10/20/2000,ERE,Word before while,Other,,False,3,17,2,False,False,False,False,0,False,5.0,0,0.3333333333333333,0.0,False,False,False,False,False,True
+8/15/2000,MAN,"Word before and after ""oh""",Other,,False,5,26,6,False,False,False,False,0,False,4.4,0,0.2,0.07692307692307693,False,False,False,False,False,True
+7/24/2000,SADDLE,Word before shoe or soap,Other,,False,5,24,4,False,False,False,False,0,False,4.0,0,0.2,0.0,False,False,False,False,False,True
+7/20/2000,ALL,"Word before and after ""in""",Other,,False,5,26,6,False,False,False,False,0,False,4.4,0,0.2,0.07692307692307693,False,False,False,False,False,True
+5/26/2000,ERE,Word before now,Other,,False,3,15,2,False,False,False,False,0,False,4.333333333333333,0,0.3333333333333333,0.0,False,False,False,False,False,True
+5/15/2000,ALL,"Word before ""that"" or ""there""",Other,,False,5,29,8,False,False,False,False,0,False,5.0,0,0.2,0.13793103448275862,False,False,False,False,False,True
+4/17/2000,AIR,Word before France or Jordan,Other,,False,5,28,4,False,False,False,False,0,False,4.8,0,0.6,0.0,False,False,False,False,False,True
+4/3/2000,TACO,Word before shell or Bell,Other,,False,5,25,4,False,False,False,False,0,False,4.2,0,0.4,0.0,False,False,False,False,False,True
+3/7/2000,HASNT,"Word before ""a prayer"" or ""a clue""",Other,,False,7,34,10,False,False,False,False,0,False,4.0,0,0.14285714285714285,0.11764705882352941,False,False,False,False,False,True
+2/22/2000,NARY,"Word before ""a soul""",Other,,False,4,20,5,False,False,False,False,0,False,4.25,0,0.25,0.1,False,False,False,False,False,True
+12/27/1999,TABLE,Word before hop or top,Other,,False,5,22,4,False,False,False,False,0,False,3.6,0,0.2,0.0,False,False,False,False,False,True
+10/28/1999,SEA,Word before dog or legs,Other,,False,5,23,4,False,False,False,False,0,False,3.8,0,0.2,0.0,False,False,False,False,False,True
+9/26/1999,TIN,Word before ear or horn,Other,,False,5,23,4,False,False,False,False,0,False,3.8,0,0.2,0.0,False,False,False,False,False,True
+8/16/1999,VOICE,Word before mail or vote,Other,,False,5,24,4,False,False,False,False,0,False,4.0,0,0.2,0.0,False,False,False,False,False,True
+6/9/1999,HOPE,"Word before and after ""against""",Other,,False,5,31,6,False,False,False,False,0,False,5.4,0,0.2,0.06451612903225806,False,False,False,False,False,True
+6/7/1999,SEE,"Word before ""I told you so!""",Other,,False,6,28,8,False,False,False,False,0,False,3.8333333333333335,0,0.3333333333333333,0.10714285714285714,False,False,False,False,False,True
+3/26/1999,LOSE,Word before face or heart,Other,,False,5,25,4,False,False,False,False,0,False,4.2,0,0.2,0.0,False,False,False,False,False,True
+1/10/1999,TOWN,Word before house or hall,Other,,False,5,25,4,False,False,False,False,0,False,4.2,0,0.2,0.0,False,False,False,False,False,True
+11/7/1998,ART,Word before song or glass,Other,,False,5,25,4,False,False,False,False,0,False,4.2,0,0.2,0.0,False,False,False,False,False,True
+8/9/1998,SHE,"Word before ""loves me"" and ""loves me not""",Other,,False,8,41,11,False,False,False,False,0,False,4.25,0,0.125,0.0975609756097561,False,False,False,False,False,True
+6/2/1998,SERENE,Word before Highness,Other,,False,3,20,2,False,False,False,False,0,False,6.0,0,0.6666666666666666,0.0,False,False,False,False,False,True
+5/24/1998,READY,"Word before ""go""",Other,,False,3,16,4,False,False,False,False,0,False,4.666666666666667,0,0.3333333333333333,0.125,False,False,False,False,False,True
+5/4/1998,BED,"Word before ""of nails"" or ""of roses""",Other,,False,7,36,10,False,False,False,False,0,False,4.285714285714286,0,0.14285714285714285,0.1111111111111111,False,False,False,False,False,True
+3/19/1998,YAY,Word before team,Other,,False,3,16,2,False,False,False,False,0,False,4.666666666666667,0,0.3333333333333333,0.0,False,False,False,False,False,True
+3/9/1998,THE,"Word before ""more"" and ""merrier""",Other,,False,5,32,8,False,False,False,False,0,False,5.6,0,0.2,0.125,False,False,False,False,False,True
+11/15/1997,MACH,Word before 1 or 2,Other,,False,5,18,6,False,False,False,False,0,False,2.8,0,0.2,0.0,False,False,False,False,False,True
+10/29/1997,NEE,Word before Bouvier,Other,,False,3,19,2,False,False,False,False,0,False,5.666666666666667,0,0.6666666666666666,0.0,False,False,False,False,False,True
+9/6/1997,GREATER,Word before many city names,Other,,False,5,27,4,False,False,False,False,0,False,4.6,0,0.2,0.0,False,False,False,False,False,True
+8/7/1997,GONE,Last word before the gavel hits,Other,,False,6,31,5,False,False,False,False,0,False,4.333333333333333,0,0.0,0.0,False,False,False,False,False,True
+7/20/1997,ASHES,"Word before and after ""to""",Other,,False,5,26,6,False,False,False,False,0,False,4.4,0,0.2,0.07692307692307693,False,False,False,False,False,True
+7/7/1997,LAST,Word before laugh or straw,Other,,False,5,26,4,False,False,False,False,0,False,4.4,0,0.2,0.0,False,False,False,False,False,True
+6/15/1997,STATE,"Word before and after ""of the""",Other,,False,6,30,7,False,False,False,False,0,False,4.166666666666667,0,0.16666666666666666,0.06666666666666667,False,False,False,False,False,True
+4/6/1997,NEE,"Word before Rodham, perhaps",Other,,False,4,27,4,False,False,False,False,0,False,6.0,1,0.5,0.037037037037037035,False,False,False,False,False,True
+11/16/1996,POORER,"Word before ""in sickness and in health""",Other,,False,7,39,8,False,False,False,False,0,False,4.714285714285714,0,0.14285714285714285,0.05128205128205128,False,False,False,False,False,True
+11/2/1996,WERE,"Word before ""#1""",Other,,False,3,16,6,False,False,False,False,0,False,4.666666666666667,0,0.3333333333333333,0.1875,False,False,False,False,False,True
+10/29/1996,THY,"Word before rod or staff, in Psalms",Other,,False,7,35,7,False,False,False,False,0,False,4.142857142857143,1,0.2857142857142857,0.02857142857142857,False,False,False,False,False,True
+8/12/1996,INNER,Word before city or most,Other,,False,5,24,4,False,False,False,False,0,False,4.0,0,0.2,0.0,False,False,False,False,False,True
+8/27/1995,APPETIT,Last word before the first bite,Other,,False,6,31,5,False,False,False,False,0,False,4.333333333333333,0,0.0,0.0,False,False,False,False,False,True
+7/17/1995,BOARD,"Word before ""of health"" or ""of directors""",Other,,False,7,41,10,False,False,False,False,0,False,5.0,0,0.14285714285714285,0.0975609756097561,False,False,False,False,False,True
+7/5/1995,IDIOT,Word before box or proof,Other,,False,5,24,4,False,False,False,False,0,False,4.0,0,0.2,0.0,False,False,False,False,False,True
+6/21/1995,ARM,"Word before and after ""in""",Other,,False,5,26,6,False,False,False,False,0,False,4.4,0,0.2,0.07692307692307693,False,False,False,False,False,True
+4/10/1995,BOYS,"Word before and after ""will be""",Other,,False,6,31,7,False,False,False,False,0,False,4.333333333333333,0,0.16666666666666666,0.06451612903225806,False,False,False,False,False,True
+3/19/1995,OLDE,Word before shoppe,Other,,False,3,18,2,False,False,False,False,0,False,5.333333333333333,0,0.3333333333333333,0.0,False,False,False,False,False,True
+2/7/1995,MAJOR,Word before league or domo,Other,,False,5,26,4,False,False,False,False,0,False,4.4,0,0.2,0.0,False,False,False,False,False,True
+1/30/1995,WIDOWS,Word before peak or walk,Other,,False,5,24,4,False,False,False,False,0,False,4.0,0,0.2,0.0,False,False,False,False,False,True
+1/25/1995,ONE,Word before person and vote,Other,,False,5,27,4,False,False,False,False,0,False,4.6,0,0.2,0.0,False,False,False,False,False,True
+1/10/1995,THE,Word before more and merrier,Other,,False,5,28,4,False,False,False,False,0,False,4.8,0,0.2,0.0,False,False,False,False,False,True
+7/24/1994,END,"Word before and after ""to""",Other,,False,5,26,6,False,False,False,False,0,False,4.4,0,0.2,0.07692307692307693,False,False,False,False,False,True
+6/13/1994,SKIN,Word before deep or dive,Other,,False,5,24,4,False,False,False,False,0,False,4.0,0,0.2,0.0,False,False,False,False,False,True
+5/23/1994,PIT,Word before bull or stop,Other,,False,5,24,4,False,False,False,False,0,False,4.0,0,0.2,0.0,False,False,False,False,False,True
+5/17/1994,EASY,Word before come and go,Other,,False,5,23,4,False,False,False,False,0,False,3.8,0,0.2,0.0,False,False,False,False,False,True
+5/8/1994,HOPE,"Word before and after ""against""",Other,,False,5,31,6,False,False,False,False,0,False,5.4,0,0.2,0.06451612903225806,False,False,False,False,False,True
+4/18/1994,RAPID,Word before fire or transit,Other,,False,5,27,4,False,False,False,False,0,False,4.6,0,0.2,0.0,False,False,False,False,False,True
+3/9/1994,FORWARD,Word before march,Other,,False,3,17,2,False,False,False,False,0,False,5.0,0,0.3333333333333333,0.0,False,False,False,False,False,True
+1/28/1994,MERE,Word before pittance,Other,,False,3,20,2,False,False,False,False,0,False,6.0,0,0.3333333333333333,0.0,False,False,False,False,False,True
+1/25/1994,DUTY,Word before free or calls,Other,,False,5,25,4,False,False,False,False,0,False,4.2,0,0.2,0.0,False,False,False,False,False,True
+12/9/1993,STEP,Word before mother or lively,Other,,False,5,28,4,False,False,False,False,0,False,4.8,0,0.2,0.0,False,False,False,False,False,True
+11/28/1993,SPEAR,Word before head or mint,Other,,False,5,24,4,False,False,False,False,0,False,4.0,0,0.2,0.0,False,False,False,False,False,True

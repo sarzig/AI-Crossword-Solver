@@ -45,7 +45,6 @@ def count_proper_nouns(text):
     return proper_noun_count
 
 
-
 def is_first_word_proper_noun(clue):
     """
     Uses word tokenization with nltk to assess if the first word of a sentence is
@@ -131,7 +130,7 @@ def analyze_pos_distribution(clue):
     return pos_percentage
 
 
-def add_basic_features(clues_df):
+def add_features(clues_df):
     """
     Given an input dataframe, this adds feature columns.
 
@@ -159,7 +158,132 @@ def add_basic_features(clues_df):
     clues_df["number non a-z or 1-9 characters in clue"] = clues_df["Clue"].apply(lambda x: sum(not re.match(r"[A-Za-z0-9]", c) for c in x) / len(x) if len(x) > 0 else 0)
     clues_df["contains e.g."] = clues_df["Clue"].str.contains(r"\be\.g\.", case=False, na=False)
     clues_df["contains etc."] = clues_df["Clue"].str.contains(r"\betc\.", case=False, na=False)
+    clues_df["contains in short"] = clues_df["Clue"].str.contains(r"\bin short\b", case=False, na=False)
+    clues_df["contains briefly"] = clues_df["Clue"].str.contains(r"\bbriefly\b", case=False, na=False)
+    clues_df["contains dir."] = clues_df["Clue"].str.contains(" dir.", case=False, na=False)
+    clues_df["contains dir."] = clues_df["Clue"].str.contains(r"\bdir\.", case=False, na=False)
+    clues_df["contains bible clue"] = clues_df["Clue"].str.contains(
+        r"\bbible\b|\bbiblical\b|\bjesus\b|old testament|new testament",
+        case=False,
+        na=False
+    )
+    clues_df["contains ,maybe"] = clues_df["Clue"].str.contains(r", maybe", case=False, na=False)
+    clues_df["contains word before"] = clues_df["Clue"].str.contains(r"word before", case=False, na=False)
 
+    # More involved features
+    clues_df = add_profession(clues_df)
+    return clues_df
+
+
+def add_profession(clues_df):
+    prominent_professions = [
+        "author",
+        "poet",
+        "composer",
+        "singer",
+        "actor",
+        "actress",
+        "philanthropist",
+        "ceo",
+        "president",
+        "mayor",
+        "governor",
+        "director",
+        "producer",
+        "dancer",
+        "painter",
+        "sculptor",
+        "novelist",
+        "editor",
+        "journalist",
+        "reporter",
+        "host",
+        "chef",
+        "baker",
+        "coach",
+        "pilot",
+        "surgeon",
+        "doctor",
+        "nurse",
+        "scientist",
+        "inventor",
+        "engineer",
+        "lawyer",
+        "judge",
+        "rabbi",
+        "priest",
+        "minister",
+        "dean",
+        "professor",
+        "teacher",
+        "student",
+        "scholar",
+        "critic",
+        "curator",
+        "violinist",
+        "pianist",
+        "guitarist",
+        "drummer",
+        "comedian",
+        "clown",
+        "magician",
+        "bartender",
+        "barista",
+        "detective",
+        "police",
+        "officer",
+        "firefighter",
+        "soldier",
+        "spy",
+        "agent",
+        "model",
+        "designer",
+        "tailor",
+        "writer",
+        "illustrator",
+        "animator",
+        "cartoonist",
+        "blogger",
+        "vlogger",
+        "influencer",
+        "athlete",
+        "racer",
+        "skater",
+        "golfer",
+        "boxer",
+        "umpire",
+        "referee", "actor", "actress", "author", "poet", "novelist", "writer",
+        "composer", "musician", "singer", "rapper", "pianist", "violinist",
+        "artist", "painter", "sculptor", "director", "producer", "filmmaker",
+        "comedian", "magician", "host", "broadcaster", "journalist", "editor",
+        "blogger", "influencer", "chef", "designer", "model", "photographer",
+        "philanthropist", "entrepreneur", "inventor", "engineer", "scientist",
+        "astronaut", "explorer", "philosopher", "historian", "scholar", "professor",
+        "teacher", "critic", "coach", "athlete", "boxer", "golfer", "racer",
+        "skater", "runner", "cyclist", "swimmer", "surfer",
+        "president", "prime minister", "governor", "mayor", "senator", "ambassador",
+        "general", "admiral", "officer", "judge", "justice", "lawyer", "diplomat",
+        "czar", "tsar", "monarch", "king", "queen", "emperor", "empress",
+        "rabbi", "priest", "pastor", "imam", "monk", "nun", "bishop", "cardinal", "pope",
+        "anchor",
+        "newsman",
+        "newscaster",
+        "announcer",
+        "emcee",
+        "hostess",
+        "broadcaster",
+        "strategist",
+        "consultant",
+        "accountant",
+        "economist",
+        "banker",
+        "trader",
+        "broker",
+        "entrepreneur"
+    ]
+
+    pattern = r"\b(?:" + "|".join(prominent_professions) + r")\b"
+    clues_df["MentionsProfession"] = clues_df["Clue"].str.contains(pattern, flags=re.IGNORECASE, regex=True)
     return clues_df
 
 
@@ -184,31 +308,3 @@ def kmeans_clustering_clues_dataframe(clues_df):
     clues_df["Cluster"] = kmeans.fit_predict(features)
 
     return clues_df
-
-# Apply POS analysis to each clue
-'''
-print("here")
-time1 = time.time()
-pos_data = clues["Clue"].apply(analyze_pos_distribution).apply(pd.Series)
-print("here2")
-time2 = (time.time() - time1)
-print(f"Time is {time2} seconds.")
-
-# Merge POS data with original DataFrame
-clues = pd.concat([clues, pos_data], axis=1).fillna(0)
-
-
-clues = get_clues_dataframe()
-new_clues = add_basic_features(clues)
-new_clues = new_clues[new_clues['percentage words (other than first word) that are upper-case'] == 0]
-
-Index(['Date', 'Word', 'Clue', 'ends in question', 'number words',
-       'length of clue', 'no alphabet characters', 'is quote',
-       'contains underscore', 'contains asterisk', 'contains done',
-       'number of non-consecutive periods in clue', 'is ellipsis in clue',
-       'avg word length', 'number commas in clue',
-       'percentage words (other than first word) that are upper-case',
-       'number non a-z or 1-9 characters in clue', 'contains e.g.',
-       'contains etc.'],
-      dtype='object')
-'''

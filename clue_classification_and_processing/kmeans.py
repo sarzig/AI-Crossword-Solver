@@ -25,26 +25,6 @@ nltk.download('wordnet')
 
 clues = pd.read_csv(r"data\nytcrosswords.csv", encoding='latin1')
 
-# Function to classify crossword answers
-def classify_language(answer):
-    # Attempt to segment words (e.g., ITSATRAP -> ["its", "a", "trap"])
-    segmented_words = segment(answer.lower())  # Converts to lowercase before segmentation
-
-    # If all words are capitalized (suggesting a proper noun), classify as Proper Noun
-    if answer.isupper() and len(segmented_words) > 1:
-        return "Proper Noun"
-
-    # If all segmented words are in the English dictionary, classify as English
-    if all(word in english_vocab for word in segmented_words):
-        return "English"
-
-    # If some words are in English and others are not, classify as Mixed
-    if any(word in english_vocab for word in segmented_words):
-        return "Mixed (English & Foreign)"
-
-    # Otherwise, classify as Foreign
-    return "Foreign"
-
 
 # Define primary cluster categories
 def assign_primary_cluster(clue):
@@ -102,12 +82,20 @@ clues["is ellipsis in clue"] = clues["Clue"].str.contains(r"\.\.\.", case=False,
 clues["avg word length"] = clues["Clue"].apply(lambda x: sum(len(word) for word in x.split()) / len(x.split()) if x.split() else 0)
 clues["number commas in clue"] = clues["Clue"].apply(lambda x: x.count(","))
 clues["percentage words (other than first word) that are upper-case"] = clues["Clue"].apply(uppercase_percentage)
-clues["number non a-z or 1-9 characters in clue"] = clues["Clue"].apply(lambda x: sum(not re.match(r"[A-Za-z0-9]", c) for c in x) / len(x) if len(x) > 0 else 0)
+clues["number non a-z or 1-9 characters in clue"] = clues["Clue"].apply(lambda x: sum(not re.match(r"[A-Za-z0-9 ]", c) for c in x) / len(x) if len(x) > 0 else 0)
 clues["contains e.g."] = clues["Clue"].str.contains(r"\be\.g\.", case=False, na=False)
 clues["contains etc."] = clues["Clue"].str.contains(r"\betc\.", case=False, na=False)
 clues["quoted clues"] = clues["Clue"].apply(
     lambda x: isinstance(x, str) and x.count('"') == 2 and x.startswith('"') and x.endswith('"')
 )
+clues["contains dir."] = clues["Clue"].str.contains(r"\bdir\.", case=False, na=False)
+clues["contains bible clue"] = clues["Clue"].str.contains(
+    r"\bbible\b|\bbiblical\b|\bjesus\b|old testament|new testament",
+    case=False,
+    na=False
+)
+clues["contains ,maybe"] = clues["Clue"].str.contains(r", maybe", case=False, na=False)
+clues["contains word before"] = clues["Clue"].str.contains(r"word before", case=False, na=False)
 
 def is_roman_only(word):
     if type(word) ==str:
@@ -151,7 +139,139 @@ clues["is analogy"] = clues["Clue"].str.contains(r"::", na=False)
 # Flag clues that mention any of the keywords
 clues["MentionsGeo"] = clues["Clue"].str.contains(pattern, flags=re.IGNORECASE, regex=True)
 
-clues[clues["quoted clues"] == True].to_csv("subset_quoted_clues.csv", index=False)
+prominent_professions = [
+    "author",
+    "poet",
+    "composer",
+    "singer",
+    "actor",
+    "actress",
+    "philanthropist",
+    "ceo",
+    "president",
+    "mayor",
+    "governor",
+    "director",
+    "producer",
+    "dancer",
+    "painter",
+    "sculptor",
+    "novelist",
+    "editor",
+    "journalist",
+    "reporter",
+    "host",
+    "chef",
+    "baker",
+    "coach",
+    "pilot",
+    "surgeon",
+    "doctor",
+    "nurse",
+    "scientist",
+    "inventor",
+    "engineer",
+    "lawyer",
+    "judge",
+    "rabbi",
+    "priest",
+    "monk",
+    "nun",
+    "minister",
+    "dean",
+    "professor",
+    "teacher",
+    "student",
+    "scholar",
+    "critic",
+    "curator",
+    "violinist",
+    "pianist",
+    "guitarist",
+    "drummer",
+    "comedian",
+    "clown",
+    "magician",
+    "bartender",
+    "barista",
+    "waiter",
+    "waitress",
+    "butler",
+    "maid",
+    "detective",
+    "police",
+    "officer",
+    "firefighter",
+    "soldier",
+    "spy",
+    "agent",
+    "model",
+    "designer",
+    "tailor",
+    "writer",
+    "illustrator",
+    "animator",
+    "cartoonist",
+    "blogger",
+    "vlogger",
+    "influencer",
+    "athlete",
+    "racer",
+    "skater",
+    "golfer",
+    "boxer",
+    "umpire",
+    "referee",    "actor", "actress", "author", "poet", "novelist", "writer",
+    "composer", "musician", "singer", "rapper", "pianist", "violinist",
+    "artist", "painter", "sculptor", "director", "producer", "filmmaker",
+    "comedian", "magician", "host", "broadcaster", "journalist", "editor",
+    "blogger", "influencer", "chef", "designer", "model", "photographer",
+    "philanthropist", "entrepreneur", "inventor", "engineer", "scientist",
+    "astronaut", "explorer", "philosopher", "historian", "scholar", "professor",
+    "teacher", "critic", "coach", "athlete", "boxer", "golfer", "racer",
+    "skater", "runner", "cyclist", "swimmer", "surfer",
+    "president", "prime minister", "governor", "mayor", "senator", "ambassador",
+    "general", "admiral", "officer", "judge", "justice", "lawyer", "diplomat",
+    "czar", "tsar", "monarch", "king", "queen", "emperor", "empress",
+    "rabbi", "priest", "pastor", "imam", "monk", "nun", "bishop", "cardinal", "pope",
+    "anchor",
+    "newsman",
+    "newscaster",
+    "announcer",
+    "emcee",
+    "hostess",
+    "broadcaster",
+    "strategist",
+    "consultant",
+    "accountant",
+    "economist",
+    "banker",
+    "trader",
+    "broker",
+    "entrepreneur"
+]
+
+pattern = r"\b(" + "|".join(prominent_professions) + r")\b"
+clues["MentionsProfession"] = clues["Clue"].str.contains(pattern, flags=re.IGNORECASE, regex=True)
+
+
+import spacy
+import names
+name_set = set(names.get_first_name(gender=None) for _ in range(10000))  # random sample
+
+
+# Load English NER model (only load once)
+nlp = spacy.load("en_core_web_sm")
+
+def is_geography_clue_spacy(clue_text):
+    doc = nlp(clue_text)
+    return any(ent.label_ in {"GPE", "LOC"} for ent in doc.ents)
+clues["georgrophy entity"] = clues[clues["Clue"].apply(is_geography_clue_spacy)]
+
+clues["is_first_name"] = clues["Word"].str.lower().isin(name.lower() for name in name_set)
+
+
+clues[clues["contains word before"] == True].to_csv("word before clues.csv", index=False)
 
 
 # Apply POS analysis to each clue
@@ -165,7 +285,7 @@ print(f"Time is {time2} seconds.")
 
 # Merge POS data with original DataFrame
 clues = pd.concat([clues, pos_data], axis=1).fillna(0)
-'''
+
 
 # Drop non-feature columns
 features = clues.drop(columns=["Clue", "Date", "Word", "Primary Cluster", "Cluster"])
@@ -197,3 +317,5 @@ filtered_clues = pd.concat([
 
 # Export to CSV
 clues.to_csv("all_clue_clusters.csv", index=False)
+
+'''
