@@ -116,11 +116,16 @@ def get_clues_by_class(clue_class="all", classification_type="manual_only", pred
     print(f"\nPulling {text} classified clues from\n{loc}.")
 
     # If class is not all, then subset to that class
-    if clue_class != "all":
-        df = df[df["Class"] == clue_class]
-        print(f"Returning clues of class: {clue_class}")
-    else:
+    if clue_class == "all":
         print("Returning clues of all classes.\n")
+    elif clue_class in classes:
+        df = df[df["Class"] == clue_class]
+    else:
+        print("Unrecognized class. Please select a class from list:")
+        classes = get_class_options()
+        for each in classes:
+            print(f"  * {each}")
+        return None
 
     # Get only columns of interest
     columns_of_interest = ["Clue", "Word", "Class", "Confidence"]
@@ -133,6 +138,18 @@ def get_clues_by_class(clue_class="all", classification_type="manual_only", pred
             df[col] = df[col].astype(str)
 
     return df
+
+
+def get_class_options():
+    """
+    Simply looks into Sarah's manually classed clues and returns a list of all classes.
+
+    :return: list of classes
+    """
+    manual_clues = get_clues_by_class(clue_class="all", classification_type="manual_only")
+    unique_clues = list(set((manual_clues["Class"].to_list())))
+    unique_clues.sort()
+    return unique_clues
 
 
 def get_vocab():
