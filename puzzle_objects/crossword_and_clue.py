@@ -165,6 +165,30 @@ def get_subset_overlap(crossword1, crossword2):
     return len(intersection_coordinates) / len(union_coordinates)
 
 
+def get_subset_union(subset1, subset2):
+    """
+    Given two subsets, find the union and return it as a crossword object.
+
+    # xxx tbd - place_conflicting overlap has no logic
+    :param place_conflicting_overlap: if True, place conflicting overlap words, where the word
+                                      from subset1 is prioritized.
+                                      if False,
+    :param subset1: first subset
+    :param subset2: second subset
+    :return:
+    """
+    # Combine both dataframes
+    combined_df = pd.concat([subset1.clue_df, subset2.clue_df])
+
+    # Drop duplicates based on 'number_direction', keeping the first (subset1 has priority)
+    combined_df = combined_df.drop_duplicates(subset='number_direction', keep='first')
+
+    # Return new Crossword object
+    return Crossword(clue_df=combined_df,
+                     grid_width=subset1.grid_width,
+                     grid_height=subset1.grid_height)
+
+
 def get_mismatch_percentage(crossword1, crossword2):
     """
     Given 2 crosswords which , this function returns the percentage of cells which
@@ -208,18 +232,26 @@ def get_mismatch_percentage(crossword1, crossword2):
 
 
 class Crossword:
-    def __init__(self, clue_df, table_name=None):
+    def __init__(self, clue_df, table_name=None, grid_height=0, grid_width=0):
 
         # Check the source data meets requirements. If so, store clue_df
         validate_result = validate_clue_df(df=clue_df, raise_error=True)
         self.clue_df = clue_df
 
+        # If grid height and width are hard coded,fill them in. Otherwise, just
+        # calculate based on the clue information
+        if grid_height == 0:
+            self.grid_height = int(self.clue_df["end_row"].max() + 1)  # max row + 1
+        else:
+            self.grid_height = grid_height
+        if grid_width == 0:
+            self.grid_width = int(self.clue_df["end_col"].max() + 1)  # max column + 1
+        else:
+            self.grid_width = grid_width
+
         # Enrich the clue df by adding "x-across" / "y-down" notation,
         self.enrich_clue_df()
 
-        # Set some grid attributes
-        self.grid_height = int(self.clue_df["end_row"].max() + 1)  # max row + 1
-        self.grid_width = int(self.clue_df["end_col"].max() + 1)  # max column + 1
         self.table_name = table_name
 
         # Generate the numpy array to store the solved grid, where spaces with [X] are
@@ -294,6 +326,7 @@ class Crossword:
         self.clue_df["length"] = self.clue_df.apply(self.get_length, axis=1)
         self.clue_df["answer_certainty"] = ""  # a value like "guaranteed", "answer guaranteed in list", "answer likely in list"
         self.clue_df["answer_list"] = self.clue_df.apply(lambda _: [], axis=1)
+        self.clue_df["placed_answer"] = ""
 
         # If optional column is included, use it to check lengths and then delete that optional column
         self.optional_check_length()
@@ -649,6 +682,8 @@ class Crossword:
             else:
                 raise ValueError(f"Unsupported direction in location: {grid_location}")
 
+
+
     def subset_crossword(self, grid_location, branching_factor=1, overlap_threshold=0.25, return_type="crossword"):
         """
 
@@ -891,17 +926,6 @@ class Crossword:
 
         return subset_crosswords
 
-'''
-# Sheryl - try this
-crossword = get_crossword_from_csv("crossword_2025_01_20.csv")
-subsets, subset_lookup_dict = crossword.get_all_subset_dict(overlap_threshold=1)
-for id in subsets.keys():
-    print("__________________________________________________________")
-    print(f"id={id}")
-    subsets[id]["crossword"].detailed_print()
-    print(f'number clues={subsets[id]["number_clues"]}')
-'''
-
 
 def get_random_clue_df(puzzle_type="any", return_filename=False, force_previous=True):
     """
@@ -991,6 +1015,20 @@ def delete_last_loaded_crossword_on_exit():
 
 atexit.register(delete_last_loaded_crossword_on_exit)
 
-
-
-
+'''
+# Sheryl - try this
+crossword = get_crossword_from_csv("crossword_2025_01_20.csv")
+subsets, subset_lookup_dict = crossword.get_all_subset_dict(overlap_threshold=1)
+for id in subsets.keys():
+    print("__________________________________________________________")
+    print(f"id={id}")
+    subsets[id]["crossword"].detailed_print()
+    print(f'number clues={subsets[id]["number_clues"]}')
+    
+crossword = get_crossword_from_csv("crossword_2025_01_20.csv")
+subsets, subset_lookup_dict = crossword.get_all_subset_dict(overlap_threshold=1)
+subsets[0]["crossword"].detailed_print()
+subsets[5]["crossword"].detailed_print()
+union_test=get_subset_union(subsets[0]["crossword"], subsets[5]["crossword"])
+union_test.detailed_print()
+'''
