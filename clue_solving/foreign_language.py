@@ -1,9 +1,17 @@
+import pandas as pd
 import requests
 import time
 import random
 import re
 from urllib.parse import urlencode
 
+import sys
+import os
+
+# Add the parent directory to the module search path so that we can import project files
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+
+from clue_classification_and_processing.helpers import get_clues_by_class
 
 ######################################################################################################
 # True Bidirectional Foreign Language Translation for Crosswords
@@ -591,6 +599,21 @@ def solve_foreign_language(clue):
 
 if __name__ == "__main__":
     while True:
+
+        foreign_language_clues = get_clues_by_class(clue_class="Foreign language", classification_type="manual_only")
+
+        # print("foreign_language_clues: \n", foreign_language_clues)
+
+        # Create a DataFrame from the clues
+        df = pd.DataFrame(foreign_language_clues, columns=["ID", "Clue", "Word", "Class"])
+
+        output_filename = "foreign_language_clues.csv"
+
+        # Save to CSV file in the same directory as the script
+        df.to_csv(output_filename, index=False)
+
+        print(f"Foreign language clues saved to {output_filename}")
+
         clue_input = input("\nEnter clue (or 'exit' to quit): ")
         if clue_input.lower() == 'exit':
             break
