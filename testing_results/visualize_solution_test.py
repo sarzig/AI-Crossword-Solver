@@ -7,11 +7,99 @@ import time
 # Add project root to sys.path to enable imports from sibling directories
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
+
 # Import Crossword data structure and visualizer
 from puzzle_objects.crossword_and_clue import Crossword
 from grid_visualization.crossword_visualizer import CrosswordVisualizer
+from grid_visualization.crossword_visualizer import CrosswordVisualizer
 
 
+class CustomCrosswordVisualizer(CrosswordVisualizer):
+    def __init__(self, crossword):
+        print("[DEBUG] Initializing CustomCrosswordVisualizer...")
+        super().__init__(crossword)
+
+        self.highlight_cells = set()
+        self.highlight_words = set()
+        self.clue_text = ""
+
+        # 🔁 Resize window to make space for clue text
+        
+        # In CustomCrosswordVisualizer.__init__()
+        extra_height = 20 * len(crossword.clue_df) # Space for clues
+        self.WINDOW_HEIGHT = self.GRID_HEIGHT * (self.CELL_SIZE + self.MARGIN) + self.MARGIN + 300
+        self.screen = pygame.display.set_mode((self.WINDOW_WIDTH, self.WINDOW_HEIGHT))
+
+
+        print("[DEBUG] SCREEN HEIGHT:", self.WINDOW_HEIGHT)
+
+
+
+
+
+    def refresh(self, crossword, highlight_cells=None, highlight_words=None, clue_text=""):
+        self.crossword = crossword
+        self.highlight_cells = highlight_cells or set()
+        self.highlight_words = highlight_words or set()
+        self.clue_text = clue_text
+        self._prepare_crossword_elements()
+
+    def draw_grid(self):
+        self.screen.fill(self.GRAY)
+
+        for r in range(self.GRID_HEIGHT):
+            for c in range(self.GRID_WIDTH):
+                x = c * (self.CELL_SIZE + self.MARGIN) + self.MARGIN
+                y = r * (self.CELL_SIZE + self.MARGIN) + self.MARGIN
+                rect = pygame.Rect(x, y, self.CELL_SIZE, self.CELL_SIZE)
+
+                cell_value = self.crossword.grid[r][c]
+                is_black = cell_value == "■"
+
+                # Background color
+                if is_black:
+                    color = self.BLACK
+                elif (r, c) in self.highlight_cells:
+                    color = self.YELLOW
+                elif (r, c) in self.clue_numbers:
+                    color = self.LIGHT_GRAY
+                else:
+                    color = self.WHITE
+
+                pygame.draw.rect(self.screen, color, rect)
+
+                # Highlight word borders
+                if (r, c) in self.highlight_words:
+                    pygame.draw.rect(self.screen, (255, 80, 80), rect, 3)
+                else:
+                    pygame.draw.rect(self.screen, self.BLACK, rect, 1)
+
+                # Clue number
+                if (r, c) in self.clue_numbers:
+                    num_surface = self.number_font.render(str(self.clue_numbers[(r, c)]), True, self.BLACK)
+                    self.screen.blit(num_surface, (x + 2, y + 2))
+
+                # Letter
+                if cell_value and not is_black:
+                    letter_surface = self.letter_font.render(cell_value.upper(), True, self.BLACK)
+                    text_rect = letter_surface.get_rect(center=(x + self.CELL_SIZE // 2, y + self.CELL_SIZE // 2 + 3))
+                    self.screen.blit(letter_surface, text_rect)
+
+        # Render clue text below the grid
+        # === Draw clue text at the bottom ===
+        if hasattr(self.crossword, "clue_df"):
+            clue_font = pygame.font.SysFont('Arial', 16)
+            clues = self.crossword.clue_df["clue"].tolist()
+            line_height = 20
+            for i, clue_text in enumerate(clues):
+                clue_surface = clue_font.render(f"{i+1}. {clue_text}", True, (0, 0, 0))
+                self.screen.blit(clue_surface, (10, self.GRID_HEIGHT * (self.CELL_SIZE + self.MARGIN) + 10 + i * line_height))
+
+
+        pygame.display.flip()
+
+
+    
 # === Class to allow interactive solution navigation using Pygame ===
 class SolutionNavigator:
     def __init__(self, ranked_solutions, clue_df):
@@ -30,11 +118,52 @@ class SolutionNavigator:
         pygame.init()
         pygame.display.set_caption("Crossword Solution Navigator")
 
+    def get_clue_text(self, clue_label):
+        """Returns the clue string from the clue_df given a label like '1-Across'."""
+        try:
+            number, direction = clue_label.split("-")
+            number = int(number)
+            row = self.clue_df[(self.clue_df["number"] == number) & (self.clue_df["direction"] == direction)]
+            if not row.empty:
+                return row.iloc[0]["clue"]
+        except Exception as e:
+            print(f"[ERROR] Couldn't find clue for {clue_label}: {e}")
+        return ""
+
+
     def get_blank_grid(self):
         """Creates a blank grid with None (black squares) in all positions initially."""
         max_row = max(self.clue_df["start_row"].max(), self.clue_df["end_row"].max()) + 1
         max_col = max(self.clue_df["start_col"].max(), self.clue_df["end_col"].max()) + 1
         return [["■" for _ in range(max_col)] for _ in range(max_row)]
+    
+    def get_word_cells(self, clue_label):
+        """
+        Given a clue label like '3-Down', return all (row, col) cell coordinates it fills.
+        """
+        clue_row = self.clue_df[
+            (self.clue_df["number"] == int(clue_label.split("-")[0])) &
+            (self.clue_df["direction"] == clue_label.split("-")[1])
+        ]
+
+        if clue_row.empty:
+            return []
+
+        row = int(clue_row["start_row"].values[0])
+        col = int(clue_row["start_col"].values[0])
+        end_row = int(clue_row["end_row"].values[0])
+        end_col = int(clue_row["end_col"].values[0])
+
+        cells = []
+        if row == end_row:  # Horizontal (Across)
+            for c in range(col, end_col + 1):
+                cells.append((row, c))
+        elif col == end_col:  # Vertical (Down)
+            for r in range(row, end_row + 1):
+                cells.append((r, col))
+
+        return cells
+
 
     def load_crossword(self):
         """
@@ -71,36 +200,82 @@ class SolutionNavigator:
         return changed
 
     def start(self):
-        """Automatically cycles through each ranked solution every 0.5s, colors changing letters, exits after last."""
-        self.visualizer = CrosswordVisualizer(Crossword(clue_df=self.clue_df))
-        prev_grid = None  # Track previous grid
+        """Displays crossword solutions with visual highlights for letter changes and word borders."""
+        self.visualizer = CustomCrosswordVisualizer(Crossword(clue_df=self.clue_df))
+        prev_grid = None
+        manual_mode = True  # Toggle to False for autoplay
+        first_run = True
 
-        while self.current_index < self.total:
+        running = True
+        while running and self.current_index < self.total:
             crossword, score = self.load_crossword()
 
-            # Detect and highlight changed cells
-            changed_cells =  self.get_changed_cells(prev_grid, crossword.grid)
-            for r, c in changed_cells:
-                if crossword.grid[r][c] is not None:
-                    crossword.grid[r][c] = crossword.grid[r][c].lower()
+            changed_cells = self.get_changed_cells(prev_grid, crossword.grid) if not first_run else set()
 
+            current_clue = ""
 
-            self.visualizer.refresh(crossword)
-            print(f"Solution {self.current_index+1}/{self.total} | Score: {score}")
+            # Highlight full word if any letter in it changes
+            highlight_words = set()
+            if changed_cells:
+                for clue_label, word in self.ranked_solutions[self.current_index][0].items():
+                    for (r, c) in self.get_word_cells(clue_label):
+                        if (r, c) in changed_cells:
+                            highlight_words.update(self.get_word_cells(clue_label))
+                            current_clue = self.get_clue_text(clue_label)
+                            break
+
+            self.visualizer.refresh(
+                crossword,
+                highlight_cells=changed_cells if not first_run else set(),
+                highlight_words=highlight_words if not first_run else set(),
+                clue_text=current_clue if not first_run else ""
+            )
+
+            print(f"Solution {self.current_index + 1}/{self.total} | Score: {score}")
             self.visualizer.draw_grid()
             pygame.display.flip()
 
-            for event in pygame.event.get():
-                if event.type == pygame.QUIT or (event.type == pygame.KEYDOWN and event.key == pygame.K_q):
-                    pygame.quit()
-                    return
+            # Store the current grid before moving to the next one
+            prev_grid = [row.copy() for row in crossword.grid]
+            first_run = False
 
-            prev_grid = [row.copy() for row in crossword.grid]  # Save for next comparison
-            self.current_index += 1
-            time.sleep(0.5)
+            # === Manual vs Auto navigation ===
+            wait_start = time.time()
+            while True:
+                for event in pygame.event.get():
+                    if event.type == pygame.QUIT:
+                        pygame.quit()
+                        return
+                    elif event.type == pygame.KEYDOWN:
+                        if event.key == pygame.K_q:
+                            pygame.quit()
+                            return
+                        elif event.key == pygame.K_RIGHT:
+                            self.current_index = (self.current_index + 1) % self.total
+                            break  # Break inner while, re-loop outer while
+                        elif event.key == pygame.K_LEFT:
+                            self.current_index = (self.current_index - 1) % self.total
+                            break
+                else:
+                    # If not in manual mode, advance after 0.5s
+                    if not manual_mode and time.time() - wait_start > 0.5:
+                        self.current_index += 1
+                        break
+                    time.sleep(0.01)
+                    continue
+                break  # Break inner while only on keypress
 
+
+        print("[DEBUG] Current clue label:", clue_label)
+        print("[DEBUG] Current clue text:", current_clue) 
         time.sleep(1)
+
         pygame.quit()
+
+
+
+
+
 
 
 # === Load CSV and Preprocess Clue Data ===
