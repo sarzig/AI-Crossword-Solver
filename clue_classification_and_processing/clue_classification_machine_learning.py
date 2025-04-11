@@ -337,4 +337,12 @@ all_clues_predicted = predict_clues_df_from_default_pipeline(clues_df=all_clues,
                                                     top_n=3)
 
 all_clues_predicted.to_csv("all clues predicted.csv")
+
+clue_subset = all_clues_predicted[
+    (all_clues_predicted['_f_number words'] > 5) &
+    (all_clues_predicted['_f_percentage words that are upper-case'] > .3) &
+    (all_clues_predicted['_f_ends in question'] == True)
+
+]
 '''
+
