@@ -341,6 +341,6 @@ def process_text_into_clue_answer(input_text):
             new_text = new_text.replace(variant, base_letter)
 
     # remove whitespace and lowercase it
-    new_text = re.sub(whitespace_regex, "", new_text).lower()
+    new_text = re.sub(whitespace_regex, "", new_text).upper()
 
     return new_text
