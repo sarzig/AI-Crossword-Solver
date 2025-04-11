@@ -1,14 +1,14 @@
+"""
+Author: Sarah
+
+Yet another half-baked wiki file. xxx tbd: do something with it or delete
+"""
+
 import wikipediaapi
 import re
 import pandas as pd
 import os
 from clue_classification_and_processing.fill_in_the_blank_sandbox import fill_in_the_blank_with_possible_source
-
-"""
-Author: Sarah
-
-Yet another half-baked wiki file. xxxtbd: do something with it or delete
-"""
 
 # Get the current working directory
 cwd = os.getcwd()
@@ -38,7 +38,6 @@ def contains_long_quote_with_blank(clue):
         if len(words) >= 6 and "_" in match:  # Check for 6+ words and an underscore
             return True
     return False
-
 
 
 def contains_possessive_long_quote(clue):
@@ -97,6 +96,7 @@ def find_blank_in_wiki(clue):
     print(f"Extracted Missing Words: {missing_words}")
     return missing_words
 
+
 # Apply feature extraction functions
 clues["possessive long quote"] = clues["Clue"].apply(contains_possessive_long_quote)
 clues["long quote with blank"] = clues["Clue"].apply(contains_long_quote_with_blank)
@@ -109,10 +109,10 @@ for _, row in filtered_clues.iterrows():
     print("\n" + "-" * 80)
     print(f'Clue: {row["Clue"]}')
 
-    page_name = extract_page_name(row["Clue"])
-    print(f'Attempted Wikipedia Page Name: {page_name}')
+    my_page_name = extract_page_name(row["Clue"])
+    print(f'Attempted Wikipedia Page Name: {my_page_name}')
 
-    page = wiki_wiki.page(page_name)
+    page = wiki_wiki.page(my_page_name)
     if page.exists():
         print(f'Wikipedia Summary:\n{page.summary[:300]}...')
     else:
@@ -122,7 +122,7 @@ for _, row in filtered_clues.iterrows():
 
     function_answer = fill_in_the_blank_with_possible_source(row["Clue"], page.text)
     print(f"\n\n         Actual Answer: {row['Word'].lower()}")
-    #print(f'Predicted Answer: {ans}')
+    # print(f'Predicted Answer: {ans}')
     print(f'function_answer Answer: {function_answer}')
 
     input('')

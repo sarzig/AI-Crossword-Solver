@@ -1,14 +1,8 @@
-import os
-import random
-import re
-import pandas as pd
-from bs4 import BeautifulSoup
-from datetime import datetime
-from clue_classification_and_processing.helpers import get_project_root
-
 """
+Author: Sarah
+
 This entire parsing was created with ChatGPT and tweaked until it met
-my specifications.
+my specifications. *Gen AI Assisted*
 
 Using saved html, this converts a crossword into a meaningful dataframe / saves
 to csv.
@@ -21,6 +15,14 @@ Functions:
  * rename_puzzles() - helper to rename puzzles from NYT download format to my format
  * all_puzzle_csv() - helper to get a large csv with data from all 200+ puzzles in root/data/puzzle_samples
 """
+
+import os
+import random
+import re
+import pandas as pd
+from bs4 import BeautifulSoup
+from datetime import datetime
+from clue_classification_and_processing.helpers import get_project_root
 
 
 def get_coordinates(x, y, cell_size, cell_offset):
@@ -236,7 +238,6 @@ def get_random_clue_df_from_html(folder=r"data/puzzle_samples/raw_html/", return
         raise FileNotFoundError(f"No HTML files found in {folder}")
 
     # Apply filtering if needed
-    filtered = []
     if "mini" in return_type:
         filtered = [f for f in all_files if "mini" in f.lower()]
 
@@ -248,8 +249,6 @@ def get_random_clue_df_from_html(folder=r"data/puzzle_samples/raw_html/", return
 
     else:
         raise ValueError(f"Invalid return_type: '{return_type}'.")
-
-    result_dict = {}
 
     # Random single puzzle as df
     if "random" in return_type:
@@ -293,7 +292,7 @@ def get_random_clue_df_from_csv(folder=r"data/puzzle_samples/processed_puzzle_sa
         raise FileNotFoundError(f"No csv files found in {folder}")
 
     # Apply filtering if needed
-    filtered = []
+
     if "mini" in return_type:
         filtered = [f for f in all_files if "mini" in f.lower()]
 
@@ -314,7 +313,6 @@ def get_random_clue_df_from_csv(folder=r"data/puzzle_samples/processed_puzzle_sa
 
         return df
 
-    result_dict = {}
     # Return all as list of DataFrames
     if "all" in return_type:
         result_dict = {}
@@ -358,6 +356,8 @@ def rename_puzzles():
     readable / parsable format. For example, a puzzle like The Mini Crossword puzzle - The New York Times.html
     would get renamed according to the date of the puzzle, and whether it is a mini or not.
 
+    *Gen AI Assisted*
+
     :return: nothing
     """
     raw_puzzle_loc = f"{get_project_root()}/data/puzzle_samples/raw_html"
@@ -393,6 +393,7 @@ def rename_puzzles():
 def get_all_puzzle_csv(overwrite=False):
     """
     Looks in the processed_puzzle_samples folder and gets all csvs.
+
     :return: dataFrame with ALL the puzzle information from processed_puzzle_samples.
     """
 

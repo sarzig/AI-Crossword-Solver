@@ -1,3 +1,9 @@
+"""
+Author: Sarah
+
+NOTES: xxx tbd this is half-baked, consider deleting her.
+"""
+
 import time
 import pandas as pd
 import numpy as np

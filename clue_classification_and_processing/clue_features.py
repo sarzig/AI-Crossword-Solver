@@ -1,3 +1,22 @@
+"""
+Author: Sarah
+
+This file is the sandbox where I test new clues features. Its most important functions are:
+
+Clue classification:
+ * add_features(clues_df)
+ * move_feature_columns_to_right_of_df(df)
+ * delete_feature_columns(df)
+ * select_numeric_features(df)
+
+Helpers for clue classification:
+ * count_proper_nouns
+
+Clue k-means clustering:
+ * kmeans_clustering_clues_dataframe(df)  xxx tbd should I move this into k_means_clustering.py?
+
+"""
+
 import re
 import string
 import pandas as pd
@@ -8,23 +27,6 @@ from sklearn.cluster import KMeans
 from collections import Counter
 from clue_classification_and_processing.helpers import get_clues_dataframe
 
-"""
-Author: Sarah
-
-This file is the sandbox where I test new clues features. It's most important function are:
-
-Clue classification:
- * add_features(clues_df)
- * move_feature_columns_to_right_of_df(df)
- * delete_feature_columns(df)
- * select_numeric_features(df)
-
-Helpers for clue classification: 
- * count_proper_nouns
-
-Clue k-means clustering: 
- * kmeans_clustering_clues_dataframe(df)  xxx tbd should I move this into k_means_clustering.py?
-"""
 
 # Download NLTK libs
 '''
@@ -310,7 +312,8 @@ def add_features(clues_df):
     clues_df["_f_contains word before"] = clues_df["Clue"].str.contains(r"word before", case=False, na=False)
 
     # Need to add xxx tbd
-    # Clue starts with "country where", "country that", "country that's", "country w", "city", "river to" , "river that", "river whose", "river of", river near", "river in", "river f"
+    # Clue starts with "country where", "country that", "country that's", "country w", "city", "river to" ,
+    # "river that", "river whose", "river of", river near", "river in", "river f"
     # river at,
 
     # Add more involved features

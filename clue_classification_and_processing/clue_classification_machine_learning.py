@@ -1,18 +1,3 @@
-import os
-import pandas as pd
-from sklearn.model_selection import train_test_split
-from sklearn.pipeline import Pipeline
-from sklearn.ensemble import RandomForestClassifier
-from sklearn.metrics import classification_report
-from sklearn.compose import ColumnTransformer
-from sklearn.preprocessing import FunctionTransformer
-from sklearn.feature_extraction.text import TfidfVectorizer
-import joblib
-from clue_classification_and_processing.clue_features import add_features, move_feature_columns_to_right_of_df, \
-    select_numeric_features
-from clue_classification_and_processing.helpers import get_clues_by_class, get_project_root, get_clues_dataframe
-from sklearn.base import clone
-
 """
 Author: Sarah
 
@@ -47,6 +32,20 @@ Functions:
     Classifies a DataFrame of clues and returns predictions, optionally keeping extracted features.
 """
 
+import os
+import pandas as pd
+from sklearn.model_selection import train_test_split
+from sklearn.pipeline import Pipeline
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.metrics import classification_report
+from sklearn.compose import ColumnTransformer
+from sklearn.preprocessing import FunctionTransformer
+from sklearn.feature_extraction.text import TfidfVectorizer
+import joblib
+from clue_classification_and_processing.clue_features import add_features, move_feature_columns_to_right_of_df, \
+    select_numeric_features
+from clue_classification_and_processing.helpers import get_clues_by_class, get_project_root, get_clues_dataframe
+from sklearn.base import clone
 
 def drop_clue_and_word(df):
     columns_to_drop = [col for col in ["Clue", "Word"] if col in df.columns]

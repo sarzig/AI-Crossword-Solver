@@ -5,8 +5,8 @@ Various functionality around filling in a blank is done here.
 
 NOTES: xxx tbd: this is a half-baked file. I was trying to develop some ability to solve
 fill-in-the-blank type clues.
-
 """
+
 import re
 from clue_classification_and_processing.helpers import preprocess_lower_remove_punct_strip_whitespace
 

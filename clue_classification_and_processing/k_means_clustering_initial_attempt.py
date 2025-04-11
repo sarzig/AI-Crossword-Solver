@@ -1,3 +1,12 @@
+"""
+Author: Sarah
+xxx tbd delete or keep some of cluster_attempt_outputs, maybe move to data to not clutter up this file
+xxx tbd: I would love to ideally get this in an output which could be discussed in our
+report. Doesn't need to be fancy, just a 2d or 3d space and a table to visualize
+"yes, we put effort into this, and yes, this was of immense value to the early project,
+even if it didn't end up being out primary pathway.
+"""
+
 import string
 import time
 import pandas as pd
@@ -17,14 +26,6 @@ from nltk.corpus import words
 from wordsegment import load, segment  # Library for word segmentation
 from clue_classification_and_processing.clue_features import uppercase_percentage
 
-"""
-Author: Sarah
-xxx tbd delete or keep some of cluster_attempt_outputs, maybe move to data to not clutter up this file
-xxx tbd: I would love to ideally get this in an output which could be discussed in our
-report. Doesn't need to be fancy, just a 2d or 3d space and a table to visualize
-"yes, we put effort into this, and yes, this was of immense value to the early project,
-even if it didn't end up being out primary pathway.
-"""
 
 # Download necessary resources
 nltk.download('punkt')
@@ -274,7 +275,7 @@ nlp = spacy.load("en_core_web_sm")
 def is_geography_clue_spacy(clue_text):
     doc = nlp(clue_text)
     return any(ent.label_ in {"GPE", "LOC"} for ent in doc.ents)
-clues["georgrophy entity"] = clues[clues["Clue"].apply(is_geography_clue_spacy)]
+clues["geography entity"] = clues[clues["Clue"].apply(is_geography_clue_spacy)]
 
 clues["is_first_name"] = clues["Word"].str.lower().isin(name.lower() for name in name_set)
 
