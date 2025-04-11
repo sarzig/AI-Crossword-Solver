@@ -7,10 +7,8 @@ import time
 # Add project root to sys.path to enable imports from sibling directories
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
-
 # Import Crossword data structure and visualizer
 from puzzle_objects.crossword_and_clue import Crossword
-from grid_visualization.crossword_visualizer import CrosswordVisualizer
 from grid_visualization.crossword_visualizer import CrosswordVisualizer
 
 
@@ -25,16 +23,36 @@ class CustomCrosswordVisualizer(CrosswordVisualizer):
 
         # 🔁 Resize window to make space for clue text
         
-        # In CustomCrosswordVisualizer.__init__()
-        extra_height = 20 * len(crossword.clue_df) # Space for clues
-        self.WINDOW_HEIGHT = self.GRID_HEIGHT * (self.CELL_SIZE + self.MARGIN) + self.MARGIN + 300
+        # Calculate extra height for clues
+        extra_height = 20 * len(crossword.clue_df)  # Space for clues
+        self.WINDOW_HEIGHT = self.GRID_HEIGHT * (self.CELL_SIZE + self.MARGIN) + self.MARGIN + 310
+
+        # Calculate a more optimal window width based on the longest clue
+        # Find the clue that needs the most width
+        max_clue_length = max([len(f"{num}-{dir}. {clue}") 
+                              for num, dir, clue in zip(
+                                  crossword.clue_df["number"],
+                                  crossword.clue_df["direction"],
+                                  crossword.clue_df["clue"]
+                              )], default=0)
+        
+        # Estimate characters per line - approx 6-7px per character at font size 16
+        # Adding a small buffer of 20px for padding, but keeping it compact
+        min_width_for_clues = int(max_clue_length * 6.5) + 20
+        
+        # Determine grid width
+        grid_width = self.GRID_WIDTH * (self.CELL_SIZE + self.MARGIN) + self.MARGIN
+        
+        # Set window width to the larger of the two, but cap it at a reasonable size
+        # to avoid excessive empty space
+        reasonable_max_width = 650  # Reasonable width for readability without too much empty space
+        self.WINDOW_WIDTH = min(reasonable_max_width, max(grid_width, min_width_for_clues))
+
+        # Resize window with new dimensions
         self.screen = pygame.display.set_mode((self.WINDOW_WIDTH, self.WINDOW_HEIGHT))
-
-
+        
         print("[DEBUG] SCREEN HEIGHT:", self.WINDOW_HEIGHT)
-
-
-
+        print("[DEBUG] SCREEN WIDTH:", self.WINDOW_WIDTH)
 
 
     def refresh(self, crossword, highlight_cells=None, highlight_words=None, clue_text=""):
@@ -44,12 +62,34 @@ class CustomCrosswordVisualizer(CrosswordVisualizer):
         self.clue_text = clue_text
         self._prepare_crossword_elements()
 
+    def wrap_text(self, text, font, max_width):
+        """Break text into lines that fit within max_width"""
+        words = text.split(' ')
+        lines = []
+        current_line = words[0]
+        
+        for word in words[1:]:
+            test_line = current_line + ' ' + word
+            text_width = font.size(test_line)[0]
+            if text_width <= max_width:
+                current_line = test_line
+            else:
+                lines.append(current_line)
+                current_line = word
+        
+        lines.append(current_line)  # Add the last line
+        return lines
+
     def draw_grid(self):
         self.screen.fill(self.GRAY)
-
+        
+        # Calculate grid centering adjustments for a better layout
+        grid_pixel_width = self.GRID_WIDTH * (self.CELL_SIZE + self.MARGIN) + self.MARGIN
+        x_offset = (self.WINDOW_WIDTH - grid_pixel_width) // 2  # Center the grid horizontally
+        
         for r in range(self.GRID_HEIGHT):
             for c in range(self.GRID_WIDTH):
-                x = c * (self.CELL_SIZE + self.MARGIN) + self.MARGIN
+                x = c * (self.CELL_SIZE + self.MARGIN) + self.MARGIN + x_offset
                 y = r * (self.CELL_SIZE + self.MARGIN) + self.MARGIN
                 rect = pygame.Rect(x, y, self.CELL_SIZE, self.CELL_SIZE)
 
@@ -85,21 +125,47 @@ class CustomCrosswordVisualizer(CrosswordVisualizer):
                     text_rect = letter_surface.get_rect(center=(x + self.CELL_SIZE // 2, y + self.CELL_SIZE // 2 + 3))
                     self.screen.blit(letter_surface, text_rect)
 
-        # Render clue text below the grid
-        # === Draw clue text at the bottom ===
+        # Render clue text below the grid with wrapping
         if hasattr(self.crossword, "clue_df"):
             clue_font = pygame.font.SysFont('Arial', 16)
             clues = self.crossword.clue_df["clue"].tolist()
-            line_height = 20
-            for i, clue_text in enumerate(clues):
-                clue_surface = clue_font.render(f"{i+1}. {clue_text}", True, (0, 0, 0))
-                self.screen.blit(clue_surface, (10, self.GRID_HEIGHT * (self.CELL_SIZE + self.MARGIN) + 10 + i * line_height))
-
+            numbers = self.crossword.clue_df["number"].tolist()
+            directions = self.crossword.clue_df["direction"].tolist()
+            
+            y_pos = self.GRID_HEIGHT * (self.CELL_SIZE + self.MARGIN) + 10
+            text_padding = 20
+            max_width = self.WINDOW_WIDTH - (text_padding * 2)  # Padding on each side
+            
+            # Draw a title for the clues section
+            title_font = pygame.font.SysFont('Arial', 18, bold=True)
+            title_surface = title_font.render("Clues", True, (0, 0, 0))
+            self.screen.blit(title_surface, (text_padding, y_pos))
+            y_pos += 25  # Slightly more space after title
+            
+            # Determine if we should display clues in two columns
+            halfway = len(clues) // 2
+            use_two_columns = self.WINDOW_WIDTH >= 500 and len(clues) > 6
+            
+            for i in range(len(clues)):
+                # Skip to second column if needed
+                if use_two_columns and i == halfway:
+                    y_pos = self.GRID_HEIGHT * (self.CELL_SIZE + self.MARGIN) + 35  # Reset Y position
+                    text_padding = self.WINDOW_WIDTH // 2 + 10  # Start second column
+                
+                # Format the clue with number and direction
+                full_clue = f"{numbers[i]}-{directions[i]}. {clues[i]}"
+                
+                # Apply text wrapping
+                wrapped_lines = self.wrap_text(full_clue, clue_font, max_width // (2 if use_two_columns else 1))
+                
+                for line in wrapped_lines:
+                    clue_surface = clue_font.render(line, True, (0, 0, 0))
+                    self.screen.blit(clue_surface, (text_padding, y_pos))
+                    y_pos += 20  # Line height
 
         pygame.display.flip()
 
 
-    
 # === Class to allow interactive solution navigation using Pygame ===
 class SolutionNavigator:
     def __init__(self, ranked_solutions, clue_df):
@@ -203,7 +269,7 @@ class SolutionNavigator:
         """Displays crossword solutions with visual highlights for letter changes and word borders."""
         self.visualizer = CustomCrosswordVisualizer(Crossword(clue_df=self.clue_df))
         prev_grid = None
-        manual_mode = True  # Toggle to False for autoplay
+        manual_mode = False  # Toggle to False for autoplay
         first_run = True
 
         running = True
@@ -258,57 +324,40 @@ class SolutionNavigator:
                             break
                 else:
                     # If not in manual mode, advance after 0.5s
-                    if not manual_mode and time.time() - wait_start > 0.5:
+                    if not manual_mode and time.time() - wait_start > 0.7:
                         self.current_index += 1
                         break
-                    time.sleep(0.01)
+                    time.sleep(0.02)
                     continue
                 break  # Break inner while only on keypress
-
-
-        print("[DEBUG] Current clue label:", clue_label)
-        print("[DEBUG] Current clue text:", current_clue) 
-        time.sleep(1)
 
         pygame.quit()
 
 
+# === Usage example ===
+if __name__ == "__main__":
+    # Load the CSV file containing the crossword clues
+    csv_path = os.path.join("data", "puzzle_samples", "processed_puzzle_samples", "mini_2024_03_02.csv")
+    clue_df = pd.read_csv(csv_path, index_col=0)
 
+    # Reset index so clue number becomes a regular column
+    clue_df = clue_df.reset_index(names="number")
 
+    # Add a simple 'direction' column for clue orientation
+    # This assumes first half of clues are Across, second half are Down
+    halfway = len(clue_df) // 2
+    clue_df["direction"] = ["Across"] * halfway + ["Down"] * (len(clue_df) - halfway)
 
+    # Drop optional columns that cause validation errors during Crossword object construction
+    for optional_col in [
+        "answer (optional column, for checking only)",
+        "length (optional column, for checking only)"
+    ]:
+        if optional_col in clue_df.columns:
+            clue_df.drop(columns=[optional_col], inplace=True)
 
-
-# === Load CSV and Preprocess Clue Data ===
-
-# Load the CSV file containing the crossword clues
-csv_path = os.path.join("data", "puzzle_samples", "processed_puzzle_samples", "mini_2024_03_02.csv")
-clue_df = pd.read_csv(csv_path, index_col=0)
-
-
-
-# Reset index so clue number becomes a regular column
-clue_df = clue_df.reset_index(names="number")
-
-# Add a simple 'direction' column for clue orientation
-# This assumes first half of clues are Across, second half are Down
-halfway = len(clue_df) // 2
-clue_df["direction"] = ["Across"] * halfway + ["Down"] * (len(clue_df) - halfway)
-
-# Drop optional columns that cause validation errors during Crossword object construction
-for optional_col in [
-    "answer (optional column, for checking only)",
-    "length (optional column, for checking only)"
-]:
-    if optional_col in clue_df.columns:
-        clue_df.drop(columns=[optional_col], inplace=True)
-
-# Final safety check
-
-# === Precomputed Ranked Solutions ===
-# Each item is a tuple: (solution_dict, confidence_score)
-# Replace this list with actual predictions from your model
-# Sample best solution dictionary from your data
-ranked_solutions = [({'1-Across': 'MATH', '10-Across': 'RBG', '12-Across': 'SIMMER', '1-Down': 'MAMA', '4-Down': 'HMM', '6-Down': 'NORMAL', '7-Down': 'INBETA', '11-Down': 'GREW', '5-Across': 'alumni', '8-Across': 'mormon', '15-Across': 'claw', '2-Down': 'alonso', '14-Across': 'opiate', '13-Down': 'mic', '3-Down': 'turnip', '9-Across': 'ann'}, 9.244984205812216), 
+    # Sample ranked solutions (replace with your actual model predictions)
+    ranked_solutions = [({'1-Across': 'MATH', '10-Across': 'RBG', '12-Across': 'SIMMER', '1-Down': 'MAMA', '4-Down': 'HMM', '6-Down': 'NORMAL', '7-Down': 'INBETA', '11-Down': 'GREW', '5-Across': 'alumni', '8-Across': 'mormon', '15-Across': 'claw', '2-Down': 'alonso', '14-Across': 'opiate', '13-Down': 'mic', '3-Down': 'turnip', '9-Across': 'ann'}, 9.244984205812216), 
                  ({'1-Across': 'MATH', '10-Across': 'RBG', '12-Across': 'SIMMER', '1-Down': 'MAMA', '4-Down': 'HMM', '6-Down': 'NORMAL', '7-Down': 'INBETA', '11-Down': 'GREW', '5-Across': 'alumni', '8-Across': 'mormon', '15-Across': 'alaw', '2-Down': 'aloose', '14-Across': 'estate', '13-Down': 'mta', '3-Down': 'turkis', '9-Across': 'aok'}, 9.12752802297473), 
                  ({'1-Across': 'MATH', '10-Across': 'RBG', '12-Across': 'SIMMER', '1-Down': 'MAMA', '4-Down': 'HMM', '6-Down': 'NORMAL', '7-Down': 'INBETA', '11-Down': 'GREW', '5-Across': 'alumni', '8-Across': 'mormon', '15-Across': 'alaw', '2-Down': 'alonso', '14-Across': 'opiate', '13-Down': 'mia', '3-Down': 'turnip', '9-Across': 'ann'}, 8.953922387212515), 
                  ({'1-Across': 'MATH', '10-Across': 'RBG', '12-Across': 'SIMMER', '1-Down': 'MAMA', '4-Down': 'HMM', '6-Down': 'NORMAL', '7-Down': 'INBETA', '11-Down': 'GREW', '5-Across': 'alumni', '8-Across': 'mormon', '15-Across': 'alaw', '2-Down': 'alonso', '14-Across': 'optate', '13-Down': 'mta', '3-Down': 'turnip', '9-Across': 'ann'}, 8.911350432783365), 
@@ -324,10 +373,6 @@ ranked_solutions = [({'1-Across': 'MATH', '10-Across': 'RBG', '12-Across': 'SIMM
                  ({'1-Across': 'MATH', '10-Across': 'RBG', '12-Across': 'SIMMER', '1-Down': 'MAMA', '4-Down': 'HMM', '6-Down': 'NORMAL', '7-Down': 'INBETA', '11-Down': 'GREW', '5-Across': 'alumni', '8-Across': 'mormon', '15-Across': 'slaw', '2-Down': 'alonso', '14-Across': 'oxeate', '13-Down': 'mes', '3-Down': 'turnix', '9-Across': 'ann'}, 8.226721700280905), 
                  ({'1-Across': 'MATH', '10-Across': 'RBG', '12-Across': 'SIMMER', '1-Down': 'MAMA', '4-Down': 'HMM', '6-Down': 'NORMAL', '7-Down': 'INBETA', '11-Down': 'GREW', '5-Across': 'alumni', '8-Across': 'mormon', '15-Across': 'slaw', '2-Down': 'aloose', '14-Across': 'exmate', '13-Down': 'mms', '3-Down': 'turnix', '9-Across': 'aon'}, 7.961682487279177)]
 
-
-
-# === END TEST BLOCK ===
-
-if __name__ == "__main__":
+    # Start the solution navigator
     navigator = SolutionNavigator(ranked_solutions, clue_df)
     navigator.start()
