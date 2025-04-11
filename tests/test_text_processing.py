@@ -1,6 +1,6 @@
 import pytest
 
-from clue_classification_and_processing.fill_in_the_blank import fill_in_the_blank_with_possible_source, \
+from clue_classification_and_processing.fill_in_the_blank_sandbox import fill_in_the_blank_with_possible_source, \
     preprocess_lower_remove_punct_strip_whitespace, process_text_into_clue_answer
 from puzzle_objects.clue_and_board import Clue
 

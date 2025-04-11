@@ -2,9 +2,13 @@ import wikipediaapi
 import re
 import pandas as pd
 import os
+from clue_classification_and_processing.fill_in_the_blank_sandbox import fill_in_the_blank_with_possible_source
 
-from clue_classification_and_processing.fill_in_the_blank import fill_in_the_blank_with_possible_source
-from puzzle_objects.clue_and_board import Clue
+"""
+Author: Sarah
+
+Yet another half-baked wiki file. xxxtbd: do something with it or delete
+"""
 
 # Get the current working directory
 cwd = os.getcwd()
@@ -116,7 +120,7 @@ for _, row in filtered_clues.iterrows():
 
     ans = find_blank_in_wiki(row["Clue"])
 
-    function_answer = fill_in_the_blank_with_possible_source(Clue(row["Clue"]), page.text)
+    function_answer = fill_in_the_blank_with_possible_source(row["Clue"], page.text)
     print(f"\n\n         Actual Answer: {row['Word'].lower()}")
     #print(f'Predicted Answer: {ans}')
     print(f'function_answer Answer: {function_answer}')

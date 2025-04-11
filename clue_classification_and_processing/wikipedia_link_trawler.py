@@ -1,13 +1,20 @@
 """
+Author: Sarah
+
 This file attempts to solve: given a search string, find the most likely wikipedia page on
 that topic.
+
+NOTES: xxx tbd this is half-baked, and I never quite got this to run fast enough to be acceptable.
 """
+
 import wikipediaapi
+from clue_classification_and_processing.helpers import print_if
 
 wiki = wikipediaapi.Wikipedia(user_agent='MyProjectName (merlin@example.com)', language='en')
 
 example_page = wiki.page("John Smith")
 category_string = ",".join(example_page.categories.keys())
+
 
 def is_answer_in_wikipedia_search_space(search_term, answer, print_statement=True):
     """

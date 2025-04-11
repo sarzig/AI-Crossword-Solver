@@ -6,9 +6,9 @@ from bs4 import BeautifulSoup
 from datetime import datetime
 from clue_classification_and_processing.helpers import get_project_root
 
-
 """
-This entire parsing was created with ChatGPT.
+This entire parsing was created with ChatGPT and tweaked until it met
+my specifications.
 
 Using saved html, this converts a crossword into a meaningful dataframe / saves
 to csv.
@@ -24,6 +24,16 @@ Functions:
 
 
 def get_coordinates(x, y, cell_size, cell_offset):
+    """
+    Given an x and y coordinate on a NYT html, and give cell size and offset,
+    intuit what the actual (row,col) tuple of that cell is. These are equivalent
+    to the coordinates used in the Crossword.clue_df object.
+    :param x: x value
+    :param y: y value
+    :param cell_size: cell size from html
+    :param cell_offset: cell offset from html
+    :return:
+    """
     col = round((float(x) - cell_offset) / cell_size)
     row = round((float(y) - cell_offset) / cell_size)
     return row, col
@@ -320,6 +330,7 @@ def process_all_raw_html_to_csv(overwrite=False):
     """
     Calls get_random_clue_df (which converts all html files from raw_html into clue_df
     format). Then saves each file as a csv.
+
     :return: True if no errors arise
     """
     print("Getting all dataframe from raw html files")
@@ -343,8 +354,9 @@ def process_all_raw_html_to_csv(overwrite=False):
 
 def rename_puzzles():
     """
-    Chatgpt function. This just renames from the standard format that puzzles download as into a more easily
-    readable / parsable format.
+    ChatGPT created function. This just renames from the standard format that puzzles download as into a more easily
+    readable / parsable format. For example, a puzzle like The Mini Crossword puzzle - The New York Times.html
+    would get renamed according to the date of the puzzle, and whether it is a mini or not.
 
     :return: nothing
     """
@@ -380,10 +392,9 @@ def rename_puzzles():
 
 def get_all_puzzle_csv(overwrite=False):
     """
-    Looks in the processed_puzzle_samples folder and gets all csvs
-    :return:
+    Looks in the processed_puzzle_samples folder and gets all csvs.
+    :return: dataFrame with ALL the puzzle information from processed_puzzle_samples.
     """
-    # if this already exists, just pull it from processed puzzle samples folder.
 
     # path where crossword puzzles are stored
     crossword_csv_path = rf"{get_project_root()}\data\puzzle_samples\processed_puzzle_samples"

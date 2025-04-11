@@ -17,3 +17,6 @@ Our team of 4 members (Eroniction, Sarah, Sheryl, and Swathi) are all big fans o
 
 ## Approach
 - tbd
+xxx tbd fill this out, add some nice gifs, images
+xxx tbd need some environment file where we freeze reqs and let TAs know what they'll 
+- need to run our code

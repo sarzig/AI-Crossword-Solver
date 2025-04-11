@@ -1,24 +1,30 @@
-import os
+import re
 import string
-import time
 import pandas as pd
-import numpy as np
-from sklearn.cluster import KMeans
-from sklearn.preprocessing import StandardScaler
-import re
-import re
-import nltk
+from nltk import pos_tag
 from nltk.tokenize import word_tokenize
-from nltk import pos_tag
-from collections import Counter
-from nltk.corpus import wordnet
-import matplotlib.pyplot as plt
+from sklearn.preprocessing import StandardScaler
 from sklearn.cluster import KMeans
-#from nltk.corpus import words
-from wordsegment import load, segment
-from nltk import pos_tag
-
+from collections import Counter
 from clue_classification_and_processing.helpers import get_clues_dataframe
+
+"""
+Author: Sarah
+
+This file is the sandbox where I test new clues features. It's most important function are:
+
+Clue classification:
+ * add_features(clues_df)
+ * move_feature_columns_to_right_of_df(df)
+ * delete_feature_columns(df)
+ * select_numeric_features(df)
+
+Helpers for clue classification: 
+ * count_proper_nouns
+
+Clue k-means clustering: 
+ * kmeans_clustering_clues_dataframe(df)  xxx tbd should I move this into k_means_clustering.py?
+"""
 
 # Download NLTK libs
 '''
@@ -29,7 +35,6 @@ nltk.download('words')  # ENGLISH words
 english_vocab = set(words.words())
 '''
 
-## Get data helpers ---------------------------------------------------------------------------
 
 ## String operation helpers ----------------------------------------------------------------------
 def count_proper_nouns(text):
@@ -65,11 +70,11 @@ def is_first_word_proper_noun(clue):
     # Lowercase proper nouns can still be identified as proper nouns. By doing this
     # we increase the chance that ambiguous terms (like 'will' or 'mark') will
     # be classes as non-proper nouns, even when they ARE proper nouns
-    #tokenized_clue[0] = tokenized_clue[0][0].lower() + tokenized_clue[0][1:]
+    # tokenized_clue[0] = tokenized_clue[0][0].lower() + tokenized_clue[0][1:]
 
     # If the first word is recognized
     pos_tagged_words = pos_tag(tokenized_clue)
-    #print(pos_tagged_words)
+    # print(pos_tagged_words)
 
     # If the POS tag is Pronoun, plural pronoun, foreign word, or personal pronoun (Supposed to capture "I")
     # then return True. Otherwise, False!
@@ -100,7 +105,7 @@ def uppercase_percentage(clue):
             # If the word is the first word, we need to inspect part of speech to know if it's
             # a proper noun, or if it's just beginning-of-sentence-capitalization
             if i == 0:
-                #print("i == 0 and stripped_word[0].isupper():")
+                # print("i == 0 and stripped_word[0].isupper():")
                 if stripped_word[0].isupper():
                     if is_first_word_proper_noun(clue):
                         upper_count += 1
@@ -114,131 +119,6 @@ def uppercase_percentage(clue):
         return 0
     else:
         return upper_count / len(words)
-
-
-def assign_primary_cluster(clue):
-    if re.search(r"-above|-down", clue, re.IGNORECASE):
-        return "Self-Referential"
-    elif sum(c.isdigit() for c in clue) > len(clue) / 2:
-        return "Mostly Numeric"
-    elif len(re.sub(r"[A-Za-z]", "", clue)) == len(clue):
-        return "Completely non-alphabet"
-    elif re.fullmatch(r"[A-Za-z]+", clue):  # Checks if the clue is a single word with only letters
-        return "Single Word"
-    return "Other"  # Default category for unspecified cases
-
-
-def analyze_pos_distribution(clue):
-    tokens = word_tokenize(clue)
-    pos_tags = pos_tag(tokens)
-    pos_counts = Counter(tag for _, tag in pos_tags)
-    total_words = len(tokens)
-    pos_percentage = {pos: (count / total_words) * 100 for pos, count in pos_counts.items()}
-    return pos_percentage
-
-
-def add_features(clues_df):
-    """
-    Given an input dataframe, this adds feature columns.
-
-    Some clues were created or enhanced with genai.
-
-    :param clues_df: input df
-    :return: modified df with added columns
-    """
-
-    # Start by copying
-    clues_df = clues_df.copy()
-
-    # Ensure "Clue" is a string and fill NaNs
-    if "Clue" in clues_df.columns:
-        clues_df["Clue"] = clues_df["Clue"].fillna("").astype(str)
-
-    # Length and casing related features
-    clues_df["_f_number words"] = clues_df["Clue"].str.split().apply(len)
-    clues_df["_f_length of clue"] = clues_df["Clue"].str.len()
-    clues_df["_f_avg word length"] = clues_df["Clue"].apply(lambda x: sum(len(word) for word in x.split()) / len(x.split()) if x.split() else 0)
-    clues_df["_f_percentage words that are upper-case"] = clues_df["Clue"].apply(uppercase_percentage)
-
-    # Character related features
-    clues_df["_f_ends in question"] = clues_df["Clue"].str.endswith("?")
-    clues_df["_f_no alphabet characters"] = clues_df["Clue"].apply(lambda x: len(re.sub(r'[A-Za-z]', '', x)))
-    clues_df["_f_is quote"] = clues_df["Clue"].str.endswith('"') & clues_df["Clue"].str.startswith('"')
-    clues_df["_f_contains underscore"] = clues_df["Clue"].str.contains(r"_", case=False, na=False)
-    clues_df["_f_contains asterisk"] = clues_df["Clue"].str.contains(r"\*", case=False, na=False)
-    clues_df["_f_number of non-consecutive periods in clue"] = clues_df["Clue"].apply(lambda x: len(re.findall(r"(?<!\.)\.(?!\.)", x)))
-    clues_df["_f_is ellipsis in clue"] = clues_df["Clue"].str.contains(r"...", case=False, na=False)
-    clues_df["_f_number commas in clue"] = clues_df["Clue"].apply(lambda x: x.count(","))
-    clues_df["_f_number non a-z or 1-9 characters in clue"] = clues_df["Clue"].apply(lambda x: sum(not re.match(r"[A-Za-z0-9]", c) for c in x) / len(x) if len(x) > 0 else 0)
-
-    # Contains some words which are short-cuts to figuring out the class
-    clues_df["_f_contains e.g."] = clues_df["Clue"].str.contains(r"\be\.g\.", case=False, na=False)
-    clues_df["_f_contains etc."] = clues_df["Clue"].str.contains(r"\betc\.", case=False, na=False)
-    clues_df["_f_contains in short"] = clues_df["Clue"].str.contains(r"\bin short\b", case=False, na=False)
-    clues_df["_f_contains abbr"] = clues_df["Clue"].str.contains(r"Abbr.", case=False, na=False)
-    clues_df["_f_contains amts."] = clues_df["Clue"].str.contains(r"amts.", case=False, na=False)
-    clues_df["_f_contains briefly"] = clues_df["Clue"].str.contains(r"\bbriefly\b", case=False, na=False)
-    clues_df["_f_contains dir."] = clues_df["Clue"].str.contains(" dir.", case=False, na=False)
-    clues_df["_f_contains exclamation"] = clues_df["Clue"].str.contains('!"', case=False, na=False)
-    clues_df["_f_starts with kind of"] = clues_df["Clue"].str.lower().str.startswith('kind of')
-    clues_df["_f_contains it may be"] = clues_df["Clue"].str.contains('it may be', case=False, na=False)
-    clues_df["_f_contains dir."] = clues_df["Clue"].str.contains(r"\bdir\.", case=False, na=False)
-    clues_df["_f_contains bible clue"] = clues_df["Clue"].str.contains(
-        r"\bbible\b|\bbiblical\b|\bjesus\b|old testament|new testament",
-        case=False,
-        na=False
-    )
-    clues_df["_f_contains ,maybe or ,perhaps"] = clues_df["Clue"].str.contains(r", (?:maybe|perhaps)", case=False, na=False)
-    clues_df["_f_contains word before"] = clues_df["Clue"].str.contains(r"word before", case=False, na=False)
-
-    # Need to add xxx tbd
-    # Clue starts with "country where", "country that", "country that's", "country w", "city", "river to" , "river that", "river whose", "river of", river near", "river in", "river f"
-    # river at,
-
-    # Add more involved features
-    clues_df = add_profession(clues_df)
-
-    # This is required for success of random forest - all columns must be converted to numeric
-    for col in clues_df.columns:
-        if col.startswith("_f_"):
-            clues_df[col] = pd.to_numeric(clues_df[col], errors="coerce")
-
-    # Optional: fill any NaNs (caused by coercion)
-    clues_df.fillna(0, inplace=True)
-
-    return clues_df
-
-
-def move_feature_columns_to_right_of_df(df):
-    """
-    Given a df with several columns, move columns with names starting with _f to the end of the column order.
-    :param df: input dataframe.
-    :return: input dataframe with columns rearranged (none deleted)
-    """
-    feature_cols = [col for col in df.columns if col.startswith("_f_")]
-    other_cols = [col for col in df.columns if not col.startswith("_f_")]
-    return df[other_cols + feature_cols]
-
-
-def delete_feature_columns(df):
-    """
-    Given a df with several columns, delete columns with names starting with _f.
-    :param df: input df
-    :return: Input df with feature columsn deleted
-    """
-    feature_cols = [col for col in df.columns if col.startswith("_f_")]
-    return df.drop(columns=feature_cols)
-
-
-def select_numeric_features(df):
-    """
-    Select only the numeric features, which are columns starting with 'f_'.
-    :param df: input DataFrame.
-    :return: DataFrame with only numeric (feature) columns
-    """
-    numeric_cols = [col for col in df.columns if col.startswith("_f_")]
-
-    return df[numeric_cols].apply(pd.to_numeric, errors="coerce").fillna(0)
 
 
 def add_profession(clues_df):
@@ -362,7 +242,130 @@ def add_profession(clues_df):
     return clues_df
 
 
+def analyze_pos_distribution(clue):
+    tokens = word_tokenize(clue)
+    pos_tags = pos_tag(tokens)
+    pos_counts = Counter(tag for _, tag in pos_tags)
+    total_words = len(tokens)
+    pos_percentage = {pos: (count / total_words) * 100 for pos, count in pos_counts.items()}
+    return pos_percentage
+
+
+def add_features(clues_df):
+    """
+    Given an input dataframe, this adds feature columns.
+
+    Some clues were created or enhanced with genai.
+
+    :param clues_df: input df
+    :return: modified df with added columns
+    """
+
+    # Start by copying
+    clues_df = clues_df.copy()
+
+    # Ensure "Clue" is a string and fill NaNs
+    if "Clue" in clues_df.columns:
+        clues_df["Clue"] = clues_df["Clue"].fillna("").astype(str)
+
+    # Length and casing related features
+    clues_df["_f_number words"] = clues_df["Clue"].str.split().apply(len)
+    clues_df["_f_length of clue"] = clues_df["Clue"].str.len()
+    clues_df["_f_avg word length"] = clues_df["Clue"].apply(
+        lambda x: sum(len(word) for word in x.split()) / len(x.split()) if x.split() else 0)
+    clues_df["_f_percentage words that are upper-case"] = clues_df["Clue"].apply(uppercase_percentage)
+
+    # Character related features
+    clues_df["_f_ends in question"] = clues_df["Clue"].str.endswith("?")
+    clues_df["_f_no alphabet characters"] = clues_df["Clue"].apply(lambda x: len(re.sub(r'[A-Za-z]', '', x)))
+    clues_df["_f_is quote"] = clues_df["Clue"].str.endswith('"') & clues_df["Clue"].str.startswith('"')
+    clues_df["_f_contains underscore"] = clues_df["Clue"].str.contains(r"_", case=False, na=False)
+    clues_df["_f_contains asterisk"] = clues_df["Clue"].str.contains(r"\*", case=False, na=False)
+    clues_df["_f_number of non-consecutive periods in clue"] = clues_df["Clue"].apply(
+        lambda x: len(re.findall(r"(?<!\.)\.(?!\.)", x)))
+    clues_df["_f_is ellipsis in clue"] = clues_df["Clue"].str.contains(r"...", case=False, na=False)
+    clues_df["_f_number commas in clue"] = clues_df["Clue"].apply(lambda x: x.count(","))
+    clues_df["_f_number non a-z or 1-9 characters in clue"] = clues_df["Clue"].apply(
+        lambda x: sum(not re.match(r"[A-Za-z0-9]", c) for c in x) / len(x) if len(x) > 0 else 0)
+
+    # Contains some words which are short-cuts to figuring out the class
+    clues_df["_f_contains e.g."] = clues_df["Clue"].str.contains(r"\be\.g\.", case=False, na=False)
+    clues_df["_f_contains etc."] = clues_df["Clue"].str.contains(r"\betc\.", case=False, na=False)
+    clues_df["_f_contains in short"] = clues_df["Clue"].str.contains(r"\bin short\b", case=False, na=False)
+    clues_df["_f_contains abbr"] = clues_df["Clue"].str.contains(r"Abbr.", case=False, na=False)
+    clues_df["_f_contains amts."] = clues_df["Clue"].str.contains(r"amts.", case=False, na=False)
+    clues_df["_f_contains briefly"] = clues_df["Clue"].str.contains(r"\bbriefly\b", case=False, na=False)
+    clues_df["_f_contains dir."] = clues_df["Clue"].str.contains(" dir.", case=False, na=False)
+    clues_df["_f_contains exclamation"] = clues_df["Clue"].str.contains('!"', case=False, na=False)
+    clues_df["_f_starts with kind of"] = clues_df["Clue"].str.lower().str.startswith('kind of')
+    clues_df["_f_contains it may be"] = clues_df["Clue"].str.contains('it may be', case=False, na=False)
+    clues_df["_f_contains dir."] = clues_df["Clue"].str.contains(r"\bdir\.", case=False, na=False)
+    clues_df["_f_contains bible clue"] = clues_df["Clue"].str.contains(
+        r"\bbible\b|\bbiblical\b|\bjesus\b|old testament|new testament",
+        case=False,
+        na=False
+    )
+    clues_df["_f_contains ,maybe or ,perhaps"] = clues_df["Clue"].str.contains(r", (?:maybe|perhaps)", case=False,
+                                                                               na=False)
+    clues_df["_f_contains word before"] = clues_df["Clue"].str.contains(r"word before", case=False, na=False)
+
+    # Need to add xxx tbd
+    # Clue starts with "country where", "country that", "country that's", "country w", "city", "river to" , "river that", "river whose", "river of", river near", "river in", "river f"
+    # river at,
+
+    # Add more involved features
+    clues_df = add_profession(clues_df)
+
+    # This is required for success of random forest - all columns must be converted to numeric
+    for col in clues_df.columns:
+        if col.startswith("_f_"):
+            clues_df[col] = pd.to_numeric(clues_df[col], errors="coerce")
+
+    # Optional: fill any NaNs (caused by coercion)
+    clues_df.fillna(0, inplace=True)
+
+    return clues_df
+
+
+def move_feature_columns_to_right_of_df(df):
+    """
+    Given a df with several columns, move columns with names starting with _f to the end of the column order.
+    :param df: input dataframe.
+    :return: input dataframe with columns rearranged (none deleted)
+    """
+    feature_cols = [col for col in df.columns if col.startswith("_f_")]
+    other_cols = [col for col in df.columns if not col.startswith("_f_")]
+    return df[other_cols + feature_cols]
+
+
+def delete_feature_columns(df):
+    """
+    Given a df with several columns, delete columns with names starting with _f.
+    :param df: input df.
+    :return: Input df with feature columns deleted
+    """
+    feature_cols = [col for col in df.columns if col.startswith("_f_")]
+    return df.drop(columns=feature_cols)
+
+
+def select_numeric_features(df):
+    """
+    Select only the numeric features, which are columns starting with 'f_'.
+    :param df: input DataFrame.
+    :return: DataFrame with only numeric (feature) columns
+    """
+    numeric_cols = [col for col in df.columns if col.startswith("_f_")]
+
+    return df[numeric_cols].apply(pd.to_numeric, errors="coerce").fillna(0)
+
+
 def kmeans_clustering_clues_dataframe(clues_df):
+    """
+    xxx tbd revisit what this does. document, and decide if it should move into k_means_clustering.py
+
+    :param clues_df:
+    :return:
+    """
     # Drop non-feature columns
     features = clues_df.drop(columns=["Clue", "Date", "Word", "Primary Cluster", "Cluster"])
 
@@ -384,6 +387,7 @@ def kmeans_clustering_clues_dataframe(clues_df):
 
     return clues_df
 
+
 # Section where I play around with adding new features
 '''
 clues_df = get_clues_dataframe()
@@ -391,6 +395,4 @@ clues_df = add_features(clues_df)
 
 column_of_interest = "_f_contains kind of"
 clues_df[clues_df[column_of_interest] == True].to_csv(f"{column_of_interest}_subset.csv", index=False)
-
 '''
-

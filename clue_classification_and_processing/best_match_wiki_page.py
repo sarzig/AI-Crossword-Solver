@@ -11,6 +11,10 @@ from fuzzywuzzy import process
 from clue_classification_and_processing.helpers import get_project_root
 
 """
+Author: Sarah
+
+xxx tbd: can I get this working?
+
 Purpose of this page is to find the best match Wikipedia page 
 given a clue. Typically it would be a proper noun, but could also be a noun in general. 
 
@@ -22,7 +26,6 @@ which contains all English language titles.
   - helper for get_all_wikipedia_pages(remove_underscore=True, down_case=True, human_name_optimize=False)
 * get_all_wikipedia_pages(remove_underscore=True, down_case=True, human_name_optimize=False)
   - converts the wiki title dump page (titles of al english articles)
-
 """
 
 LOAD_SPACY = False
