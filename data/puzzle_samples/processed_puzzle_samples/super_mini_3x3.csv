@@ -1,0 +1,7 @@
+number,start_col,start_row,end_col,end_row,clue,"length (optional column, for checking only)","answer (optional column, for checking only)"
+1,0,0,0,2,An automobile,3,car
+2,1,0,1,2,"past, gone, before now",3,ago
+3,2,0,2,2,not existing before,3,new
+4,0,0,2,0,to be able to,3,can
+5,0,1,2,1,the length of life,3,age
+6,0,2,2,2,some stuff ararnged in a line,3,row
