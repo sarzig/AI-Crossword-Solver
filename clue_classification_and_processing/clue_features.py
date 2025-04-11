@@ -1,7 +1,7 @@
 """
 Author: Sarah
 
-This file is the sandbox where I test new clues features. Its most important functions are:
+This file is where I test new clues features. Its most important functions are:
 
 Clue classification:
  * add_features(clues_df)
@@ -13,7 +13,7 @@ Helpers for clue classification:
  * count_proper_nouns
 
 Clue k-means clustering:
- * kmeans_clustering_clues_dataframe(df)  xxx tbd should I move this into k_means_clustering.py?
+ * kmeans_clustering_clues_dataframe(df) - completely functional clustering
 
 """
 
@@ -27,9 +27,9 @@ from sklearn.cluster import KMeans
 from collections import Counter
 from clue_classification_and_processing.helpers import get_clues_dataframe
 
-
-# Download NLTK libs
 '''
+# Download NLTK libs - note that this section is not currently in use,
+# but we may use it in the future!
 nltk.download('punkt_tab')
 nltk.download('averaged_perceptron_tagger_eng')
 nltk.download('words')  # ENGLISH words
@@ -124,120 +124,27 @@ def uppercase_percentage(clue):
 
 
 def add_profession(clues_df):
-    prominent_professions = [
-        "author",
-        "poet",
-        "composer",
-        "singer",
-        "actor",
-        "actress",
-        "philanthropist",
-        "ceo",
-        "president",
-        "mayor",
-        "governor",
-        "director",
-        "producer",
-        "dancer",
-        "painter",
-        "sculptor",
-        "novelist",
-        "editor",
-        "journalist",
-        "reporter",
-        "host",
-        "chef",
-        "baker",
-        "coach",
-        "pilot",
-        "surgeon",
-        "doctor",
-        "nurse",
-        "scientist",
-        "inventor",
-        "engineer",
-        "lawyer",
-        "judge",
-        "rabbi",
-        "priest",
-        "minister",
-        "dean",
-        "professor",
-        "teacher",
-        "student",
-        "scholar",
-        "critic",
-        "curator",
-        "violinist",
-        "pianist",
-        "guitarist",
-        "drummer",
-        "comedian",
-        "clown",
-        "magician",
-        "bartender",
-        "barista",
-        "detective",
-        "police",
-        "officer",
-        "firefighter",
-        "soldier",
-        "spy",
-        "agent",
-        "model",
-        "designer",
-        "tailor",
-        "writer",
-        "illustrator",
-        "animator",
-        "cartoonist",
-        "blogger",
-        "vlogger",
-        "influencer",
-        "athlete",
-        "racer",
-        "skater",
-        "golfer",
-        "boxer",
-        "umpire",
-        "referee", "actor", "actress", "author", "poet", "novelist", "writer",
-        "composer", "musician", "singer", "rapper", "pianist", "violinist",
-        "artist", "painter", "sculptor", "director", "producer", "filmmaker",
-        "comedian", "magician", "host", "broadcaster", "journalist", "editor",
-        "blogger", "influencer", "chef", "designer", "model", "photographer",
-        "philanthropist", "entrepreneur", "inventor", "engineer", "scientist",
-        "astronaut", "explorer", "philosopher", "historian", "scholar", "professor",
-        "teacher", "critic", "coach", "athlete", "boxer", "golfer", "racer",
-        "skater", "runner", "cyclist", "swimmer", "surfer",
-        "president", "prime minister", "governor", "mayor", "senator", "ambassador",
-        "general", "admiral", "officer", "judge", "justice", "lawyer", "diplomat",
-        "czar", "tsar", "monarch", "king", "queen", "emperor", "empress",
-        "rabbi", "priest", "pastor", "imam", "monk", "nun", "bishop", "cardinal", "pope",
-        "anchor",
-        "newsman",
-        "newscaster",
-        "announcer",
-        "emcee",
-        "hostess",
-        "broadcaster",
-        "strategist",
-        "consultant",
-        "accountant",
-        "economist",
-        "banker",
-        "trader",
-        "broker",
-        "entrepreneur",
-        "physicist",
-        "physiologist",
-        "adviser",
-        "founder",
-        "co-founder",
-        "mogul",
-        "tycoon",
-
-        "lawman",
-    ]
+    """
+    This is a simple lookup that helps tell if a clue contains a profession. Many clues are
+    in the format "actress Biel", or "CEO Sundar" (which would have answers JESSICA and PICHAI.
+    :param clues_df: the dataframe to which the new column _f_MentionsProfession will be added
+    :return: the dataframe with that column added
+    """
+    prominent_professions = \
+        ['accountant', 'actor', 'actress', 'admiral', 'adviser', 'agent', 'ambassador', 'anchor', 'animator',
+         'artist', 'astronaut', 'athlete', 'author', 'baker', 'banker', 'barista', 'bartender', 'bishop', 'blogger',
+         'boxer', 'broadcaster', 'broker', 'cardinal', 'cartoonist', 'ceo', 'chef', 'clown', 'co-founder', 'coach',
+         'comedian', 'composer', 'consultant', 'critic', 'curator', 'cyclist', 'czar', 'dancer', 'dean', 'designer',
+         'detective', 'diplomat', 'director', 'doctor', 'drummer', 'economist', 'editor', 'emcee', 'emperor', 'empress',
+         'engineer', 'entrepreneur', 'explorer', 'filmmaker', 'firefighter', 'founder', 'general', 'golfer', 'governor',
+         'guitarist', 'historian', 'host', 'hostess', 'illustrator', 'imam', 'influencer', 'inventor', 'journalist',
+         'judge', 'justice', 'king', 'lawman', 'lawyer', 'magician', 'mayor', 'minister', 'model', 'mogul', 'monarch',
+         'monk', 'musician', 'newscaster', 'newsman', 'novelist', 'nun', 'nurse', 'officer', 'painter', 'pastor',
+         'philanthropist', 'philosopher', 'photographer', 'physicist', 'physiologist', 'pianist', 'pilot', 'poet',
+         'police', 'pope', 'president', 'priest', 'prime minister', 'producer', 'professor', 'queen', 'rabbi', 'racer',
+         'rapper', 'referee', 'reporter', 'runner', 'scholar', 'scientist', 'sculptor', 'senator', 'singer', 'skater',
+         'soldier', 'spy', 'strategist', 'student', 'surfer', 'surgeon', 'swimmer', 'tailor', 'teacher', 'trader',
+         'tsar', 'tycoon',  'suffragette', 'violinist', 'vlogger', 'writer']
 
     pattern = r"\b(?:" + "|".join(prominent_professions) + r")\b"
     clues_df.loc[:, "_f_MentionsProfession"] = clues_df["Clue"].str.contains(pattern, flags=re.IGNORECASE, regex=True)
@@ -311,11 +218,6 @@ def add_features(clues_df):
                                                                                na=False)
     clues_df["_f_contains word before"] = clues_df["Clue"].str.contains(r"word before", case=False, na=False)
 
-    # Need to add xxx tbd
-    # Clue starts with "country where", "country that", "country that's", "country w", "city", "river to" ,
-    # "river that", "river whose", "river of", river near", "river in", "river f"
-    # river at,
-
     # Add more involved features
     clues_df = add_profession(clues_df)
 
@@ -362,15 +264,40 @@ def select_numeric_features(df):
     return df[numeric_cols].apply(pd.to_numeric, errors="coerce").fillna(0)
 
 
-def kmeans_clustering_clues_dataframe(clues_df):
+def kmeans_clustering_clues_dataframe(clues_df, n_clusters, feature_list=None):
     """
-    xxx tbd revisit what this does. document, and decide if it should move into k_means_clustering.py
+    Given a clues dataframe with features columns (denoted by a preceding "_f_"),
+    perform k-means clustering on the dataframe, and sort by cluster.
 
-    :param clues_df:
+    Example:
+    my_clues_df = get_clues_dataframe()
+    my_clues_df = add_features(my_clues_df)
+    kmeans_res = kmeans_clustering_clues_dataframe(my_clues_df,
+                                               n_clusters=3,
+                                               feature_list=['_f_contains underscore', '_f_ends in question'])
+
+
+    :param feature_list: the list of features to consider for clustering. Any feature not
+                         in this list will be dropped prior to k-means clustering.
+    :param n_clusters: number of clusters into which data should be separated
+    :param clues_df: clues dataframe which has at least some feature columns
     :return:
     """
-    # Drop non-feature columns
-    features = clues_df.drop(columns=["Clue", "Date", "Word", "Primary Cluster", "Cluster"])
+    if feature_list is None:
+        # Drop any columns not starting with _f
+        feature_cols = [col for col in clues_df.columns if col.startswith("_f")]
+    else:
+        feature_cols = [col for col in feature_list if col in clues_df.columns]
+
+    # If no features are found, provide guidance and return original DataFrame
+    if not feature_cols:
+        print("No feature columns found. Please enrich the dataframe with features using:")
+        print("    clues_df = add_features(clues_df)")
+        return clues_df
+
+    # Get a subset of the dataframe for which it is JUST features, we will later apply clustering
+    # and re-apply this column to the dataframe.
+    features = clues_df[feature_cols].copy()
 
     # Identify binary columns (assumed to contain True/False values) and Convert True/False to 0/1
     binary_cols = [col for col in features.columns if clues_df[col].dtype == 'bool']
@@ -380,22 +307,33 @@ def kmeans_clustering_clues_dataframe(clues_df):
     numeric_cols = [col for col in features.columns if col not in binary_cols]
 
     # Standardize only numeric features using standardScaler
-    scaler = StandardScaler()
-    features[numeric_cols] = scaler.fit_transform(features[numeric_cols])
+    if len(numeric_cols) > 0:
+        scaler = StandardScaler()
+        features[numeric_cols] = scaler.fit_transform(features[numeric_cols])
 
-    # Apply KMeans clustering
-    num_clusters = 30  # Change as needed
-    kmeans = KMeans(n_clusters=num_clusters, random_state=42, n_init=10)
+    # Apply k-means clustering
+    kmeans = KMeans(n_clusters=n_clusters, random_state=42, n_init=10)
     clues_df.loc[:, "Cluster"] = kmeans.fit_predict(features)
+    clues_df = clues_df.sort_values("Cluster")
+    clues_df = move_feature_columns_to_right_of_df(clues_df)
 
     return clues_df
 
-
-# Section where I play around with adding new features
 '''
-clues_df = get_clues_dataframe()
-clues_df = add_features(clues_df)
+# Section where I play around with adding new features
+
+# Here is where I play around with exporting certain features
+my_clues_df = get_clues_dataframe()
+my_clues_df = my_clues_df.head(30000)  # Lesser amount - good for troubleshooting
+my_clues_df = add_features(my_clues_df)
 
 column_of_interest = "_f_contains kind of"
-clues_df[clues_df[column_of_interest] == True].to_csv(f"{column_of_interest}_subset.csv", index=False)
+# my_clues_df[my_clues_df[column_of_interest] == True].to_csv(f"{column_of_interest}_subset.csv", index=False)
+
+# Here is where I perform k-means clustering.
+kmeans_res = kmeans_clustering_clues_dataframe(my_clues_df,
+                                               n_clusters=6,
+                                               feature_list=['_f_contains underscore', '_f_ends in question'])
+
+# xxx tbd - maybe add some plotting or example print outs of k-means clustering?
 '''
