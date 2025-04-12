@@ -87,7 +87,7 @@ def get_clues_by_class(clue_class="all", classification_type="manual_only", pred
 
     :param: clue_class = if all, gives all clue types
     :param: classification_type= "manual_only", "predicted_only", "all"
-    :return: df with columns ["Clue", "Word", "Class"]. Approximately 5k manually classed rows and 700k ML classed rows
+    :return: df with columns ["clue", "Word", "Class"]. Approximately 5k manually classed rows and 700k ML classed rows
     """
 
     loc = ""
@@ -130,7 +130,7 @@ def get_clues_by_class(clue_class="all", classification_type="manual_only", pred
         return None
 
     # Get only columns of interest
-    columns_of_interest = ["Clue", "Word", "Class", "Confidence"]
+    columns_of_interest = ["clue", "Word", "Class", "Confidence"]
     available_columns = [col for col in columns_of_interest if col in df.columns]
     df = df[available_columns].copy()
 
@@ -164,6 +164,7 @@ def get_vocab():
         with open(location, "r", encoding="utf-8") as f:
             print(f"Fetching combined vocab (nltk words, NYT data) from {location}")
             return set(line.strip() for line in f if line.strip())
+
     except Exception:
         location = os.path.join(get_project_root(), "combined_vocab.txt")
         with open(location, "r", encoding="utf-8") as f:
@@ -242,7 +243,7 @@ def get_clues_dataframe(clues_path=None, delete_dupes=False):
     # Return the dataframe from that csv
     clues_df = pd.read_csv(clues_path, encoding='latin1')
     if delete_dupes:
-        clues_df = clues_df.drop_duplicates(["Word", "Clue"])
+        clues_df = clues_df.drop_duplicates(["Word", "clue"])
     return clues_df
 
 
@@ -263,7 +264,7 @@ def get_100_most_common_clues_and_answers():
 
     # Top 200 most common Clue–Word pairs
     common_pairs = (
-        clues_df.groupby(["Clue", "Word"])
+        clues_df.groupby(["clue", "Word"])
         .size()
         .reset_index(name="count")
         .sort_values("count", ascending=False)
@@ -272,20 +273,20 @@ def get_100_most_common_clues_and_answers():
 
     # All unique (Clue, Word) pairs in top clues
     filtered_clues_df = (
-        clues_df[clues_df["Clue"].isin(common_pairs["Clue"])]
-        .drop_duplicates(subset=["Clue", "Word"])
+        clues_df[clues_df["clue"].isin(common_pairs["clue"])]
+        .drop_duplicates(subset=["clue", "Word"])
     )
 
     # Clues that only appear once among top pairs
     unique_clues_set = (
-        filtered_clues_df["Clue"]
+        filtered_clues_df["clue"]
         .value_counts()
         .loc[lambda x: x == 1]
         .index
     )
 
     # Mark each Clue–Word pair in top 200 as unique or not
-    common_pairs["is_unique_clue"] = common_pairs["Clue"].isin(unique_clues_set)
+    common_pairs["is_unique_clue"] = common_pairs["clue"].isin(unique_clues_set)
     common_pairs = common_pairs[common_pairs["is_unique_clue"] is True]  # only subset the clues we care about
 
     return common_pairs

@@ -147,7 +147,7 @@ def add_profession(clues_df):
          'tsar', 'tycoon',  'suffragette', 'violinist', 'vlogger', 'writer']
 
     pattern = r"\b(?:" + "|".join(prominent_professions) + r")\b"
-    clues_df.loc[:, "_f_MentionsProfession"] = clues_df["Clue"].str.contains(pattern, flags=re.IGNORECASE, regex=True)
+    clues_df.loc[:, "_f_MentionsProfession"] = clues_df["clue"].str.contains(pattern, flags=re.IGNORECASE, regex=True)
     return clues_df
 
 
@@ -173,50 +173,50 @@ def add_features(clues_df):
     # Start by copying
     clues_df = clues_df.copy()
 
-    # Ensure "Clue" is a string and fill NaNs
-    if "Clue" in clues_df.columns:
-        clues_df["Clue"] = clues_df["Clue"].fillna("").astype(str)
+    # Ensure "clue" is a string and fill NaNs
+    if "clue" in clues_df.columns:
+        clues_df["clue"] = clues_df["clue"].fillna("").astype(str)
 
     # Length and casing related features
-    clues_df["_f_number words"] = clues_df["Clue"].str.split().apply(len)
-    clues_df["_f_length of clue"] = clues_df["Clue"].str.len()
-    clues_df["_f_avg word length"] = clues_df["Clue"].apply(
+    clues_df["_f_number words"] = clues_df["clue"].str.split().apply(len)
+    clues_df["_f_length of clue"] = clues_df["clue"].str.len()
+    clues_df["_f_avg word length"] = clues_df["clue"].apply(
         lambda x: sum(len(word) for word in x.split()) / len(x.split()) if x.split() else 0)
-    clues_df["_f_percentage words that are upper-case"] = clues_df["Clue"].apply(uppercase_percentage)
+    clues_df["_f_percentage words that are upper-case"] = clues_df["clue"].apply(uppercase_percentage)
 
     # Character related features
-    clues_df["_f_ends in question"] = clues_df["Clue"].str.endswith("?")
-    clues_df["_f_no alphabet characters"] = clues_df["Clue"].apply(lambda x: len(re.sub(r'[A-Za-z]', '', x)))
-    clues_df["_f_is quote"] = clues_df["Clue"].str.endswith('"') & clues_df["Clue"].str.startswith('"')
-    clues_df["_f_contains underscore"] = clues_df["Clue"].str.contains(r"_", case=False, na=False)
-    clues_df["_f_contains asterisk"] = clues_df["Clue"].str.contains(r"\*", case=False, na=False)
-    clues_df["_f_number of non-consecutive periods in clue"] = clues_df["Clue"].apply(
+    clues_df["_f_ends in question"] = clues_df["clue"].str.endswith("?")
+    clues_df["_f_no alphabet characters"] = clues_df["clue"].apply(lambda x: len(re.sub(r'[A-Za-z]', '', x)))
+    clues_df["_f_is quote"] = clues_df["clue"].str.endswith('"') & clues_df["clue"].str.startswith('"')
+    clues_df["_f_contains underscore"] = clues_df["clue"].str.contains(r"_", case=False, na=False)
+    clues_df["_f_contains asterisk"] = clues_df["clue"].str.contains(r"\*", case=False, na=False)
+    clues_df["_f_number of non-consecutive periods in clue"] = clues_df["clue"].apply(
         lambda x: len(re.findall(r"(?<!\.)\.(?!\.)", x)))
-    clues_df["_f_is ellipsis in clue"] = clues_df["Clue"].str.contains(r"...", case=False, na=False)
-    clues_df["_f_number commas in clue"] = clues_df["Clue"].apply(lambda x: x.count(","))
-    clues_df["_f_number non a-z or 1-9 characters in clue"] = clues_df["Clue"].apply(
+    clues_df["_f_is ellipsis in clue"] = clues_df["clue"].str.contains(r"...", case=False, na=False)
+    clues_df["_f_number commas in clue"] = clues_df["clue"].apply(lambda x: x.count(","))
+    clues_df["_f_number non a-z or 1-9 characters in clue"] = clues_df["clue"].apply(
         lambda x: sum(not re.match(r"[A-Za-z0-9]", c) for c in x) / len(x) if len(x) > 0 else 0)
 
     # Contains some words which are short-cuts to figuring out the class
-    clues_df["_f_contains e.g."] = clues_df["Clue"].str.contains(r"\be\.g\.", case=False, na=False)
-    clues_df["_f_contains etc."] = clues_df["Clue"].str.contains(r"\betc\.", case=False, na=False)
-    clues_df["_f_contains in short"] = clues_df["Clue"].str.contains(r"\bin short\b", case=False, na=False)
-    clues_df["_f_contains abbr"] = clues_df["Clue"].str.contains(r"Abbr.", case=False, na=False)
-    clues_df["_f_contains amts."] = clues_df["Clue"].str.contains(r"amts.", case=False, na=False)
-    clues_df["_f_contains briefly"] = clues_df["Clue"].str.contains(r"\bbriefly\b", case=False, na=False)
-    clues_df["_f_contains dir."] = clues_df["Clue"].str.contains(" dir.", case=False, na=False)
-    clues_df["_f_contains exclamation"] = clues_df["Clue"].str.contains('!"', case=False, na=False)
-    clues_df["_f_starts with kind of"] = clues_df["Clue"].str.lower().str.startswith('kind of')
-    clues_df["_f_contains it may be"] = clues_df["Clue"].str.contains('it may be', case=False, na=False)
-    clues_df["_f_contains dir."] = clues_df["Clue"].str.contains(r"\bdir\.", case=False, na=False)
-    clues_df["_f_contains bible clue"] = clues_df["Clue"].str.contains(
+    clues_df["_f_contains e.g."] = clues_df["clue"].str.contains(r"\be\.g\.", case=False, na=False)
+    clues_df["_f_contains etc."] = clues_df["clue"].str.contains(r"\betc\.", case=False, na=False)
+    clues_df["_f_contains in short"] = clues_df["clue"].str.contains(r"\bin short\b", case=False, na=False)
+    clues_df["_f_contains abbr"] = clues_df["clue"].str.contains(r"Abbr.", case=False, na=False)
+    clues_df["_f_contains amts."] = clues_df["clue"].str.contains(r"amts.", case=False, na=False)
+    clues_df["_f_contains briefly"] = clues_df["clue"].str.contains(r"\bbriefly\b", case=False, na=False)
+    clues_df["_f_contains dir."] = clues_df["clue"].str.contains(" dir.", case=False, na=False)
+    clues_df["_f_contains exclamation"] = clues_df["clue"].str.contains('!"', case=False, na=False)
+    clues_df["_f_starts with kind of"] = clues_df["clue"].str.lower().str.startswith('kind of')
+    clues_df["_f_contains it may be"] = clues_df["clue"].str.contains('it may be', case=False, na=False)
+    clues_df["_f_contains dir."] = clues_df["clue"].str.contains(r"\bdir\.", case=False, na=False)
+    clues_df["_f_contains bible clue"] = clues_df["clue"].str.contains(
         r"\bbible\b|\bbiblical\b|\bjesus\b|old testament|new testament",
         case=False,
         na=False
     )
-    clues_df["_f_contains ,maybe or ,perhaps"] = clues_df["Clue"].str.contains(r", (?:maybe|perhaps)", case=False,
+    clues_df["_f_contains ,maybe or ,perhaps"] = clues_df["clue"].str.contains(r", (?:maybe|perhaps)", case=False,
                                                                                na=False)
-    clues_df["_f_contains word before"] = clues_df["Clue"].str.contains(r"word before", case=False, na=False)
+    clues_df["_f_contains word before"] = clues_df["clue"].str.contains(r"word before", case=False, na=False)
 
     # Add more involved features
     clues_df = add_profession(clues_df)

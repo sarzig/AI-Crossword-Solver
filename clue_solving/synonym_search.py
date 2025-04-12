@@ -73,7 +73,7 @@ df_test = pd.read_csv(csv_synonyms_path, encoding="ISO-8859-1")
 df_test_sample = df_test.sample(n = 100, random_state=42)
 
 # Ensure correct column names (adjust if needed)
-df_test.columns = ["Date", "Word", "Clue"]  # Rename columns for clarity
+df_test.columns = ["Date", "Word", "clue"]  # Rename columns for clarity
 
 
 def check_synonym_accuracy(df):
@@ -81,14 +81,14 @@ def check_synonym_accuracy(df):
     results = []
 
     for index, row in df.iterrows():
-        clue = row["Clue"].strip().lower()  # Normalize clue
+        clue = row["clue"].strip().lower()  # Normalize clue
         answer = row["Word"].strip().lower()  # Normalize answer
 
         synonyms = get_recursive_synonyms(clue, 4)  # Fetch synonyms
         answer_found = answer in synonyms  # Check if answer is in the synonyms list
 
         results.append({
-            "Clue": clue,
+            "clue": clue,
             "Expected Answer": answer,
             "Synonyms": ", ".join(sorted(synonyms)) if synonyms else "No synonyms found",
             "Answer Found in Synonyms": answer_found

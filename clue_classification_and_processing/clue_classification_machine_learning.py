@@ -7,7 +7,7 @@ It is fully functional (and very useful!).
 Functions:
 ----------
 * drop_clue_and_word(df): 
-    Drops "Clue" and "Word" columns from a DataFrame if present.
+    Drops "clue" and "Word" columns from a DataFrame if present.
 
 * create_pipeline(): 
     Loads manually classified clues, adds features, trains a RandomForest pipeline, and returns both fitted and 
@@ -47,8 +47,9 @@ from clue_classification_and_processing.clue_features import add_features, move_
 from clue_classification_and_processing.helpers import get_clues_by_class, get_project_root, get_clues_dataframe
 from sklearn.base import clone
 
+
 def drop_clue_and_word(df):
-    columns_to_drop = [col for col in ["Clue", "Word"] if col in df.columns]
+    columns_to_drop = [col for col in ["clue", "Word"] if col in df.columns]
     return df.drop(columns=columns_to_drop, errors="ignore")
 
 
@@ -78,11 +79,11 @@ def create_pipeline():
     X = clues.drop(columns=["Class", "Word"])
     y = clues["Class"]
 
-    text_features = ["Clue"]
+    text_features = ["clue"]
     # numeric_features = [col for col in X.columns if col not in text_features and col != "Word"]
 
     preprocessor = ColumnTransformer([
-        ("tfidf_clue", TfidfVectorizer(analyzer='word', ngram_range=(1, 2), max_features=1000), "Clue"),
+        ("tfidf_clue", TfidfVectorizer(analyzer='word', ngram_range=(1, 2), max_features=1000), "clue"),
         ("numeric_features", FunctionTransformer(select_numeric_features, validate=False), X.columns)
     ])
 
@@ -211,7 +212,7 @@ def add_top_class_predictions(df, pipeline, top_n=10):
     """
     GenAI created function to return a probability list instead of a single class
 
-    :param df: dataframe with add_features already done, and a column named "Clue"
+    :param df: dataframe with add_features already done, and a column named "clue"
     :param pipeline: a FITTED pipeline
     :param top_n: The number of class matches which should be returned
     :return: the dataframe with the top classes added, and feature columns moved to the right
@@ -251,8 +252,10 @@ def predict_single_clue_from_default_pipeline(clue_text, pipeline=None, top_n=10
     """
 
     # Create a mini, 1-row dataframe to pass
-    mini_df = pd.DataFrame({"Clue": [clue_text]})
+    mini_df = pd.DataFrame({"clue": [clue_text]})
 
+    # If pipeline=None, a default pipeline is loaded inside
+    # predict_clues_df_from_default_pipeline (like: pipeline = get_clue_classification_ml_pipeline())
     classification_df = predict_clues_df_from_default_pipeline(clues_df=mini_df,
                                                                pipeline=pipeline,
                                                                keep_features=False,
@@ -272,15 +275,20 @@ def predict_clues_df_from_default_pipeline(clues_df, keep_features=False, pipeli
     :return:
     """
 
-    # Ensure required column is present
-    if "Clue" not in clues_df.columns:
-        raise ValueError("Input DataFrame must contain a 'Clue' column.")
-
     # Save original DataFrame
     original_df = clues_df.copy()
 
+    # If "Clue" is in columns, rename to "clue"
+    if "Clue" in clues_df.columns:
+        clues_df.rename(columns={'Clue': 'clue'}, inplace=True)
+
+    if "clue" not in clues_df.columns:
+        print("columns found in input clues_df:")
+        print(clues_df.columns)
+        raise ValueError("Input DataFrame must contain a 'Clue' or 'clue' column.")
+
     # Remove extraneous columns in clues_df
-    base_cols = ["Clue", "Word"]
+    base_cols = ["clue", "Word"]
     minimal_df = clues_df[[col for col in base_cols if col in clues_df.columns]].copy()
 
     # Fetch the saved pipeline

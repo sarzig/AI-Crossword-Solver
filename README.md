@@ -25,8 +25,11 @@ xxx tbd notes on what to do for read me very important
 2.5.2 GitHub Repository
 The implementation of your course project should be submitted as a public GitHub repos-
 itory, which should be well-organized with modular, re-usable, and properly commented
-code. Throughout the semester, each student must commit their work to this reposi-
+code. 
+
+Throughout the semester, each student must commit their work to this reposi-
 tory to establish a history of contributions, which will be a factor in your final grade.
+
 All repositories must also include a detailed Read-Me file with instructions to recreate an
 appropriate environment and any necessary packages, and a walkthrough on how to
 run your code. Jupyter notebooks are not an acceptable submission format for the final
@@ -40,3 +43,11 @@ Here are some examples of well-formatted repositories from past semesters: 1)
 * Create a Crossword data object and then visualize it - eroniction, this needs to be something the TA can really easily do!
 * Demonstration of the few solving algorithms we came up with
 * CSP demo
+
+GitHub Structure
+* clue_classification_and_processing
+  * 
+* clue_solving
+* grid_solving 
+* bert_models
+* data
