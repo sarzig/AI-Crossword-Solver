@@ -1,9 +1,15 @@
+"""
+Author: Sarah
+
+Some basic tests for testing crossword creation.
+
+*Gen AI Assisted*
+"""
+
 import pandas as pd
 import pytest
-
 from puzzle_objects.crossword_and_clue import validate_clue_df
 
-# Gen AI assisted!
 
 # 1. No arguments provided
 def test_no_arguments():

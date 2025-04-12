@@ -1,10 +1,6 @@
-import os
-import re
-import string
-import pandas as pd
-import hashlib
-
 """
+Author: Sarah
+
 This is the generic helpers file. 
 
 Generally functions will be put here if they work well, do not have a better "home" 
@@ -25,6 +21,11 @@ Text processing
 -------------------------------------------------------------------
 """
 
+import os
+import re
+import string
+import pandas as pd
+import hashlib
 
 def print_if(statement, print_bool):
     """
@@ -90,6 +91,7 @@ def get_clues_by_class(clue_class="all", classification_type="manual_only", pred
     """
 
     loc = ""
+    text =""
 
     # If only looking for manually classed clues, look in
     # the manually classified clues.xlsx
@@ -97,7 +99,8 @@ def get_clues_by_class(clue_class="all", classification_type="manual_only", pred
         text = "manual"
         loc = os.path.join(get_project_root(),
                            "data",
-                           "manually classified clues.xlsx")
+                           "clue_classification_ml_pipeline",
+                           "all_manually_classified_clues.xlsx")
 
     # If looking for only predicted, then just use the full_clue set and assign predictions
     # Only get clues that have prediction threshold over 0.8
@@ -161,7 +164,7 @@ def get_vocab():
         with open(location, "r", encoding="utf-8") as f:
             print(f"Fetching combined vocab (nltk words, NYT data) from {location}")
             return set(line.strip() for line in f if line.strip())
-    except Exception as e:
+    except Exception:
         location = os.path.join(get_project_root(), "combined_vocab.txt")
         with open(location, "r", encoding="utf-8") as f:
             print(f"Fetching combined vocab (nltk words, NYT data) from {location}")
@@ -283,7 +286,7 @@ def get_100_most_common_clues_and_answers():
 
     # Mark each Clue–Word pair in top 200 as unique or not
     common_pairs["is_unique_clue"] = common_pairs["Clue"].isin(unique_clues_set)
-    common_pairs = common_pairs[common_pairs["is_unique_clue"] == True]  # only subset the clues we care about
+    common_pairs = common_pairs[common_pairs["is_unique_clue"] is True]  # only subset the clues we care about
 
     return common_pairs
 
@@ -341,6 +344,6 @@ def process_text_into_clue_answer(input_text):
             new_text = new_text.replace(variant, base_letter)
 
     # remove whitespace and lowercase it
-    new_text = re.sub(whitespace_regex, "", new_text).lower()
+    new_text = re.sub(whitespace_regex, "", new_text).upper()
 
     return new_text

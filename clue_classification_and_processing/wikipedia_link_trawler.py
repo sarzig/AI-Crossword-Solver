@@ -1,13 +1,20 @@
 """
+Author: Sarah
+
 This file attempts to solve: given a search string, find the most likely wikipedia page on
 that topic.
+
+NOTES: xxx tbd this is half-baked, and I never quite got this to run fast enough to be acceptable.
 """
+
 import wikipediaapi
+from clue_classification_and_processing.helpers import print_if
 
 wiki = wikipediaapi.Wikipedia(user_agent='MyProjectName (merlin@example.com)', language='en')
 
 example_page = wiki.page("John Smith")
 category_string = ",".join(example_page.categories.keys())
+
 
 def is_answer_in_wikipedia_search_space(search_term, answer, print_statement=True):
     """
@@ -18,6 +25,7 @@ def is_answer_in_wikipedia_search_space(search_term, answer, print_statement=Tru
         - number of matches
         - list of all match context (match +- 200 characters)
 
+    :param answer: the answer to check for within encyclopedia lookup of search_term
     :param search_term: term to search in wikipedia
     :param print_statement: whether to print
     :return: False if not found, otherwise return the dictionary of the answers
@@ -27,9 +35,6 @@ def is_answer_in_wikipedia_search_space(search_term, answer, print_statement=Tru
     # If nothing is found using that term, return False
     if search_space is None:
         return False
-
-
-
 
 
 def get_wikipedia_search_space(search_term, print_statement=True):
@@ -79,6 +84,7 @@ def get_wikipedia_search_space(search_term, print_statement=True):
     # If page is a direct hit, return that page
     else:
         return [page_attempt.title]
+
 
 # If we've reached a disambiguation page, our search space should start as all the direct links
 # (i.e. those which link to an article rather than another disambiguation page).
