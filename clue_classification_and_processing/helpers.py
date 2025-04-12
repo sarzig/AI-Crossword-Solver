@@ -99,7 +99,8 @@ def get_clues_by_class(clue_class="all", classification_type="manual_only", pred
         text = "manual"
         loc = os.path.join(get_project_root(),
                            "data",
-                           "manually classified clues.xlsx")
+                           "clue_classification_ml_pipeline",
+                           "all_manually_classified_clues.xlsx")
 
     # If looking for only predicted, then just use the full_clue set and assign predictions
     # Only get clues that have prediction threshold over 0.8

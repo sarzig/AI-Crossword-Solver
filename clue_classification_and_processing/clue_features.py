@@ -330,10 +330,22 @@ my_clues_df = add_features(my_clues_df)
 column_of_interest = "_f_contains kind of"
 # my_clues_df[my_clues_df[column_of_interest] == True].to_csv(f"{column_of_interest}_subset.csv", index=False)
 
-# Here is where I perform k-means clustering.
-kmeans_res = kmeans_clustering_clues_dataframe(my_clues_df,
+# Here is where I perform k-means clustering --> this is an example showing just 2 features
+kmeans_mini_res = kmeans_clustering_clues_dataframe(my_clues_df,
                                                n_clusters=6,
                                                feature_list=['_f_contains underscore', '_f_ends in question'])
+                                               
+# Now let's cluster on EVERY FEATURE
+kmeans_res = kmeans_clustering_clues_dataframe(my_clues_df,
+                                               n_clusters=30)
+                                               
+# This is a partial sample, so that our ever-suffering TA can actually open the file
+kmeans_res_sample = (
+    kmeans_res.groupby("Cluster", group_keys=False)
+    .apply(lambda x: x.sample(frac=0.1, random_state=42))
+    .reset_index(drop=True)
+)                                               
+kmeans_res_sample.to_csv(os.path.join(get_project_root(), "clue_classification_and_processing", "clustering_outputs", "kmeans_clustering_output_n_30.csv"))
 
 # xxx tbd - maybe add some plotting or example print outs of k-means clustering?
 '''

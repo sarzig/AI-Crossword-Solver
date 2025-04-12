@@ -9,6 +9,7 @@ A Crossword is initialized from a csv or a dataFrame. A Crossword has attributes
   * grid_height - the number of rows
   * grid - a 2d numpy array that stores one character (or a black spot "■", or an empty string "")
 """
+
 import os
 import atexit
 import random
