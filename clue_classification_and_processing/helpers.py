@@ -27,9 +27,6 @@ import string
 import pandas as pd
 import hashlib
 
-from clue_classification_and_processing.clue_classification_machine_learning import \
-    predict_clues_df_from_default_pipeline
-
 
 def print_if(statement, print_bool):
     """

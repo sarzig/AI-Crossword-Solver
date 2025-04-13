@@ -31,6 +31,7 @@ Wrappers and helpers for those wrappers
 
 
 """
+import os
 import re
 from itertools import permutations
 
@@ -55,11 +56,11 @@ def return_methodology_by_clue_type(clue_type):
     :param clue_type: clue type
     :return: solving methodology, or None
     """
-
+    # xxx tbd ADD new clue solving methods!
     clue_type_to_methodology_lookup = {
         'Acronym/short form answer': None,
         'Analogy fill in the blank': None,
-        'Basic fill in the blank': temporary_stupid_clue_solver,
+        'Basic fill in the blank': None,
         'Biblical': None,
         'Clever synonyms and examples': None,
         'Colloquial phrase fill in the blank': None,
@@ -69,7 +70,7 @@ def return_methodology_by_clue_type(clue_type):
         'Example of a class': None,
         'Find first name given last name': None,
         'Find name given profession/reference': None,
-        'Foreign language': None,
+        'Foreign language': foreign_language_wrapper,
         'Foreign language fill in the blank': None,
         'Full name of speaker given quote': None,
         'Members of a class': None,
@@ -87,11 +88,6 @@ def return_methodology_by_clue_type(clue_type):
 
     # Find the appropriate solving methodology or None if None exists
     return clue_type_to_methodology_lookup.get(clue_type, None)
-
-
-def temporary_stupid_clue_solver(clue_with_more_info):
-    # Stand-in just to make sure clue_type_to_methodology_lookup is working
-    return "AHH" + clue_with_more_info["clue_text"] + "AHH"
 
 
 def return_constraint_hits(options, clue_with_more_info):
@@ -119,13 +115,13 @@ def return_constraint_hits(options, clue_with_more_info):
     if constraint is None:
         if answer_length is None:
             return ["ERROR in return_constraint_hits"]
-    else:
-        constraint = "." * clue_with_more_info["answer_length"]
+        else:
+            constraint = "." * clue_with_more_info["answer_length"]
 
-        pattern = "^" + constraint + "$"
-        regex = re.compile(pattern, re.IGNORECASE)
+            pattern = "^" + constraint + "$"
+            regex = re.compile(pattern, re.IGNORECASE)
 
-        return [word for word in options if regex.match(word)]
+            return [word for word in options if regex.match(word)]
 
 
 def synonym_wrapper(clue_with_more_info):
@@ -140,6 +136,9 @@ def synonym_wrapper(clue_with_more_info):
     clue_text = clue_with_more_info["clue_text"]
     answer_length = clue_with_more_info["answer_length"]
     clue_constraint = clue_with_more_info["clue_constraint"]
+    print(f"clue_with_more_info={clue_with_more_info}")
+
+    print(f"Clue_text={clue_text}")
 
     # Get list of recursive synonyms
     recursive_synonyms = get_recursive_synonyms(clue_text, depth=3)
@@ -205,14 +204,14 @@ def directions_possible_solutions(clue_with_more_info):
     """
     Hacky way to just limit the set of solutions for a roman numeral problem
     to only those answers of length answer_length that contain the alphabet
-    characters NESW.
+    characters NEWS.
 
     :param clue_with_more_info: a dictionary like {"clue_text": "", "answer_length": None, "clue_constraint": None}
     :return: possible list of solutions
     """
     answer_length = clue_with_more_info["answer_length"]
 
-    possible_answers = [''.join(p) for p in permutations('NESW', answer_length)]
+    possible_answers = [''.join(p) for p in permutations('NEWS', answer_length)]
     return return_constraint_hits(possible_answers, clue_with_more_info)
 
 
@@ -241,6 +240,17 @@ def solve_clue(clue_text=None, clue_type=None, clue_with_more_info=None, print_b
     :param print_bool: if True, print helpful things about results and failures
     :return: a list of answers, normalized into crossword format, or None
     """
+
+    # If clue_text is not None and is a dict, raise an error
+    if isinstance(clue_text, dict):
+        raise ValueError(
+            "clue_text was passed as a dictionary. If passing a dictionary, "
+            "use the 'clue_with_more_info' parameter instead.")
+
+    # If clue_with_more_info is not None and isn't a dict, raise an error
+    if not isinstance(clue_with_more_info, dict):
+        raise ValueError(
+            "clue_with_more_info must be a dictionary with keys like 'clue_text', 'answer_length', 'clue_constraint'.")
 
     # Step 1: Construct full clue_with_more_info if only clue_text is passed
     if clue_with_more_info is None:
@@ -333,7 +343,7 @@ def solve_clues_dataframe(clues_df, top_n_classes, solve_class_threshold):
                                  ('Clever synonyms and examples and examples', 0.12)]
      and solve_class_threshold=0.121, only 'Acronym/short form answer' and 'Example of a class' would get solved
 
-    # created by genAI
+    # created by genAI xxx tbd not working for some clue types due to (I think) how clue_info is being passed
 
     :param top_n_classes:
     :param clues_df:
@@ -386,7 +396,7 @@ def solve_clues_dataframe(clues_df, top_n_classes, solve_class_threshold):
     return predicted_df
 
 
-''' Workspace '''
+''' Workspace 
 # Below is the initial attempts to add predicted classes to a single crossword
 csv_path = f"{get_project_root()}/data/puzzle_samples/processed_puzzle_samples/crossword_2022_07_24.csv"
 
@@ -404,7 +414,6 @@ solved_df = solve_clues_dataframe(clues_df=crossword.clue_df, top_n_classes=2, s
 #    )
 # ]
 
-'''
 synonyms = [('Gumption', 'NERVE'),
             ('Scatters', 'SOWS'),
             ('Combined', 'MERGED'),
@@ -441,4 +450,40 @@ for index, row in all_clues_predicted.iterrows():
                                         clue_type=clue_type,
                                         print_bool=True)
 
+
+
+example_synonym_clue = solve_clue(clue_with_more_info={"clue_text": 'happy',
+                                                       "answer_length": 6,
+                                                       "clue_constraint": None}, clue_type="One word synonym")
+example_synonym_clue = solve_clue(clue_with_more_info={"clue_text": 'tiger, in spanish',
+                                                       "answer_length": 5,
+                                                       "clue_constraint": None}, clue_type="Foreign language")
+print(example_synonym_clue)
+
+
+input_path = os.path.join(get_project_root(), "data/puzzle_samples/processed_puzzle_samples/all_puzzles.csv")
+output_folder = os.path.join(get_project_root(), "data/puzzle_samples/solved_clues_batches")
+os.makedirs(output_folder, exist_ok=True)
+top_n_classes = 3
+solve_class_threshold = 0.7
+chunk_size = 5
+
+# Load data
+df = pd.read_csv(input_path)
+total_rows = df.shape[0]
+
+# Process in chunks
+for i in range(chunk_size, total_rows + chunk_size, chunk_size):
+    print(f"[INFO] Processing rows 0 to {i-1}...")
+
+    # Slice the data
+    subset = df.iloc[:i].copy()
+
+    # Solve clues
+    solved_df = solve_clues_dataframe(subset, top_n_classes=top_n_classes, solve_class_threshold=solve_class_threshold)
+
+    # Save to Excel
+    output_path = os.path.join(output_folder, f"solved_clues_{i}.xlsx")
+    solved_df.to_excel(output_path, index=False)
+    print(f"[SAVED] {output_path}")
 '''
