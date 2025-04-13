@@ -410,7 +410,7 @@ def find_in_wiki(wiki, clues_df):
 '''
 time_init = time.time()
 clues = get_clues_dataframe()
-clues["Clue_clean"] = clues["Clue"].str.replace(rf"[{string.punctuation}]", "", regex=True)
+clues["Clue_clean"] = clues["clue"].str.replace(rf"[{string.punctuation}]", "", regex=True)
 
 # Then filter based on presence of a capital letter after the first character
 clues = clues[clues["Clue_clean"].str[1:].str.contains(r'[A-Z]')].reset_index(drop=True)
@@ -419,9 +419,9 @@ clues = clues[clues["Clue_clean"].str[1:].str.contains(r'[A-Z]')].reset_index(dr
 clues = clues.drop(columns=["Clue_clean"])
 
 clues = clues.head(100000)
-clues["proper_nouns"] = clues["Clue"].apply(extract_wikipedia_search_terms_proper_nouns)
-clues["named_entities"] = clues["Clue"].apply(extract_wikipedia_search_terms_named_entities)
-#clues["proper_nouns_and_named_entities"] = clues["Clue"].apply(extract_wikipedia_search_terms)
+clues["proper_nouns"] = clues["clue"].apply(extract_wikipedia_search_terms_proper_nouns)
+clues["named_entities"] = clues["clue"].apply(extract_wikipedia_search_terms_named_entities)
+#clues["proper_nouns_and_named_entities"] = clues["clue"].apply(extract_wikipedia_search_terms)
 time_end = time.time()
 
 clues.to_excel("Wikipedia named entity search2.xlsx")

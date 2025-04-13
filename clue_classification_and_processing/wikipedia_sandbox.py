@@ -98,8 +98,8 @@ def find_blank_in_wiki(clue):
 
 
 # Apply feature extraction functions
-clues["possessive long quote"] = clues["Clue"].apply(contains_possessive_long_quote)
-clues["long quote with blank"] = clues["Clue"].apply(contains_long_quote_with_blank)
+clues["possessive long quote"] = clues["clue"].apply(contains_possessive_long_quote)
+clues["long quote with blank"] = clues["clue"].apply(contains_long_quote_with_blank)
 
 # Filter clues that match both conditions
 filtered_clues = clues[(clues["possessive long quote"]) & (clues["long quote with blank"])]
@@ -107,9 +107,9 @@ filtered_clues = clues[(clues["possessive long quote"]) & (clues["long quote wit
 # Iterate through filtered clues and find missing words in Wikipedia
 for _, row in filtered_clues.iterrows():
     print("\n" + "-" * 80)
-    print(f'Clue: {row["Clue"]}')
+    print(f'Clue: {row["clue"]}')
 
-    my_page_name = extract_page_name(row["Clue"])
+    my_page_name = extract_page_name(row["clue"])
     print(f'Attempted Wikipedia Page Name: {my_page_name}')
 
     page = wiki_wiki.page(my_page_name)
@@ -118,9 +118,9 @@ for _, row in filtered_clues.iterrows():
     else:
         print("Wikipedia page not found.")
 
-    ans = find_blank_in_wiki(row["Clue"])
+    ans = find_blank_in_wiki(row["clue"])
 
-    function_answer = fill_in_the_blank_with_possible_source(row["Clue"], page.text)
+    function_answer = fill_in_the_blank_with_possible_source(row["clue"], page.text)
     print(f"\n\n         Actual Answer: {row['Word'].lower()}")
     # print(f'Predicted Answer: {ans}')
     print(f'function_answer Answer: {function_answer}')
