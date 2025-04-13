@@ -312,6 +312,19 @@ def predict_clues_df_from_default_pipeline(clues_df, keep_features=False, pipeli
     return combined_df
 
 
+def create_all_clues_predicted():
+    all_clues = get_clues_dataframe(delete_dupes=True)
+    all_clues_predicted = predict_clues_df_from_default_pipeline(clues_df=all_clues,
+                                                                 keep_features=True,
+                                                                 top_n=5)
+    save_path = os.path.join(get_project_root(),
+                             "data",
+                             "clue_classification_ml_pipeline",
+                             "all_clues_predicted.csv")
+
+    all_clues_predicted.to_csv(save_path)
+
+
 '''
 # Create the pipeline - only needs to be done once per update to manual classifications
 # OR to changes to add_features

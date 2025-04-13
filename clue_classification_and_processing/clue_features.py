@@ -25,7 +25,7 @@ from nltk.tokenize import word_tokenize
 from sklearn.preprocessing import StandardScaler
 from sklearn.cluster import KMeans
 from collections import Counter
-from clue_classification_and_processing.helpers import get_clues_dataframe
+from clue_classification_and_processing.helpers import get_clues_dataframe, get_most_common_clue_word_pair
 
 '''
 # Download NLTK libs - note that this section is not currently in use,
@@ -221,6 +221,9 @@ def add_features(clues_df):
     # Add more involved features
     clues_df = add_profession(clues_df)
 
+    most_common_clues = list(get_most_common_clue_word_pair().keys())
+    clues_df["_f_is_100_most_common_clue"] = clues_df["clue"].apply(lambda x: x in most_common_clues)
+
     # This is required for success of random forest - all columns must be converted to numeric
     for col in clues_df.columns:
         if col.startswith("_f_"):
@@ -324,8 +327,11 @@ def kmeans_clustering_clues_dataframe(clues_df, n_clusters, feature_list=None):
 
 # Here is where I play around with exporting certain features
 my_clues_df = get_clues_dataframe()
-my_clues_df = my_clues_df.head(30000)  # Lesser amount - good for troubleshooting
+#my_clues_df = my_clues_df.head(30000)  # Lesser amount - good for troubleshooting
 my_clues_df = add_features(my_clues_df)
+my_clues_df = my_clues_df.sort_values("_f_is_100_most_common_clue", ascending=False)
+my_clues_df = my_clues_df.head(20000)
+my_clues_df.to_csv("EXPORT.csv")
 
 column_of_interest = "_f_contains kind of"
 # my_clues_df[my_clues_df[column_of_interest] == True].to_csv(f"{column_of_interest}_subset.csv", index=False)

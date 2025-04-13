@@ -48,16 +48,16 @@ def get_recursive_synonyms(word, depth):
 ######################################################################################################
 # Example Usage
 ######################################################################################################
-
+'''
 word = input("Enter a word: ")
 synonyms = get_recursive_synonyms(word, depth=3)
 print(f"Expanded synonyms for '{word}': {synonyms}")
-
+'''
 
 ######################################################################################################
 # Testing on the list of synonym clues
 ######################################################################################################
-
+'''
 # Load the data set
 # Get the absolute path of the current script
 current_dir = os.path.dirname(os.path.abspath(__file__))
@@ -74,7 +74,7 @@ df_test_sample = df_test.sample(n = 100, random_state=42)
 
 # Ensure correct column names (adjust if needed)
 df_test.columns = ["Date", "Word", "clue"]  # Rename columns for clarity
-
+'''
 
 def check_synonym_accuracy(df):
     """ Check if crossword answers appear in the synonyms retrieved from Datamuse. """
@@ -114,8 +114,9 @@ def check_synonym_accuracy(df):
 ######################################################################################################
 # Usage of synonym accuracy check
 ######################################################################################################
-
+'''
 # Run the synonym accuracy check
 results_df = check_synonym_accuracy(df_test_sample)
 
 # print(f"Results: {results_df}")
+'''
