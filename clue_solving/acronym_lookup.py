@@ -1,3 +1,9 @@
+#!/usr/bin/env python3
+"""
+Enhanced acronym_lookup module with suppressed verbose output.
+This version provides both interactive and direct command-line usage.
+"""
+
 import pandas as pd
 import re
 import sys
@@ -5,6 +11,28 @@ import requests
 from bs4 import BeautifulSoup
 import time
 import random
+import os
+import io
+from contextlib import redirect_stdout
+
+# Decorator to suppress output
+def run_silently(func):
+    """
+    Decorator to run a function without printing any output.
+    """
+    def wrapper(*args, **kwargs):
+        # Save original stdout
+        original_stdout = sys.stdout
+        # Redirect stdout to null device
+        sys.stdout = io.StringIO()
+        try:
+            # Call the original function
+            result = func(*args, **kwargs)
+            return result
+        finally:
+            # Restore stdout
+            sys.stdout = original_stdout
+    return wrapper
 
 class AcronymLookup:
     def __init__(self, csv_file=None):
@@ -15,11 +43,38 @@ class AcronymLookup:
             csv_file (str, optional): Path to the CSV file with columns: Date, Word, Clue.
                                      If None, uses default path.
         """
-        # Default path for macOS
+        # If no CSV file is specified, use the one in the data directory
         if csv_file is None:
-            csv_file = "/Users/swathibabaeswarappa/Downloads/FAI /nyt_acronym_clues.csv"
+            # Get the path to the current file
+            current_dir = os.path.dirname(os.path.abspath(__file__))
+            # Go up one level to the project root
+            project_root = os.path.dirname(current_dir)
+            # Path to the CSV file in the data directory
+            csv_file = os.path.join(project_root, 'data', 'nytcrosswords_acronym_finding.csv')
         
-        self.df = pd.read_csv(csv_file)
+        # Try multiple encodings to handle different CSV file formats
+        encodings_to_try = ['utf-8', 'latin1', 'iso-8859-1', 'cp1252']
+        df_loaded = False
+        
+        for encoding in encodings_to_try:
+            try:
+                self.df = pd.read_csv(csv_file, encoding=encoding, on_bad_lines='skip', low_memory=False)
+                df_loaded = True
+                break
+            except UnicodeDecodeError:
+                pass
+            except FileNotFoundError:
+                break
+        
+        if not df_loaded:
+            # Create an empty dataframe with the expected columns
+            self.df = pd.DataFrame(columns=['Date', 'Word', 'Clue'])
+        
+        # Check if required columns exist, and create them if not
+        required_columns = ['Date', 'Word', 'Clue']
+        for col in required_columns:
+            if col not in self.df.columns:
+                self.df[col] = ""
         
         # Create indices for faster lookup
         self.word_to_clue_dict = self._create_word_to_clue_dict()
@@ -38,8 +93,12 @@ class AcronymLookup:
         """Create a dictionary mapping words to their clues."""
         word_to_clue = {}
         for _, row in self.df.iterrows():
-            word = row['Word'].strip().upper()
-            clue = row['Clue'].strip()
+            # Handle potential NaN values
+            if pd.isna(row.get('Word')) or pd.isna(row.get('Clue')):
+                continue
+                
+            word = str(row['Word']).strip().upper()
+            clue = str(row['Clue']).strip()
             
             if word not in word_to_clue:
                 word_to_clue[word] = []
@@ -53,8 +112,12 @@ class AcronymLookup:
         """Create a dictionary mapping clues to their words."""
         clue_to_word = {}
         for _, row in self.df.iterrows():
-            word = row['Word'].strip().upper()
-            clue = row['Clue'].strip()
+            # Handle potential NaN values
+            if pd.isna(row.get('Word')) or pd.isna(row.get('Clue')):
+                continue
+                
+            word = str(row['Word']).strip().upper()
+            clue = str(row['Clue']).strip()
             
             if clue not in clue_to_word:
                 clue_to_word[clue] = []
@@ -106,7 +169,61 @@ class AcronymLookup:
             "LASER": ["Light Amplification by Stimulated Emission of Radiation", "Focused light beam"],
             "SCUBA": ["Self-Contained Underwater Breathing Apparatus", "Diving equipment"],
             "SONAR": ["Sound Navigation And Ranging", "Underwater object detection"],
-            "CAPTCHA": ["Completely Automated Public Turing test to tell Computers and Humans Apart", "Bot detection system"]
+            "CAPTCHA": ["Completely Automated Public Turing test to tell Computers and Humans Apart", "Bot detection system"],
+            "BRB": ["Be Right Back", "Returning shortly (internet slang)"],
+            "LOL": ["Laugh Out Loud", "Found that very funny"],
+            "BTW": ["By The Way", "Incidentally, as an aside"],
+            "FYI": ["For Your Information", "Just letting you know"],
+            "IMO": ["In My Opinion", "What I think"],
+            "IMHO": ["In My Humble Opinion", "What I think"],
+            "OMG": ["Oh My God", "Expression of surprise"],
+            "TBH": ["To Be Honest", "Speaking candidly"],
+            "FAQ": ["Frequently Asked Questions", "Common inquiries"],
+            "TGIF": ["Thank God It's Friday", "Happy the workweek is ending"],
+            "DIY": ["Do It Yourself", "Self-made projects"],
+            "YOLO": ["You Only Live Once", "Seize the day philosophy"],
+            "FOMO": ["Fear Of Missing Out", "Anxiety about missing experiences"],
+            "AFK": ["Away From Keyboard", "Not at computer"],
+            "IRL": ["In Real Life", "Offline existence"],
+            "TL;DR": ["Too Long; Didn't Read", "Brief summary"],
+            "DM": ["Direct Message", "Private communication"],
+            "PIN": ["Personal Identification Number", "Security code"],
+            "POTUS": ["President Of The United States", "US head of state"],
+            "SCOTUS": ["Supreme Court Of The United States", "Highest US court"],
+            "FLOTUS": ["First Lady Of The United States", "US president's spouse"],
+            "NATO": ["North Atlantic Treaty Organization", "Western military alliance"],
+            "WHO": ["World Health Organization", "Global health agency"],
+            "UNESCO": ["United Nations Educational, Scientific and Cultural Organization", "UN agency for education and culture"],
+            "UNICEF": ["United Nations Children's Fund", "UN agency for children"],
+            "NAFTA": ["North American Free Trade Agreement", "Trade pact"],
+            "OPEC": ["Organization of Petroleum Exporting Countries", "Oil cartel"],
+            "STEM": ["Science, Technology, Engineering, and Mathematics", "Technical education fields"],
+            "LGBTQ": ["Lesbian, Gay, Bisexual, Transgender, Queer/Questioning", "Sexual and gender identity community"],
+            "ROFL": ["Rolling On the Floor Laughing", "Extremely amused"],
+            "TTYL": ["Talk To You Later", "Goodbye for now"],
+            "BYOB": ["Bring Your Own Bottle", "Party where guests bring drinks"],
+            "DOB": ["Date Of Birth", "Birth date"],
+            "ETA": ["Estimated Time of Arrival", "Expected arrival time"],
+            "MVP": ["Most Valuable Player", "Best performer in sports"],
+            "PDF": ["Portable Document Format", "Document file type"],
+            "ROM": ["Read Only Memory", "Non-volatile computer memory"],
+            "RAM": ["Random Access Memory", "Volatile computer memory"],
+            "VIP": ["Very Important Person", "High-status individual"],
+            "IP": ["Internet Protocol", "Network addressing standard"],
+            "ID": ["Identification", "Personal credential"],
+            "HR": ["Human Resources", "Personnel department"],
+            "PR": ["Public Relations", "Image management"],
+            "SUV": ["Sport Utility Vehicle", "Large passenger vehicle"],
+            "UFO": ["Unidentified Flying Object", "Mysterious aerial phenomenon"],
+            "AWOL": ["Absent Without Official Leave", "Unauthorized absence"],
+            "MIA": ["Missing In Action", "Unaccounted for in combat"],
+            "POW": ["Prisoner Of War", "Captured combatant"],
+            "SOS": ["Save Our Souls", "Distress signal"],
+            "RIP": ["Rest In Peace", "Memorial phrase"],
+            "IOU": ["I Owe You", "Debt acknowledgment"],
+            "RSVP": ["Répondez S'il Vous Plaît", "Please respond"],
+            "TGIF": ["Thank God It's Friday", "Weekend celebration"],
+            "ASAP": ["As Soon As Possible", "Urgently"]
         }
     
     def _scrape_acronym_finder(self, acronym):
@@ -126,7 +243,6 @@ class AcronymLookup:
         try:
             # Construct the URL for the acronym
             url = f"https://www.acronymfinder.com/{acronym}.html"
-            print(f"Searching online at: {url}")
             
             # Add a user agent to mimic a browser
             headers = {
@@ -140,7 +256,6 @@ class AcronymLookup:
             if response.status_code == 200:
                 # Parse the HTML content
                 soup = BeautifulSoup(response.text, 'html.parser')
-                print(f"Successfully retrieved data for {acronym}")
                 
                 # Find the definition table
                 results = []
@@ -155,7 +270,6 @@ class AcronymLookup:
                         break
                 
                 if definition_table:
-                    print("Found definition table")
                     rows = definition_table.find_all('tr')
                     for row in rows:
                         cols = row.find_all('td')
@@ -168,7 +282,6 @@ class AcronymLookup:
                     # Also try looking for definitions in a different format
                     definition_divs = soup.select('.block-acronym')
                     if definition_divs:
-                        print("Found definition blocks")
                         for div in definition_divs:
                             meaning_element = div.select_one('.meaning')
                             if meaning_element:
@@ -178,16 +291,12 @@ class AcronymLookup:
                 
                 if not results:
                     # Try a more general approach to find definitions
-                    print("Trying general approach to find definitions")
                     # Look for any elements that might contain definitions
                     possible_definitions = soup.find_all(['div', 'p', 'li'], class_=['definition', 'meaning', 'result'])
                     for element in possible_definitions:
                         text = element.get_text(strip=True)
                         if text and len(text) > 5:  # Avoid very short texts
                             results.append(text)
-                
-                # Print debug info
-                print(f"Found {len(results)} definitions for {acronym}")
                 
                 # Add to cache to avoid repeated requests
                 self.web_cache[acronym] = results
@@ -197,10 +306,8 @@ class AcronymLookup:
                 
                 return results
             else:
-                print(f"Failed to retrieve data for {acronym}. Status code: {response.status_code}")
                 return []
         except Exception as e:
-            print(f"Error scraping data for {acronym}: {str(e)}")
             return []
     
     def _search_acronym_expanded(self, acronym):
@@ -246,7 +353,6 @@ class AcronymLookup:
             # Format the query for URL
             formatted_query = query.replace(' ', '+')
             url = f"https://www.acronymfinder.com/~/search/aj/?a=search&st={formatted_query}"
-            print(f"Searching online for reverse lookup: {url}")
             
             headers = {
                 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
@@ -298,7 +404,6 @@ class AcronymLookup:
             
             return []
         except Exception as e:
-            print(f"Error in reverse search for {query}: {str(e)}")
             return []
     
     def get_clues_for_acronym(self, acronym):
@@ -374,7 +479,7 @@ class AcronymLookup:
         """
         clue = clue.strip()
 
-        # NEW CODE: Check if this clue matches any definitions in web results/common acronyms
+        # Check if this clue matches any definitions in web results/common acronyms
         clue_lower = clue.lower()
         
         # Check the web cache for matching definitions
@@ -399,18 +504,6 @@ class AcronymLookup:
         if reverse_matches:
             return reverse_matches
         
-        # EXISTING CODE CONTINUES FROM HERE:
-        # Check for exact match in dataset
-        if clue in self.clue_to_word_dict:
-            return self.clue_to_word_dict[clue]
-        
-        # Try fuzzy matching in dataset
-        potential_matches = []
-        keywords = re.findall(r'\b\w+\b', clue.lower())
-        matched_clues = set()
-        
-
-
         # Check for exact match in dataset
         if clue in self.clue_to_word_dict:
             return self.clue_to_word_dict[clue]
@@ -457,7 +550,6 @@ class AcronymLookup:
             return unique_acronyms
         
         # If no matches in dataset, try web scraping
-        print(f"Clue not found in dataset. Searching online...")
         web_results = self._search_reverse_acronym_finder(clue)
         
         if web_results:
@@ -551,96 +643,273 @@ class AcronymLookup:
                 'query': query,
                 'results': [{'acronym': acronym} for acronym in acronyms]
             }
-        
 
-    def _create_bidirectional_index(self):
-        """Create an index of definitions to acronyms based on web scraping results."""
-        self.definition_to_acronym = {}
-        
-        # Process cached web results to build the bidirectional index
-        for acronym, definitions in self.web_cache.items():
-            if isinstance(definitions, list):
-                for definition in definitions:
-                    # Remove the "(from web)" part if present
-                    clean_def = definition.replace(" (from web)", "").strip().lower()
-                    
-                    if clean_def not in self.definition_to_acronym:
-                        self.definition_to_acronym[clean_def] = []
-                    
-                    if acronym not in self.definition_to_acronym[clean_def]:
-                        self.definition_to_acronym[clean_def].append(acronym)
-        
-        # Also add common acronyms
-        for acronym, definitions in self.common_acronyms.items():
-            for definition in definitions:
-                clean_def = definition.lower()
-                
-                if clean_def not in self.definition_to_acronym:
-                    self.definition_to_acronym[clean_def] = []
-                
-                if acronym not in self.definition_to_acronym[clean_def]:
-                    self.definition_to_acronym[clean_def].append(acronym)
-
-
-# Interactive demo with example
-def run_interactive_demo():
-    try:
-        # Create an instance with the default path
-        lookup = AcronymLookup()
-        
-        print("Advanced Acronym and Clue Lookup Demo")
-        print("-------------------------------------")
-        print("This version searches both local dataset and online sources!")
-        print("Try searching for acronyms like 'NASA', 'HTML', 'RSVP'")
-        print("Or try clues like 'Space agency', 'Hypertext Markup Language', etc.")
-        print()
-        
-        while True:
-            query = input("Enter search query (or 'quit' to exit): ")
-            
-            if query.lower() == 'quit':
-                break
-            
-            if not query.strip():
-                continue
-            
-            results = lookup.search(query)
-            
-            if results['type'] == 'acronym':
-                print(f"\nClues for acronym '{results['query']}':")
-                if results['results']:
-                    for i, result in enumerate(results['results'], 1):
-                        print(f"{i}. {result['clue']}")
-                else:
-                    print("No clues found for this acronym.")
-            else:
-                print(f"\nAcronyms for clue '{results['query']}':")
-                if results['results']:
-                    for i, result in enumerate(results['results'], 1):
-                        print(f"{i}. {result['acronym']}")
-                else:
-                    print("No acronyms found for this clue.")
-            
-            print()
-    except Exception as e:
-        print(f"Error: {str(e)}")
-        print(f"Error details: {type(e).__name__}")
-        import traceback
-        traceback.print_exc()
-        print("\nMake sure you have the required libraries installed:")
-        print("pip install pandas requests beautifulsoup4")
-
-
-if __name__ == "__main__":
-    # Check if required libraries are installed
-    try:
-        import requests
-        from bs4 import BeautifulSoup
-    except ImportError:
-        print("Required libraries not found.")
-        print("Please install them using:")
-        print("pip install requests beautifulsoup4")
-        sys.exit(1)
+class EncyclopediaLookup:
+    def __init__(self):
+        """Initialize the EncyclopediaLookup with Wikipedia search capability."""
+        # Cache for web requests to avoid repeated scraping
+        self.web_cache = {}
     
-    # Run the interactive demo without requiring command-line arguments
-    run_interactive_demo()
+    def _search_wikipedia(self, query):
+        """
+        Search Wikipedia for information about the query.
+        
+        Args:
+            query (str): The search query
+            
+        Returns:
+            list: List of possible answers with descriptions
+        """
+        # Check cache first
+        if query in self.web_cache:
+            return self.web_cache[query]
+        
+        try:
+            # Format the query for URL
+            formatted_query = query.replace(' ', '+')
+            url = f"https://en.wikipedia.org/w/api.php?action=query&format=json&list=search&srsearch={formatted_query}&utf8=1"
+            
+            headers = {
+                'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
+            }
+            
+            response = requests.get(url, headers=headers, timeout=10)
+            
+            if response.status_code == 200:
+                results = []
+                data = response.json()
+                
+                if 'query' in data and 'search' in data['query']:
+                    for item in data['query']['search'][:5]:  # Limit to top 5 results
+                        title = item['title']
+                        snippet = item.get('snippet', '')
+                        # Clean up HTML tags from snippet
+                        snippet = re.sub(r'<[^>]+>', '', snippet)
+                        results.append({
+                            'answer': title,
+                            'description': snippet
+                        })
+                
+                # Cache results
+                self.web_cache[query] = results
+                
+                # Add a small delay to be respectful to the server
+                time.sleep(random.uniform(0.5, 1.5))
+                
+                return results
+            
+            return []
+        except Exception as e:
+            return []
+    
+    def search(self, query):
+        """
+        Search for encyclopedia-style clues.
+        
+        Args:
+            query (str): The clue to search for
+            
+        Returns:
+            list: List of possible answers with descriptions
+        """
+        query = query.strip()
+        
+        # Search Wikipedia
+        results = self._search_wikipedia(query)
+        
+        if not results:
+            return [{"answer": "No results found", "description": "Could not find information for this query."}]
+        
+        return results
+
+# Wrapped functions with suppressed output
+@run_silently
+def solve_acronym_clue(clue, csv_file=None):
+    """
+    Find acronyms matching the given clue.
+    
+    Args:
+        clue (str): The clue to find acronyms for
+        csv_file (str, optional): Path to CSV file with acronym data
+        
+    Returns:
+        list: List of possible acronyms
+    """
+    lookup = AcronymLookup(csv_file)
+    result = lookup.search(clue)
+    
+    if result['type'] == 'clue':
+        return [item['acronym'] for item in result['results']]
+    else:
+        # If it was interpreted as an acronym instead of a clue
+        return ["Query was interpreted as an acronym. Try a different query format."]
+
+@run_silently
+def solve_acronym_definition(acronym, csv_file=None):
+    """
+    Find definitions for the given acronym.
+    
+    Args:
+        acronym (str): The acronym to look up
+        csv_file (str, optional): Path to CSV file with acronym data
+        
+    Returns:
+        list: List of possible definitions
+    """
+    lookup = AcronymLookup(csv_file)
+    result = lookup.search(acronym)
+    
+    if result['type'] == 'acronym':
+        return [item['clue'] for item in result['results']]
+    else:
+        # If it was interpreted as a clue instead of an acronym
+        return ["Query was interpreted as a clue. Try a different query format."]
+
+@run_silently
+def solve_encyclopedia(clue):
+    """
+    Find answers for encyclopedia-style clues.
+    
+    Args:
+        clue (str): The clue to find answers for
+        
+    Returns:
+        list: List of possible answers with descriptions
+    """
+    encyclopedia = EncyclopediaLookup()
+    results = encyclopedia.search(clue)
+    
+    return results
+
+# Function to list available CSV files in the data directory
+def list_available_csv_files():
+    """List all CSV files available in the data directory."""
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    project_root = os.path.dirname(current_dir)
+    data_dir = os.path.join(project_root, 'data')
+    
+    if not os.path.exists(data_dir):
+        return ["Data directory not found"]
+    
+    csv_files = [f for f in os.listdir(data_dir) if f.endswith('.csv')]
+    return csv_files
+
+# Simple direct functions with cleaner names
+get_acronym_definition = solve_acronym_definition
+get_acronym_for_clue = solve_acronym_clue
+get_encyclopedia_entry = solve_encyclopedia
+
+# Direct command-line interface
+def direct_command_interface():
+    """
+    Command-line interface for direct lookup without interactive menu.
+    Usage:
+        python acronym_lookup.py acronym NASA
+        python acronym_lookup.py clue "space agency"
+        python acronym_lookup.py encyclopedia "american island"
+    """
+    if len(sys.argv) < 3:
+        print("Usage:")
+        print("  python acronym_lookup.py acronym <ACRONYM>")
+        print("  python acronym_lookup.py clue <CLUE>")
+        print("  python acronym_lookup.py encyclopedia <QUERY>")
+        return
+    
+    command = sys.argv[1].lower()
+    query = sys.argv[2]
+    
+    if command == "acronym":
+        results = get_acronym_definition(query)
+        for result in results:
+            print(result)
+    
+    elif command == "clue":
+        results = get_acronym_for_clue(query)
+        for result in results:
+            print(result)
+    
+    elif command == "encyclopedia":
+        results = get_encyclopedia_entry(query)
+        for result in results:
+            print(f"{result['answer']}")
+            print(f"{result['description']}")
+            if result != results[-1]:  # If not the last result
+                print("-" * 40)  # Print separator
+    
+    else:
+        print(f"Unknown command: {command}")
+        print("Valid commands: acronym, clue, encyclopedia")
+
+# Interactive menu interface (kept for backward compatibility)
+def main():
+    """Interactive demo for testing the lookup functions."""
+    print("Crossword Helper - Lookup Tool")
+    print("-------------------------------")
+    print("1. Solve acronym clue (e.g., 'space agency')")
+    print("2. Find acronym definition (e.g., 'NASA')")
+    print("3. Solve encyclopedia clue (e.g., 'american island')")
+    print("4. List available CSV files in data directory")
+    print("Type 'quit' to exit")
+    
+    while True:
+        choice = input("\nEnter option (1-4): ").strip()
+        
+        if choice.lower() == 'quit':
+            break
+        
+        if choice == '1':
+            clue = input("Enter clue to find acronym: ").strip()
+            results = get_acronym_for_clue(clue)
+            print("\nPossible Acronyms:")
+            for i, result in enumerate(results, 1):
+                print(f"{i}. {result}")
+        
+        elif choice == '2':
+            acronym = input("Enter acronym to define: ").strip()
+            results = get_acronym_definition(acronym)
+            print("\nPossible Definitions:")
+            for i, result in enumerate(results, 1):
+                print(f"{i}. {result}")
+        
+        elif choice == '3':
+            clue = input("Enter encyclopedia clue: ").strip()
+            results = get_encyclopedia_entry(clue)
+            print("\nPossible Answers:")
+            for i, result in enumerate(results, 1):
+                print(f"{i}. {result['answer']}")
+                print(f"   {result['description']}")
+        
+        elif choice == '4':
+            csv_files = list_available_csv_files()
+            print("\nAvailable CSV files in data directory:")
+            for i, file in enumerate(csv_files, 1):
+                print(f"{i}. {file}")
+            
+            # Offer to use a specific CSV file
+            if csv_files:
+                use_specific = input("\nWould you like to use a specific CSV file? (y/n): ").strip().lower()
+                if use_specific == 'y':
+                    try:
+                        file_num = int(input(f"Enter file number (1-{len(csv_files)}): "))
+                        if 1 <= file_num <= len(csv_files):
+                            current_dir = os.path.dirname(os.path.abspath(__file__))
+                            project_root = os.path.dirname(current_dir)
+                            selected_csv = os.path.join(project_root, 'data', csv_files[file_num-1])
+                            
+                            # Test it with a simple lookup
+                            run_silently(AcronymLookup)(selected_csv)
+                            print("CSV file loaded successfully!")
+                    except ValueError:
+                        print("Invalid input. Please enter a number.")
+        
+        else:
+            print("Invalid option. Please choose 1, 2, 3, or 4.")
+
+# Choose the right interface based on how the script is invoked
+if __name__ == "__main__":
+    if len(sys.argv) > 1:
+        # If arguments provided, use direct command interface
+        direct_command_interface()
+    else:
+        # Otherwise use interactive interface
+        main()
