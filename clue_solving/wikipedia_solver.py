@@ -1,6 +1,8 @@
 
 import wikipedia
 
+from clue_classification_and_processing.helpers import get_clues_by_class
+
 # Optional: Set language (default is 'en')
 wikipedia.set_lang("en")
 
@@ -24,3 +26,7 @@ except wikipedia.exceptions.DisambiguationError as e:
 except wikipedia.exceptions.PageError:
     print(f"No page found for '{name}'")
     page_text = None
+
+
+# xxx tbd accomplish this using name given profession reference.xlsx
+b=get_clues_by_class(clue_class="Find name given profession/reference", classification_type="predicted_only", prediction_threshold=0.7)

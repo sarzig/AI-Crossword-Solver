@@ -51,3 +51,6 @@ GitHub Structure
 * grid_solving 
 * bert_models
 * data
+
+Sarah next to do: 
+# xxx tbd accomplish this using name given profession reference.xlsx

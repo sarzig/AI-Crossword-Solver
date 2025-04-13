@@ -333,10 +333,57 @@ def solve_clues_dataframe(clues_df, top_n_classes, solve_class_threshold):
                                  ('Clever synonyms and examples and examples', 0.12)]
      and solve_class_threshold=0.121, only 'Acronym/short form answer' and 'Example of a class' would get solved
 
+    # created by genAI
+
     :param top_n_classes:
     :param clues_df:
     :return:
     """
+    predicted_df = predict_clues_df_from_default_pipeline(clues_df=clues_df,
+                                                          keep_features=False,
+                                                          top_n=top_n_classes)
+
+    solved_answers_list = []
+
+    for _, row in predicted_df.iterrows():
+        clue_text = row.get("clue")
+        # Try both 'answer (optional column, for checking only)' and 'Word'
+        ground_truth_answer = row.get("answer (optional column, for checking only)",
+                                      row.get("Word", None))
+
+        answer_length = len(ground_truth_answer) if isinstance(ground_truth_answer, str) else None
+        if answer_length is None:
+            print(f"[WARNING] No known answer length for clue: '{clue_text}' — some solvers may fail.")
+
+        clue_with_more_info = {
+            "clue_text": clue_text,
+            "answer_length": answer_length,
+            "clue_constraint": None
+        }
+
+        candidate_answers = []
+
+        # Loop through predicted classes and solve if probability is above threshold
+        for clue_type, prob in row["Top_Predicted_Classes"]:
+            if prob >= solve_class_threshold:
+                print(f"\n[INFO] Attempting to solve clue: \"{clue_text}\" | type: '{clue_type}' | prob: {prob:.2f}")
+
+                solved = solve_clue(clue_with_more_info=clue_with_more_info,
+                                    clue_type=clue_type,
+                                    print_bool=False)
+                if solved:
+                    print(f"[SUCCESS] Found answers: {solved}")
+
+                    candidate_answers.extend(solved)
+                else:
+                    print(f"[FAILURE] No answers found for type: {clue_type}")
+
+        # Deduplicate and join into string (or keep as list if preferred)
+        deduped_answers = list(dict.fromkeys(candidate_answers)) if candidate_answers else None
+        solved_answers_list.append(deduped_answers)
+
+    predicted_df["answer_list"] = solved_answers_list
+    return predicted_df
 
 
 ''' Workspace '''
@@ -347,6 +394,8 @@ crossword = get_crossword_from_csv(csv_path)
 all_clues_predicted = predict_clues_df_from_default_pipeline(clues_df=crossword.clue_df,
                                                              keep_features=False,
                                                              top_n=2)
+
+solved_df = solve_clues_dataframe(clues_df=crossword.clue_df, top_n_classes=2, solve_class_threshold=0.8)
 
 # Filter the rows where the 'Top_Predicted_Classes' contains a class with a probability > 0.5
 # filtered_clues = all_clues_predicted[

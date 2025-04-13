@@ -142,41 +142,48 @@ def get_clues_by_class(clue_class="all", classification_type="manual_only", pred
     if classification_type == "predicted_only":
         if prediction_threshold is None:
             prediction_threshold = 0
+
         text = "ML"
         loc = os.path.join(get_project_root(),
                            "data",
                            "clue_classification_ml_pipeline",
                            "all_clues_predicted.csv")
 
-        # read the dataframe from the location
         df = pd.read_csv(loc)
 
-        # Below section is genai
-        # Ensure Top_Predicted_Classes is evaluated as list of tuples (if stored as string)
+        # Ensure Top_Predicted_Classes is parsed if it's a string
         if isinstance(df["Top_Predicted_Classes"].iloc[0], str):
             import ast
             df["Top_Predicted_Classes"] = df["Top_Predicted_Classes"].apply(ast.literal_eval)
 
-        # Filter rows where any of the predicted classes exceeds the threshold
+        # If specific clue class, filter and extract probability
         if clue_class != "all":
-            def meets_threshold(predictions):
-                return any(cls == clue_class and prob >= prediction_threshold for cls, prob in predictions)
+            def extract_prob(predictions):
+                for cls, prob in predictions:
+                    if cls == clue_class:
+                        return prob
+                return 0  # if not found
 
-            df = df[df["Top_Predicted_Classes"].apply(meets_threshold)]
+            df["class_probability"] = df["Top_Predicted_Classes"].apply(extract_prob)
+            df = df[df["class_probability"] >= prediction_threshold]
+            df = df.sort_values("class_probability", ascending=False)
             print(f"Returning ML-classified clues for class '{clue_class}' with threshold ≥ {prediction_threshold}\n")
         else:
             print("Returning ML-classified clues for all classes.\n")
 
         # Keep only relevant columns
         columns_of_interest = ["clue", "Word", "Top_Predicted_Classes"]
+        if clue_class != "all":
+            columns_of_interest.append("class_probability")
+
         available_columns = [col for col in columns_of_interest if col in df.columns]
         df = df[available_columns].copy()
 
-        # Convert clue and Word columns to strings
         for col in ["clue", "Word"]:
             if col in df.columns:
                 df[col] = df[col].astype(str)
-    return df
+
+        return df
 
 
 def get_class_options():
