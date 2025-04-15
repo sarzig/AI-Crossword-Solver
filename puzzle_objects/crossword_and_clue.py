@@ -16,6 +16,7 @@ import random
 import numpy as np
 import pandas as pd
 from clue_classification_and_processing.helpers import get_vocab, get_processed_puzzle_sample_root
+from clue_solving.applying_clue_classification_and_solving_algos import solve_clues_dataframe
 from web.nyt_html_to_standard_csv import get_random_clue_df_from_csv
 from clue_classification_and_processing.helpers import conditional_raise, print_if, get_project_root
 
@@ -249,7 +250,21 @@ def get_mismatch_percentage(crossword1, crossword2):
 
 
 class Crossword:
-    def __init__(self, clue_df, table_name=None, grid_height=0, grid_width=0):
+    def __init__(self, clue_df, table_name=None, grid_height=0, grid_width=0, predict_and_solve_clues=False):
+        """
+        This Crossword option contains a 2-D numpy array of characters, which represents the cells
+        of a crossword. Given a clue_df, this algorithm does rudimentary visualization, has clue placement
+        logic, and can be (?) passed to a visualizer element
+
+        :param clue_df: the input dataframe with columns: number, start_col, start_row, end_col, end_row, clue,
+        	            length (optional column, for checking only), answer (optional column, for checking only)
+
+        :param table_name: optional (currently not used) - the name of the table
+        :param grid_height: this is an optional parameter, used in subsetting algorithms. A full crossword created
+                            from a clues dataframe does NOT need this.
+        :param grid_width: see grid_height
+        :param predict_and_solve_clues: default False. If True, it applies prediction
+        """
 
         # Check the source data meets requirements. If so, store clue_df
         validate_clue_df(df=clue_df, raise_error=True)
@@ -269,6 +284,10 @@ class Crossword:
         # Enrich the clue df by adding "x-across" / "y-down" notation,
         self.enrich_clue_df()
 
+        # IF clue solving is desired, do the first pass of clue solving
+        if predict_and_solve_clues is True:
+            self.solve_self_clues_dataframe()
+
         self.table_name = table_name
 
         # Generate the numpy array to store the solved grid, where spaces with [X] are
@@ -283,6 +302,18 @@ class Crossword:
         # subset list is a dict of Crossword objects where the key is something like "5-Across"
         # or "42-Down"
         self.subset_dict = {}
+
+    def solve_self_clues_dataframe(self, top_n_classes=1, solve_class_threshold=.7, print_bool=False):
+        solved_df = solve_clues_dataframe(clues_df=self.clue_df,
+                                          top_n_classes=top_n_classes,
+                                          solve_class_threshold=solve_class_threshold,
+                                          print_bool=print_bool)
+
+        self.clue_df = self.clue_df.merge(
+            solved_df[["clue", "answer_list"]],
+            on="clue",
+            how="left"
+        )
 
     @staticmethod
     def get_direction(clue_entry):

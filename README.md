@@ -45,12 +45,16 @@ Here are some examples of well-formatted repositories from past semesters: 1)
 * CSP demo
 
 GitHub Structure
-* clue_classification_and_processing
-  * 
+ai_crossword_solver (root / project directory folder) 
+* demo.py
+* clue_classification_and_processing 
+  * Where   
 * clue_solving
-* grid_solving 
-* bert_models
 * data
+* grid_visualization
+* puzzle_objects
+* tests
+* testing_results
 
 Sarah next to do: 
 # xxx tbd accomplish this using name given profession reference.xlsx

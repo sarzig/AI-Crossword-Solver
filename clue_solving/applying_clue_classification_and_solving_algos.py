@@ -42,7 +42,6 @@ from clue_classification_and_processing.helpers import get_project_root, print_i
     get_most_common_clue_word_pair
 from clue_solving.foreign_language import solve_foreign_language
 from clue_solving.synonym_search import get_recursive_synonyms
-from puzzle_objects.crossword_and_clue import get_crossword_from_csv
 from web.nyt_html_to_standard_csv import get_random_clue_df_from_csv
 
 
@@ -136,9 +135,6 @@ def synonym_wrapper(clue_with_more_info):
     clue_text = clue_with_more_info["clue_text"]
     answer_length = clue_with_more_info["answer_length"]
     clue_constraint = clue_with_more_info["clue_constraint"]
-    print(f"clue_with_more_info={clue_with_more_info}")
-
-    print(f"Clue_text={clue_text}")
 
     # Get list of recursive synonyms
     recursive_synonyms = get_recursive_synonyms(clue_text, depth=3)
@@ -271,9 +267,10 @@ def solve_clue(clue_text=None, clue_type=None, clue_with_more_info=None, print_b
 
     # Exit function if solving methodology DNE
     if solving_method is None:
-        print_if(statement=f"Clue '{clue_with_more_info['clue_text']}' was attempted to be solved with "
-                           f"clue_type = '{clue_type}' but no "
-                           f"appropriate solving methodology exists for that clue type.",
+        statement = f"Clue '{clue_with_more_info['clue_text']}' was attempted to be solved with "\
+                    f"clue_type = '{clue_type}' but no " \
+                    f"appropriate solving methodology exists for that clue type."
+        print_if(statement=statement,
                  print_bool=print_bool)
         return None
 
@@ -333,7 +330,7 @@ def stem_recursive_synonyms(recursive_synonyms):
     return new_synonyms
 
 
-def solve_clues_dataframe(clues_df, top_n_classes, solve_class_threshold):
+def solve_clues_dataframe(clues_df, top_n_classes, solve_class_threshold, print_bool=False):
     """
     Given a clues dataframe with columns "clue", "word" or "answer (optional column, for checking only)"
     this predicts the top_n_classes and then applies the solving algorithms on
@@ -363,7 +360,7 @@ def solve_clues_dataframe(clues_df, top_n_classes, solve_class_threshold):
 
         answer_length = len(ground_truth_answer) if isinstance(ground_truth_answer, str) else None
         if answer_length is None:
-            print(f"[WARNING] No known answer length for clue: '{clue_text}' — some solvers may fail.")
+            print_if(f"[WARNING] No known answer length for clue: '{clue_text}' — some solvers may fail.", print_bool)
 
         clue_with_more_info = {
             "clue_text": clue_text,
@@ -376,17 +373,17 @@ def solve_clues_dataframe(clues_df, top_n_classes, solve_class_threshold):
         # Loop through predicted classes and solve if probability is above threshold
         for clue_type, prob in row["Top_Predicted_Classes"]:
             if prob >= solve_class_threshold:
-                print(f"\n[INFO] Attempting to solve clue: \"{clue_text}\" | type: '{clue_type}' | prob: {prob:.2f}")
+                print_if(f"\n[INFO] Attempting to solve clue: \"{clue_text}\" | type: '{clue_type}' | prob: {prob:.2f}", print_bool)
 
                 solved = solve_clue(clue_with_more_info=clue_with_more_info,
                                     clue_type=clue_type,
                                     print_bool=False)
                 if solved:
-                    print(f"[SUCCESS] Found answers: {solved}")
+                    print_if(f"[SUCCESS] Found answers: {solved}", print_bool)
 
                     candidate_answers.extend(solved)
                 else:
-                    print(f"[FAILURE] No answers found for type: {clue_type}")
+                    print_if(f"[FAILURE] No answers found for clue type: '{clue_type}'",  print_bool)
 
         # Deduplicate and join into string (or keep as list if preferred)
         deduped_answers = list(dict.fromkeys(candidate_answers)) if candidate_answers else None
