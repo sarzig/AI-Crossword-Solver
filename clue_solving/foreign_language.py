@@ -1,9 +1,17 @@
+import pandas as pd
 import requests
 import time
 import random
 import re
 from urllib.parse import urlencode
 
+import sys
+import os
+
+# Add the parent directory to the module search path so that we can import project files
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+
+from clue_classification_and_processing.helpers import get_clues_by_class
 
 ######################################################################################################
 # True Bidirectional Foreign Language Translation for Crosswords
@@ -590,11 +598,56 @@ def solve_foreign_language(clue):
 ######################################################################################################
 
 if __name__ == "__main__":
+    # Get all foreign language clues
+    foreign_language_clues = get_clues_by_class(clue_class="Foreign language", classification_type="manual_only")
+    
+    # Create a DataFrame from the clues
+    df = pd.DataFrame(foreign_language_clues, columns=["ID", "Clue", "Word", "Class"])
+    
+    # Add a new column to indicate translation status
+    df['TranslationStatus'] = False  # Initialize all to False
+    
+    # Try to translate each clue and update the TranslationStatus column
+    for index, row in df.iterrows():
+        clue = row["Clue"]
+        
+        # Try to parse the clue
+        parsed_result = extract_translation_request(clue)
+        
+        # Set TranslationStatus to True if the clue can be parsed (can be translated)
+        if parsed_result:
+            df.at[index, 'TranslationStatus'] = True
+    
+    # Define the output filename
+    output_filename = "foreign_language_clues.csv"
+    
+    # Save to CSV file in the same directory as the script
+    df.to_csv(output_filename, index=False)
+    
+    print(f"Foreign language clues saved to {output_filename}")
+    print(f"Added 'TranslationStatus' column: True = can be translated, False = cannot be translated")
+    
+    # Interactive mode for testing translations
     while True:
+
+        foreign_language_clues = get_clues_by_class(clue_class="Foreign language", classification_type="manual_only")
+
+        # print("foreign_language_clues: \n", foreign_language_clues)
+
+        # Create a DataFrame from the clues
+        df = pd.DataFrame(foreign_language_clues, columns=["ID", "Clue", "Word", "Class"])
+
+        output_filename = "foreign_language_clues.csv"
+
+        # Save to CSV file in the same directory as the script
+        df.to_csv(output_filename, index=False)
+
+        print(f"Foreign language clues saved to {output_filename}")
+
         clue_input = input("\nEnter clue (or 'exit' to quit): ")
         if clue_input.lower() == 'exit':
             break
-
+        
         # Parse the clue and translate
         parsed_result = extract_translation_request(clue_input)
         if parsed_result:
@@ -603,6 +656,6 @@ if __name__ == "__main__":
             print(translated_answer)  # Output only the translation
         else:
             print("Error")  # Only display "Error" if the clue could not be parsed
-
+        
         # No additional text or prompts after showing the translation
         continue  # Moves directly to the next iteration to accept a new clue
