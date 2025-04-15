@@ -310,7 +310,7 @@ class Crossword:
                                           print_bool=print_bool)
 
         self.clue_df = self.clue_df.merge(
-            solved_df[["clue", "answer_list"]],
+            solved_df[["clue", "answer_list", "Top_Predicted_Classes"]],
             on="clue",
             how="left"
         )
@@ -374,7 +374,6 @@ class Crossword:
         self.clue_df["length"] = self.clue_df.apply(self.get_length, axis=1)
         # a value like "guaranteed", "answer guaranteed in list", "answer likely in list":
         self.clue_df["answer_certainty"] = ""
-        self.clue_df["answer_list"] = self.clue_df.apply(lambda _: [], axis=1)
         self.clue_df["placed_answer"] = ""
 
         # If optional column is included, use it to check lengths and then delete that optional column

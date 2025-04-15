@@ -373,7 +373,7 @@ def solve_clues_dataframe(clues_df, top_n_classes, solve_class_threshold, print_
         # Loop through predicted classes and solve if probability is above threshold
         for clue_type, prob in row["Top_Predicted_Classes"]:
             if prob >= solve_class_threshold:
-                print_if(f"\n[INFO] Attempting to solve clue: \"{clue_text}\" | type: '{clue_type}' | prob: {prob:.2f}", print_bool)
+                print_if(f"\n[INFO] Attempting to solve clue: \"{clue_text}\" | type: '{clue_type}' | probability of clue type: {prob*100:.0f}%", print_bool)
 
                 solved = solve_clue(clue_with_more_info=clue_with_more_info,
                                     clue_type=clue_type,
