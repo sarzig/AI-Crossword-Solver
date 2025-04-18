@@ -1,4 +1,6 @@
-# AI Crossword Solver - CS5100 Foundation of AI Project
+# New York Times A.I. Crossword Solver - CS5100 Foundations of A.I. Project
+
+Eroniction~ Can you please add a gif of the visualization right here? !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 ## Team Members
 - Eroniction
@@ -7,50 +9,32 @@
 - Swathi
 
 ## Project Overview and Motivation
-Our team of 4 members (Eroniction, Sarah, Sheryl, and Swathi) are all big fans of games, puzzles, and natural language processing. For our semester-long CS5100 Foundation of AI project, we are creating an AI agent that tackles the most pressing challenge one can undertake in their pajamas with a cup of coffee in hand: The New York Times crossword. 
+Our team of 4 members (Eroniction, Sarah, Sheryl, and Swathi) are all fans of games, puzzles, and natural language processing. For our semester-long CS5100 Foundation of AI project, we are creating an AI agent that tackles the most pressing challenge one can undertake in their pajamas with a cup of coffee in hand: The New York Times crossword.
 
-## Objectives
-- tbd
+## Getting Started: how to run this project 
+1. Install requirements from requirements.txt
+2. Download BERT model from Hugging Face
+3. Ensure project root directory is named "ai_crossword_solver"
+4. Run demo.py to be taken on an interactive walk through 
 
-## Technologies & Tools
-- tbd
-
-## Approach
-- tbd
-xxx tbd fill this out, add some nice gifs, images
-xxx tbd need some environment file where we freeze reqs and let TAs know what they'll 
-- need to run our code
-
-xxx tbd notes on what to do for read me very important
-2.5.2 GitHub Repository
-The implementation of your course project should be submitted as a public GitHub repos-
-itory, which should be well-organized with modular, re-usable, and properly commented
-code. 
-
-Throughout the semester, each student must commit their work to this reposi-
-tory to establish a history of contributions, which will be a factor in your final grade.
-
-All repositories must also include a detailed Read-Me file with instructions to recreate an
-appropriate environment and any necessary packages, and a walkthrough on how to
-run your code. Jupyter notebooks are not an acceptable submission format for the final
-project, but may be used solely for any data cleaning and preprocessing steps. If so,
-include the notebook and detailed documentation for the user in your GitHub repository.
-Here are some examples of well-formatted repositories from past semesters: 1)
-
-# Things we need to be able to point our ta to do
-* install requirements
-* do k-means clustering and/or the random forest (can also have some demo files to look at)
-* Create a Crossword data object and then visualize it - eroniction, this needs to be something the TA can really easily do!
-* Demonstration of the few solving algorithms we came up with
-* CSP demo
-
-GitHub Structure
-* clue_classification_and_processing
-  * 
-* clue_solving
-* grid_solving 
-* bert_models
-* data
-
-Sarah next to do: 
-# xxx tbd accomplish this using name given profession reference.xlsx
+## GitHub Structure
+* ai_crossword_solver (root / project directory folder) 
+  * demo.py - the step-by-step examples of the various key parts of our project
+  * requirements.txt - the requirements file you'll need to run our code
+  * clue_classification_and_processing 
+    * Where k-means and machine learning work occurred to *classify* clues by clue type
+  * clue_solving
+    * Clue solving algorithms (Wikipedia search, foreign language, synonym)
+    * BERT Similarity ranking
+    * Constraint Solving Problem pattern matching
+  * data
+    * NYT dataset (nytcrosswords.csv)
+    * puzzle samples (raw HTML from web scraping and processed CSVs)
+  * grid_visualization
+    * PyGame visualization framework
+  * puzzle_objects
+    * The "Crossword" data structure, subsetting algorithms, and clue placing algorithms
+  * tests
+    * PyTest tests
+  * testing_results
+    * CSP, Bert, and other test results

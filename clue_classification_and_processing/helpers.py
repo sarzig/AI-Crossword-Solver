@@ -73,6 +73,13 @@ def cool_error(error):
     raise error
 
 
+def header_print(text_to_print):
+    text = f"""\n\n######################################################################################################
+# {text_to_print}
+######################################################################################################"""
+    print(text)
+
+
 def get_clues_by_class(clue_class="all", classification_type="manual_only", prediction_threshold=None):
     """
     This queries two datasets:
@@ -136,6 +143,7 @@ def get_clues_by_class(clue_class="all", classification_type="manual_only", pred
 
     # If looking for only predicted, then just use the full_clue set and assign predictions
     # Only get clues that have prediction threshold over 0.8
+    # Predicted portion is quick, hacky, and genai massaged slightly by yours truly (SWitzig)
     if classification_type == "predicted_only":
         if prediction_threshold is None:
             prediction_threshold = 0
