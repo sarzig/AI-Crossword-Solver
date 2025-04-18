@@ -13,7 +13,7 @@ Our team of 4 members (Eroniction, Sarah, Sheryl, and Swathi) are all fans of ga
 
 ## Getting Started: how to run this project 
 1. Install requirements from requirements.txt
-2. Download BERT model from xxx Sheryl xxx !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+2. Download BERT model from Hugging Face
 3. Ensure project root directory is named "ai_crossword_solver"
 4. Run demo.py to be taken on an interactive walk through 
 
@@ -25,6 +25,8 @@ Our team of 4 members (Eroniction, Sarah, Sheryl, and Swathi) are all fans of ga
     * Where k-means and machine learning work occurred to *classify* clues by clue type
   * clue_solving
     * Clue solving algorithms (Wikipedia search, foreign language, synonym)
+    * BERT Similarity ranking
+    * Constraint Solving Problem pattern matching
   * data
     * NYT dataset (nytcrosswords.csv)
     * puzzle samples (raw HTML from web scraping and processed CSVs)

@@ -55,7 +55,7 @@ time.sleep(2)
 ######################################################################################################
 # Show the visualization of the crossword - Eroniction
 ######################################################################################################
-
+# Eroniction - can you please place some visualization piece here to demo?
 
 ######################################################################################################
 # Add multi-word and OOV (out of vocabulary) words
@@ -92,12 +92,14 @@ filtered_df = crossword.clue_df[
 
 # Rename the columns as specified
 filtered_df_renamed = filtered_df.rename(columns={
+    'number_direction': '#',
+    'clue': 'Clue',
     'answer (optional column, for checking only)': 'Actual Answer',
-    'answer_list': 'Potential answer list'
+    'answer_list': 'Potential Answer List'
 })
 
 print("These are the potential answer lists of the clues which DID have solving algorithms applied.\n")
-print(tabulate(filtered_df_renamed[['number_direction', 'clue', 'Actual Answer', 'Potential answer list', "Top_Predicted_Classes"]],
+print(tabulate(filtered_df_renamed[['#', 'Clue', 'Actual Answer', "Top_Predicted_Classes", 'Potential Answer List']],
                headers='keys', tablefmt='rounded_outline', showindex=False))
 
 
