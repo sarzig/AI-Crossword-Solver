@@ -14,7 +14,6 @@ It does the following:
 """
 import os
 import time
-
 import pandas as pd
 from tabulate import tabulate
 from clue_classification_and_processing.helpers import get_project_root, header_print
@@ -103,7 +102,8 @@ print(tabulate(filtered_df_renamed[['#', 'Clue', 'Actual Answer', "Top_Predicted
                headers='keys', tablefmt='rounded_outline', showindex=False))
 
 
-
 ######################################################################################################
 # CSP and Bert - Sheryl
 ######################################################################################################
+
+
