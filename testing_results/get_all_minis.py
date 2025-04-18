@@ -3,6 +3,11 @@
 #########################################################################################
 
 # Step 1: Find all mini puzzle files
+import os
+import re
+from clue_classification_and_processing.helpers import get_project_root
+
+
 puzzle_dir = f"{get_project_root()}/data/puzzle_samples/processed_puzzle_samples"
 all_files = os.listdir(puzzle_dir)
 

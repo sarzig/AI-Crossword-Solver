@@ -1,26 +1,31 @@
-def auto_place_clues(cw, clue_answer_map, verbose=True):
-    """
-    Places words in the crossword for a provided mapping of clue variable → answer.
-
-    Parameters:
-    - cw: Crossword object
-    - clue_answer_map: dict of format { "1-Across": "apple", "3-Down": "zebra", ... }
-    - verbose: if True, prints placement results
-    """
+def auto_place_clues(cw, clue_answer_map, verbose=False):
     placed = []
     failed = []
 
+    # Create a set of valid clue labels from the crossword
+    valid_clues = set(cw.clue_df["number_direction"].dropna().astype(str))
+
     for var, answer in clue_answer_map.items():
+        if var not in valid_clues:
+            failed.append((var, answer, "Clue not found in crossword"))
+            continue
+
         try:
             answer = answer.strip().lower()
             cw.place_word(answer, var)
             placed.append((var, answer))
-            if verbose:
-                print(f"✅ Placed: {var} → '{answer}'")
         except Exception as e:
             failed.append((var, answer, str(e)))
-            if verbose:
-                print(f"❌ Failed to place: {var} → '{answer}' | Error: {e}")
+
+    if verbose:
+        if placed:
+            print("\n✅ Successfully Placed:")
+            print("  " + " | ".join([f"{var}: '{ans}'" for var, ans in placed]))
+
+        if failed:
+            print("\n❌ Failed to Place:")
+            for var, ans, err in failed:
+                print(f"  {var}: '{ans}' | Error: {err}")
 
     print(f"\n📌 Summary:")
     print(f"  ✅ Placed {len(placed)} clues successfully.")

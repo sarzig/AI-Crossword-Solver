@@ -6,7 +6,7 @@ from tqdm import tqdm
 
 from clue_classification_and_processing.helpers import get_project_root
 from clue_solving.BERT_similarity_ranking import generate_variables_domains_constraints_from_crossword_ranked, get_true_answers, print_clues_and_answers, rank_csp_solutions
-from clue_solving.csp_pattern_matching import get_filled_words, load_crossword_from_file_with_answers, solve_in_two_phases
+from clue_solving.csp_pattern_matching import generate_variables_domains_constraints_from_crossword, get_filled_words, load_crossword_from_file_with_answers, solve_in_two_phases
 from clue_solving.letter_pattern_matching import find_words_by_pattern
 
 from testing_results.auto_place_clues import auto_place_clues
@@ -42,7 +42,7 @@ from testing_results.auto_place_clues import auto_place_clues
 
 model.eval()
 
-mini_loc = f"{get_project_root()}/data/puzzle_samples/processed_puzzle_samples/mini_2024_03_02.csv"
+mini_loc = f"{get_project_root()}/data/super_mini_3x3.csv"
 
 cw = load_crossword_from_file_with_answers(mini_loc)
 
@@ -69,27 +69,17 @@ print_clues_and_answers(cw)
 #   11-Down: Got bigger → grew
 #   13-Down: Piece of podcasting equipment → mic
 
-# clue_answer_map = {
-#     "1-Across": "math",
-#     # "5-Across": "alumni",
-#     # "8-Across": "mormon",
-#     # "9-Across": "ann",
-#     "10-Across": "rbg",
-#     "12-Across": "simmer",
-#     "14-Across": "opiate",
-#     "15-Across": "claw",
-#     "1-Down": "mama",
-#     # "2-Down": "alonso",
-#     # "3-Down": "turnip",
-#     # "4-Down": "hmm",
-#     # "6-Down": "normal",
-#     # "7-Down": "inbeta",
-#     # "11-Down": "grew",
-#     # "13-Down": "mic"
-# }
+clue_answer_map = {
+    "4-Across": "can",
+    # "5-Across": "age",
+    # "6-Across": "row",
+    "1-Down": "car",
+    "2-Down": "ago",
+    # "3-Down": "new",
+}
 
 # # top k = 1000, 3/5 solutions, top one correct
-clue_answer_map = {'10-Across': 'RBG', '14-Across': 'OPIATE', '15-Across': 'CLAW', '2-Down': 'ALONSO', "1-Down": "mama", "4-Down": "hmm"}
+# clue_answer_map = {'10-Across': 'RBG', '14-Across': 'OPIATE', '15-Across': 'CLAW', '2-Down': 'ALONSO', "1-Down": "mama", "4-Down": "hmm"}
 
 # # top k = 2000, gets solutions but took 15 minutes+ didnt finish, 7000+ solutions
 # clue_answer_map = {'10-Across': 'RBG', '14-Across': 'OPIATE', '15-Across': 'CLAW', '2-Down': 'ALONSO', "1-Down": "mama"}
@@ -104,8 +94,12 @@ cw.detailed_print()
 filled = get_filled_words(cw)
 print(f"filled words: {filled}")
 
+# variables, domains, constraints = variables, domains, constraints = generate_variables_domains_constraints_from_crossword(
+#     cw
+# )
+
 variables, domains, constraints = variables, domains, constraints = generate_variables_domains_constraints_from_crossword_ranked(
-    cw, tokenizer=tokenizer, model=model, top_k=1000, device=device
+    cw, tokenizer=tokenizer, model=model, top_k=1000000, device=device
 )
 
 for var, domain in domains.items():
