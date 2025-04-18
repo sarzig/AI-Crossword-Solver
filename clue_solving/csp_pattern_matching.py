@@ -266,7 +266,7 @@ def find_all_valid_full_extensions(base_assignment, variables, domains, constrai
     return results
 
 # Solve CSP
-def solve_in_two_phases(variables, domains, constraints, domain_threshold=100, verbose=True, freq_table=None, assignment=None):
+def solve_in_two_phases(cw, variables, domains, constraints, domain_threshold=100, verbose=True, freq_table=None, assignment=None):
     from tqdm import tqdm
 
     # 1. Split variables
@@ -281,38 +281,53 @@ def solve_in_two_phases(variables, domains, constraints, domain_threshold=100, v
     # Filter constraints that only involve small domain vars
     filtered_constraints = [c for c in constraints if c[0] in small_domain_vars and c[1] in small_domain_vars]
 
+  
+
     # 2. Solve CSP on small domain variables
     base_solutions = solve_all_max_partial_csp(small_domain_vars, domains, filtered_constraints, freq_table=freq_table, assignment=assignment, tqdm_enabled=True)
 
-    if not base_solutions:
-        print("❌ No base partial solutions found.")
-        return []
+    # if not base_solutions:
+    #     print("❌ No base partial solutions found.")
+    #     return []
 
-    all_extensions = []
-    for i, base in enumerate(base_solutions):
+    complete_solutions = []
+    incomplete_bases = []
+
+    for base in base_solutions:
+        if set(variables).issubset(base.keys()):
+            complete_solutions.append(base)
+        else:
+            incomplete_bases.append(base)
+
+    if verbose:
+        print(f"✅ {len(complete_solutions)} base solutions are already complete.")
+        print(f"🔁 {len(incomplete_bases)} need to be extended.")
+
+    # If all are complete, return early
+    if not incomplete_bases:
+        return complete_solutions
+    
+    # Otherwise extend the incomplete ones
+    for i, base in enumerate(incomplete_bases):
         if verbose:
-            print(f"🧹 Max partial {i+1} from Phase 1:")
+            print(f"🔁 Extending base partial {i+1}/{len(incomplete_bases)}...")
             for k in sorted(base):
                 print(f"  {k}: {base[k]}")
 
-        if len(base) == len(variables):
-            print("✅ Partial is already complete! No need to extend.")
-            all_extensions.append(base)
-            continue
-
-        print(f"🔁 Extending base partial {i+1}...")
         extensions = find_all_valid_full_extensions(base, variables, domains, constraints, verbose=False, freq_table=freq_table)
-
+        
         if not extensions:
-            print("❌ No valid extensions found from this base.")
+            if verbose:
+                print("❌ No valid extensions found from this base.")
         else:
-            print(f"✅ Found {len(extensions)} valid full extensions from this base.")
-            all_extensions.extend(extensions)
+            if verbose:
+                print(f"✅ Found {len(extensions)} valid full extensions from this base.")
+            complete_solutions.extend(extensions)
 
-        # Auto-place if only one solution
-    if len(all_extensions) == 1:
+    # Auto-place if only one
+    if len(complete_solutions) == 1:
         print("🔧 Placing words from the unique solution into the crossword...")
-        solution = all_extensions[0]
+        solution = complete_solutions[0]
         for var, word in solution.items():
             try:
                 cw.place_word(word, var)
@@ -320,7 +335,44 @@ def solve_in_two_phases(variables, domains, constraints, domain_threshold=100, v
             except Exception as e:
                 print(f"  ❌ Could not place {word} in {var}: {e}")
 
-    return all_extensions
+    return complete_solutions
+
+    # if len(base_solutions) == 1:
+    #     return base_solutions
+
+    # all_extensions = []
+    # for i, base in enumerate(base_solutions):
+    #     if verbose:
+    #         print(f"🧹 Max partial {i+1} from Phase 1:")
+    #         for k in sorted(base):
+    #             print(f"  {k}: {base[k]}")
+
+    #     if set(variables).issubset(base.keys()):
+    #         print("✅ Partial is already complete! No need to extend.")
+    #         all_extensions.append(base)
+    #         continue
+
+    #     print(f"🔁 Extending base partial {i+1}...")
+    #     extensions = find_all_valid_full_extensions(base, variables, domains, constraints, verbose=False, freq_table=freq_table)
+
+    #     if not extensions:
+    #         print("❌ No valid extensions found from this base.")
+    #     else:
+    #         print(f"✅ Found {len(extensions)} valid full extensions from this base.")
+    #         all_extensions.extend(extensions)
+
+    #     # Auto-place if only one solution
+    # if len(all_extensions) == 1:
+    #     print("🔧 Placing words from the unique solution into the crossword...")
+    #     solution = all_extensions[0]
+    #     for var, word in solution.items():
+    #         try:
+    #             cw.place_word(word, var)
+    #             print(f"  ✅ Placed {word} in {var}")
+    #         except Exception as e:
+    #             print(f"  ❌ Could not place {word} in {var}: {e}")
+
+    # return all_extensions
 
 #########################################################################################
 # Generate variables, domains, constraints 
@@ -488,12 +540,12 @@ def load_crossword_from_file_with_answers(file_name):
     # Normalize column names
     df.columns = [col.strip().lower() for col in df.columns]
 
-    # Rename known optional columns if they exist
-    if "answer (optional column, for checking only)" in df.columns:
-        df.rename(columns={"answer (optional column, for checking only)": "answer"}, inplace=True)
+    # # Rename known optional columns if they exist
+    # if "answer (optional column, for checking only)" in df.columns:
+    #     df.rename(columns={"answer (optional column, for checking only)": "answer"}, inplace=True)
 
-    if "length (optional column, for checking only)" in df.columns:
-        df.rename(columns={"length (optional column, for checking only)": "length"}, inplace=True)
+    # if "length (optional column, for checking only)" in df.columns:
+    #     df.rename(columns={"length (optional column, for checking only)": "length"}, inplace=True)
 
     # Pass cleaned DataFrame into Crossword
     cw = Crossword(clue_df=df)

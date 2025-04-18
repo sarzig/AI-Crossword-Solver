@@ -19,9 +19,9 @@ nyt_answers = load_nyt_answers()  # Load answers
 # Merge both vocabularies
 combined_vocab = word_list.union(nyt_answers)
 
-with open("combined_vocab.txt", "w", encoding="utf-8") as f:
-    for word in sorted(combined_vocab):
-        f.write(word + "\n")
+# with open("combined_vocab.txt", "w", encoding="utf-8") as f:
+#     for word in sorted(combined_vocab):
+#         f.write(word + "\n")
 
 # print(f"Original NLTK vocab: {len(word_list):,}")
 # print(f"NYT answers: {len(nyt_answers):,}")
@@ -41,7 +41,7 @@ def find_words_by_pattern(pattern):
 # # print("jazzy" in word_list)
 # # print("tiara" in word_list)
 # # print("blitz" in word_list)
-# # print("shy" in word_list)
+print("egrets" in combined_vocab)
 
 # print(len(word_list))
 
