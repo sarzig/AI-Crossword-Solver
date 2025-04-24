@@ -4,7 +4,6 @@
 BERT_models_dont_upload/
 BERT_models/bert_training_pairs.csv
 BERT_models/bert_training_pairs_with_easy_and_hard_negatives.csv
-BERT_models_dont_upload/
 bert_rerank_eval_log.json
 data/super_mini_3x3.csv
 results/

@@ -2,7 +2,7 @@ import torch.nn as nn
 from transformers import BertModel
 
 class ClueBertRanker(nn.Module):
-    def __init__(self, pretrained_model="bert-base-uncased"):
+    def __init__(self, pretrained_model="sdeakin/cluebert-model"):
         super().__init__()
         self.bert = BertModel.from_pretrained(pretrained_model)
         self.score = nn.Linear(self.bert.config.hidden_size, 1)

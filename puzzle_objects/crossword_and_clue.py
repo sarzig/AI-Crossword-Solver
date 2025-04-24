@@ -993,7 +993,6 @@ class Crossword:
         if row.empty:
             raise ValueError(f"No clue found for {number_direction}")
 
-<<<<<<< HEAD
         row = row.iloc[0]
         start_row, start_col = row["start_row"], row["start_col"]
         length = row["length"]
@@ -1005,18 +1004,6 @@ class Crossword:
         else:
             raise ValueError(f"Invalid clue direction: {number_direction}")
 
-
-# # Sheryl - try this
-# crossword = get_crossword_from_csv("crossword_2025_01_20.csv")
-# subsets, subset_lookup_dict = crossword.get_all_subset_dict(overlap_threshold=1)
-# for id in subsets.keys():
-#     print("__________________________________________________________")
-#     print(f"id={id}")
-#     subsets[id]["crossword"].detailed_print()
-#     print(f'number clues={subsets[id]["number_clues"]}')
-
-=======
->>>>>>> main
 
 def get_random_clue_df(puzzle_type="any", return_filename=False, force_previous=True):
     """

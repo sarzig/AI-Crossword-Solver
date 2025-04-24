@@ -186,20 +186,6 @@ class CrosswordVisualizer:
         pygame.quit()
         sys.exit()
 
-# def place_solution_on_grid(self, solution_dict, highlight_color=(0, 255, 0)):
-#     newly_placed = []
-
-#     for clue_numdir, answer in solution_dict.items():
-#         success = self.crossword.place_word(answer.upper(), clue_numdir)
-#         if success:
-#             newly_placed.append((clue_numdir, answer.upper()))
-
-#     self.refresh(self.crossword, highlights=newly_placed, highlight_color=highlight_color)
-
-#     pygame.display.flip()
-#     pygame.time.wait(1)  # short pause to see the color
-#     self.refresh(self.crossword)  # redraw without highlights
-#     pygame.display.flip()
 
     def place_solution_on_grid(self, solution_dict):
         self.recently_placed = set(solution_dict.keys())  # <-- store keys like "48-Across"

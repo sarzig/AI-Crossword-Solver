@@ -68,7 +68,8 @@ def rank_candidates_batch(clue_answer_pairs, tokenizer, model, device="cuda", ba
             inputs = tokenizer(texts, return_tensors="pt", padding=True, truncation=True).to(device)
             with torch.inference_mode():
                 outputs = model(**inputs)
-                batch_scores = outputs.logits.detach().cpu().tolist()
+                batch_scores = outputs.squeeze().detach().cpu().tolist()
+                # batch_scores = outputs.logits.squeeze().detach().cpu().tolist()
             scores.extend(batch_scores)
         except RuntimeError as e:
             if "out of memory" in str(e):

@@ -19,6 +19,34 @@ from tabulate import tabulate
 from clue_classification_and_processing.helpers import get_project_root, header_print
 from puzzle_objects.crossword_and_clue import get_crossword_from_csv
 
+import nltk
+nltk.download('punkt')
+
+# file: helpers/nltk_setup.py
+import os
+import nltk
+
+# Auto-download required NLTK resources
+
+def setup_nltk():
+    nltk_dir = os.path.join(os.path.expanduser("~"), "nltk_data")
+    os.makedirs(nltk_dir, exist_ok=True)
+    nltk.data.path.append(nltk_dir)
+
+    required = ["punkt", "averaged_perceptron_tagger"]
+
+    for res in required:
+        try:
+            nltk.data.find(f"tokenizers/{res}" if res == "punkt" else f"taggers/{res}")
+        except LookupError:
+            print(f"'{res}' not found. Downloading...")
+            nltk.download(res, download_dir=nltk_dir)
+            print(f"✅ Downloaded '{res}'")
+
+setup_nltk()
+
+
+
 ######################################################################################################
 # Get crossword object from file
 ######################################################################################################
@@ -105,5 +133,18 @@ print(tabulate(filtered_df_renamed[['#', 'Clue', 'Actual Answer', "Top_Predicted
 ######################################################################################################
 # CSP and Bert - Sheryl
 ######################################################################################################
+import subprocess
+import os
+from clue_classification_and_processing.helpers import get_project_root
+
+header_print('# CSP and BERT Solver (running csp_and_pruning_pipeline.py)')
+
+# BERT similarity ranker to get clue answer map (doesn't return the same thing everytime)
+
+
+# Clue Answer map in the pipeline to reduce errors or differentiating results
+
+pipeline_path = os.path.join(get_project_root(), "grid_solving", "csp_and_pruning_pipeline.py")
+subprocess.run(["python", pipeline_path], check=True)
 
 
