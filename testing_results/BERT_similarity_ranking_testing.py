@@ -21,8 +21,13 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print(f"Using device: {device}")
 
 # Load tokenizer and model once, move model to device
-tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
-model = BertForSequenceClassification.from_pretrained("textattack/bert-base-uncased-SST-2").to(device)
+# tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
+# model = BertForSequenceClassification.from_pretrained("textattack/bert-base-uncased-SST-2").to(device)
+
+from transformers import T5Tokenizer, T5ForConditionalGeneration
+
+model = T5ForConditionalGeneration.from_pretrained("sdeakin/t5-clue2answer")
+tokenizer = T5Tokenizer.from_pretrained("sdeakin/t5-clue2answer")
 
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
 # tokenizer = AutoTokenizer.from_pretrained("microsoft/deberta-v3-small")
