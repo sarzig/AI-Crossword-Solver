@@ -252,7 +252,7 @@ def test_wikipedia_search(sample_size=10, output_file="\testing_results\wikipedi
     results = []  # Store evaluation results
 
     for index, row in sample_df.iterrows(): 
-        clue = row["Clue"]
+        clue = row["clue"]
         answer = row["Word"].strip().lower() 
 
         print(f"\n ({index+1}/{sample_size}) Searching Wikipedia for: {clue} (Expected answer: {answer})")
@@ -291,7 +291,7 @@ def test_wikipedia_search(sample_size=10, output_file="\testing_results\wikipedi
         
         # Store the result
         results.append({
-            "Clue": clue,
+            "clue": clue,
             "Expected Answer": answer,
             "Wikipedia Page Title": matched_page_title,  # Store title if found in content
             "Title Match": title_match,

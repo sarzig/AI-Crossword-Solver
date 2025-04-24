@@ -1,3 +1,21 @@
+"""
+Author: Sarah
+
+xxx tbd: can I get this working?
+
+Purpose of this page is to find the best match Wikipedia page 
+given a clue. Typically, it would be a proper noun, but could also be a noun in general.
+
+This page also provides processing functions to pre-process the wikipedia dump page
+which contains all English language titles.
+
+* get_filename_wikipedia_dump() - getter for wikipedia dump page (english lang. titles)
+* preprocess_wikipedia_page_name(line, remove_underscore=True, down_case=True, human_name_optimize=False)
+  - helper for get_all_wikipedia_pages(remove_underscore=True, down_case=True, human_name_optimize=False)
+* get_all_wikipedia_pages(remove_underscore=True, down_case=True, human_name_optimize=False)
+  - converts the wiki title dump page (titles of al english articles)
+"""
+
 import os
 import re
 import string
@@ -10,20 +28,6 @@ from fuzzywuzzy import fuzz
 from fuzzywuzzy import process
 from clue_classification_and_processing.helpers import get_project_root
 
-"""
-Purpose of this page is to find the best match Wikipedia page 
-given a clue. Typically it would be a proper noun, but could also be a noun in general. 
-
-This page also provides processing functions to pre-process the wikipedia dump page
-which contains all English language titles.
-
-* get_filename_wikipedia_dump() - getter for wikipedia dump page (english lang. titles)
-* preprocess_wikipedia_page_name(line, remove_underscore=True, down_case=True, human_name_optimize=False)
-  - helper for get_all_wikipedia_pages(remove_underscore=True, down_case=True, human_name_optimize=False)
-* get_all_wikipedia_pages(remove_underscore=True, down_case=True, human_name_optimize=False)
-  - converts the wiki title dump page (titles of al english articles)
-
-"""
 
 LOAD_SPACY = False
 if LOAD_SPACY:
@@ -406,7 +410,7 @@ def find_in_wiki(wiki, clues_df):
 '''
 time_init = time.time()
 clues = get_clues_dataframe()
-clues["Clue_clean"] = clues["Clue"].str.replace(rf"[{string.punctuation}]", "", regex=True)
+clues["Clue_clean"] = clues["clue"].str.replace(rf"[{string.punctuation}]", "", regex=True)
 
 # Then filter based on presence of a capital letter after the first character
 clues = clues[clues["Clue_clean"].str[1:].str.contains(r'[A-Z]')].reset_index(drop=True)
@@ -415,9 +419,9 @@ clues = clues[clues["Clue_clean"].str[1:].str.contains(r'[A-Z]')].reset_index(dr
 clues = clues.drop(columns=["Clue_clean"])
 
 clues = clues.head(100000)
-clues["proper_nouns"] = clues["Clue"].apply(extract_wikipedia_search_terms_proper_nouns)
-clues["named_entities"] = clues["Clue"].apply(extract_wikipedia_search_terms_named_entities)
-#clues["proper_nouns_and_named_entities"] = clues["Clue"].apply(extract_wikipedia_search_terms)
+clues["proper_nouns"] = clues["clue"].apply(extract_wikipedia_search_terms_proper_nouns)
+clues["named_entities"] = clues["clue"].apply(extract_wikipedia_search_terms_named_entities)
+#clues["proper_nouns_and_named_entities"] = clues["clue"].apply(extract_wikipedia_search_terms)
 time_end = time.time()
 
 clues.to_excel("Wikipedia named entity search2.xlsx")

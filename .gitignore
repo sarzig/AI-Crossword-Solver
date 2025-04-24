@@ -15,3 +15,25 @@ data/googlebooks-eng-us-all-5gram-20090715-0.csv
 clue_solving/n_gram_common_phrases.py
 all_tokens_dict.pkl
 
+all clues predicted.csv
+data/clue_classification_ml_pipeline/all_clues_predicted.csv
+data/puzzle_samples/solved_clues_batches/solved_clues_10.xlsx
+data/puzzle_samples/solved_clues_batches/solved_clues_15.xlsx
+data/puzzle_samples/solved_clues_batches/solved_clues_20.xlsx
+data/puzzle_samples/solved_clues_batches/solved_clues_25.xlsx
+data/puzzle_samples/solved_clues_batches/solved_clues_30.xlsx
+data/puzzle_samples/solved_clues_batches/solved_clues_35.xlsx
+data/puzzle_samples/solved_clues_batches/solved_clues_40.xlsx
+data/puzzle_samples/solved_clues_batches/solved_clues_45.xlsx
+data/puzzle_samples/solved_clues_batches/solved_clues_5.xlsx
+data/puzzle_samples/solved_clues_batches/solved_clues_50.xlsx
+data/puzzle_samples/solved_clues_batches/solved_clues_55.xlsx
+data/puzzle_samples/solved_clues_batches/solved_clues_60.xlsx
+data/puzzle_samples/solved_clues_batches/solved_clues_65.xlsx
+data/puzzle_samples/solved_clues_batches/solved_clues_70.xlsx
+data/puzzle_samples/solved_clues_batches/solved_clues_75.xlsx
+data/puzzle_samples/solved_clues_batches/solved_clues_80.xlsx
+data/puzzle_samples/solved_clues_batches/solved_clues_85.xlsx
+data/puzzle_samples/solved_clues_batches/~$solved_clues_75.xlsx
+data/puzzle_samples/solved_clues_batches/solved_clues_95.xlsx
+/data/puzzle_samples/solved_clues_batches

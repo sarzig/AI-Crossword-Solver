@@ -1,10 +1,14 @@
+"""
+Author: Sarah
+
+Yet another half-baked wiki file. xxx tbd: do something with it or delete
+"""
+
 import wikipediaapi
 import re
 import pandas as pd
 import os
-
-from clue_classification_and_processing.fill_in_the_blank import fill_in_the_blank_with_possible_source
-from puzzle_objects.clue_and_board import Clue
+from clue_classification_and_processing.fill_in_the_blank_sandbox import fill_in_the_blank_with_possible_source
 
 # Get the current working directory
 cwd = os.getcwd()
@@ -34,7 +38,6 @@ def contains_long_quote_with_blank(clue):
         if len(words) >= 6 and "_" in match:  # Check for 6+ words and an underscore
             return True
     return False
-
 
 
 def contains_possessive_long_quote(clue):
@@ -93,9 +96,10 @@ def find_blank_in_wiki(clue):
     print(f"Extracted Missing Words: {missing_words}")
     return missing_words
 
+
 # Apply feature extraction functions
-clues["possessive long quote"] = clues["Clue"].apply(contains_possessive_long_quote)
-clues["long quote with blank"] = clues["Clue"].apply(contains_long_quote_with_blank)
+clues["possessive long quote"] = clues["clue"].apply(contains_possessive_long_quote)
+clues["long quote with blank"] = clues["clue"].apply(contains_long_quote_with_blank)
 
 # Filter clues that match both conditions
 filtered_clues = clues[(clues["possessive long quote"]) & (clues["long quote with blank"])]
@@ -103,22 +107,22 @@ filtered_clues = clues[(clues["possessive long quote"]) & (clues["long quote wit
 # Iterate through filtered clues and find missing words in Wikipedia
 for _, row in filtered_clues.iterrows():
     print("\n" + "-" * 80)
-    print(f'Clue: {row["Clue"]}')
+    print(f'Clue: {row["clue"]}')
 
-    page_name = extract_page_name(row["Clue"])
-    print(f'Attempted Wikipedia Page Name: {page_name}')
+    my_page_name = extract_page_name(row["clue"])
+    print(f'Attempted Wikipedia Page Name: {my_page_name}')
 
-    page = wiki_wiki.page(page_name)
+    page = wiki_wiki.page(my_page_name)
     if page.exists():
         print(f'Wikipedia Summary:\n{page.summary[:300]}...')
     else:
         print("Wikipedia page not found.")
 
-    ans = find_blank_in_wiki(row["Clue"])
+    ans = find_blank_in_wiki(row["clue"])
 
-    function_answer = fill_in_the_blank_with_possible_source(Clue(row["Clue"]), page.text)
+    function_answer = fill_in_the_blank_with_possible_source(row["clue"], page.text)
     print(f"\n\n         Actual Answer: {row['Word'].lower()}")
-    #print(f'Predicted Answer: {ans}')
+    # print(f'Predicted Answer: {ans}')
     print(f'function_answer Answer: {function_answer}')
 
     input('')

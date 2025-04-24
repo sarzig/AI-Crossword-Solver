@@ -135,6 +135,53 @@ class RomanNumeralConverter:
                 
         return None
     
+    def solve_roman_numeral_clue(self, clue):
+        """
+        Solves clues that contain number references like "151, in old Rome" or "100, to Caesar"
+        by extracting the number and converting it to Roman numerals.
+        
+        Args:
+            clue (str): A clue string like "151, in old Rome" or "100, to Caesar"
+            
+        Returns:
+            str: The Roman numeral answer or None if not recognized
+        """
+        clue = clue.lower().strip()
+        
+        # First check if the clue is in our dictionary
+        direct_match = self.find_matching_clue(clue)
+        if direct_match:
+            return direct_match
+        
+        # Try to extract a number from the clue
+        number_match = re.search(r'(\d+)[,\s]', clue)
+        if number_match:
+            num = int(number_match.group(1))
+            
+            # Check if this is likely about Roman numerals
+            roman_indicators = [
+                'rome', 'roman', 'caesar', 'ancient', 'numeral', 
+                'latin', 'old rome', 'old number'
+            ]
+            
+            # Check if any Roman indicator is in the clue
+            if any(indicator in clue for indicator in roman_indicators):
+                roman = self.int_to_roman(num)
+                if roman:
+                    return roman
+        
+        # If no number found or no Roman context, try to look up in our clues dictionary
+        # with a more flexible approach for Roman numeral clues
+        for stored_clue, answer in self.clues_dict.items():
+            # Check if the stored clue contains a number and Roman indicator
+            stored_number_match = re.search(r'(\d+)[,\s]', stored_clue)
+            if stored_number_match and any(indicator in stored_clue.lower() for indicator in roman_indicators):
+                # See if numbers match between our clue and the stored clue
+                if number_match and stored_number_match and number_match.group(1) == stored_number_match.group(1):
+                    return answer
+        
+        return None
+    
     def process_input(self, user_input):
         """Process user input: clue, number, or Roman numeral"""
         user_input = user_input.strip()
@@ -156,12 +203,17 @@ class RomanNumeralConverter:
                 return f"Roman numeral {roman} represents: {words} ({num})"
             return "Invalid Roman numeral."
         
+        # Try to solve as a Roman numeral clue
+        roman_solution = self.solve_roman_numeral_clue(user_input)
+        if roman_solution:
+            return f"Answer to Roman numeral clue: {roman_solution}"
+        
         # Finally check if it's a clue from the dataset
         matching_answer = self.find_matching_clue(user_input)
         if matching_answer:
             return f"Answer to clue: {matching_answer}"
                 
-        return "Input not recognized. Please enter a clue, number, or Roman numeral."
+        return "Input not recognized. Please enter a clue, number, or Roman numeral."
 
 def main():
     # Get the CSV file path from user if needed
