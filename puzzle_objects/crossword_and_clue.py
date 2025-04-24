@@ -890,15 +890,42 @@ class Crossword:
                       f"{len(uncovered_coords)} remaining.")
 
         return subset_crosswords
+    
+    
+    def get_clue_coordinates(self, number_direction):
+        """
+        Returns a list of coordinates (row, col) for the given clue.
+        
+        Args:
+            number_direction (str): Like "13-Down" or "42-Across"
+        
+        Returns:
+            List[Tuple[int, int]]: List of coordinates (row, col)
+        """
+        row = self.clue_df[self.clue_df["number_direction"] == number_direction]
+        if row.empty:
+            raise ValueError(f"No clue found for {number_direction}")
 
-# Sheryl - try this
-crossword = get_crossword_from_csv("crossword_2025_01_20.csv")
-subsets, subset_lookup_dict = crossword.get_all_subset_dict(overlap_threshold=1)
-for id in subsets.keys():
-    print("__________________________________________________________")
-    print(f"id={id}")
-    subsets[id]["crossword"].detailed_print()
-    print(f'number clues={subsets[id]["number_clues"]}')
+        row = row.iloc[0]
+        start_row, start_col = row["start_row"], row["start_col"]
+        length = row["length"]
+        
+        if "Across" in number_direction:
+            return [(start_row, start_col + i) for i in range(length)]
+        elif "Down" in number_direction:
+            return [(start_row + i, start_col) for i in range(length)]
+        else:
+            raise ValueError(f"Invalid clue direction: {number_direction}")
+
+
+# # Sheryl - try this
+# crossword = get_crossword_from_csv("crossword_2025_01_20.csv")
+# subsets, subset_lookup_dict = crossword.get_all_subset_dict(overlap_threshold=1)
+# for id in subsets.keys():
+#     print("__________________________________________________________")
+#     print(f"id={id}")
+#     subsets[id]["crossword"].detailed_print()
+#     print(f'number clues={subsets[id]["number_clues"]}')
 
 
 def get_random_clue_df(puzzle_type="any", return_filename=False, force_previous=True):
@@ -985,6 +1012,7 @@ def delete_last_loaded_crossword_on_exit():
     if os.path.exists(last_file):
         os.remove(last_file)
         print("[INFO] Deleted last_loaded_crossword.txt on program exit.")
+
 
 
 atexit.register(delete_last_loaded_crossword_on_exit)

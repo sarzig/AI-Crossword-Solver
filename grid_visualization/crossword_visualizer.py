@@ -25,6 +25,9 @@ class CrosswordVisualizer:
         self._init_visual_attributes()
         self._prepare_crossword_elements()
         self.running = True
+        self.recently_placed = set()
+        self.cell_to_vars = {}
+
 
     def _init_visual_attributes(self):
         """
@@ -83,6 +86,16 @@ class CrosswordVisualizer:
                 char = self.crossword.grid[r][c]
                 if char != " " and char != "■":
                     self.letters[(r, c)] = char.upper()
+        
+        # Build a lookup from each cell to which clues it belongs to
+        self.cell_to_vars = {}  # (row, col) → set of "13-Down", "42-Across", etc.
+        for clue in self.crossword.clue_df.itertuples():
+            var = clue.number_direction
+            coords = self.crossword.get_clue_coordinates(var)
+            for r, c in coords:
+                self.cell_to_vars.setdefault((r, c), set()).add(var)
+
+
 
     def refresh(self, crossword):
         """
@@ -95,6 +108,30 @@ class CrosswordVisualizer:
         self._prepare_crossword_elements()
         self.draw_grid()
         pygame.display.flip()
+
+    # def refresh(self, crossword, highlights=None, highlight_color=(0, 255, 0)):
+    #     self.screen.fill((255, 255, 255))  # clear screen
+
+    #     highlights = highlights or []
+    #     highlight_lookup = {clue: answer for clue, answer in highlights}
+
+    #     for clue in crossword.clue_df.itertuples():
+    #         var = clue.number_direction
+    #         if var in crossword.placed_word:
+    #             word = crossword.placed_word[var]
+    #             coords = crossword.get_clue_coordinates(var)
+
+    #             for i, (r, c) in enumerate(coords):
+    #                 letter = word[i]
+    #                 x, y = self.grid_to_pixel(r, c)
+
+    #                 # Highlight if this clue was just placed
+    #                 color = highlight_color if var in highlight_lookup else (0, 0, 0)
+    #                 self.draw_letter(letter, x, y, color=color)
+
+    #     self.draw_grid()
+    #     pygame.display.flip()
+
 
     def draw_grid(self):
         """
@@ -109,6 +146,8 @@ class CrosswordVisualizer:
                 # Determine cell color
                 if self.grid[row][col] == 0:
                     color = self.BLACK
+                elif any(var in self.recently_placed for var in self.cell_to_vars.get((row, col), [])):
+                    color = self.YELLOW  # or any highlight color
                 elif (row, col) in self.clue_numbers:
                     color = self.LIGHT_GRAY
                 else:
@@ -146,3 +185,29 @@ class CrosswordVisualizer:
 
         pygame.quit()
         sys.exit()
+
+# def place_solution_on_grid(self, solution_dict, highlight_color=(0, 255, 0)):
+#     newly_placed = []
+
+#     for clue_numdir, answer in solution_dict.items():
+#         success = self.crossword.place_word(answer.upper(), clue_numdir)
+#         if success:
+#             newly_placed.append((clue_numdir, answer.upper()))
+
+#     self.refresh(self.crossword, highlights=newly_placed, highlight_color=highlight_color)
+
+#     pygame.display.flip()
+#     pygame.time.wait(1)  # short pause to see the color
+#     self.refresh(self.crossword)  # redraw without highlights
+#     pygame.display.flip()
+
+    def place_solution_on_grid(self, solution_dict):
+        self.recently_placed = set(solution_dict.keys())  # <-- store keys like "48-Across"
+        for clue_numdir, answer in solution_dict.items():
+            self.crossword.place_word(answer.upper(), clue_numdir)
+        self.refresh(self.crossword)
+        pygame.display.flip()
+        pygame.time.wait(1)  # short pause to see the color
+        self.refresh(self.crossword)  # redraw without highlights
+        pygame.display.flip()
+
